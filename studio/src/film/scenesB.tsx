@@ -1,12 +1,15 @@
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import {
+  Aurora,
   C,
   Chip,
   clamp,
   DotGrid,
+  Dust,
   ease,
-  Glow,
+  Flash,
+  GREEN_GRADIENT,
   Kinetic,
   L,
   lineOpacity,
@@ -14,479 +17,440 @@ import {
   MONO,
   out,
   p,
+  Plain,
   Scene,
   SceneProps,
   Sfx,
+  Shockwave,
+  Slam,
+  Sparks,
   W,
 } from "./kit";
 
+const pop = (frame: number, at: number) => interpolate(frame - at, [0, 6, 11], [0.5, 1.06, 1], { ...clamp, easing: ease });
+
 /* ============ 6. Settlement layer ============ */
 const LAYERS = [
-  { name: "Authority Gate", sub: "KYI · Precepts · Checks · Receipts", chips: [], line: 0, gate: true },
-  { name: "Embedded Wallets", sub: "Smart accounts for users and agents", chips: ["ERC-4337", "Passkeys", "Social recovery", "No seed phrases"], line: 1 },
-  { name: "Bundler", sub: "Managed UserOperation bundling", chips: ["UserOperations", "Pre-flight simulation"], line: 2 },
-  { name: "Paymaster", sub: "Gas sponsorship", chips: ["Per-agent budgets", "Daily caps", "Gas in USDC"], line: 3 },
-  { name: "Relayer", sub: "Transactions that land", chips: ["Nonce management", "Gas bumping", "Auto-resubmit"], line: 4 },
+  { name: "Authority Gate", plain: "Decides if a payment is allowed.", chips: ["KYI", "Precepts", "Receipts"], line: 0 },
+  { name: "Embedded Wallets", plain: "A secure wallet for every user and agent. No seed phrase to lose.", chips: ["ERC-4337", "Passkeys", "Social recovery"], line: 1 },
+  { name: "Bundler", plain: "Packs actions together and test-runs them before they go live.", chips: ["UserOperations", "Pre-flight simulation"], line: 2 },
+  { name: "Paymaster", plain: "Pays the network fees, inside the budgets you set.", chips: ["Per-agent budgets", "Daily caps", "Gas in USDC"], line: 3 },
+  { name: "Relayer", plain: "Delivers every transaction, and retries if it gets stuck.", chips: ["Nonce management", "Gas bumping", "Auto-resubmit"], line: 4 },
 ];
 const CHAINS = ["Ethereum", "Base", "Arbitrum", "Polygon"];
 
 export const Settlement: React.FC<SceneProps> = ({ ch }) => {
   const frame = useCurrentFrame();
-  const active = ch.lines.findIndex((l, i) => frame >= l.start - 6 && (!ch.lines[i + 1] || frame < ch.lines[i + 1].start - 6));
+  const active = Math.max(0, ch.lines.findIndex((l, i) => frame >= l.start - 4 && (!ch.lines[i + 1] || frame < ch.lines[i + 1].start - 4)));
+  const activeLayer = Math.min(active, 4);
+  const hits = [1, 2, 3, 4].map((i) => L(ch, i));
+  const chainsOn = frame >= L(ch, 5) - 4;
   return (
-    <Scene ch={ch} bg={C.surface} light>
+    <Scene ch={ch} bg="#FFFFFF" light push={0.03} hits={hits} shake={5}>
+      <Aurora light />
       <DotGrid light opacity={0.6} />
-      <div style={{ position: "absolute", left: 120, top: 150, opacity: p(frame, L(ch, 0), 20) }}>
-        <Kinetic line={ch.lines[0]} size={52} weight={600} color={C.ink} align="left" maxWidth={1500} />
+      {/* title zone */}
+      <div style={{ position: "absolute", left: 120, top: 130, opacity: p(frame, L(ch, 0), 10) }}>
+        <Kinetic line={ch.lines[0]} size={56} weight={700} color={C.ink} align="left" maxWidth={1600} accent={["settlement"]} accentColor={C.brandText} />
       </div>
-      <div style={{ position: "absolute", left: 120, right: 120, top: 260, display: "flex", flexDirection: "column", gap: 16 }}>
-        {LAYERS.map((layer, i) => {
-          const at = layer.line === 0 ? L(ch, 0, 0.3) : L(ch, layer.line);
-          const o = p(frame, at, 22);
-          const isActive = active === layer.line;
-          return (
-            <div
-              key={layer.name}
-              style={{
-                height: 108,
-                borderRadius: 20,
-                display: "flex",
-                alignItems: "center",
-                padding: "0 36px",
-                gap: 36,
-                background: layer.gate ? C.ink : isActive ? C.wash : "white",
-                border: `${isActive && !layer.gate ? 2 : 1}px solid ${layer.gate ? C.ink : isActive ? C.brandDeep : C.border}`,
-                boxShadow: isActive ? "0 18px 40px rgba(10,107,71,0.12)" : "0 8px 20px rgba(0,0,0,0.04)",
-                opacity: o,
-                translate: `0px ${(1 - o) * 50}px`,
-              }}
-            >
-              <div style={{ width: 300 }}>
-                <div style={{ fontSize: 34, fontWeight: 600, color: layer.gate ? C.brand : C.ink }}>{layer.name}</div>
-                <div style={{ fontSize: 20, color: layer.gate ? "#9A9A9A" : C.muted, marginTop: 4 }}>{layer.sub}</div>
+      {/* zone left: isometric stack */}
+      <div style={{ position: "absolute", left: 120, top: 330, width: 820, height: 640 }}>
+        <div style={{ position: "absolute", left: 140, top: 80, width: 500, height: 500, transform: "perspective(1800px) rotateX(56deg) rotateZ(-36deg)", transformStyle: "preserve-3d" }}>
+          {LAYERS.map((ly, i) => {
+            const at = ly.line === 0 ? L(ch, 0, 0.4) : L(ch, ly.line);
+            const drop = interpolate(frame - at, [0, 8, 12], [260, -8, 0], { ...clamp, easing: ease });
+            const on = frame >= at;
+            const isActive = activeLayer === ly.line && !chainsOn;
+            const z = (4 - i) * 58;
+            return (
+              <div
+                key={ly.name}
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  borderRadius: 30,
+                  transform: `translateZ(${z + (on ? drop : 400)}px)`,
+                  opacity: on ? 1 : 0,
+                  background: isActive ? `linear-gradient(135deg, ${C.brand}, ${C.brandDeep})` : i === 0 ? C.ink : "rgba(255,255,255,0.92)",
+                  border: `2px solid ${isActive ? "#249361" : i === 0 ? C.ink : "#BDEBD5"}`,
+                  boxShadow: isActive ? `0 0 80px ${C.brand}` : "0 30px 60px rgba(10,107,71,0.18)",
+                  display: "flex",
+                  alignItems: "flex-end",
+                  padding: 34,
+                }}
+              >
+                <span style={{ fontSize: 44, fontWeight: 800, color: isActive ? C.ink : i === 0 ? C.brand : C.brandText }}>{ly.name}</span>
               </div>
-              <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-                {layer.chips.map((c, j) => (
-                  <Chip key={c} tone={isActive ? "brand" : "neutral"} light style={{ opacity: p(frame, at + 14 + j * 10, 12) }}>
+            );
+          })}
+        </div>
+      </div>
+      {/* zone right: detail card for the active layer */}
+      <div style={{ position: "absolute", left: 1000, right: 120, top: 300, height: 520 }}>
+        {LAYERS.map((ly) => {
+          const at = ly.line === 0 ? L(ch, 0, 0.4) : L(ch, ly.line);
+          const visible = activeLayer === ly.line && !chainsOn;
+          const o = visible ? p(frame, at, 10) : 0;
+          return (
+            <div key={ly.name} style={{ position: "absolute", inset: 0, opacity: o, translate: `${(1 - o) * 40}px 0px` }}>
+              <div style={{ fontFamily: MONO, fontSize: 22, letterSpacing: 4, color: C.brandText }}>LAYER {ly.line === 0 ? "0 · ON TOP" : ly.line}</div>
+              <div style={{ fontSize: 88, fontWeight: 800, color: C.ink, letterSpacing: -3, marginTop: 10 }}>{ly.name}</div>
+              <div style={{ fontSize: 40, fontWeight: 500, color: C.ink, lineHeight: 1.3, marginTop: 20, maxWidth: 780 }}>{ly.plain}</div>
+              <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 34 }}>
+                {ly.chips.map((c, j) => (
+                  <Chip key={c} tone="brand" light style={{ fontSize: 22, opacity: p(frame, at + 10 + j * 5, 6) }}>
                     {c}
                   </Chip>
                 ))}
               </div>
-              <div style={{ flex: 1 }} />
-              <div style={{ fontFamily: MONO, fontSize: 20, color: layer.gate ? C.brand : C.muted }}>
-                {layer.gate ? "AUTHORIZE" : `L${i}`}
-              </div>
             </div>
           );
         })}
-      </div>
-      <div style={{ position: "absolute", left: 120, right: 120, bottom: 70, display: "flex", gap: 20, alignItems: "center" }}>
-        <span style={{ fontFamily: MONO, fontSize: 20, letterSpacing: 3, color: C.muted, opacity: p(frame, L(ch, 5) - 6, 14) }}>
-          SETTLES ON
-        </span>
-        {CHAINS.map((c, i) => (
-          <div
-            key={c}
-            style={{
-              padding: "12px 26px",
-              borderRadius: 999,
-              border: `1px solid ${C.border}`,
-              fontSize: 28,
-              fontWeight: 600,
-              color: C.ink,
-              background: "white",
-              opacity: p(frame, W(ch, 5, c.toLowerCase()), 12),
-              translate: `0px ${(1 - p(frame, W(ch, 5, c.toLowerCase()), 12)) * 20}px`,
-            }}
-          >
-            {c}
-          </div>
-        ))}
-      </div>
-      {LAYERS.slice(1).map((l) => (
-        <Sfx key={l.name} name="switch" at={L(ch, l.line)} volume={0.1} />
-      ))}
-    </Scene>
-  );
-};
-
-/* ============ 7. One payment, end to end ============ */
-export const Demo: React.FC<SceneProps> = ({ ch }) => {
-  const frame = useCurrentFrame();
-  const win = p(frame, L(ch, 0), 26);
-  const deny = { req: L(ch, 2, 0.05), check: L(ch, 2, 0.42), result: W(ch, 2, "denied"), human: W(ch, 2, "human") };
-  const allow = { req: L(ch, 3, 0.05), result: W(ch, 3, "allowed") };
-  const pay = W(ch, 4, "paymaster");
-  const rel = W(ch, 4, "relayer");
-  const rec = L(ch, 5, 0.3);
-  const spent = interpolate(frame, [allow.result, allow.result + 30], [0, 380], { ...clamp, easing: ease });
-  const showDenyCard = frame < allow.req;
-  const card = (amt: string, at: number) => ({ o: p(frame, at, 16), amt });
-  const reqDeny = card("$620.00", deny.req);
-  const reqAllow = card("$380.00", allow.req);
-  const checking = frame >= deny.check && frame < deny.result;
-  return (
-    <Scene ch={ch} bg="#F5F5F3" light>
-      <div style={{ position: "absolute", left: 120, top: 140, opacity: p(frame, L(ch, 0), 18) * out(frame, L(ch, 1) - 6, 12) }}>
-        <Kinetic line={ch.lines[0]} size={48} weight={600} color={C.ink} align="left" />
-      </div>
-      {/* App window */}
-      <div
-        style={{
-          position: "absolute",
-          left: 120,
-          right: 120,
-          top: 210,
-          bottom: 90,
-          borderRadius: 24,
-          background: "white",
-          border: `1px solid ${C.border}`,
-          boxShadow: "0 40px 100px rgba(0,0,0,0.10)",
-          opacity: win,
-          translate: `0px ${(1 - win) * 60}px`,
-          overflow: "hidden",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <div style={{ height: 64, borderBottom: `1px solid ${C.border}`, display: "flex", alignItems: "center", padding: "0 28px", gap: 18 }}>
-          <Logo width={150} />
-          <span style={{ color: C.border }}>|</span>
-          <span style={{ fontSize: 20, color: C.muted }}>Authority Gate</span>
-          <div style={{ flex: 1 }} />
-          <Chip tone="brand" light>
-            ● live
-          </Chip>
-        </div>
-        <div style={{ flex: 1, display: "flex" }}>
-          {/* Precept panel */}
-          <div style={{ width: 520, borderRight: `1px solid ${C.border}`, padding: 36, fontFamily: MONO }}>
-            <div style={{ fontSize: 18, letterSpacing: 3, color: C.muted }}>PRECEPT · travel_agent</div>
-            {[
-              ["Cap", "$500 / month", 0.25],
-              ["Allowlist", "Airlines only", 0.5],
-              ["Valid until", "Dec 31", 0.75],
-            ].map(([k, v, f]) => (
-              <div
-                key={k as string}
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  fontSize: 26,
-                  marginTop: 28,
-                  opacity: p(frame, L(ch, 1, f as number), 14),
-                }}
-              >
-                <span style={{ color: C.muted }}>{k}</span>
-                <span style={{ color: C.ink }}>{v}</span>
-              </div>
-            ))}
-            <div style={{ marginTop: 52, opacity: p(frame, L(ch, 1, 0.85), 14) }}>
-              <div style={{ display: "flex", justifyContent: "space-between", fontSize: 20, color: C.muted }}>
-                <span>Spent this month</span>
-                <span style={{ color: C.ink }}>${Math.round(spent)} / $500</span>
-              </div>
-              <div style={{ marginTop: 14, height: 14, borderRadius: 999, background: "#EFEFEC" }}>
-                <div style={{ width: `${(spent / 500) * 100}%`, height: "100%", borderRadius: 999, background: C.brandDeep }} />
-              </div>
-            </div>
-          </div>
-          {/* Activity */}
-          <div style={{ flex: 1, padding: 36, position: "relative" }}>
-            <div style={{ fontFamily: MONO, fontSize: 18, letterSpacing: 3, color: C.muted }}>INCOMING PAYMENT</div>
-            {/* request card */}
-            {[
-              { r: reqDeny, show: showDenyCard, to: "Airline · LHR → JFK", result: deny.result, ok: false },
-              { r: reqAllow, show: !showDenyCard, to: "Airline · LHR → JFK", result: allow.result, ok: true },
-            ].map((c, i) =>
-              c.show ? (
-                <div
-                  key={i}
-                  style={{
-                    marginTop: 22,
-                    height: 150,
-                    borderRadius: 18,
-                    border: `1px solid ${frame >= c.result ? (c.ok ? C.brandDeep : C.denyDeep) : C.border}`,
-                    background: frame >= c.result ? (c.ok ? C.wash : "#FDEEEC") : "white",
-                    display: "flex",
-                    alignItems: "center",
-                    padding: "0 36px",
-                    gap: 30,
-                    opacity: c.r.o,
-                    translate: `${(1 - c.r.o) * 80}px 0px`,
-                  }}
-                >
-                  <div style={{ fontSize: 64, fontWeight: 600, color: C.ink, letterSpacing: -2 }}>{c.r.amt}</div>
-                  <div style={{ fontSize: 24, color: C.muted }}>{c.to}</div>
-                  <div style={{ flex: 1 }} />
-                  {checking && !c.ok ? (
-                    <Chip light>checking against precept…</Chip>
-                  ) : frame >= c.result ? (
-                    <Chip tone={c.ok ? "brand" : "deny"} light style={{ fontSize: 26, padding: "12px 22px" }}>
-                      {c.ok ? "ALLOWED · 31 ms" : "DENIED · over cap"}
-                    </Chip>
-                  ) : null}
-                </div>
-              ) : null,
-            )}
-            {/* routed to human */}
-            <div
-              style={{
-                marginTop: 18,
-                display: "flex",
-                gap: 14,
-                alignItems: "center",
-                opacity: p(frame, deny.human, 14) * (showDenyCard ? 1 : 0),
-              }}
-            >
-              <Chip tone="review" light>
-                ↗ routed to human for approval
-              </Chip>
-            </div>
-            {/* settlement steps */}
-            <div style={{ marginTop: 28, display: "flex", flexDirection: "column", gap: 14 }}>
-              {[
-                { at: pay, label: "Paymaster", v: "gas sponsored · 0.00041 ETH" },
-                { at: rel, label: "Relayer", v: "landed · block 21,904,377 · 0x6a2f…e19b" },
-              ].map((s) => (
-                <div
-                  key={s.label}
-                  style={{
-                    display: "flex",
-                    gap: 18,
-                    alignItems: "center",
-                    fontFamily: MONO,
-                    fontSize: 24,
-                    opacity: p(frame, s.at, 14),
-                    translate: `${(1 - p(frame, s.at, 14)) * 30}px 0px`,
-                  }}
-                >
-                  <span style={{ color: C.brandText }}>✓</span>
-                  <span style={{ color: C.ink, width: 160 }}>{s.label}</span>
-                  <span style={{ color: C.muted }}>{s.v}</span>
-                </div>
-              ))}
-            </div>
-            {/* receipts */}
-            {[
-              { d: "DENY", amt: "$620.00", c: C.denyDeep, dx: 0 },
-              { d: "ALLOW", amt: "$380.00", c: C.brandText, dx: 1 },
-            ].map((r) => {
-              const o = p(frame, rec + r.dx * 14, 22);
+        {/* chains replace the detail card at the end */}
+        <div style={{ position: "absolute", inset: 0, opacity: chainsOn ? p(frame, L(ch, 5) - 4, 8) : 0 }}>
+          <div style={{ fontFamily: MONO, fontSize: 22, letterSpacing: 4, color: C.brandText }}>SETTLES ON</div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 22, marginTop: 30 }}>
+            {CHAINS.map((c) => {
+              const at = W(ch, 5, c.toLowerCase());
               return (
-                <div
-                  key={r.d}
-                  style={{
-                    position: "absolute",
-                    right: 36 + r.dx * 40,
-                    bottom: 30 + r.dx * 40,
-                    width: 400,
-                    background: "#FAFAF8",
-                    border: `1px solid ${C.border}`,
-                    borderRadius: 8,
-                    padding: "22px 26px",
-                    fontFamily: MONO,
-                    fontSize: 20,
-                    lineHeight: 1.8,
-                    boxShadow: "0 24px 50px rgba(0,0,0,0.12)",
-                    opacity: o,
-                    translate: `0px ${(1 - o) * 60}px`,
-                  }}
-                >
-                  <div style={{ color: C.muted, letterSpacing: 2 }}>SIGNED RECEIPT</div>
-                  <div style={{ display: "flex", justifyContent: "space-between" }}>
-                    <span style={{ color: r.c }}>{r.d}</span>
-                    <span>{r.amt}</span>
-                  </div>
-                  <div style={{ color: C.brandText }}>✓ verifiable</div>
+                <div key={c} style={{ height: 130, borderRadius: 22, background: "white", border: `2px solid ${C.brandDeep}`, boxShadow: `0 20px 40px rgba(10,107,71,0.15)`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 50, fontWeight: 800, color: C.ink, opacity: p(frame, at - 2, 6), scale: String(frame >= at - 2 ? pop(frame, at - 2) : 0.5) }}>
+                  {c}
                 </div>
               );
             })}
           </div>
         </div>
       </div>
-      <Sfx name="mouse-click" at={deny.req} volume={0.15} />
-      <Sfx name="whip" at={deny.result} volume={0.12} />
-      <Sfx name="ding" at={allow.result} volume={0.15} />
-      <Sfx name="tick" at={pay} volume={0.15} />
-      <Sfx name="tick" at={rel} volume={0.15} />
-      <Sfx name="shutter-modern" at={rec} volume={0.12} />
+      {hits.map((h) => (
+        <Sfx key={h} name="whip" at={h} volume={0.12} />
+      ))}
+      {CHAINS.map((c) => (
+        <Sfx key={c} name="tick" at={W(ch, 5, c.toLowerCase())} volume={0.18} />
+      ))}
+    </Scene>
+  );
+};
+
+/* ============ 7. One payment, end to end ============ */
+const Stamp: React.FC<{ text: string; at: number; color: string }> = ({ text, at, color }) => {
+  const frame = useCurrentFrame();
+  if (frame < at) return null;
+  const s = interpolate(frame - at, [0, 5, 9], [2.4, 0.92, 1], { ...clamp, easing: ease });
+  return (
+    <div style={{ padding: "10px 26px", border: `5px solid ${color}`, borderRadius: 14, color, fontSize: 44, fontWeight: 800, letterSpacing: 4, rotate: "-8deg", scale: String(s), opacity: interpolate(frame - at, [0, 3], [0, 1], clamp), background: "rgba(255,255,255,0.85)" }}>
+      {text}
+    </div>
+  );
+};
+
+export const Demo: React.FC<SceneProps> = ({ ch }) => {
+  const frame = useCurrentFrame();
+  const win = p(frame, L(ch, 0), 14);
+  const denyReq = L(ch, 2, 0.02);
+  const checking = W(ch, 2, "check");
+  const denyAt = W(ch, 2, "denied");
+  const humanAt = W(ch, 2, "human");
+  const allowReq = L(ch, 3, 0.02);
+  const allowAt = W(ch, 3, "allowed");
+  const payAt = W(ch, 4, "paymaster");
+  const relAt = W(ch, 4, "relayer");
+  const recAt = L(ch, 5, 0.25);
+  const spent = interpolate(frame, [allowAt, allowAt + 24], [0, 380], { ...clamp, easing: ease });
+  const second = frame >= allowReq;
+  const amount = second ? "$380.00" : "$620.00";
+  const reqAt = second ? allowReq : denyReq;
+  const reqO = frame >= denyReq ? p(frame, reqAt, 8) : 0;
+  const decided = second ? frame >= allowAt : frame >= denyAt;
+  const tone = second ? C.brandDeep : C.denyDeep;
+  return (
+    <Scene ch={ch} bg="#F4F7F5" light push={0.03} hits={[denyAt, allowAt]} shake={9}>
+      <Aurora light intensity={0.7} />
+      <div style={{ position: "absolute", left: 120, top: 120, opacity: Math.min(p(frame, L(ch, 0), 10), out(frame, L(ch, 1) - 6, 8)) }}>
+        <Kinetic line={ch.lines[0]} size={52} weight={700} color={C.ink} align="left" />
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          left: 120,
+          right: 120,
+          top: 190,
+          bottom: 70,
+          borderRadius: 28,
+          background: "white",
+          border: `1px solid ${C.border}`,
+          boxShadow: "0 50px 120px rgba(10,107,71,0.18)",
+          opacity: win,
+          translate: `0px ${(1 - win) * 80}px`,
+          overflow: "hidden",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <div style={{ height: 70, borderBottom: `1px solid ${C.border}`, display: "flex", alignItems: "center", padding: "0 30px", gap: 18, flexShrink: 0 }}>
+          <Logo width={160} />
+          <span style={{ color: C.border }}>|</span>
+          <span style={{ fontSize: 22, color: C.muted }}>Authority Gate</span>
+          <div style={{ flex: 1 }} />
+          <Chip tone="brand" light>
+            ● live
+          </Chip>
+        </div>
+        <div style={{ flex: 1, display: "flex", minHeight: 0 }}>
+          {/* left: precept */}
+          <div style={{ width: 540, borderRight: `1px solid ${C.border}`, padding: "34px 38px", fontFamily: MONO, flexShrink: 0 }}>
+            <div style={{ fontSize: 20, letterSpacing: 3, color: C.brandText }}>PRECEPT · travel_agent</div>
+            {[
+              ["Cap", "$500 / month", W(ch, 1, "five")],
+              ["Allowlist", "Airlines only", W(ch, 1, "airlines")],
+              ["Valid until", "Dec 31", W(ch, 1, "valid")],
+            ].map(([k, v, at]) => (
+              <div key={k as string} style={{ display: "flex", justifyContent: "space-between", fontSize: 30, marginTop: 30, opacity: p(frame, (at as number) - 2, 8) }}>
+                <span style={{ color: C.muted }}>{k}</span>
+                <span style={{ color: C.ink }}>{v}</span>
+              </div>
+            ))}
+            <div style={{ marginTop: 50, opacity: p(frame, L(ch, 1, 0.8), 8) }}>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: 22, color: C.muted }}>
+                <span>Spent this month</span>
+                <span style={{ color: C.ink }}>${Math.round(spent)} / $500</span>
+              </div>
+              <div style={{ marginTop: 14, height: 18, borderRadius: 999, background: "#EAF5EF" }}>
+                <div style={{ width: `${(spent / 500) * 100}%`, height: "100%", borderRadius: 999, background: `linear-gradient(90deg, ${C.brand}, ${C.brandDeep})`, boxShadow: `0 0 20px ${C.brand}` }} />
+              </div>
+            </div>
+            <div style={{ marginTop: 40 }}>
+              <Plain at={L(ch, 1, 0.9)} light style={{ padding: "10px 16px" }}>
+                Like a company card, with rules.
+              </Plain>
+            </div>
+          </div>
+          {/* right: activity — fixed rows, no overlaps */}
+          <div style={{ flex: 1, padding: "34px 40px", display: "flex", flexDirection: "column", gap: 22, minWidth: 0 }}>
+            <div style={{ fontFamily: MONO, fontSize: 20, letterSpacing: 3, color: C.muted }}>INCOMING PAYMENT</div>
+            {/* row 1: request card */}
+            <div style={{ height: 150, borderRadius: 20, flexShrink: 0, border: `2px solid ${decided ? tone : C.border}`, background: decided ? (second ? C.wash : "#FDEEEC") : "white", display: "flex", alignItems: "center", padding: "0 36px", gap: 30, opacity: reqO, translate: `${(1 - reqO) * 100}px 0px` }}>
+              <div style={{ fontSize: 72, fontWeight: 800, color: C.ink, letterSpacing: -3 }}>{amount}</div>
+              <div style={{ fontSize: 26, color: C.muted }}>Airline · LHR → JFK</div>
+              <div style={{ flex: 1 }} />
+              {!second && frame >= checking && frame < denyAt ? <Chip light>checking precept…</Chip> : null}
+              <Stamp text={second ? "ALLOWED" : "DENIED"} at={second ? allowAt : denyAt} color={tone} />
+            </div>
+            {/* row 2: reason / routing */}
+            <div style={{ height: 46, display: "flex", gap: 14, alignItems: "center", flexShrink: 0 }}>
+              {!second ? (
+                <>
+                  <Chip tone="deny" light style={{ opacity: p(frame, denyAt + 4, 6) }}>
+                    over the $500 cap
+                  </Chip>
+                  <Chip tone="review" light style={{ opacity: p(frame, humanAt, 6) }}>
+                    ↗ sent to a human to approve
+                  </Chip>
+                </>
+              ) : (
+                <Chip tone="brand" light style={{ opacity: p(frame, allowAt + 4, 6) }}>
+                  within cap · airline on allowlist · 31 ms
+                </Chip>
+              )}
+            </div>
+            {/* row 3: settlement steps */}
+            <div style={{ display: "flex", flexDirection: "column", gap: 12, flexShrink: 0 }}>
+              {[
+                { at: payAt, label: "Paymaster", v: "network fee covered" },
+                { at: relAt, label: "Relayer", v: "landed on-chain · 0x6a2f…e19b" },
+              ].map((s) => (
+                <div key={s.label} style={{ display: "flex", gap: 18, alignItems: "center", fontFamily: MONO, fontSize: 26, opacity: p(frame, s.at, 8), translate: `${(1 - p(frame, s.at, 8)) * 30}px 0px` }}>
+                  <span style={{ width: 34, height: 34, borderRadius: "50%", background: C.brandDeep, color: "white", display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 20 }}>✓</span>
+                  <span style={{ color: C.ink, width: 170 }}>{s.label}</span>
+                  <span style={{ color: C.muted }}>{s.v}</span>
+                </div>
+              ))}
+            </div>
+            {/* row 4: receipts side by side */}
+            <div style={{ flex: 1, display: "flex", gap: 24, alignItems: "flex-end", minHeight: 0 }}>
+              {[
+                { d: "DENY", amt: "$620.00", c: C.denyDeep, delay: 0 },
+                { d: "ALLOW", amt: "$380.00", c: C.brandText, delay: 8 },
+              ].map((r) => {
+                const o = p(frame, recAt + r.delay, 10);
+                return (
+                  <div key={r.d} style={{ width: 360, background: "#FAFAF8", border: `1px solid ${C.border}`, borderTop: `6px solid ${r.c}`, borderRadius: 10, padding: "18px 24px", fontFamily: MONO, fontSize: 22, lineHeight: 1.7, boxShadow: "0 24px 50px rgba(0,0,0,0.12)", opacity: o, translate: `0px ${(1 - o) * 60}px` }}>
+                    <div style={{ color: C.muted, letterSpacing: 2, fontSize: 18 }}>SIGNED RECEIPT</div>
+                    <div style={{ display: "flex", justifyContent: "space-between" }}>
+                      <span style={{ color: r.c, fontWeight: 700 }}>{r.d}</span>
+                      <span>{r.amt}</span>
+                    </div>
+                    <div style={{ color: C.brandText }}>✓ verifiable</div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+      <Sparks at={allowAt} x={1500} y={480} count={50} spread={0.7} />
+      <Flash at={denyAt} color={C.deny} peak={0.15} len={6} />
+      <Sfx name="mouse-click" at={denyReq} volume={0.2} />
+      <Sfx name="whip" at={denyAt} volume={0.18} />
+      <Sfx name="ding" at={allowAt} volume={0.2} />
+      <Sfx name="tick" at={payAt} volume={0.18} />
+      <Sfx name="tick" at={relAt} volume={0.18} />
+      <Sfx name="shutter-modern" at={recAt} volume={0.15} />
     </Scene>
   );
 };
 
 /* ============ 8. The agent economy ============ */
-const SERVICES = [
-  "2Captcha", "AgentMail", "AgentPhone", "Alchemy", "Allium", "Anthropic",
-  "Apollo", "Auor", "AviationStack", "Browserbase", "Browser Use", "BuiltWith",
-];
+const SERVICES = ["2Captcha", "AgentMail", "AgentPhone", "Alchemy", "Allium", "Anthropic", "Apollo", "Auor", "AviationStack", "Browserbase", "Browser Use", "BuiltWith"];
 
 export const Economy: React.FC<SceneProps> = ({ ch }) => {
   const frame = useCurrentFrame();
-  const grid = p(frame, L(ch, 0), 30);
-  const statement = lineOpacity(frame, ch, 1);
-  const x402 = L(ch, 2);
-  const count = interpolate(frame, [L(ch, 3), L(ch, 3) + 40], [0, 50], { ...clamp, easing: ease });
-  const yours = p(frame, L(ch, 4, 0.3), 22);
-  const cols = 6;
-  const tileW = 236;
-  const tileH = 110;
-  const gx = (1920 - (cols * tileW + (cols - 1) * 24)) / 2;
-  const gy = 330;
-  const agent = { x: 960, y: 240 };
+  const stmt = lineOpacity(frame, ch, 1);
+  const storeAt = W(ch, 1, "economy");
+  const x402 = W(ch, 2, "x402");
+  const countAt = W(ch, 3, "fifty");
+  const count = interpolate(frame, [countAt, countAt + 20], [0, 50], { ...clamp, easing: ease });
+  const yoursAt = W(ch, 4, "list");
+  const grid = Math.min(p(frame, L(ch, 0), 10), 1 - stmt);
+  const cols = 5;
+  const tw = 228;
+  const th = 104;
+  const gap = 20;
+  const gx = 540;
+  const gy = 270;
+  const hub = { x: 300, y: 540 };
   return (
-    <Scene ch={ch} bg={C.dark}>
-      <DotGrid opacity={0.5} />
-      <Glow y="30%" size={1000} opacity={0.18} />
-      <div style={{ position: "absolute", left: 120, top: 140, opacity: lineOpacity(frame, ch, 0) }}>
-        <Kinetic line={ch.lines[0]} size={44} weight={500} align="left" maxWidth={1300} />
+    <Scene ch={ch} bg={C.dark} push={0.05} hits={[storeAt, countAt]} shake={14}>
+      <Aurora intensity={1} />
+      <DotGrid opacity={0.45} />
+      <Dust count={40} seed="eco" />
+      {/* line 0 headline (top zone) */}
+      <div style={{ position: "absolute", left: 120, top: 130, opacity: lineOpacity(frame, ch, 0) }}>
+        <Kinetic line={ch.lines[0]} size={48} weight={600} align="left" maxWidth={1600} />
       </div>
-      <svg width={1920} height={1080} style={{ position: "absolute", opacity: grid * (1 - statement * 0.7) }}>
-        {SERVICES.map((s, i) => {
-          const tx = gx + (i % cols) * (tileW + 24) + tileW / 2;
-          const ty = gy + Math.floor(i / cols) * (tileH + 24);
-          const go = x402 + (i % 6) * 9 + Math.floor(i / 6) * 5;
-          const t = interpolate((frame - go) % 70, [0, 40], [0, 1], clamp);
-          return frame > go ? (
-            <g key={s}>
-              <line x1={agent.x} y1={agent.y} x2={tx} y2={ty} stroke="#1F3A2E" strokeWidth={1} />
-              <circle cx={agent.x + (tx - agent.x) * t} cy={agent.y + (ty - agent.y) * t} r={5} fill={C.brand} opacity={1 - t * 0.3} />
-            </g>
-          ) : null;
-        })}
-        <circle cx={agent.x} cy={agent.y} r={42} fill="#0F1C17" stroke={C.brand} strokeWidth={2} opacity={p(frame, x402 - 20, 20)} />
-        <text x={agent.x} y={agent.y + 8} textAnchor="middle" fill={C.brand} fontFamily={MONO} fontSize={20} opacity={p(frame, x402 - 20, 20)}>
-          agent
-        </text>
-      </svg>
-      <div style={{ position: "absolute", left: gx, top: gy, width: cols * tileW + (cols - 1) * 24, opacity: grid * (1 - statement * 0.7) }}>
-        <div style={{ display: "grid", gridTemplateColumns: `repeat(${cols}, ${tileW}px)`, gap: 24 }}>
-          {[...SERVICES, "+ 38 more", "", "", "", "", ""].slice(0, 18).map((s, i) => {
-            const isYours = i === 17;
-            const go = x402 + (i % 6) * 9 + Math.floor(i / 6) * 5 + 40;
-            const lit = s && !s.startsWith("+") && frame > go ? 1 : 0;
-            const o = p(frame, L(ch, 0) + i * 2, 16);
+      {/* network zone */}
+      <AbsoluteFill style={{ opacity: grid }}>
+        <svg width={1920} height={1080} style={{ position: "absolute" }}>
+          {SERVICES.map((s, i) => {
+            const tx = gx + (i % cols) * (tw + gap) + tw / 2;
+            const ty = gy + Math.floor(i / cols) * (th + gap) + th / 2;
+            const go = x402 + i * 4;
+            const t = interpolate((frame - go) % 50, [0, 26], [0, 1], clamp);
+            return frame > go ? (
+              <g key={s}>
+                <line x1={hub.x} y1={hub.y} x2={tx} y2={ty} stroke="#1F4A37" strokeWidth={1.5} />
+                <circle cx={hub.x + (tx - hub.x) * t} cy={hub.y + (ty - hub.y) * t} r={7} fill={C.brand} opacity={1 - t * 0.3} style={{ filter: `drop-shadow(0 0 6px ${C.brand})` }} />
+              </g>
+            ) : null;
+          })}
+          <g opacity={p(frame, L(ch, 0), 10)}>
+            <circle cx={hub.x} cy={hub.y} r={92} fill="#0F1C17" stroke={C.brand} strokeWidth={3} style={{ filter: `drop-shadow(0 0 20px ${C.brandDeep})` }} />
+            <circle cx={hub.x} cy={hub.y} r={130} fill="none" stroke={C.brand} strokeOpacity={0.25} strokeDasharray="4 12" transform={`rotate(${frame} ${hub.x} ${hub.y})`} />
+            <text x={hub.x} y={hub.y + 10} textAnchor="middle" fill="white" fontFamily={MONO} fontSize={30}>
+              agent
+            </text>
+          </g>
+        </svg>
+        <div style={{ position: "absolute", left: gx, top: gy, display: "grid", gridTemplateColumns: `repeat(${cols}, ${tw}px)`, gap }}>
+          {[...SERVICES, "+ 38 more", "", ""].map((s, i) => {
+            const isYours = i === 14;
+            const lit = s && !s.startsWith("+") && frame > x402 + i * 4 + 26;
+            const o = p(frame, L(ch, 0) + 4 + i * 2, 8);
             if (isYours) {
+              const yo = p(frame, yoursAt, 8);
               return (
-                <div
-                  key={i}
-                  style={{
-                    height: tileH,
-                    borderRadius: 16,
-                    border: `2px solid ${C.brand}`,
-                    background: "#0F1C17",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    padding: "0 20px",
-                    opacity: yours,
-                    scale: String(0.9 + yours * 0.1),
-                    boxShadow: `0 0 ${30 * yours}px ${C.brandDeep}66`,
-                  }}
-                >
-                  <div style={{ fontSize: 24, fontWeight: 600, color: C.brand }}>Your service</div>
-                  <div style={{ fontFamily: MONO, fontSize: 16, color: "#8A8A8A", marginTop: 6 }}>listed to agents</div>
+                <div key={i} style={{ height: th, borderRadius: 18, border: `2px solid ${C.brand}`, background: `linear-gradient(135deg, #0F1C17, #12392A)`, display: "flex", flexDirection: "column", justifyContent: "center", padding: "0 22px", opacity: yo, scale: String(frame >= yoursAt ? pop(frame, yoursAt) : 0.5), boxShadow: `0 0 50px ${C.brandDeep}88` }}>
+                  <div style={{ fontSize: 28, fontWeight: 800, color: C.brand }}>Your service</div>
+                  <div style={{ fontFamily: MONO, fontSize: 16, color: "#BDBDBD", marginTop: 4 }}>sold directly to agents</div>
                 </div>
               );
             }
             return (
-              <div
-                key={i}
-                style={{
-                  height: tileH,
-                  borderRadius: 16,
-                  border: `1px solid ${lit ? "#2E5A46" : C.borderDark}`,
-                  background: s ? "#111" : "#0D0D0D",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  padding: "0 20px",
-                  opacity: s ? o : o * 0.35,
-                }}
-              >
-                <div style={{ fontSize: 24, fontWeight: 600, color: s.startsWith("+") ? "#8A8A8A" : "white" }}>{s}</div>
-                {lit ? (
-                  <div style={{ fontFamily: MONO, fontSize: 16, color: C.brand, marginTop: 6 }}>paid via x402 ✓</div>
-                ) : null}
+              <div key={i} style={{ height: th, borderRadius: 18, border: `1px solid ${lit ? C.brandDeep : C.borderDark}`, background: lit ? "#0F1C17" : s ? "#121212" : "transparent", display: "flex", flexDirection: "column", justifyContent: "center", padding: "0 22px", opacity: s ? o : 0, boxShadow: lit ? `0 0 24px ${C.brandDeep}44` : "none" }}>
+                <div style={{ fontSize: 26, fontWeight: 700, color: s.startsWith("+") ? "#9A9A9A" : "white" }}>{s}</div>
+                {lit ? <div style={{ fontFamily: MONO, fontSize: 16, color: C.brand, marginTop: 4 }}>paid via x402 ✓</div> : null}
               </div>
             );
           })}
         </div>
-      </div>
-      {/* statement */}
-      <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", opacity: statement }}>
-        <div style={{ fontSize: 110, fontWeight: 300, color: "#BDBDBD", letterSpacing: -2, opacity: p(frame, L(ch, 1), 14) }}>
-          Not a store.
-        </div>
-        <div style={{ fontSize: 130, fontWeight: 600, color: C.brand, letterSpacing: -3, opacity: p(frame, W(ch, 1, "an"), 14) }}>
-          An economy.
+        {/* bottom zone: counter + plain words */}
+        <div style={{ position: "absolute", left: 120, right: 120, top: 830, display: "flex", alignItems: "center", gap: 40 }}>
+          <div style={{ display: "flex", alignItems: "baseline", gap: 18, opacity: p(frame, countAt, 6) }}>
+            <span style={{ fontSize: 130, fontWeight: 800, letterSpacing: -5, background: GREEN_GRADIENT, WebkitBackgroundClip: "text", color: "transparent" }}>{Math.round(count)}+</span>
+            <span style={{ fontSize: 30, color: "#CFCFCF" }}>services integrated</span>
+          </div>
+          <div style={{ flex: 1 }} />
+          <Plain at={x402 + 10}>x402: payment built into the web request. No checkout.</Plain>
         </div>
       </AbsoluteFill>
-      <div
-        style={{
-          position: "absolute",
-          left: 120,
-          bottom: 70,
-          display: "flex",
-          alignItems: "baseline",
-          gap: 20,
-          opacity: p(frame, L(ch, 3), 16),
-        }}
-      >
-        <span style={{ fontSize: 110, fontWeight: 600, color: "white", letterSpacing: -4 }}>{Math.round(count)}+</span>
-        <span style={{ fontSize: 28, color: "#9A9A9A" }}>services integrated · discovered and paid on-chain via x402</span>
-      </div>
-      <Sfx name="boom" at={L(ch, 1)} volume={0.2} />
+      {/* statement — grid fully hidden meanwhile */}
+      <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", opacity: stmt }}>
+        <Slam text="Not a store." at={L(ch, 1)} size={120} weight={500} color="#BDBDBD" />
+        <div style={{ height: 20 }} />
+        <Slam text="An economy." at={storeAt} size={170} gradient={GREEN_GRADIENT} glow={C.brand} />
+      </AbsoluteFill>
+      <Shockwave at={storeAt} />
+      <Sparks at={storeAt} count={80} />
+      <Flash at={storeAt} color={C.brand} peak={0.3} />
+      <Sfx name="whip" at={yoursAt} volume={0.18} />
     </Scene>
   );
 };
 
 /* ============ 9. Proof ============ */
 const Laurel: React.FC<{ flip?: boolean }> = ({ flip }) => (
-  <svg width="70" height="120" viewBox="0 0 70 120" style={{ scale: flip ? "-1 1" : "1" }}>
+  <svg width="80" height="150" viewBox="0 0 70 120" style={{ scale: flip ? "-1 1" : "1", filter: `drop-shadow(0 0 10px ${C.brandDeep})` }}>
     {new Array(6).fill(0).map((_, i) => (
-      <ellipse key={i} cx={42 - i * 3} cy={14 + i * 17} rx={8} ry={16} fill={C.brand} opacity={0.85} transform={`rotate(${-40 + i * 6} ${42 - i * 3} ${14 + i * 17})`} />
+      <ellipse key={i} cx={42 - i * 3} cy={14 + i * 17} rx={8} ry={16} fill={C.brand} transform={`rotate(${-40 + i * 6} ${42 - i * 3} ${14 + i * 17})`} />
     ))}
   </svg>
 );
 
 export const Proof: React.FC<SceneProps> = ({ ch }) => {
   const frame = useCurrentFrame();
-  const vol = interpolate(frame, [L(ch, 1), L(ch, 1) + 45], [0, 5], { ...clamp, easing: ease });
-  const pct = interpolate(frame, [L(ch, 2), L(ch, 2) + 45], [90, 99.9], { ...clamp, easing: ease });
-  const txs = interpolate(frame, [W(ch, 2, "hundred"), W(ch, 2, "hundred") + 30], [0, 100], { ...clamp, easing: ease });
-  const stat = (at: number) => ({ opacity: p(frame, at, 18), translate: `0px ${(1 - p(frame, at, 18)) * 40}px` });
+  const a = L(ch, 1);
+  const b = L(ch, 2);
+  const c = L(ch, 3);
+  const vol = interpolate(frame, [a, a + 18], [0, 5], { ...clamp, easing: ease });
+  const pct = interpolate(frame, [b, b + 18], [90, 99.9], { ...clamp, easing: ease });
+  const txAt = W(ch, 2, "hundred");
+  const txs = interpolate(frame, [txAt, txAt + 14], [0, 100], { ...clamp, easing: ease });
+  const col = (at: number) => ({ opacity: p(frame, at, 6), scale: String(frame >= at ? pop(frame, at) : 0.5) });
   return (
-    <Scene ch={ch} bg={C.dark}>
+    <Scene ch={ch} bg={C.dark} push={0.08} hits={[a, b, c]} shake={22}>
+      <Aurora intensity={1.2} />
       <DotGrid opacity={0.4} />
-      <Glow y="55%" size={1500} opacity={0.2} />
-      <div style={{ position: "absolute", left: 0, right: 0, top: 170, display: "flex", justifyContent: "center", opacity: lineOpacity(frame, ch, 0, ch.dur - 20) }}>
-        <Kinetic line={ch.lines[0]} size={56} weight={400} color="#CFCFCF" />
+      <Dust count={70} seed="pr" speed={1.4} />
+      <div style={{ position: "absolute", left: 0, right: 0, top: 160, display: "flex", justifyContent: "center", opacity: lineOpacity(frame, ch, 0, ch.dur) }}>
+        <Kinetic line={ch.lines[0]} size={64} weight={600} accent={["proven"]} />
       </div>
-      <div style={{ position: "absolute", left: 120, right: 120, top: 380, display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 40 }}>
-        <div style={stat(L(ch, 1))}>
-          <div style={{ fontSize: 150, fontWeight: 600, color: "white", letterSpacing: -6 }}>${vol.toFixed(vol < 5 ? 1 : 0)}B+</div>
-          <div style={{ fontSize: 30, color: "#9A9A9A", marginTop: 8 }}>routed volume</div>
+      <div style={{ position: "absolute", left: 120, right: 120, top: 360, display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 50 }}>
+        <div style={{ ...col(a), textAlign: "center" }}>
+          <div style={{ fontSize: 170, fontWeight: 800, letterSpacing: -7, color: "white" }}>${vol.toFixed(vol < 5 ? 1 : 0)}B+</div>
+          <div style={{ fontSize: 32, color: "#CFCFCF" }}>routed volume</div>
         </div>
-        <div style={stat(L(ch, 2))}>
-          <div style={{ fontSize: 150, fontWeight: 600, color: C.brand, letterSpacing: -6 }}>{pct.toFixed(1)}%</div>
-          <div style={{ fontSize: 30, color: "#9A9A9A", marginTop: 8 }}>
-            submission success across <span style={{ color: "white" }}>{Math.round(txs)}k+</span> transactions
+        <div style={{ ...col(b), textAlign: "center" }}>
+          <div style={{ fontSize: 170, fontWeight: 800, letterSpacing: -7, background: GREEN_GRADIENT, WebkitBackgroundClip: "text", color: "transparent" }}>{pct.toFixed(1)}%</div>
+          <div style={{ fontSize: 32, color: "#CFCFCF" }}>
+            success across <span style={{ color: "white", fontWeight: 700 }}>{Math.round(txs)}k+</span> transactions
           </div>
         </div>
-        <div style={{ ...stat(L(ch, 3)), display: "flex", alignItems: "center", gap: 10 }}>
+        <div style={{ ...col(c), display: "flex", alignItems: "center", justifyContent: "center", gap: 12 }}>
           <Laurel />
           <div style={{ textAlign: "center" }}>
-            <div style={{ fontFamily: MONO, fontSize: 26, letterSpacing: 4, color: "#9A9A9A" }}>TOKEN2049</div>
-            <div style={{ fontSize: 64, fontWeight: 600, color: "white", lineHeight: 1.05, marginTop: 8 }}>NEXUS</div>
-            <div style={{ fontSize: 64, fontWeight: 600, color: C.brand, lineHeight: 1.05 }}>Top 50</div>
+            <div style={{ fontFamily: MONO, fontSize: 28, letterSpacing: 5, color: "#CFCFCF" }}>TOKEN2049</div>
+            <div style={{ fontSize: 84, fontWeight: 800, color: "white", lineHeight: 1 }}>NEXUS</div>
+            <div style={{ fontSize: 84, fontWeight: 800, color: C.brand, lineHeight: 1 }}>Top 50</div>
           </div>
           <Laurel flip />
         </div>
       </div>
-      <Sfx name="impact" at={L(ch, 1)} volume={0.25} />
-      <Sfx name="impact" at={L(ch, 2)} volume={0.25} />
-      <Sfx name="ding" at={L(ch, 3)} volume={0.2} />
+      {[a, b, c].map((h, i) => (
+        <React.Fragment key={h}>
+          <Shockwave at={h} x={360 + i * 600} y={500} size={1000} rings={2} />
+          <Sparks at={h} x={360 + i * 600} y={500} count={40} spread={0.8} />
+          <Flash at={h} color={C.brand} peak={0.22} len={7} />
+        </React.Fragment>
+      ))}
     </Scene>
   );
 };
@@ -501,59 +465,56 @@ const VERBS = [
 
 export const Close: React.FC<SceneProps> = ({ ch, credit }) => {
   const frame = useCurrentFrame();
-  const verbsOut = out(frame, L(ch, 2) - 10, 14);
+  const verbsO = Math.min(p(frame, L(ch, 1) - 4, 6), out(frame, L(ch, 2) - 6, 6));
   const q = lineOpacity(frame, ch, 2);
   const logoAt = L(ch, 3) - 4;
-  const mark = p(frame, logoAt, 24);
-  const word = interpolate(frame, [logoAt + 8, logoAt + 40], [0, 1], { ...clamp, easing: ease });
-  const creditAt = ch.dur - 140;
+  const word = interpolate(frame, [logoAt + 6, logoAt + 26], [0, 1], { ...clamp, easing: ease });
+  const markS = interpolate(frame - logoAt, [0, 8, 14], [2.4, 0.95, 1], { ...clamp, easing: ease });
+  const verbHits = VERBS.map(([v]) => W(ch, 1, v.toLowerCase()));
   return (
-    <Scene ch={ch} bg={C.surface} light>
+    <Scene ch={ch} bg="#FFFFFF" light push={0.05} hits={[...verbHits, logoAt]} shake={8}>
+      <Aurora light intensity={1} />
       <DotGrid light opacity={0.5} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", opacity: lineOpacity(frame, ch, 0) }}>
-        <Kinetic line={ch.lines[0]} size={72} weight={500} color={C.ink} accent={["rules"]} accentColor={C.brandText} />
+        <Kinetic line={ch.lines[0]} size={84} weight={700} color={C.ink} accent={["rules"]} accentColor={C.brandText} />
       </AbsoluteFill>
-      <div style={{ position: "absolute", left: 300, top: 250, opacity: p(frame, L(ch, 1) - 4, 10) * verbsOut }}>
+      <div style={{ position: "absolute", left: 260, top: 200, opacity: verbsO }}>
         {VERBS.map(([v, rest], i) => {
-          const at = W(ch, 1, v.toLowerCase());
-          const o = p(frame, at - 2, 14);
+          const at = verbHits[i];
+          const o = p(frame, at - 2, 5);
           return (
-            <div key={v} style={{ display: "flex", alignItems: "baseline", gap: 28, height: 140, opacity: o, translate: `${(1 - o) * -30}px 0px` }}>
-              <span style={{ width: 300, fontSize: 104, fontWeight: 600, color: C.brandText, letterSpacing: -3 }}>{v}</span>
-              <span style={{ fontSize: 52, fontWeight: 400, color: C.ink }}>{rest}</span>
+            <div key={v} style={{ display: "flex", alignItems: "center", gap: 40, height: 170, opacity: o, translate: `${(1 - o) * -60}px 0px` }}>
+              <div style={{ width: 380 }}>
+                <Slam text={v} at={at - 2} size={140} gradient={`linear-gradient(120deg, ${C.brandDeep}, #249361 60%, ${C.brandText})`} />
+              </div>
+              <span style={{ fontSize: 60, fontWeight: 600, color: C.ink }}>{rest}</span>
             </div>
           );
         })}
       </div>
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", opacity: q }}>
-        <Kinetic line={ch.lines[2]} size={96} weight={600} color={C.ink} accent={["day", "one"]} accentColor={C.brandText} maxWidth={1500} />
+        <Kinetic line={ch.lines[2]} size={110} weight={800} color={C.ink} accent={["day", "one"]} accentColor={C.brandText} maxWidth={1500} />
       </AbsoluteFill>
-      <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", gap: 44, opacity: mark }}>
-        <Logo width={900} markIn={mark} wordIn={word} />
-        <div style={{ fontSize: 36, fontWeight: 300, letterSpacing: 5, color: C.muted, opacity: p(frame, W(ch, 3, "superpowering"), 20) }}>
-          Superpowering the agent economy
+      <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", gap: 46, opacity: p(frame, logoAt, 4) }}>
+        <div style={{ scale: String(frame >= logoAt ? markS : 0), filter: `drop-shadow(0 20px 40px rgba(10,107,71,0.25))` }}>
+          <Logo width={980} markIn={1} wordIn={word} />
         </div>
-        <div style={{ fontFamily: MONO, fontSize: 28, color: C.brandText, opacity: p(frame, W(ch, 3, "superpowering") + 30, 20) }}>
-          abstraxn.com
+        <div style={{ fontSize: 42, fontWeight: 400, letterSpacing: 8, color: C.muted, opacity: p(frame, W(ch, 3, "superpowering"), 10) }}>
+          Superpowering the <span style={{ color: C.brandText, fontWeight: 700 }}>agent economy</span>
         </div>
+        <div style={{ fontFamily: MONO, fontSize: 32, color: C.brandText, opacity: p(frame, W(ch, 3, "superpowering") + 20, 10) }}>abstraxn.com</div>
       </AbsoluteFill>
+      <Shockwave at={logoAt} color={C.brandDeep} rings={4} size={2200} />
+      <Sparks at={logoAt} count={100} spread={1.3} />
+      <Flash at={logoAt} color={C.brand} peak={0.45} len={12} />
       {credit ? (
-        <div
-          style={{
-            position: "absolute",
-            bottom: 64,
-            width: "100%",
-            textAlign: "center",
-            fontSize: 22,
-            letterSpacing: 2,
-            color: C.muted,
-            opacity: p(frame, creditAt, 24),
-          }}
-        >
-          Produced by <span style={{ color: C.ink, fontWeight: 600 }}>{credit}</span>
+        <div style={{ position: "absolute", bottom: 64, width: "100%", textAlign: "center", fontSize: 24, letterSpacing: 2, color: C.muted, opacity: p(frame, ch.dur - 120, 14) }}>
+          Produced by <span style={{ color: C.ink, fontWeight: 700 }}>{credit}</span>
         </div>
       ) : null}
-      <Sfx name="impact" at={logoAt} volume={0.2} />
+      {verbHits.map((h) => (
+        <Sfx key={h} name="whip" at={h} volume={0.14} />
+      ))}
     </Scene>
   );
 };

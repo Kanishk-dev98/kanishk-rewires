@@ -18,18 +18,20 @@ ROOT = Path(__file__).resolve().parent.parent
 STUDIO = ROOT / "studio"
 PUBLIC = STUDIO / "public"
 FPS = 30
-LINE_GAP = 24  # frames of silence between narration lines
+LINE_GAP = 8  # frames of silence between narration lines
+BAR = 60  # frames per bar at 120 BPM / 30 fps; chapters end on a downbeat
 
 # (lead-in, tail) frames per chapter: room for visuals to breathe.
 PADS = {
-    "cold_open": (90, 45), "reveal": (60, 150), "shift": (75, 90), "problem": (75, 90),
-    "kyi": (75, 105), "settlement": (75, 105), "demo": (75, 120), "economy": (75, 90),
-    "proof": (60, 120), "close": (45, 240),
+    "cold_open": (24, 12), "reveal": (45, 30), "shift": (20, 20), "problem": (20, 24),
+    "kyi": (20, 24), "settlement": (20, 24), "demo": (20, 30), "economy": (20, 24),
+    "proof": (20, 30), "close": (20, 150),
 }
 INTENSITY = {
-    "cold_open": 0, "reveal": 1, "shift": 1, "problem": 1, "kyi": 2, "settlement": 2,
-    "demo": 2, "economy": 3, "proof": 4, "close": 1,
+    "cold_open": 0, "reveal": 3, "shift": 2, "problem": 1, "kyi": 3, "settlement": 3,
+    "demo": 3, "economy": 4, "proof": 5, "close": 4,
 }
+REVEAL_HIT = 30  # frames into the reveal chapter where the logo slams in
 
 
 async def tts(text, voice, rate, path):
@@ -80,6 +82,7 @@ async def build(spec_path: Path, render: bool, credit: str):
             srt.append((g0, g0 + dur_s, text))
             local += dur + LINE_GAP
         dur_total = local - LINE_GAP + tail
+        dur_total = -(-dur_total // BAR) * BAR  # round up to a whole bar
         chapters.append({"id": ch["id"], "name": ch["name"], "index": ci, "start": cursor, "dur": dur_total,
                          "illustrative": bool(ch.get("illustrative")), "lines": lines})
         sections.append({"start": cursor / FPS, "end": (cursor + dur_total) / FPS,
@@ -90,9 +93,23 @@ async def build(spec_path: Path, render: bool, credit: str):
     music = f"music/{fid}_score.wav"
     sec_path = ROOT / "out" / f"{fid}.sections.json"
     sec_path.parent.mkdir(parents=True, exist_ok=True)
-    sec_path.write_text(json.dumps({"total": total_s, "sections": sections}))
+    by_id = {c["id"]: c for c in chapters}
+    hits = []
+    if "reveal" in by_id:
+        hits.append((by_id["reveal"]["start"] + REVEAL_HIT) / FPS)
+    for cid in ("kyi", "economy"):
+        if cid in by_id:
+            hits.append(by_id[cid]["start"] / FPS)
+    if "proof" in by_id:
+        pr = by_id["proof"]
+        hits += [(pr["start"] + ln["start"]) / FPS for ln in pr["lines"][1:]]
+    end_hit = total_s - 4
+    if "close" in by_id:
+        cl = by_id["close"]
+        end_hit = (cl["start"] + cl["lines"][-1]["start"] - 4) / FPS
+    sec_path.write_text(json.dumps({"total": total_s, "sections": sections, "hits": hits, "end_hit": end_hit}))
     (PUBLIC / "music").mkdir(parents=True, exist_ok=True)
-    subprocess.run([sys.executable, str(ROOT / "pipeline" / "make_score.py"), str(sec_path), str(PUBLIC / music)], check=True)
+    subprocess.run([sys.executable, str(ROOT / "pipeline" / "make_epic_score.py"), str(sec_path), str(PUBLIC / music)], check=True)
 
     props = {"title": spec["title"], "music": music, "credit": credit, "chapters": chapters}
     props_path = ROOT / "out" / f"{fid}.props.json"

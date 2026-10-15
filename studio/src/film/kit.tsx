@@ -56,7 +56,7 @@ export const ease = Easing.bezier(0.22, 1, 0.36, 1);
 export const easeInOut = Easing.bezier(0.65, 0, 0.35, 1);
 
 /** 0→1 eased progress starting at `at` over `len` frames. */
-export const p = (frame: number, at: number, len = 20) =>
+export const p = (frame: number, at: number, len = 12) =>
   interpolate(frame, [at, at + len], [0, 1], { ...clamp, easing: ease });
 
 /** 1→0 eased progress (fade out) starting at `at`. */
@@ -80,18 +80,22 @@ export const Scene: React.FC<{
   bg: string;
   children: React.ReactNode;
   light?: boolean;
-}> = ({ ch, bg, children, light }) => {
+  push?: number;
+  hits?: number[];
+  shake?: number;
+}> = ({ ch, bg, children, light, push = 0.06, hits = [], shake = 16 }) => {
   const frame = useCurrentFrame();
-  const opacity = Math.min(p(frame, 0, 15), out(frame, ch.dur - 15, 15));
+  const opacity = Math.min(p(frame, 0, 6), out(frame, ch.dur - 6, 6));
   return (
-    <AbsoluteFill style={{ background: bg, opacity, fontFamily: SANS, color: light ? C.ink : "white" }}>
-      {children}
+    <AbsoluteFill style={{ background: bg, opacity, fontFamily: SANS, color: light ? C.ink : "white", overflow: "hidden" }}>
+      <Camera dur={ch.dur} push={push} hits={hits} amount={shake}>
+        {children}
+      </Camera>
       {ch.index > 1 ? <ChapterTag ch={ch} light={light} /> : null}
       {ch.illustrative ? <Illustrative light={light} /> : null}
       {ch.lines.map((l) => (
         <Audio key={l.src} from={l.start} src={staticFile(l.src)} />
       ))}
-      <Audio src={staticFile("sfx/whoosh.wav")} volume={0.12} />
     </AbsoluteFill>
   );
 };
@@ -205,7 +209,7 @@ export const Kinetic: React.FC<{
 export const lineOpacity = (frame: number, ch: Chapter, i: number, holdUntil?: number) => {
   const start = ch.lines[i].start - 6;
   const end = holdUntil ?? (ch.lines[i + 1] ? ch.lines[i + 1].start - 4 : ch.dur - 20);
-  return Math.min(p(frame, start, 12), out(frame, end - 10, 12));
+  return Math.min(p(frame, start, 8), out(frame, end - 8, 8));
 };
 
 /* ---------- Logo (official paths, animated in parts) ---------- */
@@ -377,3 +381,296 @@ export const Chip: React.FC<{
 export const Sfx: React.FC<{ name: string; at: number; volume?: number }> = ({ name, at, volume = 0.3 }) => (
   <Audio from={Math.max(0, Math.round(at))} src={staticFile(`sfx/${name}.wav`)} volume={volume} />
 );
+
+
+/* ================= Cinematic FX ================= */
+
+/** Slow push-in plus decaying shake after each hit frame. */
+export const Camera: React.FC<{ dur: number; push: number; hits: number[]; amount: number; children: React.ReactNode }> = ({
+  dur,
+  push,
+  hits,
+  amount,
+  children,
+}) => {
+  const frame = useCurrentFrame();
+  const zoom = interpolate(frame, [0, dur], [1, 1 + push], clamp);
+  let dx = 0;
+  let dy = 0;
+  let kick = 0;
+  for (const h of hits) {
+    if (frame >= h && frame < h + 30) {
+      const d = Math.exp(-(frame - h) / 5);
+      dx += (random(`cx${h}-${frame}`) - 0.5) * 2 * amount * d;
+      dy += (random(`cy${h}-${frame}`) - 0.5) * 2 * amount * d;
+      kick = Math.max(kick, d * 0.03);
+    }
+  }
+  return <AbsoluteFill style={{ scale: String(zoom + kick), translate: `${dx}px ${dy}px` }}>{children}</AbsoluteFill>;
+};
+
+/** Moving brand-green aurora: layered radial blobs drifting slowly. */
+export const Aurora: React.FC<{ light?: boolean; intensity?: number }> = ({ light, intensity = 1 }) => {
+  const frame = useCurrentFrame();
+  const blobs = [
+    { c: light ? "#BDF5DA" : C.brandDeep, x: 25, y: 30, s: 1100, sp: 90 },
+    { c: light ? "#D9FBEA" : "#249361", x: 75, y: 70, s: 1300, sp: 120 },
+    { c: light ? "#E9FDF3" : "#68F4B5", x: 60, y: 20, s: 800, sp: 70 },
+    { c: light ? "#C8F7E0" : C.brandText, x: 15, y: 85, s: 1000, sp: 110 },
+  ];
+  return (
+    <AbsoluteFill style={{ overflow: "hidden" }}>
+      {blobs.map((b, i) => {
+        const x = b.x + Math.sin(frame / b.sp + i) * 8;
+        const y = b.y + Math.cos(frame / (b.sp * 1.3) + i * 2) * 8;
+        return (
+          <div
+            key={i}
+            style={{
+              position: "absolute",
+              left: `${x}%`,
+              top: `${y}%`,
+              width: b.s,
+              height: b.s,
+              marginLeft: -b.s / 2,
+              marginTop: -b.s / 2,
+              borderRadius: "50%",
+              background: `radial-gradient(circle, ${b.c} 0%, transparent 62%)`,
+              opacity: (light ? 0.9 : i === 2 ? 0.22 : 0.32) * intensity,
+              filter: "blur(30px)",
+            }}
+          />
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+
+/** Full-frame flash that decays. */
+export const Flash: React.FC<{ at: number; len?: number; color?: string; peak?: number }> = ({ at, len = 10, color = "white", peak = 0.85 }) => {
+  const frame = useCurrentFrame();
+  return (
+    <AbsoluteFill
+      style={{ background: color, opacity: interpolate(frame, [at - 1, at, at + len], [0, peak, 0], clamp), pointerEvents: "none" }}
+    />
+  );
+};
+
+/** Expanding rings from a point. */
+export const Shockwave: React.FC<{ at: number; x?: number; y?: number; color?: string; rings?: number; size?: number }> = ({
+  at,
+  x = 960,
+  y = 540,
+  color = C.brand,
+  rings = 3,
+  size = 1800,
+}) => {
+  const frame = useCurrentFrame();
+  if (frame < at) return null;
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      {new Array(rings).fill(0).map((_, i) => {
+        const t = interpolate(frame - at - i * 5, [0, 36], [0, 1], { ...clamp, easing: ease });
+        if (t <= 0 || t >= 1) return null;
+        const d = 80 + t * size;
+        return (
+          <div
+            key={i}
+            style={{
+              position: "absolute",
+              left: x - d / 2,
+              top: y - d / 2,
+              width: d,
+              height: d,
+              borderRadius: "50%",
+              border: `${8 * (1 - t) + 1}px solid ${color}`,
+              opacity: 1 - t,
+              boxShadow: `0 0 ${30 * (1 - t)}px ${color}`,
+            }}
+          />
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+
+/** Burst of green sparks from a point. */
+export const Sparks: React.FC<{ at: number; x?: number; y?: number; count?: number; spread?: number }> = ({
+  at,
+  x = 960,
+  y = 540,
+  count = 60,
+  spread = 1,
+}) => {
+  const frame = useCurrentFrame();
+  const t = frame - at;
+  if (t < 0 || t > 70) return null;
+  const palette = [C.brand, "#68F4B5", C.brandDeep, "#FFFFFF", "#B8F5D8"];
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      {new Array(count).fill(0).map((_, i) => {
+        const a = random(`sa${at}${i}`) * Math.PI * 2;
+        const v = (10 + random(`sv${at}${i}`) * 26) * spread;
+        const d = v * t * Math.exp(-t / 22);
+        const size = 3 + random(`sz${at}${i}`) * 7;
+        return (
+          <div
+            key={i}
+            style={{
+              position: "absolute",
+              left: x + Math.cos(a) * d,
+              top: y + Math.sin(a) * d + t * t * 0.03,
+              width: size,
+              height: size,
+              borderRadius: "50%",
+              background: palette[i % palette.length],
+              boxShadow: `0 0 ${size * 2}px ${C.brand}`,
+              opacity: interpolate(t, [40, 70], [1, 0], clamp),
+            }}
+          />
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+
+/** Ambient drifting particles. */
+export const Dust: React.FC<{ count?: number; color?: string; seed?: string; speed?: number }> = ({
+  count = 50,
+  color = C.brand,
+  seed = "d",
+  speed = 1,
+}) => {
+  const frame = useCurrentFrame();
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      {new Array(count).fill(0).map((_, i) => {
+        const x0 = random(`${seed}x${i}`) * 1920;
+        const y0 = random(`${seed}y${i}`) * 1080;
+        const v = (0.3 + random(`${seed}v${i}`)) * speed;
+        const y = (((y0 - frame * v * 1.5) % 1080) + 1080) % 1080;
+        const size = 2 + random(`${seed}s${i}`) * 4;
+        return (
+          <div
+            key={i}
+            style={{
+              position: "absolute",
+              left: x0 + Math.sin((frame + i * 30) / 50) * 20,
+              top: y,
+              width: size,
+              height: size,
+              borderRadius: "50%",
+              background: color,
+              opacity: 0.25 + 0.5 * Math.abs(Math.sin((frame + i * 17) / 30)),
+              boxShadow: `0 0 ${size * 3}px ${color}`,
+            }}
+          />
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+
+/** Big word that slams in with overshoot, blur and glow. */
+export const Slam: React.FC<{
+  text: React.ReactNode;
+  at: number;
+  size: number;
+  color?: string;
+  gradient?: string;
+  weight?: number;
+  glow?: string;
+  style?: React.CSSProperties;
+}> = ({ text, at, size, color = "white", gradient, weight = 800, glow, style }) => {
+  const frame = useCurrentFrame();
+  const t = frame - at;
+  const s = interpolate(t, [0, 7, 12], [2.1, 0.95, 1], { ...clamp, easing: ease });
+  return (
+    <div
+      style={{
+        fontSize: size,
+        fontWeight: weight,
+        lineHeight: 1,
+        letterSpacing: -size * 0.035,
+        color: gradient ? "transparent" : color,
+        background: gradient,
+        WebkitBackgroundClip: gradient ? "text" : undefined,
+        backgroundClip: gradient ? "text" : undefined,
+        scale: String(t < 0 ? 0 : s),
+        opacity: interpolate(t, [0, 3], [0, 1], clamp),
+        filter: `blur(${interpolate(t, [0, 6], [14, 0], clamp)}px)${glow ? ` drop-shadow(0 0 40px ${glow})` : ""}`,
+        ...style,
+      }}
+    >
+      {text}
+    </div>
+  );
+};
+
+export const GREEN_GRADIENT = `linear-gradient(120deg, #B8F5D8 0%, ${C.brand} 35%, ${C.brandDeep} 70%, #249361 100%)`;
+export const DEEP_GRADIENT = `linear-gradient(120deg, ${C.brandDeep} 0%, #249361 50%, ${C.brandText} 100%)`;
+
+/** "In plain words" explainer label for non-experts. */
+export const Plain: React.FC<{ children: React.ReactNode; at: number; light?: boolean; style?: React.CSSProperties }> = ({
+  children,
+  at,
+  light,
+  style,
+}) => {
+  const frame = useCurrentFrame();
+  const o = p(frame, at, 12);
+  return (
+    <div
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        gap: 14,
+        padding: "12px 22px",
+        borderRadius: 14,
+        background: light ? "#F2FBF7" : "rgba(114,227,173,0.08)",
+        border: `1px solid ${light ? "#BDEBD5" : "rgba(114,227,173,0.3)"}`,
+        opacity: o,
+        translate: `0px ${(1 - o) * 14}px`,
+        ...style,
+      }}
+    >
+      <span style={{ fontFamily: MONO, fontSize: 16, letterSpacing: 2, color: light ? C.brandText : C.brand }}>IN PLAIN WORDS</span>
+      <span style={{ fontSize: 26, fontWeight: 500, color: light ? C.ink : "white" }}>{children}</span>
+    </div>
+  );
+};
+
+/** Green light-sweep transition overlay (placed across a chapter cut). */
+export const Sweep: React.FC = () => {
+  const frame = useCurrentFrame();
+  const bands = [
+    { c: "#249361", w: 520, d: 0 },
+    { c: C.brandDeep, w: 360, d: 2 },
+    { c: C.brand, w: 220, d: 4 },
+    { c: "#E9FDF3", w: 90, d: 6 },
+  ];
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", pointerEvents: "none" }}>
+      {bands.map((b, i) => {
+        const x = interpolate(frame - b.d, [0, 16], [-900, 2600], { ...clamp, easing: easeInOut });
+        return (
+          <div
+            key={i}
+            style={{
+              position: "absolute",
+              top: -400,
+              left: x,
+              width: b.w,
+              height: 1900,
+              rotate: "18deg",
+              background: b.c,
+              opacity: 0.92,
+              boxShadow: `0 0 80px ${b.c}`,
+            }}
+          />
+        );
+      })}
+      <AbsoluteFill style={{ background: "white", opacity: interpolate(frame, [7, 9, 14], [0, 0.35, 0], clamp) }} />
+    </AbsoluteFill>
+  );
+};

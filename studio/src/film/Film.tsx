@@ -1,7 +1,7 @@
 import { Audio } from "@remotion/media";
 import React from "react";
 import { AbsoluteFill, CalculateMetadataFunction, interpolate, Sequence, staticFile, useVideoConfig } from "remotion";
-import { C, Chapter, clamp } from "./kit";
+import { C, Chapter, clamp, Sweep } from "./kit";
 import { ColdOpen, Kyi, Problem, Reveal, Shift } from "./scenesA";
 import { Close, Demo, Economy, Proof, Settlement } from "./scenesB";
 
@@ -24,14 +24,15 @@ const SCENES: Record<string, React.FC<{ ch: Chapter; credit?: string }>> = {
   close: Close,
 };
 
+// The reveal opens with its own light burst, so it gets no sweep.
+const NO_SWEEP = new Set(["cold_open", "reveal"]);
+
 export const Film: React.FC<FilmProps> = ({ music, credit, chapters }) => {
   const { fps, durationInFrames } = useVideoConfig();
-  // Global narration windows, for ducking the score under the voice.
   const spans = chapters.flatMap((c) => c.lines.map((l) => [c.start + l.start, c.start + l.start + l.dur] as const));
   const duck = (f: number) => {
-    // Distance (frames) to the nearest narration; 0 while the voice is speaking.
     const dist = Math.min(...spans.map(([a, b]) => (f < a ? a - f : f > b ? f - b : 0)));
-    return 0.42 + 0.33 * Math.min(1, Math.max(0, (dist - 6) / 18));
+    return 0.5 + 0.45 * Math.min(1, Math.max(0, (dist - 4) / 12));
   };
   return (
     <AbsoluteFill style={{ background: C.dark }}>
@@ -43,12 +44,18 @@ export const Film: React.FC<FilmProps> = ({ music, credit, chapters }) => {
           </Sequence>
         ) : null;
       })}
+      {chapters
+        .filter((ch) => !NO_SWEEP.has(ch.id))
+        .map((ch) => (
+          <Sequence key={`sw-${ch.id}`} from={ch.start - 8} durationInFrames={22} premountFor={fps} name={`sweep → ${ch.name}`}>
+            <Sweep />
+            <Audio src={staticFile("sfx/whoosh.wav")} volume={0.35} />
+          </Sequence>
+        ))}
       {music ? (
         <Audio
           src={staticFile(music)}
-          volume={(f) =>
-            duck(f) * interpolate(f, [0, 30, durationInFrames - 90, durationInFrames], [0, 1, 1, 0], clamp)
-          }
+          volume={(f) => duck(f) * interpolate(f, [0, 4, durationInFrames - 30, durationInFrames], [0, 1, 1, 0], clamp)}
         />
       ) : null}
     </AbsoluteFill>
