@@ -4,7 +4,7 @@ The full context from the founding sessions (2026-10-14 and 2026-10-15), so work
 
 ## The goal
 
-Run an agent that publishes **at least 10 marketing and AI videos a day**, starting on Instagram Reels and later YouTube and other platforms (the GitHub repo description says "production grade videos for instagram youtube and all"). The channel is the user's **personal** account, a new marketing channel they are about to start. The user wants production quality ("Marvel-grade"), not basic slideshows.
+The user is **Alok Diwan** (works at Antier, which builds Abstraxn). Run an agent that publishes **at least 10 marketing and AI videos a day**, starting on Instagram Reels and later YouTube and other platforms (the GitHub repo description says "production grade videos for instagram youtube and all"). The channel is the user's **personal** account, a new marketing channel they are about to start. The user wants production quality ("Marvel-grade"), not basic slideshows.
 
 ## What the user has told us they want
 
@@ -34,6 +34,7 @@ Run an agent that publishes **at least 10 marketing and AI videos a day**, start
 11. **Research:** 84 verified Instagram reference accounts + the market gap (`research/instagram/`).
 12. **User shared** https://github.com/calesthio/OpenMontage → assessed (`references/README.md`).
 13. **User asked** for one separate git space with everything → this repo, https://github.com/kanishk-986/video-agent (private).
+14. **Abstraxn introduction film** (2026-10-15): 5:39 landscape institutional film for Alok Diwan's personal portfolio (interview selection), approved by Ankit. Brand pulled from abstraxn.com/brand-kit; Microsoft Andrew voice; original score; dashboard recreated as motion graphics; credit "Produced by Alok Diwan". See `films/abstraxn-intro/`.
 
 ## Key insight: the gap
 

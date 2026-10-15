@@ -15,6 +15,9 @@
 | 2026-10-15 | Daily batch on our engine; OpenMontage only for hero videos + reference analysis | OpenMontage is interactive and heavy per video; see `references/README.md` |
 | 2026-10-15 | Recommend 5 reels/day for the first 2 weeks, then 10 | New accounts posting 10/day can be flagged as spam |
 
+| 2026-10-15 | Abstraxn film on Remotion (free licence) | Personal portfolio piece by an individual; company adoption would need a Company License or a HyperFrames port |
+| 2026-10-15 | Abstraxn film: no burned-in captions, SRT for YouTube instead | Institutional/Apple style keeps frames clean; YouTube CC covers accessibility |
+
 ## Paid upgrades (not adopted yet)
 
 | Upgrade | Cost | Gain |

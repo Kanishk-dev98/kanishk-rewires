@@ -9,10 +9,12 @@ An automated factory for faceless, motion-graphics Instagram Reels about AI and 
 ## What's in here
 
 ```
-pipeline/       Python build scripts: voiceover, timing sync, render, loudness
+films/          Long-form landscape films (abstraxn-intro: 5:39 brand film)
+pipeline/       Python build scripts: voiceover, timing sync, score, render, loudness
 reels/          One JSON spec per reel (script + data). The daily agent will write these.
 studio/         Remotion project (React → MP4)
   src/story/    "Story" engine: 9 cinematic scene types + effects + captions
+  src/film/     "Film" engine: 16:9 brand films (Abstraxn scenes, brand kit, word-synced type)
   src/StatRace.tsx  Single-scene stat race template (v1/v2)
   public/sfx/   Sound effects (Remotion's free library + our synthesized ones)
 research/       Everything learned so far

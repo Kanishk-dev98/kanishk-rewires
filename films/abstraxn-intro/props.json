@@ -1,0 +1,3214 @@
+{
+ "title": "Abstraxn: Superpowering the agent economy",
+ "music": "music/abstraxn_intro_score.wav",
+ "credit": "Alok Diwan",
+ "chapters": [
+  {
+   "id": "cold_open",
+   "name": "Cold open",
+   "index": 0,
+   "start": 0,
+   "dur": 784,
+   "illustrative": false,
+   "lines": [
+    {
+     "text": "For as long as there has been money, a person has stood behind every payment.",
+     "start": 90,
+     "dur": 149,
+     "src": "vo/abstraxn_intro/c00_l00.mp3",
+     "words": [
+      {
+       "w": "For",
+       "s": 4,
+       "e": 8
+      },
+      {
+       "w": "as",
+       "s": 8,
+       "e": 10
+      },
+      {
+       "w": "long",
+       "s": 11,
+       "e": 19
+      },
+      {
+       "w": "as",
+       "s": 19,
+       "e": 22
+      },
+      {
+       "w": "there",
+       "s": 22,
+       "e": 26
+      },
+      {
+       "w": "has",
+       "s": 26,
+       "e": 31
+      },
+      {
+       "w": "been",
+       "s": 31,
+       "e": 36
+      },
+      {
+       "w": "money",
+       "s": 36,
+       "e": 49
+      },
+      {
+       "w": "a",
+       "s": 63,
+       "e": 66
+      },
+      {
+       "w": "person",
+       "s": 66,
+       "e": 79
+      },
+      {
+       "w": "has",
+       "s": 79,
+       "e": 83
+      },
+      {
+       "w": "stood",
+       "s": 83,
+       "e": 92
+      },
+      {
+       "w": "behind",
+       "s": 93,
+       "e": 109
+      },
+      {
+       "w": "every",
+       "s": 115,
+       "e": 122
+      },
+      {
+       "w": "payment",
+       "s": 122,
+       "e": 137
+      }
+     ]
+    },
+    {
+     "text": "A signature. A card. A click.",
+     "start": 263,
+     "dur": 98,
+     "src": "vo/abstraxn_intro/c00_l01.mp3",
+     "words": [
+      {
+       "w": "A",
+       "s": 4,
+       "e": 6
+      },
+      {
+       "w": "signature",
+       "s": 6,
+       "e": 31
+      },
+      {
+       "w": "A",
+       "s": 44,
+       "e": 45
+      },
+      {
+       "w": "card",
+       "s": 45,
+       "e": 59
+      },
+      {
+       "w": "A",
+       "s": 72,
+       "e": 74
+      },
+      {
+       "w": "click",
+       "s": 74,
+       "e": 86
+      }
+     ]
+    },
+    {
+     "text": "That is changing.",
+     "start": 385,
+     "dur": 56,
+     "src": "vo/abstraxn_intro/c00_l02.mp3",
+     "words": [
+      {
+       "w": "That",
+       "s": 3,
+       "e": 6
+      },
+      {
+       "w": "is",
+       "s": 6,
+       "e": 9
+      },
+      {
+       "w": "changing",
+       "s": 9,
+       "e": 30
+      }
+     ]
+    },
+    {
+     "text": "Software is learning to act on our behalf. To search. To negotiate. To buy.",
+     "start": 465,
+     "dur": 194,
+     "src": "vo/abstraxn_intro/c00_l03.mp3",
+     "words": [
+      {
+       "w": "Software",
+       "s": 3,
+       "e": 24
+      },
+      {
+       "w": "is",
+       "s": 28,
+       "e": 33
+      },
+      {
+       "w": "learning",
+       "s": 33,
+       "e": 43
+      },
+      {
+       "w": "to",
+       "s": 43,
+       "e": 47
+      },
+      {
+       "w": "act",
+       "s": 49,
+       "e": 60
+      },
+      {
+       "w": "on",
+       "s": 60,
+       "e": 64
+      },
+      {
+       "w": "our",
+       "s": 64,
+       "e": 67
+      },
+      {
+       "w": "behalf",
+       "s": 67,
+       "e": 86
+      },
+      {
+       "w": "To",
+       "s": 99,
+       "e": 101
+      },
+      {
+       "w": "search",
+       "s": 101,
+       "e": 118
+      },
+      {
+       "w": "To",
+       "s": 131,
+       "e": 133
+      },
+      {
+       "w": "negotiate",
+       "s": 133,
+       "e": 158
+      },
+      {
+       "w": "To",
+       "s": 171,
+       "e": 172
+      },
+      {
+       "w": "buy",
+       "s": 173,
+       "e": 183
+      }
+     ]
+    },
+    {
+     "text": "And soon, to spend.",
+     "start": 683,
+     "dur": 56,
+     "src": "vo/abstraxn_intro/c00_l04.mp3",
+     "words": [
+      {
+       "w": "And",
+       "s": 3,
+       "e": 8
+      },
+      {
+       "w": "soon",
+       "s": 8,
+       "e": 20
+      },
+      {
+       "w": "to",
+       "s": 20,
+       "e": 23
+      },
+      {
+       "w": "spend",
+       "s": 23,
+       "e": 39
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reveal",
+   "name": "Brand reveal",
+   "index": 1,
+   "start": 784,
+   "dur": 363,
+   "illustrative": false,
+   "lines": [
+    {
+     "text": "Abstraxn.",
+     "start": 60,
+     "dur": 56,
+     "src": "vo/abstraxn_intro/c01_l00.mp3",
+     "words": [
+      {
+       "w": "Abstraxn",
+       "s": 3,
+       "e": 27
+      }
+     ]
+    },
+    {
+     "text": "Superpowering the agent economy.",
+     "start": 140,
+     "dur": 73,
+     "src": "vo/abstraxn_intro/c01_l01.mp3",
+     "words": [
+      {
+       "w": "Superpowering",
+       "s": 3,
+       "e": 26
+      },
+      {
+       "w": "the",
+       "s": 27,
+       "e": 30
+      },
+      {
+       "w": "agent",
+       "s": 34,
+       "e": 44
+      },
+      {
+       "w": "economy",
+       "s": 44,
+       "e": 62
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shift",
+   "name": "The shift",
+   "index": 2,
+   "start": 1147,
+   "dur": 879,
+   "illustrative": false,
+   "lines": [
+    {
+     "text": "AI agents are no longer demos.",
+     "start": 75,
+     "dur": 76,
+     "src": "vo/abstraxn_intro/c02_l00.mp3",
+     "words": [
+      {
+       "w": "AI",
+       "s": 3,
+       "e": 14
+      },
+      {
+       "w": "agents",
+       "s": 14,
+       "e": 27
+      },
+      {
+       "w": "are",
+       "s": 28,
+       "e": 30
+      },
+      {
+       "w": "no",
+       "s": 30,
+       "e": 36
+      },
+      {
+       "w": "longer",
+       "s": 36,
+       "e": 45
+      },
+      {
+       "w": "demos",
+       "s": 45,
+       "e": 64
+      }
+     ]
+    },
+    {
+     "text": "They book travel, call APIs, pay for data and settle invoices. At machine speed, around the clock.",
+     "start": 175,
+     "dur": 242,
+     "src": "vo/abstraxn_intro/c02_l01.mp3",
+     "words": [
+      {
+       "w": "They",
+       "s": 3,
+       "e": 6
+      },
+      {
+       "w": "book",
+       "s": 6,
+       "e": 12
+      },
+      {
+       "w": "travel",
+       "s": 12,
+       "e": 29
+      },
+      {
+       "w": "call",
+       "s": 36,
+       "e": 43
+      },
+      {
+       "w": "APIs",
+       "s": 47,
+       "e": 73
+      },
+      {
+       "w": "pay",
+       "s": 85,
+       "e": 92
+      },
+      {
+       "w": "for",
+       "s": 92,
+       "e": 97
+      },
+      {
+       "w": "data",
+       "s": 97,
+       "e": 113
+      },
+      {
+       "w": "and",
+       "s": 118,
+       "e": 122
+      },
+      {
+       "w": "settle",
+       "s": 122,
+       "e": 133
+      },
+      {
+       "w": "invoices",
+       "s": 133,
+       "e": 156
+      },
+      {
+       "w": "At",
+       "s": 168,
+       "e": 171
+      },
+      {
+       "w": "machine",
+       "s": 171,
+       "e": 184
+      },
+      {
+       "w": "speed",
+       "s": 184,
+       "e": 197
+      },
+      {
+       "w": "around",
+       "s": 205,
+       "e": 213
+      },
+      {
+       "w": "the",
+       "s": 214,
+       "e": 215
+      },
+      {
+       "w": "clock",
+       "s": 215,
+       "e": 230
+      }
+     ]
+    },
+    {
+     "text": "Every one of those actions needs a way to hold money, and a way to spend it.",
+     "start": 441,
+     "dur": 152,
+     "src": "vo/abstraxn_intro/c02_l02.mp3",
+     "words": [
+      {
+       "w": "Every",
+       "s": 3,
+       "e": 10
+      },
+      {
+       "w": "one",
+       "s": 10,
+       "e": 14
+      },
+      {
+       "w": "of",
+       "s": 14,
+       "e": 16
+      },
+      {
+       "w": "those",
+       "s": 16,
+       "e": 22
+      },
+      {
+       "w": "actions",
+       "s": 22,
+       "e": 38
+      },
+      {
+       "w": "needs",
+       "s": 38,
+       "e": 47
+      },
+      {
+       "w": "a",
+       "s": 47,
+       "e": 49
+      },
+      {
+       "w": "way",
+       "s": 49,
+       "e": 58
+      },
+      {
+       "w": "to",
+       "s": 58,
+       "e": 60
+      },
+      {
+       "w": "hold",
+       "s": 60,
+       "e": 73
+      },
+      {
+       "w": "money",
+       "s": 73,
+       "e": 87
+      },
+      {
+       "w": "and",
+       "s": 96,
+       "e": 107
+      },
+      {
+       "w": "a",
+       "s": 115,
+       "e": 116
+      },
+      {
+       "w": "way",
+       "s": 116,
+       "e": 120
+      },
+      {
+       "w": "to",
+       "s": 120,
+       "e": 122
+      },
+      {
+       "w": "spend",
+       "s": 122,
+       "e": 134
+      },
+      {
+       "w": "it",
+       "s": 134,
+       "e": 140
+      }
+     ]
+    },
+    {
+     "text": "But the financial system was built for people. Not for software that makes decisions.",
+     "start": 617,
+     "dur": 172,
+     "src": "vo/abstraxn_intro/c02_l03.mp3",
+     "words": [
+      {
+       "w": "But",
+       "s": 3,
+       "e": 6
+      },
+      {
+       "w": "the",
+       "s": 6,
+       "e": 9
+      },
+      {
+       "w": "financial",
+       "s": 9,
+       "e": 26
+      },
+      {
+       "w": "system",
+       "s": 26,
+       "e": 39
+      },
+      {
+       "w": "was",
+       "s": 39,
+       "e": 45
+      },
+      {
+       "w": "built",
+       "s": 45,
+       "e": 53
+      },
+      {
+       "w": "for",
+       "s": 53,
+       "e": 59
+      },
+      {
+       "w": "people",
+       "s": 60,
+       "e": 76
+      },
+      {
+       "w": "Not",
+       "s": 89,
+       "e": 94
+      },
+      {
+       "w": "for",
+       "s": 95,
+       "e": 98
+      },
+      {
+       "w": "software",
+       "s": 98,
+       "e": 120
+      },
+      {
+       "w": "that",
+       "s": 121,
+       "e": 127
+      },
+      {
+       "w": "makes",
+       "s": 127,
+       "e": 136
+      },
+      {
+       "w": "decisions",
+       "s": 136,
+       "e": 161
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "problem",
+   "name": "The problem",
+   "index": 3,
+   "start": 2026,
+   "dur": 1064,
+   "illustrative": false,
+   "lines": [
+    {
+     "text": "Today, we know how to answer three questions.",
+     "start": 75,
+     "dur": 99,
+     "src": "vo/abstraxn_intro/c03_l00.mp3",
+     "words": [
+      {
+       "w": "Today",
+       "s": 3,
+       "e": 13
+      },
+      {
+       "w": "we",
+       "s": 22,
+       "e": 26
+      },
+      {
+       "w": "know",
+       "s": 26,
+       "e": 30
+      },
+      {
+       "w": "how",
+       "s": 30,
+       "e": 34
+      },
+      {
+       "w": "to",
+       "s": 34,
+       "e": 36
+      },
+      {
+       "w": "answer",
+       "s": 36,
+       "e": 48
+      },
+      {
+       "w": "three",
+       "s": 49,
+       "e": 64
+      },
+      {
+       "w": "questions",
+       "s": 65,
+       "e": 87
+      }
+     ]
+    },
+    {
+     "text": "Know Your Customer tells you who a person is.",
+     "start": 198,
+     "dur": 78,
+     "src": "vo/abstraxn_intro/c03_l01.mp3",
+     "words": [
+      {
+       "w": "Know",
+       "s": 3,
+       "e": 7
+      },
+      {
+       "w": "Your",
+       "s": 7,
+       "e": 10
+      },
+      {
+       "w": "Customer",
+       "s": 11,
+       "e": 26
+      },
+      {
+       "w": "tells",
+       "s": 27,
+       "e": 35
+      },
+      {
+       "w": "you",
+       "s": 35,
+       "e": 38
+      },
+      {
+       "w": "who",
+       "s": 38,
+       "e": 42
+      },
+      {
+       "w": "a",
+       "s": 42,
+       "e": 44
+      },
+      {
+       "w": "person",
+       "s": 44,
+       "e": 56
+      },
+      {
+       "w": "is",
+       "s": 56,
+       "e": 67
+      }
+     ]
+    },
+    {
+     "text": "Know Your Transaction tells you where money moved.",
+     "start": 300,
+     "dur": 95,
+     "src": "vo/abstraxn_intro/c03_l02.mp3",
+     "words": [
+      {
+       "w": "Know",
+       "s": 2,
+       "e": 6
+      },
+      {
+       "w": "Your",
+       "s": 6,
+       "e": 9
+      },
+      {
+       "w": "Transaction",
+       "s": 10,
+       "e": 35
+      },
+      {
+       "w": "tells",
+       "s": 39,
+       "e": 47
+      },
+      {
+       "w": "you",
+       "s": 48,
+       "e": 51
+      },
+      {
+       "w": "where",
+       "s": 51,
+       "e": 57
+      },
+      {
+       "w": "money",
+       "s": 57,
+       "e": 67
+      },
+      {
+       "w": "moved",
+       "s": 68,
+       "e": 83
+      }
+     ]
+    },
+    {
+     "text": "Know Your Agent tells you which software is acting.",
+     "start": 419,
+     "dur": 92,
+     "src": "vo/abstraxn_intro/c03_l03.mp3",
+     "words": [
+      {
+       "w": "Know",
+       "s": 3,
+       "e": 6
+      },
+      {
+       "w": "Your",
+       "s": 6,
+       "e": 12
+      },
+      {
+       "w": "Agent",
+       "s": 12,
+       "e": 23
+      },
+      {
+       "w": "tells",
+       "s": 24,
+       "e": 32
+      },
+      {
+       "w": "you",
+       "s": 32,
+       "e": 36
+      },
+      {
+       "w": "which",
+       "s": 36,
+       "e": 42
+      },
+      {
+       "w": "software",
+       "s": 42,
+       "e": 62
+      },
+      {
+       "w": "is",
+       "s": 63,
+       "e": 66
+      },
+      {
+       "w": "acting",
+       "s": 67,
+       "e": 81
+      }
+     ]
+    },
+    {
+     "text": "Each one tells you who. None of them tells you what was authorised.",
+     "start": 535,
+     "dur": 114,
+     "src": "vo/abstraxn_intro/c03_l04.mp3",
+     "words": [
+      {
+       "w": "Each",
+       "s": 3,
+       "e": 7
+      },
+      {
+       "w": "one",
+       "s": 7,
+       "e": 12
+      },
+      {
+       "w": "tells",
+       "s": 12,
+       "e": 20
+      },
+      {
+       "w": "you",
+       "s": 20,
+       "e": 24
+      },
+      {
+       "w": "who",
+       "s": 24,
+       "e": 35
+      },
+      {
+       "w": "None",
+       "s": 48,
+       "e": 53
+      },
+      {
+       "w": "of",
+       "s": 53,
+       "e": 55
+      },
+      {
+       "w": "them",
+       "s": 55,
+       "e": 59
+      },
+      {
+       "w": "tells",
+       "s": 59,
+       "e": 67
+      },
+      {
+       "w": "you",
+       "s": 67,
+       "e": 70
+      },
+      {
+       "w": "what",
+       "s": 70,
+       "e": 73
+      },
+      {
+       "w": "was",
+       "s": 73,
+       "e": 77
+      },
+      {
+       "w": "authorised",
+       "s": 77,
+       "e": 102
+      }
+     ]
+    },
+    {
+     "text": "And none carries a rule an agent can actually be stopped by.",
+     "start": 673,
+     "dur": 116,
+     "src": "vo/abstraxn_intro/c03_l05.mp3",
+     "words": [
+      {
+       "w": "And",
+       "s": 3,
+       "e": 7
+      },
+      {
+       "w": "none",
+       "s": 8,
+       "e": 18
+      },
+      {
+       "w": "carries",
+       "s": 19,
+       "e": 30
+      },
+      {
+       "w": "a",
+       "s": 30,
+       "e": 31
+      },
+      {
+       "w": "rule",
+       "s": 31,
+       "e": 43
+      },
+      {
+       "w": "an",
+       "s": 43,
+       "e": 47
+      },
+      {
+       "w": "agent",
+       "s": 47,
+       "e": 61
+      },
+      {
+       "w": "can",
+       "s": 64,
+       "e": 67
+      },
+      {
+       "w": "actually",
+       "s": 67,
+       "e": 76
+      },
+      {
+       "w": "be",
+       "s": 76,
+       "e": 79
+      },
+      {
+       "w": "stopped",
+       "s": 80,
+       "e": 92
+      },
+      {
+       "w": "by",
+       "s": 92,
+       "e": 104
+      }
+     ]
+    },
+    {
+     "text": "So most teams discover what their agent spent in a log they read afterwards.",
+     "start": 813,
+     "dur": 161,
+     "src": "vo/abstraxn_intro/c03_l06.mp3",
+     "words": [
+      {
+       "w": "So",
+       "s": 3,
+       "e": 9
+      },
+      {
+       "w": "most",
+       "s": 10,
+       "e": 20
+      },
+      {
+       "w": "teams",
+       "s": 20,
+       "e": 31
+      },
+      {
+       "w": "discover",
+       "s": 32,
+       "e": 48
+      },
+      {
+       "w": "what",
+       "s": 49,
+       "e": 53
+      },
+      {
+       "w": "their",
+       "s": 53,
+       "e": 58
+      },
+      {
+       "w": "agent",
+       "s": 62,
+       "e": 73
+      },
+      {
+       "w": "spent",
+       "s": 73,
+       "e": 89
+      },
+      {
+       "w": "in",
+       "s": 92,
+       "e": 95
+      },
+      {
+       "w": "a",
+       "s": 95,
+       "e": 96
+      },
+      {
+       "w": "log",
+       "s": 96,
+       "e": 111
+      },
+      {
+       "w": "they",
+       "s": 111,
+       "e": 116
+      },
+      {
+       "w": "read",
+       "s": 116,
+       "e": 126
+      },
+      {
+       "w": "afterwards",
+       "s": 126,
+       "e": 149
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kyi",
+   "name": "Know Your Intent",
+   "index": 4,
+   "start": 3090,
+   "dur": 1424,
+   "illustrative": false,
+   "lines": [
+    {
+     "text": "Abstraxn introduces a fourth layer. Know Your Intent.",
+     "start": 75,
+     "dur": 127,
+     "src": "vo/abstraxn_intro/c04_l00.mp3",
+     "words": [
+      {
+       "w": "Abstraxn",
+       "s": 3,
+       "e": 21
+      },
+      {
+       "w": "introduces",
+       "s": 21,
+       "e": 45
+      },
+      {
+       "w": "a",
+       "s": 49,
+       "e": 51
+      },
+      {
+       "w": "fourth",
+       "s": 51,
+       "e": 65
+      },
+      {
+       "w": "layer",
+       "s": 65,
+       "e": 79
+      },
+      {
+       "w": "Know",
+       "s": 92,
+       "e": 97
+      },
+      {
+       "w": "Your",
+       "s": 97,
+       "e": 101
+      },
+      {
+       "w": "Intent",
+       "s": 102,
+       "e": 116
+      }
+     ]
+    },
+    {
+     "text": "It begins with a Precept. Signed spend authority, bound to an agent's identity. A cap. A period. An allowlist. An expiry.",
+     "start": 226,
+     "dur": 308,
+     "src": "vo/abstraxn_intro/c04_l01.mp3",
+     "words": [
+      {
+       "w": "It",
+       "s": 3,
+       "e": 6
+      },
+      {
+       "w": "begins",
+       "s": 6,
+       "e": 16
+      },
+      {
+       "w": "with",
+       "s": 16,
+       "e": 19
+      },
+      {
+       "w": "a",
+       "s": 19,
+       "e": 20
+      },
+      {
+       "w": "Precept",
+       "s": 21,
+       "e": 41
+      },
+      {
+       "w": "Signed",
+       "s": 54,
+       "e": 65
+      },
+      {
+       "w": "spend",
+       "s": 66,
+       "e": 74
+      },
+      {
+       "w": "authority",
+       "s": 74,
+       "e": 94
+      },
+      {
+       "w": "bound",
+       "s": 107,
+       "e": 116
+      },
+      {
+       "w": "to",
+       "s": 117,
+       "e": 120
+      },
+      {
+       "w": "an",
+       "s": 120,
+       "e": 125
+      },
+      {
+       "w": "agent's",
+       "s": 127,
+       "e": 138
+      },
+      {
+       "w": "identity",
+       "s": 138,
+       "e": 156
+      },
+      {
+       "w": "A",
+       "s": 170,
+       "e": 172
+      },
+      {
+       "w": "cap.",
+       "s": 172,
+       "e": 195
+      },
+      {
+       "w": "A",
+       "s": 209,
+       "e": 210
+      },
+      {
+       "w": "period",
+       "s": 210,
+       "e": 227
+      },
+      {
+       "w": "An",
+       "s": 239,
+       "e": 241
+      },
+      {
+       "w": "allowlist",
+       "s": 241,
+       "e": 264
+      },
+      {
+       "w": "An",
+       "s": 276,
+       "e": 280
+      },
+      {
+       "w": "expiry",
+       "s": 280,
+       "e": 296
+      }
+     ]
+    },
+    {
+     "text": "Then, before any money moves, every payment is checked against it.",
+     "start": 558,
+     "dur": 146,
+     "src": "vo/abstraxn_intro/c04_l02.mp3",
+     "words": [
+      {
+       "w": "Then",
+       "s": 3,
+       "e": 11
+      },
+      {
+       "w": "before",
+       "s": 18,
+       "e": 33
+      },
+      {
+       "w": "any",
+       "s": 37,
+       "e": 42
+      },
+      {
+       "w": "money",
+       "s": 42,
+       "e": 51
+      },
+      {
+       "w": "moves",
+       "s": 51,
+       "e": 73
+      },
+      {
+       "w": "every",
+       "s": 80,
+       "e": 89
+      },
+      {
+       "w": "payment",
+       "s": 89,
+       "e": 104
+      },
+      {
+       "w": "is",
+       "s": 105,
+       "e": 107
+      },
+      {
+       "w": "checked",
+       "s": 108,
+       "e": 117
+      },
+      {
+       "w": "against",
+       "s": 117,
+       "e": 129
+      },
+      {
+       "w": "it",
+       "s": 129,
+       "e": 134
+      }
+     ]
+    },
+    {
+     "text": "Allowed. Denied. Or routed to a human. In under fifty milliseconds.",
+     "start": 728,
+     "dur": 172,
+     "src": "vo/abstraxn_intro/c04_l03.mp3",
+     "words": [
+      {
+       "w": "Allowed",
+       "s": 3,
+       "e": 18
+      },
+      {
+       "w": "Denied",
+       "s": 31,
+       "e": 44
+      },
+      {
+       "w": "Or",
+       "s": 57,
+       "e": 61
+      },
+      {
+       "w": "routed",
+       "s": 65,
+       "e": 78
+      },
+      {
+       "w": "to",
+       "s": 78,
+       "e": 83
+      },
+      {
+       "w": "a",
+       "s": 83,
+       "e": 84
+      },
+      {
+       "w": "human",
+       "s": 85,
+       "e": 97
+      },
+      {
+       "w": "In",
+       "s": 110,
+       "e": 113
+      },
+      {
+       "w": "under",
+       "s": 113,
+       "e": 119
+      },
+      {
+       "w": "fifty",
+       "s": 119,
+       "e": 132
+      },
+      {
+       "w": "milliseconds",
+       "s": 132,
+       "e": 160
+      }
+     ]
+    },
+    {
+     "text": "And every decision, including every refusal, produces a signed receipt that anyone can verify.",
+     "start": 924,
+     "dur": 237,
+     "src": "vo/abstraxn_intro/c04_l04.mp3",
+     "words": [
+      {
+       "w": "And",
+       "s": 3,
+       "e": 8
+      },
+      {
+       "w": "every",
+       "s": 9,
+       "e": 18
+      },
+      {
+       "w": "decision",
+       "s": 18,
+       "e": 37
+      },
+      {
+       "w": "including",
+       "s": 50,
+       "e": 67
+      },
+      {
+       "w": "every",
+       "s": 68,
+       "e": 79
+      },
+      {
+       "w": "refusal",
+       "s": 79,
+       "e": 103
+      },
+      {
+       "w": "produces",
+       "s": 114,
+       "e": 131
+      },
+      {
+       "w": "a",
+       "s": 131,
+       "e": 133
+      },
+      {
+       "w": "signed",
+       "s": 133,
+       "e": 146
+      },
+      {
+       "w": "receipt",
+       "s": 146,
+       "e": 165
+      },
+      {
+       "w": "that",
+       "s": 168,
+       "e": 174
+      },
+      {
+       "w": "anyone",
+       "s": 174,
+       "e": 191
+      },
+      {
+       "w": "can",
+       "s": 195,
+       "e": 201
+      },
+      {
+       "w": "verify",
+       "s": 201,
+       "e": 225
+      }
+     ]
+    },
+    {
+     "text": "Identity tells you who. Intent tells you what they authorised.",
+     "start": 1185,
+     "dur": 134,
+     "src": "vo/abstraxn_intro/c04_l05.mp3",
+     "words": [
+      {
+       "w": "Identity",
+       "s": 3,
+       "e": 22
+      },
+      {
+       "w": "tells",
+       "s": 26,
+       "e": 37
+      },
+      {
+       "w": "you",
+       "s": 37,
+       "e": 41
+      },
+      {
+       "w": "who",
+       "s": 41,
+       "e": 53
+      },
+      {
+       "w": "Intent",
+       "s": 65,
+       "e": 78
+      },
+      {
+       "w": "tells",
+       "s": 78,
+       "e": 87
+      },
+      {
+       "w": "you",
+       "s": 87,
+       "e": 90
+      },
+      {
+       "w": "what",
+       "s": 90,
+       "e": 93
+      },
+      {
+       "w": "they",
+       "s": 93,
+       "e": 97
+      },
+      {
+       "w": "authorised",
+       "s": 97,
+       "e": 122
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "settlement",
+   "name": "Settlement layer",
+   "index": 5,
+   "start": 4514,
+   "dur": 1651,
+   "illustrative": false,
+   "lines": [
+    {
+     "text": "Beneath the Authority Gate sits a complete settlement layer.",
+     "start": 75,
+     "dur": 118,
+     "src": "vo/abstraxn_intro/c05_l00.mp3",
+     "words": [
+      {
+       "w": "Beneath",
+       "s": 3,
+       "e": 13
+      },
+      {
+       "w": "the",
+       "s": 13,
+       "e": 16
+      },
+      {
+       "w": "Authority",
+       "s": 16,
+       "e": 32
+      },
+      {
+       "w": "Gate",
+       "s": 33,
+       "e": 44
+      },
+      {
+       "w": "sits",
+       "s": 49,
+       "e": 57
+      },
+      {
+       "w": "a",
+       "s": 57,
+       "e": 59
+      },
+      {
+       "w": "complete",
+       "s": 59,
+       "e": 78
+      },
+      {
+       "w": "settlement",
+       "s": 78,
+       "e": 93
+      },
+      {
+       "w": "layer",
+       "s": 94,
+       "e": 107
+      }
+     ]
+    },
+    {
+     "text": "Embedded wallets give every user, and every agent, an ERC-4337 smart account. Secured by passkeys and social recovery. No seed phrases.",
+     "start": 217,
+     "dur": 428,
+     "src": "vo/abstraxn_intro/c05_l01.mp3",
+     "words": [
+      {
+       "w": "Embedded",
+       "s": 3,
+       "e": 15
+      },
+      {
+       "w": "wallets",
+       "s": 15,
+       "e": 33
+      },
+      {
+       "w": "give",
+       "s": 36,
+       "e": 46
+      },
+      {
+       "w": "every",
+       "s": 51,
+       "e": 61
+      },
+      {
+       "w": "user",
+       "s": 62,
+       "e": 78
+      },
+      {
+       "w": "and",
+       "s": 90,
+       "e": 94
+      },
+      {
+       "w": "every",
+       "s": 99,
+       "e": 110
+      },
+      {
+       "w": "agent",
+       "s": 110,
+       "e": 123
+      },
+      {
+       "w": "an",
+       "s": 136,
+       "e": 140
+      },
+      {
+       "w": "ERC-4337",
+       "s": 145,
+       "e": 243
+      },
+      {
+       "w": "smart",
+       "s": 243,
+       "e": 253
+      },
+      {
+       "w": "account",
+       "s": 253,
+       "e": 267
+      },
+      {
+       "w": "Secured",
+       "s": 280,
+       "e": 293
+      },
+      {
+       "w": "by",
+       "s": 293,
+       "e": 297
+      },
+      {
+       "w": "passkeys",
+       "s": 297,
+       "e": 325
+      },
+      {
+       "w": "and",
+       "s": 329,
+       "e": 336
+      },
+      {
+       "w": "social",
+       "s": 337,
+       "e": 349
+      },
+      {
+       "w": "recovery",
+       "s": 349,
+       "e": 367
+      },
+      {
+       "w": "No",
+       "s": 380,
+       "e": 386
+      },
+      {
+       "w": "seed",
+       "s": 386,
+       "e": 395
+      },
+      {
+       "w": "phrases",
+       "s": 395,
+       "e": 416
+      }
+     ]
+    },
+    {
+     "text": "The Bundler packages operations, and simulates them before they ever reach the chain.",
+     "start": 669,
+     "dur": 176,
+     "src": "vo/abstraxn_intro/c05_l02.mp3",
+     "words": [
+      {
+       "w": "The",
+       "s": 3,
+       "e": 6
+      },
+      {
+       "w": "Bundler",
+       "s": 7,
+       "e": 22
+      },
+      {
+       "w": "packages",
+       "s": 22,
+       "e": 38
+      },
+      {
+       "w": "operations",
+       "s": 38,
+       "e": 65
+      },
+      {
+       "w": "and",
+       "s": 73,
+       "e": 79
+      },
+      {
+       "w": "simulates",
+       "s": 84,
+       "e": 106
+      },
+      {
+       "w": "them",
+       "s": 106,
+       "e": 112
+      },
+      {
+       "w": "before",
+       "s": 112,
+       "e": 124
+      },
+      {
+       "w": "they",
+       "s": 124,
+       "e": 128
+      },
+      {
+       "w": "ever",
+       "s": 131,
+       "e": 140
+      },
+      {
+       "w": "reach",
+       "s": 140,
+       "e": 149
+      },
+      {
+       "w": "the",
+       "s": 149,
+       "e": 152
+      },
+      {
+       "w": "chain",
+       "s": 152,
+       "e": 165
+      }
+     ]
+    },
+    {
+     "text": "The Paymaster sponsors gas, with per-agent budgets and daily caps, payable in USDC or other tokens.",
+     "start": 869,
+     "dur": 243,
+     "src": "vo/abstraxn_intro/c05_l03.mp3",
+     "words": [
+      {
+       "w": "The",
+       "s": 3,
+       "e": 6
+      },
+      {
+       "w": "Paymaster",
+       "s": 6,
+       "e": 26
+      },
+      {
+       "w": "sponsors",
+       "s": 26,
+       "e": 43
+      },
+      {
+       "w": "gas",
+       "s": 43,
+       "e": 65
+      },
+      {
+       "w": "with",
+       "s": 72,
+       "e": 77
+      },
+      {
+       "w": "per-agent",
+       "s": 77,
+       "e": 94
+      },
+      {
+       "w": "budgets",
+       "s": 94,
+       "e": 105
+      },
+      {
+       "w": "and",
+       "s": 106,
+       "e": 108
+      },
+      {
+       "w": "daily",
+       "s": 108,
+       "e": 119
+      },
+      {
+       "w": "caps",
+       "s": 119,
+       "e": 137
+      },
+      {
+       "w": "payable",
+       "s": 145,
+       "e": 157
+      },
+      {
+       "w": "in",
+       "s": 157,
+       "e": 160
+      },
+      {
+       "w": "USDC",
+       "s": 160,
+       "e": 194
+      },
+      {
+       "w": "or",
+       "s": 197,
+       "e": 203
+      },
+      {
+       "w": "other",
+       "s": 206,
+       "e": 212
+      },
+      {
+       "w": "tokens",
+       "s": 212,
+       "e": 231
+      }
+     ]
+    },
+    {
+     "text": "And the Relayer makes sure every transaction lands. Managing nonces, bumping gas, and resubmitting anything that gets stuck.",
+     "start": 1136,
+     "dur": 268,
+     "src": "vo/abstraxn_intro/c05_l04.mp3",
+     "words": [
+      {
+       "w": "And",
+       "s": 3,
+       "e": 5
+      },
+      {
+       "w": "the",
+       "s": 5,
+       "e": 8
+      },
+      {
+       "w": "Relayer",
+       "s": 8,
+       "e": 24
+      },
+      {
+       "w": "makes",
+       "s": 24,
+       "e": 33
+      },
+      {
+       "w": "sure",
+       "s": 33,
+       "e": 49
+      },
+      {
+       "w": "every",
+       "s": 60,
+       "e": 68
+      },
+      {
+       "w": "transaction",
+       "s": 69,
+       "e": 92
+      },
+      {
+       "w": "lands",
+       "s": 92,
+       "e": 108
+      },
+      {
+       "w": "Managing",
+       "s": 121,
+       "e": 135
+      },
+      {
+       "w": "nonces",
+       "s": 135,
+       "e": 157
+      },
+      {
+       "w": "bumping",
+       "s": 164,
+       "e": 176
+      },
+      {
+       "w": "gas",
+       "s": 176,
+       "e": 192
+      },
+      {
+       "w": "and",
+       "s": 193,
+       "e": 197
+      },
+      {
+       "w": "resubmitting",
+       "s": 197,
+       "e": 220
+      },
+      {
+       "w": "anything",
+       "s": 221,
+       "e": 233
+      },
+      {
+       "w": "that",
+       "s": 233,
+       "e": 236
+      },
+      {
+       "w": "gets",
+       "s": 237,
+       "e": 242
+      },
+      {
+       "w": "stuck",
+       "s": 242,
+       "e": 256
+      }
+     ]
+    },
+    {
+     "text": "Ethereum. Base. Arbitrum. Polygon.",
+     "start": 1428,
+     "dur": 118,
+     "src": "vo/abstraxn_intro/c05_l05.mp3",
+     "words": [
+      {
+       "w": "Ethereum",
+       "s": 3,
+       "e": 21
+      },
+      {
+       "w": "Base",
+       "s": 34,
+       "e": 48
+      },
+      {
+       "w": "Arbitrum",
+       "s": 61,
+       "e": 77
+      },
+      {
+       "w": "Polygon",
+       "s": 90,
+       "e": 107
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "demo",
+   "name": "One payment, end to end",
+   "index": 6,
+   "start": 6165,
+   "dur": 1343,
+   "illustrative": true,
+   "lines": [
+    {
+     "text": "Here is what that looks like, end to end.",
+     "start": 75,
+     "dur": 85,
+     "src": "vo/abstraxn_intro/c06_l00.mp3",
+     "words": [
+      {
+       "w": "Here",
+       "s": 4,
+       "e": 11
+      },
+      {
+       "w": "is",
+       "s": 19,
+       "e": 22
+      },
+      {
+       "w": "what",
+       "s": 22,
+       "e": 26
+      },
+      {
+       "w": "that",
+       "s": 26,
+       "e": 30
+      },
+      {
+       "w": "looks",
+       "s": 30,
+       "e": 36
+      },
+      {
+       "w": "like",
+       "s": 37,
+       "e": 45
+      },
+      {
+       "w": "end",
+       "s": 57,
+       "e": 61
+      },
+      {
+       "w": "to",
+       "s": 61,
+       "e": 62
+      },
+      {
+       "w": "end",
+       "s": 62,
+       "e": 73
+      }
+     ]
+    },
+    {
+     "text": "A travel agent is given a Precept. Five hundred dollars a month. Airlines only. Valid until December.",
+     "start": 184,
+     "dur": 227,
+     "src": "vo/abstraxn_intro/c06_l01.mp3",
+     "words": [
+      {
+       "w": "A",
+       "s": 3,
+       "e": 4
+      },
+      {
+       "w": "travel",
+       "s": 4,
+       "e": 18
+      },
+      {
+       "w": "agent",
+       "s": 18,
+       "e": 28
+      },
+      {
+       "w": "is",
+       "s": 33,
+       "e": 36
+      },
+      {
+       "w": "given",
+       "s": 36,
+       "e": 42
+      },
+      {
+       "w": "a",
+       "s": 42,
+       "e": 43
+      },
+      {
+       "w": "Precept",
+       "s": 43,
+       "e": 64
+      },
+      {
+       "w": "Five",
+       "s": 79,
+       "e": 85
+      },
+      {
+       "w": "hundred",
+       "s": 85,
+       "e": 91
+      },
+      {
+       "w": "dollars",
+       "s": 91,
+       "e": 100
+      },
+      {
+       "w": "a",
+       "s": 101,
+       "e": 101
+      },
+      {
+       "w": "month",
+       "s": 102,
+       "e": 116
+      },
+      {
+       "w": "Airlines",
+       "s": 129,
+       "e": 142
+      },
+      {
+       "w": "only",
+       "s": 143,
+       "e": 154
+      },
+      {
+       "w": "Valid",
+       "s": 167,
+       "e": 181
+      },
+      {
+       "w": "until",
+       "s": 188,
+       "e": 197
+      },
+      {
+       "w": "December",
+       "s": 197,
+       "e": 215
+      }
+     ]
+    },
+    {
+     "text": "It finds a fare for six hundred and twenty dollars. The check runs. Denied. Over the cap. A human is asked to approve.",
+     "start": 435,
+     "dur": 258,
+     "src": "vo/abstraxn_intro/c06_l02.mp3",
+     "words": [
+      {
+       "w": "It",
+       "s": 3,
+       "e": 6
+      },
+      {
+       "w": "finds",
+       "s": 6,
+       "e": 15
+      },
+      {
+       "w": "a",
+       "s": 16,
+       "e": 17
+      },
+      {
+       "w": "fare",
+       "s": 17,
+       "e": 31
+      },
+      {
+       "w": "for",
+       "s": 31,
+       "e": 37
+      },
+      {
+       "w": "six",
+       "s": 37,
+       "e": 47
+      },
+      {
+       "w": "hundred",
+       "s": 48,
+       "e": 55
+      },
+      {
+       "w": "and",
+       "s": 55,
+       "e": 56
+      },
+      {
+       "w": "twenty",
+       "s": 56,
+       "e": 64
+      },
+      {
+       "w": "dollars",
+       "s": 65,
+       "e": 83
+      },
+      {
+       "w": "The",
+       "s": 97,
+       "e": 98
+      },
+      {
+       "w": "check",
+       "s": 98,
+       "e": 107
+      },
+      {
+       "w": "runs",
+       "s": 107,
+       "e": 121
+      },
+      {
+       "w": "Denied",
+       "s": 134,
+       "e": 146
+      },
+      {
+       "w": "Over",
+       "s": 159,
+       "e": 164
+      },
+      {
+       "w": "the",
+       "s": 164,
+       "e": 167
+      },
+      {
+       "w": "cap",
+       "s": 167,
+       "e": 179
+      },
+      {
+       "w": "A",
+       "s": 191,
+       "e": 193
+      },
+      {
+       "w": "human",
+       "s": 193,
+       "e": 204
+      },
+      {
+       "w": "is",
+       "s": 206,
+       "e": 212
+      },
+      {
+       "w": "asked",
+       "s": 212,
+       "e": 222
+      },
+      {
+       "w": "to",
+       "s": 222,
+       "e": 226
+      },
+      {
+       "w": "approve",
+       "s": 227,
+       "e": 246
+      }
+     ]
+    },
+    {
+     "text": "It finds another fare. Three hundred and eighty dollars. Allowed.",
+     "start": 717,
+     "dur": 143,
+     "src": "vo/abstraxn_intro/c06_l03.mp3",
+     "words": [
+      {
+       "w": "It",
+       "s": 3,
+       "e": 6
+      },
+      {
+       "w": "finds",
+       "s": 6,
+       "e": 15
+      },
+      {
+       "w": "another",
+       "s": 15,
+       "e": 23
+      },
+      {
+       "w": "fare",
+       "s": 23,
+       "e": 39
+      },
+      {
+       "w": "Three",
+       "s": 54,
+       "e": 61
+      },
+      {
+       "w": "hundred",
+       "s": 61,
+       "e": 70
+      },
+      {
+       "w": "and",
+       "s": 70,
+       "e": 75
+      },
+      {
+       "w": "eighty",
+       "s": 79,
+       "e": 85
+      },
+      {
+       "w": "dollars",
+       "s": 85,
+       "e": 103
+      },
+      {
+       "w": "Allowed",
+       "s": 116,
+       "e": 131
+      }
+     ]
+    },
+    {
+     "text": "The Paymaster covers the gas. The Relayer lands the transaction.",
+     "start": 884,
+     "dur": 146,
+     "src": "vo/abstraxn_intro/c06_l04.mp3",
+     "words": [
+      {
+       "w": "The",
+       "s": 4,
+       "e": 5
+      },
+      {
+       "w": "Paymaster",
+       "s": 5,
+       "e": 27
+      },
+      {
+       "w": "covers",
+       "s": 28,
+       "e": 39
+      },
+      {
+       "w": "the",
+       "s": 39,
+       "e": 41
+      },
+      {
+       "w": "gas",
+       "s": 41,
+       "e": 59
+      },
+      {
+       "w": "The",
+       "s": 73,
+       "e": 74
+      },
+      {
+       "w": "Relayer",
+       "s": 75,
+       "e": 90
+      },
+      {
+       "w": "lands",
+       "s": 91,
+       "e": 106
+      },
+      {
+       "w": "the",
+       "s": 106,
+       "e": 109
+      },
+      {
+       "w": "transaction",
+       "s": 109,
+       "e": 134
+      }
+     ]
+    },
+    {
+     "text": "And a signed receipt is written. For the payment, and for the refusal before it.",
+     "start": 1054,
+     "dur": 169,
+     "src": "vo/abstraxn_intro/c06_l05.mp3",
+     "words": [
+      {
+       "w": "And",
+       "s": 3,
+       "e": 5
+      },
+      {
+       "w": "a",
+       "s": 5,
+       "e": 6
+      },
+      {
+       "w": "signed",
+       "s": 7,
+       "e": 18
+      },
+      {
+       "w": "receipt",
+       "s": 18,
+       "e": 36
+      },
+      {
+       "w": "is",
+       "s": 43,
+       "e": 49
+      },
+      {
+       "w": "written",
+       "s": 49,
+       "e": 61
+      },
+      {
+       "w": "For",
+       "s": 75,
+       "e": 77
+      },
+      {
+       "w": "the",
+       "s": 77,
+       "e": 79
+      },
+      {
+       "w": "payment",
+       "s": 79,
+       "e": 95
+      },
+      {
+       "w": "and",
+       "s": 110,
+       "e": 116
+      },
+      {
+       "w": "for",
+       "s": 116,
+       "e": 120
+      },
+      {
+       "w": "the",
+       "s": 120,
+       "e": 123
+      },
+      {
+       "w": "refusal",
+       "s": 123,
+       "e": 140
+      },
+      {
+       "w": "before",
+       "s": 140,
+       "e": 153
+      },
+      {
+       "w": "it",
+       "s": 153,
+       "e": 158
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "economy",
+   "name": "The agent economy",
+   "index": 7,
+   "start": 7508,
+   "dur": 982,
+   "illustrative": false,
+   "lines": [
+    {
+     "text": "With authority and settlement in place, something new becomes possible.",
+     "start": 75,
+     "dur": 160,
+     "src": "vo/abstraxn_intro/c07_l00.mp3",
+     "words": [
+      {
+       "w": "With",
+       "s": 3,
+       "e": 6
+      },
+      {
+       "w": "authority",
+       "s": 6,
+       "e": 28
+      },
+      {
+       "w": "and",
+       "s": 29,
+       "e": 32
+      },
+      {
+       "w": "settlement",
+       "s": 33,
+       "e": 51
+      },
+      {
+       "w": "in",
+       "s": 51,
+       "e": 55
+      },
+      {
+       "w": "place",
+       "s": 55,
+       "e": 74
+      },
+      {
+       "w": "something",
+       "s": 87,
+       "e": 100
+      },
+      {
+       "w": "new",
+       "s": 100,
+       "e": 112
+      },
+      {
+       "w": "becomes",
+       "s": 112,
+       "e": 127
+      },
+      {
+       "w": "possible",
+       "s": 127,
+       "e": 148
+      }
+     ]
+    },
+    {
+     "text": "Not a store. An economy.",
+     "start": 259,
+     "dur": 67,
+     "src": "vo/abstraxn_intro/c07_l01.mp3",
+     "words": [
+      {
+       "w": "Not",
+       "s": 3,
+       "e": 6
+      },
+      {
+       "w": "a",
+       "s": 6,
+       "e": 8
+      },
+      {
+       "w": "store",
+       "s": 8,
+       "e": 22
+      },
+      {
+       "w": "An",
+       "s": 34,
+       "e": 36
+      },
+      {
+       "w": "economy",
+       "s": 36,
+       "e": 55
+      }
+     ]
+    },
+    {
+     "text": "Agents discover services, and pay for them on-chain, through x402.",
+     "start": 350,
+     "dur": 158,
+     "src": "vo/abstraxn_intro/c07_l02.mp3",
+     "words": [
+      {
+       "w": "Agents",
+       "s": 3,
+       "e": 14
+      },
+      {
+       "w": "discover",
+       "s": 14,
+       "e": 28
+      },
+      {
+       "w": "services",
+       "s": 28,
+       "e": 49
+      },
+      {
+       "w": "and",
+       "s": 56,
+       "e": 61
+      },
+      {
+       "w": "pay",
+       "s": 62,
+       "e": 69
+      },
+      {
+       "w": "for",
+       "s": 69,
+       "e": 73
+      },
+      {
+       "w": "them",
+       "s": 73,
+       "e": 76
+      },
+      {
+       "w": "on-chain",
+       "s": 76,
+       "e": 94
+      },
+      {
+       "w": "through",
+       "s": 107,
+       "e": 113
+      },
+      {
+       "w": "x402",
+       "s": 113,
+       "e": 146
+      }
+     ]
+    },
+    {
+     "text": "More than fifty services are already integrated. From data and browsing, to email and phone.",
+     "start": 532,
+     "dur": 202,
+     "src": "vo/abstraxn_intro/c07_l03.mp3",
+     "words": [
+      {
+       "w": "More",
+       "s": 3,
+       "e": 8
+      },
+      {
+       "w": "than",
+       "s": 8,
+       "e": 12
+      },
+      {
+       "w": "fifty",
+       "s": 12,
+       "e": 23
+      },
+      {
+       "w": "services",
+       "s": 23,
+       "e": 42
+      },
+      {
+       "w": "are",
+       "s": 47,
+       "e": 54
+      },
+      {
+       "w": "already",
+       "s": 56,
+       "e": 71
+      },
+      {
+       "w": "integrated",
+       "s": 71,
+       "e": 89
+      },
+      {
+       "w": "From",
+       "s": 103,
+       "e": 109
+      },
+      {
+       "w": "data",
+       "s": 109,
+       "e": 122
+      },
+      {
+       "w": "and",
+       "s": 126,
+       "e": 129
+      },
+      {
+       "w": "browsing",
+       "s": 129,
+       "e": 148
+      },
+      {
+       "w": "to",
+       "s": 154,
+       "e": 157
+      },
+      {
+       "w": "email",
+       "s": 157,
+       "e": 173
+      },
+      {
+       "w": "and",
+       "s": 173,
+       "e": 176
+      },
+      {
+       "w": "phone",
+       "s": 176,
+       "e": 189
+      }
+     ]
+    },
+    {
+     "text": "And businesses can list what they sell, directly to agents.",
+     "start": 758,
+     "dur": 134,
+     "src": "vo/abstraxn_intro/c07_l04.mp3",
+     "words": [
+      {
+       "w": "And",
+       "s": 3,
+       "e": 6
+      },
+      {
+       "w": "businesses",
+       "s": 12,
+       "e": 30
+      },
+      {
+       "w": "can",
+       "s": 30,
+       "e": 37
+      },
+      {
+       "w": "list",
+       "s": 37,
+       "e": 47
+      },
+      {
+       "w": "what",
+       "s": 47,
+       "e": 51
+      },
+      {
+       "w": "they",
+       "s": 51,
+       "e": 55
+      },
+      {
+       "w": "sell",
+       "s": 55,
+       "e": 73
+      },
+      {
+       "w": "directly",
+       "s": 81,
+       "e": 98
+      },
+      {
+       "w": "to",
+       "s": 98,
+       "e": 102
+      },
+      {
+       "w": "agents",
+       "s": 102,
+       "e": 122
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "proof",
+   "name": "Proof",
+   "index": 8,
+   "start": 8490,
+   "dur": 786,
+   "illustrative": false,
+   "lines": [
+    {
+     "text": "The infrastructure is already proven.",
+     "start": 60,
+     "dur": 86,
+     "src": "vo/abstraxn_intro/c08_l00.mp3",
+     "words": [
+      {
+       "w": "The",
+       "s": 3,
+       "e": 5
+      },
+      {
+       "w": "infrastructure",
+       "s": 5,
+       "e": 31
+      },
+      {
+       "w": "is",
+       "s": 40,
+       "e": 47
+      },
+      {
+       "w": "already",
+       "s": 47,
+       "e": 58
+      },
+      {
+       "w": "proven",
+       "s": 58,
+       "e": 74
+      }
+     ]
+    },
+    {
+     "text": "More than five billion dollars in routed volume.",
+     "start": 170,
+     "dur": 88,
+     "src": "vo/abstraxn_intro/c08_l01.mp3",
+     "words": [
+      {
+       "w": "More",
+       "s": 3,
+       "e": 8
+      },
+      {
+       "w": "than",
+       "s": 8,
+       "e": 11
+      },
+      {
+       "w": "five",
+       "s": 11,
+       "e": 26
+      },
+      {
+       "w": "billion",
+       "s": 26,
+       "e": 36
+      },
+      {
+       "w": "dollars",
+       "s": 36,
+       "e": 49
+      },
+      {
+       "w": "in",
+       "s": 49,
+       "e": 54
+      },
+      {
+       "w": "routed",
+       "s": 54,
+       "e": 63
+      },
+      {
+       "w": "volume",
+       "s": 63,
+       "e": 76
+      }
+     ]
+    },
+    {
+     "text": "Ninety-nine point nine percent submission success, across more than a hundred thousand transactions.",
+     "start": 282,
+     "dur": 194,
+     "src": "vo/abstraxn_intro/c08_l02.mp3",
+     "words": [
+      {
+       "w": "Ninety-nine",
+       "s": 3,
+       "e": 21
+      },
+      {
+       "w": "point",
+       "s": 21,
+       "e": 32
+      },
+      {
+       "w": "nine",
+       "s": 32,
+       "e": 42
+      },
+      {
+       "w": "percent",
+       "s": 42,
+       "e": 55
+      },
+      {
+       "w": "submission",
+       "s": 55,
+       "e": 69
+      },
+      {
+       "w": "success",
+       "s": 69,
+       "e": 91
+      },
+      {
+       "w": "across",
+       "s": 103,
+       "e": 116
+      },
+      {
+       "w": "more",
+       "s": 116,
+       "e": 126
+      },
+      {
+       "w": "than",
+       "s": 127,
+       "e": 130
+      },
+      {
+       "w": "a",
+       "s": 130,
+       "e": 130
+      },
+      {
+       "w": "hundred",
+       "s": 131,
+       "e": 143
+      },
+      {
+       "w": "thousand",
+       "s": 143,
+       "e": 154
+      },
+      {
+       "w": "transactions",
+       "s": 154,
+       "e": 182
+      }
+     ]
+    },
+    {
+     "text": "And recognised among TOKEN2049's NEXUS Top 50.",
+     "start": 500,
+     "dur": 166,
+     "src": "vo/abstraxn_intro/c08_l03.mp3",
+     "words": [
+      {
+       "w": "And",
+       "s": 3,
+       "e": 8
+      },
+      {
+       "w": "recognised",
+       "s": 14,
+       "e": 35
+      },
+      {
+       "w": "among",
+       "s": 35,
+       "e": 47
+      },
+      {
+       "w": "TOKEN2049's",
+       "s": 50,
+       "e": 106
+      },
+      {
+       "w": "NEXUS",
+       "s": 110,
+       "e": 126
+      },
+      {
+       "w": "Top",
+       "s": 126,
+       "e": 135
+      },
+      {
+       "w": "50",
+       "s": 136,
+       "e": 154
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "name": "Close",
+   "index": 9,
+   "start": 9276,
+   "dur": 902,
+   "illustrative": false,
+   "lines": [
+    {
+     "text": "The agent economy needs rules it can be held to.",
+     "start": 45,
+     "dur": 103,
+     "src": "vo/abstraxn_intro/c09_l00.mp3",
+     "words": [
+      {
+       "w": "The",
+       "s": 3,
+       "e": 6
+      },
+      {
+       "w": "agent",
+       "s": 8,
+       "e": 19
+      },
+      {
+       "w": "economy",
+       "s": 20,
+       "e": 36
+      },
+      {
+       "w": "needs",
+       "s": 36,
+       "e": 49
+      },
+      {
+       "w": "rules",
+       "s": 49,
+       "e": 63
+      },
+      {
+       "w": "it",
+       "s": 63,
+       "e": 65
+      },
+      {
+       "w": "can",
+       "s": 65,
+       "e": 67
+      },
+      {
+       "w": "be",
+       "s": 67,
+       "e": 70
+      },
+      {
+       "w": "held",
+       "s": 71,
+       "e": 80
+      },
+      {
+       "w": "to",
+       "s": 81,
+       "e": 92
+      }
+     ]
+    },
+    {
+     "text": "Set what an agent may spend. Prove who it is. Check both before it pays. And keep a receipt anyone can verify.",
+     "start": 172,
+     "dur": 249,
+     "src": "vo/abstraxn_intro/c09_l01.mp3",
+     "words": [
+      {
+       "w": "Set",
+       "s": 3,
+       "e": 9
+      },
+      {
+       "w": "what",
+       "s": 9,
+       "e": 13
+      },
+      {
+       "w": "an",
+       "s": 13,
+       "e": 16
+      },
+      {
+       "w": "agent",
+       "s": 17,
+       "e": 27
+      },
+      {
+       "w": "may",
+       "s": 28,
+       "e": 32
+      },
+      {
+       "w": "spend",
+       "s": 33,
+       "e": 48
+      },
+      {
+       "w": "Prove",
+       "s": 61,
+       "e": 68
+      },
+      {
+       "w": "who",
+       "s": 69,
+       "e": 72
+      },
+      {
+       "w": "it",
+       "s": 72,
+       "e": 74
+      },
+      {
+       "w": "is",
+       "s": 75,
+       "e": 85
+      },
+      {
+       "w": "Check",
+       "s": 98,
+       "e": 105
+      },
+      {
+       "w": "both",
+       "s": 105,
+       "e": 112
+      },
+      {
+       "w": "before",
+       "s": 112,
+       "e": 122
+      },
+      {
+       "w": "it",
+       "s": 122,
+       "e": 124
+      },
+      {
+       "w": "pays",
+       "s": 124,
+       "e": 142
+      },
+      {
+       "w": "And",
+       "s": 155,
+       "e": 160
+      },
+      {
+       "w": "keep",
+       "s": 165,
+       "e": 171
+      },
+      {
+       "w": "a",
+       "s": 171,
+       "e": 173
+      },
+      {
+       "w": "receipt",
+       "s": 173,
+       "e": 189
+      },
+      {
+       "w": "anyone",
+       "s": 194,
+       "e": 209
+      },
+      {
+       "w": "can",
+       "s": 209,
+       "e": 213
+      },
+      {
+       "w": "verify",
+       "s": 214,
+       "e": 237
+      }
+     ]
+    },
+    {
+     "text": "So. What does your agent do on day one?",
+     "start": 445,
+     "dur": 84,
+     "src": "vo/abstraxn_intro/c09_l02.mp3",
+     "words": [
+      {
+       "w": "So",
+       "s": 3,
+       "e": 14
+      },
+      {
+       "w": "What",
+       "s": 27,
+       "e": 29
+      },
+      {
+       "w": "does",
+       "s": 29,
+       "e": 32
+      },
+      {
+       "w": "your",
+       "s": 33,
+       "e": 37
+      },
+      {
+       "w": "agent",
+       "s": 37,
+       "e": 47
+      },
+      {
+       "w": "do",
+       "s": 48,
+       "e": 54
+      },
+      {
+       "w": "on",
+       "s": 54,
+       "e": 57
+      },
+      {
+       "w": "day",
+       "s": 57,
+       "e": 63
+      },
+      {
+       "w": "one",
+       "s": 63,
+       "e": 72
+      }
+     ]
+    },
+    {
+     "text": "Abstraxn. Superpowering the agent economy.",
+     "start": 553,
+     "dur": 109,
+     "src": "vo/abstraxn_intro/c09_l03.mp3",
+     "words": [
+      {
+       "w": "Abstraxn",
+       "s": 3,
+       "e": 27
+      },
+      {
+       "w": "Superpowering",
+       "s": 40,
+       "e": 63
+      },
+      {
+       "w": "the",
+       "s": 63,
+       "e": 66
+      },
+      {
+       "w": "agent",
+       "s": 70,
+       "e": 80
+      },
+      {
+       "w": "economy",
+       "s": 80,
+       "e": 98
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

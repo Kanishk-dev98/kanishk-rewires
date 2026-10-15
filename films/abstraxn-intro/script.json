@@ -1,0 +1,119 @@
+{
+  "id": "abstraxn_intro",
+  "title": "Abstraxn: Superpowering the agent economy",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "-6%",
+  "credit": "Alok Diwan",
+  "chapters": [
+    {
+      "id": "cold_open",
+      "name": "Cold open",
+      "lines": [
+        "For as long as there has been money, a person has stood behind every payment.",
+        "A signature. A card. A click.",
+        "That is changing.",
+        "Software is learning to act on our behalf. To search. To negotiate. To buy.",
+        "And soon, to spend."
+      ]
+    },
+    {
+      "id": "reveal",
+      "name": "Brand reveal",
+      "lines": [
+        "Abstraxn.",
+        "Superpowering the agent economy."
+      ]
+    },
+    {
+      "id": "shift",
+      "name": "The shift",
+      "lines": [
+        "AI agents are no longer demos.",
+        "They book travel, call APIs, pay for data and settle invoices. At machine speed, around the clock.",
+        "Every one of those actions needs a way to hold money, and a way to spend it.",
+        "But the financial system was built for people. Not for software that makes decisions."
+      ]
+    },
+    {
+      "id": "problem",
+      "name": "The problem",
+      "lines": [
+        "Today, we know how to answer three questions.",
+        "Know Your Customer tells you who a person is.",
+        "Know Your Transaction tells you where money moved.",
+        "Know Your Agent tells you which software is acting.",
+        "Each one tells you who. None of them tells you what was authorised.",
+        "And none carries a rule an agent can actually be stopped by.",
+        "So most teams discover what their agent spent in a log they read afterwards."
+      ]
+    },
+    {
+      "id": "kyi",
+      "name": "Know Your Intent",
+      "lines": [
+        "Abstraxn introduces a fourth layer. Know Your Intent.",
+        "It begins with a Precept. Signed spend authority, bound to an agent's identity. A cap. A period. An allowlist. An expiry.",
+        "Then, before any money moves, every payment is checked against it.",
+        "Allowed. Denied. Or routed to a human. In under fifty milliseconds.",
+        "And every decision, including every refusal, produces a signed receipt that anyone can verify.",
+        "Identity tells you who. Intent tells you what they authorised."
+      ]
+    },
+    {
+      "id": "settlement",
+      "name": "Settlement layer",
+      "lines": [
+        "Beneath the Authority Gate sits a complete settlement layer.",
+        "Embedded wallets give every user, and every agent, an ERC-4337 smart account. Secured by passkeys and social recovery. No seed phrases.",
+        "The Bundler packages operations, and simulates them before they ever reach the chain.",
+        "The Paymaster sponsors gas, with per-agent budgets and daily caps, payable in USDC or other tokens.",
+        "And the Relayer makes sure every transaction lands. Managing nonces, bumping gas, and resubmitting anything that gets stuck.",
+        "Ethereum. Base. Arbitrum. Polygon."
+      ]
+    },
+    {
+      "id": "demo",
+      "name": "One payment, end to end",
+      "illustrative": true,
+      "lines": [
+        "Here is what that looks like, end to end.",
+        "A travel agent is given a Precept. Five hundred dollars a month. Airlines only. Valid until December.",
+        "It finds a fare for six hundred and twenty dollars. The check runs. Denied. Over the cap. A human is asked to approve.",
+        "It finds another fare. Three hundred and eighty dollars. Allowed.",
+        "The Paymaster covers the gas. The Relayer lands the transaction.",
+        "And a signed receipt is written. For the payment, and for the refusal before it."
+      ]
+    },
+    {
+      "id": "economy",
+      "name": "The agent economy",
+      "lines": [
+        "With authority and settlement in place, something new becomes possible.",
+        "Not a store. An economy.",
+        "Agents discover services, and pay for them on-chain, through x402.",
+        "More than fifty services are already integrated. From data and browsing, to email and phone.",
+        "And businesses can list what they sell, directly to agents."
+      ]
+    },
+    {
+      "id": "proof",
+      "name": "Proof",
+      "lines": [
+        "The infrastructure is already proven.",
+        "More than five billion dollars in routed volume.",
+        "Ninety-nine point nine percent submission success, across more than a hundred thousand transactions.",
+        "And recognised among TOKEN2049's NEXUS Top 50."
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "lines": [
+        "The agent economy needs rules it can be held to.",
+        "Set what an agent may spend. Prove who it is. Check both before it pays. And keep a receipt anyone can verify.",
+        "So. What does your agent do on day one?",
+        "Abstraxn. Superpowering the agent economy."
+      ]
+    }
+  ]
+}

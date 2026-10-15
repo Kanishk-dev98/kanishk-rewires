@@ -1,9 +1,11 @@
 import { Composition, Folder } from "remotion";
 import { calculateStatRaceMetadata, StatRace } from "./StatRace";
 import { calculateStoryMetadata, Story } from "./story/Story";
+import { calculateFilmMetadata, Film } from "./film/Film";
 
 export const RemotionRoot: React.FC = () => {
   return (
+    <>
     <Folder name="Reels">
       <Composition
         id="StatRace"
@@ -73,5 +75,18 @@ export const RemotionRoot: React.FC = () => {
         }}
       />
     </Folder>
+    <Folder name="Films">
+      <Composition
+        id="Film"
+        component={Film}
+        durationInFrames={300}
+        fps={30}
+        width={1920}
+        height={1080}
+        calculateMetadata={calculateFilmMetadata}
+        defaultProps={{ title: "", music: null, credit: "", chapters: [] }}
+      />
+    </Folder>
+    </>
   );
 };
