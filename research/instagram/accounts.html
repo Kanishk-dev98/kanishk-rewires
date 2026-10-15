@@ -1,0 +1,272 @@
+<title>Reel Reference Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  /* Layout: a scouting board. Thesis up top, filter rail, then a dense list of verified accounts grouped by category. */
+  :root {
+    --bg: #F6F2EA;
+    --surface: #FFFFFF;
+    --fg: #14161C;
+    --muted: #5C6270;
+    --line: #E3DBCB;
+    --accent: #0A9E6E;
+    --accent-ink: #FFFFFF;
+    --star: #C2410C;
+    --chip: #EFE8DA;
+    --display: "Anton", Impact, "Arial Narrow", sans-serif;
+    --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0C0E13; --surface: #151821; --fg: #EDEFF4; --muted: #9AA1B2; --line: #262A35;
+      --accent: #2EE6A6; --accent-ink: #062A1D; --star: #FB923C; --chip: #1C2029; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0C0E13; --surface: #151821; --fg: #EDEFF4; --muted: #9AA1B2; --line: #262A35;
+    --accent: #2EE6A6; --accent-ink: #062A1D; --star: #FB923C; --chip: #1C2029; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; padding: 0 16px; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding-block: 36px 64px; display: grid; gap: 28px; }
+
+  header { display: grid; gap: 12px; }
+  .eyebrow { font: 600 12px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  h1 { font-family: var(--display); font-weight: 400; font-size: clamp(44px, 9vw, 84px); line-height: .92; margin: 0; letter-spacing: .005em; text-wrap: balance; }
+  h1 em { font-style: normal; color: var(--accent); }
+  .lede { max-width: 64ch; margin: 0; color: var(--muted); line-height: 1.6; }
+
+  .gap { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .gap div { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; min-width: 0; }
+  .gap b { display: block; font-family: var(--display); font-weight: 400; font-size: 30px; line-height: 1; margin-bottom: 6px; }
+  .gap p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+
+  .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; position: sticky; top: env(safe-area-inset-top, 0px); background: var(--bg); padding-block: 10px; z-index: 2; }
+  .seg { display: flex; flex-wrap: wrap; gap: 6px; }
+  .seg button, .toggle { font: 600 13px var(--body); border: 1px solid var(--line); background: var(--surface); color: var(--fg); padding: 8px 12px; border-radius: 999px; cursor: pointer; }
+  .seg button[aria-pressed="true"], .toggle[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+  button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  #q { flex: 1 1 200px; min-width: 0; font: 500 14px var(--body); padding: 9px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); }
+  .count { font: 500 12px var(--mono); color: var(--muted); }
+
+  section h2 { font-family: var(--display); font-weight: 400; font-size: 34px; margin: 0 0 4px; letter-spacing: .01em; }
+  section > p { margin: 0 0 14px; color: var(--muted); font-size: 14px; max-width: 70ch; line-height: 1.5; }
+  .list { display: grid; border-top: 1px solid var(--line); }
+  .row { display: grid; grid-template-columns: minmax(170px, 1.1fr) 84px minmax(0, 2.4fr); gap: 6px 18px; padding: 14px 4px; border-bottom: 1px solid var(--line); align-items: start; }
+  .who { min-width: 0; }
+  .who a { font-weight: 800; color: var(--fg); text-decoration: none; word-break: break-word; }
+  .who a:hover { color: var(--accent); text-decoration: underline; }
+  .who span { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; }
+  .star { color: var(--star); font-weight: 800; margin-left: 4px; }
+  .num { font: 500 15px var(--mono); font-variant-numeric: tabular-nums; text-align: right; }
+  .num small { display: block; font-size: 11px; color: var(--muted); }
+  .info { min-width: 0; font-size: 14px; line-height: 1.5; }
+  .info .fmt { color: var(--muted); }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 4px; }
+  .tag { font: 600 11px var(--mono); background: var(--chip); color: var(--fg); padding: 2px 8px; border-radius: 6px; }
+  .tag.in { background: var(--accent); color: var(--accent-ink); }
+  .empty { padding: 24px 4px; color: var(--muted); }
+
+  .names { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+  .names div { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; min-width: 0; }
+  .names b { font-family: var(--display); font-weight: 400; font-size: 26px; display: block; }
+  .names code { font: 500 13px var(--mono); color: var(--accent); }
+  .names p { margin: 6px 0 0; font-size: 14px; color: var(--muted); line-height: 1.5; }
+  .fine { font-size: 13px; color: var(--muted); line-height: 1.6; max-width: 80ch; }
+
+  @media (max-width: 640px) {
+    .row { grid-template-columns: 1fr auto; }
+    .info { grid-column: 1 / -1; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Channel research · verified on Instagram, 14 Oct 2026</div>
+    <h1>84 accounts, and the <em>gap</em> none of them fill</h1>
+    <p class="lede">Every handle below was opened on its live Instagram page and confirmed active, with follower counts as shown that day. Use it to study formats, then pick a name and niche. Accounts marked ★ are the closest references for motion-graphics AI and marketing reels.</p>
+  </header>
+
+  <div class="gap" aria-label="Key findings">
+    <div><b>Carousels</b><p>The biggest faceless AI pages (evolving.ai, chatgptricks, airesearches) and data publishers (Statista, Visual Capitalist) mostly post static posts and carousels, not reels.</p></div>
+    <div><b>Faces</b><p>Almost every reel-first AI or marketing account is creator-led: someone talking to camera. Faceless motion graphics at volume is rare.</p></div>
+    <div><b>The opening</b><p>No account checked runs a faceless, high-volume channel of animated data stories about AI and marketing. That is exactly what your engine produces.</p></div>
+  </div>
+
+  <div class="controls" role="search">
+    <div class="seg" id="cat" aria-label="Category"></div>
+    <div class="seg" aria-label="Filters">
+      <button class="toggle" id="india" aria-pressed="false" type="button">India only</button>
+      <button class="toggle" id="stars" aria-pressed="false" type="button">★ Best references</button>
+    </div>
+    <input id="q" type="search" placeholder="Search handle, name or style" aria-label="Search accounts">
+    <span class="count" id="count"></span>
+  </div>
+
+  <div id="sections"></div>
+
+  <section>
+    <h2>Name &amp; niche starters</h2>
+    <p>Ideas shaped by the gap above. I have not checked whether these handles are free on Instagram; check before you decide.</p>
+    <div class="names">
+      <div><b>The Growth Graph</b><code>@thegrowthgraph</code><p>Animated data stories on how brands, apps and AI products grow. Direct home for the "Race to 100M" format.</p></div>
+      <div><b>Hundred Million</b><code>@hundredmillion.ai</code><p>Every reel is a numbers story: who hit scale, how fast, and what it cost. Strong recall from your first video.</p></div>
+      <div><b>Marketing in Motion</b><code>@marketinginmotion</code><p>Marketing case studies and campaign breakdowns as kinetic motion graphics. Fills the reels gap left by Marketing Mind and Because of Marketing.</p></div>
+      <div><b>AI, Explained in Numbers</b><code>@ai.innumbers</code><p>AI news told only through data: funding, users, cost per token, benchmarks. Faceless, cinematic, fact-checked.</p></div>
+      <div><b>Brand Math</b><code>@brandmath</code><p>"Why did this work?" breakdowns of brands and ads with the numbers on screen. India-first angle possible.</p></div>
+      <div><b>The Scale Story</b><code>@thescalestory</code><p>Mix of AI and marketing stories framed as growth races and turning points. Broadest of the six.</p></div>
+    </div>
+  </section>
+
+  <p class="fine">Method: four research passes (AI explainers, marketing case studies, data visualization, brands and agencies). Candidates came from published ranking lists (NoGood, Scrumball, Apify, Heepsy, Qoruz) and category knowledge, then each was fetched on instagram.com. Format notes come from bios and the reel-to-carousel mix of recent posts, not from watching each reel, so watch three or four before copying a style. Handles that were blocked, private, or belonged to someone else were left out.</p>
+</div>
+
+<script>
+const CATS = {
+  ai: { name: "AI news & explainers", blurb: "Faceless AI pages and AI creators. Watch the hooks and how they simplify tools and news." },
+  mkt: { name: "Marketing & brand stories", blurb: "Case studies, campaign breakdowns and brand news. The storytelling you will turn into motion." },
+  data: { name: "Data & stats visuals", blurb: "Chart-led publishers. The closest visual cousins of your Race to 100M reel." },
+  brand: { name: "Brands, SaaS & agencies", blurb: "How marketing and AI companies run their own reels." }
+};
+// [handle, name, followers, region, category, format, lesson, star]
+const A = [
+  ["evolving.ai","Evolving AI","4.8M","Global","ai","Faceless AI news; 3/12 recent posts are reels","Largest faceless AI page; urgency hooks and a strong community call to action",0],
+  ["cleoabram","Cleo Abram","3.2M","Global","ai","Creator-led video journalism; all reels","Closest to the data-story explainer style, with an optimistic tech angle",1],
+  ["chatgptricks","AI / Tech","2.7M","Global","ai","Faceless; recent posts all carousels","Proof a faceless AI brand reaches millions; hooks reusable as reel scripts",0],
+  ["yourchatgptguide","Sharma Deepak","1.6M","India","ai","Carousel-heavy prompt tips","Monetises with a prompt bundle as a lead magnet",0],
+  ["thenawazshaikh","Nawaz Shaikh","1.5M","India","ai","Creator reels, 11/12","AI for business owners; funnels followers to YouTube",0],
+  ["airesearches","AI researches","1.4M","Global","ai","Faceless AI news; mostly stills and carousels","Curates the most surprising AI developments; a direct model for an AI news page",0],
+  ["thevarunmayya","Varun Mayya","1.2M","India","ai","Creator talking-head reels","India's leading AI explainer; runs his own media studio",0],
+  ["handlytech","Ayham Joukhadar","993K","Global","ai","Creator reels plus carousels","AI tool breakdowns backed by a free tool directory as a lead magnet",0],
+  ["100xengineers","100xEngineers","977K","India","ai","Brand account, reels-led","Turns AI-literacy reels into course sign-ups",0],
+  ["askcatgpt","CatGPT","906K","Global","ai","Creator reels plus carousels","Plain-language AI for non-technical viewers",0],
+  ["tech_spert","Yashdeep Pilania","870K","India","ai","Creator reels","Tech, AI and gadgets packaged for a mass Indian audience",0],
+  ["tiffintech","Tiffany Janzen","812K","Global","ai","Creator reels, ~10/12","AI and robotics news plus company stories; brand collaborations",0],
+  ["harpercarrollai","Harper Carroll","656K","Global","ai","Creator explainer reels","Credential-led trust; makes AI feel less scary",0],
+  ["therundownai","The Rundown AI","636K","Global","ai","Newsletter brand; stills and carousels","Daily AI news cadence that feeds a large newsletter",0],
+  ["rowancheung","Rowan Cheung","504K","Global","ai","Mostly carousels, some reels","Short AI and robotics news summaries",0],
+  ["kallaway","Kallaway","461K","Global","ai","Creator reels, all recent","Hook and script craft for business-minded tech content",1],
+  ["arvind.techies","Arvind Kumawat","381K","India","ai","Creator reels, daily AI news","Daily Indian AI news cadence",0],
+  ["aitrendz.xyz","René Remsik","362K","Global","ai","Reels-led, 10/12","Keeps AI tips simple and fun",0],
+  ["godofprompt","God of Prompt","351K","Global","ai","Faceless; carousels only","Uses prompts and automations to drive website traffic",0],
+  ["raajexplains","Raaj Mishra","332K","India","ai","Creator reels, all recent","AI tools for everyday Indians",0],
+  ["aifortechies","AI for Techies by be10X","256K","India","ai","Edtech brand; all reels","AI reels that sell training courses",0],
+  ["mattfarmerai","Matt Farmer","92K","Global","ai","Creator reels","New AI tools and robots; a smaller account to compare growth against",0],
+  ["theaisavvy","Victor C","85K","Global","ai","Creator reels","Smaller AI tutorial account to compare growth against",0],
+
+  ["foodpharmer","Revant Himatsingka","4M","India","mkt","Face-to-camera reels, 10/12","Exposing marketing claims gets mass reach in India",0],
+  ["marketingmind.in","Marketing Mind","1.7M","India","mkt","Photo and carousel brand news; no reels seen","Daily brand news at scale; the reels version of this is open",1],
+  ["thethinkschool","Think School","1.3M","India","mkt","Founder-voiced case-study reels, 11/12","The template for 'why this brand won or failed' stories in India",1],
+  ["ishansharma7390","Ishan Sharma","1.2M","India","mkt","Reels on AI, business and YouTube growth, 11/12","Closest Indian match to an AI + business niche; strong hooks",0],
+  ["theorangeepistles","Sayan Bakshi","1M","India","mkt","Global ad breakdowns, carousels and reels","Curates standout global campaigns with short story hooks",0],
+  ["marketing.stories","Marketing Stories","861K","India","mkt","Mostly photo and carousel brand news","Reached scale through posting frequency",0],
+  ["orenmeetsworld","Oren John","749K","Global","mkt","Brand teardown reels, 11/12","Fast, opinionated breakdowns and repeatable series formats",1],
+  ["marketingharry","Hrabren Lindfors","635K","Global","mkt","Carousels only","Very consistent text-graphic design to adapt as kinetic type",0],
+  ["eugbrandstrat","Eugene Healey","415K","Global","mkt","Brand-culture reels, 9/12, consistent look","A recognisable repeatable template, the backbone of high volume",1],
+  ["girlinbluestudios","girl in blue studios","399K","Global","mkt","Agency; half reels","'If I were building brand X' as a content series",0],
+  ["becauseofmarketing","Because of Marketing","333K","Global","mkt","Campaign roundup carousels; no reels seen","Weekly campaign roundups, ready to turn into motion reels",0],
+  ["shwinnabegobrand","Ashwinn","227K","Global","mkt","All reels","Explains why a brand strategy went viral in under 60 seconds",0],
+  ["peoplebrandsandthings","People Brands and Things","168K","Global","mkt","Brand news; reels and photos","Speed on news as a growth lever",0],
+  ["thebrandblueprint_","Brooke Yoakam","161K","Global","mkt","Brand strategy reels, 9/12","Founder credibility plus AI-adjacent brand strategy",0],
+  ["exchange4media","exchange4media","126K","India","mkt","Ad and media trade news, mostly carousels","A source feed for Indian campaign news",0],
+  ["marketingbrew","Marketing Brew","51.2K","Global","mkt","Industry news reels, 11/12","Turns newsletter stories into short reels",0],
+  ["nogood.io","NoGood","50.8K","Global","mkt","Agency; all reels","Mixes trends and data in campaign breakdowns",0],
+  ["ashi.branding","Ashi Bhat","21.2K","Global","mkt","Brand strategy; half reels","Niche positioning (luxury and culture) to stand out",0],
+  ["rajshamani","Raj Shamani","11.5M","India","mkt","Podcast clips with founders","Founder stories at huge scale; adjacent rather than core",0],
+  ["abhiandniyu","Abhi & Niyu","2.6M","India","mkt","Explainer reels and carousels","Simple explainers for a broad Indian audience",0],
+
+  ["theeconomist","The Economist","8.6M","Global","data","Chart-led posts plus some reels","Strict chart style: one colour system, headline as the takeaway",0],
+  ["bloombergbusiness","Bloomberg Business","6.4M","Global","data","Mostly reels, 8/11, business motion graphics","Fast business-number reels with kinetic captions; nearest to your format",1],
+  ["wsj","The Wall Street Journal","5.9M","Global","data","Business explainer reels plus photos","How a big outlet packages money and tech explainers",0],
+  ["financialtimes","Financial Times","4.8M","Global","data","Photos and carousels, some reels","One strong chart can carry a whole post",0],
+  ["moneycontrolcom","Moneycontrol","1.5M","India","data","Carousels only","Indian market numbers at scale",0],
+  ["statista","Statista","939K","Global","data","One chart, one stat; 4/12 reels","Single-number hooks; always cite the source",0],
+  ["chartrdaily","Chartr","510K","Global","data","Visual data stories on business and culture","Closest match to your Netflix vs ChatGPT reel",1],
+  ["visualizevalue","Visualize Value","476K","Global","data","Minimal black-and-white diagrams","One idea per frame, ideal for kinetic type",0],
+  ["visualcap","Visual Capitalist","413K","Global","data","Polished infographics; 3/12 reels","The benchmark for 'X, visualized' titles and clean chart styling",1],
+  ["finshots.in","Finshots","381K","India","data","Newsletter carousels; no reels","Plain-English business stories for India",0],
+  ["axios","Axios","340K","Global","data","Short news; reels and photos","One stat plus one line of context",0],
+  ["factlyindia","FACTLY","328K","India","data","Data journalism and fact-checks; recent reels","Indian data sources and an India-first framing",0],
+  ["brilliantmaps","Brilliant Maps","246K","Global","data","Map comparisons, mostly static","Country and region comparison formats",0],
+  ["infobeautiful","Information is Beautiful","230K","Global","data","Designed infographics, static","Visual metaphors and colour systems for motion",0],
+  ["zerodhavarsity","Zerodha Varsity","212K","India","data","Finance education; 4/9 reels","How Indian viewers respond to number-led explainers",0],
+  ["ourworldindata","Our World in Data","203K","Global","data","Research carousels","Rigorous sourcing that keeps numbers honest",0],
+  ["federicafragapane","Federica Fragapane","93.8K","Global","data","Information-design art, some reels","Original chart forms that make a page stand out",0],
+  ["giorgialupi","Giorgia Lupi","89.5K","Global","data","Data humanism; reels and carousels","Human stories inside the numbers",0],
+  ["voronoiapp","Voronoi","19.9K","Global","data","Visual Capitalist's app account, static","Minor reference",0],
+
+  ["openai","OpenAI","6.6M","Global","brand","Product and launch reels, 7/12","How AI launches are packaged for Instagram",0],
+  ["canva","Canva","2.6M","Global","brand","Design and motion reels, 8/12","A very high design bar for a tool brand",0],
+  ["adobe","Adobe","2.1M","Global","brand","Showcase reels, 8/12","Polished motion and visual-effect hooks",0],
+  ["metaforbusiness","Meta for Business","1.9M","Global","brand","Business how-to reels, 7/12","The platform's own style for marketing education",0],
+  ["higgsfield.ai","Higgsfield AI","1.8M","Global","brand","AI video reels, near-daily, 12/12","High-volume daily posting cadence",1],
+  ["perplexity","Perplexity","1.2M","Global","brand","Cinematic brand reels, 11/12","Treats an AI brand like a lifestyle brand",0],
+  ["capcutapp","CapCut","1.2M","Global","brand","Editing-trend reels, 10/12","Trending edit styles and kinetic captions",1],
+  ["figma","Figma","969K","Global","brand","Design and community reels, 8/12","Clean UI-style motion graphics",0],
+  ["hubspot","HubSpot","661K","Global","brand","Marketing tips; reels and carousels","Saveable marketing tips",1],
+  ["runwayapp","Runway","616K","Global","brand","AI video reels, 12/12","AI-made visual hooks and creator showcases",0],
+  ["latermedia","Later","496K","Global","brand","Social and influencer tips, 6/12 reels","How to explain social media trends",1],
+  ["mailchimp","Intuit Mailchimp","301K","Global","brand","Branded reels, 8/12","A strong, recognisable visual identity",0],
+  ["hootsuite","Hootsuite","235K","Global","brand","Carousels and images","Funny, opinionated caption voice",0],
+  ["zoho","Zoho","232K","India","brand","Mostly carousels","Indian B2B SaaS brand voice",0],
+  ["semrush","Semrush","171K","Global","brand","Mostly reels; SEO education","Turns dry search data into reels",1],
+  ["heygen_official","HeyGen","149K","Global","brand","AI avatar demo reels, 9/12","Avatar and voiceover reels",0],
+  ["schbang","Schbang","130K","India","brand","Agency culture and campaign reels, 9/12","India's top creative agency; local humour",0],
+  ["buffer","Buffer","109K","Global","brand","Carousels plus creator reels","Creator collaborations for reach",0],
+  ["vidiq","vidIQ","109K","Global","brand","Growth-tip reels, 10/12","Closest brand match: high-volume growth tip reels",1],
+  ["sproutsocial","Sprout Social","75.2K","Global","brand","B2B social strategy, 4/12 reels","B2B tone and reposting creators",0],
+  ["metricool","Metricool","34.6K","Global","brand","Mostly carousels","Simple branding in a small niche",0],
+  ["socialbeatindia","Social Beat","24K","India","brand","Mostly photos and carousels","How an Indian performance agency presents itself",0]
+];
+
+const toNum = s => parseFloat(s) * (s.endsWith("M") ? 1e6 : s.endsWith("K") ? 1e3 : 1);
+const state = { cat: "all", india: false, stars: false, q: "" };
+try { const saved = JSON.parse(localStorage.getItem("atlas") || "{}"); Object.assign(state, saved, { q: "" }); } catch (e) {}
+
+const catBar = document.getElementById("cat");
+[["all", "All"], ...Object.entries(CATS).map(([k, v]) => [k, v.name])].forEach(([k, label]) => {
+  const b = document.createElement("button");
+  b.type = "button"; b.textContent = label; b.dataset.k = k;
+  b.addEventListener("click", () => { state.cat = k; render(); });
+  catBar.appendChild(b);
+});
+const india = document.getElementById("india"), stars = document.getElementById("stars"), q = document.getElementById("q");
+india.addEventListener("click", () => { state.india = !state.india; render(); });
+stars.addEventListener("click", () => { state.stars = !state.stars; render(); });
+q.addEventListener("input", () => { state.q = q.value.trim().toLowerCase(); render(); });
+
+function esc(s) { return s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+function render() {
+  catBar.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.k === state.cat)));
+  india.setAttribute("aria-pressed", String(state.india));
+  stars.setAttribute("aria-pressed", String(state.stars));
+  try { localStorage.setItem("atlas", JSON.stringify({ cat: state.cat, india: state.india, stars: state.stars })); } catch (e) {}
+
+  const rows = A.filter(a =>
+    (state.cat === "all" || a[4] === state.cat) &&
+    (!state.india || a[3] === "India") &&
+    (!state.stars || a[7]) &&
+    (!state.q || (a[0] + " " + a[1] + " " + a[5] + " " + a[6]).toLowerCase().includes(state.q)));
+  document.getElementById("count").textContent = rows.length + " of " + A.length;
+
+  const out = document.getElementById("sections");
+  out.innerHTML = "";
+  Object.entries(CATS).forEach(([k, c]) => {
+    const items = rows.filter(a => a[4] === k).sort((x, y) => toNum(y[2]) - toNum(x[2]));
+    if (!items.length) return;
+    const sec = document.createElement("section");
+    sec.innerHTML = `<h2>${c.name}</h2><p>${c.blurb}</p><div class="list">${items.map(a => `
+      <div class="row">
+        <div class="who"><a href="https://www.instagram.com/${a[0]}/" target="_blank" rel="noopener">@${esc(a[0])}</a>${a[7] ? '<span class="star" title="Best reference" style="display:inline">★</span>' : ""}<span>${esc(a[1])}</span></div>
+        <div class="num">${a[2]}<small>followers</small></div>
+        <div class="info"><div class="tags"><span class="tag ${a[3] === "India" ? "in" : ""}">${a[3]}</span></div><span class="fmt">${esc(a[5])}.</span> ${esc(a[6])}.</div>
+      </div>`).join("")}</div>`;
+    out.appendChild(sec);
+  });
+  if (!rows.length) out.innerHTML = '<div class="empty">No accounts match. Clear the search or switch off a filter.</div>';
+}
+render();
+</script>

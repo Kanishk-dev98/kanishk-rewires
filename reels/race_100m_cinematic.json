@@ -1,0 +1,227 @@
+{
+  "id": "race_100m_cinematic",
+  "template": "Story",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "+8%",
+  "handle": "@yourhandle",
+  "accent": "#10C88A",
+  "source": "Data: UBS, Similarweb (2023)",
+  "scenes": [
+    {
+      "type": "slam",
+      "vo": "Netflix needed eighteen years to reach a hundred million users.",
+      "data": {
+        "kicker": "NETFLIX  \u2192  100M USERS",
+        "big": "18 YEARS",
+        "color": "#E50914",
+        "dark": true,
+        "syncWord": "eighteen"
+      }
+    },
+    {
+      "type": "slam",
+      "vo": "ChatGPT did it in two months.",
+      "data": {
+        "kicker": "CHATGPT  \u2192  100M USERS",
+        "big": "2 MONTHS",
+        "color": "#10C88A",
+        "dark": false,
+        "flash": true,
+        "syncWord": "two"
+      }
+    },
+    {
+      "type": "title",
+      "vo": "This is the race to one hundred million, and the story of how one app broke the internet.",
+      "data": {
+        "kicker": "THE RACE TO",
+        "title": "100,000,000",
+        "sub": "USERS"
+      }
+    },
+    {
+      "type": "counter",
+      "vo": "A hundred million people. That's more than everyone living in Germany.",
+      "data": {
+        "to": 100000000,
+        "label": "people",
+        "compare": "Germany's population: 84 million"
+      }
+    },
+    {
+      "type": "app",
+      "vo": "Netflix. Eighteen years. It started by mailing DVDs.",
+      "data": {
+        "name": "Netflix",
+        "num": "18",
+        "unit": "YEARS",
+        "fact": "Started by mailing DVDs",
+        "from": "#E50914",
+        "to": "#3A0306",
+        "rank": 1
+      }
+    },
+    {
+      "type": "app",
+      "vo": "Spotify. Eleven years, winning music one market at a time.",
+      "data": {
+        "name": "Spotify",
+        "num": "11",
+        "unit": "YEARS",
+        "fact": "One market at a time",
+        "from": "#1ED760",
+        "to": "#064D2A",
+        "rank": 2
+      }
+    },
+    {
+      "type": "app",
+      "vo": "Twitter. Five years, a hundred and forty characters at a time.",
+      "data": {
+        "name": "Twitter",
+        "num": "5",
+        "unit": "YEARS",
+        "fact": "140 characters at a time",
+        "from": "#1D9BF0",
+        "to": "#08305A",
+        "rank": 3
+      }
+    },
+    {
+      "type": "app",
+      "vo": "Facebook. Four and a half years, and it began in a college dorm room.",
+      "data": {
+        "name": "Facebook",
+        "num": "4.5",
+        "unit": "YEARS",
+        "fact": "Born in a college dorm",
+        "from": "#4C6EF5",
+        "to": "#1A1F5C",
+        "rank": 4
+      }
+    },
+    {
+      "type": "app",
+      "vo": "Instagram. Two and a half years, one filtered photo at a time.",
+      "data": {
+        "name": "Instagram",
+        "num": "2.5",
+        "unit": "YEARS",
+        "fact": "One filtered photo at a time",
+        "from": "#F58529",
+        "to": "#8134AF",
+        "rank": 5
+      }
+    },
+    {
+      "type": "app",
+      "vo": "TikTok. Just nine months, powered by short videos and a ruthless algorithm.",
+      "data": {
+        "name": "TikTok",
+        "num": "9",
+        "unit": "MONTHS",
+        "fact": "Short videos + a ruthless algorithm",
+        "from": "#25F4EE",
+        "to": "#FE2C55",
+        "rank": 6,
+        "glitch": true
+      }
+    },
+    {
+      "type": "race",
+      "vo": "Line them up, and the pattern is clear. Every new platform grew faster than the last.",
+      "data": {
+        "title": "Time to 100M users",
+        "items": [
+          {
+            "label": "Netflix",
+            "value": 216,
+            "display": "18 yrs",
+            "color": "#E50914"
+          },
+          {
+            "label": "Spotify",
+            "value": 132,
+            "display": "11 yrs",
+            "color": "#1DB954"
+          },
+          {
+            "label": "Twitter",
+            "value": 60,
+            "display": "5 yrs",
+            "color": "#1D9BF0"
+          },
+          {
+            "label": "Facebook",
+            "value": 54,
+            "display": "4.5 yrs",
+            "color": "#4C6EF5"
+          },
+          {
+            "label": "Instagram",
+            "value": 30,
+            "display": "2.5 yrs",
+            "color": "#C13584"
+          },
+          {
+            "label": "TikTok",
+            "value": 9,
+            "display": "9 mo",
+            "color": "#FE2C55"
+          },
+          {
+            "label": "ChatGPT",
+            "value": 2,
+            "display": "?",
+            "color": "#10C88A"
+          }
+        ]
+      }
+    },
+    {
+      "type": "buildup",
+      "vo": "Then, on November thirtieth, twenty twenty-two, a small research lab released a chatbot.",
+      "data": {
+        "date": "NOV 30, 2022",
+        "line": "OpenAI releases ChatGPT",
+        "syncWord": "November"
+      }
+    },
+    {
+      "type": "reveal",
+      "vo": "Five days to a million users. Two months to a hundred million. At the time, the fastest-growing consumer app ever recorded.",
+      "data": {
+        "chip": "CHATGPT  \u00b7  NOV 2022",
+        "aNum": "1M",
+        "aLabel": "users in",
+        "aBig": "5 DAYS",
+        "countFrom": 1000000,
+        "countTo": 100000000,
+        "countLabel": "USERS IN",
+        "big": "2 MONTHS",
+        "sub": "The fastest-growing consumer app ever recorded, at the time",
+        "syncWord": "Two"
+      }
+    },
+    {
+      "type": "chat",
+      "vo": "No friends needed. No feed to build. Just a text box that could answer almost anything.",
+      "data": {
+        "prompt": "Explain the internet to a 5-year-old",
+        "answer": "Imagine every library in the world, connected by invisible roads\u2026",
+        "tags": [
+          "No friends needed",
+          "No feed",
+          "Just ask"
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "vo": "Follow for a new AI story every day.",
+      "data": {
+        "cta": "A new AI story. Every day."
+      }
+    }
+  ]
+}

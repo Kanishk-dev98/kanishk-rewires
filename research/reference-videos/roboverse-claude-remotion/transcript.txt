@@ -1,0 +1,218 @@
+[0:00] Claude Code can now create insane motion
+[0:02] graphics from one single prompt. And all
+[0:04] you really need for that is to install
+[0:06] the Remotion plugin inside it. So if you
+[0:08] are still spending hours editing
+[0:10] everything by hand, today I'm going to
+[0:12] show you how to set up and run this new
+[0:13] automation workflow. So let's start with
+[0:16] the setup. And honestly, this is the
+[0:18] part where most people give up before
+[0:20] even trying because they think they need
+[0:22] to know how to code. But you don't need
+[0:23] to because Claw Code handles the entire
+[0:26] installation for you from a single
+[0:27] prompt. And the only thing you have to
+[0:29] do first is two quick installs on your
+[0:31] computer. The first one is clawed code
+[0:33] which comes inside the claw desktop app.
+[0:35] So I'll simply download that. And if
+[0:36] you're on Windows, you also have to
+[0:38] install git bash before it. Then the
+[0:40] second one is Node.js which motion needs
+[0:42] to run. So I'll go to the official site,
+[0:44] download the installer and click through
+[0:46] with the default settings. Now one thing
+[0:48] here, you actually have to restart your
+[0:50] computer after this because if you
+[0:52] don't, the remote install fails and
+[0:54] tells you no.js isn't there. So once
+[0:56] it's back on, I'll open the claw desktop
+[0:58] app. Go to the code tab, choose local,
+[1:01] and pick an empty folder where the whole
+[1:03] project is going to live. Then I'll set
+[1:05] the model to Opus 5.5, which is the one
+[1:08] I'm using for everything today, and put
+[1:10] the mode on auto. So it runs every
+[1:12] command without stopping to ask me each
+[1:14] time. Now, for the setup prompt, here's
+[1:16] exactly what I'll paste in. So let's
+[1:18] send it. And as you can see, it checks
+[1:20] which version of NodeJS I have, and then
+[1:22] it creates a new project called my
+[1:24] video. After that, it installs
+[1:26] everything inside it as well as the
+[1:28] official remotion skills, [music] which
+[1:29] are 12 in total. Now, these skills are
+[1:31] basically a set of instructions that
+[1:33] teach Claude code how to write the
+[1:35] Remotion code the right way. So, it
+[1:37] doesn't have to guess anything. Then, it
+[1:38] starts something called Remotion Studio
+[1:41] and gives me a local link. So, I'll open
+[1:42] it in my browser. And here it is. Right
+[1:44] now, it's just an empty checkerboard
+[1:46] because we haven't made anything yet.
+[1:48] But everything I build from here on is
+[1:50] going to show up in the list on the left
+[1:52] and play right here in the preview. And
+[1:54] one thing to keep in mind, every prompt
+[1:55] I'm about to show you goes into this
+[1:57] same Claude Code app. Now, let's make
+[1:59] the first video. And I'll start with the
+[2:01] one you see in almost every podcast on
+[2:04] YouTube, which is the name card that
+[2:05] shows up under the guest when they start
+[2:07] talking. And if you make podcasts or
+[2:09] interviews yourself, this is probably
+[2:11] the one you'll use the most. So, I'll go
+[2:14] back to Claude Code, and here's exactly
+[2:15] what I'll write. As you can see, it's
+[2:17] written the same way I'd explain it to
+[2:19] an editor. what the video is for, what
+[2:21] text goes on it, and what happens second
+[2:23] by second. Now, let's send it. And after
+[2:25] about a minute, a new video called lower
+[2:27] third shows up in the list. So, let's
+[2:29] press play.
+[2:37] Honestly, for a first try, this already
+[2:39] looks like the name cards you see on the
+[2:41] big podcast channels. But there's one
+[2:43] thing I don't like. the blurry person it
+[2:45] put in the background looks a bit weird
+[2:47] and the card on its own feels a bit
+[2:49] plain. Now, instead of starting over
+[2:51] with a new prompt, you can simply tell
+[2:53] it what you don't like, just like you'd
+[2:54] tell an editor. So, here's the follow-up
+[2:56] I'll write. And one small thing, I also
+[2:58] tell it to make a copy first and only
+[3:00] change the copy so the original stays
+[3:03] exactly as it is in case I want to go
+[3:05] back. Let's send it. And here's the new
+[3:06] version.
+[3:14] And look at this. Now it looks way
+[3:16] better because it removed that person
+[3:18] from the background. And the [music]
+[3:19] best part is that I didn't touch a
+[3:21] single line of code. I just set what I
+[3:23] wanted to change and Claw did it for me.
+[3:25] Now the second video is an animated
+[3:27] chart with a few bars and numbers. And
+[3:29] the reason I'm making this is because
+[3:31] this is one of the motion graphics that
+[3:33] takes forever when editing. So, in my
+[3:35] case, I'm going to show how much faster
+[3:36] Chat GPT got to 100 million users
+[3:39] compared to apps like Netflix, Spotify,
+[3:42] and Tik Tok. And here's exactly what
+[3:43] I'll write. Let's send it. And here's
+[3:45] what came back.
+[3:49] [music]
+[4:06] As you can see, everything is really
+[4:08] smooth. And that's what I like about it
+[4:10] because it's not simply putting the bar
+[4:11] there. It also animates everything. But
+[4:13] the coolest thing is when it zooms in
+[4:15] and highlights the chat GPT timeline
+[4:17] with that bright green. However, there
+[4:19] are two things I would want to change.
+[4:21] The first one is the little bounce on
+[4:23] every [music] bar and then the gray bars
+[4:25] for the other companies which I want to
+[4:27] color. So, same as before, I'll tell it
+[4:29] to make a copy [music] and only change
+[4:30] that one. So, here's the prompt I'll
+[4:32] use. And this time, I also tell it what
+[4:34] I like, which is the glow on the chat
+[4:36] GPT bar. So, [music] it keeps that part
+[4:38] exactly as it is. Let's send it and take
+[4:40] a look at it.
+[5:01] Now, every app comes in with its own
+[5:03] colors. [music] Netflix in red, Spotify
+[5:05] in green, Instagram with that purple to
+[5:07] orange gradient, and then they all fade
+[5:09] to gray right before chat GPT shows up.
+[5:12] In my opinion, this one looks better
+[5:14] than most charts I see on the big tech
+[5:16] channels. So, now that you've seen how
+[5:17] the feedback works, let's make two
+[5:19] longer videos. And this time, I'll go
+[5:21] straight from the prompt to the result.
+[5:23] The first one is a launch ad for an app,
+[5:25] and I made up one called Clipwise, which
+[5:27] turns long videos into short ones. But
+[5:29] you can put your own product in there
+[5:31] and keep everything else in the prompt
+[5:33] the same. So, here's the prompt I'll
+[5:35] paste in. Let's send it. And here's the
+[5:36] 30-second ad.
+[5:39] [music]
+[6:01] >> [music]
+[6:07] >> I must say the entire video is really
+[6:09] smooth and it just makes sense, which
+[6:11] might sound stupid, but I've seen so
+[6:13] many ads for apps which [music] simply
+[6:14] don't make sense. This is simple,
+[6:16] straight to the point, and shows why the
+[6:18] customer would care about it. So, if you
+[6:20] have a product or an app, this is
+[6:21] something you want to test out. Now, let
+[6:23] me create a second video, which will be
+[6:24] an explainer that follows one prompt
+[6:26] from the moment you press enter to the
+[6:28] moment the answer [music] comes back.
+[6:30] And for this one, I'll be using this
+[6:32] prompt. So, let's send it and check out
+[6:34] the results.
+[6:48] Yeah.
+[7:01] Heat.
+[7:19] Honestly, this feels like a scene from a
+[7:21] documentary, but it's also super
+[7:23] interesting because it uses all of these
+[7:25] motion graphics to explain how AI works
+[7:27] behind the scenes. Now, there is one
+[7:29] more I want to test with this workflow,
+[7:31] but this time I want to push it as far
+[7:32] as possible. So, I'm going to ask for a
+[7:34] 60-second intro about the tool itself,
+[7:37] which we'll be using the four videos we
+[7:39] just made previously. So, here's the
+[7:40] prompt I'll paste in. Let's send it. And
+[7:43] this one takes the longest of all of
+[7:45] them, so it'll take a bit longer than
+[7:46] the rest.
+[8:47] Okay, this one is on a whole other
+[8:48] level. So, not only does it look
+[8:50] extremely premium and the motions are
+[8:52] smooth from start to finish, but it also
+[8:54] found a great way to combine all of the
+[8:56] videos I've made so far. In my opinion,
+[8:58] this is better than any intro I could
+[9:00] ever make myself, even if I spend a
+[9:02] whole week on it. Now, the only thing
+[9:04] left is to get all of these out of the
+[9:06] preview and into real video files. And
+[9:08] that's also one prompt. So, here's
+[9:10] exactly what I'll write. Let's send it.
+[9:12] and it renders every single one, both
+[9:14] the originals and the fixed versions,
+[9:16] and puts them in a folder called renders
+[9:18] inside the project. And with one more
+[9:20] short message, I had it number the files
+[9:22] 1 to 7 in the order we made them. So,
+[9:24] let's open the renders folder. And here
+[9:26] they are, all seven videos as MP4 files
+[9:29] with every fixed version sitting right
+[9:31] next to its original. And from here, you
+[9:33] can drop them into any editor or post
+[9:35] them straight away. So, the next time
+[9:36] you need an intro, a chart, or an
+[9:38] animation for your own videos, you can
+[9:40] just use this simple workflow and do it
+[9:42] in a few minutes. But if you want to
+[9:44] learn how to create any type of video
+[9:46] from realistic AI films to UGC ads,
+[9:48] watch this video next. Thanks for
+[9:50] watching and [music] I'll see you in the
+[9:51] next

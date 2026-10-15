@@ -1,0 +1,1175 @@
+{
+  "handle": "@yourhandle",
+  "accent": "#10C88A",
+  "source": "Data: UBS, Similarweb (2023)",
+  "music": "music/soft_pad.wav",
+  "scenes": [
+    {
+      "type": "slam",
+      "dur": 140,
+      "vo": "vo/race_100m_cinematic/s00.mp3",
+      "data": {
+        "kicker": "NETFLIX  \u2192  100M USERS",
+        "big": "18 YEARS",
+        "color": "#E50914",
+        "dark": true,
+        "syncWord": "eighteen",
+        "syncFrame": 31
+      }
+    },
+    {
+      "type": "slam",
+      "dur": 88,
+      "vo": "vo/race_100m_cinematic/s01.mp3",
+      "data": {
+        "kicker": "CHATGPT  \u2192  100M USERS",
+        "big": "2 MONTHS",
+        "color": "#10C88A",
+        "dark": false,
+        "flash": true,
+        "syncWord": "two",
+        "syncFrame": 45
+      }
+    },
+    {
+      "type": "title",
+      "dur": 171,
+      "vo": "vo/race_100m_cinematic/s02.mp3",
+      "data": {
+        "kicker": "THE RACE TO",
+        "title": "100,000,000",
+        "sub": "USERS"
+      }
+    },
+    {
+      "type": "counter",
+      "dur": 119,
+      "vo": "vo/race_100m_cinematic/s03.mp3",
+      "data": {
+        "to": 100000000,
+        "label": "people",
+        "compare": "Germany's population: 84 million"
+      }
+    },
+    {
+      "type": "app",
+      "dur": 146,
+      "vo": "vo/race_100m_cinematic/s04.mp3",
+      "data": {
+        "name": "Netflix",
+        "num": "18",
+        "unit": "YEARS",
+        "fact": "Started by mailing DVDs",
+        "from": "#E50914",
+        "to": "#3A0306",
+        "rank": 1
+      }
+    },
+    {
+      "type": "app",
+      "dur": 127,
+      "vo": "vo/race_100m_cinematic/s05.mp3",
+      "data": {
+        "name": "Spotify",
+        "num": "11",
+        "unit": "YEARS",
+        "fact": "One market at a time",
+        "from": "#1ED760",
+        "to": "#064D2A",
+        "rank": 2
+      }
+    },
+    {
+      "type": "app",
+      "dur": 123,
+      "vo": "vo/race_100m_cinematic/s06.mp3",
+      "data": {
+        "name": "Twitter",
+        "num": "5",
+        "unit": "YEARS",
+        "fact": "140 characters at a time",
+        "from": "#1D9BF0",
+        "to": "#08305A",
+        "rank": 3
+      }
+    },
+    {
+      "type": "app",
+      "dur": 125,
+      "vo": "vo/race_100m_cinematic/s07.mp3",
+      "data": {
+        "name": "Facebook",
+        "num": "4.5",
+        "unit": "YEARS",
+        "fact": "Born in a college dorm",
+        "from": "#4C6EF5",
+        "to": "#1A1F5C",
+        "rank": 4
+      }
+    },
+    {
+      "type": "app",
+      "dur": 128,
+      "vo": "vo/race_100m_cinematic/s08.mp3",
+      "data": {
+        "name": "Instagram",
+        "num": "2.5",
+        "unit": "YEARS",
+        "fact": "One filtered photo at a time",
+        "from": "#F58529",
+        "to": "#8134AF",
+        "rank": 5
+      }
+    },
+    {
+      "type": "app",
+      "dur": 157,
+      "vo": "vo/race_100m_cinematic/s09.mp3",
+      "data": {
+        "name": "TikTok",
+        "num": "9",
+        "unit": "MONTHS",
+        "fact": "Short videos + a ruthless algorithm",
+        "from": "#25F4EE",
+        "to": "#FE2C55",
+        "rank": 6,
+        "glitch": true
+      }
+    },
+    {
+      "type": "race",
+      "dur": 188,
+      "vo": "vo/race_100m_cinematic/s10.mp3",
+      "data": {
+        "title": "Time to 100M users",
+        "items": [
+          {
+            "label": "Netflix",
+            "value": 216,
+            "display": "18 yrs",
+            "color": "#E50914"
+          },
+          {
+            "label": "Spotify",
+            "value": 132,
+            "display": "11 yrs",
+            "color": "#1DB954"
+          },
+          {
+            "label": "Twitter",
+            "value": 60,
+            "display": "5 yrs",
+            "color": "#1D9BF0"
+          },
+          {
+            "label": "Facebook",
+            "value": 54,
+            "display": "4.5 yrs",
+            "color": "#4C6EF5"
+          },
+          {
+            "label": "Instagram",
+            "value": 30,
+            "display": "2.5 yrs",
+            "color": "#C13584"
+          },
+          {
+            "label": "TikTok",
+            "value": 9,
+            "display": "9 mo",
+            "color": "#FE2C55"
+          },
+          {
+            "label": "ChatGPT",
+            "value": 2,
+            "display": "?",
+            "color": "#10C88A"
+          }
+        ]
+      }
+    },
+    {
+      "type": "buildup",
+      "dur": 184,
+      "vo": "vo/race_100m_cinematic/s11.mp3",
+      "data": {
+        "date": "NOV 30, 2022",
+        "line": "OpenAI releases ChatGPT",
+        "syncWord": "November",
+        "syncFrame": 19
+      }
+    },
+    {
+      "type": "reveal",
+      "dur": 280,
+      "vo": "vo/race_100m_cinematic/s12.mp3",
+      "data": {
+        "chip": "CHATGPT  \u00b7  NOV 2022",
+        "aNum": "1M",
+        "aLabel": "users in",
+        "aBig": "5 DAYS",
+        "countFrom": 1000000,
+        "countTo": 100000000,
+        "countLabel": "USERS IN",
+        "big": "2 MONTHS",
+        "sub": "The fastest-growing consumer app ever recorded, at the time",
+        "syncWord": "Two",
+        "syncFrame": 67
+      }
+    },
+    {
+      "type": "chat",
+      "dur": 170,
+      "vo": "vo/race_100m_cinematic/s13.mp3",
+      "data": {
+        "prompt": "Explain the internet to a 5-year-old",
+        "answer": "Imagine every library in the world, connected by invisible roads\u2026",
+        "tags": [
+          "No friends needed",
+          "No feed",
+          "Just ask"
+        ]
+      }
+    },
+    {
+      "type": "cta",
+      "dur": 140,
+      "vo": "vo/race_100m_cinematic/s14.mp3",
+      "data": {
+        "cta": "A new AI story. Every day."
+      }
+    }
+  ],
+  "captions": [
+    {
+      "text": "Netflix",
+      "startMs": 92.583,
+      "endMs": 532.416
+    },
+    {
+      "text": "needed",
+      "startMs": 532.416,
+      "endMs": 879.624
+    },
+    {
+      "text": "eighteen",
+      "startMs": 1018.5,
+      "endMs": 1458.333
+    },
+    {
+      "text": "years",
+      "startMs": 1458.333,
+      "endMs": 1886.583
+    },
+    {
+      "text": "to",
+      "startMs": 2106.5,
+      "endMs": 2222.208
+    },
+    {
+      "text": "reach",
+      "startMs": 2222.208,
+      "endMs": 2499.9990000000003
+    },
+    {
+      "text": "a",
+      "startMs": 2557.875,
+      "endMs": 2604.1659
+    },
+    {
+      "text": "hundred",
+      "startMs": 2615.75,
+      "endMs": 3044.0
+    },
+    {
+      "text": "million",
+      "startMs": 3044.0,
+      "endMs": 3449.083
+    },
+    {
+      "text": "users",
+      "startMs": 3460.666,
+      "endMs": 4004.666
+    },
+    {
+      "text": "ChatGPT",
+      "startMs": 4759.249666666667,
+      "endMs": 5685.165666666667
+    },
+    {
+      "text": "did",
+      "startMs": 5847.207666666667,
+      "endMs": 5986.082666666667
+    },
+    {
+      "text": "it",
+      "startMs": 5986.124666666667,
+      "endMs": 6067.124666666667
+    },
+    {
+      "text": "in",
+      "startMs": 6067.124666666667,
+      "endMs": 6159.707666666667
+    },
+    {
+      "text": "two",
+      "startMs": 6159.707666666667,
+      "endMs": 6356.457666666667
+    },
+    {
+      "text": "months",
+      "startMs": 6368.041666666667,
+      "endMs": 6923.582666666667
+    },
+    {
+      "text": "This",
+      "startMs": 7692.583,
+      "endMs": 7831.458
+    },
+    {
+      "text": "is",
+      "startMs": 7831.5,
+      "endMs": 7924.083
+    },
+    {
+      "text": "the",
+      "startMs": 7935.666,
+      "endMs": 8016.666
+    },
+    {
+      "text": "race",
+      "startMs": 8016.666,
+      "endMs": 8410.166
+    },
+    {
+      "text": "to",
+      "startMs": 8410.166,
+      "endMs": 8549.041
+    },
+    {
+      "text": "one",
+      "startMs": 8560.666,
+      "endMs": 8780.541000000001
+    },
+    {
+      "text": "hundred",
+      "startMs": 8780.541,
+      "endMs": 9104.624
+    },
+    {
+      "text": "million",
+      "startMs": 9104.625,
+      "endMs": 9556.0
+    },
+    {
+      "text": "and",
+      "startMs": 9937.958,
+      "endMs": 9995.833
+    },
+    {
+      "text": "the",
+      "startMs": 9995.833,
+      "endMs": 10053.708
+    },
+    {
+      "text": "story",
+      "startMs": 10065.291000000001,
+      "endMs": 10539.832
+    },
+    {
+      "text": "of",
+      "startMs": 10551.375,
+      "endMs": 10632.375
+    },
+    {
+      "text": "how",
+      "startMs": 10632.416000000001,
+      "endMs": 10944.916000000001
+    },
+    {
+      "text": "one",
+      "startMs": 11014.333,
+      "endMs": 11292.124
+    },
+    {
+      "text": "app",
+      "startMs": 11292.125,
+      "endMs": 11535.166000000001
+    },
+    {
+      "text": "broke",
+      "startMs": 11535.166000000001,
+      "endMs": 11801.374
+    },
+    {
+      "text": "the",
+      "startMs": 11801.375,
+      "endMs": 11882.375
+    },
+    {
+      "text": "internet",
+      "startMs": 11894.0,
+      "endMs": 12299.082999999999
+    },
+    {
+      "text": "A",
+      "startMs": 13392.583,
+      "endMs": 13450.458
+    },
+    {
+      "text": "hundred",
+      "startMs": 13450.458,
+      "endMs": 13751.374
+    },
+    {
+      "text": "million",
+      "startMs": 13751.375,
+      "endMs": 14087.041
+    },
+    {
+      "text": "people",
+      "startMs": 14098.625,
+      "endMs": 14515.291
+    },
+    {
+      "text": "That's",
+      "startMs": 14897.208,
+      "endMs": 15036.083
+    },
+    {
+      "text": "more",
+      "startMs": 15036.125,
+      "endMs": 15175.0
+    },
+    {
+      "text": "than",
+      "startMs": 15175.0,
+      "endMs": 15313.875
+    },
+    {
+      "text": "everyone",
+      "startMs": 15325.458,
+      "endMs": 15753.708
+    },
+    {
+      "text": "living",
+      "startMs": 15753.708,
+      "endMs": 15996.749
+    },
+    {
+      "text": "in",
+      "startMs": 15996.75,
+      "endMs": 16066.208
+    },
+    {
+      "text": "Germany",
+      "startMs": 16077.791000000001,
+      "endMs": 16540.749
+    },
+    {
+      "text": "Netflix",
+      "startMs": 17347.666666666664,
+      "endMs": 17972.666666666664
+    },
+    {
+      "text": "Eighteen",
+      "startMs": 18354.624666666663,
+      "endMs": 18690.290666666664
+    },
+    {
+      "text": "years",
+      "startMs": 18690.291666666664,
+      "endMs": 19153.249666666663
+    },
+    {
+      "text": "It",
+      "startMs": 19523.624666666663,
+      "endMs": 19593.040666666664
+    },
+    {
+      "text": "started",
+      "startMs": 19593.041666666664,
+      "endMs": 19951.832666666665
+    },
+    {
+      "text": "by",
+      "startMs": 19963.416666666664,
+      "endMs": 20055.999666666663
+    },
+    {
+      "text": "mailing",
+      "startMs": 20055.999666666663,
+      "endMs": 20530.540666666664
+    },
+    {
+      "text": "DVDs",
+      "startMs": 20634.707666666665,
+      "endMs": 21491.207666666665
+    },
+    {
+      "text": "Spotify",
+      "startMs": 22225.91633333333,
+      "endMs": 22758.332333333332
+    },
+    {
+      "text": "Eleven",
+      "startMs": 23140.29133333333,
+      "endMs": 23464.374333333333
+    },
+    {
+      "text": "years",
+      "startMs": 23475.91633333333,
+      "endMs": 23950.457333333332
+    },
+    {
+      "text": "winning",
+      "startMs": 24181.958333333332,
+      "endMs": 24471.29133333333
+    },
+    {
+      "text": "music",
+      "startMs": 24471.29133333333,
+      "endMs": 24795.374333333333
+    },
+    {
+      "text": "one",
+      "startMs": 24806.958333333332,
+      "endMs": 24992.124333333333
+    },
+    {
+      "text": "market",
+      "startMs": 24992.124333333333,
+      "endMs": 25316.207333333332
+    },
+    {
+      "text": "at",
+      "startMs": 25316.208333333332,
+      "endMs": 25385.66633333333
+    },
+    {
+      "text": "a",
+      "startMs": 25397.208333333332,
+      "endMs": 25420.374333333333
+    },
+    {
+      "text": "time",
+      "startMs": 25420.374333333333,
+      "endMs": 25779.16533333333
+    },
+    {
+      "text": "Twitter",
+      "startMs": 26447.666666666668,
+      "endMs": 26841.166666666668
+    },
+    {
+      "text": "Five",
+      "startMs": 27257.874666666667,
+      "endMs": 27547.20766666667
+    },
+    {
+      "text": "years",
+      "startMs": 27547.20766666667,
+      "endMs": 28010.165666666668
+    },
+    {
+      "text": "a",
+      "startMs": 28160.666666666668,
+      "endMs": 28195.374666666667
+    },
+    {
+      "text": "hundred",
+      "startMs": 28357.416666666668,
+      "endMs": 28588.874666666667
+    },
+    {
+      "text": "and",
+      "startMs": 28588.874666666667,
+      "endMs": 28635.165566666667
+    },
+    {
+      "text": "forty",
+      "startMs": 28635.166666666668,
+      "endMs": 28912.95766666667
+    },
+    {
+      "text": "characters",
+      "startMs": 28912.95766666667,
+      "endMs": 29410.623666666666
+    },
+    {
+      "text": "at",
+      "startMs": 29410.666666666668,
+      "endMs": 29468.541666666668
+    },
+    {
+      "text": "a",
+      "startMs": 29480.08266666667,
+      "endMs": 29503.248666666666
+    },
+    {
+      "text": "time",
+      "startMs": 29514.83266666667,
+      "endMs": 29862.040666666668
+    },
+    {
+      "text": "Facebook",
+      "startMs": 30593.999666666663,
+      "endMs": 31045.374666666663
+    },
+    {
+      "text": "Four",
+      "startMs": 31462.041666666664,
+      "endMs": 31577.791666666664
+    },
+    {
+      "text": "and",
+      "startMs": 31589.332666666665,
+      "endMs": 31647.207666666665
+    },
+    {
+      "text": "a",
+      "startMs": 31647.207666666665,
+      "endMs": 31670.373666666663
+    },
+    {
+      "text": "half",
+      "startMs": 31670.374666666663,
+      "endMs": 31982.874666666663
+    },
+    {
+      "text": "years",
+      "startMs": 31994.457666666665,
+      "endMs": 32480.582666666665
+    },
+    {
+      "text": "and",
+      "startMs": 32688.874666666663,
+      "endMs": 32781.45766666666
+    },
+    {
+      "text": "it",
+      "startMs": 32781.49966666666,
+      "endMs": 32850.91566666667
+    },
+    {
+      "text": "began",
+      "startMs": 32850.916666666664,
+      "endMs": 33163.416666666664
+    },
+    {
+      "text": "in",
+      "startMs": 33163.416666666664,
+      "endMs": 33209.707566666664
+    },
+    {
+      "text": "a",
+      "startMs": 33209.70766666666,
+      "endMs": 33244.41566666667
+    },
+    {
+      "text": "college",
+      "startMs": 33255.99966666666,
+      "endMs": 33614.79066666667
+    },
+    {
+      "text": "dorm",
+      "startMs": 33614.83266666666,
+      "endMs": 33834.70766666666
+    },
+    {
+      "text": "room",
+      "startMs": 33834.70766666666,
+      "endMs": 34031.45766666666
+    },
+    {
+      "text": "Instagram",
+      "startMs": 34725.916333333334,
+      "endMs": 35258.33233333334
+    },
+    {
+      "text": "Two",
+      "startMs": 35628.708333333336,
+      "endMs": 35756.041333333334
+    },
+    {
+      "text": "and",
+      "startMs": 35767.583333333336,
+      "endMs": 35813.874233333336
+    },
+    {
+      "text": "a",
+      "startMs": 35813.87433333333,
+      "endMs": 35837.04033333334
+    },
+    {
+      "text": "half",
+      "startMs": 35848.62433333333,
+      "endMs": 36184.24933333333
+    },
+    {
+      "text": "years",
+      "startMs": 36184.24933333333,
+      "endMs": 36624.08233333334
+    },
+    {
+      "text": "one",
+      "startMs": 36820.833333333336,
+      "endMs": 37168.041333333334
+    },
+    {
+      "text": "filtered",
+      "startMs": 37179.62433333333,
+      "endMs": 37538.41533333334
+    },
+    {
+      "text": "photo",
+      "startMs": 37538.416333333334,
+      "endMs": 37839.33233333334
+    },
+    {
+      "text": "at",
+      "startMs": 37850.916333333334,
+      "endMs": 37908.791333333334
+    },
+    {
+      "text": "a",
+      "startMs": 37920.37433333333,
+      "endMs": 37943.49933333333
+    },
+    {
+      "text": "time",
+      "startMs": 37943.49933333333,
+      "endMs": 38290.70733333334
+    },
+    {
+      "text": "TikTok",
+      "startMs": 39004.166,
+      "endMs": 39467.124
+    },
+    {
+      "text": "Just",
+      "startMs": 39837.5,
+      "endMs": 39987.958
+    },
+    {
+      "text": "nine",
+      "startMs": 39999.541,
+      "endMs": 40231.041
+    },
+    {
+      "text": "months",
+      "startMs": 40242.583,
+      "endMs": 40763.416
+    },
+    {
+      "text": "powered",
+      "startMs": 40948.625,
+      "endMs": 41214.833
+    },
+    {
+      "text": "by",
+      "startMs": 41214.833,
+      "endMs": 41318.999
+    },
+    {
+      "text": "short",
+      "startMs": 41319.0,
+      "endMs": 41654.625
+    },
+    {
+      "text": "videos",
+      "startMs": 41654.625,
+      "endMs": 42268.041
+    },
+    {
+      "text": "and",
+      "startMs": 42337.5,
+      "endMs": 42418.5
+    },
+    {
+      "text": "a",
+      "startMs": 42418.5,
+      "endMs": 42476.375
+    },
+    {
+      "text": "ruthless",
+      "startMs": 42487.958,
+      "endMs": 43008.791
+    },
+    {
+      "text": "algorithm",
+      "startMs": 43020.375,
+      "endMs": 43518.041
+    },
+    {
+      "text": "Line",
+      "startMs": 44225.916333333334,
+      "endMs": 44422.666333333334
+    },
+    {
+      "text": "them",
+      "startMs": 44422.666333333334,
+      "endMs": 44538.416333333334
+    },
+    {
+      "text": "up",
+      "startMs": 44538.416333333334,
+      "endMs": 44735.166333333334
+    },
+    {
+      "text": "and",
+      "startMs": 45174.99933333333,
+      "endMs": 45221.29023333333
+    },
+    {
+      "text": "the",
+      "startMs": 45221.291333333334,
+      "endMs": 45290.74933333333
+    },
+    {
+      "text": "pattern",
+      "startMs": 45290.74933333333,
+      "endMs": 45626.37433333333
+    },
+    {
+      "text": "is",
+      "startMs": 45626.37433333333,
+      "endMs": 45707.37433333333
+    },
+    {
+      "text": "clear",
+      "startMs": 45707.416333333334,
+      "endMs": 46135.666333333334
+    },
+    {
+      "text": "Every",
+      "startMs": 46494.458333333336,
+      "endMs": 46668.041333333334
+    },
+    {
+      "text": "new",
+      "startMs": 46668.041333333334,
+      "endMs": 46841.666333333334
+    },
+    {
+      "text": "platform",
+      "startMs": 46841.666333333334,
+      "endMs": 47420.37433333333
+    },
+    {
+      "text": "grew",
+      "startMs": 47501.37433333333,
+      "endMs": 47871.74933333333
+    },
+    {
+      "text": "faster",
+      "startMs": 47883.333333333336,
+      "endMs": 48392.583333333336
+    },
+    {
+      "text": "than",
+      "startMs": 48392.583333333336,
+      "endMs": 48473.583333333336
+    },
+    {
+      "text": "the",
+      "startMs": 48473.62433333333,
+      "endMs": 48531.49933333333
+    },
+    {
+      "text": "last",
+      "startMs": 48531.49933333333,
+      "endMs": 49052.33233333334
+    },
+    {
+      "text": "Then",
+      "startMs": 50492.583,
+      "endMs": 50781.916
+    },
+    {
+      "text": "on",
+      "startMs": 50932.416,
+      "endMs": 51048.166
+    },
+    {
+      "text": "November",
+      "startMs": 51048.166,
+      "endMs": 51372.207
+    },
+    {
+      "text": "thirtieth",
+      "startMs": 51372.208,
+      "endMs": 51997.208
+    },
+    {
+      "text": "twenty",
+      "startMs": 52182.416,
+      "endMs": 52413.874
+    },
+    {
+      "text": "twenty-two",
+      "startMs": 52413.875,
+      "endMs": 52923.125
+    },
+    {
+      "text": "a",
+      "startMs": 53316.666,
+      "endMs": 53362.9569
+    },
+    {
+      "text": "small",
+      "startMs": 53362.958,
+      "endMs": 53698.624
+    },
+    {
+      "text": "research",
+      "startMs": 53710.166,
+      "endMs": 54196.291
+    },
+    {
+      "text": "lab",
+      "startMs": 54196.291,
+      "endMs": 54531.957
+    },
+    {
+      "text": "released",
+      "startMs": 54659.25,
+      "endMs": 54971.75
+    },
+    {
+      "text": "a",
+      "startMs": 54971.75,
+      "endMs": 54994.916
+    },
+    {
+      "text": "chatbot",
+      "startMs": 55006.5,
+      "endMs": 55608.333
+    },
+    {
+      "text": "Five",
+      "startMs": 56695.374333333326,
+      "endMs": 56903.70733333333
+    },
+    {
+      "text": "days",
+      "startMs": 56915.29133333333,
+      "endMs": 57285.66633333333
+    },
+    {
+      "text": "to",
+      "startMs": 57297.20833333333,
+      "endMs": 57424.54133333333
+    },
+    {
+      "text": "a",
+      "startMs": 57424.54133333333,
+      "endMs": 57470.83223333333
+    },
+    {
+      "text": "million",
+      "startMs": 57470.83333333333,
+      "endMs": 57829.624333333326
+    },
+    {
+      "text": "users",
+      "startMs": 57841.20833333333,
+      "endMs": 58385.20833333333
+    },
+    {
+      "text": "Two",
+      "startMs": 58767.124333333326,
+      "endMs": 58940.749333333326
+    },
+    {
+      "text": "months",
+      "startMs": 58940.749333333326,
+      "endMs": 59345.83233333333
+    },
+    {
+      "text": "to",
+      "startMs": 59473.16633333333,
+      "endMs": 59600.45733333333
+    },
+    {
+      "text": "a",
+      "startMs": 59600.45833333333,
+      "endMs": 59646.74923333333
+    },
+    {
+      "text": "hundred",
+      "startMs": 59658.33333333333,
+      "endMs": 59947.66633333333
+    },
+    {
+      "text": "million",
+      "startMs": 59947.66633333333,
+      "endMs": 60294.874333333326
+    },
+    {
+      "text": "At",
+      "startMs": 60665.29133333333,
+      "endMs": 60746.29133333333
+    },
+    {
+      "text": "the",
+      "startMs": 60746.29133333333,
+      "endMs": 60804.16633333333
+    },
+    {
+      "text": "time",
+      "startMs": 60804.16633333333,
+      "endMs": 61278.707333333325
+    },
+    {
+      "text": "the",
+      "startMs": 61510.16633333333,
+      "endMs": 61591.16633333333
+    },
+    {
+      "text": "fastest-growing",
+      "startMs": 61591.20833333333,
+      "endMs": 62517.124333333326
+    },
+    {
+      "text": "consumer",
+      "startMs": 62528.70833333333,
+      "endMs": 63061.124333333326
+    },
+    {
+      "text": "app",
+      "startMs": 63072.66633333333,
+      "endMs": 63350.457333333325
+    },
+    {
+      "text": "ever",
+      "startMs": 63512.499333333326,
+      "endMs": 63697.66533333333
+    },
+    {
+      "text": "recorded",
+      "startMs": 63709.249333333326,
+      "endMs": 64183.79033333333
+    },
+    {
+      "text": "No",
+      "startMs": 65959.24966666666,
+      "endMs": 66098.12466666666
+    },
+    {
+      "text": "friends",
+      "startMs": 66109.70766666665,
+      "endMs": 66375.91566666665
+    },
+    {
+      "text": "needed",
+      "startMs": 66375.91666666666,
+      "endMs": 66676.83266666665
+    },
+    {
+      "text": "No",
+      "startMs": 67047.20766666665,
+      "endMs": 67220.83266666665
+    },
+    {
+      "text": "feed",
+      "startMs": 67232.41666666666,
+      "endMs": 67614.33266666665
+    },
+    {
+      "text": "to",
+      "startMs": 67614.33266666665,
+      "endMs": 67706.91566666665
+    },
+    {
+      "text": "build",
+      "startMs": 67706.95766666665,
+      "endMs": 68031.04066666665
+    },
+    {
+      "text": "Just",
+      "startMs": 68401.37466666666,
+      "endMs": 68540.24966666666
+    },
+    {
+      "text": "a",
+      "startMs": 68540.29166666666,
+      "endMs": 68586.58256666665
+    },
+    {
+      "text": "text",
+      "startMs": 68598.16666666666,
+      "endMs": 68956.95766666665
+    },
+    {
+      "text": "box",
+      "startMs": 68956.95766666665,
+      "endMs": 69269.45766666665
+    },
+    {
+      "text": "that",
+      "startMs": 69280.99966666666,
+      "endMs": 69361.99966666666
+    },
+    {
+      "text": "could",
+      "startMs": 69362.04166666666,
+      "endMs": 69466.20766666665
+    },
+    {
+      "text": "answer",
+      "startMs": 69477.79166666666,
+      "endMs": 69859.70766666665
+    },
+    {
+      "text": "almost",
+      "startMs": 69859.70766666665,
+      "endMs": 70322.66566666665
+    },
+    {
+      "text": "anything",
+      "startMs": 70334.24966666666,
+      "endMs": 70808.79066666665
+    },
+    {
+      "text": "Follow",
+      "startMs": 71683.79133333333,
+      "endMs": 71938.41633333333
+    },
+    {
+      "text": "for",
+      "startMs": 71949.99933333333,
+      "endMs": 72077.33233333332
+    },
+    {
+      "text": "a",
+      "startMs": 72077.33333333333,
+      "endMs": 72100.45833333333
+    },
+    {
+      "text": "new",
+      "startMs": 72100.45833333333,
+      "endMs": 72355.08333333333
+    },
+    {
+      "text": "AI",
+      "startMs": 72366.66633333333,
+      "endMs": 72748.62433333333
+    },
+    {
+      "text": "story",
+      "startMs": 72748.62433333333,
+      "endMs": 73188.45733333332
+    },
+    {
+      "text": "every",
+      "startMs": 73373.62433333333,
+      "endMs": 73570.37433333333
+    },
+    {
+      "text": "day",
+      "startMs": 73570.37433333333,
+      "endMs": 73871.29033333332
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+<title>Race to 100M Reel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;600;800&display=swap">
+<style>
+  /* Layout: one centered column, phone-shaped player first, production notes beneath. */
+  :root {
+    --bg: #F6F2EA;
+    --surface: #FFFFFF;
+    --fg: #14161C;
+    --muted: #5E6472;
+    --line: #E4DDCF;
+    --accent: #0A9E6E;
+    --display: "Anton", Impact, "Arial Narrow", sans-serif;
+    --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0B0D12; --surface: #151821; --fg: #EEF0F5; --muted: #9AA2B4; --line: #262A36; --accent: #2EE6A6;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0B0D12; --surface: #151821; --fg: #EEF0F5; --muted: #9AA2B4; --line: #262A36; --accent: #2EE6A6;
+    color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--fg); font-family: var(--body); padding: 0 16px; }
+  main { max-width: 460px; margin: 0 auto; padding-block: 32px 48px; display: grid; gap: 22px; }
+  .eyebrow { font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+  h1 { font-family: var(--display); font-weight: 400; font-size: clamp(40px, 11vw, 56px); line-height: .95; margin: 6px 0 0; letter-spacing: .01em; text-wrap: balance; }
+  .lede { margin: 10px 0 0; color: var(--muted); font-size: 15px; line-height: 1.55; }
+  video { width: 100%; max-width: 100%; aspect-ratio: 9 / 16; display: block; border-radius: 18px; background: #000; border: 1px solid var(--line); }
+  dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 10px 18px; padding: 18px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; font-size: 14px; }
+  dt { color: var(--muted); font-weight: 600; }
+  dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; min-width: 0; }
+  .note { font-size: 13px; color: var(--muted); line-height: 1.55; margin: 0; }
+</style>
+
+<main>
+  <header>
+    <div class="eyebrow">Reel · Story template v1</div>
+    <h1>The Race to 100 Million Users</h1>
+    <p class="lede">Netflix needed 18 years. ChatGPT needed 2 months. A 76-second cinematic reel built with Remotion, a neural voiceover and code-generated sound.</p>
+  </header>
+
+  <video src="race-to-100m.mp4" controls playsinline preload="metadata"></video>
+
+  <dl>
+    <dt>Length</dt><dd>1:16 · 15 scenes</dd>
+    <dt>Format</dt><dd>1080 × 1920, 30 fps, 9:16</dd>
+    <dt>Audio</dt><dd>Voiceover, music, SFX · −14 LUFS</dd>
+    <dt>Data</dt><dd>UBS, Similarweb (2023)</dd>
+  </dl>
+
+  <p class="note">This is a compressed preview copy (13 MB). The full-quality master (35 MB) for posting is saved on the Mac as Downloads/Race_to_100M_cinematic_v2.mp4.</p>
+</main>

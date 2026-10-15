@@ -1,0 +1,41 @@
+{
+  "id": "statrace_100m",
+  "template": "StatRace",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "+6%",
+  "props": {
+    "hookTop": "Netflix took 18 years.",
+    "hookBig": "ChatGPT took 2 months.",
+    "title": "Time to reach 100 million users",
+    "items": [
+      { "label": "Netflix", "value": 216, "display": "18 years", "color": "#E50914" },
+      { "label": "Spotify", "value": 132, "display": "11 years", "color": "#1DB954" },
+      { "label": "Twitter", "value": 60, "display": "5 years", "color": "#1D9BF0" },
+      { "label": "Facebook", "value": 54, "display": "4.5 years", "color": "#1877F2" },
+      { "label": "Instagram", "value": 30, "display": "2.5 years", "color": "#E1306C" },
+      { "label": "TikTok", "value": 9, "display": "9 months", "color": "#111111" },
+      { "label": "ChatGPT", "value": 2, "display": "2 months", "color": "#0A9E6E" }
+    ],
+    "revealBig": "2 MONTHS",
+    "revealSub": "The fastest-growing app in history",
+    "cta": "Follow for a new AI stat every day",
+    "handle": "@yourhandle",
+    "source": "Source: UBS / Similarweb, 2023",
+    "accent": "#0A9E6E"
+  },
+  "vo": {
+    "hook": "Netflix took eighteen years. ChatGPT took two months.",
+    "title": "Here's how long the biggest apps took to reach a hundred million users.",
+    "items": [
+      "Netflix. Eighteen years.",
+      "Spotify. Eleven.",
+      "Twitter. Five.",
+      "Facebook. Four and a half.",
+      "Instagram. Two and a half years.",
+      "TikTok. Just nine months.",
+      "And ChatGPT?"
+    ],
+    "reveal": "Two months. The fastest-growing app in history.",
+    "cta": "Follow for a new AI stat every day."
+  }
+}
