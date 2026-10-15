@@ -1,4 +1,6 @@
-# Video Agent
+# video-agent
+
+For making production grade videos for Instagram, YouTube and all.
 
 An automated factory for faceless, motion-graphics Instagram Reels about AI and marketing. The goal is 10 production-grade reels a day, at zero running cost. Everything renders from code on a Mac.
 
@@ -16,10 +18,10 @@ studio/         Remotion project (React → MP4)
 research/       Everything learned so far
   instagram/    84 verified reference accounts, findings, competitor notes
   reference-videos/  Breakdowns of videos the user shared (transcript + frames)
-references/     External repos (OpenMontage submodule) and assessments
-samples/        Rendered reels and frame sheets, v1 → v3
-docs/           Decisions, roadmap, open questions
-tools/          Misc (share-page template)
+references/     External repos: OpenMontage (submodule), Remotion (pinned link), assessments
+samples/        Rendered reels (v3 master + preview, v1, v2) and frame sheets
+docs/           BRAIN.md (full project context), decisions, roadmap
+tools/          analyze_reference.py (transcript + frame sheets), share-page template
 ```
 
 ## Run it

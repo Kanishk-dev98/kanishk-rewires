@@ -1,6 +1,6 @@
 # Video Agent: notes for Claude
 
-Read `README.md`, then `docs/ROADMAP.md` (what's next and what's waiting on the user) and `docs/DECISIONS.md` (why things are the way they are) before changing anything.
+Read `README.md` and `docs/BRAIN.md`, then `docs/ROADMAP.md` (what's next and what's waiting on the user) and `docs/DECISIONS.md` (why things are the way they are) before changing anything.
 
 - Render engine: Remotion in `studio/`. Its official skills are in `studio/.agents/skills/remotion-best-practices/`; load them before writing Remotion code.
 - Animations must be driven by `useCurrentFrame()` + `interpolate()`/`spring()`. CSS transitions do not render.

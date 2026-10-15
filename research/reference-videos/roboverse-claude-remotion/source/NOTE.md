@@ -1,0 +1,1 @@
+`roboverse-claude-code-remotion.mp4` is a third-party video (Roboverse, YouTube https://youtu.be/6_rCyryA6hg), downloaded by the user for study. It is kept in this **private** repo as a reference only. Do not publish, re-upload or reuse its footage.

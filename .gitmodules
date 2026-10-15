@@ -2,3 +2,8 @@
 	path = references/OpenMontage
 	url = https://github.com/calesthio/OpenMontage.git
 	shallow = true
+[submodule "references/remotion"]
+	path = references/remotion
+	url = https://github.com/remotion-dev/remotion.git
+	shallow = true
+	update = none

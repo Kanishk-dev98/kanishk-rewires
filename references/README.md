@@ -2,7 +2,7 @@
 
 | Repo | What it is | How we use it | Licence |
 |---|---|---|---|
-| [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | React framework that renders video from code | Our render engine, installed via npm in `studio/` (v4.0.535). Official agent skills vendored in `studio/.agents/skills/`. Not checked out here: use npm. | Remotion License: free for individuals and companies ≤3 employees; paid Company License above that |
+| [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | React framework that renders video from code | Our render engine, installed via npm in `studio/` (v4.0.535). Official agent skills vendored in `studio/.agents/skills/`. Pinned as `references/remotion` at tag v4.0.535 (`update = none`, 4.3 GB, so it is not fetched by default; run `git submodule update --init --depth 1 references/remotion` only if you need the source). | Remotion License: free for individuals and companies ≤3 employees; paid Company License above that |
 | [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | Open-source agentic video production system (research → script → assets → compose), 60+ providers, reference-video analysis, real-footage documentary pipeline, Backlot storyboard | Git submodule at `references/OpenMontage` (pinned commit). Planned for 1–2 hero videos/week and "make something like this reel" analysis; not used for the daily batch | AGPLv3: fine for making and posting our own videos; obligations only if we modify and distribute it or run it as a service for others |
 
 ## OpenMontage assessment (2026-10-15)
