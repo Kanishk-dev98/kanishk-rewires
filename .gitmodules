@@ -7,3 +7,7 @@
 	url = https://github.com/remotion-dev/remotion.git
 	shallow = true
 	update = none
+[submodule "references/awesome-opus5-5-videos"]
+	path = references/awesome-opus5-5-videos
+	url = https://github.com/yihui-dev/awesome-opus5-5-videos.git
+	shallow = true

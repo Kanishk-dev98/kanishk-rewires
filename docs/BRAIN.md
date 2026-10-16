@@ -51,6 +51,7 @@ No account checked runs a **faceless, high-volume channel of animated data stori
 | Competitor | https://www.instagram.com/roheit.ai/ |
 | Remotion | https://github.com/remotion-dev/remotion (pinned in `references/remotion` at v4.0.535, not checked out) |
 | OpenMontage | https://github.com/calesthio/OpenMontage (submodule `references/OpenMontage`) |
+| awesome-opus5-5-videos | https://github.com/yihui-dev/awesome-opus5-5-videos (submodule; shortlist in `research/opus55-prompt-shortlist.md`) |
 
 ## Accounts and connectors (status 2026-10-15)
 
