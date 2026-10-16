@@ -3,6 +3,7 @@ import { calculateStatRaceMetadata, StatRace } from "./StatRace";
 import { calculateStoryMetadata, Story } from "./story/Story";
 import { calculateFilmMetadata, Film } from "./film/Film";
 import { Brand58, BRAND58_FRAMES } from "./film58/Film58";
+import { Apolio60, APOLIO_FRAMES } from "./apolio/Apolio60";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -95,6 +96,15 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         defaultProps={{ music: "music/brand58_score.wav" as string | null }}
+      />
+      <Composition
+        id="Apolio60"
+        component={Apolio60}
+        durationInFrames={APOLIO_FRAMES}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{ music: "music/apolio_score.wav" as string | null }}
       />
     </Folder>
     </>
