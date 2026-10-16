@@ -92,7 +92,7 @@ export const S2: React.FC<SA> = ({ B, dur }) => {
               <span>Ask it from your&nbsp;</span>
               <span style={{ position: "relative", display: "inline-block", height: 60, overflow: "hidden", minWidth: 360 }}>
                 {HOSTS.map((h, k) => {
-                  const y = interpolate(f, [rollAt(k) - 6, rollAt(k)], [60, 0], { ...clamp, easing: expo }) + (k < active ? interpolate(f, [rollAt(k + 1) - 6, rollAt(k + 1)], [0, -60], { ...clamp, easing: expo }) : 0);
+                  const y = interpolate(f, [rollAt(k) - 6, rollAt(k)], [60, 0], { ...clamp, easing: expo }) + (k + 1 < HOSTS.length ? interpolate(f, [rollAt(k + 1) - 6, rollAt(k + 1)], [0, -60], { ...clamp, easing: expo }) : 0);
                   return (
                     <span key={h} style={{ position: "absolute", left: 0, top: 0, translate: `0px ${y}px`, color: A.text, fontWeight: 700, whiteSpace: "nowrap" }}>
                       {h}

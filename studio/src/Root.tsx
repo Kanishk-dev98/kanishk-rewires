@@ -4,6 +4,7 @@ import { calculateStoryMetadata, Story } from "./story/Story";
 import { calculateFilmMetadata, Film } from "./film/Film";
 import { Brand58, BRAND58_FRAMES } from "./film58/Film58";
 import { Apolio60, APOLIO_FRAMES } from "./apolio/Apolio60";
+import { Launch90, LAUNCH90_FRAMES } from "./launch90/Launch90";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -105,6 +106,15 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         defaultProps={{ music: "music/apolio_score.wav" as string | null }}
+      />
+      <Composition
+        id="Launch90"
+        component={Launch90}
+        durationInFrames={LAUNCH90_FRAMES}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{ music: "music/launch90_score.wav" as string | null }}
       />
     </Folder>
     </>

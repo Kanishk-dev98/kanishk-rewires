@@ -1,6 +1,6 @@
 # Apolio · Personal AI Agent by Abstraxn · 60 s use-case film
 
-**Files:** `Apolio_by_Abstraxn_60s_v1.mp4` (1:00, 1920×1080, 30 fps, −13.3 LUFS, bt709, faststart), `styleframes/` (12 × 1920×1080 PNG), `styleframe_board.jpg`.
+**Files:** `Apolio_by_Abstraxn_60s_v2.mp4` (1:00, 1920×1080, 30 fps, −13.3 LUFS, bt709, faststart), `styleframes/` (12 × 1920×1080 PNG), `styleframe_board.jpg`.
 **Code:** `studio/src/apolio/` (composition `Apolio60`), music placeholder `pipeline/make_apolio_score.py`.
 
 ## Approach
@@ -27,3 +27,7 @@ Wallet address and "passkey · gas sponsored" on the phone; identity fields (age
 
 - Final music track (needs its hit on 0:43.0 for DENIED, and the logo at 0:57.0)
 - 9:16 and 1:1 cutdowns
+
+## v2 (2026-10-16)
+
+- Fixed the S2 word roll: the outgoing word now slides out while the next one arrives (they briefly overlapped in v1).
