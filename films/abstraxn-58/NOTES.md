@@ -1,6 +1,6 @@
 # Abstraxn brand film, 58 s: production notes
 
-**Deliverables:** `styleframes/` (12 × 1920×1080 PNG, one per scene), `abstraxn-58_animatic_1080p.mp4` (58.0 s, 30 fps, music placeholder), this file.
+**Deliverables:** `styleframes/` (12 × 1920×1080 PNG, one per scene), `Abstraxn_BrandFilm_61s_v3.mp4` (61.0 s, 30 fps, music placeholder), this file.
 **Code:** `studio/src/film58/` (composition `Brand58`), music `pipeline/make_brand58_score.py`.
 
 ## What changed from the brief, and why
@@ -57,6 +57,13 @@
   - S7: tiles cascade at 6-frame steps, the re-sort eases over 22 frames instead of 12, the freight highlight and receipt chip follow a little later.
   - S11: each layer name lands instantly and holds full screen for 10 frames (14 for Know Your Intent) before snapping into its block.
 - Everything else unchanged.
+
+## Revision 3 (user feedback, 2026-10-16)
+
+- **Length 58 s → 61 s** (user allowed a few extra seconds for readability). S4, S7 and S11 each get 2 extra beats; all other scenes keep their exact timing. New scene starts (beats): S5 37, S6 45, S7 53, S8 65, S9 73, S10 81, S11 94, S12 108, end 120.
+- Rule cards in S4 now fly every 1.25 beats; S7 re-sort starts half a beat later with the "Pays per call. In cents." line after it; S11 base row lands on beats 0 to 3, the top row on 4.5 to 7.5, Know Your Intent on beat 9, each name held about a beat at full size.
+- Music map moved with the scenes: **full stop now 0:41.19** (HELD stamp) and **return at 0:45.76** (verify tick). End-screen hold is still 3 s.
+- **Playback fix:** the file is now tagged bt709 throughout and has its index at the front (`+faststart`), so QuickTime and browsers open it instantly. Delivered under a new file name so an already-open player window cannot hold the old file.
 
 ## Not done yet (as briefed: "later")
 

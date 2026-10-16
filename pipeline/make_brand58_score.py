@@ -25,8 +25,8 @@ from make_epic_score import (  # noqa: E402
 BPM = 118
 BEAT = 60 / BPM
 S16 = BEAT / 4
-TOTAL = 58.0
-STOP, RETURN, RESOLVE = 77, 86, 102
+TOTAL = 120 * 60 / 118  # 61.0 s, 120 beats
+STOP, RETURN, RESOLVE = 81, 90, 108
 
 # Am - F - C - G, two beats... one chord per bar (4 beats)
 PROG = [(45, [57, 60, 64]), (41, [57, 60, 65]), (48, [55, 60, 64]), (43, [55, 59, 62])]
@@ -97,7 +97,7 @@ def main():
                 if hot:
                     add(mix["drums"], SN, t0, 0.4)
             add(mix["drums"], HC, t0 + BEAT / 2, 0.8)
-            if hot or 61 <= b < 77:
+            if hot or 65 <= b < STOP:
                 add(mix["drums"], HC, t0 + BEAT / 4, 0.4)
                 add(mix["drums"], HC, t0 + 3 * BEAT / 4, 0.4)
             if b % 4 == 3:
@@ -106,7 +106,7 @@ def main():
                 add(mix["bass"], bass_note(root - 12 if s == 0 else root, S16 * 1.8), t0 + s * S16, 0.9)
             arp = [triad[0], triad[2], triad[1] + 12, triad[2]]
             for s in range(4):
-                if s % 2 == 0 or b >= 36:
+                if s % 2 == 0 or b >= 37:
                     add(mix["keys"], pluck(arp[s] + 12), t0 + s * S16, 0.9 if s == 0 else 0.6)
         else:  # resolve
             if b == RESOLVE:
