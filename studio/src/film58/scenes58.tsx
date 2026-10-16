@@ -149,11 +149,11 @@ const RULES: { d: "allow" | "ask" | "held"; text: string; kind: string }[] = [
 export const S4: React.FC<S> = ({ B, dur }) => {
   const f = useCurrentFrame();
   const typeFrom = B(2);
-  const shown = typed(SENTENCE, f, typeFrom, 72);
+  const shown = typed(SENTENCE, f, typeFrom, 96);
   const done = shown.length >= SENTENCE.length;
-  const lift = (k: number) => B(7.6 + k * 0.5);
-  const tap = B(10.5);
-  const seal = B(11);
+  const lift = (k: number) => B(6.4 + k * 1);
+  const tap = B(10.7);
+  const seal = B(11.1);
   const panelIn = pop(f, B(0.5), 16);
   // highlight clauses as they lift
   const renderSentence = () => {
@@ -174,8 +174,8 @@ export const S4: React.FC<S> = ({ B, dur }) => {
     out.push(rest);
     return out;
   };
-  const cursorX = interpolate(f, [B(9.4), tap - 2], [1320, 1500], { ...clamp, easing: expo });
-  const cursorY = interpolate(f, [B(9.4), tap - 2], [980, 582], { ...clamp, easing: expo });
+  const cursorX = interpolate(f, [B(9.9), tap - 2], [1320, 1500], { ...clamp, easing: expo });
+  const cursorY = interpolate(f, [B(9.9), tap - 2], [980, 582], { ...clamp, easing: expo });
   return (
     <AbsoluteFill style={{ background: K.bg }}>
       <DotField paint={idle} opacity={0.6} />
@@ -188,7 +188,7 @@ export const S4: React.FC<S> = ({ B, dur }) => {
             { t: "Say", at: B(0.5) },
             { t: "what's", at: B(1) },
             { t: "allowed.", at: B(1.5) },
-            { t: "Once.", at: B(11.5), color: K.green },
+            { t: "Once.", at: B(11.6), color: K.green },
           ]}
         />
       </div>
@@ -205,7 +205,7 @@ export const S4: React.FC<S> = ({ B, dur }) => {
               {!done ? <span style={{ display: "inline-block", width: 3, height: 34, background: K.green, marginLeft: 4, verticalAlign: "-4px" }} /> : null}
             </div>
             <div style={{ display: "flex", justifyContent: "flex-end", marginTop: 18 }}>
-              <div style={{ padding: "14px 30px", borderRadius: 999, background: f >= tap ? K.green : "rgba(114,227,173,0.14)", border: `1.5px solid ${K.green}`, color: f >= tap ? K.ink : K.green, fontFamily: FIG, fontWeight: 700, fontSize: 26, opacity: ein(f, B(9.2), 10), scale: f >= tap && f < tap + 4 ? "0.94" : "1" }}>
+              <div style={{ padding: "14px 30px", borderRadius: 999, background: f >= tap ? K.green : "rgba(114,227,173,0.14)", border: `1.5px solid ${K.green}`, color: f >= tap ? K.ink : K.green, fontFamily: FIG, fontWeight: 700, fontSize: 26, opacity: ein(f, B(9.7), 10), scale: f >= tap && f < tap + 4 ? "0.94" : "1" }}>
                 Confirm &amp; seal
               </div>
             </div>
@@ -215,7 +215,7 @@ export const S4: React.FC<S> = ({ B, dur }) => {
         <div style={{ position: "absolute", left: 160, right: 160, top: 790, display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 24 }}>
           {RULES.map((r, k) => {
             const at = lift(k);
-            const t = ein(f, at, 12);
+            const t = ein(f, at, 16);
             const sealed = f >= seal + k * 3;
             const sweep = interpolate(f, [seal + k * 3, seal + k * 3 + 10], [0, 1], clamp);
             return (
@@ -248,7 +248,7 @@ export const S4: React.FC<S> = ({ B, dur }) => {
         </div>
       </Push>
       {/* cursor */}
-      <svg width="54" height="54" viewBox="0 0 24 24" style={{ position: "absolute", left: cursorX, top: cursorY, opacity: f >= B(9.4) && f < seal + 20 ? 1 : 0 }}>
+      <svg width="54" height="54" viewBox="0 0 24 24" style={{ position: "absolute", left: cursorX, top: cursorY, opacity: f >= B(9.9) && f < seal + 20 ? 1 : 0 }}>
         <path d="M4 2l15 8.5-6.6 1.9L9.6 19z" fill="white" stroke="#0A0A0A" strokeWidth="1.2" />
       </svg>
       {f >= tap && f < tap + 14 ? (
@@ -435,9 +435,9 @@ const QUERY = "freight quote, 40 kg to Rotterdam";
 
 export const S7: React.FC<S> = ({ B, dur }) => {
   const f = useCurrentFrame();
-  const resort = interpolate(f, [B(5), B(5) + 12], [0, 1], { ...clamp, easing: expo });
-  const lifted = ein(f, B(5.6), 10);
-  const chip = pop(f, B(6.4), 12);
+  const resort = interpolate(f, [B(5), B(5) + 22], [0, 1], { ...clamp, easing: expo });
+  const lifted = ein(f, B(6), 12);
+  const chip = pop(f, B(6.8), 12);
   const tw = 380;
   const th = 170;
   const gx = (1920 - (tw * 3 + 30 * 2)) / 2;
@@ -462,7 +462,7 @@ export const S7: React.FC<S> = ({ B, dur }) => {
           const x = interpolate(resort, [0, 1], [from.x, to.x]);
           const y = interpolate(resort, [0, 1], [from.y, to.y]);
           const isF = k === 2;
-          const enter = pop(f, B(0) + k * 4, 14);
+          const enter = pop(f, B(0) + k * 6, 14);
           return (
             <div
               key={t.n}
@@ -510,10 +510,10 @@ export const S7: React.FC<S> = ({ B, dur }) => {
         />
       </div>
       {TILES.map((_, k) => (
-        <Sfx key={k} name="tick" at={B(0) + k * 4} volume={0.12} />
+        <Sfx key={k} name="tick" at={B(0) + k * 6} volume={0.12} />
       ))}
       <Sfx name="whip" at={B(5)} volume={0.2} />
-      <Sfx name="ding" at={B(6.4)} volume={0.22} />
+      <Sfx name="ding" at={B(6.8)} volume={0.22} />
     </AbsoluteFill>
   );
 };
@@ -798,7 +798,7 @@ export const S11: React.FC<S> = ({ B }) => {
       {STACK.map((b, k) => {
         const at = B(k === 8 ? 8 : k);
         const isK = k === 8;
-        const shrink = interpolate(f, [at + 4, at + 13], [0, 1], { ...clamp, easing: expo });
+        const shrink = interpolate(f, [at + (isK ? 14 : 10), at + (isK ? 22 : 15)], [0, 1], { ...clamp, easing: expo });
         const r = blockRect(b);
         if (f < at) return null;
         const bigSize = isK ? 200 : 170;

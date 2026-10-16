@@ -49,6 +49,15 @@
 
 12. **No em or en dashes** anywhere in the on-screen copy (checked with a grep of the scene code).
 
+## Revision 2 (user feedback, 2026-10-16)
+
+- **Dots → logo triangles.** Every grid point is now the small triangle from the Abstraxn mark (the 550.871,419.915 / 275.44,265.932 / 433.996,0 piece of `logo-light.svg`), same orientation as the logo.
+- **More reading time where several things move at once**, without changing the 58 s length or the beat grid:
+  - S4: sentence types faster (96 chars/s), so the four rule cards fly out one per beat instead of every half-beat, with a slightly longer flight.
+  - S7: tiles cascade at 6-frame steps, the re-sort eases over 22 frames instead of 12, the freight highlight and receipt chip follow a little later.
+  - S11: each layer name lands instantly and holds full screen for 10 frames (14 for Know Your Intent) before snapping into its block.
+- Everything else unchanged.
+
 ## Not done yet (as briefed: "later")
 
 - 1080×1920 and 1080×1080 cutdowns. The scenes use absolute 1920×1080 layouts, so each cutdown needs its own layout pass, mainly for the type sizes and the S4, S6 and S10 two-column scenes.

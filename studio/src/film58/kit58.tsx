@@ -69,14 +69,30 @@ export const DotField: React.FC<{ paint: DotPaint; opacity?: number }> = ({ pain
           ctx.shadowBlur = 0;
         }
         ctx.fillStyle = d.c;
-        ctx.beginPath();
-        ctx.arc(x, y, r, 0, Math.PI * 2);
-        ctx.fill();
+        drawTri(ctx, x, y, r * 3.1);
       }
     }
     ctx.globalAlpha = 1;
   }, [f, paint]);
   return <canvas ref={ref} width={1920} height={1080} style={{ position: "absolute", inset: 0, opacity }} />;
+};
+
+/**
+ * The small triangle from the Abstraxn mark (logo-light.svg path
+ * 550.871,419.915 / 275.44,265.932 / 433.996,0), centred and normalised.
+ */
+const TRI: [number, number][] = [
+  [0.312, 0.457],
+  [-0.344, 0.09],
+  [0.033, -0.543],
+];
+const drawTri = (ctx: CanvasRenderingContext2D, x: number, y: number, size: number) => {
+  ctx.beginPath();
+  ctx.moveTo(x + TRI[0][0] * size, y + TRI[0][1] * size);
+  ctx.lineTo(x + TRI[1][0] * size, y + TRI[1][1] * size);
+  ctx.lineTo(x + TRI[2][0] * size, y + TRI[2][1] * size);
+  ctx.closePath();
+  ctx.fill();
 };
 
 /** Distance of dot (i,j) from the grid centre, in dots. */
