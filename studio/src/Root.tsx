@@ -2,6 +2,7 @@ import { Composition, Folder } from "remotion";
 import { calculateStatRaceMetadata, StatRace } from "./StatRace";
 import { calculateStoryMetadata, Story } from "./story/Story";
 import { calculateFilmMetadata, Film } from "./film/Film";
+import { Brand58, BRAND58_FRAMES } from "./film58/Film58";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -85,6 +86,15 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         calculateMetadata={calculateFilmMetadata}
         defaultProps={{ title: "", music: null, credit: "", chapters: [] }}
+      />
+      <Composition
+        id="Brand58"
+        component={Brand58}
+        durationInFrames={BRAND58_FRAMES}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{ music: "music/brand58_score.wav" as string | null }}
       />
     </Folder>
     </>
