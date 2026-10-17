@@ -1,0 +1,126 @@
+{
+  "retrieved": "2026-10-17",
+  "project": "boiling-frog-business (45s 9:16 reel)",
+  "licenses": {
+    "Pexels License": "https://www.pexels.com/license/ - free to use, attribution not required, modification allowed; don't sell unaltered copies, don't redistribute on stock sites, don't imply endorsement, identifiable people not in a bad light",
+    "Pixabay Content License": "https://pixabay.com/service/license-summary/ (binding text: https://pixabay.com/service/terms/) - free to use, no attribution required, modify/adapt allowed; no standalone redistribution/sale, no misleading use, no trademark use"
+  },
+  "assets": [
+    {
+      "file": "frog_closeup.mp4",
+      "page_url": "https://www.pexels.com/video/close-up-of-a-frog-swimming-in-a-pond-29960564/",
+      "direct_url": "https://videos.pexels.com/video-files/29960564/12856801_1920_1080_60fps.mp4",
+      "author": "Petr Ganaj",
+      "license": "Pexels License",
+      "resolution": "1920x1080 (original max per page), 59.94fps, landscape",
+      "duration_s": 8.06,
+      "description": "Green (pool/edible) frog half-submerged in shallow muddy water, head and eye above surface, ripples, soft bokeh; sharp and moody. Crop 9:16 around frog (centre-right).",
+      "quality_note": "Best 'eyes above water' shot found. Frog sharp, shallow DOF, muted brown-gold water - dramatic when graded. Only 1080p, so a 9:16 crop is ~608x1080 (upscaled ~1.8x to 1080x1920) - fine on phone, slightly soft."
+    },
+    {
+      "file": "frog_closeup_alt.mp4",
+      "page_url": "https://pixabay.com/videos/frog-swamp-escape-eyes-animal-165847/",
+      "direct_url": "https://cdn.pixabay.com/video/2023/06/05/165847-833532193_large.mp4",
+      "author": "Kaffeesüchtig (https://pixabay.com/users/kaffeesüchtig-19168820/)",
+      "license": "Pixabay Content License",
+      "resolution": "3840x2160, 30fps, landscape",
+      "duration_s": 7.03,
+      "description": "Top-down macro of a vivid green-and-black spotted pool frog sitting in dark sunlit pond water among plants; nearly static.",
+      "quality_note": "Very sharp 4K, saturated, high contrast; excellent detail and crops cleanly to 9:16 (frog head left-of-centre). Static - no jump despite 'escape' tag."
+    },
+    {
+      "file": "frog_jump.mp4",
+      "page_url": "https://pixabay.com/videos/frog-diving-nature-underwater-277302/",
+      "direct_url": "https://cdn.pixabay.com/video/2025/05/07/277302_large.mp4",
+      "author": "Chrizly_s",
+      "license": "Pixabay Content License",
+      "resolution": "1080x1920, 30fps, native vertical",
+      "duration_s": 11.6,
+      "description": "Frog sitting in shallow pond water behind reeds, then dives/escapes under water (~4.4-5.3s) leaving a ripple/bubble ring.",
+      "quality_note": "WEAK. Real-time (not slow-mo), handheld phone look, frog partly obscured by grass blades, the 'jump' is a quick dive not a leap out of water. No genuine slow-motion frog-leaping-out-of-water clip exists on Pexels/Pixabay (all such clips found were Storyblocks/Getty/Envato/Uppbeat - not allowed). Suggest using the moment of the dive at speed, or simulate the 'jump out' with a fast push-in/whip transition from frog_closeup."
+    },
+    {
+      "file": "frog_water.mp4",
+      "page_url": "https://pixabay.com/videos/frog-4k-wildlife-film-movie-296780/",
+      "direct_url": "https://cdn.pixabay.com/video/2025/08/11/296780_large.mp4",
+      "author": "Sayanbasakwildlifehindi (https://pixabay.com/users/sayanbasakwildlifehindi-51687614/)",
+      "license": "Pixabay Content License",
+      "resolution": "3840x2160, 29.97fps, landscape",
+      "duration_s": 14.51,
+      "description": "Bullfrog floating calmly in dark, glassy water beside lily pads; gentle ripples, reflections.",
+      "quality_note": "Cinematic and calm, dark water gives great mood/negative space for text. Frog sharp, sits in left third - crop 9:16 to the left. 38 MB (under 40)."
+    },
+    {
+      "file": "frog_water_vertical.mp4",
+      "page_url": "https://www.pexels.com/video/frog-resting-in-serene-forest-pond-32880082/",
+      "direct_url": "https://videos.pexels.com/video-files/32880082/14013574_1440_2560_30fps.mp4",
+      "author": "Şahin Doğdu",
+      "license": "Pexels License",
+      "resolution": "1440x2560 delivered (original 2160x3840), 29.97fps, native vertical",
+      "duration_s": 15.02,
+      "description": "Frog floating with eyes/head at the surface of a deep-green forest pond, shimmering reflections, lots of moody negative space above.",
+      "quality_note": "Very cinematic native 9:16 calm shot; frog is small in frame (lower-middle) - good as an establishing/'comfortable' shot, not a close-up."
+    },
+    {
+      "file": "boil.mp4",
+      "page_url": "https://www.pexels.com/video/close-up-of-water-boiling-in-stainless-steel-pot-36719707/",
+      "direct_url": "https://videos.pexels.com/video-files/36719707/15562552_1440_2560_25fps.mp4",
+      "author": "Max Griss",
+      "license": "Pexels License",
+      "resolution": "1440x2560 delivered (original 2160x3840), 25fps, native vertical",
+      "duration_s": 9.0,
+      "description": "Top-down view of a stainless pot at a full rolling boil on a black stove.",
+      "quality_note": "Clean, sharp, full rolling boil, native 9:16. Good 'too late' payoff shot."
+    },
+    {
+      "file": "boil_heating.mp4",
+      "page_url": "https://www.pexels.com/video/boiling-water-in-stainless-steel-pot-34355146/",
+      "direct_url": "https://videos.pexels.com/video-files/34355146/14554558_1440_2560_60fps.mp4",
+      "author": "Evgenij Mikhailov",
+      "license": "Pexels License",
+      "resolution": "1440x2560 delivered (original 2160x3840), 59.94fps, native vertical",
+      "duration_s": 9.38,
+      "description": "Close-up into a stainless pot: tiny bubbles forming on the bottom as water starts to heat (pre-boil).",
+      "quality_note": "Sharp, shallow DOF, cool silver tones; perfect for 'slowly heating' beat (not a rolling boil)."
+    },
+    {
+      "file": "flame.mp4",
+      "page_url": "https://www.pexels.com/video/blue-flame-gas-stove-burner-close-up-34661882/",
+      "direct_url": "https://videos.pexels.com/video-files/34661882/14692505_2730_1440_24fps.mp4",
+      "author": "James Cheney",
+      "license": "Pexels License",
+      "resolution": "2730x1440 delivered (original 4096x2160), 23.976fps, landscape",
+      "duration_s": 16.47,
+      "description": "Low-angle close-up of a gas burner under pan supports, dark kitchen; burner ignites in first ~1s and burns blue.",
+      "quality_note": "Cinematic, dark, shallow DOF, real ignition moment at start. Crop 9:16 to centre."
+    },
+    {
+      "file": "flame_alt.mp4",
+      "page_url": "https://www.pexels.com/video/a-gas-stove-burner-in-the-dark-14441758/",
+      "direct_url": "https://videos.pexels.com/video-files/14441758/14441758-uhd_2730_1440_30fps.mp4",
+      "author": "Engin Akyurt",
+      "license": "Pexels License",
+      "resolution": "2730x1440 delivered (original 4096x2160), 29.97fps, landscape",
+      "duration_s": 17.38,
+      "description": "Ring of blue gas flame floating in pure black.",
+      "quality_note": "Very graphic/minimal; flame ring ~880px wide so a 810px 9:16 crop clips its edges slightly (or scale down / use as background). Heavily compressed (1.1 MB) - fine since mostly black, check for banding."
+    },
+    {
+      "file": "steam.mp4",
+      "page_url": "https://www.pexels.com/video/white-smoke-against-black-backdrop-9694808/",
+      "direct_url": "https://videos.pexels.com/video-files/9694808/9694808-hd_1920_1080_25fps.mp4",
+      "author": "cottonbro studio",
+      "license": "Pexels License",
+      "resolution": "1920x1080, 25fps, landscape",
+      "duration_s": 15.0,
+      "description": "Wispy white vapour/smoke swirling on a pure black background (studio).",
+      "quality_note": "Trimmed by us from the 40.8s original (5s-20s), re-encoded H.264 CRF18, audio removed. Technically smoke/vapour, reads as steam; ideal for screen-blend overlays and text backgrounds."
+    }
+  ],
+  "not_used_candidates": [
+    "https://www.pexels.com/video/close-up-of-green-frog-on-wet-surface-32799390/ (TIVASEE, sharp frog on wet surface, not in water)",
+    "https://www.pexels.com/video/a-frog-leaping-on-a-concrete-pavement-3293556/ (tiny frog on pavement, phone quality)",
+    "https://www.pexels.com/video/steam-rising-from-boiling-kettle-32001622/ (kettle steam, 28.8s, grey background)",
+    "https://www.pexels.com/video/close-up-of-boiling-water-7261519/ (Anna Tarazevich, early bubbles, landscape)"
+  ]
+}

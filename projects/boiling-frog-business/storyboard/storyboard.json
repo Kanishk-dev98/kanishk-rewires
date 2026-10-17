@@ -1,0 +1,542 @@
+{
+  "id": "boiling-frog-business",
+  "title": "The boiling frog effect in business",
+  "format": "9x16",
+  "captions": true,
+  "research": "done",
+  "captionStyle": {
+    "top": 0.735,
+    "size": 54,
+    "maxWords": 3,
+    "weight": 800
+  },
+  "voice": {
+    "provider": "edge",
+    "edge": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+6%"
+    }
+  },
+  "outro": {
+    "seconds": 2.5,
+    "size": 220,
+    "wordSize": 50,
+    "cta": "Follow for business lessons that stick"
+  },
+  "render": {
+    "concurrency": 3,
+    "timeoutMs": 300000
+  },
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "hFootage",
+      "leadIn": 4,
+      "pad": 6,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Your business might be this frog.",
+      "cues": {
+        "frog": "frog."
+      },
+      "accents": [
+        "frog."
+      ],
+      "data": {
+        "clip": "media/frog/frog_closeup_alt.mp4",
+        "startFrom": 0.5,
+        "rate": 0.8,
+        "focus": "24% 42%",
+        "saturate": 0.95,
+        "brightness": 0.85,
+        "coolTint": 0.1,
+        "kicker": "THE BOILING FROG EFFECT",
+        "textTop": 1080,
+        "lines": [
+          {
+            "text": "Your business might be *this frog.*",
+            "at": 4,
+            "size": 92
+          }
+        ],
+        "credit": "FOOTAGE: PIXABAY"
+      },
+      "visual": "Vivid 4K frog in dark water, slow push-in; the hook lands word by word.",
+      "sfx": [
+        {
+          "name": "boom",
+          "on": {
+            "cue": "frog",
+            "offset": 0
+          },
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "type": "hFootage",
+      "pad": 2,
+      "energy": 2,
+      "bleed": true,
+      "vo": "The old fable goes like this. Drop a frog into boiling water,",
+      "cues": {
+        "boil": "boiling"
+      },
+      "accents": [
+        "boiling"
+      ],
+      "data": {
+        "clip": "media/frog/flame.mp4",
+        "startFrom": 0.2,
+        "rate": 1,
+        "focus": "50% 55%",
+        "saturate": 1,
+        "brightness": 0.9,
+        "heat": [
+          0.6,
+          0.9
+        ],
+        "kicker": "THE FABLE",
+        "kickerHot": true,
+        "accentHot": true,
+        "textTop": 1080,
+        "thermo": {
+          "from": 96,
+          "to": 100
+        },
+        "lines": [
+          {
+            "text": "Drop it in *boiling* water",
+            "cue": "boil",
+            "size": 84
+          }
+        ],
+        "credit": "FOOTAGE: PEXELS",
+        "aspect": 1.8958333333333333
+      },
+      "visual": "Gas burner ignites in the dark; the thermometer is already maxed and red.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 2,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "hFootage",
+      "pad": 4,
+      "energy": 3,
+      "bleed": true,
+      "vo": "and it jumps straight out.",
+      "cues": {
+        "jump": "jumps"
+      },
+      "accents": [
+        "jumps"
+      ],
+      "data": {
+        "clip": "media/frog/frog_jump.mp4",
+        "startFrom": 3.9,
+        "rate": 1,
+        "focus": "50% 50%",
+        "saturate": 0.9,
+        "brightness": 0.85,
+        "heat": [
+          0.5,
+          0.2
+        ],
+        "textTop": 1080,
+        "lines": [
+          {
+            "text": "It *jumps* out.",
+            "cue": "jump",
+            "size": 110
+          }
+        ],
+        "credit": "FOOTAGE: PIXABAY",
+        "aspect": 0.5625
+      },
+      "visual": "The real frog bolts and vanishes underwater: the escape.",
+      "sfx": [
+        {
+          "name": "whip",
+          "on": 0,
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "hFootage",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "minFrames": 210,
+      "vo": "But put it in cool water and heat it slowly, and it stays. Calm. Comfortable. Until it's too late.",
+      "cues": {
+        "slow": "slowly,",
+        "late": "late."
+      },
+      "accents": [
+        "slowly,",
+        "late."
+      ],
+      "data": {
+        "clip": "media/frog/frog_water.mp4",
+        "startFrom": 1,
+        "rate": 1,
+        "focus": "21% 58%",
+        "saturate": 0.85,
+        "brightness": 0.82,
+        "heat": [
+          0,
+          0.85
+        ],
+        "coolTint": 0.16,
+        "accentHot": true,
+        "kicker": "HEAT IT SLOWLY",
+        "textTop": 400,
+        "thermo": {
+          "from": 18,
+          "to": 97,
+          "cue": "slow",
+          "offset": 0,
+          "ease": "in"
+        },
+        "lines": [
+          {
+            "text": "It *stays.*",
+            "at": 60,
+            "size": 96
+          },
+          {
+            "text": "Until it's *too late.*",
+            "cue": "late",
+            "size": 84
+          }
+        ],
+        "credit": "FOOTAGE: PIXABAY"
+      },
+      "visual": "A calm bullfrog floats by lily pads while the thermometer creeps from 18 to 97 degrees and the grade slowly turns red.",
+      "sfx": [
+        {
+          "name": "riser",
+          "on": {
+            "cue": "slow",
+            "offset": 0
+          },
+          "volume": 0.25
+        },
+        {
+          "name": "impact",
+          "on": {
+            "cue": "late",
+            "offset": 4
+          },
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "hFootage",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "vo": "That's the boiling frog effect. Real frogs, biologists say, would jump. Companies often don't.",
+      "cues": {
+        "name": "effect.",
+        "co": "Companies"
+      },
+      "accents": [
+        "effect.",
+        "don't."
+      ],
+      "data": {
+        "clip": "media/frog/boil_heating.mp4",
+        "startFrom": 0,
+        "rate": 0.8,
+        "focus": "50% 50%",
+        "saturate": 0.7,
+        "brightness": 0.75,
+        "heat": [
+          0.3,
+          0.55
+        ],
+        "kicker": "IT HAS A NAME",
+        "textTop": 1000,
+        "lines": [
+          {
+            "text": "The *boiling frog* effect",
+            "at": 4,
+            "size": 96,
+            "serif": false
+          },
+          {
+            "text": "Companies *don't* jump.",
+            "cue": "co",
+            "size": 76
+          }
+        ],
+        "credit": "FOOTAGE: PEXELS",
+        "aspect": 0.5625
+      },
+      "visual": "Tiny bubbles form on the bottom of a steel pot: change you barely notice.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "hDashboard",
+      "pad": 8,
+      "energy": 2,
+      "minFrames": 180,
+      "vo": "In business, danger rarely arrives as a crisis. It arrives as one percent a month.",
+      "cues": {
+        "line": "one"
+      },
+      "accents": [
+        "one",
+        "percent"
+      ],
+      "data": {
+        "kicker": "YOUR DASHBOARD, SLOWLY",
+        "metrics": [
+          {
+            "label": "CUSTOMER CHURN",
+            "from": 2.1,
+            "to": 4.8,
+            "unit": "%",
+            "dec": 1,
+            "worseUp": true
+          },
+          {
+            "label": "GROSS MARGIN",
+            "from": 34,
+            "to": 22,
+            "unit": "%"
+          },
+          {
+            "label": "WIN RATE",
+            "from": 31,
+            "to": 19,
+            "unit": "%"
+          }
+        ],
+        "line": "Danger arrives as *1% a month.*"
+      },
+      "visual": "Three KPI cards creep the wrong way, a little each month; borders and background warm toward red.",
+      "sfx": [
+        {
+          "name": "tick",
+          "on": 6,
+          "volume": 0.2
+        },
+        {
+          "name": "ding",
+          "on": {
+            "cue": "line",
+            "offset": 0
+          },
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "hTimeline",
+      "pad": 8,
+      "energy": 3,
+      "vo": "Kodak built the first digital camera in 1975. In 2012, Kodak filed for bankruptcy.",
+      "cues": {
+        "second": "2012,"
+      },
+      "accents": [
+        "1975.",
+        "bankruptcy."
+      ],
+      "claims": [
+        "c2",
+        "c3"
+      ],
+      "data": {
+        "company": "KODAK",
+        "y1": "1975",
+        "e1": "Builds the world's first digital camera.",
+        "y2": "2012",
+        "e2": "Files for Chapter 11 bankruptcy."
+      },
+      "visual": "1975 in lime, a line heats from lime to red down the timeline, 2012 stamps in red.",
+      "sfx": [
+        {
+          "name": "impact",
+          "on": {
+            "cue": "second",
+            "offset": 0
+          },
+          "volume": 0.45
+        }
+      ],
+      "sourceLabel": "SOURCES: KODAK MILESTONES \u00b7 SEC 8-K, JAN 19 2012"
+    },
+    {
+      "id": "s07",
+      "type": "hTimeline",
+      "pad": 8,
+      "energy": 3,
+      "vo": "In 2000, Blockbuster passed on buying Netflix for fifty million dollars. In 2010, Blockbuster filed for bankruptcy.",
+      "cues": {
+        "second": "2010,"
+      },
+      "accents": [
+        "passed",
+        "bankruptcy."
+      ],
+      "claims": [
+        "c4",
+        "c5"
+      ],
+      "data": {
+        "company": "BLOCKBUSTER",
+        "y1": "2000",
+        "e1": "Passes on buying Netflix for $50M.",
+        "y2": "2010",
+        "e2": "Files for Chapter 11 bankruptcy."
+      },
+      "visual": "Same grammar: the opportunity, then the collapse stamp.",
+      "sfx": [
+        {
+          "name": "impact",
+          "on": {
+            "cue": "second",
+            "offset": 0
+          },
+          "volume": 0.45
+        }
+      ],
+      "sourceLabel": "SOURCES: FORTUNE (FOUNDERS' ACCOUNT) \u00b7 SEC 8-K, SEP 23 2010"
+    },
+    {
+      "id": "s08",
+      "type": "hHeatGrid",
+      "pad": 8,
+      "energy": 2,
+      "vo": "Right now, AI is warming the water in every industry. Quietly.",
+      "cues": {
+        "line": "warming"
+      },
+      "accents": [
+        "warming",
+        "Quietly."
+      ],
+      "data": {
+        "tiles": [
+          "Marketing",
+          "Support",
+          "Sales",
+          "Design",
+          "Legal",
+          "Finance"
+        ],
+        "line": "AI is *warming* the water."
+      },
+      "visual": "Six industry tiles heat one by one from lime OK to red HOT.",
+      "sfx": [
+        {
+          "name": "riser",
+          "on": 0,
+          "volume": 0.22
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "type": "hThermostat",
+      "pad": 10,
+      "energy": 3,
+      "minFrames": 200,
+      "vo": "So set your jump line now. Pick the number that makes you move, before the water feels hot.",
+      "cues": {
+        "line": "line"
+      },
+      "accents": [
+        "jump",
+        "move,"
+      ],
+      "data": {
+        "metric": "CHURN \u00b7 MARGIN \u00b7 WIN RATE",
+        "text": "Set your *jump line* now."
+      },
+      "visual": "A thermostat dial; the jump line appears on cue, the needle climbs past it and JUMP stamps in lime.",
+      "sfx": [
+        {
+          "name": "switch",
+          "on": {
+            "cue": "line",
+            "offset": 0
+          },
+          "volume": 0.35
+        },
+        {
+          "name": "boom",
+          "on": {
+            "frac": 0.62
+          },
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "hFootage",
+      "pad": 12,
+      "energy": 1,
+      "bleed": true,
+      "vo": "Don't wait to feel the heat.",
+      "cues": {
+        "feel": "feel"
+      },
+      "accents": [
+        "feel"
+      ],
+      "data": {
+        "clip": "media/frog/frog_closeup.mp4",
+        "startFrom": 0.5,
+        "rate": 0.75,
+        "focus": "57% 55%",
+        "saturate": 0.9,
+        "brightness": 0.85,
+        "heat": [
+          0.15,
+          0.45
+        ],
+        "accentHot": true,
+        "textTop": 1080,
+        "lines": [
+          {
+            "text": "Don't wait to *feel* the heat.",
+            "cue": "feel",
+            "size": 88
+          }
+        ],
+        "credit": "FOOTAGE: PEXELS"
+      },
+      "visual": "Close on the frog's eyes just above the water, slow push-in, a warm grade creeping in.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.25
+        }
+      ]
+    }
+  ]
+}

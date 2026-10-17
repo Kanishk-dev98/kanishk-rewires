@@ -1,0 +1,163 @@
+{
+  "topic": "The boiling frog effect in business (45s 9:16 Instagram reel)",
+  "researched_at": "2026-10-17",
+  "claims": [
+    {
+      "id": "c1",
+      "claim": "The 'boiling frog' is a fable/metaphor (a frog dropped into hot water jumps out, but one in slowly heated water stays until it dies) used for failing to notice gradual change. Modern biologists say it is not literally true: real frogs become increasingly active and try to escape as water warms; a frog dropped into truly boiling water is scalded rather than leaping out.",
+      "type": "fact",
+      "event_date": "1995-10-31 (Fast Company); 2002 (Hutchison reply, published by Gibbons 2007-12-23)",
+      "sources": [
+        {
+          "url": "https://www.fastcompany.com/26455/next-time-what-say-we-boil-consultant",
+          "title": "Next Time, What Say We Boil a Consultant",
+          "publisher": "Fast Company (Issue 01; web date 10.31.95, 'appeared in the November 1995 issue')",
+          "published": "1995-10-31"
+        },
+        {
+          "url": "https://archive-srel.uga.edu/outreach/ecoviews/ecoview071223.htm",
+          "title": "The Legend of the Boiling Frog Is Just a Legend (Whit Gibbons, Ecoviews)",
+          "publisher": "Savannah River Ecology Laboratory, University of Georgia (read via Wayback snapshot https://web.archive.org/web/20220214032622/http://archive-srel.uga.edu/outreach/ecoviews/ecoview071223.htm)",
+          "published": "2007-12-23"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Boiling_frog",
+          "title": "Boiling frog",
+          "publisher": "Wikipedia (secondary; for 19th-century experiment history: Goltz 1869, Heinzmann 1872, Fratscher 1875, Sedgwick 1888)",
+          "published": "n/a (accessed 2026-10-17)"
+        }
+      ],
+      "notes": "VERBATIM QUOTES. Prof. Doug Melton, Harvard Biology (Fast Company 1995): \"If you put a frog in boiling water, it won't jump out. It will die. If you put it in cold water, it will jump before it gets hot — they don't sit still for you.\" Dr. George R. Zug, curator of reptiles and amphibians, Smithsonian National Museum of Natural History (same article): \"If a frog had a means of getting out, it certainly would get out.\" (his full quote opens with a profanity). Whit Gibbons (UGA herpetologist, Ecoviews 2007): \"With a real frog in real water, my bet is that as soon as it began to get uncomfortable the frog would jump out if it could.\" Victor Hutchison, Univ. of Oklahoma (quoted by Gibbons): \"The legend is entirely incorrect! ... As the temperature of the water is gradually increased, the frog will eventually become more and more active in attempts to escape the heated water. If the container size and opening allow the frog to jump out, it will do so.\" Nuance: the fable traces to 19th-century German experiments; Heinzmann (1872) reported normal frogs did not try to escape when heated very slowly (<0.2 C/min), Goltz (1869) found intact frogs did try to escape; Sedgwick (1888) attributed the difference to heating rate. So say 'myth/fable', 'biologists say real frogs try to escape' - do NOT say 'science proved frogs always jump'. Note: Gibbons' column is 2007 (Wikipedia citation date); an earlier 2002 Ecoviews version is referenced elsewhere - not verified."
+    },
+    {
+      "id": "c2",
+      "claim": "In 1975 Kodak engineer Steve (Steven J.) Sasson invented and built the first self-contained (portable) digital camera at an Eastman Kodak lab; the toaster-sized prototype captured 0.01-megapixel black-and-white images to cassette tape.",
+      "type": "fact",
+      "event_date": "1975 (first image December 1975)",
+      "sources": [
+        {
+          "url": "https://www.kodak.com/en/company/page/milestones",
+          "title": "Kodak Milestones",
+          "publisher": "Eastman Kodak Company",
+          "published": "n/a (accessed 2026-10-17)"
+        },
+        {
+          "url": "https://ethw.org/Milestones:Handheld_Digital_Camera,_1975",
+          "title": "Milestones: Handheld Digital Camera, 1975",
+          "publisher": "IEEE / Engineering and Technology History Wiki (milestone dedicated 2022-04-26)",
+          "published": "2022-04-26"
+        },
+        {
+          "url": "https://nationalmedals.org/laureate/steven-sasson/",
+          "title": "Steven Sasson - National Medal of Technology and Innovation laureate",
+          "publisher": "National Science & Technology Medals Foundation",
+          "published": "n/a (2009 medal)"
+        }
+      ],
+      "notes": "Kodak milestones 1975: \"Kodak invented the world's first digital camera. The prototype was the size of a toaster and captured black-and-white images at a resolution of 10,000 pixels (.01 megapixels).\" Kodak 2010 entry: \"Retired Kodak researcher Steve Sasson received the National Medal of Technology and Innovation for invention of the digital camera in 1975.\" IEEE: \"Steven Sasson, an engineer at Eastman Kodak, invented and built a self-contained electronic camera\"; patent US 4,131,919 'Electronic Still Camera' (Sasson & Gareth Lloyd, granted 1978). Safe on-screen: 'Kodak built the first digital camera in 1975.' Avoid 'Kodak buried it' as a hard fact - widely told (management reportedly saw no market) but that's interpretation; Kodak later did sell digital cameras."
+    },
+    {
+      "id": "c3",
+      "claim": "Eastman Kodak and its U.S. subsidiaries filed voluntary Chapter 11 petitions on January 19, 2012, in the U.S. Bankruptcy Court for the Southern District of New York.",
+      "type": "fact",
+      "event_date": "2012-01-19",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/31235/000119312512016443/d285282d8k.htm",
+          "title": "Eastman Kodak Co - Form 8-K (event date January 19, 2012)",
+          "publisher": "U.S. SEC EDGAR",
+          "published": "2012-01-19"
+        },
+        {
+          "url": "https://www.engadget.com/2012-01-19-kodak-chapter-11-bankruptcy.html",
+          "title": "Kodak files Chapter 11 bankruptcy, expects to complete restructuring by 2013",
+          "publisher": "Engadget",
+          "published": "2012-01-19"
+        }
+      ],
+      "notes": "Company press release title: 'Eastman Kodak Company and Its U.S. Subsidiaries Commence Voluntary Chapter 11 Business Reorganization' (investor.kodak.com, 403 to our fetcher; the 8-K is the primary record). Non-U.S. subsidiaries were not part of the filing; $950M DIP financing. Kodak emerged from bankruptcy in September 2013 and still exists - say 'filed for bankruptcy', not 'died/disappeared'."
+    },
+    {
+      "id": "c4",
+      "claim": "In 2000, Netflix co-founders Reed Hastings and Marc Randolph met Blockbuster in Dallas and offered to sell Netflix for $50 million; Blockbuster (CEO John Antioco) declined.",
+      "type": "company_claim",
+      "event_date": "2000 (Randolph's book places the Dallas meeting in early autumn 2000)",
+      "sources": [
+        {
+          "url": "https://fortune.com/2023/04/14/netflix-cofounder-marc-randolph-recalls-blockbuster-rejecting-chance-to-buy-it/",
+          "title": "Netflix cofounder Marc Randolph recalls Blockbuster rejecting chance to buy it",
+          "publisher": "Fortune (Steve Mollman)",
+          "published": "2023-04-14"
+        },
+        {
+          "url": "https://www.insidehook.com/daily_brief/tv-home-theater/netflix-once-tried-to-buy-blockbuster-for-50-million",
+          "title": "Netflix Once Tried to Sell to Blockbuster for $50 Million",
+          "publisher": "InsideHook (on Randolph's Vanity Fair book excerpt)",
+          "published": "2019-09"
+        },
+        {
+          "url": "https://todayifoundout.com/?p=60247",
+          "title": "The Truth About Blockbuster Turning Down Purchasing Netflix and What Seemingly Everyone Gets Wrong",
+          "publisher": "Today I Found Out (secondary; covers Antioco/McCarthy perspectives)",
+          "published": "n/a"
+        }
+      ],
+      "notes": "Fortune: \"In 2000, the two tried to sell their startup to Blockbuster for $50 million. They were flat-out rejected.\" Randolph recalled executives \"laughed us out of the room\"; Antioco reportedly said \"the dot-com hysteria is completely overblown\" (per Randolph's 2019 book 'That Will Never Work'). Hastings' own account in 'No Rules Rules' (2020, with Erin Meyer) also describes the $50M ask and refusal (seen only via secondary excerpts; not fetched). Source is the Netflix founders' recollection = company_claim; Antioco has disputed details. On-screen: 'Netflix offered itself to Blockbuster for $50M. Blockbuster passed.' Avoid 'laughed' as fact - attribute it ('Netflix's co-founder says they were laughed out of the room')."
+    },
+    {
+      "id": "c5",
+      "claim": "Blockbuster Inc. filed for Chapter 11 bankruptcy on September 23, 2010 (U.S. Bankruptcy Court, S.D.N.Y., case no. 10-14997).",
+      "type": "fact",
+      "event_date": "2010-09-23",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0001085734/000119312510215765/d8k.htm",
+          "title": "Blockbuster Inc - Form 8-K (date of report September 23, 2010)",
+          "publisher": "U.S. SEC EDGAR",
+          "published": "2010-09-23"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0001085734/000119312510215765/dex991.htm",
+          "title": "Blockbuster press release, Exhibit 99.1",
+          "publisher": "U.S. SEC EDGAR",
+          "published": "2010-09-23"
+        },
+        {
+          "url": "https://www.upi.com/Business_News/2010/09/23/Blockbuster-busted-but-plans-a-rebirth/21491285269470/",
+          "title": "Blockbuster busted but plans a rebirth",
+          "publisher": "UPI",
+          "published": "2010-09-23"
+        }
+      ],
+      "notes": "Pre-arranged Chapter 11; ~$1B debt. Assets later sold to DISH (2011). One franchised store (Bend, Oregon) still operates - so 'Blockbuster went bankrupt' is accurate; 'Blockbuster vanished completely' is not strictly."
+    },
+    {
+      "id": "c6",
+      "claim": "In a randomized experiment (Science, 2023), giving college-educated professionals access to ChatGPT cut the time to complete mid-level writing tasks by 40% and raised output quality by 18%.",
+      "type": "fact",
+      "event_date": "2023-07-13 (Science publication); MIT News 2023-07-14",
+      "sources": [
+        {
+          "url": "https://www.science.org/doi/10.1126/science.adh2586",
+          "title": "Experimental evidence on the productivity effects of generative artificial intelligence (Noy & Zhang)",
+          "publisher": "Science",
+          "published": "2023-07-13"
+        },
+        {
+          "url": "https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714",
+          "title": "Study finds ChatGPT boosts worker productivity for some writing tasks",
+          "publisher": "MIT News",
+          "published": "2023-07-14"
+        }
+      ],
+      "notes": "MIT News: \"decreased the time it took workers to complete the tasks by 40 percent\" and \"output quality, as measured by independent evaluators, rose by 18 percent.\" ~450 professionals; tasks were short, explicit, lab-style writing tasks; no fact-checking of accuracy; authors expect smaller real-world gains. On-screen must say 'in one study' / 'for some writing tasks'. Science DOI page not fetched directly (paywalled); figures confirmed via MIT News."
+    }
+  ],
+  "open_questions": [
+    "Fast Company page was read via a Wayback snapshot (live page 403 to our fetcher); wording matched across copies.",
+    "Exact month of the Netflix-Blockbuster Dallas meeting (Randolph's book vs. others say September 2000) - not needed on screen; just say 2000.",
+    "'No Rules Rules' (Hastings) wording of the $50M refusal not verified from the book itself.",
+    "Gibbons' original 2002 Ecoviews column (if it exists separately from the 2007 one) not retrieved; the 2007 column contains the Hutchison quote.",
+    "Kodak's medal year: Kodak milestones lists it under 2010; NSTMF lists Sasson as a 2009 laureate (ceremony held later). Irrelevant to the reel."
+  ]
+}

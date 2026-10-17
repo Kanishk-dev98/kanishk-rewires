@@ -10,6 +10,7 @@ import { LogoReveal } from "./rewires/LogoReveal";
 import { REWIRES_DEMO } from "./rewires/demo";
 import { Cine3D } from "./rewires/cine3d";
 import { Thumb16, Thumb916 } from "./rewires/promo";
+import { ThumbFrog } from "./rewires/heat";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -60,6 +61,15 @@ export const RemotionRoot: React.FC = () => {
         width={1080}
         height={1920}
         defaultProps={{ kicker: "AI TOOL SPOTLIGHT", line1: "Who's engineering?", line2: "Who's just", accent: "vibe coding?", mark: "media/promo/tool/logo-mark.svg", tool: "Outship", site: "OUTSHIP.AI", guides: false }}
+      />
+      <Composition
+        id="ThumbFrog"
+        component={ThumbFrog}
+        durationInFrames={1}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ photo: "media/frog/cover_frog.jpg", kicker: "THE BOILING FROG EFFECT", line1: "Your business is", accent: "slowly boiling.", temp: 88, guides: false }}
       />
       <Composition id="RewiresOutro" component={LogoReveal} durationInFrames={90} fps={30} width={1080} height={1920} defaultProps={{}} />
       <Composition id="RewiresOutroWide" component={LogoReveal} durationInFrames={90} fps={30} width={1920} height={1080} defaultProps={{}} />
