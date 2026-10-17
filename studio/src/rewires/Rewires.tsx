@@ -15,10 +15,11 @@ import { Caption, Captions } from "./Captions";
 import { Grain, SourceTag, Vignette } from "./fx";
 import { LogoReveal } from "./LogoReveal";
 import { isDark, SceneData, SCENES as TYPE_SCENES } from "./scenes";
+import { CINE_SCENES } from "./cineScenes";
 import { TUT_SCENES } from "./tutScenes";
 import { UI_SCENES } from "./uiScenes";
 
-const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES };
+const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES };
 
 export type Sfx = { src: string; at: number; volume?: number };
 export type RewiresScene = {

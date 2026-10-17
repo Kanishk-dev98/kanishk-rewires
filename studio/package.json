@@ -6,15 +6,21 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
     "@remotion/cli": "4.0.535",
     "@remotion/effects": "4.0.535",
     "@remotion/google-fonts": "^4.0.535",
     "@remotion/media": "4.0.535",
+    "@remotion/motion-blur": "^4.0.535",
+    "@remotion/three": "^4.0.535",
     "@remotion/transitions": "4.0.535",
+    "@types/three": "^0.186.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.535",
-    "simple-icons": "^13.21.0"
+    "simple-icons": "^13.21.0",
+    "three": "^0.186.1"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.535",

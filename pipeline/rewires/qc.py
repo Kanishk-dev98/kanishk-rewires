@@ -140,7 +140,13 @@ def run(video: Path, timeline: dict, sb: dict, reports: Path) -> dict:
     frames_dir.mkdir(parents=True, exist_ok=True)
     margin = config.brand()["captions"]["sideMarginPx"]
     start, bad = 0, []
+    bleed = {x["id"] for x in sb.get("scenes", []) if x.get("bleed")}
+    skipped = []
     for s in timeline["scenes"]:
+        if s.get("id") in bleed:  # full-bleed by design (3D, footage, panning walls): edge ink is intended
+            skipped.append(s["id"])
+            start += s["dur"]
+            continue
         dark = s["data"].get("theme") != "cream"
         for f in {start + s["dur"] // 2, start + min(s["dur"] - 2, s["data"].get("syncFrame", 0) + 20)}:
             img = Image.open(frame_at(video, f / fps, frames_dir / f"{s['id']}_{f}.png"))
@@ -148,7 +154,7 @@ def run(video: Path, timeline: dict, sb: dict, reports: Path) -> dict:
             if ink > 40:
                 bad.append(f"{s['id']} @ {f / fps:.1f}s ({ink} px)")
         start += s["dur"]
-    check("safe area", not bad, "; ".join(bad) or f"nothing drawn within {int(margin * 0.75)} px of the sides")
+    check("safe area", not bad, ("; ".join(bad) or f"nothing drawn within {int(margin * 0.75)} px of the sides") + (f" (full-bleed scenes not checked: {', '.join(skipped)})" if skipped else ""))
 
     last_png = frames_dir / "last.png"
     subprocess.run([config.ffmpeg(), "-loglevel", "error", "-y", "-sseof", "-0.25", "-i", str(video), "-update", "1", "-frames:v", "1", str(last_png)], check=True)

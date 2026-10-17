@@ -1,0 +1,355 @@
+{
+  "id": "musk-roadster-moment",
+  "title": "The flip that sold a 2028 car",
+  "format": "9x16",
+  "captions": true,
+  "captionStyle": {
+    "top": 0.735,
+    "size": 54,
+    "maxWords": 3,
+    "weight": 800
+  },
+  "voice": {
+    "provider": "edge",
+    "edge": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+6%"
+    }
+  },
+  "outro": {
+    "seconds": 2.5,
+    "size": 220,
+    "wordSize": 50,
+    "cta": "Follow for the strategy behind the headlines"
+  },
+  "car": {
+    "model": "media/cine/car.glb",
+    "hdr": "media/cine/env.hdr",
+    "fit": {
+      "variant": "Torched Graphite"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "cineHook",
+      "leadIn": 4,
+      "pad": 8,
+      "energy": 2,
+      "vo": "Elon Musk just made the world want a car you can't buy until 2028.",
+      "cues": {
+        "buy": "buy",
+        "year": "until"
+      },
+      "accents": [
+        "until"
+      ],
+      "claims": [
+        "c3"
+      ],
+      "data": {
+        "kicker": "YOU CAN'T BUY IT UNTIL",
+        "model": "@car.model",
+        "hdr": "@car.hdr",
+        "fit": "@car.fit"
+      },
+      "visual": "Night; a graphite concept roadster rolls toward a low camera, headlights flare, 2028 slams in lime.",
+      "sfx": [
+        {
+          "name": "boom",
+          "on": {
+            "cue": "year",
+            "offset": 10
+          },
+          "volume": 0.45
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "id": "s01",
+      "type": "cineFlip",
+      "pad": 10,
+      "energy": 3,
+      "minFrames": 240,
+      "vo": "Musk used his genius marketing move. At a SpaceX test site, the new Roadster launched off a ramp, flipped, and landed on thrusters.",
+      "accents": [
+        "genius",
+        "flipped,"
+      ],
+      "claims": [
+        "c1",
+        "c2"
+      ],
+      "data": {
+        "tag": "OCT 15, 2026 · SPACEX TEST SITE, TEXAS",
+        "credit": "CAR MODEL: E. CHADWICK / DGG · CC BY 4.0",
+        "model": "@car.model",
+        "hdr": "@car.hdr",
+        "fit": "@car.fit",
+        "blur": 5
+      },
+      "visual": "CGI hero shot: drive in, ramp launch, slow-motion back flip with an orbiting camera, thrusters fire upright, landing jolt, dust.",
+      "sfx": [
+        {
+          "name": "riser",
+          "on": {
+            "frac": 0.12
+          },
+          "volume": 0.3
+        },
+        {
+          "name": "whoosh",
+          "on": {
+            "frac": 0.3
+          },
+          "volume": 0.35
+        },
+        {
+          "name": "impact",
+          "on": {
+            "frac": 0.74
+          },
+          "volume": 0.5
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "id": "s02",
+      "type": "cineSpecs",
+      "pad": 8,
+      "energy": 3,
+      "vo": "He never sells specs. He stages moments the internet can't ignore.",
+      "cues": {
+        "stages": "stages"
+      },
+      "accents": [
+        "specs.",
+        "ignore."
+      ],
+      "claims": [
+        "c4"
+      ],
+      "data": {
+        "specs": [
+          [
+            "0 to 60 mph",
+            "under 1 s"
+          ],
+          [
+            "Top speed",
+            "230+ mph"
+          ],
+          [
+            "Price",
+            "not announced"
+          ]
+        ],
+        "clip": "media/cine/flip.mp4"
+      },
+      "visual": "Spec sheet (Tesla's claims) shatters on \"stages\"; nine phones pop in, all replaying the flip, likes climbing.",
+      "sfx": [
+        {
+          "name": "whip",
+          "on": {
+            "cue": "stages"
+          },
+          "volume": 0.4
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "id": "s03",
+      "type": "cineTimeline",
+      "pad": 8,
+      "energy": 2,
+      "vo": "Nine years of delays became nine years of anticipation.",
+      "cues": {
+        "anticipation": "became"
+      },
+      "accents": [
+        "delays",
+        "anticipation."
+      ],
+      "claims": [
+        "c5"
+      ],
+      "data": {
+        "years": [
+          {
+            "y": "2017",
+            "label": "UNVEILED"
+          },
+          {
+            "y": "2019",
+            "label": "DELAYED"
+          },
+          {
+            "y": "2021",
+            "label": "DELAYED"
+          },
+          {
+            "y": "2023",
+            "label": "DELAYED"
+          },
+          {
+            "y": "2025",
+            "label": "DELAYED"
+          },
+          {
+            "y": "2026",
+            "label": "REVEAL"
+          }
+        ]
+      },
+      "visual": "Camera pans a 2017 to 2026 timeline; DELAYED stamps flip to HYPE as the anticipation meter climbs to 100%.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 4,
+          "volume": 0.25
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "id": "s04",
+      "type": "cinePress",
+      "pad": 10,
+      "energy": 3,
+      "vo": "And the press did the advertising, one week before earnings.",
+      "cues": {
+        "press": "press",
+        "earnings": "earnings."
+      },
+      "accents": [
+        "press",
+        "earnings."
+      ],
+      "claims": [
+        "c6"
+      ],
+      "data": {
+        "headlines": [
+          {
+            "outlet": "CNN",
+            "logo": "media/cine/logos/cnn.svg",
+            "text": "Tesla unveils what it says is a flying car"
+          },
+          {
+            "outlet": "CBS News",
+            "logo": "media/cine/logos/cbs.svg",
+            "text": "Elon Musk shows \"flying cars are real\""
+          },
+          {
+            "outlet": "NBC News",
+            "logo": "media/cine/logos/nbc.svg",
+            "text": "Elon Musk shows off 'flying' Tesla Roadster"
+          },
+          {
+            "outlet": "CNBC",
+            "text": "Tesla unveils long-delayed Roadster developed with SpaceX"
+          },
+          {
+            "outlet": "Fox Business",
+            "text": "Tesla's new Roadster takes flight"
+          },
+          {
+            "outlet": "Axios",
+            "text": "With flying Roadster, Tesla waves goodbye to the car business"
+          }
+        ]
+      },
+      "visual": "A tilted wall of real headlines from six outlets flies in; an OCT 21 EARNINGS calendar drops in front.",
+      "sfx": [
+        {
+          "name": "impact",
+          "on": {
+            "cue": "earnings"
+          },
+          "volume": 0.35
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "id": "s05",
+      "type": "cineLesson",
+      "pad": 10,
+      "energy": 2,
+      "vo": "Here's what this tells us. Don't buy attention. Create a moment worth talking about.",
+      "cues": {
+        "tells": "tells",
+        "dont": "Don't",
+        "create": "Create"
+      },
+      "accents": [
+        "attention.",
+        "moment"
+      ],
+      "data": {
+        "footage": "media/cine/crowd.mp4",
+        "credit": "FOOTAGE: PEXELS",
+        "lines": [
+          {
+            "text": "WHAT THIS TELLS US",
+            "cue": "tells"
+          },
+          {
+            "text": "Don't buy attention.",
+            "cue": "dont"
+          },
+          {
+            "text": "Create a *moment* worth talking about.",
+            "cue": "create"
+          }
+        ]
+      },
+      "visual": "Real concert crowd raising lit phones, graded black and white with a lime glow; the lesson sets in serif.",
+      "bleed": true
+    },
+    {
+      "id": "s06",
+      "type": "cineViral",
+      "pad": 16,
+      "energy": 3,
+      "vo": "Do that, and you become the viral sensation.",
+      "cues": {
+        "viral": "Do"
+      },
+      "accents": [
+        "viral"
+      ],
+      "data": {
+        "notes": [
+          "+1 follower",
+          "♥ 48.2K likes",
+          "↗ 12.9K shares",
+          "💬 3.4K comments"
+        ]
+      },
+      "visual": "Followers count up to 1M, a lime growth curve climbs, an avatar swarm bursts out, notifications stack.",
+      "sfx": [
+        {
+          "name": "riser",
+          "on": 0,
+          "volume": 0.25
+        },
+        {
+          "name": "ding",
+          "on": {
+            "frac": 0.6
+          },
+          "volume": 0.2
+        }
+      ],
+      "bleed": true
+    }
+  ],
+  "render": {
+    "concurrency": 3,
+    "timeoutMs": 240000
+  }
+}

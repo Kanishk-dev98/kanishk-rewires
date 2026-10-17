@@ -1,0 +1,454 @@
+[
+  {
+    "text": "Elon",
+    "startMs": 204,
+    "endMs": 499
+  },
+  {
+    "text": "Musk",
+    "startMs": 499,
+    "endMs": 888
+  },
+  {
+    "text": "just",
+    "startMs": 971,
+    "endMs": 1183
+  },
+  {
+    "text": "made",
+    "startMs": 1195,
+    "endMs": 1383
+  },
+  {
+    "text": "the",
+    "startMs": 1383,
+    "endMs": 1454
+  },
+  {
+    "text": "world",
+    "startMs": 1454,
+    "endMs": 1926
+  },
+  {
+    "text": "want",
+    "startMs": 2173,
+    "endMs": 2327
+  },
+  {
+    "text": "a",
+    "startMs": 2327,
+    "endMs": 2374
+  },
+  {
+    "text": "car",
+    "startMs": 2374,
+    "endMs": 2669
+  },
+  {
+    "text": "you",
+    "startMs": 2680,
+    "endMs": 2798
+  },
+  {
+    "text": "can't",
+    "startMs": 2798,
+    "endMs": 3164
+  },
+  {
+    "text": "buy",
+    "startMs": 3176,
+    "endMs": 3577
+  },
+  {
+    "text": "until 2028",
+    "startMs": 3718,
+    "endMs": 4732,
+    "hl": true
+  },
+  {
+    "text": "Musk",
+    "startMs": 5349,
+    "endMs": 5573
+  },
+  {
+    "text": "used",
+    "startMs": 5585,
+    "endMs": 5903
+  },
+  {
+    "text": "his",
+    "startMs": 5903,
+    "endMs": 6057
+  },
+  {
+    "text": "genius",
+    "startMs": 6163,
+    "endMs": 6564,
+    "hl": true
+  },
+  {
+    "text": "marketing",
+    "startMs": 6564,
+    "endMs": 6953
+  },
+  {
+    "text": "move",
+    "startMs": 6953,
+    "endMs": 7342
+  },
+  {
+    "text": "At",
+    "startMs": 7731,
+    "endMs": 7778
+  },
+  {
+    "text": "a",
+    "startMs": 7778,
+    "endMs": 7814
+  },
+  {
+    "text": "SpaceX",
+    "startMs": 7814,
+    "endMs": 8297
+  },
+  {
+    "text": "test",
+    "startMs": 8297,
+    "endMs": 8545
+  },
+  {
+    "text": "site",
+    "startMs": 8545,
+    "endMs": 8828
+  },
+  {
+    "text": "the",
+    "startMs": 9040,
+    "endMs": 9111
+  },
+  {
+    "text": "new",
+    "startMs": 9111,
+    "endMs": 9359
+  },
+  {
+    "text": "Roadster",
+    "startMs": 9370,
+    "endMs": 9795
+  },
+  {
+    "text": "launched",
+    "startMs": 9795,
+    "endMs": 10184
+  },
+  {
+    "text": "off",
+    "startMs": 10196,
+    "endMs": 10396
+  },
+  {
+    "text": "a",
+    "startMs": 10408,
+    "endMs": 10444
+  },
+  {
+    "text": "ramp",
+    "startMs": 10455,
+    "endMs": 10903
+  },
+  {
+    "text": "flipped",
+    "startMs": 11163,
+    "endMs": 11682,
+    "hl": true
+  },
+  {
+    "text": "and",
+    "startMs": 11929,
+    "endMs": 12083
+  },
+  {
+    "text": "landed",
+    "startMs": 12083,
+    "endMs": 12425
+  },
+  {
+    "text": "on",
+    "startMs": 12425,
+    "endMs": 12554
+  },
+  {
+    "text": "thrusters",
+    "startMs": 12554,
+    "endMs": 13238
+  },
+  {
+    "text": "He",
+    "startMs": 13939,
+    "endMs": 13975
+  },
+  {
+    "text": "never",
+    "startMs": 13987,
+    "endMs": 14199
+  },
+  {
+    "text": "sells",
+    "startMs": 14199,
+    "endMs": 14458
+  },
+  {
+    "text": "specs",
+    "startMs": 14470,
+    "endMs": 15036,
+    "hl": true
+  },
+  {
+    "text": "He",
+    "startMs": 15425,
+    "endMs": 15484
+  },
+  {
+    "text": "stages",
+    "startMs": 15484,
+    "endMs": 15885
+  },
+  {
+    "text": "moments",
+    "startMs": 15885,
+    "endMs": 16345
+  },
+  {
+    "text": "the",
+    "startMs": 16357,
+    "endMs": 16522
+  },
+  {
+    "text": "internet",
+    "startMs": 16593,
+    "endMs": 17005
+  },
+  {
+    "text": "can't",
+    "startMs": 17064,
+    "endMs": 17288
+  },
+  {
+    "text": "ignore",
+    "startMs": 17289,
+    "endMs": 17748,
+    "hl": true
+  },
+  {
+    "text": "Nine",
+    "startMs": 18361,
+    "endMs": 18632
+  },
+  {
+    "text": "years",
+    "startMs": 18632,
+    "endMs": 18915
+  },
+  {
+    "text": "of",
+    "startMs": 18927,
+    "endMs": 18986
+  },
+  {
+    "text": "delays",
+    "startMs": 18986,
+    "endMs": 19505,
+    "hl": true
+  },
+  {
+    "text": "became",
+    "startMs": 19517,
+    "endMs": 19941
+  },
+  {
+    "text": "nine",
+    "startMs": 20177,
+    "endMs": 20578
+  },
+  {
+    "text": "years",
+    "startMs": 20578,
+    "endMs": 21014
+  },
+  {
+    "text": "of",
+    "startMs": 21026,
+    "endMs": 21097
+  },
+  {
+    "text": "anticipation",
+    "startMs": 21097,
+    "endMs": 21875,
+    "hl": true
+  },
+  {
+    "text": "And",
+    "startMs": 22483,
+    "endMs": 22541
+  },
+  {
+    "text": "the",
+    "startMs": 22542,
+    "endMs": 22600
+  },
+  {
+    "text": "press",
+    "startMs": 22600,
+    "endMs": 22919,
+    "hl": true
+  },
+  {
+    "text": "did",
+    "startMs": 22919,
+    "endMs": 23072
+  },
+  {
+    "text": "the",
+    "startMs": 23072,
+    "endMs": 23166
+  },
+  {
+    "text": "advertising",
+    "startMs": 23178,
+    "endMs": 23945
+  },
+  {
+    "text": "one",
+    "startMs": 24145,
+    "endMs": 24381
+  },
+  {
+    "text": "week",
+    "startMs": 24381,
+    "endMs": 24723
+  },
+  {
+    "text": "before",
+    "startMs": 24806,
+    "endMs": 25207
+  },
+  {
+    "text": "earnings",
+    "startMs": 25218,
+    "endMs": 25749,
+    "hl": true
+  },
+  {
+    "text": "Here's",
+    "startMs": 26439,
+    "endMs": 26593
+  },
+  {
+    "text": "what",
+    "startMs": 26593,
+    "endMs": 26675
+  },
+  {
+    "text": "this",
+    "startMs": 26687,
+    "endMs": 26829
+  },
+  {
+    "text": "tells",
+    "startMs": 26829,
+    "endMs": 27123
+  },
+  {
+    "text": "us",
+    "startMs": 27123,
+    "endMs": 27454
+  },
+  {
+    "text": "Don't",
+    "startMs": 27843,
+    "endMs": 27972
+  },
+  {
+    "text": "buy",
+    "startMs": 27972,
+    "endMs": 28114
+  },
+  {
+    "text": "attention",
+    "startMs": 28114,
+    "endMs": 28609,
+    "hl": true
+  },
+  {
+    "text": "Create",
+    "startMs": 28987,
+    "endMs": 29175
+  },
+  {
+    "text": "a",
+    "startMs": 29187,
+    "endMs": 29211
+  },
+  {
+    "text": "moment",
+    "startMs": 29211,
+    "endMs": 29482,
+    "hl": true
+  },
+  {
+    "text": "worth",
+    "startMs": 29482,
+    "endMs": 29635
+  },
+  {
+    "text": "talking",
+    "startMs": 29635,
+    "endMs": 29965
+  },
+  {
+    "text": "about",
+    "startMs": 29977,
+    "endMs": 30307
+  },
+  {
+    "text": "Do",
+    "startMs": 30983,
+    "endMs": 31195
+  },
+  {
+    "text": "that",
+    "startMs": 31195,
+    "endMs": 31478
+  },
+  {
+    "text": "and",
+    "startMs": 31938,
+    "endMs": 32008
+  },
+  {
+    "text": "you",
+    "startMs": 32008,
+    "endMs": 32091
+  },
+  {
+    "text": "become",
+    "startMs": 32103,
+    "endMs": 32457
+  },
+  {
+    "text": "the",
+    "startMs": 32468,
+    "endMs": 32527
+  },
+  {
+    "text": "viral",
+    "startMs": 32539,
+    "endMs": 32858,
+    "hl": true
+  },
+  {
+    "text": "sensation",
+    "startMs": 32858,
+    "endMs": 33471
+  }
+]

@@ -8,6 +8,7 @@ import { Launch90, LAUNCH90_FRAMES } from "./launch90/Launch90";
 import { calculateRewiresMetadata, Rewires } from "./rewires/Rewires";
 import { LogoReveal } from "./rewires/LogoReveal";
 import { REWIRES_DEMO } from "./rewires/demo";
+import { Cine3D } from "./rewires/cine3d";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -22,6 +23,24 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
         calculateMetadata={calculateRewiresMetadata}
         defaultProps={REWIRES_DEMO}
+      />
+      <Composition
+        id="CineFlipClip"
+        component={Cine3D}
+        durationInFrames={150}
+        fps={30}
+        width={540}
+        height={960}
+        defaultProps={{ mode: "flip" as const, model: "media/cine/car.glb", hdr: "media/cine/env.hdr" }}
+      />
+      <Composition
+        id="CineTest"
+        component={Cine3D}
+        durationInFrames={210}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{ mode: "flip" as const, model: "media/cine/car.glb", hdr: "media/cine/env.hdr" }}
       />
       <Composition id="RewiresOutro" component={LogoReveal} durationInFrames={90} fps={30} width={1080} height={1920} defaultProps={{}} />
       <Composition id="RewiresOutroWide" component={LogoReveal} durationInFrames={90} fps={30} width={1920} height={1080} defaultProps={{}} />

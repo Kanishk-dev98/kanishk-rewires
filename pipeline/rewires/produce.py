@@ -136,7 +136,7 @@ class Production:
             jobs.append((fdir / f"{s['id']}.png", f))
             start += s["dur"]
         jobs.append((fdir / "outro.png", tl["bodyFrames"] + timing.outro_frames(self._sb(), self.prod) - 1))
-        procs = [subprocess.Popen(["npx", "remotion", "still", "Rewires", str(p), f"--props={props}", f"--frame={f}", "--log=error"], cwd=config.STUDIO) for p, f in jobs]
+        procs = [subprocess.Popen(["npx", "remotion", "still", "Rewires", str(p), f"--props={props}", f"--frame={f}", "--log=error", "--gl=angle"], cwd=config.STUDIO) for p, f in jobs]
         if any(pr.wait() for pr in procs):
             raise Blocked("styleframe render failed")
         inputs = sum((["-i", str(p)] for p, _ in jobs), [])
@@ -151,7 +151,7 @@ class Production:
     def render(self):
         props = self.dir / "timeline" / "props.json"
         raw = self.dir / "renders" / f"{self.slug}.raw.mp4"
-        render.render(props, raw, self.prod)
+        render.render(props, raw, self.prod, override=self._sb().get("render"))
         out = _versioned(self.dir / "renders", self.slug)
         render.master(raw, out, self.prod)
         raw.unlink()

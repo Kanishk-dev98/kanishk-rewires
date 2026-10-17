@@ -7,12 +7,14 @@ import re
 
 from .storyboard import norm_word
 
-SFX_FILES = {"tick": "sfx/tick.wav", "click": "sfx/mouse-click.wav", "whoosh": "sfx/whoosh.wav", "impact": "sfx/impact.wav", "switch": "sfx/switch.wav", "ding": "sfx/ding.wav"}
+SFX_FILES = {"tick": "sfx/tick.wav", "click": "sfx/mouse-click.wav", "whoosh": "sfx/whoosh.wav", "impact": "sfx/impact.wav", "switch": "sfx/switch.wav", "ding": "sfx/ding.wav", "boom": "sfx/boom.wav", "riser": "sfx/riser.wav", "whip": "sfx/whip.wav"}
 
 
 def find_word(words, key: str, after_ms: float = -1):
+    """Start time (ms) of the first spoken token matching `key` after `after_ms`.
+    TTS sometimes merges words into one token ("until 2028"), so match any sub-word too."""
     k = norm_word(key)
-    return next((a for w, a, _ in words if a > after_ms and norm_word(w) == k), None)
+    return next((a for w, a, _ in words if a > after_ms and (norm_word(w) == k or k in [norm_word(x) for x in w.split()])), None)
 
 
 def build(sb: dict, vo: dict, prod: dict, vo_public_prefix: str) -> dict:
@@ -30,8 +32,16 @@ def build(sb: dict, vo: dict, prod: dict, vo_public_prefix: str) -> dict:
         frames = max(s.get("minFrames", t["minSceneFrames"]), lead + round(dur_s * fps) + s.get("pad", t["padFrames"]))
         data = dict(s.get("data", {}))
         for k, v in list(data.items()):  # "@name" pulls a shared value from the storyboard root (e.g. one lead list for every scene)
-            if isinstance(v, str) and v.startswith("@") and v[1:] in sb:
-                data[k] = sb[v[1:]]
+            if isinstance(v, str) and v.startswith("@"):
+                cur, ok = sb, True
+                for part in v[1:].split("."):
+                    if isinstance(cur, dict) and part in cur:
+                        cur = cur[part]
+                    else:
+                        ok = False
+                        break
+                if ok:
+                    data[k] = cur
         if s.get("sync"):
             ms = find_word(words, s["sync"])
             data["syncFrame"] = lead + round(ms / 1000 * fps) if ms is not None else lead + 8
@@ -60,6 +70,8 @@ def build(sb: dict, vo: dict, prod: dict, vo_public_prefix: str) -> dict:
             on = x.get("on", 0)
             if on == "sync":
                 at = data.get("syncFrame", lead)
+            elif isinstance(on, dict) and "frac" in on:  # {"frac": 0.74}: a fixed point of the scene's choreography
+                at = round(frames * on["frac"]) + on.get("offset", 0)
             elif isinstance(on, dict) and "cue" in on:  # {"cue": name, "offset": n}
                 at = data.get("cues", {}).get(on["cue"], lead) + on.get("offset", 0)
             elif isinstance(on, dict):  # {"sync": i, "offset": n}: the i-th sync word, shifted
@@ -87,7 +99,8 @@ def build(sb: dict, vo: dict, prod: dict, vo_public_prefix: str) -> dict:
         offset = (start + lead) / fps * 1000
         for w, a, b in words:
             c = {"text": w, "startMs": round(offset + a), "endMs": round(offset + b)}
-            if (hl and not hl_used and norm_word(w) == hl) or norm_word(w) in accents:
+            subs = {norm_word(x) for x in w.split()} | {norm_word(w)}
+            if (hl and not hl_used and hl in subs) or subs & accents:
                 c["hl"] = True
                 hl_used = hl_used or norm_word(w) == hl
             captions.append(c)

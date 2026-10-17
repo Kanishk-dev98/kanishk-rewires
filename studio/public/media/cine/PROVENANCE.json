@@ -1,0 +1,46 @@
+{
+  "retrieved": "2026-10-17",
+  "assets": [
+    {
+      "file": "car.glb",
+      "source_page": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/CarConcept",
+      "direct_url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/CarConcept/glTF-Binary/CarConcept.glb",
+      "author": "Eric Chadwick (model and textures), (c) 2024 Darmstadt Graphics Group GmbH; derived from public-domain (CC0) 'Free Concept Car 004' by Unity Fan on Sketchfab",
+      "license": "CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/legalcode) - commercial use allowed, attribution required",
+      "attribution_text": "\"Car Concept\" by Eric Chadwick / Darmstadt Graphics Group GmbH, CC BY 4.0, via Khronos glTF-Sample-Assets",
+      "notes": "11.8 MB self-contained GLB, ~213k triangles, 101 nodes, PBR with KHR clearcoat/transmission/iridescence/variants (Carmine Candy, Pearly Swirly, Torched Graphite). Generic concept car, no real-car brand. CAUTION: contains Khronos and 3D Commerce logos (license plate / steering emblem) under LicenseRef-LegalMark-Khronos, which grants no rights to use the marks beyond Khronos guidelines - hide/retexture the 'License Plate' node and 'InteriorSteeringEmblem' or keep them out of frame. Wheel nodes: WheelFrontL, WheelFrontR, WheelRearL, WheelRearR (each parent of Rim, BrakePad, BrakeDisc, tire mesh)."
+    },
+    {
+      "file": "env.hdr",
+      "source_page": "https://polyhaven.com/a/goegap_road",
+      "direct_url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/goegap_road_2k.hdr",
+      "author": "Greg Zaal (HDRI), James Ray Cock (backplates)",
+      "license": "CC0 (https://polyhaven.com/license) - commercial use, no attribution required",
+      "notes": "2k Radiance HDR, 6.5 MB. Arid desert straight asphalt road, Namaqualand, high-contrast low sun (sunrise/sunset), partly cloudy, long shadows. 22 EV range."
+    },
+    {
+      "file": "crowd.mp4",
+      "source_page": "https://www.pexels.com/video/vibrant-concert-crowd-with-cellphone-lights-35340079/",
+      "direct_url": "https://videos.pexels.com/video-files/35340079/14973729_1080_1920_60fps.mp4",
+      "author": "Harrun Muhammad (Pexels)",
+      "license": "Pexels License (https://www.pexels.com/license/) - free commercial use, no attribution required; do not imply endorsement or depict people negatively",
+      "notes": "Native vertical 1080x1920, 59.94 fps, 9 s, 11.7 MB. Night concert crowd holding up lit cellphones. Alternative (16:9, people actively filming): https://www.pexels.com/video/fans-recording-concert-with-smartphones-12719510/"
+    },
+    {
+      "file": "phone.mp4",
+      "source_page": "https://www.pexels.com/video/close-up-on-man-hand-scrolling-phone-gallery-10374888/",
+      "direct_url": "https://videos.pexels.com/video-files/10374888/10374888-hd_1080_1920_24fps.mp4",
+      "author": "RDNE Stock project (Pexels)",
+      "license": "Pexels License (https://www.pexels.com/license/) - free commercial use, no attribution required",
+      "notes": "Native vertical 1080x1920, 24 fps, 8 s, 4.7 MB. Close-up of a hand scrolling a phone photo gallery indoors (generic, no social app UI)."
+    },
+    {
+      "file": "desert.mp4",
+      "source_page": "https://www.pexels.com/video/beautiful-sunset-in-desert-18741740/",
+      "direct_url": "https://videos.pexels.com/video-files/18741740/18741740-uhd_1440_2560_60fps.mp4",
+      "author": "Aamir Somewhere (Pexels)",
+      "license": "Pexels License (https://www.pexels.com/license/) - free commercial use, no attribution required",
+      "notes": "Vertical 1440x2560, 59.94 fps, 15 s, 13.3 MB. Desert at vibrant sunset with a lone figure walking (not a test track; person visible)."
+    }
+  ]
+}
