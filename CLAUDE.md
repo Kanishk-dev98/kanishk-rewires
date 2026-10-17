@@ -1,11 +1,41 @@
-# Video Agent: notes for Claude
+# kanishk.wires: video studio
 
-Read `README.md` and `docs/BRAIN.md`, then `docs/ROADMAP.md` (what's next and what's waiting on the user) and `docs/DECISIONS.md` (why things are the way they are) before changing anything.
+This repo is the workspace for **kanishk.wires**, Alok Diwan's marketing channel and page. Here we make Abstraxn films, Apolio films, AI and marketing reels, and other brand videos, all rendered from code. GitHub: `kanishk-986/video-agent` (private).
 
-- Render engine: Remotion in `studio/`. Its official skills are in `studio/.agents/skills/remotion-best-practices/`; load them before writing Remotion code.
-- Animations must be driven by `useCurrentFrame()` + `interpolate()`/`spring()`. CSS transitions do not render.
-- Keep key text inside the safe area: ≥80 px from the sides, ≥100 px from top/bottom. Captions sit at y≈1330; keep scene content from overlapping 1300–1450.
-- Every stat in a script needs a source; put it in the spec's `source` field and in `docs/DECISIONS.md`.
-- After a render, sample frames (bundle once with `npx remotion bundle`, then `npx remotion still` per scene) and look at them before calling a reel done.
-- Never commit API keys. Put them in `.env` (git-ignored).
-- The user's Instagram channel is a **personal** account. If that changes, revisit the Remotion licence.
+## Read first
+
+1. `docs/BRAIN.md`: who the user is, everything done so far, preferences, links, account status.
+2. `docs/ROADMAP.md` and `docs/DECISIONS.md`.
+3. The project skills in `.claude/skills/`:
+   - `wires-film-pipeline`: engines, beat grids, music, styleframes, render, mastering, delivery, git
+   - `wires-video-qa`: the checklist built from the user's feedback (run it before every render and delivery)
+   - `abstraxn-brand`: palette, logo, type, product facts, copy rules
+   - `remotion-*`: official Remotion skills (load `remotion-best-practices` before writing Remotion code)
+
+## How the user works
+
+- Short, direct requests; wants results shown, not long option lists. Give a recommendation, then act.
+- Typical flow: script or storyboard → styleframes → full render. They review and send feedback per scene.
+- Always deliver to `~/Downloads/<Project>/` with a **new file name per version**, then open it.
+- Save every deliverable in `films/<project>/` (video, styleframes, board, NOTES.md) and push to GitHub after each finished task.
+- On-screen copy exactly as scripted, no em or en dashes, Abstraxn palette only for Abstraxn work.
+
+## Hard rules
+
+- Animations only via `useCurrentFrame()` + `interpolate`/`spring` (CSS transitions do not render).
+- Safe area ≥ 80 px from the sides; no overlapping elements; readable pacing.
+- Never commit API keys (`.env` is ignored). Never commit third-party videos over 95 MB.
+- Remotion licence: free because these are Alok's personal and portfolio pieces. If a film becomes an official Antier/Abstraxn company asset, it needs a Remotion Company License or a port to HyperFrames (Apache-2.0).
+
+## Map
+
+```
+.claude/skills/   project skills (brand, pipeline, QA, Remotion)
+studio/           Remotion project: story/ (reels), film/ (narrated), film58/ (beat film), apolio/, launch90/
+pipeline/         builders and music generators (Python, .venv)
+films/            delivered films with styleframes and notes
+reels/            reel specs
+research/         reference videos, Instagram landscape, prompt shortlist
+references/       OpenMontage, Remotion, awesome-opus5-5-videos (submodules)
+docs/             BRAIN, ROADMAP, DECISIONS
+```
