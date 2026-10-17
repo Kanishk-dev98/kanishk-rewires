@@ -294,3 +294,41 @@ export const ThumbFrog: React.FC<{ photo: string; kicker: string; line1: string;
     {guides ? <div style={{ position: "absolute", left: 0, right: 0, top: 240, height: 1440, border: "4px dashed #E5484D" }} /> : null}
   </AbsoluteFill>
 );
+
+/** Grid-matching 9:16 cover (Thumb916 grammar, no photo): kicker, headline with a lime serif accent, a heat bar with the jump line, wordmark. */
+export const ThumbHeat: React.FC<{ kicker: string; line1: string; line2: string; accent: string; guides?: boolean }> = ({ kicker, line1, line2, accent, guides }) => {
+  const mark = 0.72;
+  return (
+    <AbsoluteFill style={{ background: C.charcoal, fontFamily: BODY, color: C.cream }}>
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse 80% 45% at 50% 62%, rgba(167,255,63,0.16), rgba(0,0,0,0) 70%)" }} />
+      {new Array(48).fill(0).map((_, i) => (
+        <div key={i} style={{ position: "absolute", left: 120 + (i % 12) * 72, top: 1290 + Math.floor(i / 12) * 72, width: 40, height: 40, background: C.lime, opacity: 0.04 + 0.42 * random(`v${i}`) * (Math.floor(i / 12) / 4 + 0.2) }} />
+      ))}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 330, textAlign: "center", fontFamily: MONO, fontWeight: 600, fontSize: 34, letterSpacing: 8, color: C.lime }}>{kicker}</div>
+      <div style={{ position: "absolute", left: 60, right: 60, top: 420, textAlign: "center", fontFamily: HEAD, fontWeight: 700, fontSize: 118, lineHeight: 1.02, letterSpacing: -3 }}>
+        <div>{line1}</div>
+        <div style={{ marginTop: 26 }}>{line2}</div>
+        <div style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 400, color: C.lime, fontSize: 150, lineHeight: 1.0 }}>{accent}</div>
+      </div>
+      <div style={{ position: "absolute", left: 140, right: 140, top: 1040, padding: "30px 36px 26px", borderRadius: 26, background: C.graphite, border: "2px solid rgba(167,255,63,0.4)" }}>
+        <div style={{ position: "relative", height: 26, borderRadius: 13, background: `linear-gradient(90deg, ${C.lime}, #F5C451 60%, ${HOT})` }}>
+          <div style={{ position: "absolute", left: `${mark * 100}%`, top: -14, width: 8, height: 54, marginLeft: -4, borderRadius: 4, background: C.cream, boxShadow: "0 0 18px rgba(246,244,237,0.7)" }} />
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between", marginTop: 18, fontFamily: MONO, fontSize: 24, letterSpacing: 3, color: C.grey }}>
+          <span>COMFORTABLE</span>
+          <span style={{ color: C.cream }}>YOUR JUMP LINE</span>
+          <span style={{ color: HOT }}>TOO LATE</span>
+        </div>
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 1580, display: "flex", justifyContent: "center", alignItems: "center", gap: 14 }}>
+        <Img src={staticFile(BRAND.logo.monogramPublic)} style={{ width: 56, height: 56 }} />
+        <span style={{ fontFamily: MONO, fontSize: 30, color: C.stone }}>
+          {BRAND.wordmark.left}
+          <span style={{ color: C.lime }}>{BRAND.wordmark.dot}</span>
+          {BRAND.wordmark.right}
+        </span>
+      </div>
+      {guides ? <div style={{ position: "absolute", left: 0, right: 0, top: 240, height: 1440, border: "4px dashed #E5484D" }} /> : null}
+    </AbsoluteFill>
+  );
+};
