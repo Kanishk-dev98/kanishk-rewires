@@ -12,3 +12,16 @@ Deviations, all deliberate:
 - No Instagram handle outro; our small logo outro instead.
 
 Caveat: the script advertises a hiring product. Posted as Kanishk.Rewires, it would claim a product we don't offer, so posting is the user's call.
+
+## Update 2026-10-17: tool spotlight, not a fake product
+
+The user pointed out that Kanishk.Rewires is not a tool. The video now spotlights **Outship (outship.ai)**, the real YC W25 product from the original ad, and every line is matched to its own site (see `research/sources.json`; all claims are company claims). Changes:
+- The task is imported from GitHub, not written as a brief.
+- The agents are Claude Code and Codex.
+- "Share with every candidate" (they claim no number).
+- "Every prompt analyzed against your rubric", with Outship's five rubric categories.
+- "and compare them".
+- The Outship mark (official, from their site) with the name set in Inter. Their wordmark font, Saans, is commercial, so we don't use it.
+- The ending is "AI tools that actually work" plus the kanishk.rewires outro.
+
+This is not sponsored; a caption disclosure is recommended.

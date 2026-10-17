@@ -14,8 +14,8 @@
     },
     "research": {
       "status": "done",
-      "at": "2026-10-17T09:30:08+00:00",
-      "note": "0 claims in the ledger",
+      "at": "2026-10-17T09:49:13+00:00",
+      "note": "11 claims in the ledger",
       "outputs": [
         "research/sources.json",
         "research/sources.md"
@@ -23,7 +23,7 @@
     },
     "brief": {
       "status": "done",
-      "at": "2026-10-17T09:30:08+00:00",
+      "at": "2026-10-17T09:49:13+00:00",
       "note": "brief present",
       "outputs": [
         "brief/brief.md"
@@ -31,32 +31,32 @@
     },
     "script": {
       "status": "done",
-      "at": "2026-10-17T09:30:17+00:00",
-      "note": "69 narration words (~27 s at a natural pace)",
+      "at": "2026-10-17T09:49:13+00:00",
+      "note": "85 narration words (~33 s at a natural pace)",
       "outputs": [
         "script/script.md"
       ]
     },
     "storyboard": {
       "status": "done",
-      "at": "2026-10-17T09:30:17+00:00",
-      "note": "29 scenes valid, 0 warnings",
+      "at": "2026-10-17T09:49:13+00:00",
+      "note": "30 scenes valid, 0 warnings",
       "outputs": [
         "storyboard/storyboard.json"
       ]
     },
     "assets": {
       "status": "done",
-      "at": "2026-10-17T09:30:21+00:00",
-      "note": "21 narration clips (0 reused from cache)",
+      "at": "2026-10-17T09:49:17+00:00",
+      "note": "22 narration clips (14 reused from cache)",
       "outputs": [
         "audio/vo/"
       ]
     },
     "edit": {
       "status": "done",
-      "at": "2026-10-17T09:39:40+00:00",
-      "note": "29 scenes, body 58.1 s + outro 2.5 s, 69 caption words",
+      "at": "2026-10-17T09:51:43+00:00",
+      "note": "30 scenes, body 63.5 s + outro 2.5 s, 85 caption words",
       "outputs": [
         "timeline/timeline.json",
         "timeline/props.json",
@@ -67,16 +67,16 @@
     },
     "render": {
       "status": "done",
-      "at": "2026-10-17T09:42:23+00:00",
-      "note": "promo-ai-native_v2.mp4 (9.1 MB)",
+      "at": "2026-10-17T09:54:03+00:00",
+      "note": "promo-ai-native_v5.mp4 (10.2 MB)",
       "outputs": [
-        "renders/promo-ai-native_v2.mp4"
+        "renders/promo-ai-native_v5.mp4"
       ]
     },
     "qc": {
       "status": "done",
-      "at": "2026-10-17T09:42:34+00:00",
-      "note": "promo-ai-native_v2.mp4 passed 14 checks",
+      "at": "2026-10-17T09:54:14+00:00",
+      "note": "promo-ai-native_v5.mp4 passed 14 checks",
       "outputs": [
         "reports/qc.md",
         "reports/contact_sheet.png"
@@ -84,8 +84,8 @@
     },
     "delivery": {
       "status": "done",
-      "at": "2026-10-17T09:42:34+00:00",
-      "note": "delivered promo-ai-native_v2.mp4",
+      "at": "2026-10-17T09:54:15+00:00",
+      "note": "delivered promo-ai-native_v5.mp4",
       "outputs": [
         "reports/production_report.md",
         "/Users/kanishk.raj/Downloads/Kanishk.Rewires/promo-ai-native"
@@ -97,8 +97,8 @@
       "kind": "voiceover",
       "path": "audio/vo/s01.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
-      "cached": false,
+      "at": "2026-10-17T09:49:17+00:00",
+      "cached": true,
       "seconds": 2.47,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
@@ -110,8 +110,8 @@
       "kind": "voiceover",
       "path": "audio/vo/s02.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
-      "cached": false,
+      "at": "2026-10-17T09:49:17+00:00",
+      "cached": true,
       "seconds": 1.87,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
@@ -123,8 +123,8 @@
       "kind": "voiceover",
       "path": "audio/vo/s03.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
-      "cached": false,
+      "at": "2026-10-17T09:49:17+00:00",
+      "cached": true,
       "seconds": 1.94,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
@@ -136,8 +136,8 @@
       "kind": "voiceover",
       "path": "audio/vo/s04.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
-      "cached": false,
+      "at": "2026-10-17T09:49:17+00:00",
+      "cached": true,
       "seconds": 2.28,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
@@ -149,8 +149,8 @@
       "kind": "voiceover",
       "path": "audio/vo/s05.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
-      "cached": false,
+      "at": "2026-10-17T09:49:17+00:00",
+      "cached": true,
       "seconds": 1.87,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
@@ -162,8 +162,8 @@
       "kind": "voiceover",
       "path": "audio/vo/s06.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
-      "cached": false,
+      "at": "2026-10-17T09:49:17+00:00",
+      "cached": true,
       "seconds": 1.99,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
@@ -175,22 +175,9 @@
       "kind": "voiceover",
       "path": "audio/vo/s07.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
-      "cached": false,
+      "at": "2026-10-17T09:49:17+00:00",
+      "cached": true,
       "seconds": 0.77,
-      "settings": {
-        "voice": "en-US-AndrewMultilingualNeural",
-        "rate": "+4%"
-      },
-      "licence": "Edge TTS output, personal use"
-    },
-    {
-      "kind": "voiceover",
-      "path": "audio/vo/s08.mp3",
-      "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
-      "cached": false,
-      "seconds": 1.87,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
         "rate": "+4%"
@@ -201,7 +188,98 @@
       "kind": "voiceover",
       "path": "audio/vo/s09.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
+      "at": "2026-10-17T09:49:17+00:00",
+      "cached": true,
+      "seconds": 1.87,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s13.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T09:49:17+00:00",
+      "cached": true,
+      "seconds": 1.87,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s20.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T09:49:17+00:00",
+      "cached": true,
+      "seconds": 1.87,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s25.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T09:49:17+00:00",
+      "cached": true,
+      "seconds": 1.87,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s26.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T09:49:17+00:00",
+      "cached": true,
+      "seconds": 1.87,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s27.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T09:49:17+00:00",
+      "cached": true,
+      "seconds": 1.87,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s29.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T09:49:17+00:00",
+      "cached": true,
+      "seconds": 2.16,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s08.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T09:49:17+00:00",
       "cached": false,
       "seconds": 1.87,
       "settings": {
@@ -214,20 +292,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s11.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
-      "cached": false,
-      "seconds": 1.87,
-      "settings": {
-        "voice": "en-US-AndrewMultilingualNeural",
-        "rate": "+4%"
-      },
-      "licence": "Edge TTS output, personal use"
-    },
-    {
-      "kind": "voiceover",
-      "path": "audio/vo/s13.mp3",
-      "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
+      "at": "2026-10-17T09:49:17+00:00",
       "cached": false,
       "seconds": 1.87,
       "settings": {
@@ -240,9 +305,9 @@
       "kind": "voiceover",
       "path": "audio/vo/s14.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
+      "at": "2026-10-17T09:49:17+00:00",
       "cached": false,
-      "seconds": 2.52,
+      "seconds": 4.3,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
         "rate": "+4%"
@@ -253,22 +318,9 @@
       "kind": "voiceover",
       "path": "audio/vo/s15.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
+      "at": "2026-10-17T09:49:17+00:00",
       "cached": false,
-      "seconds": 2.26,
-      "settings": {
-        "voice": "en-US-AndrewMultilingualNeural",
-        "rate": "+4%"
-      },
-      "licence": "Edge TTS output, personal use"
-    },
-    {
-      "kind": "voiceover",
-      "path": "audio/vo/s20.mp3",
-      "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
-      "cached": false,
-      "seconds": 1.87,
+      "seconds": 2.21,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
         "rate": "+4%"
@@ -279,9 +331,9 @@
       "kind": "voiceover",
       "path": "audio/vo/s22.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
+      "at": "2026-10-17T09:49:17+00:00",
       "cached": false,
-      "seconds": 3.02,
+      "seconds": 3.05,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
         "rate": "+4%"
@@ -292,46 +344,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s24.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
-      "cached": false,
-      "seconds": 1.87,
-      "settings": {
-        "voice": "en-US-AndrewMultilingualNeural",
-        "rate": "+4%"
-      },
-      "licence": "Edge TTS output, personal use"
-    },
-    {
-      "kind": "voiceover",
-      "path": "audio/vo/s25.mp3",
-      "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
-      "cached": false,
-      "seconds": 1.87,
-      "settings": {
-        "voice": "en-US-AndrewMultilingualNeural",
-        "rate": "+4%"
-      },
-      "licence": "Edge TTS output, personal use"
-    },
-    {
-      "kind": "voiceover",
-      "path": "audio/vo/s26.mp3",
-      "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
-      "cached": false,
-      "seconds": 1.87,
-      "settings": {
-        "voice": "en-US-AndrewMultilingualNeural",
-        "rate": "+4%"
-      },
-      "licence": "Edge TTS output, personal use"
-    },
-    {
-      "kind": "voiceover",
-      "path": "audio/vo/s27.mp3",
-      "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
+      "at": "2026-10-17T09:49:17+00:00",
       "cached": false,
       "seconds": 1.87,
       "settings": {
@@ -344,7 +357,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s28.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
+      "at": "2026-10-17T09:49:17+00:00",
       "cached": false,
       "seconds": 1.87,
       "settings": {
@@ -355,11 +368,11 @@
     },
     {
       "kind": "voiceover",
-      "path": "audio/vo/s29.mp3",
+      "path": "audio/vo/s30.mp3",
       "provider": "edge",
-      "at": "2026-10-17T09:30:21+00:00",
+      "at": "2026-10-17T09:49:17+00:00",
       "cached": false,
-      "seconds": 2.16,
+      "seconds": 3.91,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
         "rate": "+4%"
@@ -370,14 +383,14 @@
       "kind": "music",
       "path": "audio/music.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-10-17T09:39:40+00:00",
+      "at": "2026-10-17T09:51:43+00:00",
       "licence": "original, generated in code"
     },
     {
       "kind": "music",
       "path": "audio/signature.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-10-17T09:39:40+00:00",
+      "at": "2026-10-17T09:51:43+00:00",
       "licence": "original, generated in code"
     }
   ],
@@ -389,6 +402,18 @@
     {
       "file": "renders/promo-ai-native_v2.mp4",
       "at": "2026-10-17T15:12:23"
+    },
+    {
+      "file": "renders/promo-ai-native_v3.mp4",
+      "at": "2026-10-17T15:21:19"
+    },
+    {
+      "file": "renders/promo-ai-native_v4.mp4",
+      "at": "2026-10-17T15:22:37"
+    },
+    {
+      "file": "renders/promo-ai-native_v5.mp4",
+      "at": "2026-10-17T15:24:03"
     }
   ]
 }

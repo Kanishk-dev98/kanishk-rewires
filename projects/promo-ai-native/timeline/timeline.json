@@ -148,12 +148,16 @@
     },
     {
       "id": "s08",
-      "type": "pBrand",
-      "dur": 46,
+      "type": "pToolBrand",
+      "dur": 45.0,
       "vo": "projects/promo-ai-native/vo/s08.mp3",
       "voAt": 0,
       "data": {
-        "theme": "dark"
+        "theme": "dark",
+        "mark": "media/promo/tool/logo-mark.svg",
+        "name": "outship",
+        "height": 120,
+        "sub": "OUTSHIP.AI"
       },
       "transition": "cut",
       "sfx": []
@@ -224,7 +228,7 @@
     {
       "id": "s11",
       "type": "pKinetic",
-      "dur": 45,
+      "dur": 40,
       "vo": "projects/promo-ai-native/vo/s11.mp3",
       "voAt": 0,
       "data": {
@@ -233,7 +237,7 @@
           "and",
           "who's",
           "just",
-          "vibe-coding"
+          "vibe coding"
         ],
         "accent": 3,
         "step": 3,
@@ -289,14 +293,21 @@
         "before": "Create",
         "after": "a task",
         "icon": "media/promo/github.svg",
-        "org": "Awesome Assistant Co",
-        "title": "Voice-Powered Travel Search",
-        "subtitle": "Build a voice-driven travel search application that lets users find listings by speaking naturally.",
-        "overview": "Create a web application where users can describe their ideal trip using their voice and see matching listings in real time. The application should feel conversational: users start with a broad request like \"I want to visit Tokyo\" and progressively refine by speaking additional criteria like \"somewhere near Shibuya\", \"for 4 guests\", or \"with a pool\".",
+        "org": "outship",
+        "title": "Import a task",
+        "subtitle": "From GitHub: a past bug, an interview project, or a real PR to your product.",
+        "overview": "Ask candidates to solve a past bug, or have them ship a real PR to your product. Each candidate gets a real VM with VS Code, dependencies and AI agents configured.",
         "photos": [
           "media/li2/desk1.jpg",
           "media/li2/desk2.jpg",
           "media/li2/desk1.jpg"
+        ],
+        "repoLines": [
+          "# github.com/acme/checkout-service",
+          "issue #482  retries double-charge on timeout",
+          "branch      fix/idempotent-retries",
+          "\u2713 imported as task",
+          "\u2713 VM ready: VS Code, deps, agents"
         ]
       },
       "transition": "cut",
@@ -305,7 +316,7 @@
     {
       "id": "s14",
       "type": "pPromptAgents",
-      "dur": 71,
+      "dur": 125,
       "vo": "projects/promo-ai-native/vo/s14.mp3",
       "voAt": 0,
       "data": {
@@ -323,14 +334,14 @@
     {
       "id": "s15",
       "type": "pAvatars",
-      "dur": 63,
+      "dur": 61,
       "vo": "projects/promo-ai-native/vo/s15.mp3",
       "voAt": 0,
       "data": {
         "theme": "cream",
         "before": "Share with",
-        "pill": "hundreds",
-        "after": "of candidates",
+        "pill": "every",
+        "after": "candidate",
         "people": [
           {
             "n": 2,
@@ -375,7 +386,7 @@
       "voAt": 0,
       "data": {
         "theme": "dark",
-        "body": "...listings appear in real time. The application should feel conversational: users start with a broad request and progressively refine it by speaking additional criteria like \"somewhere near Shibuya\"."
+        "body": "Fix issue #482: retries double-charge when the payment call times out. Use any coding agent you like. Ship a PR with tests."
       },
       "transition": "cut",
       "sfx": []
@@ -389,7 +400,7 @@
       "data": {
         "theme": "dark",
         "version": "Claude Code v2.1.113",
-        "prompt": "scaffold voice input: MediaRecorder \u2192 Whisper. skip search for now"
+        "prompt": "fix #482: add an idempotency key to payment retries, then write the tests"
       },
       "transition": "cut",
       "sfx": []
@@ -490,7 +501,7 @@
           "Deliverable",
           "Code",
           "How they use agents",
-          "AI Analysis"
+          "Rubric report"
         ],
         "photo": "media/li2/desk2.jpg",
         "gallery": [
@@ -537,8 +548,12 @@
             "Excellent"
           ],
           [
-            "Communication with Coding Agent",
+            "Agent Communication",
             "Good"
+          ],
+          [
+            "Verification & Shipping",
+            "Excellent"
           ]
         ]
       },
@@ -548,14 +563,14 @@
     {
       "id": "s22",
       "type": "pBands",
-      "dur": 86,
+      "dur": 87,
       "vo": "projects/promo-ai-native/vo/s22.mp3",
       "voAt": 0,
       "data": {
         "theme": "dark",
-        "pre": "Agents",
-        "accentWord": "analyze",
-        "post": "candidate performance"
+        "pre": "Every prompt",
+        "accentWord": "analyzed",
+        "post": "against your rubric"
       },
       "transition": "cut",
       "sfx": []
@@ -569,14 +584,11 @@
       "data": {
         "theme": "cream",
         "items": [
-          "Code quality",
-          "Problem decomposition",
-          "Adaptability",
-          "Testing approach",
-          "Tech stack decisions",
-          "Iterative mindset",
-          "Verifies AI output",
-          "Debugging instinct"
+          "Codebase orientation",
+          "Architectural research",
+          "Full-stack execution",
+          "Agent communication",
+          "Verification & shipping"
         ]
       },
       "transition": "cut",
@@ -590,7 +602,7 @@
       "voAt": 0,
       "data": {
         "theme": "cream",
-        "title": "and score them",
+        "title": "and compare them",
         "rows": [
           {
             "n": 3,
@@ -714,12 +726,16 @@
     },
     {
       "id": "s28",
-      "type": "pBrand",
+      "type": "pToolBrand",
       "dur": 48.0,
       "vo": "projects/promo-ai-native/vo/s28.mp3",
       "voAt": 0,
       "data": {
-        "theme": "cream"
+        "theme": "cream",
+        "mark": "media/promo/tool/logo-mark-dark.svg",
+        "name": "outship",
+        "height": 120,
+        "sub": "OUTSHIP.AI"
       },
       "transition": "cut",
       "sfx": []
@@ -739,7 +755,31 @@
         ],
         "accent": 1,
         "step": 4,
-        "size": 56
+        "size": 56,
+        "particles": "specks"
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s30",
+      "type": "pKinetic",
+      "dur": 115,
+      "vo": "projects/promo-ai-native/vo/s30.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "dark",
+        "words": [
+          "AI",
+          "tools",
+          "that",
+          "actually",
+          "work."
+        ],
+        "accent": 3,
+        "step": 4,
+        "size": 60,
+        "particles": "specks"
       },
       "transition": "cut",
       "sfx": []
@@ -862,234 +902,314 @@
       "endMs": 12009
     },
     {
-      "text": "Kanishk",
+      "text": "Outship",
       "startMs": 12296,
-      "endMs": 12705
-    },
-    {
-      "text": "Rewires",
-      "startMs": 12801,
-      "endMs": 13558
+      "endMs": 12717
     },
     {
       "text": "See",
-      "startMs": 13829,
-      "endMs": 14034
+      "startMs": 13796,
+      "endMs": 14000
     },
     {
       "text": "who's",
-      "startMs": 14034,
-      "endMs": 14262
+      "startMs": 14000,
+      "endMs": 14229
     },
     {
       "text": "engineering",
-      "startMs": 14274,
-      "endMs": 14791
+      "startMs": 14241,
+      "endMs": 14758
     },
     {
       "text": "and",
-      "startMs": 16563,
-      "endMs": 16611
+      "startMs": 16529,
+      "endMs": 16578
     },
     {
       "text": "who's",
-      "startMs": 16611,
-      "endMs": 16815
+      "startMs": 16578,
+      "endMs": 16734
     },
     {
       "text": "just",
-      "startMs": 16827,
-      "endMs": 17068
+      "startMs": 16734,
+      "endMs": 16926
     },
     {
-      "text": "vibe-coding",
-      "startMs": 17068,
-      "endMs": 17777
-    },
-    {
-      "text": "Create",
-      "startMs": 20063,
-      "endMs": 20327
-    },
-    {
-      "text": "a",
-      "startMs": 20327,
-      "endMs": 20375
-    },
-    {
-      "text": "task",
-      "startMs": 20375,
-      "endMs": 20892
-    },
-    {
-      "text": "Give",
-      "startMs": 22551,
-      "endMs": 22707
-    },
-    {
-      "text": "access",
-      "startMs": 22707,
-      "endMs": 23260
-    },
-    {
-      "text": "to",
-      "startMs": 23272,
-      "endMs": 23464
-    },
-    {
-      "text": "real",
-      "startMs": 23476,
-      "endMs": 23789
+      "text": "vibe",
+      "startMs": 16926,
+      "endMs": 17191
     },
     {
       "text": "coding",
-      "startMs": 23801,
-      "endMs": 24125
+      "startMs": 17203,
+      "endMs": 17587
+    },
+    {
+      "text": "Create",
+      "startMs": 19863,
+      "endMs": 20127
+    },
+    {
+      "text": "a",
+      "startMs": 20127,
+      "endMs": 20175
+    },
+    {
+      "text": "task",
+      "startMs": 20175,
+      "endMs": 20692
+    },
+    {
+      "text": "Give",
+      "startMs": 22351,
+      "endMs": 22507
+    },
+    {
+      "text": "access",
+      "startMs": 22507,
+      "endMs": 23000
+    },
+    {
+      "text": "to",
+      "startMs": 23012,
+      "endMs": 23168
+    },
+    {
+      "text": "real",
+      "startMs": 23168,
+      "endMs": 23529
+    },
+    {
+      "text": "coding",
+      "startMs": 23541,
+      "endMs": 23865
     },
     {
       "text": "agents",
-      "startMs": 24125,
-      "endMs": 24630
+      "startMs": 23865,
+      "endMs": 24310
+    },
+    {
+      "text": "like",
+      "startMs": 24502,
+      "endMs": 24634
+    },
+    {
+      "text": "Claude",
+      "startMs": 24634,
+      "endMs": 24995
+    },
+    {
+      "text": "Code",
+      "startMs": 25007,
+      "endMs": 25356
+    },
+    {
+      "text": "and",
+      "startMs": 25488,
+      "endMs": 25560
+    },
+    {
+      "text": "Codex",
+      "startMs": 25572,
+      "endMs": 26233
     },
     {
       "text": "Share",
-      "startMs": 24929,
-      "endMs": 25230
+      "startMs": 26529,
+      "endMs": 26890
     },
     {
       "text": "with",
-      "startMs": 25374,
-      "endMs": 25518
+      "startMs": 27046,
+      "endMs": 27227
     },
     {
-      "text": "hundreds",
-      "startMs": 25518,
-      "endMs": 25963
-    },
-    {
-      "text": "of",
-      "startMs": 25963,
-      "endMs": 26023
-    },
-    {
-      "text": "candidates",
-      "startMs": 26035,
-      "endMs": 26744
-    },
-    {
-      "text": "You",
-      "startMs": 36529,
-      "endMs": 36602
-    },
-    {
-      "text": "see",
-      "startMs": 36602,
-      "endMs": 36830
-    },
-    {
-      "text": "everything",
-      "startMs": 36902,
-      "endMs": 37503
-    },
-    {
-      "text": "Agents",
-      "startMs": 43284,
-      "endMs": 43729
-    },
-    {
-      "text": "analyze",
-      "startMs": 43825,
-      "endMs": 44450
+      "text": "every",
+      "startMs": 27383,
+      "endMs": 27635
     },
     {
       "text": "candidate",
-      "startMs": 44522,
-      "endMs": 45039
+      "startMs": 27647,
+      "endMs": 28272
     },
     {
-      "text": "performance",
-      "startMs": 45039,
-      "endMs": 45868
+      "text": "You",
+      "startMs": 38063,
+      "endMs": 38135
     },
     {
-      "text": "and",
-      "startMs": 47763,
-      "endMs": 47835
+      "text": "see",
+      "startMs": 38135,
+      "endMs": 38363
     },
     {
-      "text": "score",
-      "startMs": 47835,
-      "endMs": 48171
+      "text": "everything",
+      "startMs": 38435,
+      "endMs": 39036
     },
     {
-      "text": "them",
-      "startMs": 48171,
-      "endMs": 48376
+      "text": "Every",
+      "startMs": 44817,
+      "endMs": 45082
+    },
+    {
+      "text": "prompt",
+      "startMs": 45082,
+      "endMs": 45623
+    },
+    {
+      "text": "analyzed",
+      "startMs": 46079,
+      "endMs": 46524
+    },
+    {
+      "text": "against",
+      "startMs": 46524,
+      "endMs": 46801
+    },
+    {
+      "text": "your",
+      "startMs": 46813,
+      "endMs": 46933
+    },
+    {
+      "text": "rubric",
+      "startMs": 46945,
+      "endMs": 47438
     },
     {
       "text": "so",
-      "startMs": 50263,
-      "endMs": 50371
+      "startMs": 49329,
+      "endMs": 49414
     },
     {
       "text": "you",
-      "startMs": 50383,
-      "endMs": 50551
+      "startMs": 49414,
+      "endMs": 49510
+    },
+    {
+      "text": "can",
+      "startMs": 49522,
+      "endMs": 49618
+    },
+    {
+      "text": "compare",
+      "startMs": 49618,
+      "endMs": 49954
+    },
+    {
+      "text": "them",
+      "startMs": 49954,
+      "endMs": 50195
+    },
+    {
+      "text": "so",
+      "startMs": 51829,
+      "endMs": 51938
+    },
+    {
+      "text": "you",
+      "startMs": 51950,
+      "endMs": 52118
     },
     {
       "text": "interview",
-      "startMs": 50563,
-      "endMs": 51044
+      "startMs": 52130,
+      "endMs": 52611
     },
     {
       "text": "and",
-      "startMs": 51751,
-      "endMs": 51823
+      "startMs": 53317,
+      "endMs": 53390
     },
     {
       "text": "hire",
-      "startMs": 51823,
-      "endMs": 52292
+      "startMs": 53390,
+      "endMs": 53858
     },
     {
       "text": "only",
-      "startMs": 52951,
-      "endMs": 53107
+      "startMs": 54517,
+      "endMs": 54674
     },
     {
       "text": "the",
-      "startMs": 53107,
-      "endMs": 53179
+      "startMs": 54674,
+      "endMs": 54746
     },
     {
       "text": "best",
-      "startMs": 53191,
-      "endMs": 53720
+      "startMs": 54758,
+      "endMs": 55287
     },
     {
-      "text": "Kanishk",
-      "startMs": 54163,
-      "endMs": 54559
-    },
-    {
-      "text": "Rewires",
-      "startMs": 54571,
-      "endMs": 55269
+      "text": "Outship",
+      "startMs": 55729,
+      "endMs": 56174
     },
     {
       "text": "Hire",
-      "startMs": 55763,
-      "endMs": 56063
+      "startMs": 57329,
+      "endMs": 57630
     },
     {
       "text": "AI-native",
-      "startMs": 56220,
-      "endMs": 56784
+      "startMs": 57786,
+      "endMs": 58351
     },
     {
       "text": "engineers",
-      "startMs": 56784,
-      "endMs": 57470
+      "startMs": 58351,
+      "endMs": 59036
+    },
+    {
+      "text": "Follow",
+      "startMs": 59790,
+      "endMs": 60030
+    },
+    {
+      "text": "Kanishk",
+      "startMs": 60030,
+      "endMs": 60463
+    },
+    {
+      "text": "Rewires",
+      "startMs": 60475,
+      "endMs": 61040
+    },
+    {
+      "text": "for",
+      "startMs": 61052,
+      "endMs": 61244
+    },
+    {
+      "text": "AI",
+      "startMs": 61352,
+      "endMs": 61761
+    },
+    {
+      "text": "tools",
+      "startMs": 61761,
+      "endMs": 62266
+    },
+    {
+      "text": "that",
+      "startMs": 62278,
+      "endMs": 62410
+    },
+    {
+      "text": "actually",
+      "startMs": 62410,
+      "endMs": 62746
+    },
+    {
+      "text": "work",
+      "startMs": 62758,
+      "endMs": 63203
     }
   ],
   "sections": [
@@ -1130,115 +1250,120 @@
     },
     {
       "start": 12.2,
-      "end": 13.733333333333333,
+      "end": 13.7,
       "energy": 2
     },
     {
-      "start": 13.733333333333333,
-      "end": 14.966666666666667,
+      "start": 13.7,
+      "end": 14.933333333333334,
       "energy": 2
     },
     {
-      "start": 14.966666666666667,
-      "end": 16.466666666666665,
+      "start": 14.933333333333334,
+      "end": 16.433333333333334,
       "energy": 2
     },
     {
-      "start": 16.466666666666665,
-      "end": 17.966666666666665,
+      "start": 16.433333333333334,
+      "end": 17.766666666666666,
       "energy": 2
     },
     {
-      "start": 17.966666666666665,
-      "end": 19.966666666666665,
+      "start": 17.766666666666666,
+      "end": 19.766666666666666,
       "energy": 2
     },
     {
-      "start": 19.966666666666665,
-      "end": 22.466666666666665,
+      "start": 19.766666666666666,
+      "end": 22.266666666666666,
       "energy": 2
     },
     {
-      "start": 22.466666666666665,
-      "end": 24.833333333333332,
+      "start": 22.266666666666666,
+      "end": 26.433333333333334,
       "energy": 2
     },
     {
-      "start": 24.833333333333332,
-      "end": 26.933333333333334,
+      "start": 26.433333333333334,
+      "end": 28.466666666666665,
       "energy": 2
     },
     {
-      "start": 26.933333333333334,
-      "end": 28.933333333333334,
+      "start": 28.466666666666665,
+      "end": 30.466666666666665,
       "energy": 2
     },
     {
-      "start": 28.933333333333334,
-      "end": 31.933333333333334,
+      "start": 30.466666666666665,
+      "end": 33.46666666666667,
       "energy": 2
     },
     {
-      "start": 31.933333333333334,
-      "end": 34.93333333333333,
+      "start": 33.46666666666667,
+      "end": 36.46666666666667,
       "energy": 2
     },
     {
-      "start": 34.93333333333333,
-      "end": 36.43333333333333,
+      "start": 36.46666666666667,
+      "end": 37.96666666666667,
       "energy": 2
     },
     {
-      "start": 36.43333333333333,
-      "end": 37.7,
+      "start": 37.96666666666667,
+      "end": 39.233333333333334,
       "energy": 2
     },
     {
-      "start": 37.7,
-      "end": 43.2,
+      "start": 39.233333333333334,
+      "end": 44.733333333333334,
       "energy": 2
     },
     {
-      "start": 43.2,
-      "end": 46.06666666666667,
+      "start": 44.733333333333334,
+      "end": 47.63333333333333,
       "energy": 2
     },
     {
-      "start": 46.06666666666667,
-      "end": 47.666666666666664,
+      "start": 47.63333333333333,
+      "end": 49.233333333333334,
       "energy": 2
     },
     {
-      "start": 47.666666666666664,
-      "end": 50.166666666666664,
+      "start": 49.233333333333334,
+      "end": 51.733333333333334,
       "energy": 2
     },
     {
-      "start": 50.166666666666664,
-      "end": 51.666666666666664,
+      "start": 51.733333333333334,
+      "end": 53.233333333333334,
       "energy": 2
     },
     {
-      "start": 51.666666666666664,
-      "end": 52.86666666666667,
+      "start": 53.233333333333334,
+      "end": 54.43333333333333,
       "energy": 2
     },
     {
-      "start": 52.86666666666667,
-      "end": 54.06666666666667,
+      "start": 54.43333333333333,
+      "end": 55.63333333333333,
       "energy": 2
     },
     {
-      "start": 54.06666666666667,
-      "end": 55.666666666666664,
+      "start": 55.63333333333333,
+      "end": 57.233333333333334,
       "energy": 2
     },
     {
-      "start": 55.666666666666664,
-      "end": 58.06666666666667,
+      "start": 57.233333333333334,
+      "end": 59.63333333333333,
+      "energy": 2
+    },
+    {
+      "start": 59.63333333333333,
+      "end": 63.46666666666667,
       "energy": 2
     }
   ],
   "hits": [],
-  "bodyFrames": 1742.0
+  "bodyFrames": 1904.0
 }

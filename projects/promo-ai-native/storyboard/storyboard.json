@@ -1,9 +1,9 @@
 {
   "id": "promo-ai-native",
-  "title": "Hire AI-native engineers (promo rebuild)",
+  "title": "Outship: hire AI-native engineers (tool spotlight)",
   "format": "16x9",
   "captions": false,
-  "research": "not-needed",
+  "research": "done",
   "voice": {
     "provider": "edge",
     "edge": {
@@ -14,7 +14,8 @@
   "outro": {
     "seconds": 2.5,
     "size": 200,
-    "wordSize": 48
+    "wordSize": 48,
+    "cta": "Follow for AI tools that actually work"
   },
   "render": {
     "concurrency": 4,
@@ -170,14 +171,18 @@
     },
     {
       "id": "s08",
-      "type": "pBrand",
-      "vo": "Kanishk Rewires.",
+      "type": "pToolBrand",
+      "vo": "Outship.",
       "minFrames": 45.0,
       "leadIn": 0,
       "pad": 2,
       "energy": 2,
       "data": {
-        "theme": "dark"
+        "theme": "dark",
+        "mark": "media/promo/tool/logo-mark.svg",
+        "name": "outship",
+        "height": 120,
+        "sub": "OUTSHIP.AI"
       }
     },
     {
@@ -247,7 +252,7 @@
     {
       "id": "s11",
       "type": "pKinetic",
-      "vo": "and who's just vibe-coding.",
+      "vo": "and who's just vibe coding.",
       "minFrames": 30.0,
       "leadIn": 0,
       "pad": 2,
@@ -258,7 +263,7 @@
           "and",
           "who's",
           "just",
-          "vibe-coding"
+          "vibe coding"
         ],
         "accent": 3,
         "step": 3,
@@ -315,21 +320,28 @@
         "before": "Create",
         "after": "a task",
         "icon": "media/promo/github.svg",
-        "org": "Awesome Assistant Co",
-        "title": "Voice-Powered Travel Search",
-        "subtitle": "Build a voice-driven travel search application that lets users find listings by speaking naturally.",
-        "overview": "Create a web application where users can describe their ideal trip using their voice and see matching listings in real time. The application should feel conversational: users start with a broad request like \"I want to visit Tokyo\" and progressively refine by speaking additional criteria like \"somewhere near Shibuya\", \"for 4 guests\", or \"with a pool\".",
+        "org": "outship",
+        "title": "Import a task",
+        "subtitle": "From GitHub: a past bug, an interview project, or a real PR to your product.",
+        "overview": "Ask candidates to solve a past bug, or have them ship a real PR to your product. Each candidate gets a real VM with VS Code, dependencies and AI agents configured.",
         "photos": [
           "media/li2/desk1.jpg",
           "media/li2/desk2.jpg",
           "media/li2/desk1.jpg"
+        ],
+        "repoLines": [
+          "# github.com/acme/checkout-service",
+          "issue #482  retries double-charge on timeout",
+          "branch      fix/idempotent-retries",
+          "✓ imported as task",
+          "✓ VM ready: VS Code, deps, agents"
         ]
       }
     },
     {
       "id": "s14",
       "type": "pPromptAgents",
-      "vo": "Give access to real coding agents.",
+      "vo": "Give access to real coding agents, like Claude Code and Codex.",
       "minFrames": 60.0,
       "leadIn": 0,
       "pad": 2,
@@ -343,12 +355,13 @@
           "+"
         ]
       },
-      "bleed": true
+      "bleed": true,
+      "claims": []
     },
     {
       "id": "s15",
       "type": "pAvatars",
-      "vo": "Share with hundreds of candidates.",
+      "vo": "Share with every candidate.",
       "minFrames": 60.0,
       "leadIn": 0,
       "pad": 2,
@@ -356,8 +369,8 @@
       "data": {
         "theme": "cream",
         "before": "Share with",
-        "pill": "hundreds",
-        "after": "of candidates",
+        "pill": "every",
+        "after": "candidate",
         "people": [
           {
             "n": 2,
@@ -391,7 +404,8 @@
           }
         ]
       },
-      "bleed": true
+      "bleed": true,
+      "claims": []
     },
     {
       "id": "s16",
@@ -403,7 +417,7 @@
       "energy": 2,
       "data": {
         "theme": "dark",
-        "body": "...listings appear in real time. The application should feel conversational: users start with a broad request and progressively refine it by speaking additional criteria like \"somewhere near Shibuya\"."
+        "body": "Fix issue #482: retries double-charge when the payment call times out. Use any coding agent you like. Ship a PR with tests."
       },
       "silent": true
     },
@@ -418,7 +432,7 @@
       "data": {
         "theme": "dark",
         "version": "Claude Code v2.1.113",
-        "prompt": "scaffold voice input: MediaRecorder → Whisper. skip search for now"
+        "prompt": "fix #482: add an idempotency key to payment retries, then write the tests"
       },
       "silent": true
     },
@@ -523,7 +537,7 @@
           "Deliverable",
           "Code",
           "How they use agents",
-          "AI Analysis"
+          "Rubric report"
         ],
         "photo": "media/li2/desk2.jpg",
         "gallery": [
@@ -570,28 +584,34 @@
             "Excellent"
           ],
           [
-            "Communication with Coding Agent",
+            "Agent Communication",
             "Good"
+          ],
+          [
+            "Verification & Shipping",
+            "Excellent"
           ]
         ]
       },
-      "silent": true
+      "silent": true,
+      "claims": []
     },
     {
       "id": "s22",
       "type": "pBands",
-      "vo": "Agents analyze candidate performance,",
+      "vo": "Every prompt, analyzed against your rubric,",
       "minFrames": 60.0,
       "leadIn": 0,
       "pad": 2,
       "energy": 2,
       "data": {
         "theme": "dark",
-        "pre": "Agents",
-        "accentWord": "analyze",
-        "post": "candidate performance"
+        "pre": "Every prompt",
+        "accentWord": "analyzed",
+        "post": "against your rubric"
       },
-      "bleed": true
+      "bleed": true,
+      "claims": []
     },
     {
       "id": "s23",
@@ -604,29 +624,27 @@
       "data": {
         "theme": "cream",
         "items": [
-          "Code quality",
-          "Problem decomposition",
-          "Adaptability",
-          "Testing approach",
-          "Tech stack decisions",
-          "Iterative mindset",
-          "Verifies AI output",
-          "Debugging instinct"
+          "Codebase orientation",
+          "Architectural research",
+          "Full-stack execution",
+          "Agent communication",
+          "Verification & shipping"
         ]
       },
-      "silent": true
+      "silent": true,
+      "claims": []
     },
     {
       "id": "s24",
       "type": "pScoreRows",
-      "vo": "and score them,",
+      "vo": "so you can compare them,",
       "minFrames": 75.0,
       "leadIn": 0,
       "pad": 2,
       "energy": 2,
       "data": {
         "theme": "cream",
-        "title": "and score them",
+        "title": "and compare them",
         "rows": [
           {
             "n": 3,
@@ -750,15 +768,20 @@
     },
     {
       "id": "s28",
-      "type": "pBrand",
-      "vo": "Kanishk Rewires.",
+      "type": "pToolBrand",
+      "vo": "Outship.",
       "minFrames": 48.0,
       "leadIn": 0,
       "pad": 2,
       "energy": 2,
       "data": {
-        "theme": "cream"
-      }
+        "theme": "cream",
+        "mark": "media/promo/tool/logo-mark-dark.svg",
+        "name": "outship",
+        "height": 120,
+        "sub": "OUTSHIP.AI"
+      },
+      "claims": []
     },
     {
       "id": "s29",
@@ -777,7 +800,32 @@
         ],
         "accent": 1,
         "step": 4,
-        "size": 56
+        "size": 56,
+        "particles": "specks"
+      },
+      "claims": []
+    },
+    {
+      "id": "s30",
+      "type": "pKinetic",
+      "vo": "Follow Kanishk Rewires for AI tools that actually work.",
+      "minFrames": 90,
+      "leadIn": 0,
+      "pad": 4,
+      "energy": 2,
+      "data": {
+        "theme": "dark",
+        "words": [
+          "AI",
+          "tools",
+          "that",
+          "actually",
+          "work."
+        ],
+        "accent": 3,
+        "step": 4,
+        "size": 60,
+        "particles": "specks"
       }
     }
   ]

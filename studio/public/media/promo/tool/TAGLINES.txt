@@ -1,0 +1,7 @@
+Source: https://outship.ai/ (fetched 2026-10-17)
+Page title / YC tagline: Hire amazing engineers by seeing how they use AI
+Hero headline: Hire AI Native Engineers
+Hero sub: See who's engineering and who's vibe coding. Candidates work with real coding agents like Claude Code and Codex, and you see every decision they make.
+Footer: Hire 10x engineers / Built for teams hiring with AI
+Closing CTA: Outship lets you hire engineers built for this era
+Brand colors (site CSS, dark theme): background #100D0A, foreground cream #FFF3D7, signal lime #D0F100, accent yellow #FFA100, CTA orange #E8643A

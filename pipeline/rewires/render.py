@@ -25,14 +25,20 @@ def still(props_path: Path, out_png: Path, frame: int):
 
 
 def master(raw: Path, out: Path, prod: dict):
+    """Two-pass loudnorm: measure first, then normalise linearly to the target (accurate even with long quiet stretches)."""
     r, ld = prod["render"], prod["loudness"]
+    target = f"I={ld['targetLufs']}:TP={ld['truePeak']}:LRA=11"
+    probe = subprocess.run([config.ffmpeg(), "-hide_banner", "-nostats", "-i", str(raw), "-af", f"loudnorm={target}:print_format=json", "-f", "null", "-"],
+                           capture_output=True, text=True).stderr
+    m = json.loads(probe[probe.rfind("{"): probe.rfind("}") + 1])
+    second = (f"loudnorm={target}:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}"
+              f":measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
     subprocess.run(
         [
             config.ffmpeg(), "-loglevel", "error", "-y", "-i", str(raw), "-c:v", "copy",
             "-bsf:v", "h264_metadata=colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1",
             "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709",
-            "-af", f"loudnorm=I={ld['targetLufs']}:TP={ld['truePeak']}:LRA=11",
-            "-c:a", "aac", "-b:a", r["audioBitrate"], "-ar", str(r["sampleRate"]), "-movflags", "+faststart", str(out),
+            "-af", second, "-c:a", "aac", "-b:a", r["audioBitrate"], "-ar", str(r["sampleRate"]), "-movflags", "+faststart", str(out),
         ],
         check=True,
     )

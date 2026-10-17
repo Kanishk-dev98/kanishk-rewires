@@ -89,7 +89,8 @@ export const PKineticScene: React.FC<SceneProps> = ({ data }) => {
           <div>{glyphs.slice(0, 8 + (frame % 5)).split("").map((g, i) => <span key={i} style={{ opacity: random(`g${i}${Math.floor(frame / 2)}`) > 0.3 ? 1 : 0.2 }}>{g}</span>)}</div>
         </AbsoluteFill>
       ) : null}
-      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
+      {dark ? <AbsoluteFill style={{ background: `radial-gradient(ellipse 45% 40% at ${40 + 20 * Math.sin(frame / 25)}% ${55 + 10 * Math.cos(frame / 30)}%, rgba(167,255,63,0.10), rgba(0,0,0,0) 70%)` }} /> : null}
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", scale: String(1 + 0.0016 * frame) }}>
         <div style={{ display: "flex", gap: size * 0.28, alignItems: "baseline", fontSize: size, fontWeight: 500, letterSpacing: -0.5 }}>
           {data.prefix ? <span style={{ ...blur(start, 8), color: C.grey, fontFamily: MONO }}>{data.prefix}</span> : null}
           {words.map((w, i) => {
@@ -338,7 +339,14 @@ export const PInlineTaskScene: React.FC<SceneProps> = ({ data }) => {
           <div style={{ fontSize: 22, color: "#77756D", marginTop: 10 }}>{data.subtitle}</div>
           <div style={{ marginTop: 30, fontFamily: MONO, fontSize: 18, letterSpacing: 2, color: C.charcoal }}>OVERVIEW</div>
           <div style={{ fontSize: 21, lineHeight: 1.55, color: "#3A3A36", marginTop: 10, maxWidth: 1150 }}>{data.overview}</div>
-          <div style={{ marginTop: 30, borderRadius: 14, overflow: "hidden", height: 330, background: "#F3F1EA", display: "flex", gap: 16, padding: 20 }}>
+          {data.repoLines ? (
+            <div style={{ marginTop: 30, borderRadius: 14, height: 330, background: C.charcoal, padding: "22px 28px", fontFamily: MONO, fontSize: 21, lineHeight: 1.75 }}>
+              {(data.repoLines as string[]).map((l, i) => (
+                <div key={i} style={{ color: l.startsWith("✓") ? C.lime : l.startsWith("#") ? C.grey : C.cream, opacity: interpolate(frame, [zoomAt + 10 + i * 3, zoomAt + 16 + i * 3], [0, 1], clamp) }}>{l}</div>
+              ))}
+            </div>
+          ) : null}
+          <div style={{ marginTop: 30, borderRadius: 14, overflow: "hidden", height: 330, background: "#F3F1EA", display: data.repoLines ? "none" : "flex", gap: 16, padding: 20 }}>
             {(data.photos as string[]).map((p, i) => (
               <div key={p} style={{ flex: 1, borderRadius: 12, overflow: "hidden", opacity: interpolate(frame, [zoomAt + 10 + i * 3, zoomAt + 18 + i * 3], [0, 1], clamp) }}>
                 <Img src={staticFile(p)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
@@ -714,7 +722,40 @@ export const PPillScene: React.FC<SceneProps> = ({ data }) => {
   );
 };
 
+// ------------------------------------------------------------------ a real tool's logo, animated (mark pop + ring pulse, wordmark wipe)
+export const PToolBrandScene: React.FC<SceneProps> = ({ data }) => {
+  const frame = useCurrentFrame();
+  const dark = isDarkScene(data);
+  const markP = spring({ frame: frame - 1, fps: 30, config: { damping: 12, stiffness: 160 } });
+  const ring = interpolate(frame, [4, 22], [0, 1], clamp);
+  const wipe = interpolate(frame, [8, 22], [0, 1], { ...clamp, easing: EASE });
+  const h: number = data.height ?? 110;
+  return (
+    <Shell dark={dark}>
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 30 }}>
+          {data.mark ? (
+            <div style={{ position: "relative", width: h, height: h }}>
+              <div style={{ position: "absolute", inset: -h * 0.4 * ring, borderRadius: "50%", border: `3px solid ${C.lime}`, opacity: 1 - ring }} />
+              <Img src={staticFile(data.mark)} style={{ width: h, height: h, objectFit: "contain", scale: String(0.5 + 0.5 * markP), rotate: `${(1 - markP) * -40}deg`, opacity: Math.min(1, markP * 1.4) }} />
+            </div>
+          ) : null}
+          {data.logo ? (
+            <div style={{ clipPath: `inset(0 ${(1 - wipe) * 100}% 0 0)` }}>
+              <Img src={staticFile(data.logo)} style={{ height: (data.logoHeight ?? h * 0.8), objectFit: "contain", filter: dark && data.invert ? "invert(1)" : undefined }} />
+            </div>
+          ) : (
+            <div style={{ fontSize: h * 0.7, fontWeight: 600, letterSpacing: -1, clipPath: `inset(0 ${(1 - wipe) * 100}% 0 0)` }}>{data.name}</div>
+          )}
+        </div>
+        {data.sub ? <div style={{ marginTop: 30, fontFamily: MONO, fontSize: 24, letterSpacing: 4, color: C.grey, opacity: interpolate(frame, [18, 28], [0, 1], clamp) }}>{data.sub}</div> : null}
+      </AbsoluteFill>
+    </Shell>
+  );
+};
+
 export const PROMO_SCENES: Record<string, React.FC<SceneProps>> = {
+  pToolBrand: PToolBrandScene,
   pKinetic: PKineticScene,
   pLogoCloud: PLogoCloudScene,
   pPixel: PPixelScene,

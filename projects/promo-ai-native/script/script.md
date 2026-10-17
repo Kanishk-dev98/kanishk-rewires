@@ -1,7 +1,7 @@
-# Hire AI-native engineers (promo rebuild)
+# Outship: hire AI-native engineers (tool spotlight)
 
 Format: 16x9  
-Body duration: 58.1 s plus the brand outro
+Body duration: 63.5 s plus the brand outro
 
 ## 1. s01 · pKinetic · 2.3 s
 
@@ -66,9 +66,11 @@ Body duration: 58.1 s plus the brand outro
 **Transition:** cut
 
 
-## 8. s08 · pBrand · 1.5 s
+## 8. s08 · pToolBrand · 1.5 s
 
-**Voiceover:** Kanishk Rewires.
+**Voiceover:** Outship.
+
+**On screen:** media/promo/tool/logo-mark.svg / outship / OUTSHIP.AI
 
 **Transition:** cut
 
@@ -91,11 +93,11 @@ Body duration: 58.1 s plus the brand outro
 **Transition:** cut
 
 
-## 11. s11 · pKinetic · 1.5 s
+## 11. s11 · pKinetic · 1.3 s
 
-**Voiceover:** and who's just vibe-coding.
+**Voiceover:** and who's just vibe coding.
 
-**On screen:** and / who's / just / vibe-coding
+**On screen:** and / who's / just / vibe coding
 
 **Transition:** cut
 
@@ -113,25 +115,25 @@ Body duration: 58.1 s plus the brand outro
 
 **Voiceover:** Create a task.
 
-**On screen:** Create / a task / media/promo/github.svg / Awesome Assistant Co / Voice-Powered Travel Search / Build a voice-driven travel search application that lets users find listings by speaking naturally. / Create a web application where users can describe their ideal trip using their voice and see matching listings in real time. The application should feel conversational: users start with a broad request like "I want to visit Tokyo" and progressively refine by speaking additional criteria like "somewhere near Shibuya", "for 4 guests", or "with a pool". / media/li2/desk1.jpg / media/li2/desk2.jpg / media/li2/desk1.jpg
+**On screen:** Create / a task / media/promo/github.svg / outship / Import a task / From GitHub: a past bug, an interview project, or a real PR to your product. / Ask candidates to solve a past bug, or have them ship a real PR to your product. Each candidate gets a real VM with VS Code, dependencies and AI agents configured. / media/li2/desk1.jpg / media/li2/desk2.jpg / media/li2/desk1.jpg / # github.com/acme/checkout-service / issue #482  retries double-charge on timeout / branch      fix/idempotent-retries / ✓ imported as task / ✓ VM ready: VS Code, deps, agents
 
 **Transition:** cut
 
 
-## 14. s14 · pPromptAgents · 2.4 s
+## 14. s14 · pPromptAgents · 4.2 s
 
-**Voiceover:** Give access to real coding agents.
+**Voiceover:** Give access to real coding agents, like Claude Code and Codex.
 
 **On screen:** Give access to real coding agents / media/promo/claude.svg / media/promo/openai.svg / +
 
 **Transition:** cut
 
 
-## 15. s15 · pAvatars · 2.1 s
+## 15. s15 · pAvatars · 2.0 s
 
-**Voiceover:** Share with hundreds of candidates.
+**Voiceover:** Share with every candidate.
 
-**On screen:** Share with / hundreds / of candidates / Sophia Reed / UI Engineer / Ethan Cole / Backend Engineer / Chloe Park / Data Engineer / Noah Shah / DevOps Engineer / Elena Ruiz / Software Engineer / Sebastian Lee / iOS Developer
+**On screen:** Share with / every / candidate / Sophia Reed / UI Engineer / Ethan Cole / Backend Engineer / Chloe Park / Data Engineer / Noah Shah / DevOps Engineer / Elena Ruiz / Software Engineer / Sebastian Lee / iOS Developer
 
 **Transition:** cut
 
@@ -140,7 +142,7 @@ Body duration: 58.1 s plus the brand outro
 
 **Voiceover:** 
 
-**On screen:** ...listings appear in real time. The application should feel conversational: users start with a broad request and progressively refine it by speaking additional criteria like "somewhere near Shibuya".
+**On screen:** Fix issue #482: retries double-charge when the payment call times out. Use any coding agent you like. Ship a PR with tests.
 
 **Transition:** cut
 
@@ -149,7 +151,7 @@ Body duration: 58.1 s plus the brand outro
 
 **Voiceover:** 
 
-**On screen:** Claude Code v2.1.113 / scaffold voice input: MediaRecorder → Whisper. skip search for now
+**On screen:** Claude Code v2.1.113 / fix #482: add an idempotency key to payment retries, then write the tests
 
 **Transition:** cut
 
@@ -185,16 +187,16 @@ Body duration: 58.1 s plus the brand outro
 
 **Voiceover:** 
 
-**On screen:** Deliverable / Code / How they use agents / AI Analysis / media/li2/desk2.jpg / media/li2/desk1.jpg / media/li2/desk2.jpg / media/li2/desk1.jpg / media/li2/desk2.jpg / media/li2/desk2.jpg / media/li2/desk1.jpg / media/li2/desk2.jpg / media/li2/desk1.jpg / export const useVoiceQuery = () => { /   const queryRef = useRef<VoiceQuery>({}) /   const [searchParams, setSearchParams] = useState({}) /   const deferred = useDeferredValue(searchParams) /   const [isPending, startTransition] = useTransition() /   const onTranscript = (t: string) => { /     const next = parseIntent(t) /     queryRef.current = { ...queryRef.current, ...next } /     startTransition(() => setSearchParams(queryRef.current)) /   } /   return { deferred, isPending, onTranscript } / ● Bash  npm i -D vite-plugin-mkcert / done: dev server now runs on https://localhost:5173 / > scaffold voice input / ● Bash  mkdir -p src/hooks /   created 3 files / Codebase Orientation / Excellent / Architectural Research / Good / Full-Stack Execution / Excellent / Communication with Coding Agent / Good
+**On screen:** Deliverable / Code / How they use agents / Rubric report / media/li2/desk2.jpg / media/li2/desk1.jpg / media/li2/desk2.jpg / media/li2/desk1.jpg / media/li2/desk2.jpg / media/li2/desk2.jpg / media/li2/desk1.jpg / media/li2/desk2.jpg / media/li2/desk1.jpg / export const useVoiceQuery = () => { /   const queryRef = useRef<VoiceQuery>({}) /   const [searchParams, setSearchParams] = useState({}) /   const deferred = useDeferredValue(searchParams) /   const [isPending, startTransition] = useTransition() /   const onTranscript = (t: string) => { /     const next = parseIntent(t) /     queryRef.current = { ...queryRef.current, ...next } /     startTransition(() => setSearchParams(queryRef.current)) /   } /   return { deferred, isPending, onTranscript } / ● Bash  npm i -D vite-plugin-mkcert / done: dev server now runs on https://localhost:5173 / > scaffold voice input / ● Bash  mkdir -p src/hooks /   created 3 files / Codebase Orientation / Excellent / Architectural Research / Good / Full-Stack Execution / Excellent / Agent Communication / Good / Verification & Shipping / Excellent
 
 **Transition:** cut
 
 
 ## 22. s22 · pBands · 2.9 s
 
-**Voiceover:** Agents analyze candidate performance,
+**Voiceover:** Every prompt, analyzed against your rubric,
 
-**On screen:** Agents / analyze / candidate performance
+**On screen:** Every prompt / analyzed / against your rubric
 
 **Transition:** cut
 
@@ -203,16 +205,16 @@ Body duration: 58.1 s plus the brand outro
 
 **Voiceover:** 
 
-**On screen:** Code quality / Problem decomposition / Adaptability / Testing approach / Tech stack decisions / Iterative mindset / Verifies AI output / Debugging instinct
+**On screen:** Codebase orientation / Architectural research / Full-stack execution / Agent communication / Verification & shipping
 
 **Transition:** cut
 
 
 ## 24. s24 · pScoreRows · 2.5 s
 
-**Voiceover:** and score them,
+**Voiceover:** so you can compare them,
 
-**On screen:** and score them / Sebastian / iOS Developer / Good / Sophia / UI Engineer / Good / Ethan / Backend Engineer / Average / Noah / DevOps Engineer / Great / Chloe / Data Engineer / Excellent
+**On screen:** and compare them / Sebastian / iOS Developer / Good / Sophia / UI Engineer / Good / Ethan / Backend Engineer / Average / Noah / DevOps Engineer / Great / Chloe / Data Engineer / Excellent
 
 **Transition:** cut
 
@@ -244,9 +246,11 @@ Body duration: 58.1 s plus the brand outro
 **Transition:** cut
 
 
-## 28. s28 · pBrand · 1.6 s
+## 28. s28 · pToolBrand · 1.6 s
 
-**Voiceover:** Kanishk Rewires.
+**Voiceover:** Outship.
+
+**On screen:** media/promo/tool/logo-mark-dark.svg / outship / OUTSHIP.AI
 
 **Transition:** cut
 
@@ -255,7 +259,16 @@ Body duration: 58.1 s plus the brand outro
 
 **Voiceover:** Hire AI-native engineers.
 
-**On screen:** Hire / AI-native / engineers
+**On screen:** Hire / AI-native / engineers / specks
+
+**Transition:** cut
+
+
+## 30. s30 · pKinetic · 3.8 s
+
+**Voiceover:** Follow Kanishk Rewires for AI tools that actually work.
+
+**On screen:** AI / tools / that / actually / work. / specks
 
 **Transition:** cut
 

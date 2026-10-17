@@ -1,5 +1,5 @@
 {
-  "video": "/Users/kanishk.raj/kanishk-rewires/projects/promo-ai-native/renders/promo-ai-native_v2.mp4",
+  "video": "/Users/kanishk.raj/kanishk-rewires/projects/promo-ai-native/renders/promo-ai-native_v5.mp4",
   "passed": true,
   "checks": [
     {
@@ -29,14 +29,14 @@
     {
       "check": "duration",
       "ok": true,
-      "detail": "60.60 s (expected 60.57 s)",
+      "detail": "66.00 s (expected 65.97 s)",
       "severity": "info"
     },
     {
       "check": "duration target",
-      "ok": true,
-      "detail": "60.6 s vs target 30 to 60 s",
-      "severity": "info"
+      "ok": false,
+      "detail": "66.0 s vs target 30 to 60 s",
+      "severity": "warning"
     },
     {
       "check": "decodes clean",
@@ -65,13 +65,13 @@
     {
       "check": "loudness",
       "ok": true,
-      "detail": "-15.5 LUFS (target -14)",
+      "detail": "-14.6 LUFS (target -14)",
       "severity": "info"
     },
     {
       "check": "true peak",
       "ok": true,
-      "detail": "-1.5 dBTP",
+      "detail": "-1.4 dBTP",
       "severity": "info"
     },
     {
@@ -83,7 +83,7 @@
     {
       "check": "brand ending",
       "ok": true,
-      "detail": "lime px 18, cream px 378",
+      "detail": "lime px 21, cream px 378",
       "severity": "info"
     }
   ],

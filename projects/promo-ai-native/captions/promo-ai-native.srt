@@ -19,53 +19,73 @@ Traditional technical interviews don't show how
 engineers actually work today Meet
 
 6
-00:00:12,296 --> 00:00:15,191
-Kanishk Rewires See who's engineering
+00:00:12,296 --> 00:00:13,117
+Outship
 
 7
-00:00:16,563 --> 00:00:18,177
-and who's just vibe-coding
+00:00:13,796 --> 00:00:15,158
+See who's engineering
 
 8
-00:00:20,063 --> 00:00:21,292
-Create a task
+00:00:16,529 --> 00:00:17,987
+and who's just vibe coding
 
 9
-00:00:22,551 --> 00:00:24,909
-Give access to real coding agents
+00:00:19,863 --> 00:00:21,092
+Create a task
 
 10
-00:00:24,929 --> 00:00:27,144
-Share with hundreds of candidates
+00:00:22,351 --> 00:00:24,987
+Give access to real coding agents like Claude
 
 11
-00:00:36,529 --> 00:00:37,903
-You see everything
+00:00:25,007 --> 00:00:26,509
+Code and Codex
 
 12
-00:00:43,284 --> 00:00:46,268
-Agents analyze candidate performance
+00:00:26,529 --> 00:00:28,672
+Share with every candidate
 
 13
-00:00:47,763 --> 00:00:48,776
-and score them
+00:00:38,063 --> 00:00:39,436
+You see everything
 
 14
-00:00:50,263 --> 00:00:51,444
-so you interview
+00:00:44,817 --> 00:00:46,023
+Every prompt
 
 15
-00:00:51,751 --> 00:00:52,692
-and hire
+00:00:46,079 --> 00:00:47,838
+analyzed against your rubric
 
 16
-00:00:52,951 --> 00:00:54,120
-only the best
+00:00:49,329 --> 00:00:50,595
+so you can compare them
 
 17
-00:00:54,163 --> 00:00:55,669
-Kanishk Rewires
+00:00:51,829 --> 00:00:53,011
+so you interview
 
 18
-00:00:55,763 --> 00:00:57,870
+00:00:53,317 --> 00:00:54,258
+and hire
+
+19
+00:00:54,517 --> 00:00:55,687
+only the best
+
+20
+00:00:55,729 --> 00:00:56,574
+Outship
+
+21
+00:00:57,329 --> 00:00:59,436
 Hire AI-native engineers
+
+22
+00:00:59,790 --> 00:01:02,738
+Follow Kanishk Rewires for AI tools that actually
+
+23
+00:01:02,758 --> 00:01:03,603
+work
