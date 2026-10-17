@@ -51,3 +51,8 @@ A 73 s vertical reel at 720×1280 and 30 fps, made with a human voiceover. The u
 - **Voice at natural speed.** Length follows the voice.
 - **Ending.** Comment "WORKFLOW" CTA, then a small lowercase **kanishk.rewires** lockup.
 - **What we copy and what we don't.** We copy the structure, pacing and motion grammar. We use our own script, voice, music, brand and assets, and we don't reuse the creator's thumbnails, face, handle or copy.
+
+## Applied (2026-10-17)
+
+- `projects/claude-code-video-edit/`: the first rebuild in our theme (to be posted 2026-10-18).
+- `projects/linkedin-automation-claude/`: the second rebuild. It adds realistic product interfaces (`studio/src/rewires/real.tsx`), official logos, Unsplash headshots and the real `claude mcp add` syntax.

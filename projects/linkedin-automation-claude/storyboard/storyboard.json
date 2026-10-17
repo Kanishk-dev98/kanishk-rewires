@@ -1,0 +1,625 @@
+{
+  "id": "linkedin-automation-claude",
+  "title": "Automate LinkedIn lead generation and posting with Claude Code",
+  "format": "9x16",
+  "captions": true,
+  "captionStyle": {
+    "top": 0.755,
+    "size": 56,
+    "maxWords": 3,
+    "weight": 800
+  },
+  "voice": {
+    "provider": "edge",
+    "edge": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+4%"
+    }
+  },
+  "outro": {
+    "seconds": 2.5,
+    "size": 220,
+    "wordSize": 50
+  },
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "tutHook",
+      "leadIn": 2,
+      "pad": 6,
+      "energy": 2,
+      "vo": "Here's how to automate your LinkedIn lead generation and posting, with Claude Code.",
+      "accents": [
+        "LinkedIn",
+        "Claude",
+        "Code."
+      ],
+      "data": {
+        "kicker": "A STEP BY STEP TUTORIAL",
+        "lines": [
+          "Automate your",
+          "LinkedIn *leads*",
+          "with Claude Code"
+        ],
+        "size": 124,
+        "logo": "brand/logos/claude.svg",
+        "motif": "leads"
+      },
+      "visual": "Serif title; prospect photos flow along a lime line into a lead counter.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 2,
+          "volume": 0.14
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "type": "tutEasy",
+      "leadIn": 2,
+      "pad": 6,
+      "energy": 2,
+      "vo": "It's simpler than it sounds. Only seven steps.",
+      "cues": {
+        "number": "seven"
+      },
+      "accents": [
+        "simpler",
+        "seven"
+      ],
+      "data": {
+        "title": "So *simple*.",
+        "from": 3,
+        "to": 7
+      },
+      "sfx": [
+        {
+          "name": "tick",
+          "on": {
+            "cue": "number"
+          },
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "tutStep",
+      "pad": 6,
+      "energy": 2,
+      "vo": "One. Connect your tools. Add Apollo, HubSpot and Publora to Claude Code.",
+      "cues": {
+        "apollo": "Apollo,",
+        "hubspot": "HubSpot",
+        "publora": "Publora",
+        "claude": "Claude"
+      },
+      "accents": [
+        "Connect",
+        "Claude"
+      ],
+      "claims": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "data": {
+        "step": 1,
+        "hero": "connect",
+        "title": "Connect your *tools*",
+        "termEnter": true,
+        "termTop": 590,
+        "termH": 310,
+        "logos": {
+          "apollo": "media/li2/apollo.svg",
+          "hubspot": "media/li2/hubspot.svg",
+          "publora": "media/li2/publora-mark.svg",
+          "linkedin": "media/li2/linkedin.svg"
+        },
+        "term": [
+          {
+            "cue": "apollo",
+            "text": "claude mcp add --transport http apollo …",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "hubspot",
+            "offset": 4,
+            "text": "claude mcp add --transport http hubspot …",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "publora",
+            "offset": 4,
+            "text": "claude mcp add --transport http publora …",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "claude",
+            "offset": 10,
+            "text": "✓ /mcp · 3 servers connected",
+            "kind": "ok"
+          }
+        ]
+      },
+      "visual": "Apollo, HubSpot and Publora tiles pop on their names, each wires into the Claude tile, and the terminal adds each server.",
+      "sfx": [
+        {
+          "name": "tick",
+          "on": {
+            "cue": "apollo"
+          },
+          "volume": 0.2
+        },
+        {
+          "name": "tick",
+          "on": {
+            "cue": "hubspot"
+          },
+          "volume": 0.2
+        },
+        {
+          "name": "tick",
+          "on": {
+            "cue": "publora"
+          },
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "tutStep",
+      "pad": 6,
+      "energy": 2,
+      "vo": "Two. Describe your ideal client once. Industry, role, company size and region.",
+      "cues": {
+        "once": "once.",
+        "industry": "Industry,",
+        "role": "role,",
+        "size": "size",
+        "region": "region.",
+        "ideal": "ideal"
+      },
+      "accents": [
+        "ideal",
+        "once."
+      ],
+      "data": {
+        "step": 2,
+        "hero": "icp",
+        "title": "Write your *ICP*",
+        "termTop": 590,
+        "termH": 310,
+        "icp": [
+          {
+            "text": "# Ideal client",
+            "cue": "ideal"
+          },
+          {
+            "text": "industry: consumer goods, D2C",
+            "cue": "industry"
+          },
+          {
+            "text": "role: Head of Growth, CMO",
+            "cue": "role"
+          },
+          {
+            "text": "company size: 11 to 200",
+            "cue": "size"
+          },
+          {
+            "text": "region: US, UK",
+            "cue": "region"
+          },
+          {
+            "text": "signal: launching or hiring",
+            "cue": "region",
+            "hl": true
+          }
+        ],
+        "chips": [
+          {
+            "cue": "once",
+            "text": "ICP.md"
+          }
+        ],
+        "term": [
+          {
+            "cue": "region",
+            "offset": 14,
+            "text": "✓ Saved ICP.md",
+            "kind": "ok"
+          }
+        ]
+      },
+      "visual": "An ICP.md file fills line by line as each field is named.",
+      "sfx": [
+        {
+          "name": "ding",
+          "on": {
+            "cue": "region",
+            "offset": 14
+          },
+          "volume": 0.16
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "tutStep",
+      "pad": 6,
+      "energy": 2,
+      "vo": "Three. Ask Claude to find fifty leads that match it, straight from Apollo.",
+      "cues": {
+        "ask": "Ask",
+        "filters": "find",
+        "found": "fifty"
+      },
+      "accents": [
+        "fifty",
+        "Apollo."
+      ],
+      "claims": [
+        "c2"
+      ],
+      "data": {
+        "step": 3,
+        "hero": "apollo",
+        "title": "Find your *leads*",
+        "termTop": 590,
+        "termH": 310,
+        "logos": {
+          "apollo": "media/li2/apollo.svg"
+        },
+        "leads": "@leads",
+        "term": [
+          {
+            "cue": "ask",
+            "text": "find 50 leads that match ICP.md",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "found",
+            "text": "apollo · search people",
+            "kind": "tool"
+          },
+          {
+            "cue": "found",
+            "offset": 26,
+            "text": "✓ 50 leads saved to leads.csv",
+            "kind": "ok"
+          }
+        ]
+      },
+      "visual": "An Apollo people search: ICP filters apply, the result count runs to 50, and real-looking lead rows land with photos.",
+      "sfx": [
+        {
+          "name": "click",
+          "on": {
+            "cue": "ask"
+          },
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "tutStep",
+      "pad": 6,
+      "energy": 2,
+      "vo": "Four. Claude scores every lead, and finds one real reason to reach out.",
+      "cues": {
+        "scores": "scores",
+        "reason": "reason"
+      },
+      "accents": [
+        "scores",
+        "reason"
+      ],
+      "data": {
+        "step": 4,
+        "hero": "score",
+        "title": "Score and *research*",
+        "termTop": 590,
+        "termH": 310,
+        "leads": "@leads",
+        "term": [
+          {
+            "cue": "scores",
+            "text": "score leads.csv against ICP.md",
+            "kind": "tool"
+          },
+          {
+            "cue": "reason",
+            "offset": 14,
+            "text": "✓ Top 10 ready, each with a reason",
+            "kind": "ok"
+          }
+        ]
+      },
+      "visual": "The top lead's ICP fit ring fills to 92 with three match checks; the reason to reach out appears; the other leads score alongside.",
+      "sfx": [
+        {
+          "name": "ding",
+          "on": {
+            "cue": "reason"
+          },
+          "volume": 0.16
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "tutStep",
+      "pad": 8,
+      "energy": 2,
+      "vo": "Five. It drafts a short, personal note for each one. You review it, and send it yourself.",
+      "cues": {
+        "drafts": "drafts",
+        "review": "review",
+        "send": "send"
+      },
+      "accents": [
+        "personal",
+        "yourself."
+      ],
+      "claims": [
+        "c6",
+        "c7"
+      ],
+      "data": {
+        "step": 5,
+        "hero": "invite",
+        "title": "Draft the *outreach*",
+        "termTop": 590,
+        "termH": 310,
+        "logos": {
+          "linkedin": "media/li2/linkedin.svg"
+        },
+        "leads": "@leads",
+        "note": "Hi Sarah, saw Northwind is launching a new D2C range. I help consumer brands turn first orders into repeat buyers. Would love to connect.",
+        "term": [
+          {
+            "cue": "drafts",
+            "text": "draft a connection note for each lead",
+            "kind": "tool"
+          },
+          {
+            "cue": "send",
+            "text": "LinkedIn bans auto sending, so you click Send",
+            "kind": "dim"
+          }
+        ]
+      },
+      "visual": "LinkedIn's real \"Add a note to your invitation?\" box: Claude's draft types in with the character counter, then a human presses Send.",
+      "sfx": [
+        {
+          "name": "click",
+          "on": {
+            "cue": "send"
+          },
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "type": "tutStep",
+      "pad": 6,
+      "energy": 2,
+      "vo": "Six. Every lead lands in HubSpot, with a follow up task already set.",
+      "cues": {
+        "lands": "lands",
+        "task": "task"
+      },
+      "accents": [
+        "HubSpot,",
+        "task"
+      ],
+      "claims": [
+        "c3"
+      ],
+      "data": {
+        "step": 6,
+        "hero": "hubspot",
+        "title": "Track in your *CRM*",
+        "termTop": 590,
+        "termH": 310,
+        "logos": {
+          "hubspot": "media/li2/hubspot.svg"
+        },
+        "leads": "@leads",
+        "term": [
+          {
+            "cue": "lands",
+            "text": "hubspot · create contacts",
+            "kind": "tool"
+          },
+          {
+            "cue": "task",
+            "text": "hubspot · create follow up tasks",
+            "kind": "tool"
+          }
+        ]
+      },
+      "visual": "A HubSpot board: lead cards land in New lead, a follow-up task tag pops, and a Follow up column fills.",
+      "sfx": [
+        {
+          "name": "tick",
+          "on": {
+            "cue": "task"
+          },
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "type": "tutStep",
+      "pad": 8,
+      "energy": 3,
+      "vo": "Seven. Claude writes your posts in your voice, and Publora schedules them for the week.",
+      "cues": {
+        "posts": "posts",
+        "schedules": "schedules"
+      },
+      "accents": [
+        "posts",
+        "week."
+      ],
+      "claims": [
+        "c4",
+        "c5"
+      ],
+      "data": {
+        "step": 7,
+        "hero": "post",
+        "title": "Post on *autopilot*",
+        "termTop": 590,
+        "termH": 310,
+        "logos": {
+          "linkedin": "media/li2/linkedin.svg"
+        },
+        "post": "3 emails every D2C brand should send after the first order:\n1. The thank you\n2. The how to use\n3. The reorder nudge",
+        "term": [
+          {
+            "cue": "posts",
+            "text": "write 5 posts from my notes, in my voice",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "schedules",
+            "text": "publora · schedule 5 LinkedIn posts",
+            "kind": "tool"
+          },
+          {
+            "cue": "schedules",
+            "offset": 22,
+            "text": "✓ Mon to Fri at 9:00",
+            "kind": "ok"
+          }
+        ]
+      },
+      "visual": "A LinkedIn post writes itself, then a Publora week fills Monday to Friday at 9:00.",
+      "sfx": [
+        {
+          "name": "ding",
+          "on": {
+            "cue": "schedules",
+            "offset": 22
+          },
+          "volume": 0.18
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "type": "tutSave",
+      "pad": 6,
+      "energy": 2,
+      "vo": "Save this, so you can set it up later.",
+      "accents": [
+        "Save"
+      ],
+      "data": {
+        "title": "Save.",
+        "sub": "SO YOU CAN SET IT UP LATER"
+      }
+    },
+    {
+      "id": "s10",
+      "type": "tutCta",
+      "pad": 14,
+      "energy": 2,
+      "vo": "Comment LinkedIn, and I'll send you the full setup. The connectors, the client template, and my prompts.",
+      "cues": {
+        "comment": "Comment",
+        "connectors": "connectors,",
+        "template": "template,",
+        "prompts": "prompts."
+      },
+      "accents": [
+        "LinkedIn,"
+      ],
+      "data": {
+        "word": "LINKEDIN",
+        "items": [
+          {
+            "text": "Connector setup for Claude Code",
+            "cue": "connectors"
+          },
+          {
+            "text": "Ideal client template",
+            "cue": "template"
+          },
+          {
+            "text": "My outreach and post prompts",
+            "cue": "prompts"
+          }
+        ],
+        "note": "SENT STRAIGHT TO YOUR DMS"
+      },
+      "sfx": [
+        {
+          "name": "click",
+          "on": {
+            "cue": "comment",
+            "offset": 24
+          },
+          "volume": 0.22
+        }
+      ]
+    }
+  ],
+  "leads": [
+    {
+      "n": 2,
+      "name": "Sarah Collins",
+      "title": "Head of Growth",
+      "company": "Northwind Goods",
+      "loc": "Austin, US",
+      "score": 92,
+      "signal": "Launching a new D2C range"
+    },
+    {
+      "n": 1,
+      "name": "Marcus Reid",
+      "title": "CMO",
+      "company": "Fieldcraft Co",
+      "loc": "London, UK",
+      "score": 86
+    },
+    {
+      "n": 4,
+      "name": "Aisha Bello",
+      "title": "Growth Lead",
+      "company": "Lumen Skin",
+      "loc": "New York, US",
+      "score": 74
+    },
+    {
+      "n": 5,
+      "name": "Raj Mehta",
+      "title": "VP Marketing",
+      "company": "Kite Apparel",
+      "loc": "Manchester, UK",
+      "score": 81
+    },
+    {
+      "n": 6,
+      "name": "Elena Rossi",
+      "title": "Marketing Director",
+      "company": "Brightbrew",
+      "loc": "Boston, US",
+      "score": 68
+    }
+  ]
+}

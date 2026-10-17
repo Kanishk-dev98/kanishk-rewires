@@ -1,0 +1,733 @@
+[
+  {
+    "text": "Here's",
+    "startMs": 187,
+    "endMs": 343
+  },
+  {
+    "text": "how",
+    "startMs": 343,
+    "endMs": 403
+  },
+  {
+    "text": "to",
+    "startMs": 403,
+    "endMs": 499
+  },
+  {
+    "text": "automate",
+    "startMs": 511,
+    "endMs": 1004
+  },
+  {
+    "text": "your",
+    "startMs": 1016,
+    "endMs": 1172
+  },
+  {
+    "text": "LinkedIn",
+    "startMs": 1172,
+    "endMs": 1677,
+    "hl": true
+  },
+  {
+    "text": "lead",
+    "startMs": 1689,
+    "endMs": 1894
+  },
+  {
+    "text": "generation",
+    "startMs": 1894,
+    "endMs": 2579
+  },
+  {
+    "text": "and",
+    "startMs": 2579,
+    "endMs": 2735
+  },
+  {
+    "text": "posting",
+    "startMs": 2735,
+    "endMs": 3372
+  },
+  {
+    "text": "with",
+    "startMs": 3612,
+    "endMs": 3720
+  },
+  {
+    "text": "Claude",
+    "startMs": 3733,
+    "endMs": 4045,
+    "hl": true
+  },
+  {
+    "text": "Code",
+    "startMs": 4045,
+    "endMs": 4394,
+    "hl": true
+  },
+  {
+    "text": "It's",
+    "startMs": 4863,
+    "endMs": 5019
+  },
+  {
+    "text": "simpler",
+    "startMs": 5031,
+    "endMs": 5380,
+    "hl": true
+  },
+  {
+    "text": "than",
+    "startMs": 5380,
+    "endMs": 5476
+  },
+  {
+    "text": "it",
+    "startMs": 5476,
+    "endMs": 5548
+  },
+  {
+    "text": "sounds",
+    "startMs": 5548,
+    "endMs": 6185
+  },
+  {
+    "text": "Only",
+    "startMs": 6570,
+    "endMs": 6774
+  },
+  {
+    "text": "seven",
+    "startMs": 6786,
+    "endMs": 7086,
+    "hl": true
+  },
+  {
+    "text": "steps",
+    "startMs": 7086,
+    "endMs": 7663
+  },
+  {
+    "text": "One",
+    "startMs": 8196,
+    "endMs": 8581
+  },
+  {
+    "text": "Connect",
+    "startMs": 8965,
+    "endMs": 9218,
+    "hl": true
+  },
+  {
+    "text": "your",
+    "startMs": 9230,
+    "endMs": 9314
+  },
+  {
+    "text": "tools",
+    "startMs": 9314,
+    "endMs": 9855
+  },
+  {
+    "text": "Add",
+    "startMs": 10239,
+    "endMs": 10360
+  },
+  {
+    "text": "Apollo",
+    "startMs": 10360,
+    "endMs": 10925
+  },
+  {
+    "text": "HubSpot",
+    "startMs": 11189,
+    "endMs": 11718
+  },
+  {
+    "text": "and",
+    "startMs": 11838,
+    "endMs": 11934
+  },
+  {
+    "text": "Publora",
+    "startMs": 11946,
+    "endMs": 12619
+  },
+  {
+    "text": "to",
+    "startMs": 12631,
+    "endMs": 12739
+  },
+  {
+    "text": "Claude",
+    "startMs": 12739,
+    "endMs": 13064,
+    "hl": true
+  },
+  {
+    "text": "Code",
+    "startMs": 13076,
+    "endMs": 13424
+  },
+  {
+    "text": "Two",
+    "startMs": 13963,
+    "endMs": 14239
+  },
+  {
+    "text": "Describe",
+    "startMs": 14636,
+    "endMs": 15008
+  },
+  {
+    "text": "your",
+    "startMs": 15020,
+    "endMs": 15165
+  },
+  {
+    "text": "ideal",
+    "startMs": 15165,
+    "endMs": 15706,
+    "hl": true
+  },
+  {
+    "text": "client",
+    "startMs": 15718,
+    "endMs": 16102
+  },
+  {
+    "text": "once",
+    "startMs": 16114,
+    "endMs": 16607,
+    "hl": true
+  },
+  {
+    "text": "Industry",
+    "startMs": 16980,
+    "endMs": 17496
+  },
+  {
+    "text": "role",
+    "startMs": 17881,
+    "endMs": 18326
+  },
+  {
+    "text": "company",
+    "startMs": 18554,
+    "endMs": 18891
+  },
+  {
+    "text": "size",
+    "startMs": 18891,
+    "endMs": 19492
+  },
+  {
+    "text": "and",
+    "startMs": 19612,
+    "endMs": 19792
+  },
+  {
+    "text": "region",
+    "startMs": 19804,
+    "endMs": 20189
+  },
+  {
+    "text": "Three",
+    "startMs": 20766,
+    "endMs": 21126
+  },
+  {
+    "text": "Ask",
+    "startMs": 21511,
+    "endMs": 21751
+  },
+  {
+    "text": "Claude",
+    "startMs": 21763,
+    "endMs": 22172
+  },
+  {
+    "text": "to",
+    "startMs": 22184,
+    "endMs": 22292
+  },
+  {
+    "text": "find",
+    "startMs": 22292,
+    "endMs": 22580
+  },
+  {
+    "text": "fifty",
+    "startMs": 22592,
+    "endMs": 22941,
+    "hl": true
+  },
+  {
+    "text": "leads",
+    "startMs": 22941,
+    "endMs": 23290
+  },
+  {
+    "text": "that",
+    "startMs": 23290,
+    "endMs": 23482
+  },
+  {
+    "text": "match",
+    "startMs": 23482,
+    "endMs": 23878
+  },
+  {
+    "text": "it",
+    "startMs": 23879,
+    "endMs": 24011
+  },
+  {
+    "text": "straight",
+    "startMs": 24227,
+    "endMs": 24636
+  },
+  {
+    "text": "from",
+    "startMs": 24648,
+    "endMs": 24792
+  },
+  {
+    "text": "Apollo",
+    "startMs": 24792,
+    "endMs": 25357,
+    "hl": true
+  },
+  {
+    "text": "Four",
+    "startMs": 25956,
+    "endMs": 26281
+  },
+  {
+    "text": "Claude",
+    "startMs": 26653,
+    "endMs": 26906
+  },
+  {
+    "text": "scores",
+    "startMs": 26906,
+    "endMs": 27447,
+    "hl": true
+  },
+  {
+    "text": "every",
+    "startMs": 27579,
+    "endMs": 27855
+  },
+  {
+    "text": "lead",
+    "startMs": 27855,
+    "endMs": 28252
+  },
+  {
+    "text": "and",
+    "startMs": 28624,
+    "endMs": 28733
+  },
+  {
+    "text": "finds",
+    "startMs": 28733,
+    "endMs": 29057
+  },
+  {
+    "text": "one",
+    "startMs": 29057,
+    "endMs": 29370
+  },
+  {
+    "text": "real",
+    "startMs": 29370,
+    "endMs": 29634
+  },
+  {
+    "text": "reason",
+    "startMs": 29646,
+    "endMs": 29983,
+    "hl": true
+  },
+  {
+    "text": "to",
+    "startMs": 29983,
+    "endMs": 30079
+  },
+  {
+    "text": "reach",
+    "startMs": 30091,
+    "endMs": 30367
+  },
+  {
+    "text": "out",
+    "startMs": 30367,
+    "endMs": 30668
+  },
+  {
+    "text": "Five",
+    "startMs": 31302,
+    "endMs": 31662
+  },
+  {
+    "text": "It",
+    "startMs": 32035,
+    "endMs": 32131
+  },
+  {
+    "text": "drafts",
+    "startMs": 32143,
+    "endMs": 32564
+  },
+  {
+    "text": "a",
+    "startMs": 32564,
+    "endMs": 32600
+  },
+  {
+    "text": "short",
+    "startMs": 32612,
+    "endMs": 33044
+  },
+  {
+    "text": "personal",
+    "startMs": 33261,
+    "endMs": 33669,
+    "hl": true
+  },
+  {
+    "text": "note",
+    "startMs": 33669,
+    "endMs": 33994
+  },
+  {
+    "text": "for",
+    "startMs": 34066,
+    "endMs": 34258
+  },
+  {
+    "text": "each",
+    "startMs": 34270,
+    "endMs": 34463
+  },
+  {
+    "text": "one",
+    "startMs": 34463,
+    "endMs": 34799
+  },
+  {
+    "text": "You",
+    "startMs": 35196,
+    "endMs": 35352
+  },
+  {
+    "text": "review",
+    "startMs": 35352,
+    "endMs": 35701
+  },
+  {
+    "text": "it",
+    "startMs": 35701,
+    "endMs": 35821
+  },
+  {
+    "text": "and",
+    "startMs": 36241,
+    "endMs": 36338
+  },
+  {
+    "text": "send",
+    "startMs": 36350,
+    "endMs": 36542
+  },
+  {
+    "text": "it",
+    "startMs": 36542,
+    "endMs": 36590
+  },
+  {
+    "text": "yourself",
+    "startMs": 36590,
+    "endMs": 37191,
+    "hl": true
+  },
+  {
+    "text": "Six",
+    "startMs": 37808,
+    "endMs": 38301
+  },
+  {
+    "text": "Every",
+    "startMs": 38686,
+    "endMs": 38926
+  },
+  {
+    "text": "lead",
+    "startMs": 38926,
+    "endMs": 39250
+  },
+  {
+    "text": "lands",
+    "startMs": 39262,
+    "endMs": 39575
+  },
+  {
+    "text": "in",
+    "startMs": 39575,
+    "endMs": 39647
+  },
+  {
+    "text": "HubSpot",
+    "startMs": 39647,
+    "endMs": 40284,
+    "hl": true
+  },
+  {
+    "text": "with",
+    "startMs": 40524,
+    "endMs": 40657
+  },
+  {
+    "text": "a",
+    "startMs": 40657,
+    "endMs": 40693
+  },
+  {
+    "text": "follow",
+    "startMs": 40705,
+    "endMs": 41101
+  },
+  {
+    "text": "up",
+    "startMs": 41113,
+    "endMs": 41234
+  },
+  {
+    "text": "task",
+    "startMs": 41234,
+    "endMs": 41690,
+    "hl": true
+  },
+  {
+    "text": "already",
+    "startMs": 41811,
+    "endMs": 42039
+  },
+  {
+    "text": "set",
+    "startMs": 42051,
+    "endMs": 42496
+  },
+  {
+    "text": "Seven",
+    "startMs": 43041,
+    "endMs": 43426
+  },
+  {
+    "text": "Claude",
+    "startMs": 43811,
+    "endMs": 44111
+  },
+  {
+    "text": "writes",
+    "startMs": 44111,
+    "endMs": 44340
+  },
+  {
+    "text": "your",
+    "startMs": 44352,
+    "endMs": 44448
+  },
+  {
+    "text": "posts",
+    "startMs": 44448,
+    "endMs": 44832,
+    "hl": true
+  },
+  {
+    "text": "in",
+    "startMs": 44832,
+    "endMs": 44929
+  },
+  {
+    "text": "your",
+    "startMs": 44941,
+    "endMs": 45025
+  },
+  {
+    "text": "voice",
+    "startMs": 45037,
+    "endMs": 45602
+  },
+  {
+    "text": "and",
+    "startMs": 45854,
+    "endMs": 46022
+  },
+  {
+    "text": "Publora",
+    "startMs": 46034,
+    "endMs": 46539
+  },
+  {
+    "text": "schedules",
+    "startMs": 46539,
+    "endMs": 46996
+  },
+  {
+    "text": "them",
+    "startMs": 47008,
+    "endMs": 47224
+  },
+  {
+    "text": "for",
+    "startMs": 47356,
+    "endMs": 47477
+  },
+  {
+    "text": "the",
+    "startMs": 47477,
+    "endMs": 47549
+  },
+  {
+    "text": "week",
+    "startMs": 47549,
+    "endMs": 47909,
+    "hl": true
+  },
+  {
+    "text": "Save",
+    "startMs": 48529,
+    "endMs": 48854,
+    "hl": true
+  },
+  {
+    "text": "this",
+    "startMs": 48854,
+    "endMs": 49203
+  },
+  {
+    "text": "so",
+    "startMs": 49431,
+    "endMs": 49527
+  },
+  {
+    "text": "you",
+    "startMs": 49527,
+    "endMs": 49587
+  },
+  {
+    "text": "can",
+    "startMs": 49587,
+    "endMs": 49671
+  },
+  {
+    "text": "set",
+    "startMs": 49671,
+    "endMs": 49840
+  },
+  {
+    "text": "it",
+    "startMs": 49840,
+    "endMs": 49888
+  },
+  {
+    "text": "up",
+    "startMs": 49888,
+    "endMs": 50020
+  },
+  {
+    "text": "later",
+    "startMs": 50032,
+    "endMs": 50428
+  },
+  {
+    "text": "Comment",
+    "startMs": 50963,
+    "endMs": 51299
+  },
+  {
+    "text": "LinkedIn",
+    "startMs": 51299,
+    "endMs": 51756,
+    "hl": true
+  },
+  {
+    "text": "and",
+    "startMs": 52165,
+    "endMs": 52321
+  },
+  {
+    "text": "I'll",
+    "startMs": 52561,
+    "endMs": 52706
+  },
+  {
+    "text": "send",
+    "startMs": 52706,
+    "endMs": 52994
+  },
+  {
+    "text": "you",
+    "startMs": 52994,
+    "endMs": 53078
+  },
+  {
+    "text": "the",
+    "startMs": 53078,
+    "endMs": 53150
+  },
+  {
+    "text": "full",
+    "startMs": 53162,
+    "endMs": 53379
+  },
+  {
+    "text": "setup",
+    "startMs": 53391,
+    "endMs": 53871
+  },
+  {
+    "text": "The",
+    "startMs": 54256,
+    "endMs": 54316
+  },
+  {
+    "text": "connectors",
+    "startMs": 54316,
+    "endMs": 55049
+  },
+  {
+    "text": "the",
+    "startMs": 55218,
+    "endMs": 55314
+  },
+  {
+    "text": "client",
+    "startMs": 55326,
+    "endMs": 55686
+  },
+  {
+    "text": "template",
+    "startMs": 55686,
+    "endMs": 56083
+  },
+  {
+    "text": "and",
+    "startMs": 56359,
+    "endMs": 56420
+  },
+  {
+    "text": "my",
+    "startMs": 56420,
+    "endMs": 56528
+  },
+  {
+    "text": "prompts",
+    "startMs": 56528,
+    "endMs": 57153
+  }
+]

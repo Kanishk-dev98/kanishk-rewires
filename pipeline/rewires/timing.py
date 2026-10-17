@@ -29,6 +29,9 @@ def build(sb: dict, vo: dict, prod: dict, vo_public_prefix: str) -> dict:
         lead = s.get("leadIn", t["leadInFrames"])
         frames = max(s.get("minFrames", t["minSceneFrames"]), lead + round(dur_s * fps) + s.get("pad", t["padFrames"]))
         data = dict(s.get("data", {}))
+        for k, v in list(data.items()):  # "@name" pulls a shared value from the storyboard root (e.g. one lead list for every scene)
+            if isinstance(v, str) and v.startswith("@") and v[1:] in sb:
+                data[k] = sb[v[1:]]
         if s.get("sync"):
             ms = find_word(words, s["sync"])
             data["syncFrame"] = lead + round(ms / 1000 * fps) if ms is not None else lead + 8

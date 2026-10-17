@@ -1,0 +1,131 @@
+1
+00:00:00,187 --> 00:00:02,559
+Here's how to automate your LinkedIn lead generation
+
+2
+00:00:02,579 --> 00:00:04,794
+and posting with Claude Code
+
+3
+00:00:04,863 --> 00:00:06,550
+It's simpler than it sounds
+
+4
+00:00:06,570 --> 00:00:08,063
+Only seven steps
+
+5
+00:00:08,196 --> 00:00:08,945
+One
+
+6
+00:00:08,965 --> 00:00:10,219
+Connect your tools
+
+7
+00:00:10,239 --> 00:00:13,824
+Add Apollo HubSpot and Publora to Claude Code
+
+8
+00:00:13,963 --> 00:00:14,616
+Two
+
+9
+00:00:14,636 --> 00:00:16,960
+Describe your ideal client once
+
+10
+00:00:16,980 --> 00:00:17,861
+Industry
+
+11
+00:00:17,881 --> 00:00:20,589
+role company size and region
+
+12
+00:00:20,766 --> 00:00:21,491
+Three
+
+13
+00:00:21,511 --> 00:00:23,859
+Ask Claude to find fifty leads that match
+
+14
+00:00:23,879 --> 00:00:25,757
+it straight from Apollo
+
+15
+00:00:25,956 --> 00:00:26,633
+Four
+
+16
+00:00:26,653 --> 00:00:28,604
+Claude scores every lead
+
+17
+00:00:28,624 --> 00:00:31,068
+and finds one real reason to reach out
+
+18
+00:00:31,302 --> 00:00:32,015
+Five
+
+19
+00:00:32,035 --> 00:00:34,443
+It drafts a short personal note for each
+
+20
+00:00:34,463 --> 00:00:35,176
+one
+
+21
+00:00:35,196 --> 00:00:36,221
+You review it
+
+22
+00:00:36,241 --> 00:00:37,591
+and send it yourself
+
+23
+00:00:37,808 --> 00:00:38,666
+Six
+
+24
+00:00:38,686 --> 00:00:41,093
+Every lead lands in HubSpot with a follow
+
+25
+00:00:41,113 --> 00:00:42,896
+up task already set
+
+26
+00:00:43,041 --> 00:00:43,791
+Seven
+
+27
+00:00:43,811 --> 00:00:46,014
+Claude writes your posts in your voice and
+
+28
+00:00:46,034 --> 00:00:48,309
+Publora schedules them for the week
+
+29
+00:00:48,529 --> 00:00:50,012
+Save this so you can set it up
+
+30
+00:00:50,032 --> 00:00:50,828
+later
+
+31
+00:00:50,963 --> 00:00:52,145
+Comment LinkedIn
+
+32
+00:00:52,165 --> 00:00:54,236
+and I'll send you the full setup
+
+33
+00:00:54,256 --> 00:00:57,553
+The connectors the client template and my prompts

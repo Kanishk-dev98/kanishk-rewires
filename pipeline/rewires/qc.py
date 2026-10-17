@@ -150,7 +150,9 @@ def run(video: Path, timeline: dict, sb: dict, reports: Path) -> dict:
         start += s["dur"]
     check("safe area", not bad, "; ".join(bad) or f"nothing drawn within {int(margin * 0.75)} px of the sides")
 
-    last = Image.open(frame_at(video, max(0, dur - 0.08), frames_dir / "last.png"))
+    last_png = frames_dir / "last.png"
+    subprocess.run([config.ffmpeg(), "-loglevel", "error", "-y", "-sseof", "-0.25", "-i", str(video), "-update", "1", "-frames:v", "1", str(last_png)], check=True)
+    last = Image.open(last_png)
     ok, detail = ending_ok(last, sb.get("outro", {}).get("size", 380))
     check("brand ending", ok, detail)
 

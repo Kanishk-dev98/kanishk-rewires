@@ -5,7 +5,8 @@
     "dot": ".",
     "right": "rewires",
     "case": "lower",
-    "note": "User, 2026-10-17: the wordmark is always lowercase (kanishk.rewires), never uppercase."
+    "note": "User, 2026-10-17: the wordmark is always lowercase kanishk.rewires, set entirely in IBM Plex Mono (one typeface), small.",
+    "font": "IBM Plex Mono"
   },
   "handle": "@kanishk.rewires",
   "tagline": "Rethink how you think.",

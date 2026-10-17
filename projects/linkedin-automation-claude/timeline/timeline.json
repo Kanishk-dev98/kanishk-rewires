@@ -1,0 +1,1434 @@
+{
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "tutHook",
+      "dur": 141,
+      "vo": "projects/linkedin-automation-claude/vo/s00.mp3",
+      "voAt": 2,
+      "data": {
+        "kicker": "A STEP BY STEP TUTORIAL",
+        "lines": [
+          "Automate your",
+          "LinkedIn *leads*",
+          "with Claude Code"
+        ],
+        "size": 124,
+        "logo": "brand/logos/claude.svg",
+        "motif": "leads"
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 2,
+          "volume": 0.14
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "type": "tutEasy",
+      "dur": 98,
+      "vo": "projects/linkedin-automation-claude/vo/s01.mp3",
+      "voAt": 2,
+      "data": {
+        "title": "So *simple*.",
+        "from": 3,
+        "to": 7,
+        "cues": {
+          "number": 63
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 63,
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "tutStep",
+      "dur": 173,
+      "vo": "projects/linkedin-automation-claude/vo/s02.mp3",
+      "voAt": 4,
+      "data": {
+        "step": 1,
+        "hero": "connect",
+        "title": "Connect your *tools*",
+        "termEnter": true,
+        "termTop": 590,
+        "termH": 310,
+        "logos": {
+          "apollo": "media/li2/apollo.svg",
+          "hubspot": "media/li2/hubspot.svg",
+          "publora": "media/li2/publora-mark.svg",
+          "linkedin": "media/li2/linkedin.svg"
+        },
+        "term": [
+          {
+            "cue": "apollo",
+            "text": "claude mcp add --transport http apollo \u2026",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "hubspot",
+            "offset": 4,
+            "text": "claude mcp add --transport http hubspot \u2026",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "publora",
+            "offset": 4,
+            "text": "claude mcp add --transport http publora \u2026",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "claude",
+            "offset": 10,
+            "text": "\u2713 /mcp \u00b7 3 servers connected",
+            "kind": "ok"
+          }
+        ],
+        "cues": {
+          "apollo": 72,
+          "hubspot": 97,
+          "publora": 119,
+          "claude": 143
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 72,
+          "volume": 0.2
+        },
+        {
+          "src": "sfx/tick.wav",
+          "at": 97,
+          "volume": 0.2
+        },
+        {
+          "src": "sfx/tick.wav",
+          "at": 119,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "tutStep",
+      "dur": 203,
+      "vo": "projects/linkedin-automation-claude/vo/s03.mp3",
+      "voAt": 4,
+      "data": {
+        "step": 2,
+        "hero": "icp",
+        "title": "Write your *ICP*",
+        "termTop": 590,
+        "termH": 310,
+        "icp": [
+          {
+            "text": "# Ideal client",
+            "cue": "ideal"
+          },
+          {
+            "text": "industry: consumer goods, D2C",
+            "cue": "industry"
+          },
+          {
+            "text": "role: Head of Growth, CMO",
+            "cue": "role"
+          },
+          {
+            "text": "company size: 11 to 200",
+            "cue": "size"
+          },
+          {
+            "text": "region: US, UK",
+            "cue": "region"
+          },
+          {
+            "text": "signal: launching or hiring",
+            "cue": "region",
+            "hl": true
+          }
+        ],
+        "chips": [
+          {
+            "cue": "once",
+            "text": "ICP.md"
+          }
+        ],
+        "term": [
+          {
+            "cue": "region",
+            "offset": 14,
+            "text": "\u2713 Saved ICP.md",
+            "kind": "ok"
+          }
+        ],
+        "cues": {
+          "once": 71,
+          "industry": 97,
+          "role": 124,
+          "size": 155,
+          "region": 182,
+          "ideal": 43
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/ding.wav",
+          "at": 196,
+          "volume": 0.16
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "tutStep",
+      "dur": 155,
+      "vo": "projects/linkedin-automation-claude/vo/s04.mp3",
+      "voAt": 4,
+      "data": {
+        "step": 3,
+        "hero": "apollo",
+        "title": "Find your *leads*",
+        "termTop": 590,
+        "termH": 310,
+        "logos": {
+          "apollo": "media/li2/apollo.svg"
+        },
+        "leads": [
+          {
+            "n": 2,
+            "name": "Sarah Collins",
+            "title": "Head of Growth",
+            "company": "Northwind Goods",
+            "loc": "Austin, US",
+            "score": 92,
+            "signal": "Launching a new D2C range"
+          },
+          {
+            "n": 1,
+            "name": "Marcus Reid",
+            "title": "CMO",
+            "company": "Fieldcraft Co",
+            "loc": "London, UK",
+            "score": 86
+          },
+          {
+            "n": 4,
+            "name": "Aisha Bello",
+            "title": "Growth Lead",
+            "company": "Lumen Skin",
+            "loc": "New York, US",
+            "score": 74
+          },
+          {
+            "n": 5,
+            "name": "Raj Mehta",
+            "title": "VP Marketing",
+            "company": "Kite Apparel",
+            "loc": "Manchester, UK",
+            "score": 81
+          },
+          {
+            "n": 6,
+            "name": "Elena Rossi",
+            "title": "Marketing Director",
+            "company": "Brightbrew",
+            "loc": "Boston, US",
+            "score": 68
+          }
+        ],
+        "term": [
+          {
+            "cue": "ask",
+            "text": "find 50 leads that match ICP.md",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "found",
+            "text": "apollo \u00b7 search people",
+            "kind": "tool"
+          },
+          {
+            "cue": "found",
+            "offset": 26,
+            "text": "\u2713 50 leads saved to leads.csv",
+            "kind": "ok"
+          }
+        ],
+        "cues": {
+          "ask": 30,
+          "filters": 54,
+          "found": 63
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 30,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "tutStep",
+      "dur": 160,
+      "vo": "projects/linkedin-automation-claude/vo/s05.mp3",
+      "voAt": 4,
+      "data": {
+        "step": 4,
+        "hero": "score",
+        "title": "Score and *research*",
+        "termTop": 590,
+        "termH": 310,
+        "leads": [
+          {
+            "n": 2,
+            "name": "Sarah Collins",
+            "title": "Head of Growth",
+            "company": "Northwind Goods",
+            "loc": "Austin, US",
+            "score": 92,
+            "signal": "Launching a new D2C range"
+          },
+          {
+            "n": 1,
+            "name": "Marcus Reid",
+            "title": "CMO",
+            "company": "Fieldcraft Co",
+            "loc": "London, UK",
+            "score": 86
+          },
+          {
+            "n": 4,
+            "name": "Aisha Bello",
+            "title": "Growth Lead",
+            "company": "Lumen Skin",
+            "loc": "New York, US",
+            "score": 74
+          },
+          {
+            "n": 5,
+            "name": "Raj Mehta",
+            "title": "VP Marketing",
+            "company": "Kite Apparel",
+            "loc": "Manchester, UK",
+            "score": 81
+          },
+          {
+            "n": 6,
+            "name": "Elena Rossi",
+            "title": "Marketing Director",
+            "company": "Brightbrew",
+            "loc": "Boston, US",
+            "score": 68
+          }
+        ],
+        "term": [
+          {
+            "cue": "scores",
+            "text": "score leads.csv against ICP.md",
+            "kind": "tool"
+          },
+          {
+            "cue": "reason",
+            "offset": 14,
+            "text": "\u2713 Top 10 ready, each with a reason",
+            "kind": "ok"
+          }
+        ],
+        "cues": {
+          "scores": 37,
+          "reason": 119
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/ding.wav",
+          "at": 119,
+          "volume": 0.16
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "tutStep",
+      "dur": 197,
+      "vo": "projects/linkedin-automation-claude/vo/s06.mp3",
+      "voAt": 4,
+      "data": {
+        "step": 5,
+        "hero": "invite",
+        "title": "Draft the *outreach*",
+        "termTop": 590,
+        "termH": 310,
+        "logos": {
+          "linkedin": "media/li2/linkedin.svg"
+        },
+        "leads": [
+          {
+            "n": 2,
+            "name": "Sarah Collins",
+            "title": "Head of Growth",
+            "company": "Northwind Goods",
+            "loc": "Austin, US",
+            "score": 92,
+            "signal": "Launching a new D2C range"
+          },
+          {
+            "n": 1,
+            "name": "Marcus Reid",
+            "title": "CMO",
+            "company": "Fieldcraft Co",
+            "loc": "London, UK",
+            "score": 86
+          },
+          {
+            "n": 4,
+            "name": "Aisha Bello",
+            "title": "Growth Lead",
+            "company": "Lumen Skin",
+            "loc": "New York, US",
+            "score": 74
+          },
+          {
+            "n": 5,
+            "name": "Raj Mehta",
+            "title": "VP Marketing",
+            "company": "Kite Apparel",
+            "loc": "Manchester, UK",
+            "score": 81
+          },
+          {
+            "n": 6,
+            "name": "Elena Rossi",
+            "title": "Marketing Director",
+            "company": "Brightbrew",
+            "loc": "Boston, US",
+            "score": 68
+          }
+        ],
+        "note": "Hi Sarah, saw Northwind is launching a new D2C range. I help consumer brands turn first orders into repeat buyers. Would love to connect.",
+        "term": [
+          {
+            "cue": "drafts",
+            "text": "draft a connection note for each lead",
+            "kind": "tool"
+          },
+          {
+            "cue": "send",
+            "text": "LinkedIn bans auto sending, so you click Send",
+            "kind": "dim"
+          }
+        ],
+        "cues": {
+          "drafts": 34,
+          "review": 131,
+          "send": 160
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 160,
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "type": "tutStep",
+      "dur": 157,
+      "vo": "projects/linkedin-automation-claude/vo/s07.mp3",
+      "voAt": 4,
+      "data": {
+        "step": 6,
+        "hero": "hubspot",
+        "title": "Track in your *CRM*",
+        "termTop": 590,
+        "termH": 310,
+        "logos": {
+          "hubspot": "media/li2/hubspot.svg"
+        },
+        "leads": [
+          {
+            "n": 2,
+            "name": "Sarah Collins",
+            "title": "Head of Growth",
+            "company": "Northwind Goods",
+            "loc": "Austin, US",
+            "score": 92,
+            "signal": "Launching a new D2C range"
+          },
+          {
+            "n": 1,
+            "name": "Marcus Reid",
+            "title": "CMO",
+            "company": "Fieldcraft Co",
+            "loc": "London, UK",
+            "score": 86
+          },
+          {
+            "n": 4,
+            "name": "Aisha Bello",
+            "title": "Growth Lead",
+            "company": "Lumen Skin",
+            "loc": "New York, US",
+            "score": 74
+          },
+          {
+            "n": 5,
+            "name": "Raj Mehta",
+            "title": "VP Marketing",
+            "company": "Kite Apparel",
+            "loc": "Manchester, UK",
+            "score": 81
+          },
+          {
+            "n": 6,
+            "name": "Elena Rossi",
+            "title": "Marketing Director",
+            "company": "Brightbrew",
+            "loc": "Boston, US",
+            "score": 68
+          }
+        ],
+        "term": [
+          {
+            "cue": "lands",
+            "text": "hubspot \u00b7 create contacts",
+            "kind": "tool"
+          },
+          {
+            "cue": "task",
+            "text": "hubspot \u00b7 create follow up tasks",
+            "kind": "tool"
+          }
+        ],
+        "cues": {
+          "lands": 51,
+          "task": 110
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 110,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "type": "tutStep",
+      "dur": 165,
+      "vo": "projects/linkedin-automation-claude/vo/s08.mp3",
+      "voAt": 4,
+      "data": {
+        "step": 7,
+        "hero": "post",
+        "title": "Post on *autopilot*",
+        "termTop": 590,
+        "termH": 310,
+        "logos": {
+          "linkedin": "media/li2/linkedin.svg"
+        },
+        "post": "3 emails every D2C brand should send after the first order:\n1. The thank you\n2. The how to use\n3. The reorder nudge",
+        "term": [
+          {
+            "cue": "posts",
+            "text": "write 5 posts from my notes, in my voice",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "schedules",
+            "text": "publora \u00b7 schedule 5 LinkedIn posts",
+            "kind": "tool"
+          },
+          {
+            "cue": "schedules",
+            "offset": 22,
+            "text": "\u2713 Mon to Fri at 9:00",
+            "kind": "ok"
+          }
+        ],
+        "cues": {
+          "posts": 49,
+          "schedules": 112
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/ding.wav",
+          "at": 134,
+          "volume": 0.18
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "type": "tutSave",
+      "dur": 73,
+      "vo": "projects/linkedin-automation-claude/vo/s09.mp3",
+      "voAt": 4,
+      "data": {
+        "title": "Save.",
+        "sub": "SO YOU CAN SET IT UP LATER"
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s10",
+      "type": "tutCta",
+      "dur": 210,
+      "vo": "projects/linkedin-automation-claude/vo/s10.mp3",
+      "voAt": 4,
+      "data": {
+        "word": "LINKEDIN",
+        "items": [
+          {
+            "text": "Connector setup for Claude Code",
+            "cue": "connectors"
+          },
+          {
+            "text": "Ideal client template",
+            "cue": "template"
+          },
+          {
+            "text": "My outreach and post prompts",
+            "cue": "prompts"
+          }
+        ],
+        "note": "SENT STRAIGHT TO YOUR DMS",
+        "cues": {
+          "comment": 7,
+          "connectors": 107,
+          "template": 149,
+          "prompts": 174
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 31,
+          "volume": 0.22
+        }
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "text": "Here's",
+      "startMs": 187,
+      "endMs": 343
+    },
+    {
+      "text": "how",
+      "startMs": 343,
+      "endMs": 403
+    },
+    {
+      "text": "to",
+      "startMs": 403,
+      "endMs": 499
+    },
+    {
+      "text": "automate",
+      "startMs": 511,
+      "endMs": 1004
+    },
+    {
+      "text": "your",
+      "startMs": 1016,
+      "endMs": 1172
+    },
+    {
+      "text": "LinkedIn",
+      "startMs": 1172,
+      "endMs": 1677,
+      "hl": true
+    },
+    {
+      "text": "lead",
+      "startMs": 1689,
+      "endMs": 1894
+    },
+    {
+      "text": "generation",
+      "startMs": 1894,
+      "endMs": 2579
+    },
+    {
+      "text": "and",
+      "startMs": 2579,
+      "endMs": 2735
+    },
+    {
+      "text": "posting",
+      "startMs": 2735,
+      "endMs": 3372
+    },
+    {
+      "text": "with",
+      "startMs": 3612,
+      "endMs": 3720
+    },
+    {
+      "text": "Claude",
+      "startMs": 3733,
+      "endMs": 4045,
+      "hl": true
+    },
+    {
+      "text": "Code",
+      "startMs": 4045,
+      "endMs": 4394,
+      "hl": true
+    },
+    {
+      "text": "It's",
+      "startMs": 4863,
+      "endMs": 5019
+    },
+    {
+      "text": "simpler",
+      "startMs": 5031,
+      "endMs": 5380,
+      "hl": true
+    },
+    {
+      "text": "than",
+      "startMs": 5380,
+      "endMs": 5476
+    },
+    {
+      "text": "it",
+      "startMs": 5476,
+      "endMs": 5548
+    },
+    {
+      "text": "sounds",
+      "startMs": 5548,
+      "endMs": 6185
+    },
+    {
+      "text": "Only",
+      "startMs": 6570,
+      "endMs": 6774
+    },
+    {
+      "text": "seven",
+      "startMs": 6786,
+      "endMs": 7086,
+      "hl": true
+    },
+    {
+      "text": "steps",
+      "startMs": 7086,
+      "endMs": 7663
+    },
+    {
+      "text": "One",
+      "startMs": 8196,
+      "endMs": 8581
+    },
+    {
+      "text": "Connect",
+      "startMs": 8965,
+      "endMs": 9218,
+      "hl": true
+    },
+    {
+      "text": "your",
+      "startMs": 9230,
+      "endMs": 9314
+    },
+    {
+      "text": "tools",
+      "startMs": 9314,
+      "endMs": 9855
+    },
+    {
+      "text": "Add",
+      "startMs": 10239,
+      "endMs": 10360
+    },
+    {
+      "text": "Apollo",
+      "startMs": 10360,
+      "endMs": 10925
+    },
+    {
+      "text": "HubSpot",
+      "startMs": 11189,
+      "endMs": 11718
+    },
+    {
+      "text": "and",
+      "startMs": 11838,
+      "endMs": 11934
+    },
+    {
+      "text": "Publora",
+      "startMs": 11946,
+      "endMs": 12619
+    },
+    {
+      "text": "to",
+      "startMs": 12631,
+      "endMs": 12739
+    },
+    {
+      "text": "Claude",
+      "startMs": 12739,
+      "endMs": 13064,
+      "hl": true
+    },
+    {
+      "text": "Code",
+      "startMs": 13076,
+      "endMs": 13424
+    },
+    {
+      "text": "Two",
+      "startMs": 13963,
+      "endMs": 14239
+    },
+    {
+      "text": "Describe",
+      "startMs": 14636,
+      "endMs": 15008
+    },
+    {
+      "text": "your",
+      "startMs": 15020,
+      "endMs": 15165
+    },
+    {
+      "text": "ideal",
+      "startMs": 15165,
+      "endMs": 15706,
+      "hl": true
+    },
+    {
+      "text": "client",
+      "startMs": 15718,
+      "endMs": 16102
+    },
+    {
+      "text": "once",
+      "startMs": 16114,
+      "endMs": 16607,
+      "hl": true
+    },
+    {
+      "text": "Industry",
+      "startMs": 16980,
+      "endMs": 17496
+    },
+    {
+      "text": "role",
+      "startMs": 17881,
+      "endMs": 18326
+    },
+    {
+      "text": "company",
+      "startMs": 18554,
+      "endMs": 18891
+    },
+    {
+      "text": "size",
+      "startMs": 18891,
+      "endMs": 19492
+    },
+    {
+      "text": "and",
+      "startMs": 19612,
+      "endMs": 19792
+    },
+    {
+      "text": "region",
+      "startMs": 19804,
+      "endMs": 20189
+    },
+    {
+      "text": "Three",
+      "startMs": 20766,
+      "endMs": 21126
+    },
+    {
+      "text": "Ask",
+      "startMs": 21511,
+      "endMs": 21751
+    },
+    {
+      "text": "Claude",
+      "startMs": 21763,
+      "endMs": 22172
+    },
+    {
+      "text": "to",
+      "startMs": 22184,
+      "endMs": 22292
+    },
+    {
+      "text": "find",
+      "startMs": 22292,
+      "endMs": 22580
+    },
+    {
+      "text": "fifty",
+      "startMs": 22592,
+      "endMs": 22941,
+      "hl": true
+    },
+    {
+      "text": "leads",
+      "startMs": 22941,
+      "endMs": 23290
+    },
+    {
+      "text": "that",
+      "startMs": 23290,
+      "endMs": 23482
+    },
+    {
+      "text": "match",
+      "startMs": 23482,
+      "endMs": 23878
+    },
+    {
+      "text": "it",
+      "startMs": 23879,
+      "endMs": 24011
+    },
+    {
+      "text": "straight",
+      "startMs": 24227,
+      "endMs": 24636
+    },
+    {
+      "text": "from",
+      "startMs": 24648,
+      "endMs": 24792
+    },
+    {
+      "text": "Apollo",
+      "startMs": 24792,
+      "endMs": 25357,
+      "hl": true
+    },
+    {
+      "text": "Four",
+      "startMs": 25956,
+      "endMs": 26281
+    },
+    {
+      "text": "Claude",
+      "startMs": 26653,
+      "endMs": 26906
+    },
+    {
+      "text": "scores",
+      "startMs": 26906,
+      "endMs": 27447,
+      "hl": true
+    },
+    {
+      "text": "every",
+      "startMs": 27579,
+      "endMs": 27855
+    },
+    {
+      "text": "lead",
+      "startMs": 27855,
+      "endMs": 28252
+    },
+    {
+      "text": "and",
+      "startMs": 28624,
+      "endMs": 28733
+    },
+    {
+      "text": "finds",
+      "startMs": 28733,
+      "endMs": 29057
+    },
+    {
+      "text": "one",
+      "startMs": 29057,
+      "endMs": 29370
+    },
+    {
+      "text": "real",
+      "startMs": 29370,
+      "endMs": 29634
+    },
+    {
+      "text": "reason",
+      "startMs": 29646,
+      "endMs": 29983,
+      "hl": true
+    },
+    {
+      "text": "to",
+      "startMs": 29983,
+      "endMs": 30079
+    },
+    {
+      "text": "reach",
+      "startMs": 30091,
+      "endMs": 30367
+    },
+    {
+      "text": "out",
+      "startMs": 30367,
+      "endMs": 30668
+    },
+    {
+      "text": "Five",
+      "startMs": 31302,
+      "endMs": 31662
+    },
+    {
+      "text": "It",
+      "startMs": 32035,
+      "endMs": 32131
+    },
+    {
+      "text": "drafts",
+      "startMs": 32143,
+      "endMs": 32564
+    },
+    {
+      "text": "a",
+      "startMs": 32564,
+      "endMs": 32600
+    },
+    {
+      "text": "short",
+      "startMs": 32612,
+      "endMs": 33044
+    },
+    {
+      "text": "personal",
+      "startMs": 33261,
+      "endMs": 33669,
+      "hl": true
+    },
+    {
+      "text": "note",
+      "startMs": 33669,
+      "endMs": 33994
+    },
+    {
+      "text": "for",
+      "startMs": 34066,
+      "endMs": 34258
+    },
+    {
+      "text": "each",
+      "startMs": 34270,
+      "endMs": 34463
+    },
+    {
+      "text": "one",
+      "startMs": 34463,
+      "endMs": 34799
+    },
+    {
+      "text": "You",
+      "startMs": 35196,
+      "endMs": 35352
+    },
+    {
+      "text": "review",
+      "startMs": 35352,
+      "endMs": 35701
+    },
+    {
+      "text": "it",
+      "startMs": 35701,
+      "endMs": 35821
+    },
+    {
+      "text": "and",
+      "startMs": 36241,
+      "endMs": 36338
+    },
+    {
+      "text": "send",
+      "startMs": 36350,
+      "endMs": 36542
+    },
+    {
+      "text": "it",
+      "startMs": 36542,
+      "endMs": 36590
+    },
+    {
+      "text": "yourself",
+      "startMs": 36590,
+      "endMs": 37191,
+      "hl": true
+    },
+    {
+      "text": "Six",
+      "startMs": 37808,
+      "endMs": 38301
+    },
+    {
+      "text": "Every",
+      "startMs": 38686,
+      "endMs": 38926
+    },
+    {
+      "text": "lead",
+      "startMs": 38926,
+      "endMs": 39250
+    },
+    {
+      "text": "lands",
+      "startMs": 39262,
+      "endMs": 39575
+    },
+    {
+      "text": "in",
+      "startMs": 39575,
+      "endMs": 39647
+    },
+    {
+      "text": "HubSpot",
+      "startMs": 39647,
+      "endMs": 40284,
+      "hl": true
+    },
+    {
+      "text": "with",
+      "startMs": 40524,
+      "endMs": 40657
+    },
+    {
+      "text": "a",
+      "startMs": 40657,
+      "endMs": 40693
+    },
+    {
+      "text": "follow",
+      "startMs": 40705,
+      "endMs": 41101
+    },
+    {
+      "text": "up",
+      "startMs": 41113,
+      "endMs": 41234
+    },
+    {
+      "text": "task",
+      "startMs": 41234,
+      "endMs": 41690,
+      "hl": true
+    },
+    {
+      "text": "already",
+      "startMs": 41811,
+      "endMs": 42039
+    },
+    {
+      "text": "set",
+      "startMs": 42051,
+      "endMs": 42496
+    },
+    {
+      "text": "Seven",
+      "startMs": 43041,
+      "endMs": 43426
+    },
+    {
+      "text": "Claude",
+      "startMs": 43811,
+      "endMs": 44111
+    },
+    {
+      "text": "writes",
+      "startMs": 44111,
+      "endMs": 44340
+    },
+    {
+      "text": "your",
+      "startMs": 44352,
+      "endMs": 44448
+    },
+    {
+      "text": "posts",
+      "startMs": 44448,
+      "endMs": 44832,
+      "hl": true
+    },
+    {
+      "text": "in",
+      "startMs": 44832,
+      "endMs": 44929
+    },
+    {
+      "text": "your",
+      "startMs": 44941,
+      "endMs": 45025
+    },
+    {
+      "text": "voice",
+      "startMs": 45037,
+      "endMs": 45602
+    },
+    {
+      "text": "and",
+      "startMs": 45854,
+      "endMs": 46022
+    },
+    {
+      "text": "Publora",
+      "startMs": 46034,
+      "endMs": 46539
+    },
+    {
+      "text": "schedules",
+      "startMs": 46539,
+      "endMs": 46996
+    },
+    {
+      "text": "them",
+      "startMs": 47008,
+      "endMs": 47224
+    },
+    {
+      "text": "for",
+      "startMs": 47356,
+      "endMs": 47477
+    },
+    {
+      "text": "the",
+      "startMs": 47477,
+      "endMs": 47549
+    },
+    {
+      "text": "week",
+      "startMs": 47549,
+      "endMs": 47909,
+      "hl": true
+    },
+    {
+      "text": "Save",
+      "startMs": 48529,
+      "endMs": 48854,
+      "hl": true
+    },
+    {
+      "text": "this",
+      "startMs": 48854,
+      "endMs": 49203
+    },
+    {
+      "text": "so",
+      "startMs": 49431,
+      "endMs": 49527
+    },
+    {
+      "text": "you",
+      "startMs": 49527,
+      "endMs": 49587
+    },
+    {
+      "text": "can",
+      "startMs": 49587,
+      "endMs": 49671
+    },
+    {
+      "text": "set",
+      "startMs": 49671,
+      "endMs": 49840
+    },
+    {
+      "text": "it",
+      "startMs": 49840,
+      "endMs": 49888
+    },
+    {
+      "text": "up",
+      "startMs": 49888,
+      "endMs": 50020
+    },
+    {
+      "text": "later",
+      "startMs": 50032,
+      "endMs": 50428
+    },
+    {
+      "text": "Comment",
+      "startMs": 50963,
+      "endMs": 51299
+    },
+    {
+      "text": "LinkedIn",
+      "startMs": 51299,
+      "endMs": 51756,
+      "hl": true
+    },
+    {
+      "text": "and",
+      "startMs": 52165,
+      "endMs": 52321
+    },
+    {
+      "text": "I'll",
+      "startMs": 52561,
+      "endMs": 52706
+    },
+    {
+      "text": "send",
+      "startMs": 52706,
+      "endMs": 52994
+    },
+    {
+      "text": "you",
+      "startMs": 52994,
+      "endMs": 53078
+    },
+    {
+      "text": "the",
+      "startMs": 53078,
+      "endMs": 53150
+    },
+    {
+      "text": "full",
+      "startMs": 53162,
+      "endMs": 53379
+    },
+    {
+      "text": "setup",
+      "startMs": 53391,
+      "endMs": 53871
+    },
+    {
+      "text": "The",
+      "startMs": 54256,
+      "endMs": 54316
+    },
+    {
+      "text": "connectors",
+      "startMs": 54316,
+      "endMs": 55049
+    },
+    {
+      "text": "the",
+      "startMs": 55218,
+      "endMs": 55314
+    },
+    {
+      "text": "client",
+      "startMs": 55326,
+      "endMs": 55686
+    },
+    {
+      "text": "template",
+      "startMs": 55686,
+      "endMs": 56083
+    },
+    {
+      "text": "and",
+      "startMs": 56359,
+      "endMs": 56420
+    },
+    {
+      "text": "my",
+      "startMs": 56420,
+      "endMs": 56528
+    },
+    {
+      "text": "prompts",
+      "startMs": 56528,
+      "endMs": 57153
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 4.7,
+      "energy": 2
+    },
+    {
+      "start": 4.7,
+      "end": 7.966666666666667,
+      "energy": 2
+    },
+    {
+      "start": 7.966666666666667,
+      "end": 13.733333333333333,
+      "energy": 2
+    },
+    {
+      "start": 13.733333333333333,
+      "end": 20.5,
+      "energy": 2
+    },
+    {
+      "start": 20.5,
+      "end": 25.666666666666668,
+      "energy": 2
+    },
+    {
+      "start": 25.666666666666668,
+      "end": 31.0,
+      "energy": 2
+    },
+    {
+      "start": 31.0,
+      "end": 37.56666666666667,
+      "energy": 2
+    },
+    {
+      "start": 37.56666666666667,
+      "end": 42.8,
+      "energy": 2
+    },
+    {
+      "start": 42.8,
+      "end": 48.3,
+      "energy": 3
+    },
+    {
+      "start": 48.3,
+      "end": 50.733333333333334,
+      "energy": 2
+    },
+    {
+      "start": 50.733333333333334,
+      "end": 57.733333333333334,
+      "energy": 2
+    }
+  ],
+  "hits": [],
+  "bodyFrames": 1732
+}

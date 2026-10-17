@@ -4,7 +4,8 @@ import { Video } from "@remotion/media";
 import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { BODY, BRAND, C, clamp, EASE, EASE_IO, HEAD, MONO, SERIF } from "./brand";
 import type { SceneProps } from "./scenes";
-import { Card, L, LogoTile, Phone, Rich, Ring, SaveIcon, StepHeader, Sticker, Terminal, TermLine, usePop, Waveform, Wire } from "./tut";
+import { ApolloSearch, HubSpotBoard, Lead, LinkedInInvite, PostAndSchedule, ScoreCard } from "./real";
+import { Card, CodeCard, L, LogoTile, Phone, Rich, Ring, SaveIcon, StepHeader, Sticker, Terminal, TermLine, usePop, Waveform, Wire } from "./tut";
 
 const Bg: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <AbsoluteFill style={{ background: `radial-gradient(ellipse 90% 60% at 50% 40%, #1A1A1A 0%, ${C.charcoal} 70%)` }}>{children}</AbsoluteFill>
@@ -31,14 +32,15 @@ export const TutHookScene: React.FC<SceneProps> = ({ data }) => {
       <div style={{ position: "absolute", top: 560, left: 0, right: 0, textAlign: "center" }}>
         <div style={{ fontFamily: MONO, fontWeight: 600, fontSize: 26, letterSpacing: 5, color: C.lime, ...pop(0) }}>{data.kicker}</div>
         {head.map((l, i) => (
-          <div key={i} style={{ fontFamily: SERIF, fontSize: 150, lineHeight: 0.98, color: C.cream, marginTop: i === 0 ? 26 : 0, ...pop(3 + i * 4, { rise: 30 }) }}>
+          <div key={i} style={{ fontFamily: SERIF, fontSize: data.size ?? 150, lineHeight: 0.98, color: C.cream, marginTop: i === 0 ? 26 : 0, ...pop(3 + i * 4, { rise: 30 }) }}>
             <Rich text={l} italic />
             {i === head.length - 1 && data.logo ? <Img src={staticFile(data.logo)} style={{ width: 96, height: 96, marginLeft: 18, verticalAlign: "middle", ...pop(16, { scale: 0.3 }) }} /> : null}
           </div>
         ))}
       </div>
+      {data.motif === "leads" ? <LeadFlow /> : null}
       {/* edit timeline motif */}
-      <div style={{ position: "absolute", left: 120, right: 120, top: 1200, height: 140, ...pop(14) }}>
+      <div style={{ position: "absolute", left: 120, right: 120, top: 1200, height: 140, display: data.motif === "leads" ? "none" : undefined, ...pop(14) }}>
         <div style={{ display: "flex", gap: 10, height: 64 }}>
           {[1.2, 0.9, 1.6, 1, 1.1].map((w, i) => (
             <div key={i} style={{ flex: w, borderRadius: 12, background: i === 2 ? C.lime : C.graphite, border: `2px solid ${i === 2 ? C.lime : "#2c2c2c"}` }} />
@@ -54,6 +56,31 @@ export const TutHookScene: React.FC<SceneProps> = ({ data }) => {
         </div>
       </div>
     </Bg>
+  );
+};
+
+/** Hook motif: prospect photos travel along a lime line into the pipeline. */
+const LeadFlow: React.FC = () => {
+  const frame = useCurrentFrame();
+  const pop = usePop();
+  return (
+    <div style={{ position: "absolute", left: 100, right: 100, top: 1190, height: 170, ...pop(12) }}>
+      <div style={{ position: "absolute", left: 0, right: 150, top: 78, height: 4, background: `linear-gradient(90deg, ${C.graphite}, ${C.lime})`, borderRadius: 2 }} />
+      {new Array(6).fill(0).map((_, i) => {
+        const t = ((frame * 0.012 + i / 6) % 1);
+        return (
+          <Img
+            key={i}
+            src={staticFile(`media/li2/person${i + 1}.jpg`)}
+            style={{ position: "absolute", left: `${t * 78}%`, top: 50, width: 60, height: 60, borderRadius: "50%", objectFit: "cover", border: `3px solid ${C.cream}`, opacity: interpolate(t, [0, 0.08, 0.85, 1], [0, 1, 1, 0]) }}
+          />
+        );
+      })}
+      <div style={{ position: "absolute", right: 0, top: 20, width: 130, height: 120, borderRadius: 24, background: C.lime, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily: MONO, fontWeight: 600, fontSize: 18, color: C.charcoal }}>
+        <div style={{ fontFamily: SERIF, fontSize: 52, lineHeight: 1 }}>{Math.min(50, Math.floor(frame / 3))}</div>
+        LEADS
+      </div>
+    </div>
   );
 };
 
@@ -89,14 +116,59 @@ export const TutStepScene: React.FC<SceneProps> = ({ data }) => {
   const c = cueOf(data);
   const pop = usePop();
   const hero = data.hero as string;
+  const termTop = (data.termTop ?? TERM_TOP) as number;
+  const termH = (data.termH ?? TERM_H) as number;
   const term = data.term ? (
-    <div style={{ position: "absolute", left: 0, right: 0, top: TERM_TOP }}>
-      <Terminal lines={lines(data, c)} height={TERM_H} input={data.input ? { at: c(data.input.cue, 0) + (data.input.offset ?? 0), text: data.input.text } : undefined} chips={(data.chips ?? []).map((x: { cue: string; text: string }) => ({ at: c(x.cue, 0), text: x.text }))} enter={data.termEnter ? 0 : undefined} />
+    <div style={{ position: "absolute", left: 0, right: 0, top: termTop }}>
+      <Terminal lines={lines(data, c)} height={termH} input={data.input ? { at: c(data.input.cue, 0) + (data.input.offset ?? 0), text: data.input.text } : undefined} chips={(data.chips ?? []).map((x: { cue: string; text: string }) => ({ at: c(x.cue, 0), text: x.text }))} enter={data.termEnter ? 0 : undefined} />
     </div>
   ) : null;
 
   let top: React.ReactNode = null;
-  if (hero === "open") {
+  const leads = (data.leads ?? []) as Lead[];
+  const logos = (data.logos ?? {}) as Record<string, string>;
+  if (hero === "connect") {
+    const tiles: [string, string, number, string][] = [
+      ["apollo", "Apollo", 70, "apollo"],
+      ["hubspot", "HubSpot", 385, "hubspot"],
+      ["publora", "Publora", 700, "publora"],
+    ];
+    top = (
+      <div style={{ position: "relative", height: termTop - 20 }}>
+        {tiles.map(([k, label, x, cue]) => (
+          <div key={k} style={{ position: "absolute", left: x, top: 10 }}>
+            <LogoTile src={logos[k]} size={150} at={c(cue, 20)} label={label} badge={{ at: c(cue, 20) + 14, kind: "ok" }} />
+          </div>
+        ))}
+        {tiles.map(([k, , x, cue]) => (
+          <Wire key={`w${k}`} from={[x + 75, 220]} to={[460, 330]} at={c(cue, 20) + 6} h={termTop} />
+        ))}
+        <div style={{ position: "absolute", left: 375, top: 330 }}>
+          <LogoTile src="brand/logos/claude.svg" size={170} at={0} />
+        </div>
+      </div>
+    );
+  } else if (hero === "icp") {
+    top = (
+      <CodeCard
+        enter={0}
+        file="ICP.md"
+        style={{ height: termTop - 30 }}
+        badge={{ at: c("region", 30) + 14, text: "saved" }}
+        lines={(data.icp as { text: string; cue: string; hl?: boolean }[]).map((l) => ({ text: l.text, at: c(l.cue, 10), hl: l.hl }))}
+      />
+    );
+  } else if (hero === "apollo") {
+    top = <ApolloSearch leads={leads} c={c} accent={data.apolloAccent ?? "#F7D046"} logo={logos.apollo} />;
+  } else if (hero === "score") {
+    top = <ScoreCard leads={leads} c={c} />;
+  } else if (hero === "invite") {
+    top = <LinkedInInvite lead={leads[0]} note={data.note} c={c} logo={logos.linkedin} limit={200} />;
+  } else if (hero === "hubspot") {
+    top = <HubSpotBoard leads={leads} c={c} logo={logos.hubspot} />;
+  } else if (hero === "post") {
+    top = <PostAndSchedule c={c} liLogo={logos.linkedin} post={data.post} days={["Mon", "Tue", "Wed", "Thu", "Fri"]} />;
+  } else if (hero === "open") {
     top = (
       <div style={{ display: "flex", justifyContent: "center", paddingTop: 70 }}>
         <LogoTile src="brand/logos/claude.svg" size={250} at={c("logo", 6)} label="Claude" labelAccent="Code" />

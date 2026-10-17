@@ -1,22 +1,13 @@
 import React from "react";
 import { AbsoluteFill, Img, interpolate, random, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
-import { BRAND, C, clamp, EASE, EASE_IO, HEAD, MONO, SERIF } from "./brand";
+import { BRAND, C, clamp, EASE, EASE_IO, MONO } from "./brand";
 
-/** The KANISHK.REWIRES wordmark, set in the brand type (no artwork file exists yet). */
+/** The kanishk.rewires wordmark: one typeface (IBM Plex Mono), always lowercase, lime dot. */
 export const Wordmark: React.FC<{ size: number; color?: string }> = ({ size, color = C.cream }) => (
-  <div style={{ display: "flex", alignItems: "baseline", whiteSpace: "nowrap", color }}>
-    <span style={{ fontFamily: HEAD, fontWeight: 700, fontSize: size, letterSpacing: `${-0.02 * size}px` }}>{BRAND.wordmark.left}</span>
-    <span
-      style={{
-        display: "inline-block",
-        width: size * 0.2,
-        height: size * 0.2,
-        borderRadius: "50%",
-        background: C.lime,
-        margin: `0 ${size * 0.05}px 0 ${size * 0.07}px`,
-      }}
-    />
-    <span style={{ fontFamily: SERIF, fontWeight: 400, fontSize: size * 1.06, letterSpacing: `${-0.01 * size}px` }}>{BRAND.wordmark.right}</span>
+  <div style={{ display: "flex", alignItems: "baseline", whiteSpace: "nowrap", color, fontFamily: MONO, fontWeight: 500, fontSize: size, letterSpacing: `${-0.01 * size}px`, textTransform: "lowercase" }}>
+    <span>{BRAND.wordmark.left}</span>
+    <span style={{ color: C.lime, fontWeight: 600 }}>{BRAND.wordmark.dot}</span>
+    <span>{BRAND.wordmark.right}</span>
   </div>
 );
 
