@@ -6,6 +6,12 @@
   "postGroupId": "6ad326dad9bbd9a04e642761",
   "mediaId": "6ad326e3c012b79dd3945c5e",
   "video": "renders/claude-code-video-edit_v1.mp4",
-  "status": "published (Reel) via Publish Now, 2026-10-17 ~07:44 UTC (1:14 PM IST)",
-  "created": "2026-10-17"
+  "status": "MISTAKE: published early on 2026-10-17 ~1:14 PM IST (postGroup 6ad326dad9bbd9a04e642761, IG id 18180941989441961). User must delete it in the Instagram app.",
+  "created": "2026-10-17",
+  "scheduled": {
+    "postGroupId": "6ad32836c012b79dd39465d9",
+    "mediaId": "6ad32836d9bbd9a04e643210",
+    "when": "2026-10-18T11:00:00+05:30 (05:30 UTC)",
+    "status": "scheduled"
+  }
 }
