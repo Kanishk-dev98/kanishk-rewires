@@ -16,10 +16,11 @@ import { Grain, SourceTag, Vignette } from "./fx";
 import { LogoReveal } from "./LogoReveal";
 import { isDark, SceneData, SCENES as TYPE_SCENES } from "./scenes";
 import { CINE_SCENES } from "./cineScenes";
+import { PROMO_SCENES } from "./promo";
 import { TUT_SCENES } from "./tutScenes";
 import { UI_SCENES } from "./uiScenes";
 
-const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES };
+const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES, ...PROMO_SCENES };
 
 export type Sfx = { src: string; at: number; volume?: number };
 export type RewiresScene = {
@@ -123,7 +124,7 @@ export const Rewires: React.FC<RewiresProps> = ({ scenes, captions, showCaptions
           <Sequence key={i} from={starts[i]} durationInFrames={s.dur} premountFor={fps} name={`${i} ${s.type}`}>
             <Entrance kind={s.transition}>
               {Scene ? <Scene data={s.data} /> : null}
-              <Vignette strength={isDark(s.data) ? 0.5 : 0.12} />
+              {s.type.startsWith("p") ? null : <Vignette strength={isDark(s.data) ? 0.5 : 0.12} />}
               {s.source ? <SourceTag text={s.source} dark={isDark(s.data)} /> : null}
             </Entrance>
             {s.vo ? (

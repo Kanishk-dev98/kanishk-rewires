@@ -1,0 +1,1106 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "s01",
+      "type": "pKinetic",
+      "dur": 69,
+      "vo": "projects/promo-ai-native/vo/s01.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "Engineers",
+          "are",
+          "shipping",
+          "everyday"
+        ],
+        "accent": 3,
+        "particles": "specks",
+        "size": 56
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s02",
+      "type": "pLogoCloud",
+      "dur": 72.0,
+      "vo": "projects/promo-ai-native/vo/s02.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "dark",
+        "pre": "with",
+        "accentWord": "AI",
+        "logos": [
+          "media/promo/openai-w.svg",
+          "media/promo/claude.svg",
+          "media/promo/meta.svg",
+          "media/promo/gemini.svg",
+          "media/promo/github-w.svg",
+          "media/promo/huggingface.svg",
+          "media/promo/perplexity.svg",
+          "media/promo/anthropic-w.svg",
+          "media/promo/openai-w.svg",
+          "media/promo/claude.svg"
+        ]
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s03",
+      "type": "pKinetic",
+      "dur": 60.0,
+      "vo": "projects/promo-ai-native/vo/s03.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "But",
+          "hiring",
+          "hasn't",
+          "caught",
+          "up",
+          "yet."
+        ],
+        "accent": 1,
+        "scramble": true,
+        "step": 3,
+        "size": 52
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s04",
+      "type": "pKinetic",
+      "dur": 63,
+      "vo": "projects/promo-ai-native/vo/s04.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "Traditional",
+          "technical",
+          "interviews"
+        ],
+        "accent": 1,
+        "particles": "symbols",
+        "size": 52
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s05",
+      "type": "pKinetic",
+      "dur": 30.0,
+      "vo": "projects/promo-ai-native/vo/s05.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "don't",
+          "show",
+          "how"
+        ],
+        "accent": 2,
+        "particles": "symbols",
+        "prefix": "<",
+        "suffix": ">",
+        "size": 52
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s06",
+      "type": "pPixel",
+      "dur": 54,
+      "vo": "projects/promo-ai-native/vo/s06.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "engineers",
+          "actually",
+          "work",
+          "today"
+        ],
+        "accent": 1,
+        "size": 52
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s07",
+      "type": "pBracket",
+      "dur": 18.0,
+      "vo": "projects/promo-ai-native/vo/s07.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "word": "Meet"
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s08",
+      "type": "pBrand",
+      "dur": 46,
+      "vo": "projects/promo-ai-native/vo/s08.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "dark"
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s09",
+      "type": "pKinetic",
+      "dur": 37,
+      "vo": "projects/promo-ai-native/vo/s09.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "dark",
+        "words": [
+          "See",
+          "who's",
+          "engineering"
+        ],
+        "accent": 2,
+        "step": 3,
+        "size": 54
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s10",
+      "type": "pCardStack",
+      "dur": 45.0,
+      "vo": null,
+      "voAt": 0,
+      "data": {
+        "theme": "dark",
+        "photo": "media/li2/desk2.jpg",
+        "cards": [
+          [
+            "Memoized list filter to kill avoidable re-renders",
+            "Full-Stack Execution"
+          ],
+          [
+            "Added Redis cache + invalidation on order write paths",
+            "Full-Stack Execution"
+          ],
+          [
+            "Pushed back on a hallucinated Pydantic validator",
+            "Agent Communication"
+          ],
+          [
+            "Added timeout on outbound HTTP the agent missed",
+            "Verification & Shipping"
+          ],
+          [
+            "Used plan mode before touching the auth flow",
+            "Architectural Research"
+          ],
+          [
+            "Cleaned dead branches the agent left behind",
+            "Codebase Orientation"
+          ],
+          [
+            "Caught N+1 query the agent left unbatched",
+            "Verification & Shipping"
+          ]
+        ]
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s11",
+      "type": "pKinetic",
+      "dur": 45,
+      "vo": "projects/promo-ai-native/vo/s11.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "dark",
+        "words": [
+          "and",
+          "who's",
+          "just",
+          "vibe-coding"
+        ],
+        "accent": 3,
+        "step": 3,
+        "size": 54
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s12",
+      "type": "pAgentLog",
+      "dur": 60.0,
+      "vo": null,
+      "voAt": 0,
+      "data": {
+        "theme": "dark",
+        "lines": [
+          "\u25cf Read (src/routes/api.ts)",
+          "\u25cf Read (src/db/models.py)",
+          "\u25cf Update (src/services/orders.py)",
+          "  added 14 lines, removed 3 lines",
+          "  Added timeout on the three hottest query paths",
+          "\u00d7 [failed test #1 (301 lines)] this is failing in prod",
+          "\u25cf Thought",
+          "\u25cf Read (services/order.py)",
+          "  Patched the null branch in the order service",
+          "\u00d7 why is memory climbing",
+          "\u25cf Read (workers/consumer.py)",
+          "  Closed a leaking subscription in the event consumer",
+          "\u00d7 still broken"
+        ],
+        "pills": [
+          "failing in prod",
+          "memory climbing",
+          "it's spiking",
+          "still broken",
+          "fix it",
+          "just redeploy",
+          "pool exhausted"
+        ]
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s13",
+      "type": "pInlineTask",
+      "dur": 75.0,
+      "vo": "projects/promo-ai-native/vo/s13.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "before": "Create",
+        "after": "a task",
+        "icon": "media/promo/github.svg",
+        "org": "Awesome Assistant Co",
+        "title": "Voice-Powered Travel Search",
+        "subtitle": "Build a voice-driven travel search application that lets users find listings by speaking naturally.",
+        "overview": "Create a web application where users can describe their ideal trip using their voice and see matching listings in real time. The application should feel conversational: users start with a broad request like \"I want to visit Tokyo\" and progressively refine by speaking additional criteria like \"somewhere near Shibuya\", \"for 4 guests\", or \"with a pool\".",
+        "photos": [
+          "media/li2/desk1.jpg",
+          "media/li2/desk2.jpg",
+          "media/li2/desk1.jpg"
+        ]
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s14",
+      "type": "pPromptAgents",
+      "dur": 71,
+      "vo": "projects/promo-ai-native/vo/s14.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "text": "Give access to real coding agents",
+        "chips": [
+          "media/promo/claude.svg",
+          "media/promo/openai.svg",
+          "+"
+        ]
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s15",
+      "type": "pAvatars",
+      "dur": 63,
+      "vo": "projects/promo-ai-native/vo/s15.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "before": "Share with",
+        "pill": "hundreds",
+        "after": "of candidates",
+        "people": [
+          {
+            "n": 2,
+            "name": "Sophia Reed",
+            "role": "UI Engineer"
+          },
+          {
+            "n": 1,
+            "name": "Ethan Cole",
+            "role": "Backend Engineer"
+          },
+          {
+            "n": 4,
+            "name": "Chloe Park",
+            "role": "Data Engineer"
+          },
+          {
+            "n": 5,
+            "name": "Noah Shah",
+            "role": "DevOps Engineer"
+          },
+          {
+            "n": 6,
+            "name": "Elena Ruiz",
+            "role": "Software Engineer"
+          },
+          {
+            "n": 3,
+            "name": "Sebastian Lee",
+            "role": "iOS Developer"
+          }
+        ]
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s16",
+      "type": "pStartTask",
+      "dur": 60.0,
+      "vo": null,
+      "voAt": 0,
+      "data": {
+        "theme": "dark",
+        "body": "...listings appear in real time. The application should feel conversational: users start with a broad request and progressively refine it by speaking additional criteria like \"somewhere near Shibuya\"."
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s17",
+      "type": "pMascotTerminal",
+      "dur": 90.0,
+      "vo": null,
+      "voAt": 0,
+      "data": {
+        "theme": "dark",
+        "version": "Claude Code v2.1.113",
+        "prompt": "scaffold voice input: MediaRecorder \u2192 Whisper. skip search for now"
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s18",
+      "type": "pIde",
+      "dur": 90.0,
+      "vo": null,
+      "voAt": 0,
+      "data": {
+        "theme": "dark",
+        "files": [
+          "\u203a frontend",
+          "  scripts",
+          "  tests",
+          "  .dockerignore",
+          "  .env",
+          "  .gitignore",
+          "  BACKLOG.md",
+          "  CLAUDE.md",
+          "  README.md"
+        ],
+        "code": [
+          "import { useState, useRef } from 'react'",
+          "import { parseIntent } from '../lib/whisper/parseIntent'",
+          "import type { VoiceQuery } from '../types'",
+          "",
+          "export const useVoiceQuery = () => {",
+          "  const queryRef = useRef<VoiceQuery>({})",
+          "  const [searchParams, setSearchParams] = useState({})",
+          "  const deferred = useDeferredValue(searchParams)",
+          "  const [isPending, startTransition] = useTransition()",
+          "  const onTranscript = (t: string) => {",
+          "    const next = parseIntent(t)",
+          "    queryRef.current = { ...queryRef.current, ...next }",
+          "    startTransition(() => setSearchParams(queryRef.current))",
+          "  }",
+          "  return { deferred, isPending, onTranscript }",
+          "}"
+        ],
+        "panel": [
+          "\u25cf Bash  npm i -D vite-plugin-mkcert",
+          "  added 1 package, 0 vulnerabilities",
+          "\u25cf Update  vite.config.ts",
+          "done: dev server now runs on https://localhost:5173",
+          "> scaffold voice input: MediaRecorder \u2192 Whisper",
+          "\u25cf Bash  mkdir -p src/hooks src/lib/whisper",
+          "  created 3 files"
+        ]
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s19",
+      "type": "pSubmit",
+      "dur": 45.0,
+      "vo": null,
+      "voAt": 0,
+      "data": {
+        "theme": "dark",
+        "label": "Submit"
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s20",
+      "type": "pKinetic",
+      "dur": 38,
+      "vo": "projects/promo-ai-native/vo/s20.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "You",
+          "see",
+          "everything"
+        ],
+        "accent": 2,
+        "icon": "plane",
+        "step": 3,
+        "size": 60
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s21",
+      "type": "pTiltList",
+      "dur": 165.0,
+      "vo": null,
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "items": [
+          "Deliverable",
+          "Code",
+          "How they use agents",
+          "AI Analysis"
+        ],
+        "photo": "media/li2/desk2.jpg",
+        "gallery": [
+          "media/li2/desk1.jpg",
+          "media/li2/desk2.jpg",
+          "media/li2/desk1.jpg",
+          "media/li2/desk2.jpg",
+          "media/li2/desk2.jpg",
+          "media/li2/desk1.jpg",
+          "media/li2/desk2.jpg",
+          "media/li2/desk1.jpg"
+        ],
+        "code": [
+          "export const useVoiceQuery = () => {",
+          "  const queryRef = useRef<VoiceQuery>({})",
+          "  const [searchParams, setSearchParams] = useState({})",
+          "  const deferred = useDeferredValue(searchParams)",
+          "  const [isPending, startTransition] = useTransition()",
+          "  const onTranscript = (t: string) => {",
+          "    const next = parseIntent(t)",
+          "    queryRef.current = { ...queryRef.current, ...next }",
+          "    startTransition(() => setSearchParams(queryRef.current))",
+          "  }",
+          "  return { deferred, isPending, onTranscript }"
+        ],
+        "agent": [
+          "\u25cf Bash  npm i -D vite-plugin-mkcert",
+          "done: dev server now runs on https://localhost:5173",
+          "> scaffold voice input",
+          "\u25cf Bash  mkdir -p src/hooks",
+          "  created 3 files"
+        ],
+        "rubric": [
+          [
+            "Codebase Orientation",
+            "Excellent"
+          ],
+          [
+            "Architectural Research",
+            "Good"
+          ],
+          [
+            "Full-Stack Execution",
+            "Excellent"
+          ],
+          [
+            "Communication with Coding Agent",
+            "Good"
+          ]
+        ]
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s22",
+      "type": "pBands",
+      "dur": 86,
+      "vo": "projects/promo-ai-native/vo/s22.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "dark",
+        "pre": "Agents",
+        "accentWord": "analyze",
+        "post": "candidate performance"
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s23",
+      "type": "pChecklist",
+      "dur": 48.0,
+      "vo": null,
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "items": [
+          "Code quality",
+          "Problem decomposition",
+          "Adaptability",
+          "Testing approach",
+          "Tech stack decisions",
+          "Iterative mindset",
+          "Verifies AI output",
+          "Debugging instinct"
+        ]
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s24",
+      "type": "pScoreRows",
+      "dur": 75.0,
+      "vo": "projects/promo-ai-native/vo/s24.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "title": "and score them",
+        "rows": [
+          {
+            "n": 3,
+            "name": "Sebastian",
+            "role": "iOS Developer",
+            "grade": "Good",
+            "rank": 2
+          },
+          {
+            "n": 2,
+            "name": "Sophia",
+            "role": "UI Engineer",
+            "grade": "Good",
+            "rank": 3
+          },
+          {
+            "n": 1,
+            "name": "Ethan",
+            "role": "Backend Engineer",
+            "grade": "Average",
+            "rank": 4
+          },
+          {
+            "n": 5,
+            "name": "Noah",
+            "role": "DevOps Engineer",
+            "grade": "Great",
+            "rank": 1
+          },
+          {
+            "n": 4,
+            "name": "Chloe",
+            "role": "Data Engineer",
+            "grade": "Excellent",
+            "rank": 0
+          }
+        ]
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s25",
+      "type": "pMeetings",
+      "dur": 45.0,
+      "vo": "projects/promo-ai-native/vo/s25.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "line": "so you interview",
+        "cards": [
+          "Meet with Zoe",
+          "Chat with Sebastian",
+          "Call with Hannah",
+          "Meet with Caleb",
+          "Chat with Owen",
+          "Call with Lily",
+          "Chat with Jack",
+          "Chat with Emma",
+          "Chat with Ava",
+          "Meet with Daniel",
+          "Chat with Ella",
+          "Meet with Benjamin",
+          "Call with Henry",
+          "Interview with Noah"
+        ]
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s26",
+      "type": "pMeetings",
+      "dur": 36.0,
+      "vo": "projects/promo-ai-native/vo/s26.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "burst": true,
+        "left": "and",
+        "right": "hire",
+        "cards": [
+          "Meet with Zoe",
+          "Chat with Sebastian",
+          "Call with Hannah",
+          "Meet with Caleb",
+          "Chat with Owen",
+          "Call with Lily",
+          "Chat with Jack",
+          "Chat with Emma",
+          "Chat with Ava",
+          "Meet with Daniel",
+          "Chat with Ella",
+          "Meet with Benjamin",
+          "Call with Henry",
+          "Interview with Noah",
+          "Chat with Ella",
+          "Meet with Zoe"
+        ]
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s27",
+      "type": "pPill",
+      "dur": 36.0,
+      "vo": "projects/promo-ai-native/vo/s27.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "only",
+          "the",
+          "best."
+        ],
+        "accent": 2
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s28",
+      "type": "pBrand",
+      "dur": 48.0,
+      "vo": "projects/promo-ai-native/vo/s28.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream"
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s29",
+      "type": "pKinetic",
+      "dur": 72.0,
+      "vo": "projects/promo-ai-native/vo/s29.mp3",
+      "voAt": 0,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "Hire",
+          "AI-native",
+          "engineers"
+        ],
+        "accent": 1,
+        "step": 4,
+        "size": 56
+      },
+      "transition": "cut",
+      "sfx": []
+    }
+  ],
+  "captions": [
+    {
+      "text": "Engineers",
+      "startMs": 84,
+      "endMs": 637
+    },
+    {
+      "text": "are",
+      "startMs": 649,
+      "endMs": 793
+    },
+    {
+      "text": "shipping",
+      "startMs": 805,
+      "endMs": 1394
+    },
+    {
+      "text": "everyday",
+      "startMs": 1550,
+      "endMs": 2115
+    },
+    {
+      "text": "with",
+      "startMs": 2396,
+      "endMs": 2516
+    },
+    {
+      "text": "AI",
+      "startMs": 2528,
+      "endMs": 3009
+    },
+    {
+      "text": "But",
+      "startMs": 4784,
+      "endMs": 4844
+    },
+    {
+      "text": "hiring",
+      "startMs": 4856,
+      "endMs": 5253
+    },
+    {
+      "text": "hasn't",
+      "startMs": 5253,
+      "endMs": 5601
+    },
+    {
+      "text": "caught",
+      "startMs": 5601,
+      "endMs": 5842
+    },
+    {
+      "text": "up",
+      "startMs": 5854,
+      "endMs": 5986
+    },
+    {
+      "text": "yet",
+      "startMs": 5986,
+      "endMs": 6287
+    },
+    {
+      "text": "Traditional",
+      "startMs": 6796,
+      "endMs": 7361
+    },
+    {
+      "text": "technical",
+      "startMs": 7457,
+      "endMs": 7974
+    },
+    {
+      "text": "interviews",
+      "startMs": 7974,
+      "endMs": 8623
+    },
+    {
+      "text": "don't",
+      "startMs": 8896,
+      "endMs": 9016
+    },
+    {
+      "text": "show",
+      "startMs": 9016,
+      "endMs": 9245
+    },
+    {
+      "text": "how",
+      "startMs": 9245,
+      "endMs": 9605
+    },
+    {
+      "text": "engineers",
+      "startMs": 9896,
+      "endMs": 10449
+    },
+    {
+      "text": "actually",
+      "startMs": 10521,
+      "endMs": 10810
+    },
+    {
+      "text": "work",
+      "startMs": 10822,
+      "endMs": 11038
+    },
+    {
+      "text": "today",
+      "startMs": 11038,
+      "endMs": 11423
+    },
+    {
+      "text": "Meet",
+      "startMs": 11684,
+      "endMs": 12009
+    },
+    {
+      "text": "Kanishk",
+      "startMs": 12296,
+      "endMs": 12705
+    },
+    {
+      "text": "Rewires",
+      "startMs": 12801,
+      "endMs": 13558
+    },
+    {
+      "text": "See",
+      "startMs": 13829,
+      "endMs": 14034
+    },
+    {
+      "text": "who's",
+      "startMs": 14034,
+      "endMs": 14262
+    },
+    {
+      "text": "engineering",
+      "startMs": 14274,
+      "endMs": 14791
+    },
+    {
+      "text": "and",
+      "startMs": 16563,
+      "endMs": 16611
+    },
+    {
+      "text": "who's",
+      "startMs": 16611,
+      "endMs": 16815
+    },
+    {
+      "text": "just",
+      "startMs": 16827,
+      "endMs": 17068
+    },
+    {
+      "text": "vibe-coding",
+      "startMs": 17068,
+      "endMs": 17777
+    },
+    {
+      "text": "Create",
+      "startMs": 20063,
+      "endMs": 20327
+    },
+    {
+      "text": "a",
+      "startMs": 20327,
+      "endMs": 20375
+    },
+    {
+      "text": "task",
+      "startMs": 20375,
+      "endMs": 20892
+    },
+    {
+      "text": "Give",
+      "startMs": 22551,
+      "endMs": 22707
+    },
+    {
+      "text": "access",
+      "startMs": 22707,
+      "endMs": 23260
+    },
+    {
+      "text": "to",
+      "startMs": 23272,
+      "endMs": 23464
+    },
+    {
+      "text": "real",
+      "startMs": 23476,
+      "endMs": 23789
+    },
+    {
+      "text": "coding",
+      "startMs": 23801,
+      "endMs": 24125
+    },
+    {
+      "text": "agents",
+      "startMs": 24125,
+      "endMs": 24630
+    },
+    {
+      "text": "Share",
+      "startMs": 24929,
+      "endMs": 25230
+    },
+    {
+      "text": "with",
+      "startMs": 25374,
+      "endMs": 25518
+    },
+    {
+      "text": "hundreds",
+      "startMs": 25518,
+      "endMs": 25963
+    },
+    {
+      "text": "of",
+      "startMs": 25963,
+      "endMs": 26023
+    },
+    {
+      "text": "candidates",
+      "startMs": 26035,
+      "endMs": 26744
+    },
+    {
+      "text": "You",
+      "startMs": 36529,
+      "endMs": 36602
+    },
+    {
+      "text": "see",
+      "startMs": 36602,
+      "endMs": 36830
+    },
+    {
+      "text": "everything",
+      "startMs": 36902,
+      "endMs": 37503
+    },
+    {
+      "text": "Agents",
+      "startMs": 43284,
+      "endMs": 43729
+    },
+    {
+      "text": "analyze",
+      "startMs": 43825,
+      "endMs": 44450
+    },
+    {
+      "text": "candidate",
+      "startMs": 44522,
+      "endMs": 45039
+    },
+    {
+      "text": "performance",
+      "startMs": 45039,
+      "endMs": 45868
+    },
+    {
+      "text": "and",
+      "startMs": 47763,
+      "endMs": 47835
+    },
+    {
+      "text": "score",
+      "startMs": 47835,
+      "endMs": 48171
+    },
+    {
+      "text": "them",
+      "startMs": 48171,
+      "endMs": 48376
+    },
+    {
+      "text": "so",
+      "startMs": 50263,
+      "endMs": 50371
+    },
+    {
+      "text": "you",
+      "startMs": 50383,
+      "endMs": 50551
+    },
+    {
+      "text": "interview",
+      "startMs": 50563,
+      "endMs": 51044
+    },
+    {
+      "text": "and",
+      "startMs": 51751,
+      "endMs": 51823
+    },
+    {
+      "text": "hire",
+      "startMs": 51823,
+      "endMs": 52292
+    },
+    {
+      "text": "only",
+      "startMs": 52951,
+      "endMs": 53107
+    },
+    {
+      "text": "the",
+      "startMs": 53107,
+      "endMs": 53179
+    },
+    {
+      "text": "best",
+      "startMs": 53191,
+      "endMs": 53720
+    },
+    {
+      "text": "Kanishk",
+      "startMs": 54163,
+      "endMs": 54559
+    },
+    {
+      "text": "Rewires",
+      "startMs": 54571,
+      "endMs": 55269
+    },
+    {
+      "text": "Hire",
+      "startMs": 55763,
+      "endMs": 56063
+    },
+    {
+      "text": "AI-native",
+      "startMs": 56220,
+      "endMs": 56784
+    },
+    {
+      "text": "engineers",
+      "startMs": 56784,
+      "endMs": 57470
+    }
+  ],
+  "showCaptions": false,
+  "music": "projects/promo-ai-native/music.wav",
+  "musicVolume": 0.13,
+  "outro": {
+    "dur": 75,
+    "sound": "projects/promo-ai-native/signature.wav",
+    "size": 200,
+    "wordSize": 48
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "video": "/Users/kanishk.raj/kanishk-rewires/projects/promo-ai-native/renders/promo-ai-native_v2.mp4",
+  "passed": true,
+  "checks": [
+    {
+      "check": "resolution",
+      "ok": true,
+      "detail": "1920x1080",
+      "severity": "info"
+    },
+    {
+      "check": "frame rate",
+      "ok": true,
+      "detail": "30.00 fps",
+      "severity": "info"
+    },
+    {
+      "check": "video codec",
+      "ok": true,
+      "detail": "h264",
+      "severity": "info"
+    },
+    {
+      "check": "audio",
+      "ok": true,
+      "detail": "aac 48000 Hz",
+      "severity": "info"
+    },
+    {
+      "check": "duration",
+      "ok": true,
+      "detail": "60.60 s (expected 60.57 s)",
+      "severity": "info"
+    },
+    {
+      "check": "duration target",
+      "ok": true,
+      "detail": "60.6 s vs target 30 to 60 s",
+      "severity": "info"
+    },
+    {
+      "check": "decodes clean",
+      "ok": true,
+      "detail": "no decode errors",
+      "severity": "info"
+    },
+    {
+      "check": "no black frames",
+      "ok": true,
+      "detail": "none",
+      "severity": "info"
+    },
+    {
+      "check": "no freezes in the body",
+      "ok": true,
+      "detail": "none (outro hold is intentional)",
+      "severity": "info"
+    },
+    {
+      "check": "no silent gaps",
+      "ok": true,
+      "detail": "none",
+      "severity": "info"
+    },
+    {
+      "check": "loudness",
+      "ok": true,
+      "detail": "-15.5 LUFS (target -14)",
+      "severity": "info"
+    },
+    {
+      "check": "true peak",
+      "ok": true,
+      "detail": "-1.5 dBTP",
+      "severity": "info"
+    },
+    {
+      "check": "safe area",
+      "ok": true,
+      "detail": "nothing drawn within 60 px of the sides (full-bleed scenes not checked: s02, s14, s15, s18, s22, s25, s26)",
+      "severity": "info"
+    },
+    {
+      "check": "brand ending",
+      "ok": true,
+      "detail": "lime px 18, cream px 378",
+      "severity": "info"
+    }
+  ],
+  "contactSheet": "/Users/kanishk.raj/kanishk-rewires/projects/promo-ai-native/reports/contact_sheet.png",
+  "needsHumanReview": [
+    "overlapping elements",
+    "pacing and readability",
+    "visual taste and continuity",
+    "voice delivery"
+  ]
+}

@@ -22,7 +22,7 @@ Status: ✅ exists in the engine · 🧩 partly exists · 🆕 build when first 
 
 | # | Technique | Looks like | Use it for | Build notes (Remotion) | Status |
 |---|---|---|---|---|---|
-| 1 | Kinetic sentence | Words land one by one, centred, small sans with one italic serif accent word; tiny lime specks drift around | Hooks, transitions, punchlines | Split the words; each word gets a blur-in at its cue; specks are 8 to 14 absolutely placed 4 px squares on a `random()` drift path | 🧩 (`Rich`, `MaskUp`) |
+| 1 | Kinetic sentence (built: `pKinetic`, see promo-build.md) | Words land one by one, centred, small sans with one italic serif accent word; tiny lime specks drift around | Hooks, transitions, punchlines | Split the words; each word gets a blur-in at its cue; specks are 8 to 14 absolutely placed 4 px squares on a `random()` drift path | 🧩 (`Rich`, `MaskUp`) |
 | 2 | UI inline in a sentence | "Create [icon tile with a cursor] a task": a live UI element sits between words, then expands into a window | Showing an action inside the narration | Flex row of text, element, text; the element pops on its cue, then animates width and height into a card | 🆕 |
 | 3 | Word pill | The key word sits in a dark rounded pill ("Share with (hundreds) of…"), or an outline pill that morphs its text | Numbers, quantities, keywords | `<span>` with border-radius 999 and a charcoal background, lime text; morph by cross-fading two spans with a width tween | 🆕 |
 | 4 | Logo cloud in depth | Brand app tiles float at 3 depths: far ones small and blurred, near ones big with motion streaks | "Works with every AI tool", ecosystems | Tiles from `LogoTile`; per tile, depth z gives scale, blur and parallax speed; streaks are a 3 frame trail of decaying copies | 🧩 (`LogoTile`) |

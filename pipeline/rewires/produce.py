@@ -63,7 +63,7 @@ class Production:
 
     def script(self):
         sb = self._sb()
-        missing = [s["id"] for s in sb["scenes"] if not s.get("vo", "").strip()]
+        missing = [s["id"] for s in sb["scenes"] if not s.get("vo", "").strip() and not s.get("silent")]
         if missing:
             raise Blocked(f"scenes without narration: {missing}")
         words = sum(len(s["vo"].split()) for s in sb["scenes"])
@@ -85,7 +85,7 @@ class Production:
         vcfg = {**self.prod["voice"], **sb.get("voice", {})}
         prov = voice.provider(vcfg)
         vo_dir = self.dir / "audio" / "vo"
-        res = prov.synthesize([(s["id"], s["vo"]) for s in sb["scenes"]], vo_dir)
+        res = prov.synthesize([(s["id"], s["vo"]) for s in sb["scenes"] if s.get("vo", "").strip()], vo_dir)
         (self.public / "vo").mkdir(parents=True, exist_ok=True)
         for sid, (path, dur, words, cached) in res.items():
             if dur <= 0.2 or not words:
@@ -136,9 +136,10 @@ class Production:
             jobs.append((fdir / f"{s['id']}.png", f))
             start += s["dur"]
         jobs.append((fdir / "outro.png", tl["bodyFrames"] + timing.outro_frames(self._sb(), self.prod) - 1))
-        procs = [subprocess.Popen(["npx", "remotion", "still", "Rewires", str(p), f"--props={props}", f"--frame={f}", "--log=error", "--gl=angle"], cwd=config.STUDIO) for p, f in jobs]
-        if any(pr.wait() for pr in procs):
-            raise Blocked("styleframe render failed")
+        for b in range(0, len(jobs), 6):  # batches keep audio extraction from timing out
+            procs = [subprocess.Popen(["npx", "remotion", "still", "Rewires", str(p), f"--props={props}", f"--frame={f}", "--log=error", "--gl=angle", "--timeout=120000"], cwd=config.STUDIO) for p, f in jobs[b:b + 6]]
+            if any(pr.wait() for pr in procs):
+                raise Blocked("styleframe render failed")
         inputs = sum((["-i", str(p)] for p, _ in jobs), [])
         n = len(jobs)
         cols = min(n, 6)

@@ -26,7 +26,9 @@ from . import config
 SCENE_TYPES = {"hook", "stat", "compare", "quote", "timeline", "route", "headline", "takeaway",
                "systemHook", "profile", "prospects", "personalize", "workflow", "convert",
                "tutHook", "tutEasy", "tutStep", "tutSave", "tutCta",
-               "cineHook", "cineFlip", "cineRealHook", "cineRealFlip", "cineTrackHook", "cineTrackRun", "cineSpecs", "cineTimeline", "cinePress", "cineLesson", "cineViral"}
+               "cineHook", "cineFlip", "cineRealHook", "cineRealFlip", "cineTrackHook", "cineTrackRun",
+               "pKinetic", "pLogoCloud", "pPixel", "pBracket", "pBrand", "pCardStack", "pAgentLog", "pInlineTask", "pPromptAgents", "pAvatars",
+               "pStartTask", "pMascotTerminal", "pIde", "pSubmit", "pTiltList", "pBands", "pChecklist", "pScoreRows", "pMeetings", "pPill", "cineSpecs", "cineTimeline", "cinePress", "cineLesson", "cineViral"}
 NON_TEXT_KEYS = {"theme", "accent", "highlight", "cue", "hero", "logo", "kind"}
 DASHES = re.compile("[–—]")
 TEXT_KEYS = {"kicker", "lines", "sub", "label", "title", "note", "quote", "who", "role", "input", "body", "final", "points", "items", "rows", "a", "b", "display", "unit", "date", "text"}
@@ -81,7 +83,7 @@ def validate(sb: dict, sources: dict) -> tuple[list[str], list[str]]:
         seen.add(sid)
         if s.get("type") not in SCENE_TYPES:
             errors.append(f"{sid}: unknown scene type {s.get('type')!r}")
-        if not s.get("vo", "").strip():
+        if not s.get("vo", "").strip() and not s.get("silent"):
             warnings.append(f"{sid}: no narration")
         vo_words = [norm_word(w) for w in s.get("vo", "").split()]
         cue_words = [str(v).split("@")[0] for v in s.get("cues", {}).values()]

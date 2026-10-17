@@ -1,0 +1,784 @@
+{
+  "id": "promo-ai-native",
+  "title": "Hire AI-native engineers (promo rebuild)",
+  "format": "16x9",
+  "captions": false,
+  "research": "not-needed",
+  "voice": {
+    "provider": "edge",
+    "edge": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+4%"
+    }
+  },
+  "outro": {
+    "seconds": 2.5,
+    "size": 200,
+    "wordSize": 48
+  },
+  "render": {
+    "concurrency": 4,
+    "timeoutMs": 240000
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "type": "pKinetic",
+      "vo": "Engineers are shipping everyday",
+      "minFrames": 60.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "Engineers",
+          "are",
+          "shipping",
+          "everyday"
+        ],
+        "accent": 3,
+        "particles": "specks",
+        "size": 56
+      }
+    },
+    {
+      "id": "s02",
+      "type": "pLogoCloud",
+      "vo": "with AI.",
+      "minFrames": 72.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "dark",
+        "pre": "with",
+        "accentWord": "AI",
+        "logos": [
+          "media/promo/openai-w.svg",
+          "media/promo/claude.svg",
+          "media/promo/meta.svg",
+          "media/promo/gemini.svg",
+          "media/promo/github-w.svg",
+          "media/promo/huggingface.svg",
+          "media/promo/perplexity.svg",
+          "media/promo/anthropic-w.svg",
+          "media/promo/openai-w.svg",
+          "media/promo/claude.svg"
+        ]
+      },
+      "bleed": true
+    },
+    {
+      "id": "s03",
+      "type": "pKinetic",
+      "vo": "But hiring hasn't caught up yet.",
+      "minFrames": 60.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "But",
+          "hiring",
+          "hasn't",
+          "caught",
+          "up",
+          "yet."
+        ],
+        "accent": 1,
+        "scramble": true,
+        "step": 3,
+        "size": 52
+      }
+    },
+    {
+      "id": "s04",
+      "type": "pKinetic",
+      "vo": "Traditional technical interviews",
+      "minFrames": 45.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "Traditional",
+          "technical",
+          "interviews"
+        ],
+        "accent": 1,
+        "particles": "symbols",
+        "size": 52
+      }
+    },
+    {
+      "id": "s05",
+      "type": "pKinetic",
+      "vo": "don't show how",
+      "minFrames": 30.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "don't",
+          "show",
+          "how"
+        ],
+        "accent": 2,
+        "particles": "symbols",
+        "prefix": "<",
+        "suffix": ">",
+        "size": 52
+      }
+    },
+    {
+      "id": "s06",
+      "type": "pPixel",
+      "vo": "engineers actually work today.",
+      "minFrames": 45.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "engineers",
+          "actually",
+          "work",
+          "today"
+        ],
+        "accent": 1,
+        "size": 52
+      }
+    },
+    {
+      "id": "s07",
+      "type": "pBracket",
+      "vo": "Meet",
+      "minFrames": 18.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "word": "Meet"
+      }
+    },
+    {
+      "id": "s08",
+      "type": "pBrand",
+      "vo": "Kanishk Rewires.",
+      "minFrames": 45.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "dark"
+      }
+    },
+    {
+      "id": "s09",
+      "type": "pKinetic",
+      "vo": "See who's engineering,",
+      "minFrames": 27.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "dark",
+        "words": [
+          "See",
+          "who's",
+          "engineering"
+        ],
+        "accent": 2,
+        "step": 3,
+        "size": 54
+      }
+    },
+    {
+      "id": "s10",
+      "type": "pCardStack",
+      "vo": "",
+      "minFrames": 45.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "dark",
+        "photo": "media/li2/desk2.jpg",
+        "cards": [
+          [
+            "Memoized list filter to kill avoidable re-renders",
+            "Full-Stack Execution"
+          ],
+          [
+            "Added Redis cache + invalidation on order write paths",
+            "Full-Stack Execution"
+          ],
+          [
+            "Pushed back on a hallucinated Pydantic validator",
+            "Agent Communication"
+          ],
+          [
+            "Added timeout on outbound HTTP the agent missed",
+            "Verification & Shipping"
+          ],
+          [
+            "Used plan mode before touching the auth flow",
+            "Architectural Research"
+          ],
+          [
+            "Cleaned dead branches the agent left behind",
+            "Codebase Orientation"
+          ],
+          [
+            "Caught N+1 query the agent left unbatched",
+            "Verification & Shipping"
+          ]
+        ]
+      },
+      "silent": true
+    },
+    {
+      "id": "s11",
+      "type": "pKinetic",
+      "vo": "and who's just vibe-coding.",
+      "minFrames": 30.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "dark",
+        "words": [
+          "and",
+          "who's",
+          "just",
+          "vibe-coding"
+        ],
+        "accent": 3,
+        "step": 3,
+        "size": 54
+      }
+    },
+    {
+      "id": "s12",
+      "type": "pAgentLog",
+      "vo": "",
+      "minFrames": 60.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "dark",
+        "lines": [
+          "● Read (src/routes/api.ts)",
+          "● Read (src/db/models.py)",
+          "● Update (src/services/orders.py)",
+          "  added 14 lines, removed 3 lines",
+          "  Added timeout on the three hottest query paths",
+          "× [failed test #1 (301 lines)] this is failing in prod",
+          "● Thought",
+          "● Read (services/order.py)",
+          "  Patched the null branch in the order service",
+          "× why is memory climbing",
+          "● Read (workers/consumer.py)",
+          "  Closed a leaking subscription in the event consumer",
+          "× still broken"
+        ],
+        "pills": [
+          "failing in prod",
+          "memory climbing",
+          "it's spiking",
+          "still broken",
+          "fix it",
+          "just redeploy",
+          "pool exhausted"
+        ]
+      },
+      "silent": true
+    },
+    {
+      "id": "s13",
+      "type": "pInlineTask",
+      "vo": "Create a task.",
+      "minFrames": 75.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "before": "Create",
+        "after": "a task",
+        "icon": "media/promo/github.svg",
+        "org": "Awesome Assistant Co",
+        "title": "Voice-Powered Travel Search",
+        "subtitle": "Build a voice-driven travel search application that lets users find listings by speaking naturally.",
+        "overview": "Create a web application where users can describe their ideal trip using their voice and see matching listings in real time. The application should feel conversational: users start with a broad request like \"I want to visit Tokyo\" and progressively refine by speaking additional criteria like \"somewhere near Shibuya\", \"for 4 guests\", or \"with a pool\".",
+        "photos": [
+          "media/li2/desk1.jpg",
+          "media/li2/desk2.jpg",
+          "media/li2/desk1.jpg"
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "type": "pPromptAgents",
+      "vo": "Give access to real coding agents.",
+      "minFrames": 60.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "text": "Give access to real coding agents",
+        "chips": [
+          "media/promo/claude.svg",
+          "media/promo/openai.svg",
+          "+"
+        ]
+      },
+      "bleed": true
+    },
+    {
+      "id": "s15",
+      "type": "pAvatars",
+      "vo": "Share with hundreds of candidates.",
+      "minFrames": 60.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "before": "Share with",
+        "pill": "hundreds",
+        "after": "of candidates",
+        "people": [
+          {
+            "n": 2,
+            "name": "Sophia Reed",
+            "role": "UI Engineer"
+          },
+          {
+            "n": 1,
+            "name": "Ethan Cole",
+            "role": "Backend Engineer"
+          },
+          {
+            "n": 4,
+            "name": "Chloe Park",
+            "role": "Data Engineer"
+          },
+          {
+            "n": 5,
+            "name": "Noah Shah",
+            "role": "DevOps Engineer"
+          },
+          {
+            "n": 6,
+            "name": "Elena Ruiz",
+            "role": "Software Engineer"
+          },
+          {
+            "n": 3,
+            "name": "Sebastian Lee",
+            "role": "iOS Developer"
+          }
+        ]
+      },
+      "bleed": true
+    },
+    {
+      "id": "s16",
+      "type": "pStartTask",
+      "vo": "",
+      "minFrames": 60.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "dark",
+        "body": "...listings appear in real time. The application should feel conversational: users start with a broad request and progressively refine it by speaking additional criteria like \"somewhere near Shibuya\"."
+      },
+      "silent": true
+    },
+    {
+      "id": "s17",
+      "type": "pMascotTerminal",
+      "vo": "",
+      "minFrames": 90.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "dark",
+        "version": "Claude Code v2.1.113",
+        "prompt": "scaffold voice input: MediaRecorder → Whisper. skip search for now"
+      },
+      "silent": true
+    },
+    {
+      "id": "s18",
+      "type": "pIde",
+      "vo": "",
+      "minFrames": 90.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "dark",
+        "files": [
+          "› frontend",
+          "  scripts",
+          "  tests",
+          "  .dockerignore",
+          "  .env",
+          "  .gitignore",
+          "  BACKLOG.md",
+          "  CLAUDE.md",
+          "  README.md"
+        ],
+        "code": [
+          "import { useState, useRef } from 'react'",
+          "import { parseIntent } from '../lib/whisper/parseIntent'",
+          "import type { VoiceQuery } from '../types'",
+          "",
+          "export const useVoiceQuery = () => {",
+          "  const queryRef = useRef<VoiceQuery>({})",
+          "  const [searchParams, setSearchParams] = useState({})",
+          "  const deferred = useDeferredValue(searchParams)",
+          "  const [isPending, startTransition] = useTransition()",
+          "  const onTranscript = (t: string) => {",
+          "    const next = parseIntent(t)",
+          "    queryRef.current = { ...queryRef.current, ...next }",
+          "    startTransition(() => setSearchParams(queryRef.current))",
+          "  }",
+          "  return { deferred, isPending, onTranscript }",
+          "}"
+        ],
+        "panel": [
+          "● Bash  npm i -D vite-plugin-mkcert",
+          "  added 1 package, 0 vulnerabilities",
+          "● Update  vite.config.ts",
+          "done: dev server now runs on https://localhost:5173",
+          "> scaffold voice input: MediaRecorder → Whisper",
+          "● Bash  mkdir -p src/hooks src/lib/whisper",
+          "  created 3 files"
+        ]
+      },
+      "silent": true,
+      "bleed": true
+    },
+    {
+      "id": "s19",
+      "type": "pSubmit",
+      "vo": "",
+      "minFrames": 45.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "dark",
+        "label": "Submit"
+      },
+      "silent": true
+    },
+    {
+      "id": "s20",
+      "type": "pKinetic",
+      "vo": "You see everything.",
+      "minFrames": 30.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "You",
+          "see",
+          "everything"
+        ],
+        "accent": 2,
+        "icon": "plane",
+        "step": 3,
+        "size": 60
+      }
+    },
+    {
+      "id": "s21",
+      "type": "pTiltList",
+      "vo": "",
+      "minFrames": 165.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "items": [
+          "Deliverable",
+          "Code",
+          "How they use agents",
+          "AI Analysis"
+        ],
+        "photo": "media/li2/desk2.jpg",
+        "gallery": [
+          "media/li2/desk1.jpg",
+          "media/li2/desk2.jpg",
+          "media/li2/desk1.jpg",
+          "media/li2/desk2.jpg",
+          "media/li2/desk2.jpg",
+          "media/li2/desk1.jpg",
+          "media/li2/desk2.jpg",
+          "media/li2/desk1.jpg"
+        ],
+        "code": [
+          "export const useVoiceQuery = () => {",
+          "  const queryRef = useRef<VoiceQuery>({})",
+          "  const [searchParams, setSearchParams] = useState({})",
+          "  const deferred = useDeferredValue(searchParams)",
+          "  const [isPending, startTransition] = useTransition()",
+          "  const onTranscript = (t: string) => {",
+          "    const next = parseIntent(t)",
+          "    queryRef.current = { ...queryRef.current, ...next }",
+          "    startTransition(() => setSearchParams(queryRef.current))",
+          "  }",
+          "  return { deferred, isPending, onTranscript }"
+        ],
+        "agent": [
+          "● Bash  npm i -D vite-plugin-mkcert",
+          "done: dev server now runs on https://localhost:5173",
+          "> scaffold voice input",
+          "● Bash  mkdir -p src/hooks",
+          "  created 3 files"
+        ],
+        "rubric": [
+          [
+            "Codebase Orientation",
+            "Excellent"
+          ],
+          [
+            "Architectural Research",
+            "Good"
+          ],
+          [
+            "Full-Stack Execution",
+            "Excellent"
+          ],
+          [
+            "Communication with Coding Agent",
+            "Good"
+          ]
+        ]
+      },
+      "silent": true
+    },
+    {
+      "id": "s22",
+      "type": "pBands",
+      "vo": "Agents analyze candidate performance,",
+      "minFrames": 60.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "dark",
+        "pre": "Agents",
+        "accentWord": "analyze",
+        "post": "candidate performance"
+      },
+      "bleed": true
+    },
+    {
+      "id": "s23",
+      "type": "pChecklist",
+      "vo": "",
+      "minFrames": 48.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "items": [
+          "Code quality",
+          "Problem decomposition",
+          "Adaptability",
+          "Testing approach",
+          "Tech stack decisions",
+          "Iterative mindset",
+          "Verifies AI output",
+          "Debugging instinct"
+        ]
+      },
+      "silent": true
+    },
+    {
+      "id": "s24",
+      "type": "pScoreRows",
+      "vo": "and score them,",
+      "minFrames": 75.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "title": "and score them",
+        "rows": [
+          {
+            "n": 3,
+            "name": "Sebastian",
+            "role": "iOS Developer",
+            "grade": "Good",
+            "rank": 2
+          },
+          {
+            "n": 2,
+            "name": "Sophia",
+            "role": "UI Engineer",
+            "grade": "Good",
+            "rank": 3
+          },
+          {
+            "n": 1,
+            "name": "Ethan",
+            "role": "Backend Engineer",
+            "grade": "Average",
+            "rank": 4
+          },
+          {
+            "n": 5,
+            "name": "Noah",
+            "role": "DevOps Engineer",
+            "grade": "Great",
+            "rank": 1
+          },
+          {
+            "n": 4,
+            "name": "Chloe",
+            "role": "Data Engineer",
+            "grade": "Excellent",
+            "rank": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "s25",
+      "type": "pMeetings",
+      "vo": "so you interview",
+      "minFrames": 45.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "line": "so you interview",
+        "cards": [
+          "Meet with Zoe",
+          "Chat with Sebastian",
+          "Call with Hannah",
+          "Meet with Caleb",
+          "Chat with Owen",
+          "Call with Lily",
+          "Chat with Jack",
+          "Chat with Emma",
+          "Chat with Ava",
+          "Meet with Daniel",
+          "Chat with Ella",
+          "Meet with Benjamin",
+          "Call with Henry",
+          "Interview with Noah"
+        ]
+      },
+      "bleed": true
+    },
+    {
+      "id": "s26",
+      "type": "pMeetings",
+      "vo": "and hire",
+      "minFrames": 36.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "burst": true,
+        "left": "and",
+        "right": "hire",
+        "cards": [
+          "Meet with Zoe",
+          "Chat with Sebastian",
+          "Call with Hannah",
+          "Meet with Caleb",
+          "Chat with Owen",
+          "Call with Lily",
+          "Chat with Jack",
+          "Chat with Emma",
+          "Chat with Ava",
+          "Meet with Daniel",
+          "Chat with Ella",
+          "Meet with Benjamin",
+          "Call with Henry",
+          "Interview with Noah",
+          "Chat with Ella",
+          "Meet with Zoe"
+        ]
+      },
+      "bleed": true
+    },
+    {
+      "id": "s27",
+      "type": "pPill",
+      "vo": "only the best.",
+      "minFrames": 36.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "only",
+          "the",
+          "best."
+        ],
+        "accent": 2
+      }
+    },
+    {
+      "id": "s28",
+      "type": "pBrand",
+      "vo": "Kanishk Rewires.",
+      "minFrames": 48.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream"
+      }
+    },
+    {
+      "id": "s29",
+      "type": "pKinetic",
+      "vo": "Hire AI-native engineers.",
+      "minFrames": 72.0,
+      "leadIn": 0,
+      "pad": 2,
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "words": [
+          "Hire",
+          "AI-native",
+          "engineers"
+        ],
+        "accent": 1,
+        "step": 4,
+        "size": 56
+      }
+    }
+  ]
+}
