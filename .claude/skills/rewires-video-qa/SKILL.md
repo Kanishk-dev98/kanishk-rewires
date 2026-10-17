@@ -30,6 +30,10 @@ Look at the actual frames: a styleframe board, then a contact sheet of the final
 - [ ] Music energetic and on the beat; impacts and dead stops land on the story beats (verify with `silencedetect`).
 - [ ] Loudness about −14 LUFS (`ebur128`).
 
+## Cover
+
+- [ ] **9:16 cover, grid-safe.** Instagram's profile grid shows only the centre 3:4 (y 240 to 1680 of 1920). Every word and logo sits inside it; preview the crop before posting. Never a 16:9 cover for a Reel. (User, 2026-10-17, Outship post.)
+
 ## File
 
 - [ ] Duration as intended; decodes clean (`ffmpeg -v error -i f -f null -`).

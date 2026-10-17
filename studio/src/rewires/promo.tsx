@@ -787,6 +787,41 @@ export const Thumb16: React.FC<{ kicker: string; line1: string; line2: string; a
   </AbsoluteFill>
 );
 
+// ------------------------------------------------------------------ 9:16 cover, designed for the 3:4 profile-grid crop
+// Instagram shows the centre 1080x1440 of a 1080x1920 cover in the grid: everything that matters sits inside y 240 to 1680.
+export const Thumb916: React.FC<{ kicker: string; line1: string; line2: string; accent: string; mark: string; tool: string; site: string; guides?: boolean }> = ({ kicker, line1, line2, accent, mark, tool, site, guides }) => (
+  <AbsoluteFill style={{ background: C.charcoal, fontFamily: BODY, color: C.cream }}>
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse 80% 45% at 50% 62%, rgba(167,255,63,0.16), rgba(0,0,0,0) 70%)" }} />
+    {new Array(48).fill(0).map((_, i) => (
+      <div key={i} style={{ position: "absolute", left: 120 + (i % 12) * 72, top: 1290 + Math.floor(i / 12) * 72, width: 40, height: 40, background: C.lime, opacity: 0.04 + 0.42 * random(`v${i}`) * (Math.floor(i / 12) / 4 + 0.2) }} />
+    ))}
+    <div style={{ position: "absolute", left: 0, right: 0, top: 330, textAlign: "center", fontFamily: MONO, fontWeight: 600, fontSize: 34, letterSpacing: 8, color: C.lime }}>{kicker}</div>
+    <div style={{ position: "absolute", left: 60, right: 60, top: 420, textAlign: "center", fontWeight: 700, fontSize: 118, lineHeight: 1.02, letterSpacing: -3 }}>
+      <div>{line1}</div>
+      <div style={{ marginTop: 26 }}>{line2}</div>
+      <div style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 400, color: C.lime, fontSize: 150, lineHeight: 1.0 }}>{accent}</div>
+    </div>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1060, display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 24, padding: "20px 32px", borderRadius: 26, background: C.graphite, border: "2px solid rgba(167,255,63,0.4)" }}>
+        <Img src={staticFile(mark)} style={{ width: 80, height: 80 }} />
+        <div>
+          <div style={{ fontSize: 58, fontWeight: 600, lineHeight: 1 }}>{tool}</div>
+          <div style={{ fontFamily: MONO, fontSize: 22, letterSpacing: 4, color: C.grey, marginTop: 8 }}>{site}</div>
+        </div>
+      </div>
+    </div>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1580, display: "flex", justifyContent: "center", alignItems: "center", gap: 14 }}>
+      <Img src={staticFile(BRAND.logo.monogramPublic)} style={{ width: 56, height: 56 }} />
+      <span style={{ fontFamily: MONO, fontSize: 30, color: C.stone }}>
+        {BRAND.wordmark.left}
+        <span style={{ color: C.lime }}>{BRAND.wordmark.dot}</span>
+        {BRAND.wordmark.right}
+      </span>
+    </div>
+    {guides ? <div style={{ position: "absolute", left: 0, right: 0, top: 240, height: 1440, border: "4px dashed #E5484D" }} /> : null}
+  </AbsoluteFill>
+);
+
 export const PROMO_SCENES: Record<string, React.FC<SceneProps>> = {
   pToolBrand: PToolBrandScene,
   pKinetic: PKineticScene,
