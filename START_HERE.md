@@ -21,6 +21,6 @@ Everything loads by itself from this folder:
 
 ## 3. If something is missing
 
-- **On another computer:** `git clone https://github.com/kanishk-986/video-agent.git ~/reels-agent`, then `git submodule update --init --depth 1 references/OpenMontage references/awesome-opus5-5-videos`, then follow the setup in README.md (npm install in `studio/`, Python venv, regenerate music).
+- **On another computer:** `git clone https://github.com/kanishk-986/kanishk-wires.git ~/reels-agent`, then `git submodule update --init --depth 1 references/OpenMontage references/awesome-opus5-5-videos`, then follow the setup in README.md (npm install in `studio/`, Python venv, regenerate music).
 - **Pushing fails:** run `gh auth login` once.
 - **Gmail tools fail:** reconnect Gmail in claude.ai connector settings.

@@ -1,4 +1,4 @@
-# video-agent
+# kanishk-wires
 
 For making production grade videos for Instagram, YouTube and all.
 

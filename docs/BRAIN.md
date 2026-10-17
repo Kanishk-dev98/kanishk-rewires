@@ -36,7 +36,7 @@ The user is **Alok Diwan** (works at Antier, which builds Abstraxn). Run an agen
 10. **Email attempt:** Gmail tool can only create drafts and needed re-authentication; shared via private claude.ai page instead.
 11. **Research:** 84 verified Instagram reference accounts + the market gap (`research/instagram/`).
 12. **User shared** https://github.com/calesthio/OpenMontage → assessed (`references/README.md`).
-13. **User asked** for one separate git space with everything → this repo, https://github.com/kanishk-986/video-agent (private).
+13. **User asked** for one separate git space with everything → this repo, https://github.com/kanishk-986/video-agent (private). On 2026-10-17 it moved to its own repo, https://github.com/kanishk-986/kanishk-wires (private), with full history; `video-agent` is the old copy.
 14. **Abstraxn introduction film** (2026-10-15): 5:39 landscape institutional film for Alok Diwan's personal portfolio (interview selection), approved by Ankit. Brand pulled from abstraxn.com/brand-kit; Microsoft Andrew voice; original score; dashboard recreated as motion graphics; credit "Produced by Alok Diwan". See `films/abstraxn-intro/`.
 15. **Abstraxn film v2** (2026-10-15): user feedback "too slow, slow piano music, mid-level visuals, overlaps". Rebuilt with a 120 BPM trailer score, cinematic FX, fixed zones, plain-English labels; 4:36.
 16. **58 s brand film from the user's own motion brief** (2026-10-16, `films/abstraxn-58/`): 12 styleframes + animatic, 118 BPM beat grid, music full stop on the HELD stamp. Rev 2: dot grid became the **logo triangle**; busy moments slowed. Rev 3: extended to **61 s** for readability, playback-safe mastering (bt709 + faststart).

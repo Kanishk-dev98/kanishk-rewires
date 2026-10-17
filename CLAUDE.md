@@ -1,6 +1,6 @@
 # kanishk.wires: video studio
 
-This repo is the workspace for **kanishk.wires**, Alok Diwan's marketing channel and page. Here we make Abstraxn films, Apolio films, AI and marketing reels, and other brand videos, all rendered from code. GitHub: `kanishk-986/video-agent` (private).
+This repo is the workspace for **kanishk.wires**, Alok Diwan's marketing channel and page. Here we make Abstraxn films, Apolio films, AI and marketing reels, and other brand videos, all rendered from code. GitHub: `kanishk-986/kanishk-wires` (private).
 
 ## Read first
 
