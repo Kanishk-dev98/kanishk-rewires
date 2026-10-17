@@ -1,0 +1,135 @@
+1
+00:00:00,187 --> 00:00:01,789
+Here's how to edit your videos with Claude
+
+2
+00:00:01,809 --> 00:00:02,522
+Code
+
+3
+00:00:02,596 --> 00:00:04,127
+It's easier than you think
+
+4
+00:00:04,147 --> 00:00:05,604
+Only seven steps
+
+5
+00:00:05,763 --> 00:00:06,452
+One
+
+6
+00:00:06,472 --> 00:00:09,120
+Open Claude Code in a new project folder
+
+7
+00:00:09,263 --> 00:00:09,904
+Two
+
+8
+00:00:09,924 --> 00:00:11,683
+Install the Remotion skills
+
+9
+00:00:11,703 --> 00:00:14,110
+so Claude knows how to animate with code
+
+10
+00:00:14,287 --> 00:00:15,012
+Three
+
+11
+00:00:15,032 --> 00:00:16,526
+Drop in a reel you love
+
+12
+00:00:16,546 --> 00:00:19,002
+Claude pulls the frames and the transcript
+
+13
+00:00:19,022 --> 00:00:20,805
+and maps every cut
+
+14
+00:00:21,023 --> 00:00:21,676
+Four
+
+15
+00:00:21,696 --> 00:00:22,854
+Add your brand kit
+
+16
+00:00:22,874 --> 00:00:25,029
+Colours fonts and logo
+
+17
+00:00:25,049 --> 00:00:28,178
+saved once and reused in every video
+
+18
+00:00:28,402 --> 00:00:29,151
+Five
+
+19
+00:00:29,171 --> 00:00:30,317
+Paste your script
+
+20
+00:00:30,337 --> 00:00:32,276
+Use a free AI voice
+
+21
+00:00:32,296 --> 00:00:33,405
+or record your own
+
+22
+00:00:33,563 --> 00:00:34,432
+Six
+
+23
+00:00:34,452 --> 00:00:35,923
+Ask Claude to build it
+
+24
+00:00:35,943 --> 00:00:37,665
+It writes every scene
+
+25
+00:00:37,709 --> 00:00:40,718
+syncs each word and renders the video
+
+26
+00:00:40,941 --> 00:00:41,715
+Seven
+
+27
+00:00:41,735 --> 00:00:43,926
+Watch it and ask for changes
+
+28
+00:00:43,946 --> 00:00:45,561
+Make the intro faster
+
+29
+00:00:45,581 --> 00:00:46,281
+Done
+
+30
+00:00:46,429 --> 00:00:47,804
+Save this so you can come back to
+
+31
+00:00:47,824 --> 00:00:48,404
+it
+
+32
+00:00:48,563 --> 00:00:49,793
+Comment workflow
+
+33
+00:00:49,813 --> 00:00:51,548
+and I'll send you my full setup
+
+34
+00:00:51,568 --> 00:00:54,468
+The skills the brand template and my prompts

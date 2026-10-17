@@ -56,5 +56,7 @@ def write_props(timeline: dict, sb: dict, prod: dict, public_prefix: str, out: P
     }
     if sb.get("chrome"):
         props["chrome"] = sb["chrome"]
+    if sb.get("captionStyle"):
+        props["captionStyle"] = sb["captionStyle"]
     out.write_text(json.dumps(props, indent=2))
     return out

@@ -1,6 +1,12 @@
 {
   "name": "Kanishk.Rewires",
-  "wordmark": { "left": "KANISHK", "dot": ".", "right": "REWIRES" },
+  "wordmark": {
+    "left": "kanishk",
+    "dot": ".",
+    "right": "rewires",
+    "case": "lower",
+    "note": "User, 2026-10-17: the wordmark is always lowercase (kanishk.rewires), never uppercase."
+  },
   "handle": "@kanishk.rewires",
   "tagline": "Rethink how you think.",
   "philosophy": "Information is the new social currency.",
@@ -14,13 +20,40 @@
     "paleLime": "#E8FFB8"
   },
   "fonts": {
-    "headline": { "family": "Space Grotesk", "source": "Google Fonts (OFL)", "weights": [400, 500, 700] },
-    "body": { "family": "Inter", "source": "Google Fonts (OFL)", "weights": [400, 500, 600, 700] },
-    "mono": { "family": "IBM Plex Mono", "source": "Google Fonts (OFL)", "weights": [400, 500, 600] },
+    "headline": {
+      "family": "Space Grotesk",
+      "source": "Google Fonts (OFL)",
+      "weights": [
+        400,
+        500,
+        700
+      ]
+    },
+    "body": {
+      "family": "Inter",
+      "source": "Google Fonts (OFL)",
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ]
+    },
+    "mono": {
+      "family": "IBM Plex Mono",
+      "source": "Google Fonts (OFL)",
+      "weights": [
+        400,
+        500,
+        600
+      ]
+    },
     "wordmarkSerif": {
       "family": "Instrument Serif",
       "source": "Google Fonts (OFL)",
-      "weights": [400],
+      "weights": [
+        400
+      ],
       "note": "Stand-in for the light high-contrast serif used for REWIRES on the brand board, until the original wordmark artwork exists as a file."
     }
   },
@@ -39,9 +72,17 @@
     "safeBottomPct": 0.18,
     "sideMarginPx": 80
   },
-  "outro": { "seconds": 3.0, "holdSeconds": 1.0 },
+  "outro": {
+    "seconds": 3.0,
+    "holdSeconds": 1.0
+  },
   "rules": {
     "noDashesOnScreen": true,
-    "exactBrandSpellings": ["KANISHK.REWIRES", "Kanishk.Rewires", "@kanishk.rewires"]
+    "exactBrandSpellings": [
+      "kanishk.rewires",
+      "Kanishk.Rewires",
+      "@kanishk.rewires",
+      "KANISHK.REWIRES"
+    ]
   }
 }

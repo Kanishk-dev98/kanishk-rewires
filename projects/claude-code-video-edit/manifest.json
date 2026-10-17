@@ -1,0 +1,260 @@
+{
+  "slug": "claude-code-video-edit",
+  "topic": "How to edit your videos with Claude Code, in 7 steps (style study of ref-1000319940, our script)",
+  "created": "2026-10-17T06:53:48+00:00",
+  "options": {
+    "format": "9x16",
+    "language": "en"
+  },
+  "stages": {
+    "intake": {
+      "status": "done",
+      "at": "2026-10-17T06:53:48+00:00",
+      "note": "project folder and manifest created"
+    },
+    "research": {
+      "status": "done",
+      "at": "2026-10-17T06:53:53+00:00",
+      "note": "3 claims in the ledger",
+      "outputs": [
+        "research/sources.json",
+        "research/sources.md"
+      ]
+    },
+    "brief": {
+      "status": "done",
+      "at": "2026-10-17T06:53:53+00:00",
+      "note": "brief present",
+      "outputs": [
+        "brief/brief.md"
+      ]
+    },
+    "script": {
+      "status": "done",
+      "at": "2026-10-17T06:53:53+00:00",
+      "note": "141 narration words (~54 s at a natural pace)",
+      "outputs": [
+        "script/script.md"
+      ]
+    },
+    "storyboard": {
+      "status": "done",
+      "at": "2026-10-17T06:53:53+00:00",
+      "note": "11 scenes valid, 3 warnings",
+      "outputs": [
+        "storyboard/storyboard.json"
+      ]
+    },
+    "assets": {
+      "status": "done",
+      "at": "2026-10-17T06:54:04+00:00",
+      "note": "11 narration clips (0 reused from cache)",
+      "outputs": [
+        "audio/vo/"
+      ]
+    },
+    "edit": {
+      "status": "done",
+      "at": "2026-10-17T06:56:14+00:00",
+      "note": "11 scenes, body 54.7 s + outro 2.5 s, 141 caption words",
+      "outputs": [
+        "timeline/timeline.json",
+        "timeline/props.json",
+        "captions/claude-code-video-edit.srt",
+        "audio/music.wav",
+        "audio/signature.wav"
+      ]
+    },
+    "render": {
+      "status": "done",
+      "at": "2026-10-17T06:57:33+00:00",
+      "note": "claude-code-video-edit_v1.mp4 (6.4 MB)",
+      "outputs": [
+        "renders/claude-code-video-edit_v1.mp4"
+      ]
+    },
+    "qc": {
+      "status": "done",
+      "at": "2026-10-17T06:58:07+00:00",
+      "note": "claude-code-video-edit_v1.mp4 passed 14 checks",
+      "outputs": [
+        "reports/qc.md",
+        "reports/contact_sheet.png"
+      ]
+    },
+    "delivery": {
+      "status": "done",
+      "at": "2026-10-17T06:58:32+00:00",
+      "note": "delivered claude-code-video-edit_v1.mp4",
+      "outputs": [
+        "reports/production_report.md",
+        "/Users/kanishk.raj/Downloads/Kanishk.Rewires/claude-code-video-edit"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s00.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:54:04+00:00",
+      "cached": false,
+      "seconds": 2.42,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s01.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:54:04+00:00",
+      "cached": false,
+      "seconds": 3.05,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s02.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:54:04+00:00",
+      "cached": false,
+      "seconds": 3.41,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s03.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:54:04+00:00",
+      "cached": false,
+      "seconds": 4.9,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s04.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:54:04+00:00",
+      "cached": false,
+      "seconds": 6.58,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s05.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:54:04+00:00",
+      "cached": false,
+      "seconds": 7.27,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s06.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:54:04+00:00",
+      "cached": false,
+      "seconds": 5.14,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s07.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:54:04+00:00",
+      "cached": false,
+      "seconds": 7.2,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s08.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:54:04+00:00",
+      "cached": false,
+      "seconds": 5.4,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s09.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:54:04+00:00",
+      "cached": false,
+      "seconds": 2.02,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s10.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:54:04+00:00",
+      "cached": false,
+      "seconds": 5.95,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+4%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "music",
+      "path": "audio/music.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-17T06:56:13+00:00",
+      "licence": "original, generated in code"
+    },
+    {
+      "kind": "music",
+      "path": "audio/signature.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-17T06:56:13+00:00",
+      "licence": "original, generated in code"
+    }
+  ],
+  "versions": [
+    {
+      "file": "renders/claude-code-video-edit_v1.mp4",
+      "at": "2026-10-17T12:27:33"
+    }
+  ]
+}

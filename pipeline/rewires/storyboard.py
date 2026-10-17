@@ -24,8 +24,9 @@ from pathlib import Path
 from . import config
 
 SCENE_TYPES = {"hook", "stat", "compare", "quote", "timeline", "route", "headline", "takeaway",
-               "systemHook", "profile", "prospects", "personalize", "workflow", "convert"}
-NON_TEXT_KEYS = {"theme", "accent", "highlight"}
+               "systemHook", "profile", "prospects", "personalize", "workflow", "convert",
+               "tutHook", "tutEasy", "tutStep", "tutSave", "tutCta"}
+NON_TEXT_KEYS = {"theme", "accent", "highlight", "cue", "hero", "logo", "kind"}
 DASHES = re.compile("[–—]")
 TEXT_KEYS = {"kicker", "lines", "sub", "label", "title", "note", "quote", "who", "role", "input", "body", "final", "points", "items", "rows", "a", "b", "display", "unit", "date", "text"}
 
@@ -82,7 +83,8 @@ def validate(sb: dict, sources: dict) -> tuple[list[str], list[str]]:
         if not s.get("vo", "").strip():
             warnings.append(f"{sid}: no narration")
         vo_words = [norm_word(w) for w in s.get("vo", "").split()]
-        for key in ([s["sync"]] if s.get("sync") else []) + s.get("syncs", []) + ([s["highlight"]] if s.get("highlight") else []):
+        cue_words = [str(v).split("@")[0] for v in s.get("cues", {}).values()]
+        for key in ([s["sync"]] if s.get("sync") else []) + s.get("syncs", []) + ([s["highlight"]] if s.get("highlight") else []) + s.get("accents", []) + cue_words:
             if norm_word(key) not in vo_words:
                 errors.append(f"{sid}: sync/highlight word {key!r} is not in the narration")
         for c in s.get("claims", []):

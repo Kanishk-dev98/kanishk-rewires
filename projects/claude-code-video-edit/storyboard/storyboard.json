@@ -1,0 +1,159 @@
+{
+  "id": "claude-code-video-edit",
+  "title": "How to edit your videos with Claude Code",
+  "format": "9x16",
+  "captions": true,
+  "captionStyle": { "top": 0.755, "size": 56, "maxWords": 3, "weight": 800 },
+  "voice": { "provider": "edge", "edge": { "voice": "en-US-AndrewMultilingualNeural", "rate": "+4%" } },
+  "outro": { "seconds": 2.5, "size": 220, "wordSize": 56 },
+  "scenes": [
+    {
+      "id": "s00", "type": "tutHook", "leadIn": 2, "pad": 6, "energy": 2,
+      "vo": "Here's how to edit your videos with Claude Code.",
+      "accents": ["Claude", "Code."],
+      "data": { "kicker": "A TUTORIAL FOR BEGINNERS", "lines": ["How to edit", "videos with", "*Claude Code*"], "logo": "brand/logos/claude.svg" },
+      "visual": "Serif title over an edit timeline with a moving playhead; the Claude mark pops in after the title.",
+      "sfx": [{ "name": "whoosh", "on": 2, "volume": 0.14 }]
+    },
+    {
+      "id": "s01", "type": "tutEasy", "leadIn": 2, "pad": 6, "energy": 2,
+      "vo": "It's easier than you think. Only seven steps.",
+      "cues": { "number": "seven" },
+      "accents": ["easier", "seven"],
+      "data": { "title": "So *easy*.", "from": 3, "to": 7 },
+      "visual": "\"So easy.\" with a lime swash; a giant serif numeral rolls to 7 on the word \"seven\".",
+      "sfx": [{ "name": "tick", "on": { "cue": "number" }, "volume": 0.25 }]
+    },
+    {
+      "id": "s02", "type": "tutStep", "pad": 6, "energy": 2,
+      "vo": "One. Open Claude Code in a new project folder.",
+      "cues": { "logo": "Claude", "open": "Open", "folder": "folder" },
+      "accents": ["Open"],
+      "claims": [],
+      "data": {
+        "step": 1, "hero": "open", "title": "Open *Claude Code*", "termEnter": true,
+        "term": [
+          { "cue": "open", "text": "mkdir my-reels && cd my-reels", "kind": "cmd", "typing": true },
+          { "cue": "folder", "offset": 6, "text": "claude", "kind": "cmd", "typing": true },
+          { "cue": "folder", "offset": 20, "text": "✻ Welcome to Claude Code", "kind": "ok" }
+        ]
+      },
+      "visual": "The terminal opens in its permanent slot; the Claude Code tile pops on \"Claude\"; commands type in.",
+      "sfx": [{ "name": "click", "on": { "cue": "open" }, "volume": 0.2 }]
+    },
+    {
+      "id": "s03", "type": "tutStep", "pad": 6, "energy": 2,
+      "vo": "Two. Install the Remotion skills, so Claude knows how to animate with code.",
+      "cues": { "install": "Install", "remotion": "Remotion", "animate": "animate", "installed": "code." },
+      "accents": ["Remotion"],
+      "claims": ["c1"],
+      "data": {
+        "step": 2, "hero": "skills", "title": "Install the *skills*",
+        "term": [
+          { "cue": "install", "text": "npx skills add remotion-dev/skills", "kind": "cmd", "typing": true },
+          { "cue": "installed", "text": "✓ 12 Remotion skills installed", "kind": "ok" }
+        ]
+      },
+      "visual": "Claude and Remotion logo tiles; a lime wire connects them on \"animate\"; a check and a \"12 skills\" sticker pop on \"code\".",
+      "sfx": [{ "name": "ding", "on": { "cue": "installed" }, "volume": 0.2 }]
+    },
+    {
+      "id": "s04", "type": "tutStep", "pad": 6, "energy": 2,
+      "vo": "Three. Drop in a reel you love. Claude pulls the frames and the transcript, and maps every cut.",
+      "cues": { "reel": "reel", "frames": "frames", "transcript": "transcript", "cut": "cut." },
+      "accents": ["love.", "frames", "cut."],
+      "claims": ["c2"],
+      "data": {
+        "step": 3, "hero": "reference", "title": "Add a *reference*",
+        "chips": [{ "cue": "reel", "text": "▶ reference.mp4" }],
+        "term": [
+          { "cue": "frames", "text": "Bash(ffmpeg · extract frames)", "kind": "tool" },
+          { "cue": "transcript", "text": "Bash(whisper · word timings)", "kind": "tool" },
+          { "cue": "cut", "text": "✓ Beat map saved", "kind": "ok" }
+        ]
+      },
+      "visual": "Our own reel card drops in; six frames from it pop into a grid on \"frames\"; a sticker on \"cut\".",
+      "sfx": [{ "name": "tick", "on": { "cue": "frames" }, "volume": 0.2 }]
+    },
+    {
+      "id": "s05", "type": "tutStep", "pad": 6, "energy": 2,
+      "vo": "Four. Add your brand kit. Colours, fonts and logo, saved once and reused in every video.",
+      "cues": { "colours": "Colours", "fonts": "fonts", "logo": "logo", "once": "once" },
+      "accents": ["brand", "every"],
+      "data": {
+        "step": 4, "hero": "brand", "title": "Add your *brand kit*",
+        "term": [{ "cue": "once", "text": "✓ Saved brand.config.json", "kind": "ok" }]
+      },
+      "visual": "Brand card: the seven brand colours pop as swatches, then the three fonts set in themselves, then the K·R logo, then Saved.",
+      "sfx": [{ "name": "ding", "on": { "cue": "once" }, "volume": 0.18 }]
+    },
+    {
+      "id": "s06", "type": "tutStep", "pad": 6, "energy": 2,
+      "vo": "Five. Paste your script. Use a free AI voice, or record your own.",
+      "cues": { "paste": "Paste", "free": "free", "voice": "voice", "record": "record" },
+      "accents": ["script.", "free"],
+      "claims": ["c3"],
+      "data": {
+        "step": 5, "hero": "script", "title": "Add your *script*",
+        "script": ["Here's how to edit your videos", "with Claude Code. It's easier", "than you think…"],
+        "chips": [{ "cue": "paste", "text": "script.txt" }],
+        "term": [{ "cue": "voice", "offset": 8, "text": "Voice(edge-tts · free)", "kind": "tool" }]
+      },
+      "visual": "Script card fills; the AI voice toggle flips on at \"free\"; a waveform starts on \"voice\".",
+      "sfx": [{ "name": "switch", "on": { "cue": "free" }, "volume": 0.22 }]
+    },
+    {
+      "id": "s07", "type": "tutStep", "pad": 8, "energy": 3,
+      "vo": "Six. Ask Claude to build it. It writes every scene, syncs each word, and renders the video.",
+      "cues": { "ask": "Ask", "build": "build", "scene": "scene,", "word": "word,", "renders": "renders" },
+      "accents": ["build", "renders"],
+      "data": {
+        "step": 6, "hero": "prompt", "title": "Send the *prompt*",
+        "term": [
+          { "cue": "ask", "text": "Edit my script in my brand. Match the reference.", "kind": "cmd", "typing": true },
+          { "cue": "scene", "text": "Write(scenes.tsx)", "kind": "tool" },
+          { "cue": "word", "text": "Sync(captions · every word)", "kind": "tool" },
+          { "cue": "renders", "offset": 34, "text": "✓ Rendered reel_v1.mp4 · 1080×1920", "kind": "ok" }
+        ]
+      },
+      "visual": "Prompt types; a return-key sticker; clip blocks build on \"scene\"; a waveform syncs on \"word\"; a render ring runs to 100%.",
+      "sfx": [{ "name": "click", "on": { "cue": "build" }, "volume": 0.22 }, { "name": "ding", "on": { "cue": "renders", "offset": 34 }, "volume": 0.2 }]
+    },
+    {
+      "id": "s08", "type": "tutStep", "pad": 6, "energy": 2,
+      "vo": "Seven. Watch it, and ask for changes. Make the intro faster. Done.",
+      "cues": { "make": "Make", "done": "Done." },
+      "accents": ["changes.", "Done."],
+      "data": {
+        "step": 7, "hero": "changes", "title": "Changes? *just ask*",
+        "term": [
+          { "cue": "make", "text": "make the intro faster", "kind": "cmd", "typing": true },
+          { "cue": "make", "offset": 22, "text": "Edit(scenes.tsx · intro)", "kind": "tool" },
+          { "cue": "done", "text": "✓ Rendered reel_v2.mp4", "kind": "ok" }
+        ]
+      },
+      "visual": "A phone plays our own LinkedIn reel; the change request types; a v2 sticker pops on \"Done\".",
+      "sfx": [{ "name": "ding", "on": { "cue": "done" }, "volume": 0.2 }]
+    },
+    {
+      "id": "s09", "type": "tutSave", "pad": 6, "energy": 2,
+      "vo": "Save this, so you can come back to it.",
+      "accents": ["Save"],
+      "data": { "title": "Save.", "sub": "SO YOU CAN COME BACK TO IT" },
+      "visual": "\"Save.\" in italic lime serif; a bookmark drops in."
+    },
+    {
+      "id": "s10", "type": "tutCta", "pad": 14, "energy": 2,
+      "vo": "Comment workflow, and I'll send you my full setup. The skills, the brand template, and my prompts.",
+      "cues": { "comment": "Comment", "skills": "skills,", "template": "template,", "prompts": "prompts." },
+      "accents": ["workflow,"],
+      "data": {
+        "word": "WORKFLOW",
+        "items": [{ "text": "Remotion skills setup", "cue": "skills" }, { "text": "Brand kit template", "cue": "template" }, { "text": "My edit prompts", "cue": "prompts" }],
+        "note": "SENT STRAIGHT TO YOUR DMS"
+      },
+      "visual": "\"Comment\" plus a big lime WORKFLOW pill; a comment types and posts; the three deliverables check in one by one.",
+      "sfx": [{ "name": "click", "on": { "cue": "comment", "offset": 24 }, "volume": 0.22 }]
+    }
+  ]
+}

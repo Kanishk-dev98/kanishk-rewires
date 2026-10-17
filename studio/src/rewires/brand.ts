@@ -14,6 +14,7 @@ export const { fontFamily: HEAD } = loadGrotesk("normal", { weights: ["400", "50
 export const { fontFamily: BODY } = loadInter("normal", { weights: ["400", "500", "600", "700"], subsets: ["latin"] });
 export const { fontFamily: MONO } = loadPlexMono("normal", { weights: ["400", "500", "600"], subsets: ["latin"] });
 export const { fontFamily: SERIF } = loadInstrument("normal", { weights: ["400"], subsets: ["latin"] });
+loadInstrument("italic", { weights: ["400"], subsets: ["latin"] });
 
 export const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 /** One easing vocabulary for the whole brand: a fast, settled ease out and a calm ease in out. */

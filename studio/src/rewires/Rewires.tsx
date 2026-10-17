@@ -15,9 +15,10 @@ import { Caption, Captions } from "./Captions";
 import { Grain, SourceTag, Vignette } from "./fx";
 import { LogoReveal } from "./LogoReveal";
 import { isDark, SceneData, SCENES as TYPE_SCENES } from "./scenes";
+import { TUT_SCENES } from "./tutScenes";
 import { UI_SCENES } from "./uiScenes";
 
-const SCENES = { ...TYPE_SCENES, ...UI_SCENES };
+const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES };
 
 export type Sfx = { src: string; at: number; volume?: number };
 export type RewiresScene = {
@@ -41,6 +42,7 @@ export type RewiresProps = {
   outro: { dur: number; sound: string | null; nodes?: string[]; cta?: string; size?: number; wordSize?: number };
   /** Small persistent brand mark, and an optional step rail (scene data.layer picks the active step). */
   chrome?: { bug?: boolean; rail?: string[] };
+  captionStyle?: { top?: number; size?: number; maxWords?: number; weight?: number };
 };
 
 export const calculateRewiresMetadata: CalculateMetadataFunction<RewiresProps> = ({ props }) => ({
@@ -105,7 +107,7 @@ const Rail: React.FC<{ steps: string[]; active: number; until: number }> = ({ st
   );
 };
 
-export const Rewires: React.FC<RewiresProps> = ({ scenes, captions, showCaptions, music, musicVolume, outro, chrome }) => {
+export const Rewires: React.FC<RewiresProps> = ({ scenes, captions, showCaptions, music, musicVolume, outro, chrome, captionStyle }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const starts = scenes.map((_, i) => scenes.slice(0, i).reduce((a, s) => a + s.dur, 0));
@@ -151,7 +153,7 @@ export const Rewires: React.FC<RewiresProps> = ({ scenes, captions, showCaptions
           })()
         : null}
       <Grain opacity={0.06} />
-      {showCaptions ? <Captions captions={captions} themes={themes} endFrame={bodyEnd} maxWords={BRAND.captions.maxWordsPerPage} /> : null}
+      {showCaptions ? <Captions captions={captions} themes={themes} endFrame={bodyEnd} maxWords={captionStyle?.maxWords ?? BRAND.captions.maxWordsPerPage} top={captionStyle?.top} size={captionStyle?.size} weight={captionStyle?.weight} /> : null}
 
       {music ? (
         <Audio

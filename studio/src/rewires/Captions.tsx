@@ -26,11 +26,14 @@ export const paginate = (captions: Caption[], maxWords: number): Caption[][] => 
  * Narration captions: modest size, fixed band below the content zone, no karaoke.
  * Only words flagged `hl` (chosen in the storyboard, at most one per scene) take the accent.
  */
-export const Captions: React.FC<{ captions: Caption[]; themes: ThemeSpan[]; endFrame: number; maxWords: number }> = ({
+export const Captions: React.FC<{ captions: Caption[]; themes: ThemeSpan[]; endFrame: number; maxWords: number; top?: number; size?: number; weight?: number }> = ({
   captions,
   themes,
   endFrame,
   maxWords,
+  top = ZONE.captionTop,
+  size = 46,
+  weight = 600,
 }) => {
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
@@ -54,7 +57,7 @@ export const Captions: React.FC<{ captions: Caption[]; themes: ThemeSpan[]; endF
         position: "absolute",
         left: 80 * u,
         right: 80 * u,
-        top: height * ZONE.captionTop,
+        top: height * top,
         display: "flex",
         justifyContent: "center",
         flexWrap: "wrap",
@@ -62,8 +65,8 @@ export const Captions: React.FC<{ captions: Caption[]; themes: ThemeSpan[]; endF
         opacity: p,
         translate: `0 ${(1 - p) * 10 * u}px`,
         fontFamily: BODY,
-        fontWeight: 600,
-        fontSize: 46 * u,
+        fontWeight: weight,
+        fontSize: size * u,
         lineHeight: 1.25,
         color: dark ? C.cream : C.charcoal,
         textAlign: "center",

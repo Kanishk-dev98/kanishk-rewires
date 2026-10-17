@@ -63,13 +63,14 @@ def edge_ink(img: Image.Image, band: int, dark: bool) -> int:
     return int((sides > 150).sum() if dark else (sides < 100).sum())
 
 
-def ending_ok(img: Image.Image) -> tuple[bool, str]:
+def ending_ok(img: Image.Image, logo_size: float = 380) -> tuple[bool, str]:
     """The last frame must show the lime accent and cream type (monogram + wordmark) on charcoal."""
     a = np.asarray(img.convert("RGB").resize((img.width // 4, img.height // 4))).astype(int)
     r, g, b = a[..., 0], a[..., 1], a[..., 2]
     lime = int(((g > 200) & (r > 120) & (b < 110) & (g - b > 120)).sum())
     cream = int(((r > 225) & (g > 225) & (b > 205)).sum())
-    ok = lime > 30 and cream > 300
+    k = (logo_size / 380) ** 2  # thresholds scale with the logo's area (compact outros are allowed)
+    ok = lime > 30 * k * 0.6 and cream > 300 * k * 0.6
     return ok, f"lime px {lime}, cream px {cream}"
 
 
@@ -150,7 +151,7 @@ def run(video: Path, timeline: dict, sb: dict, reports: Path) -> dict:
     check("safe area", not bad, "; ".join(bad) or f"nothing drawn within {int(margin * 0.75)} px of the sides")
 
     last = Image.open(frame_at(video, max(0, dur - 0.08), frames_dir / "last.png"))
-    ok, detail = ending_ok(last)
+    ok, detail = ending_ok(last, sb.get("outro", {}).get("size", 380))
     check("brand ending", ok, detail)
 
     sheet = contact_sheet(video, reports / "contact_sheet.png", q["contactSheetFps"], dur)

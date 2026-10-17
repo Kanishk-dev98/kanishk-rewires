@@ -40,11 +40,25 @@ def build(sb: dict, vo: dict, prod: dict, vo_public_prefix: str) -> dict:
                     last = ms
                 out.append(lead + round(ms / 1000 * fps) if ms is not None else lead + 8 + 20 * len(out))
             data["syncFrames"] = out
+        if s.get("cues"):  # name -> "word" or "word@2" (second occurrence): the frame the word is spoken
+            cues = {}
+            for name, spec in s["cues"].items():
+                word, _, nth = str(spec).partition("@")
+                ms, after = None, -1.0
+                for _ in range(int(nth or 1)):
+                    ms = find_word(words, word, after)
+                    if ms is None:
+                        break
+                    after = ms
+                cues[name] = lead + round(ms / 1000 * fps) if ms is not None else lead + 8
+            data["cues"] = cues
         sfx = []
         for x in s.get("sfx", []):
             on = x.get("on", 0)
             if on == "sync":
                 at = data.get("syncFrame", lead)
+            elif isinstance(on, dict) and "cue" in on:  # {"cue": name, "offset": n}
+                at = data.get("cues", {}).get(on["cue"], lead) + on.get("offset", 0)
             elif isinstance(on, dict):  # {"sync": i, "offset": n}: the i-th sync word, shifted
                 at = (data.get("syncFrames") or [lead])[min(on["sync"], len(data.get("syncFrames") or [lead]) - 1)] + on.get("offset", 0)
             else:
@@ -66,12 +80,13 @@ def build(sb: dict, vo: dict, prod: dict, vo_public_prefix: str) -> dict:
 
         hl = norm_word(s["highlight"]) if s.get("highlight") else None
         hl_used = False
+        accents = {norm_word(a) for a in s.get("accents", [])}
         offset = (start + lead) / fps * 1000
         for w, a, b in words:
             c = {"text": w, "startMs": round(offset + a), "endMs": round(offset + b)}
-            if hl and not hl_used and norm_word(w) == hl:
+            if (hl and not hl_used and norm_word(w) == hl) or norm_word(w) in accents:
                 c["hl"] = True
-                hl_used = True
+                hl_used = hl_used or norm_word(w) == hl
             captions.append(c)
         sections.append({"start": start / fps, "end": (start + frames) / fps, "energy": s.get("energy", 1)})
         if s.get("hit"):

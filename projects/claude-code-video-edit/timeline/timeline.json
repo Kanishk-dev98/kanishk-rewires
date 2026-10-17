@@ -1,0 +1,1200 @@
+{
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "tutHook",
+      "dur": 73,
+      "vo": "projects/claude-code-video-edit/vo/s00.mp3",
+      "voAt": 2,
+      "data": {
+        "kicker": "A TUTORIAL FOR BEGINNERS",
+        "lines": [
+          "How to edit",
+          "videos with",
+          "*Claude Code*"
+        ],
+        "logo": "brand/logos/claude.svg"
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 2,
+          "volume": 0.14
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "type": "tutEasy",
+      "dur": 93,
+      "vo": "projects/claude-code-video-edit/vo/s01.mp3",
+      "voAt": 2,
+      "data": {
+        "title": "So *easy*.",
+        "from": 3,
+        "to": 7,
+        "cues": {
+          "number": 58
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 58,
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "tutStep",
+      "dur": 105,
+      "vo": "projects/claude-code-video-edit/vo/s02.mp3",
+      "voAt": 4,
+      "data": {
+        "step": 1,
+        "hero": "open",
+        "title": "Open *Claude Code*",
+        "termEnter": true,
+        "term": [
+          {
+            "cue": "open",
+            "text": "mkdir my-reels && cd my-reels",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "folder",
+            "offset": 6,
+            "text": "claude",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "folder",
+            "offset": 20,
+            "text": "\u273b Welcome to Claude Code",
+            "kind": "ok"
+          }
+        ],
+        "cues": {
+          "logo": 35,
+          "open": 28,
+          "folder": 82
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 28,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "tutStep",
+      "dur": 150,
+      "vo": "projects/claude-code-video-edit/vo/s03.mp3",
+      "voAt": 4,
+      "data": {
+        "step": 2,
+        "hero": "skills",
+        "title": "Install the *skills*",
+        "term": [
+          {
+            "cue": "install",
+            "text": "npx skills add remotion-dev/skills",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "installed",
+            "text": "\u2713 12 Remotion skills installed",
+            "kind": "ok"
+          }
+        ],
+        "cues": {
+          "install": 27,
+          "remotion": 41,
+          "animate": 113,
+          "installed": 129
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/ding.wav",
+          "at": 129,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "tutStep",
+      "dur": 201,
+      "vo": "projects/claude-code-video-edit/vo/s04.mp3",
+      "voAt": 4,
+      "data": {
+        "step": 3,
+        "hero": "reference",
+        "title": "Add a *reference*",
+        "chips": [
+          {
+            "cue": "reel",
+            "text": "\u25b6 reference.mp4"
+          }
+        ],
+        "term": [
+          {
+            "cue": "frames",
+            "text": "Bash(ffmpeg \u00b7 extract frames)",
+            "kind": "tool"
+          },
+          {
+            "cue": "transcript",
+            "text": "Bash(whisper \u00b7 word timings)",
+            "kind": "tool"
+          },
+          {
+            "cue": "cut",
+            "text": "\u2713 Beat map saved",
+            "kind": "ok"
+          }
+        ],
+        "cues": {
+          "reel": 40,
+          "frames": 99,
+          "transcript": 118,
+          "cut": 180
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 99,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "tutStep",
+      "dur": 221,
+      "vo": "projects/claude-code-video-edit/vo/s05.mp3",
+      "voAt": 4,
+      "data": {
+        "step": 4,
+        "hero": "brand",
+        "title": "Add your *brand kit*",
+        "term": [
+          {
+            "cue": "once",
+            "text": "\u2713 Saved brand.config.json",
+            "kind": "ok"
+          }
+        ],
+        "cues": {
+          "colours": 64,
+          "fonts": 88,
+          "logo": 104,
+          "once": 139
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/ding.wav",
+          "at": 139,
+          "volume": 0.18
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "tutStep",
+      "dur": 157,
+      "vo": "projects/claude-code-video-edit/vo/s06.mp3",
+      "voAt": 4,
+      "data": {
+        "step": 5,
+        "hero": "script",
+        "title": "Add your *script*",
+        "script": [
+          "Here's how to edit your videos",
+          "with Claude Code. It's easier",
+          "than you think\u2026"
+        ],
+        "chips": [
+          {
+            "cue": "paste",
+            "text": "script.txt"
+          }
+        ],
+        "term": [
+          {
+            "cue": "voice",
+            "offset": 8,
+            "text": "Voice(edge-tts \u00b7 free)",
+            "kind": "tool"
+          }
+        ],
+        "cues": {
+          "paste": 32,
+          "free": 74,
+          "voice": 98,
+          "record": 127
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/switch.wav",
+          "at": 74,
+          "volume": 0.22
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "type": "tutStep",
+      "dur": 221,
+      "vo": "projects/claude-code-video-edit/vo/s07.mp3",
+      "voAt": 4,
+      "data": {
+        "step": 6,
+        "hero": "prompt",
+        "title": "Send the *prompt*",
+        "term": [
+          {
+            "cue": "ask",
+            "text": "Edit my script in my brand. Match the reference.",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "scene",
+            "text": "Write(scenes.tsx)",
+            "kind": "tool"
+          },
+          {
+            "cue": "word",
+            "text": "Sync(captions \u00b7 every word)",
+            "kind": "tool"
+          },
+          {
+            "cue": "renders",
+            "offset": 34,
+            "text": "\u2713 Rendered reel_v1.mp4 \u00b7 1080\u00d71920",
+            "kind": "ok"
+          }
+        ],
+        "cues": {
+          "ask": 34,
+          "build": 53,
+          "scene": 104,
+          "word": 155,
+          "renders": 181
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 53,
+          "volume": 0.22
+        },
+        {
+          "src": "sfx/ding.wav",
+          "at": 215,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "type": "tutStep",
+      "dur": 165,
+      "vo": "projects/claude-code-video-edit/vo/s08.mp3",
+      "voAt": 4,
+      "data": {
+        "step": 7,
+        "hero": "changes",
+        "title": "Changes? *just ask*",
+        "term": [
+          {
+            "cue": "make",
+            "text": "make the intro faster",
+            "kind": "cmd",
+            "typing": true
+          },
+          {
+            "cue": "make",
+            "offset": 22,
+            "text": "Edit(scenes.tsx \u00b7 intro)",
+            "kind": "tool"
+          },
+          {
+            "cue": "done",
+            "text": "\u2713 Rendered reel_v2.mp4",
+            "kind": "ok"
+          }
+        ],
+        "cues": {
+          "make": 97,
+          "done": 146
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/ding.wav",
+          "at": 146,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "type": "tutSave",
+      "dur": 64,
+      "vo": "projects/claude-code-video-edit/vo/s09.mp3",
+      "voAt": 4,
+      "data": {
+        "title": "Save.",
+        "sub": "SO YOU CAN COME BACK TO IT"
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s10",
+      "type": "tutCta",
+      "dur": 190,
+      "vo": "projects/claude-code-video-edit/vo/s10.mp3",
+      "voAt": 4,
+      "data": {
+        "word": "WORKFLOW",
+        "items": [
+          {
+            "text": "Remotion skills setup",
+            "cue": "skills"
+          },
+          {
+            "text": "Brand kit template",
+            "cue": "template"
+          },
+          {
+            "text": "My edit prompts",
+            "cue": "prompts"
+          }
+        ],
+        "note": "SENT STRAIGHT TO YOUR DMS",
+        "cues": {
+          "comment": 7,
+          "skills": 99,
+          "template": 136,
+          "prompts": 154
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 31,
+          "volume": 0.22
+        }
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "text": "Here's",
+      "startMs": 187,
+      "endMs": 331
+    },
+    {
+      "text": "how",
+      "startMs": 331,
+      "endMs": 391
+    },
+    {
+      "text": "to",
+      "startMs": 391,
+      "endMs": 463
+    },
+    {
+      "text": "edit",
+      "startMs": 475,
+      "endMs": 704
+    },
+    {
+      "text": "your",
+      "startMs": 704,
+      "endMs": 824
+    },
+    {
+      "text": "videos",
+      "startMs": 824,
+      "endMs": 1353
+    },
+    {
+      "text": "with",
+      "startMs": 1365,
+      "endMs": 1485
+    },
+    {
+      "text": "Claude",
+      "startMs": 1485,
+      "endMs": 1809,
+      "hl": true
+    },
+    {
+      "text": "Code",
+      "startMs": 1809,
+      "endMs": 2122,
+      "hl": true
+    },
+    {
+      "text": "It's",
+      "startMs": 2596,
+      "endMs": 2716
+    },
+    {
+      "text": "easier",
+      "startMs": 2824,
+      "endMs": 3137,
+      "hl": true
+    },
+    {
+      "text": "than",
+      "startMs": 3137,
+      "endMs": 3245
+    },
+    {
+      "text": "you",
+      "startMs": 3245,
+      "endMs": 3341
+    },
+    {
+      "text": "think",
+      "startMs": 3341,
+      "endMs": 3762
+    },
+    {
+      "text": "Only",
+      "startMs": 4147,
+      "endMs": 4339
+    },
+    {
+      "text": "seven",
+      "startMs": 4351,
+      "endMs": 4627,
+      "hl": true
+    },
+    {
+      "text": "steps",
+      "startMs": 4627,
+      "endMs": 5204
+    },
+    {
+      "text": "One",
+      "startMs": 5763,
+      "endMs": 6087
+    },
+    {
+      "text": "Open",
+      "startMs": 6472,
+      "endMs": 6712,
+      "hl": true
+    },
+    {
+      "text": "Claude",
+      "startMs": 6712,
+      "endMs": 7001
+    },
+    {
+      "text": "Code",
+      "startMs": 7001,
+      "endMs": 7349
+    },
+    {
+      "text": "in",
+      "startMs": 7421,
+      "endMs": 7506
+    },
+    {
+      "text": "a",
+      "startMs": 7518,
+      "endMs": 7542
+    },
+    {
+      "text": "new",
+      "startMs": 7554,
+      "endMs": 7806
+    },
+    {
+      "text": "project",
+      "startMs": 7806,
+      "endMs": 8263
+    },
+    {
+      "text": "folder",
+      "startMs": 8275,
+      "endMs": 8720
+    },
+    {
+      "text": "Two",
+      "startMs": 9263,
+      "endMs": 9551
+    },
+    {
+      "text": "Install",
+      "startMs": 9924,
+      "endMs": 10333
+    },
+    {
+      "text": "the",
+      "startMs": 10333,
+      "endMs": 10393
+    },
+    {
+      "text": "Remotion",
+      "startMs": 10393,
+      "endMs": 10849,
+      "hl": true
+    },
+    {
+      "text": "skills",
+      "startMs": 10849,
+      "endMs": 11342
+    },
+    {
+      "text": "so",
+      "startMs": 11703,
+      "endMs": 11895
+    },
+    {
+      "text": "Claude",
+      "startMs": 12075,
+      "endMs": 12376
+    },
+    {
+      "text": "knows",
+      "startMs": 12388,
+      "endMs": 12676
+    },
+    {
+      "text": "how",
+      "startMs": 12676,
+      "endMs": 12724
+    },
+    {
+      "text": "to",
+      "startMs": 12724,
+      "endMs": 12796
+    },
+    {
+      "text": "animate",
+      "startMs": 12796,
+      "endMs": 13205
+    },
+    {
+      "text": "with",
+      "startMs": 13205,
+      "endMs": 13325
+    },
+    {
+      "text": "code",
+      "startMs": 13325,
+      "endMs": 13710
+    },
+    {
+      "text": "Three",
+      "startMs": 14287,
+      "endMs": 14647
+    },
+    {
+      "text": "Drop",
+      "startMs": 15032,
+      "endMs": 15260
+    },
+    {
+      "text": "in",
+      "startMs": 15272,
+      "endMs": 15320
+    },
+    {
+      "text": "a",
+      "startMs": 15320,
+      "endMs": 15369
+    },
+    {
+      "text": "reel",
+      "startMs": 15381,
+      "endMs": 15669
+    },
+    {
+      "text": "you",
+      "startMs": 15669,
+      "endMs": 15777
+    },
+    {
+      "text": "love",
+      "startMs": 15777,
+      "endMs": 16162,
+      "hl": true
+    },
+    {
+      "text": "Claude",
+      "startMs": 16546,
+      "endMs": 16943
+    },
+    {
+      "text": "pulls",
+      "startMs": 16955,
+      "endMs": 17244
+    },
+    {
+      "text": "the",
+      "startMs": 17244,
+      "endMs": 17316
+    },
+    {
+      "text": "frames",
+      "startMs": 17328,
+      "endMs": 17832,
+      "hl": true
+    },
+    {
+      "text": "and",
+      "startMs": 17845,
+      "endMs": 17893
+    },
+    {
+      "text": "the",
+      "startMs": 17893,
+      "endMs": 17953
+    },
+    {
+      "text": "transcript",
+      "startMs": 17953,
+      "endMs": 18638
+    },
+    {
+      "text": "and",
+      "startMs": 19022,
+      "endMs": 19155
+    },
+    {
+      "text": "maps",
+      "startMs": 19167,
+      "endMs": 19635
+    },
+    {
+      "text": "every",
+      "startMs": 19792,
+      "endMs": 20020
+    },
+    {
+      "text": "cut",
+      "startMs": 20032,
+      "endMs": 20405,
+      "hl": true
+    },
+    {
+      "text": "Four",
+      "startMs": 21023,
+      "endMs": 21335
+    },
+    {
+      "text": "Add",
+      "startMs": 21696,
+      "endMs": 21828
+    },
+    {
+      "text": "your",
+      "startMs": 21840,
+      "endMs": 21900
+    },
+    {
+      "text": "brand",
+      "startMs": 21900,
+      "endMs": 22189,
+      "hl": true
+    },
+    {
+      "text": "kit",
+      "startMs": 22189,
+      "endMs": 22489
+    },
+    {
+      "text": "Colours",
+      "startMs": 22874,
+      "endMs": 23451
+    },
+    {
+      "text": "fonts",
+      "startMs": 23667,
+      "endMs": 24064
+    },
+    {
+      "text": "and",
+      "startMs": 24076,
+      "endMs": 24184
+    },
+    {
+      "text": "logo",
+      "startMs": 24184,
+      "endMs": 24665
+    },
+    {
+      "text": "saved",
+      "startMs": 25049,
+      "endMs": 25374
+    },
+    {
+      "text": "once",
+      "startMs": 25374,
+      "endMs": 25843
+    },
+    {
+      "text": "and",
+      "startMs": 25975,
+      "endMs": 26155
+    },
+    {
+      "text": "reused",
+      "startMs": 26155,
+      "endMs": 26768
+    },
+    {
+      "text": "in",
+      "startMs": 26780,
+      "endMs": 26936
+    },
+    {
+      "text": "every",
+      "startMs": 27081,
+      "endMs": 27285,
+      "hl": true
+    },
+    {
+      "text": "video",
+      "startMs": 27285,
+      "endMs": 27778
+    },
+    {
+      "text": "Five",
+      "startMs": 28402,
+      "endMs": 28774
+    },
+    {
+      "text": "Paste",
+      "startMs": 29171,
+      "endMs": 29363
+    },
+    {
+      "text": "your",
+      "startMs": 29375,
+      "endMs": 29471
+    },
+    {
+      "text": "script",
+      "startMs": 29483,
+      "endMs": 29952,
+      "hl": true
+    },
+    {
+      "text": "Use",
+      "startMs": 30337,
+      "endMs": 30517
+    },
+    {
+      "text": "a",
+      "startMs": 30517,
+      "endMs": 30577
+    },
+    {
+      "text": "free",
+      "startMs": 30577,
+      "endMs": 30974,
+      "hl": true
+    },
+    {
+      "text": "AI",
+      "startMs": 31058,
+      "endMs": 31370
+    },
+    {
+      "text": "voice",
+      "startMs": 31370,
+      "endMs": 31911
+    },
+    {
+      "text": "or",
+      "startMs": 32296,
+      "endMs": 32344
+    },
+    {
+      "text": "record",
+      "startMs": 32344,
+      "endMs": 32668
+    },
+    {
+      "text": "your",
+      "startMs": 32668,
+      "endMs": 32801
+    },
+    {
+      "text": "own",
+      "startMs": 32801,
+      "endMs": 33005
+    },
+    {
+      "text": "Six",
+      "startMs": 33563,
+      "endMs": 34068
+    },
+    {
+      "text": "Ask",
+      "startMs": 34452,
+      "endMs": 34620
+    },
+    {
+      "text": "Claude",
+      "startMs": 34620,
+      "endMs": 35005
+    },
+    {
+      "text": "to",
+      "startMs": 35017,
+      "endMs": 35089
+    },
+    {
+      "text": "build",
+      "startMs": 35101,
+      "endMs": 35378,
+      "hl": true
+    },
+    {
+      "text": "it",
+      "startMs": 35378,
+      "endMs": 35546
+    },
+    {
+      "text": "It",
+      "startMs": 35943,
+      "endMs": 36075
+    },
+    {
+      "text": "writes",
+      "startMs": 36075,
+      "endMs": 36375
+    },
+    {
+      "text": "every",
+      "startMs": 36520,
+      "endMs": 36808
+    },
+    {
+      "text": "scene",
+      "startMs": 36808,
+      "endMs": 37265
+    },
+    {
+      "text": "syncs",
+      "startMs": 37709,
+      "endMs": 38130
+    },
+    {
+      "text": "each",
+      "startMs": 38274,
+      "endMs": 38479
+    },
+    {
+      "text": "word",
+      "startMs": 38491,
+      "endMs": 38971
+    },
+    {
+      "text": "and",
+      "startMs": 39224,
+      "endMs": 39368
+    },
+    {
+      "text": "renders",
+      "startMs": 39380,
+      "endMs": 39765,
+      "hl": true
+    },
+    {
+      "text": "the",
+      "startMs": 39765,
+      "endMs": 39837
+    },
+    {
+      "text": "video",
+      "startMs": 39849,
+      "endMs": 40318
+    },
+    {
+      "text": "Seven",
+      "startMs": 40941,
+      "endMs": 41338
+    },
+    {
+      "text": "Watch",
+      "startMs": 41735,
+      "endMs": 41975
+    },
+    {
+      "text": "it",
+      "startMs": 41987,
+      "endMs": 42155
+    },
+    {
+      "text": "and",
+      "startMs": 42408,
+      "endMs": 42552
+    },
+    {
+      "text": "ask",
+      "startMs": 42672,
+      "endMs": 42877
+    },
+    {
+      "text": "for",
+      "startMs": 42877,
+      "endMs": 42973
+    },
+    {
+      "text": "changes",
+      "startMs": 42973,
+      "endMs": 43586,
+      "hl": true
+    },
+    {
+      "text": "Make",
+      "startMs": 43946,
+      "endMs": 44091
+    },
+    {
+      "text": "the",
+      "startMs": 44091,
+      "endMs": 44163
+    },
+    {
+      "text": "intro",
+      "startMs": 44175,
+      "endMs": 44571
+    },
+    {
+      "text": "faster",
+      "startMs": 44571,
+      "endMs": 45208
+    },
+    {
+      "text": "Done",
+      "startMs": 45581,
+      "endMs": 45881,
+      "hl": true
+    },
+    {
+      "text": "Save",
+      "startMs": 46429,
+      "endMs": 46766,
+      "hl": true
+    },
+    {
+      "text": "this",
+      "startMs": 46778,
+      "endMs": 47103
+    },
+    {
+      "text": "so",
+      "startMs": 47115,
+      "endMs": 47211
+    },
+    {
+      "text": "you",
+      "startMs": 47211,
+      "endMs": 47271
+    },
+    {
+      "text": "can",
+      "startMs": 47271,
+      "endMs": 47355
+    },
+    {
+      "text": "come",
+      "startMs": 47355,
+      "endMs": 47463
+    },
+    {
+      "text": "back",
+      "startMs": 47463,
+      "endMs": 47691
+    },
+    {
+      "text": "to",
+      "startMs": 47691,
+      "endMs": 47824
+    },
+    {
+      "text": "it",
+      "startMs": 47824,
+      "endMs": 48004
+    },
+    {
+      "text": "Comment",
+      "startMs": 48563,
+      "endMs": 48851
+    },
+    {
+      "text": "workflow",
+      "startMs": 48851,
+      "endMs": 49440,
+      "hl": true
+    },
+    {
+      "text": "and",
+      "startMs": 49813,
+      "endMs": 49897
+    },
+    {
+      "text": "I'll",
+      "startMs": 49909,
+      "endMs": 50005
+    },
+    {
+      "text": "send",
+      "startMs": 50017,
+      "endMs": 50258
+    },
+    {
+      "text": "you",
+      "startMs": 50258,
+      "endMs": 50306
+    },
+    {
+      "text": "my",
+      "startMs": 50306,
+      "endMs": 50450
+    },
+    {
+      "text": "full",
+      "startMs": 50462,
+      "endMs": 50678
+    },
+    {
+      "text": "setup",
+      "startMs": 50678,
+      "endMs": 51171
+    },
+    {
+      "text": "The",
+      "startMs": 51568,
+      "endMs": 51628
+    },
+    {
+      "text": "skills",
+      "startMs": 51628,
+      "endMs": 52289
+    },
+    {
+      "text": "the",
+      "startMs": 52481,
+      "endMs": 52577
+    },
+    {
+      "text": "brand",
+      "startMs": 52589,
+      "endMs": 52878
+    },
+    {
+      "text": "template",
+      "startMs": 52878,
+      "endMs": 53262
+    },
+    {
+      "text": "and",
+      "startMs": 53286,
+      "endMs": 53334
+    },
+    {
+      "text": "my",
+      "startMs": 53334,
+      "endMs": 53443
+    },
+    {
+      "text": "prompts",
+      "startMs": 53455,
+      "endMs": 54068
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 2.433333333333333,
+      "energy": 2
+    },
+    {
+      "start": 2.433333333333333,
+      "end": 5.533333333333333,
+      "energy": 2
+    },
+    {
+      "start": 5.533333333333333,
+      "end": 9.033333333333333,
+      "energy": 2
+    },
+    {
+      "start": 9.033333333333333,
+      "end": 14.033333333333333,
+      "energy": 2
+    },
+    {
+      "start": 14.033333333333333,
+      "end": 20.733333333333334,
+      "energy": 2
+    },
+    {
+      "start": 20.733333333333334,
+      "end": 28.1,
+      "energy": 2
+    },
+    {
+      "start": 28.1,
+      "end": 33.333333333333336,
+      "energy": 2
+    },
+    {
+      "start": 33.333333333333336,
+      "end": 40.7,
+      "energy": 3
+    },
+    {
+      "start": 40.7,
+      "end": 46.2,
+      "energy": 2
+    },
+    {
+      "start": 46.2,
+      "end": 48.333333333333336,
+      "energy": 2
+    },
+    {
+      "start": 48.333333333333336,
+      "end": 54.666666666666664,
+      "energy": 2
+    }
+  ],
+  "hits": [],
+  "bodyFrames": 1640
+}

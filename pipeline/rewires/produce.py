@@ -131,7 +131,8 @@ class Production:
         fdir.mkdir(exist_ok=True)
         start, jobs = 0, []
         for s in tl["scenes"]:
-            f = start + min(s["dur"] - 1, max(s["data"].get("syncFrame", 0), *(s["data"].get("syncFrames") or [0])) + 24)
+            key = max(s["data"].get("syncFrame", 0), *(s["data"].get("syncFrames") or [0]), *(s["data"].get("cues") or {}).values(), 0)
+            f = start + min(s["dur"] - 1, max(key + 24, int(s["dur"] * 0.8)))
             jobs.append((fdir / f"{s['id']}.png", f))
             start += s["dur"]
         jobs.append((fdir / "outro.png", tl["bodyFrames"] + timing.outro_frames(self._sb(), self.prod) - 1))
