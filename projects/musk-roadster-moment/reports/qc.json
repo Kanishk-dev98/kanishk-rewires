@@ -1,5 +1,5 @@
 {
-  "video": "/Users/kanishk.raj/kanishk-rewires/projects/musk-roadster-moment/renders/musk-roadster-moment_v2.mp4",
+  "video": "/Users/kanishk.raj/kanishk-rewires/projects/musk-roadster-moment/renders/musk-roadster-moment_v3.mp4",
   "passed": true,
   "checks": [
     {
@@ -65,7 +65,7 @@
     {
       "check": "loudness",
       "ok": true,
-      "detail": "-14.5 LUFS (target -14)",
+      "detail": "-14.4 LUFS (target -14)",
       "severity": "info"
     },
     {

@@ -2,17 +2,14 @@
   "scenes": [
     {
       "id": "s00",
-      "type": "cineHook",
+      "type": "cineRealHook",
       "dur": 154,
       "vo": "projects/musk-roadster-moment/vo/s00.mp3",
       "voAt": 4,
       "data": {
         "kicker": "YOU CAN'T BUY IT UNTIL",
-        "model": "media/cine/car.glb",
-        "hdr": "media/cine/env.hdr",
-        "fit": {
-          "variant": "Torched Graphite"
-        },
+        "road": "media/cine/tesla/road.mp4",
+        "credit": "FOOTAGE: TESLA",
         "cues": {
           "buy": 95,
           "year": 112
@@ -29,36 +26,40 @@
     },
     {
       "id": "s01",
-      "type": "cineFlip",
+      "type": "cineRealFlip",
       "dur": 257,
       "vo": "projects/musk-roadster-moment/vo/s01.mp3",
       "voAt": 4,
       "data": {
         "tag": "OCT 15, 2026 \u00b7 SPACEX TEST SITE, TEXAS",
-        "credit": "CAR MODEL: E. CHADWICK / DGG \u00b7 CC BY 4.0",
-        "model": "media/cine/car.glb",
-        "hdr": "media/cine/env.hdr",
-        "fit": {
-          "variant": "Torched Graphite"
-        },
-        "blur": 5
+        "credit": "FOOTAGE: TESLA",
+        "base": "media/cine/tesla/base.mp4",
+        "wall": "media/cine/tesla/wall.mp4",
+        "flip": "media/cine/tesla/flip_slow.mp4",
+        "land": "media/cine/tesla/land.mp4",
+        "freeze": "media/cine/tesla/freeze.png"
       },
       "transition": "cut",
       "sfx": [
         {
           "src": "sfx/riser.wav",
-          "at": 31,
+          "at": 10,
           "volume": 0.3
         },
         {
           "src": "sfx/whoosh.wav",
-          "at": 77,
+          "at": 78,
           "volume": 0.35
         },
         {
           "src": "sfx/impact.wav",
-          "at": 190,
-          "volume": 0.5
+          "at": 150,
+          "volume": 0.45
+        },
+        {
+          "src": "sfx/boom.wav",
+          "at": 180,
+          "volume": 0.35
         }
       ]
     },
@@ -83,7 +84,7 @@
             "not announced"
           ]
         ],
-        "clip": "media/cine/flip.mp4",
+        "clip": "media/cine/tesla/phone_loop.mp4",
         "cues": {
           "stages": 54
         }

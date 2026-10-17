@@ -3,25 +3,25 @@
 Format: 9x16  
 Body duration: 34.1 s plus the brand outro
 
-## 1. s00 · cineHook · 5.1 s
+## 1. s00 · cineRealHook · 5.1 s
 
 **Voiceover:** Elon Musk just made the world want a car you can't buy until 2028.
 
-**On screen:** YOU CAN'T BUY IT UNTIL / @car.model / @car.hdr / @car.fit
+**On screen:** YOU CAN'T BUY IT UNTIL / media/cine/tesla/road.mp4 / FOOTAGE: TESLA
 
-**Visual concept:** Night; a graphite concept roadster rolls toward a low camera, headlights flare, 2028 slams in lime.
+**Visual concept:** Real night-road footage of the Roadster (Tesla), framed in our cinema window over its own blurred extension; 2028 slams in lime.
 
 **Transition:** cut
 
 - Source c3: Musk said production starts in 2028; no price was given; a $5,000 deposit reserves a non-flying model. (company_claim) NBC News, 2026-10-16 https://www.nbcnews.com/tech/tech-news/elon-musk-shows-flying-tesla-roadster-years-delays-rcna603905
 
-## 2. s01 · cineFlip · 8.6 s
+## 2. s01 · cineRealFlip · 8.6 s
 
 **Voiceover:** Musk used his genius marketing move. At a SpaceX test site, the new Roadster launched off a ramp, flipped, and landed on thrusters.
 
-**On screen:** OCT 15, 2026 · SPACEX TEST SITE, TEXAS / CAR MODEL: E. CHADWICK / DGG · CC BY 4.0 / @car.model / @car.hdr / @car.fit
+**On screen:** OCT 15, 2026 · SPACEX TEST SITE, TEXAS / FOOTAGE: TESLA / media/cine/tesla/base.mp4 / media/cine/tesla/wall.mp4 / media/cine/tesla/flip_slow.mp4 / media/cine/tesla/land.mp4 / media/cine/tesla/freeze.png
 
-**Visual concept:** CGI hero shot: drive in, ramp launch, slow-motion back flip with an orbiting camera, thrusters fire upright, landing jolt, dust.
+**Visual concept:** Real stunt footage re-cut: wall, climb, interpolated slow-motion launch and flip, freeze with flash at the apex, thrusters and landing in smoke; lime callouts and timecode.
 
 **Transition:** cut
 
@@ -32,7 +32,7 @@ Body duration: 34.1 s plus the brand outro
 
 **Voiceover:** He never sells specs. He stages moments the internet can't ignore.
 
-**On screen:** 0 to 60 mph / under 1 s / Top speed / 230+ mph / Price / not announced / media/cine/flip.mp4
+**On screen:** 0 to 60 mph / under 1 s / Top speed / 230+ mph / Price / not announced / media/cine/tesla/phone_loop.mp4
 
 **Visual concept:** Spec sheet (Tesla's claims) shatters on "stages"; nine phones pop in, all replaying the flip, likes climbing.
 

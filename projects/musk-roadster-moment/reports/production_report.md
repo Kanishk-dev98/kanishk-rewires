@@ -1,6 +1,6 @@
 # Production report: The flip that sold a 2028 car
 
-- Video: `renders/musk-roadster-moment_v2.mp4`
+- Video: `renders/musk-roadster-moment_v3.mp4`
 - Captions: `captions/musk-roadster-moment.srt`
 - Script and storyboard: `script/script.md`, `storyboard/storyboard.json`
 - Sources: `research/sources.md`
@@ -15,9 +15,9 @@
 - E. Storyboard: done · 7 scenes valid, 5 warnings
 - F. Asset production: done · 7 narration clips (7 reused from cache)
 - G. Animation and edit: done · 7 scenes, body 34.1 s + outro 2.5 s, 88 caption words
-- H. Render: done · musk-roadster-moment_v2.mp4 (16.7 MB)
-- I. Quality control: done · musk-roadster-moment_v2.mp4 passed 14 checks
-- J. Delivery: done · delivered musk-roadster-moment_v2.mp4
+- H. Render: done · musk-roadster-moment_v3.mp4 (10.9 MB)
+- I. Quality control: done · musk-roadster-moment_v3.mp4 passed 14 checks
+- J. Delivery: done · delivered musk-roadster-moment_v3.mp4
 
 ## Assets and provenance
 
@@ -43,7 +43,7 @@
 - no black frames: ok (none)
 - no freezes in the body: ok (none (outro hold is intentional))
 - no silent gaps: ok (none)
-- loudness: ok (-14.5 LUFS (target -14))
+- loudness: ok (-14.4 LUFS (target -14))
 - true peak: ok (-1.5 dBTP)
 - safe area: ok (nothing drawn within 60 px of the sides (full-bleed scenes not checked: s00, s01, s02, s03, s04, s05, s06))
 - brand ending: ok (lime px 26, cream px 485)

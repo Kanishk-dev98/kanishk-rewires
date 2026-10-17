@@ -22,17 +22,10 @@
     "wordSize": 50,
     "cta": "Follow for the strategy behind the headlines"
   },
-  "car": {
-    "model": "media/cine/car.glb",
-    "hdr": "media/cine/env.hdr",
-    "fit": {
-      "variant": "Torched Graphite"
-    }
-  },
   "scenes": [
     {
       "id": "s00",
-      "type": "cineHook",
+      "type": "cineRealHook",
       "leadIn": 4,
       "pad": 8,
       "energy": 2,
@@ -49,11 +42,10 @@
       ],
       "data": {
         "kicker": "YOU CAN'T BUY IT UNTIL",
-        "model": "@car.model",
-        "hdr": "@car.hdr",
-        "fit": "@car.fit"
+        "road": "media/cine/tesla/road.mp4",
+        "credit": "FOOTAGE: TESLA"
       },
-      "visual": "Night; a graphite concept roadster rolls toward a low camera, headlights flare, 2028 slams in lime.",
+      "visual": "Real night-road footage of the Roadster (Tesla), framed in our cinema window over its own blurred extension; 2028 slams in lime.",
       "sfx": [
         {
           "name": "boom",
@@ -68,7 +60,7 @@
     },
     {
       "id": "s01",
-      "type": "cineFlip",
+      "type": "cineRealFlip",
       "pad": 10,
       "energy": 3,
       "minFrames": 240,
@@ -83,34 +75,34 @@
       ],
       "data": {
         "tag": "OCT 15, 2026 · SPACEX TEST SITE, TEXAS",
-        "credit": "CAR MODEL: E. CHADWICK / DGG · CC BY 4.0",
-        "model": "@car.model",
-        "hdr": "@car.hdr",
-        "fit": "@car.fit",
-        "blur": 5
+        "credit": "FOOTAGE: TESLA",
+        "base": "media/cine/tesla/base.mp4",
+        "wall": "media/cine/tesla/wall.mp4",
+        "flip": "media/cine/tesla/flip_slow.mp4",
+        "land": "media/cine/tesla/land.mp4",
+        "freeze": "media/cine/tesla/freeze.png"
       },
-      "visual": "CGI hero shot: drive in, ramp launch, slow-motion back flip with an orbiting camera, thrusters fire upright, landing jolt, dust.",
+      "visual": "Real stunt footage re-cut: wall, climb, interpolated slow-motion launch and flip, freeze with flash at the apex, thrusters and landing in smoke; lime callouts and timecode.",
       "sfx": [
         {
           "name": "riser",
-          "on": {
-            "frac": 0.12
-          },
+          "on": 10,
           "volume": 0.3
         },
         {
           "name": "whoosh",
-          "on": {
-            "frac": 0.3
-          },
+          "on": 78,
           "volume": 0.35
         },
         {
           "name": "impact",
-          "on": {
-            "frac": 0.74
-          },
-          "volume": 0.5
+          "on": 150,
+          "volume": 0.45
+        },
+        {
+          "name": "boom",
+          "on": 180,
+          "volume": 0.35
         }
       ],
       "bleed": true
@@ -146,7 +138,7 @@
             "not announced"
           ]
         ],
-        "clip": "media/cine/flip.mp4"
+        "clip": "media/cine/tesla/phone_loop.mp4"
       },
       "visual": "Spec sheet (Tesla's claims) shatters on \"stages\"; nine phones pop in, all replaying the flip, likes climbing.",
       "sfx": [

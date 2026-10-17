@@ -1,0 +1,7 @@
+{
+  "source": "research/reference-videos/roadster-event/source.mp4 (supplied by the user on 2026-10-17; a news repost of Tesla's Roadster reveal livestream, labelled 'SOURCE: TESLA')",
+  "owner": "Tesla, Inc. (original livestream footage)",
+  "use": "Short excerpts, transformed (cropped to the footage area only, re-graded, slow motion with frame interpolation, freeze frame, framed and annotated), credited on screen as 'FOOTAGE: TESLA', inside news commentary. Owner rights are not licensed: there is a risk of a platform copyright claim.",
+  "clips": {"road.mp4": "17.5 to 23.5 s", "base.mp4": "0 to 1.4 s", "wall.mp4": "7.6 to 9.6 s", "flip_slow.mp4": "9.6 to 11.2 s at 0.5x, interpolated", "land.mp4": "11.2 to 14.0 s", "phone_loop.mp4": "9.4 to 13.4 s", "freeze.png": "flip_slow at 1.0 s"},
+  "excluded": "the reposter's headline banner and source tag, and the livestream telemetry HUD"
+}

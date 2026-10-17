@@ -26,7 +26,7 @@ from . import config
 SCENE_TYPES = {"hook", "stat", "compare", "quote", "timeline", "route", "headline", "takeaway",
                "systemHook", "profile", "prospects", "personalize", "workflow", "convert",
                "tutHook", "tutEasy", "tutStep", "tutSave", "tutCta",
-               "cineHook", "cineFlip", "cineSpecs", "cineTimeline", "cinePress", "cineLesson", "cineViral"}
+               "cineHook", "cineFlip", "cineRealHook", "cineRealFlip", "cineSpecs", "cineTimeline", "cinePress", "cineLesson", "cineViral"}
 NON_TEXT_KEYS = {"theme", "accent", "highlight", "cue", "hero", "logo", "kind"}
 DASHES = re.compile("[–—]")
 TEXT_KEYS = {"kicker", "lines", "sub", "label", "title", "note", "quote", "who", "role", "input", "body", "final", "points", "items", "rows", "a", "b", "display", "unit", "date", "text"}

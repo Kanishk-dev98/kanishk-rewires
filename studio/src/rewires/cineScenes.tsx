@@ -2,7 +2,7 @@
 import React from "react";
 import { Video } from "@remotion/media";
 import { CameraMotionBlur } from "@remotion/motion-blur";
-import { AbsoluteFill, Img, interpolate, random, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Img, interpolate, random, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { BODY, C, clamp, EASE, EASE_IO, HEAD, MONO, SERIF } from "./brand";
 import { Cine3D } from "./cine3d";
 import type { SceneProps } from "./scenes";
@@ -308,7 +308,104 @@ export const CineViralScene: React.FC<SceneProps> = ({ data }) => {
 };
 const Easing2 = (x: number) => x;
 
+// ------------------------------------------------------------------ real footage, framed in our look
+/** Brackets, timecode and credit around a 16:9 footage window; the same footage blurred behind it fills the frame. */
+const FootageWindow: React.FC<{ children: React.ReactNode; bg: React.ReactNode; tc: string; credit: string; label?: string; push?: number }> = ({ children, bg, tc, credit, label, push = 0.06 }) => {
+  const frame = useCurrentFrame();
+  const { durationInFrames: D } = useVideoConfig();
+  const W = 1080;
+  const H = 552;
+  const top = 640;
+  const z = 1 + push * (frame / D);
+  const br = (x: number, y: number, r: number) => (
+    <div style={{ position: "absolute", left: x, top: y, width: 46, height: 46, borderLeft: `4px solid ${C.lime}`, borderTop: `4px solid ${C.lime}`, rotate: `${r}deg` }} />
+  );
+  return (
+    <AbsoluteFill style={{ background: C.charcoal }}>
+      <AbsoluteFill style={{ filter: "blur(36px) brightness(0.35) saturate(0.6)", scale: "1.3" }}>{bg}</AbsoluteFill>
+      <div style={{ position: "absolute", left: 0, top, width: W, height: H, overflow: "hidden", boxShadow: "0 30px 80px rgba(0,0,0,0.7)" }}>
+        <div style={{ width: "100%", height: "100%", scale: String(z), filter: "contrast(1.18) saturate(0.7) brightness(1.08)" }}>{children}</div>
+        <AbsoluteFill style={{ mixBlendMode: "soft-light", background: `linear-gradient(180deg, rgba(167,255,63,0.10), rgba(0,0,0,0.25))` }} />
+      </div>
+      {br(36, top - 22, 0)}
+      {br(W - 82, top - 22, 90)}
+      {br(36, top + H - 24, -90)}
+      {br(W - 82, top + H - 24, 180)}
+      <div style={{ position: "absolute", left: 80, top: top + H + 26, display: "flex", gap: 18, alignItems: "center", fontFamily: MONO, fontSize: 22, letterSpacing: 3, color: C.stone }}>
+        <span style={{ width: 12, height: 12, borderRadius: "50%", background: frame % 30 < 18 ? "#E5484D" : "transparent" }} />
+        {tc}
+      </div>
+      <div style={{ position: "absolute", right: 80, top: top + H + 26, fontFamily: MONO, fontSize: 18, letterSpacing: 3, color: C.grey }}>{credit}</div>
+      {label ? <div style={{ position: "absolute", left: 80, top: top - 74, fontFamily: MONO, fontSize: 22, letterSpacing: 3, color: C.stone }}>{label}</div> : null}
+      <Letterbox />
+    </AbsoluteFill>
+  );
+};
+
+const Clip: React.FC<{ src: string }> = ({ src }) => <Video src={staticFile(src)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />;
+
+/** Hook on real footage: the car on a night road, "you can't buy it until 2028". */
+export const CineRealHookScene: React.FC<SceneProps> = ({ data }) => {
+  const frame = useCurrentFrame();
+  const c = cueOf(data);
+  return (
+    <AbsoluteFill>
+      <FootageWindow bg={<Clip src={data.road} />} tc={`T+00:${String(17 + Math.floor(frame / 30)).padStart(2, "0")}`} credit={data.credit} push={0.1}>
+        <Clip src={data.road} />
+      </FootageWindow>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 300, textAlign: "center", fontFamily: MONO, fontSize: 30, letterSpacing: 8, color: C.stone, opacity: interpolate(frame, [c("buy", 40) - 6, c("buy", 40) + 4], [0, 1], clamp) }}>{data.kicker}</div>
+      <Stamp at={c("year", 70) + 10} text="2028" size={200} style={{ top: 360 }} />
+    </AbsoluteFill>
+  );
+};
+
+/** The real stunt, re-cut: wall, climb, slow-motion flip, freeze at the apex, thrusters and landing. */
+export const CineRealFlipScene: React.FC<SceneProps> = ({ data }) => {
+  const frame = useCurrentFrame();
+  const { durationInFrames: D } = useVideoConfig();
+  const pop = usePop();
+  // timeline (frames): base 0..24, wall 24..78, slow flip 78..150, freeze 150..168, landing 168..D
+  const T = { wall: 24, flip: 78, freeze: 150, land: 168 };
+  const seg = frame < T.wall ? "base" : frame < T.flip ? "wall" : frame < T.freeze ? "flip" : frame < T.land ? "freeze" : "land";
+  const src: Record<string, string> = { base: data.base, wall: data.wall, flip: data.flip, land: data.land };
+  const from: Record<string, number> = { base: 0, wall: T.wall, flip: T.flip, land: T.land };
+  const flash = frame >= T.freeze && frame < T.freeze + 6 ? interpolate(frame - T.freeze, [0, 6], [0.8, 0], clamp) : 0;
+  const fz = interpolate(frame, [T.freeze, T.land], [1.6, 2.2], { ...clamp, easing: EASE });
+  const flipZoom = interpolate(frame, [T.flip, T.freeze], [1.15, 1.45], { ...clamp, easing: EASE_IO });
+  const label = (at: number, until: number, text: string, y = 1270) =>
+    frame >= at && frame < until ? (
+      <div style={{ position: "absolute", left: 80, top: y, display: "flex", alignItems: "center", gap: 14, ...pop(at, { rise: 14, scale: 0.85 }) }}>
+        <div style={{ width: 54, height: 3, background: C.lime }} />
+        <span style={{ fontFamily: MONO, fontWeight: 600, fontSize: 30, letterSpacing: 3, color: C.lime }}>{text}</span>
+      </div>
+    ) : null;
+  const inner =
+    seg === "freeze" ? (
+      <Img src={staticFile(data.freeze)} style={{ width: "100%", height: "100%", objectFit: "cover", scale: String(fz), transformOrigin: "25% 15%" }} />
+    ) : (
+      <div style={{ width: "100%", height: "100%", scale: seg === "flip" ? String(flipZoom) : "1", transformOrigin: "28% 22%" }}>
+        <Sequence from={from[seg]} layout="none" key={seg}>
+          <Clip src={src[seg]} />
+        </Sequence>
+      </div>
+    );
+  return (
+    <AbsoluteFill>
+      <FootageWindow bg={<Clip src={data.land} />} tc={`T+00:${String(9 + Math.floor(frame / 30)).padStart(2, "0")} · ${seg === "flip" || seg === "freeze" ? "0.5x" : "1.0x"}`} credit={data.credit} label={data.tag} push={0}>
+        {inner}
+        {flash > 0 ? <AbsoluteFill style={{ background: C.cream, opacity: flash }} /> : null}
+      </FootageWindow>
+      {label(T.wall + 6, T.flip, "VERTICAL RAMP")}
+      {label(T.flip + 4, T.freeze, "LAUNCH")}
+      {label(T.freeze, T.land, "MID-AIR FLIP")}
+      {label(T.land + 6, D, "COLD GAS THRUSTERS")}
+    </AbsoluteFill>
+  );
+};
+
 export const CINE_SCENES: Record<string, React.FC<SceneProps>> = {
+  cineRealHook: CineRealHookScene,
+  cineRealFlip: CineRealFlipScene,
   cineHook: CineHookScene,
   cineFlip: CineFlipScene,
   cineSpecs: CineSpecsScene,

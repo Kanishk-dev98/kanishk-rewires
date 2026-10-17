@@ -39,7 +39,7 @@
     },
     "storyboard": {
       "status": "done",
-      "at": "2026-10-17T08:31:46+00:00",
+      "at": "2026-10-17T09:00:02+00:00",
       "note": "7 scenes valid, 5 warnings",
       "outputs": [
         "storyboard/storyboard.json"
@@ -47,7 +47,7 @@
     },
     "assets": {
       "status": "done",
-      "at": "2026-10-17T08:31:46+00:00",
+      "at": "2026-10-17T09:00:02+00:00",
       "note": "7 narration clips (7 reused from cache)",
       "outputs": [
         "audio/vo/"
@@ -55,7 +55,7 @@
     },
     "edit": {
       "status": "done",
-      "at": "2026-10-17T08:32:31+00:00",
+      "at": "2026-10-17T09:00:03+00:00",
       "note": "7 scenes, body 34.1 s + outro 2.5 s, 88 caption words",
       "outputs": [
         "timeline/timeline.json",
@@ -67,16 +67,16 @@
     },
     "render": {
       "status": "done",
-      "at": "2026-10-17T08:56:10+00:00",
-      "note": "musk-roadster-moment_v2.mp4 (16.7 MB)",
+      "at": "2026-10-17T09:01:43+00:00",
+      "note": "musk-roadster-moment_v3.mp4 (10.9 MB)",
       "outputs": [
-        "renders/musk-roadster-moment_v2.mp4"
+        "renders/musk-roadster-moment_v3.mp4"
       ]
     },
     "qc": {
       "status": "done",
-      "at": "2026-10-17T08:56:18+00:00",
-      "note": "musk-roadster-moment_v2.mp4 passed 14 checks",
+      "at": "2026-10-17T09:01:50+00:00",
+      "note": "musk-roadster-moment_v3.mp4 passed 14 checks",
       "outputs": [
         "reports/qc.md",
         "reports/contact_sheet.png"
@@ -84,8 +84,8 @@
     },
     "delivery": {
       "status": "done",
-      "at": "2026-10-17T08:56:36+00:00",
-      "note": "delivered musk-roadster-moment_v2.mp4",
+      "at": "2026-10-17T09:02:02+00:00",
+      "note": "delivered musk-roadster-moment_v3.mp4",
       "outputs": [
         "reports/production_report.md",
         "/Users/kanishk.raj/Downloads/Kanishk.Rewires/musk-roadster-moment"
@@ -97,7 +97,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s00.mp3",
       "provider": "edge",
-      "at": "2026-10-17T08:31:46+00:00",
+      "at": "2026-10-17T09:00:02+00:00",
       "cached": true,
       "seconds": 4.94,
       "settings": {
@@ -110,7 +110,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s01.mp3",
       "provider": "edge",
-      "at": "2026-10-17T08:31:46+00:00",
+      "at": "2026-10-17T09:00:02+00:00",
       "cached": true,
       "seconds": 8.33,
       "settings": {
@@ -123,7 +123,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s02.mp3",
       "provider": "edge",
-      "at": "2026-10-17T08:31:46+00:00",
+      "at": "2026-10-17T09:00:02+00:00",
       "cached": true,
       "seconds": 4.27,
       "settings": {
@@ -136,7 +136,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s03.mp3",
       "provider": "edge",
-      "at": "2026-10-17T08:31:46+00:00",
+      "at": "2026-10-17T09:00:02+00:00",
       "cached": true,
       "seconds": 3.96,
       "settings": {
@@ -149,7 +149,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s04.mp3",
       "provider": "edge",
-      "at": "2026-10-17T08:31:46+00:00",
+      "at": "2026-10-17T09:00:02+00:00",
       "cached": true,
       "seconds": 3.7,
       "settings": {
@@ -162,7 +162,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s05.mp3",
       "provider": "edge",
-      "at": "2026-10-17T08:31:46+00:00",
+      "at": "2026-10-17T09:00:02+00:00",
       "cached": true,
       "seconds": 4.32,
       "settings": {
@@ -175,7 +175,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s06.mp3",
       "provider": "edge",
-      "at": "2026-10-17T08:31:46+00:00",
+      "at": "2026-10-17T09:00:02+00:00",
       "cached": true,
       "seconds": 2.93,
       "settings": {
@@ -188,14 +188,14 @@
       "kind": "music",
       "path": "audio/music.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-10-17T08:32:31+00:00",
+      "at": "2026-10-17T09:00:03+00:00",
       "licence": "original, generated in code"
     },
     {
       "kind": "music",
       "path": "audio/signature.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-10-17T08:32:31+00:00",
+      "at": "2026-10-17T09:00:03+00:00",
       "licence": "original, generated in code"
     }
   ],
@@ -207,6 +207,10 @@
     {
       "file": "renders/musk-roadster-moment_v2.mp4",
       "at": "2026-10-17T14:26:10"
+    },
+    {
+      "file": "renders/musk-roadster-moment_v3.mp4",
+      "at": "2026-10-17T14:31:43"
     }
   ]
 }

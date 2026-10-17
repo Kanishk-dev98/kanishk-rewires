@@ -1,6 +1,6 @@
 # QC report
 
-Video: `musk-roadster-moment_v2.mp4`  
+Video: `musk-roadster-moment_v3.mp4`  
 Result: **PASS**
 
 | Check | Result | Detail |
@@ -15,7 +15,7 @@ Result: **PASS**
 | no black frames | ok | none |
 | no freezes in the body | ok | none (outro hold is intentional) |
 | no silent gaps | ok | none |
-| loudness | ok | -14.5 LUFS (target -14) |
+| loudness | ok | -14.4 LUFS (target -14) |
 | true peak | ok | -1.5 dBTP |
 | safe area | ok | nothing drawn within 60 px of the sides (full-bleed scenes not checked: s00, s01, s02, s03, s04, s05, s06) |
 | brand ending | ok | lime px 26, cream px 485 |
