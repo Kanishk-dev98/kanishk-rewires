@@ -1,0 +1,355 @@
+[
+ {
+  "start": 0.0,
+  "end": 2.32,
+  "text": "Too many signals, tabs, thoughts.",
+  "words": [
+   [
+    "Too",
+    0.0,
+    0.52
+   ],
+   [
+    "many",
+    0.52,
+    0.68
+   ],
+   [
+    "signals,",
+    0.68,
+    1.1
+   ],
+   [
+    "tabs,",
+    1.42,
+    1.66
+   ],
+   [
+    "thoughts.",
+    1.98,
+    2.32
+   ]
+  ]
+ },
+ {
+  "start": 3.52,
+  "end": 4.9,
+  "text": "Spread between countless systems.",
+  "words": [
+   [
+    "Spread",
+    3.52,
+    3.76
+   ],
+   [
+    "between",
+    3.76,
+    4.08
+   ],
+   [
+    "countless",
+    4.08,
+    4.42
+   ],
+   [
+    "systems.",
+    4.42,
+    4.9
+   ]
+  ]
+ },
+ {
+  "start": 7.26,
+  "end": 8.22,
+  "text": "What if it all connected?",
+  "words": [
+   [
+    "What",
+    7.26,
+    7.46
+   ],
+   [
+    "if",
+    7.46,
+    7.56
+   ],
+   [
+    "it",
+    7.56,
+    7.7
+   ],
+   [
+    "all",
+    7.7,
+    7.84
+   ],
+   [
+    "connected?",
+    7.84,
+    8.22
+   ]
+  ]
+ },
+ {
+  "start": 9.7,
+  "end": 10.52,
+  "text": "Meet OpenAI.",
+  "words": [
+   [
+    "Meet",
+    9.7,
+    9.82
+   ],
+   [
+    "OpenAI.",
+    9.82,
+    10.52
+   ]
+  ]
+ },
+ {
+  "start": 11.5,
+  "end": 15.28,
+  "text": "Describe what you imagine and explore multiple possibilities in seconds.",
+  "words": [
+   [
+    "Describe",
+    11.5,
+    11.74
+   ],
+   [
+    "what",
+    11.74,
+    11.9
+   ],
+   [
+    "you",
+    11.9,
+    12.0
+   ],
+   [
+    "imagine",
+    12.0,
+    12.4
+   ],
+   [
+    "and",
+    12.4,
+    12.72
+   ],
+   [
+    "explore",
+    12.72,
+    13.2
+   ],
+   [
+    "multiple",
+    13.2,
+    13.76
+   ],
+   [
+    "possibilities",
+    13.76,
+    14.38
+   ],
+   [
+    "in",
+    14.38,
+    14.82
+   ],
+   [
+    "seconds.",
+    14.82,
+    15.28
+   ]
+  ]
+ },
+ {
+  "start": 15.8,
+  "end": 20.38,
+  "text": "Write code from scratch, find what's broken, and let OpenAI make it work.",
+  "words": [
+   [
+    "Write",
+    15.8,
+    15.98
+   ],
+   [
+    "code",
+    15.98,
+    16.24
+   ],
+   [
+    "from",
+    16.24,
+    16.46
+   ],
+   [
+    "scratch,",
+    16.46,
+    16.82
+   ],
+   [
+    "find",
+    17.28,
+    17.6
+   ],
+   [
+    "what's",
+    17.6,
+    17.88
+   ],
+   [
+    "broken,",
+    17.88,
+    18.2
+   ],
+   [
+    "and",
+    18.5,
+    18.74
+   ],
+   [
+    "let",
+    18.74,
+    18.9
+   ],
+   [
+    "OpenAI",
+    18.9,
+    19.52
+   ],
+   [
+    "make",
+    19.52,
+    19.96
+   ],
+   [
+    "it",
+    19.96,
+    20.1
+   ],
+   [
+    "work.",
+    20.1,
+    20.38
+   ]
+  ]
+ },
+ {
+  "start": 21.26,
+  "end": 25.8,
+  "text": "Bring scattered information together, connect the dots, and uncover what matters.",
+  "words": [
+   [
+    "Bring",
+    21.26,
+    21.5
+   ],
+   [
+    "scattered",
+    21.5,
+    21.9
+   ],
+   [
+    "information",
+    21.9,
+    22.36
+   ],
+   [
+    "together,",
+    22.36,
+    22.88
+   ],
+   [
+    "connect",
+    23.36,
+    23.64
+   ],
+   [
+    "the",
+    23.64,
+    23.86
+   ],
+   [
+    "dots,",
+    23.86,
+    24.08
+   ],
+   [
+    "and",
+    24.4,
+    24.54
+   ],
+   [
+    "uncover",
+    24.54,
+    25.0
+   ],
+   [
+    "what",
+    25.0,
+    25.38
+   ],
+   [
+    "matters.",
+    25.38,
+    25.8
+   ]
+  ]
+ },
+ {
+  "start": 26.8,
+  "end": 29.52,
+  "text": "One place to imagine, build, and discover.",
+  "words": [
+   [
+    "One",
+    26.42,
+    26.86
+   ],
+   [
+    "place",
+    26.86,
+    27.14
+   ],
+   [
+    "to",
+    27.14,
+    27.5
+   ],
+   [
+    "imagine,",
+    27.5,
+    27.98
+   ],
+   [
+    "build,",
+    28.4,
+    28.54
+   ],
+   [
+    "and",
+    29.0,
+    29.04
+   ],
+   [
+    "discover.",
+    29.04,
+    29.52
+   ]
+  ]
+ },
+ {
+  "start": 30.08,
+  "end": 30.6,
+  "text": "OpenAI.",
+  "words": [
+   [
+    "OpenAI.",
+    30.08,
+    30.6
+   ]
+  ]
+ }
+]

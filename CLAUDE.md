@@ -14,6 +14,7 @@ The full creative and production standard is the master prompt, imported here:
    - `rewires-brand`: palette, type, logo, wordmark, voice, copy rules (load for every Kanishk.Rewires video)
    - `rewires-film-pipeline`: all engines (Rewires plus the older Story, Film, Brand58, Apolio60, Launch90), beat grids, mastering
    - `rewires-video-qa`: the checklist built from the user's feedback (run before every render and delivery)
+   - `rewires-motion-library`: catalogue of premium motion techniques from the user's reference videos, with Remotion build notes (load when planning visuals)
    - `abstraxn-brand`: only for Abstraxn work
    - `remotion-*`: official Remotion skills (load `remotion-best-practices` before writing Remotion code)
 
