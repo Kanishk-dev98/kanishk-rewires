@@ -40,7 +40,10 @@ def master(raw: Path, out: Path, prod: dict):
 
 def write_props(timeline: dict, sb: dict, prod: dict, public_prefix: str, out: Path) -> Path:
     fmt = prod["formats"][sb.get("format", prod["defaultFormat"])]
-    outro_frames = round(config.brand()["outro"]["seconds"] * prod["fps"])
+    from .timing import outro_frames as _of
+
+    o = sb.get("outro", {})
+    outro_frames = _of(sb, prod)
     props = {
         "width": fmt["width"],
         "height": fmt["height"],
@@ -49,7 +52,9 @@ def write_props(timeline: dict, sb: dict, prod: dict, public_prefix: str, out: P
         "showCaptions": sb.get("captions", True),
         "music": f"{public_prefix}/music.wav",
         "musicVolume": prod["music"]["volume"],
-        "outro": {"dur": outro_frames, "sound": f"{public_prefix}/signature.wav"},
+        "outro": {"dur": outro_frames, "sound": f"{public_prefix}/signature.wav", **{k: o[k] for k in ("nodes", "cta", "size", "wordSize") if k in o}},
     }
+    if sb.get("chrome"):
+        props["chrome"] = sb["chrome"]
     out.write_text(json.dumps(props, indent=2))
     return out

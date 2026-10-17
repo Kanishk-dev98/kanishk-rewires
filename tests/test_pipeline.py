@@ -115,3 +115,32 @@ def test_brand_config_is_single_source():
     tsx = "".join(p.read_text() for p in (config.STUDIO / "src" / "rewires").glob("*.tsx"))
     assert "#A7FF3F" not in tsx.upper()  # colours come from config, not hard-coded
     assert json.loads((config.CONFIG / "production.config.json").read_text())["fps"] == 30
+
+
+def test_fit_to_exact_length_and_sync_sfx():
+    prod = config.production()
+    words = [("Track", 0, 300), ("replies", 300, 700), ("then", 700, 900), ("stop", 900, 1200)]
+    sb = {
+        "targetSeconds": 10,
+        "outro": {"seconds": 4},
+        "scenes": [
+            {"id": "a", "type": "workflow", "vo": "Track replies then stop", "syncs": ["replies", "stop"], "plannedSeconds": 2,
+             "sfx": [{"name": "click", "on": {"sync": 1, "offset": -2}}], "data": {}},
+            {"id": "b", "type": "convert", "vo": "Track replies then stop", "plannedSeconds": 1, "data": {}},
+        ],
+    }
+    vo = {k: (Path(f"{k}.mp3"), 1.6, words, True) for k in ("a", "b")}
+    tl = timing.build(sb, vo, prod, "p")
+    assert tl["bodyFrames"] == 6 * 30 and sum(s["dur"] for s in tl["scenes"]) == 180
+    a, b = tl["scenes"]
+    assert a["sfx"][0]["at"] == a["data"]["syncFrames"][1] - 2
+    # captions of the second scene start after the (stretched) first scene
+    first_b = [c for c in tl["captions"] if c["text"] == "Track"][1]
+    assert first_b["startMs"] >= round(a["dur"] / 30 * 1000)
+    assert timing.outro_frames(sb, prod) == 120
+
+
+def test_ui_scene_text_is_checked():
+    sb = {"scenes": [{"id": "x", "type": "profile", "vo": "Edit it.", "data": {"after": "Helping brands — grow"}}]}
+    errors, _ = storyboard.validate(sb, SOURCES)
+    assert any("dash" in e for e in errors)

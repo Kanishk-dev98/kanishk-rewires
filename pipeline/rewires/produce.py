@@ -109,7 +109,9 @@ class Production:
         (self.dir / "captions" / "captions.json").write_text(json.dumps(tl["captions"], indent=2))
 
         body = tl["bodyFrames"] / fps
-        outro_s = round(config.brand()["outro"]["seconds"] * fps) / fps
+        outro_s = timing.outro_frames(sb, self.prod) / fps
+        if tl.get("fitWarning"):
+            print(f"  warning: {tl['fitWarning']}")
         music.write_wav(music.score(body, tl["sections"], tl["hits"]), self.dir / "audio" / "music.wav")
         music.write_wav(music.signature(outro_s), self.dir / "audio" / "signature.wav")
         for f in ("music.wav", "signature.wav"):
@@ -132,7 +134,7 @@ class Production:
             f = start + min(s["dur"] - 1, max(s["data"].get("syncFrame", 0), *(s["data"].get("syncFrames") or [0])) + 24)
             jobs.append((fdir / f"{s['id']}.png", f))
             start += s["dur"]
-        jobs.append((fdir / "outro.png", tl["bodyFrames"] + round(config.brand()["outro"]["seconds"] * self.prod["fps"]) - 1))
+        jobs.append((fdir / "outro.png", tl["bodyFrames"] + timing.outro_frames(self._sb(), self.prod) - 1))
         procs = [subprocess.Popen(["npx", "remotion", "still", "Rewires", str(p), f"--props={props}", f"--frame={f}", "--log=error"], cwd=config.STUDIO) for p, f in jobs]
         if any(pr.wait() for pr in procs):
             raise Blocked("styleframe render failed")

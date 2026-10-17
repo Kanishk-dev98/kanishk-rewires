@@ -24,6 +24,8 @@ def build(sb: dict, vo: dict, prod: dict, vo_public_prefix: str) -> dict:
     for s in sb["scenes"]:
         sid = s["id"]
         path, dur_s, words, _ = vo.get(sid, (None, 0.0, [], True))
+        if words:  # time the scene on the last spoken word, not the clip's trailing silence
+            dur_s = min(dur_s, words[-1][2] / 1000 + 0.12)
         lead = s.get("leadIn", t["leadInFrames"])
         frames = max(s.get("minFrames", t["minSceneFrames"]), lead + round(dur_s * fps) + s.get("pad", t["padFrames"]))
         data = dict(s.get("data", {}))
@@ -40,7 +42,13 @@ def build(sb: dict, vo: dict, prod: dict, vo_public_prefix: str) -> dict:
             data["syncFrames"] = out
         sfx = []
         for x in s.get("sfx", []):
-            at = data.get("syncFrame", lead) if x.get("on") == "sync" else int(x.get("on", 0))
+            on = x.get("on", 0)
+            if on == "sync":
+                at = data.get("syncFrame", lead)
+            elif isinstance(on, dict):  # {"sync": i, "offset": n}: the i-th sync word, shifted
+                at = (data.get("syncFrames") or [lead])[min(on["sync"], len(data.get("syncFrames") or [lead]) - 1)] + on.get("offset", 0)
+            else:
+                at = int(on)
             sfx.append({"src": SFX_FILES.get(x["name"], x["name"]), "at": max(0, at - x.get("early", 0)), "volume": x.get("volume", 0.3)})
         scene = {
             "id": sid,
@@ -69,7 +77,51 @@ def build(sb: dict, vo: dict, prod: dict, vo_public_prefix: str) -> dict:
         if s.get("hit"):
             hits.append((start + data.get("syncFrame", lead)) / fps)
         start += frames
-    return {"scenes": scenes, "captions": captions, "sections": sections, "hits": hits, "bodyFrames": start}
+    tl = {"scenes": scenes, "captions": captions, "sections": sections, "hits": hits, "bodyFrames": start}
+    if sb.get("targetSeconds"):
+        fit(tl, round(sb["targetSeconds"] * fps) - outro_frames(sb, prod), [s.get("plannedSeconds", 1) for s in sb["scenes"]])
+    return tl
+
+
+def outro_frames(sb: dict, prod: dict) -> int:
+    from . import config
+
+    return round(sb.get("outro", {}).get("seconds", config.brand()["outro"]["seconds"]) * prod["fps"])
+
+
+def fit(tl: dict, body_target: int, weights: list[float]):
+    """Stretch scenes (in proportion to their planned length) so the body hits an exact frame count.
+    Narration never moves; only the breathing room after it grows. Records a warning if narration is too long."""
+    extra = body_target - tl["bodyFrames"]
+    if extra < 0:
+        tl["fitWarning"] = f"narration needs {-extra} frames more than the target; speed the voice up or cut words"
+        return
+    total_w = sum(weights) or 1
+    adds = [int(extra * w / total_w) for w in weights]
+    adds[-1] += extra - sum(adds)
+    start, cap_shift = 0, 0
+    for s, sec, add in zip(tl["scenes"], tl["sections"], adds):
+        s["dur"] += add
+        sec["start"] = start / 30
+        start += s["dur"]
+        sec["end"] = start / 30
+    # captions and hits shift by the cumulative frames added before each scene
+    bounds, acc = [], 0
+    for s, add in zip(tl["scenes"], adds):
+        bounds.append(acc)
+        acc += add
+    old_starts, a = [], 0
+    for s, add in zip(tl["scenes"], adds):
+        old_starts.append(a)
+        a += s["dur"] - add
+    for c in tl["captions"]:
+        f = c["startMs"] / 1000 * 30
+        i = max(j for j, st in enumerate(old_starts) if st <= f + 0.01)
+        shift = bounds[i] / 30 * 1000
+        c["startMs"] = round(c["startMs"] + shift)
+        c["endMs"] = round(c["endMs"] + shift)
+    tl["hits"] = [h + bounds[max(j for j, st in enumerate(old_starts) if st <= h * 30 + 0.01)] / 30 for h in tl["hits"]]
+    tl["bodyFrames"] = body_target
 
 
 def paginate(captions: list[dict], max_words: int) -> list[list[dict]]:

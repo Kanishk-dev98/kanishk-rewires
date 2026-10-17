@@ -11,6 +11,10 @@ Look at the actual frames: a styleframe board, then a contact sheet of the final
 
 ## Picture
 
+- [ ] **Motion, not typography.** Every scene demonstrates the narration (UI, diagram, cursor, data, camera). A type-only scene is a rejection. (User, 2026-10-17, Klarna v4.)
+- [ ] **Brand small.** Corner mark and compact outro; no big wordmark moments mid-video.
+- [ ] **Cuts land on content.** No half-second of empty frame while an interface fades in.
+
 - [ ] **No overlaps.** Every scene has fixed zones. When something new arrives, the old element moves away or fades fully; never ghost it at low opacity behind new content. (Raised on the Abstraxn film v1 and Apolio v1.)
 - [ ] **Readable pacing.** Where several items animate together (rule cards, tile re-sorts, stack names), give each item time to be read: about one beat each, not half a beat. The user prefers adding a few seconds to rushing.
 - [ ] **Not slow either.** No dead air or long lead-ins; music-led and energetic. (The 5:39 film v1 was "too slow, like slow piano".)

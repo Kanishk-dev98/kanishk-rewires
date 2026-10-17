@@ -88,12 +88,17 @@ def run(video: Path, timeline: dict, sb: dict, reports: Path) -> dict:
     q = prod["qc"]
     fps = prod["fps"]
     fmt = prod["formats"][sb.get("format", prod["defaultFormat"])]
-    outro_s = config.brand()["outro"]["seconds"]
-    expected = timeline["bodyFrames"] / fps + round(outro_s * fps) / fps
     checks = []
 
     def check(name, ok, detail, severity="error"):
         checks.append({"check": name, "ok": bool(ok), "detail": detail, "severity": "info" if ok else severity})
+
+    from .timing import outro_frames
+
+    outro_s = outro_frames(sb, prod) / fps
+    expected = timeline["bodyFrames"] / fps + outro_s
+    if sb.get("targetSeconds"):
+        check("exact target length", abs(expected - sb["targetSeconds"]) < 0.05, f"{expected:.2f} s planned vs {sb['targetSeconds']} s brief")
 
     info = probe(video)
     v = next(s for s in info["streams"] if s["codec_type"] == "video")

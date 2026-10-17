@@ -1,0 +1,71 @@
+1
+00:00:00,137 --> 00:00:01,458
+Want more clients from LinkedIn
+
+2
+00:00:01,478 --> 00:00:03,481
+Here's the five-layer system I'd build
+
+3
+00:00:03,598 --> 00:00:04,193
+First
+
+4
+00:00:04,213 --> 00:00:05,483
+optimize your profile
+
+5
+00:00:05,503 --> 00:00:07,600
+Use your buyers' keywords explain the outcome you
+
+6
+00:00:07,620 --> 00:00:10,016
+deliver and add one clear call to action
+
+7
+00:00:10,104 --> 00:00:12,594
+Next define your ideal customer and use Sales
+
+8
+00:00:12,614 --> 00:00:15,003
+Navigator or Apollo to build a focused prospect
+
+9
+00:00:15,023 --> 00:00:15,658
+list
+
+10
+00:00:15,678 --> 00:00:18,377
+Let AI help prioritize the best fits
+
+11
+00:00:18,481 --> 00:00:21,415
+Use AI to turn relevant research into personalized
+
+12
+00:00:21,435 --> 00:00:22,282
+messages
+
+13
+00:00:22,302 --> 00:00:24,012
+Review each one before it goes out
+
+14
+00:00:24,237 --> 00:00:26,788
+Connect your CRM to an automation workflow
+
+15
+00:00:26,808 --> 00:00:29,751
+Track replies schedule follow-up tasks and stop when
+
+16
+00:00:29,771 --> 00:00:30,998
+someone responds
+
+17
+00:00:31,144 --> 00:00:34,501
+Finally qualify interested leads book calls and track
+
+18
+00:00:34,521 --> 00:00:36,010
+every outcome in your CRM

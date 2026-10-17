@@ -61,11 +61,17 @@ To redo only part of a video, use `--from edit` (re-time and re-render) or `--fr
 | Brand tokens from config, fonts | `brand.ts` |
 | Grain, vignette, wire motif, camera, mask reveal, labels, source tag, lime accent markup (`*word*`) | `fx.tsx` |
 | Scene tools: `hook`, `stat`, `compare`, `quote`, `timeline`, `route`, `headline`, `takeaway` (each in `theme: dark` or `cream`) | `scenes.tsx` |
+| **Motion UI kit**: tilt-in cards, focus camera (zoom capped at 1.06 so labels never crop), cursor with click ripples, typing and retyping, panels, chips, avatars, checks, layer headers | `ui.tsx` |
+| **Demonstration scenes** (the default for tutorials): `systemHook`, `profile`, `prospects`, `personalize`, `workflow`, `convert`. Each shows the narrated step happening in an illustrative interface. | `uiScenes.tsx` |
 | Captions (short pages, no karaoke, one highlighted word at most) | `Captions.tsx` |
 | Signature ending: strands converge, the K·R monogram, then the wordmark and tagline. Reusable, with adjustable size, strands and duration. | `LogoReveal.tsx` (also the `RewiresOutro` and `RewiresOutroWide` compositions) |
 | Composition (formats 9:16, 4:5, 1:1, 16:9 via `format` in the storyboard) | `Rewires.tsx` |
 
 Layout zones are fractions of frame height (`ZONE` in `brand.ts`): content 12 to 63 %, captions from 66.5 %, source label at 77.5 %. That keeps everything above the Instagram and TikTok UI.
+
+**Rule from the user (2026-10-17): never a typography-only video.** Every scene must show what the narration says through UI, diagrams, cursor actions, data in motion and camera moves. The type scenes (`hook`, `stat`, `headline`...) are supporting tools only. Keep the brand small: `"chrome": {"bug": true, "rail": [...]}` for a corner mark and a step rail, and `"outro": {"size": 300, "wordSize": 62, "nodes": [...], "cta": "..."}` for a compact ending. See `projects/linkedin-client-stack/` for the reference build.
+
+**Exact length:** set `"targetSeconds"` in the storyboard. Scenes are timed on the last spoken word, then stretched in proportion to `plannedSeconds`. If the narration is too long the edit stage warns you, and you raise `voice.edge.rate` or cut words. **Click and SFX timing:** `"sfx": [{"name": "click", "on": {"sync": 2, "offset": -2}}]` lands on a sync word.
 
 ## Configuration
 

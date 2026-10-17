@@ -1,0 +1,207 @@
+{
+  "slug": "linkedin-client-stack",
+  "topic": "The 5-layer LinkedIn client acquisition stack (40 s mini tutorial)",
+  "created": "2026-10-17T06:24:38+00:00",
+  "options": {
+    "format": "9x16",
+    "language": "en"
+  },
+  "stages": {
+    "intake": {
+      "status": "done",
+      "at": "2026-10-17T06:24:38+00:00",
+      "note": "project folder and manifest created"
+    },
+    "research": {
+      "status": "done",
+      "at": "2026-10-17T06:24:45+00:00",
+      "note": "8 claims in the ledger",
+      "outputs": [
+        "research/sources.json",
+        "research/sources.md"
+      ]
+    },
+    "brief": {
+      "status": "done",
+      "at": "2026-10-17T06:24:45+00:00",
+      "note": "brief present",
+      "outputs": [
+        "brief/brief.md"
+      ]
+    },
+    "script": {
+      "status": "done",
+      "at": "2026-10-17T06:24:45+00:00",
+      "note": "101 narration words (~39 s at a natural pace)",
+      "outputs": [
+        "script/script.md"
+      ]
+    },
+    "storyboard": {
+      "status": "done",
+      "at": "2026-10-17T06:29:53+00:00",
+      "note": "6 scenes valid, 2 warnings",
+      "outputs": [
+        "storyboard/storyboard.json"
+      ]
+    },
+    "assets": {
+      "status": "done",
+      "at": "2026-10-17T06:29:53+00:00",
+      "note": "6 narration clips (6 reused from cache)",
+      "outputs": [
+        "audio/vo/"
+      ]
+    },
+    "edit": {
+      "status": "done",
+      "at": "2026-10-17T06:34:11+00:00",
+      "note": "6 scenes, body 36.0 s + outro 4.0 s, 101 caption words",
+      "outputs": [
+        "timeline/timeline.json",
+        "timeline/props.json",
+        "captions/linkedin-client-stack.srt",
+        "audio/music.wav",
+        "audio/signature.wav"
+      ]
+    },
+    "render": {
+      "status": "done",
+      "at": "2026-10-17T06:35:54+00:00",
+      "note": "linkedin-client-stack_v4.mp4 (8.3 MB)",
+      "outputs": [
+        "renders/linkedin-client-stack_v4.mp4"
+      ]
+    },
+    "qc": {
+      "status": "done",
+      "at": "2026-10-17T06:36:03+00:00",
+      "note": "linkedin-client-stack_v4.mp4 passed 15 checks",
+      "outputs": [
+        "reports/qc.md",
+        "reports/contact_sheet.png"
+      ]
+    },
+    "delivery": {
+      "status": "done",
+      "at": "2026-10-17T06:36:03+00:00",
+      "note": "delivered linkedin-client-stack_v4.mp4",
+      "outputs": [
+        "reports/production_report.md",
+        "/Users/kanishk.raj/Downloads/Kanishk.Rewires/linkedin-client-stack"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s01.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:29:53+00:00",
+      "cached": true,
+      "seconds": 3.34,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+24%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s02.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:29:53+00:00",
+      "cached": true,
+      "seconds": 6.46,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+24%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s03.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:29:53+00:00",
+      "cached": true,
+      "seconds": 8.23,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+24%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s04.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:29:53+00:00",
+      "cached": true,
+      "seconds": 5.52,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+24%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s05.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:29:53+00:00",
+      "cached": true,
+      "seconds": 6.72,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+24%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s06.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:29:53+00:00",
+      "cached": true,
+      "seconds": 4.87,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+24%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "music",
+      "path": "audio/music.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-17T06:34:11+00:00",
+      "licence": "original, generated in code"
+    },
+    {
+      "kind": "music",
+      "path": "audio/signature.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-17T06:34:11+00:00",
+      "licence": "original, generated in code"
+    }
+  ],
+  "versions": [
+    {
+      "file": "renders/linkedin-client-stack_v1.mp4",
+      "at": "2026-10-17T11:59:20"
+    },
+    {
+      "file": "renders/linkedin-client-stack_v2.mp4",
+      "at": "2026-10-17T12:01:37"
+    },
+    {
+      "file": "renders/linkedin-client-stack_v3.mp4",
+      "at": "2026-10-17T12:03:39"
+    },
+    {
+      "file": "renders/linkedin-client-stack_v4.mp4",
+      "at": "2026-10-17T12:05:54"
+    }
+  ]
+}

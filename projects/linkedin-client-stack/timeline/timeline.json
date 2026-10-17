@@ -1,0 +1,881 @@
+{
+  "scenes": [
+    {
+      "id": "s01",
+      "type": "systemHook",
+      "dur": 100,
+      "vo": "projects/linkedin-client-stack/vo/s01.mp3",
+      "voAt": 2,
+      "data": {
+        "layer": -1,
+        "lines": [
+          "Build a LinkedIn",
+          "client acquisition",
+          "*system* with AI."
+        ],
+        "layers": [
+          "Profile",
+          "Prospects",
+          "Personalize",
+          "Automate",
+          "Convert"
+        ]
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 2,
+          "volume": 0.18
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "profile",
+      "dur": 197,
+      "vo": "projects/linkedin-client-stack/vo/s02.mp3",
+      "voAt": 4,
+      "data": {
+        "layer": 0,
+        "line": "Keywords. Clear offer. One CTA.",
+        "before": "Founder | Entrepreneur | Marketing Enthusiast",
+        "after": "Helping D2C Brands Improve Customer Retention with Lifecycle Marketing",
+        "keywords": [
+          "D2C Brands",
+          "Customer Retention",
+          "Lifecycle Marketing"
+        ],
+        "banner": "Retention systems for D2C brands",
+        "about": [
+          [
+            "Problem",
+            "Repeat purchases stall after the first order."
+          ],
+          [
+            "Approach",
+            "Lifecycle email, SMS and loyalty flows."
+          ],
+          [
+            "Next step",
+            "Book a 20 minute retention audit."
+          ]
+        ],
+        "cta": "Book a retention audit",
+        "syncFrames": [
+          81,
+          117,
+          178
+        ]
+      },
+      "transition": "rise",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 12,
+          "volume": 0.3
+        },
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 178,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "prospects",
+      "dur": 251,
+      "vo": "projects/linkedin-client-stack/vo/s03.mp3",
+      "voAt": 4,
+      "data": {
+        "layer": 1,
+        "line": "Define ICP \u2192 Find \u2192 Prioritize",
+        "tool": "Sales Navigator or Apollo \u00b7 illustrative",
+        "filters": [
+          [
+            "Industry",
+            "Consumer goods \u00b7 D2C"
+          ],
+          [
+            "Role",
+            "Head of Growth \u00b7 CMO"
+          ],
+          [
+            "Company size",
+            "11 to 200 employees"
+          ],
+          [
+            "Geography",
+            "US \u00b7 UK"
+          ]
+        ],
+        "leads": [
+          {
+            "name": "Tom Alvarez",
+            "role": "Founder",
+            "company": "Brightbrew",
+            "fit": 58,
+            "signal": "No recent signal"
+          },
+          {
+            "name": "Priya Nair",
+            "role": "Growth Lead",
+            "company": "Lumen Skin",
+            "fit": 71,
+            "signal": "Raised Series A"
+          },
+          {
+            "name": "Sarah Chen",
+            "role": "Head of Growth",
+            "company": "Northwind Goods",
+            "fit": 92,
+            "signal": "Expanding D2C range"
+          },
+          {
+            "name": "Elena Rossi",
+            "role": "Mktg Director",
+            "company": "Kite Apparel",
+            "fit": 77,
+            "signal": "Posted about churn"
+          },
+          {
+            "name": "Marcus Reid",
+            "role": "CMO",
+            "company": "Fieldcraft Co",
+            "fit": 84,
+            "signal": "Hiring CRM manager"
+          }
+        ],
+        "syncFrames": [
+          37,
+          74,
+          193
+        ]
+      },
+      "transition": "rise",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 37,
+          "volume": 0.28
+        },
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 49,
+          "volume": 0.28
+        },
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 191,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "personalize",
+      "dur": 173,
+      "vo": "projects/linkedin-client-stack/vo/s04.mp3",
+      "voAt": 4,
+      "data": {
+        "layer": 2,
+        "line": "Research \u2192 AI draft \u2192 Human review",
+        "prospect": {
+          "name": "Sarah Chen",
+          "title": "Head of Growth \u00b7 Northwind Goods"
+        },
+        "research": [
+          "Company news: expanding its D2C range",
+          "Hiring a CRM manager",
+          "Spoke on a retail podcast"
+        ],
+        "generic": "Hi, I'd love to connect and explore synergies.",
+        "personalized": "Hi Sarah, noticed your team is expanding its D2C range. I work on retention systems for growing brands and thought it would be useful to connect.",
+        "limit": 200,
+        "syncFrames": [
+          56,
+          77,
+          121
+        ]
+      },
+      "transition": "rise",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 72,
+          "volume": 0.28
+        },
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 135,
+          "volume": 0.3
+        }
+      ],
+      "source": "Connection notes: 200 characters max \u00b7 LinkedIn Help"
+    },
+    {
+      "id": "s05",
+      "type": "workflow",
+      "dur": 206,
+      "vo": "projects/linkedin-client-stack/vo/s05.mp3",
+      "voAt": 4,
+      "data": {
+        "layer": 3,
+        "line": "CRM + reminders + reply tracking",
+        "tool": "Make or n8n \u00b7 illustrative",
+        "chain": [
+          {
+            "label": "Prospect added to CRM",
+            "kind": "CRM"
+          },
+          {
+            "label": "Create reminder task",
+            "kind": "TASK"
+          },
+          {
+            "label": "Human sends approved outreach",
+            "kind": "YOU",
+            "human": true
+          },
+          {
+            "label": "Check reply status",
+            "kind": "IF"
+          }
+        ],
+        "noReply": {
+          "label": "No reply: follow-up task",
+          "kind": "TASK"
+        },
+        "reply": {
+          "label": "Replied: stop sequence",
+          "kind": "STOP"
+        },
+        "status": [
+          "Contacted \u00b7 next: reminder",
+          "No reply \u00b7 follow-up due Thu",
+          "Replied \u00b7 sequence stopped"
+        ],
+        "syncFrames": [
+          15,
+          90,
+          122,
+          160
+        ]
+      },
+      "transition": "rise",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 90,
+          "volume": 0.2
+        },
+        {
+          "src": "sfx/tick.wav",
+          "at": 122,
+          "volume": 0.2
+        },
+        {
+          "src": "sfx/switch.wav",
+          "at": 160,
+          "volume": 0.25
+        }
+      ],
+      "source": "Outreach stays manual \u00b7 LinkedIn User Agreement 8.2"
+    },
+    {
+      "id": "s06",
+      "type": "convert",
+      "dur": 153,
+      "vo": "projects/linkedin-client-stack/vo/s06.mp3",
+      "voAt": 4,
+      "data": {
+        "layer": 4,
+        "line": "Replies \u2192 Calls \u2192 Pipeline",
+        "reply": "Sounds relevant. What does the audit involve?",
+        "answer": "Here's my booking link. Pick any slot.",
+        "columns": [
+          "Contacted",
+          "Interested",
+          "Booked"
+        ],
+        "counts": [
+          6,
+          2,
+          1
+        ],
+        "tags": [
+          "Contacted",
+          "Interested",
+          "Meeting booked"
+        ],
+        "slots": [
+          "Mon 3pm",
+          "Tue 11am",
+          "Wed 10am"
+        ],
+        "steps": [
+          "Positive reply",
+          "Qualified",
+          "Link shared",
+          "Booked",
+          "CRM updated"
+        ],
+        "syncFrames": [
+          26,
+          70,
+          96
+        ]
+      },
+      "transition": "rise",
+      "sfx": [
+        {
+          "src": "sfx/ding.wav",
+          "at": 88,
+          "volume": 0.22
+        }
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "text": "Want",
+      "startMs": 137,
+      "endMs": 228
+    },
+    {
+      "text": "more",
+      "startMs": 238,
+      "endMs": 349
+    },
+    {
+      "text": "clients",
+      "startMs": 349,
+      "endMs": 682
+    },
+    {
+      "text": "from",
+      "startMs": 682,
+      "endMs": 833
+    },
+    {
+      "text": "LinkedIn",
+      "startMs": 833,
+      "endMs": 1145
+    },
+    {
+      "text": "Here's",
+      "startMs": 1478,
+      "endMs": 1629
+    },
+    {
+      "text": "the",
+      "startMs": 1639,
+      "endMs": 1720
+    },
+    {
+      "text": "five-layer",
+      "startMs": 1720,
+      "endMs": 2284
+    },
+    {
+      "text": "system",
+      "startMs": 2284,
+      "endMs": 2627
+    },
+    {
+      "text": "I'd",
+      "startMs": 2637,
+      "endMs": 2788
+    },
+    {
+      "text": "build",
+      "startMs": 2788,
+      "endMs": 3081
+    },
+    {
+      "text": "First",
+      "startMs": 3598,
+      "endMs": 3890
+    },
+    {
+      "text": "optimize",
+      "startMs": 4213,
+      "endMs": 4606
+    },
+    {
+      "text": "your",
+      "startMs": 4616,
+      "endMs": 4676
+    },
+    {
+      "text": "profile",
+      "startMs": 4676,
+      "endMs": 5180
+    },
+    {
+      "text": "Use",
+      "startMs": 5503,
+      "endMs": 5654
+    },
+    {
+      "text": "your",
+      "startMs": 5654,
+      "endMs": 5735
+    },
+    {
+      "text": "buyers'",
+      "startMs": 5735,
+      "endMs": 6047
+    },
+    {
+      "text": "keywords",
+      "startMs": 6047,
+      "endMs": 6551
+    },
+    {
+      "text": "explain",
+      "startMs": 6743,
+      "endMs": 7126
+    },
+    {
+      "text": "the",
+      "startMs": 7126,
+      "endMs": 7227
+    },
+    {
+      "text": "outcome",
+      "startMs": 7237,
+      "endMs": 7549
+    },
+    {
+      "text": "you",
+      "startMs": 7549,
+      "endMs": 7620
+    },
+    {
+      "text": "deliver",
+      "startMs": 7620,
+      "endMs": 7973
+    },
+    {
+      "text": "and",
+      "startMs": 8205,
+      "endMs": 8285
+    },
+    {
+      "text": "add",
+      "startMs": 8295,
+      "endMs": 8497
+    },
+    {
+      "text": "one",
+      "startMs": 8507,
+      "endMs": 8769
+    },
+    {
+      "text": "clear",
+      "startMs": 8779,
+      "endMs": 9001
+    },
+    {
+      "text": "call",
+      "startMs": 9001,
+      "endMs": 9182
+    },
+    {
+      "text": "to",
+      "startMs": 9182,
+      "endMs": 9243
+    },
+    {
+      "text": "action",
+      "startMs": 9253,
+      "endMs": 9616
+    },
+    {
+      "text": "Next",
+      "startMs": 10104,
+      "endMs": 10477
+    },
+    {
+      "text": "define",
+      "startMs": 10668,
+      "endMs": 11021
+    },
+    {
+      "text": "your",
+      "startMs": 11021,
+      "endMs": 11142
+    },
+    {
+      "text": "ideal",
+      "startMs": 11142,
+      "endMs": 11475
+    },
+    {
+      "text": "customer",
+      "startMs": 11485,
+      "endMs": 11948
+    },
+    {
+      "text": "and",
+      "startMs": 12079,
+      "endMs": 12170
+    },
+    {
+      "text": "use",
+      "startMs": 12180,
+      "endMs": 12382
+    },
+    {
+      "text": "Sales",
+      "startMs": 12382,
+      "endMs": 12604
+    },
+    {
+      "text": "Navigator",
+      "startMs": 12614,
+      "endMs": 13138
+    },
+    {
+      "text": "or",
+      "startMs": 13178,
+      "endMs": 13309
+    },
+    {
+      "text": "Apollo",
+      "startMs": 13309,
+      "endMs": 13702
+    },
+    {
+      "text": "to",
+      "startMs": 13712,
+      "endMs": 13803
+    },
+    {
+      "text": "build",
+      "startMs": 13813,
+      "endMs": 14025
+    },
+    {
+      "text": "a",
+      "startMs": 14136,
+      "endMs": 14166
+    },
+    {
+      "text": "focused",
+      "startMs": 14166,
+      "endMs": 14579
+    },
+    {
+      "text": "prospect",
+      "startMs": 14579,
+      "endMs": 15023
+    },
+    {
+      "text": "list",
+      "startMs": 15023,
+      "endMs": 15356
+    },
+    {
+      "text": "Let",
+      "startMs": 15678,
+      "endMs": 15809
+    },
+    {
+      "text": "AI",
+      "startMs": 15819,
+      "endMs": 16152
+    },
+    {
+      "text": "help",
+      "startMs": 16152,
+      "endMs": 16323
+    },
+    {
+      "text": "prioritize",
+      "startMs": 16333,
+      "endMs": 17049
+    },
+    {
+      "text": "the",
+      "startMs": 17160,
+      "endMs": 17231
+    },
+    {
+      "text": "best",
+      "startMs": 17231,
+      "endMs": 17543
+    },
+    {
+      "text": "fits",
+      "startMs": 17543,
+      "endMs": 17977
+    },
+    {
+      "text": "Use",
+      "startMs": 18481,
+      "endMs": 18814
+    },
+    {
+      "text": "AI",
+      "startMs": 18894,
+      "endMs": 19328
+    },
+    {
+      "text": "to",
+      "startMs": 19398,
+      "endMs": 19519
+    },
+    {
+      "text": "turn",
+      "startMs": 19519,
+      "endMs": 19771
+    },
+    {
+      "text": "relevant",
+      "startMs": 19781,
+      "endMs": 20124
+    },
+    {
+      "text": "research",
+      "startMs": 20124,
+      "endMs": 20618
+    },
+    {
+      "text": "into",
+      "startMs": 20689,
+      "endMs": 20840
+    },
+    {
+      "text": "personalized",
+      "startMs": 20840,
+      "endMs": 21424
+    },
+    {
+      "text": "messages",
+      "startMs": 21435,
+      "endMs": 21979
+    },
+    {
+      "text": "Review",
+      "startMs": 22302,
+      "endMs": 22533
+    },
+    {
+      "text": "each",
+      "startMs": 22533,
+      "endMs": 22664
+    },
+    {
+      "text": "one",
+      "startMs": 22664,
+      "endMs": 22866
+    },
+    {
+      "text": "before",
+      "startMs": 22866,
+      "endMs": 23108
+    },
+    {
+      "text": "it",
+      "startMs": 23108,
+      "endMs": 23148
+    },
+    {
+      "text": "goes",
+      "startMs": 23148,
+      "endMs": 23360
+    },
+    {
+      "text": "out",
+      "startMs": 23360,
+      "endMs": 23612
+    },
+    {
+      "text": "Connect",
+      "startMs": 24237,
+      "endMs": 24449
+    },
+    {
+      "text": "your",
+      "startMs": 24449,
+      "endMs": 24540
+    },
+    {
+      "text": "CRM",
+      "startMs": 24550,
+      "endMs": 25144
+    },
+    {
+      "text": "to",
+      "startMs": 25286,
+      "endMs": 25376
+    },
+    {
+      "text": "an",
+      "startMs": 25376,
+      "endMs": 25497
+    },
+    {
+      "text": "automation",
+      "startMs": 25588,
+      "endMs": 26021
+    },
+    {
+      "text": "workflow",
+      "startMs": 26021,
+      "endMs": 26485
+    },
+    {
+      "text": "Track",
+      "startMs": 26808,
+      "endMs": 27019
+    },
+    {
+      "text": "replies",
+      "startMs": 27019,
+      "endMs": 27544
+    },
+    {
+      "text": "schedule",
+      "startMs": 27695,
+      "endMs": 28098
+    },
+    {
+      "text": "follow-up",
+      "startMs": 28108,
+      "endMs": 28521
+    },
+    {
+      "text": "tasks",
+      "startMs": 28521,
+      "endMs": 29056
+    },
+    {
+      "text": "and",
+      "startMs": 29227,
+      "endMs": 29358
+    },
+    {
+      "text": "stop",
+      "startMs": 29358,
+      "endMs": 29671
+    },
+    {
+      "text": "when",
+      "startMs": 29681,
+      "endMs": 29771
+    },
+    {
+      "text": "someone",
+      "startMs": 29771,
+      "endMs": 30013
+    },
+    {
+      "text": "responds",
+      "startMs": 30024,
+      "endMs": 30598
+    },
+    {
+      "text": "Finally",
+      "startMs": 31144,
+      "endMs": 31638
+    },
+    {
+      "text": "qualify",
+      "startMs": 31759,
+      "endMs": 32243
+    },
+    {
+      "text": "interested",
+      "startMs": 32243,
+      "endMs": 32626
+    },
+    {
+      "text": "leads",
+      "startMs": 32626,
+      "endMs": 33069
+    },
+    {
+      "text": "book",
+      "startMs": 33221,
+      "endMs": 33422
+    },
+    {
+      "text": "calls",
+      "startMs": 33422,
+      "endMs": 33805
+    },
+    {
+      "text": "and",
+      "startMs": 34007,
+      "endMs": 34087
+    },
+    {
+      "text": "track",
+      "startMs": 34097,
+      "endMs": 34390
+    },
+    {
+      "text": "every",
+      "startMs": 34521,
+      "endMs": 34743
+    },
+    {
+      "text": "outcome",
+      "startMs": 34753,
+      "endMs": 35045
+    },
+    {
+      "text": "in",
+      "startMs": 35045,
+      "endMs": 35085
+    },
+    {
+      "text": "your",
+      "startMs": 35085,
+      "endMs": 35156
+    },
+    {
+      "text": "CRM",
+      "startMs": 35156,
+      "endMs": 35610
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 3.3333333333333335,
+      "energy": 2
+    },
+    {
+      "start": 3.3333333333333335,
+      "end": 9.9,
+      "energy": 2
+    },
+    {
+      "start": 9.9,
+      "end": 18.266666666666666,
+      "energy": 2
+    },
+    {
+      "start": 18.266666666666666,
+      "end": 24.033333333333335,
+      "energy": 2
+    },
+    {
+      "start": 24.033333333333335,
+      "end": 30.9,
+      "energy": 3
+    },
+    {
+      "start": 30.9,
+      "end": 36.0,
+      "energy": 3
+    }
+  ],
+  "hits": [],
+  "bodyFrames": 1080
+}

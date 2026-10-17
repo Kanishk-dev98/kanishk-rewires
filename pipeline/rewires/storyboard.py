@@ -23,7 +23,9 @@ from pathlib import Path
 
 from . import config
 
-SCENE_TYPES = {"hook", "stat", "compare", "quote", "timeline", "route", "headline", "takeaway"}
+SCENE_TYPES = {"hook", "stat", "compare", "quote", "timeline", "route", "headline", "takeaway",
+               "systemHook", "profile", "prospects", "personalize", "workflow", "convert"}
+NON_TEXT_KEYS = {"theme", "accent", "highlight"}
 DASHES = re.compile("[–—]")
 TEXT_KEYS = {"kicker", "lines", "sub", "label", "title", "note", "quote", "who", "role", "input", "body", "final", "points", "items", "rows", "a", "b", "display", "unit", "date", "text"}
 
@@ -43,7 +45,7 @@ def on_screen_text(scene: dict) -> list[str]:
 
     def walk(v, key=None):
         if isinstance(v, str):
-            if key in TEXT_KEYS or key is None:
+            if key not in NON_TEXT_KEYS:
                 out.append(v.replace("*", ""))
         elif isinstance(v, list):
             for x in v:

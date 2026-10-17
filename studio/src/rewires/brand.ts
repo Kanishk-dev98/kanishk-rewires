@@ -24,6 +24,6 @@ export const EASE_IO = Easing.bezier(0.65, 0, 0.35, 1);
 export const ZONE = {
   contentTop: 0.12,
   contentBottom: 0.63,
-  captionTop: 0.665,
+  captionTop: 0.69,
   sourceY: 0.775,
 };
