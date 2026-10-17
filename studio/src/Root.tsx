@@ -9,6 +9,7 @@ import { calculateRewiresMetadata, Rewires } from "./rewires/Rewires";
 import { LogoReveal } from "./rewires/LogoReveal";
 import { REWIRES_DEMO } from "./rewires/demo";
 import { Cine3D } from "./rewires/cine3d";
+import { Thumb16 } from "./rewires/promo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -41,6 +42,15 @@ export const RemotionRoot: React.FC = () => {
         width={1080}
         height={1920}
         defaultProps={{ mode: "flip" as const, model: "media/cine/car.glb", hdr: "media/cine/env.hdr" }}
+      />
+      <Composition
+        id="Thumb16"
+        component={Thumb16}
+        durationInFrames={1}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{ kicker: "AI TOOL SPOTLIGHT", line1: "Who's engineering?", line2: "Who's just", accent: "vibe coding?", mark: "media/promo/tool/logo-mark.svg", tool: "Outship", site: "OUTSHIP.AI" }}
       />
       <Composition id="RewiresOutro" component={LogoReveal} durationInFrames={90} fps={30} width={1080} height={1920} defaultProps={{}} />
       <Composition id="RewiresOutroWide" component={LogoReveal} durationInFrames={90} fps={30} width={1920} height={1080} defaultProps={{}} />

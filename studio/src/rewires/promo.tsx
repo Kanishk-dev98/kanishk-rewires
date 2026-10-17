@@ -754,6 +754,39 @@ export const PToolBrandScene: React.FC<SceneProps> = ({ data }) => {
   );
 };
 
+// ------------------------------------------------------------------ 16:9 thumbnail (charcoal + lime brand look)
+export const Thumb16: React.FC<{ kicker: string; line1: string; line2: string; accent: string; mark: string; tool: string; site: string }> = ({ kicker, line1, line2, accent, mark, tool, site }) => (
+  <AbsoluteFill style={{ background: C.charcoal, fontFamily: BODY, color: C.cream }}>
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse 55% 60% at 78% 50%, rgba(167,255,63,0.16), rgba(0,0,0,0) 70%)" }} />
+    {new Array(42).fill(0).map((_, i) => (
+      <div key={i} style={{ position: "absolute", left: 1420 + (i % 7) * 62, top: 140 + Math.floor(i / 7) * 120, width: 34, height: 34, background: C.lime, opacity: 0.05 + 0.5 * random(`t${i}`) * ((i % 7) / 7) }} />
+    ))}
+    <div style={{ position: "absolute", left: 120, top: 150, fontFamily: MONO, fontWeight: 600, fontSize: 34, letterSpacing: 8, color: C.lime }}>{kicker}</div>
+    <div style={{ position: "absolute", left: 116, top: 250, fontWeight: 700, fontSize: 112, lineHeight: 1.08, letterSpacing: -3, whiteSpace: "nowrap" }}>
+      <div>{line1}</div>
+      <div>
+        {line2}{" "}
+        <span style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 400, color: C.lime, fontSize: 128 }}>{accent}</span>
+      </div>
+    </div>
+    <div style={{ position: "absolute", left: 120, bottom: 150, display: "flex", alignItems: "center", gap: 26, padding: "22px 34px", borderRadius: 26, background: C.graphite, border: "2px solid rgba(167,255,63,0.4)" }}>
+      <Img src={staticFile(mark)} style={{ width: 84, height: 84 }} />
+      <div>
+        <div style={{ fontSize: 60, fontWeight: 600, lineHeight: 1 }}>{tool}</div>
+        <div style={{ fontFamily: MONO, fontSize: 24, letterSpacing: 4, color: C.grey, marginTop: 8 }}>{site}</div>
+      </div>
+    </div>
+    <div style={{ position: "absolute", right: 120, bottom: 150, display: "flex", alignItems: "center", gap: 16 }}>
+      <Img src={staticFile(BRAND.logo.monogramPublic)} style={{ width: 70, height: 70 }} />
+      <span style={{ fontFamily: MONO, fontSize: 36, color: C.stone }}>
+        {BRAND.wordmark.left}
+        <span style={{ color: C.lime }}>{BRAND.wordmark.dot}</span>
+        {BRAND.wordmark.right}
+      </span>
+    </div>
+  </AbsoluteFill>
+);
+
 export const PROMO_SCENES: Record<string, React.FC<SceneProps>> = {
   pToolBrand: PToolBrandScene,
   pKinetic: PKineticScene,
