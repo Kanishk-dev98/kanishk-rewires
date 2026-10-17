@@ -1,0 +1,91 @@
+1
+00:00:00,228 --> 00:00:02,967
+Klarna said its AI was doing the work
+
+2
+00:00:02,987 --> 00:00:04,661
+of seven hundred agents
+
+3
+00:00:05,242 --> 00:00:06,601
+Fifteen months later
+
+4
+00:00:06,621 --> 00:00:09,526
+its CEO said Klarna would invest in human
+
+5
+00:00:09,546 --> 00:00:10,524
+support again
+
+6
+00:00:11,028 --> 00:00:12,317
+The results were real
+
+7
+00:00:12,337 --> 00:00:14,758
+Two point three million chats in the first
+
+8
+00:00:14,778 --> 00:00:15,531
+month
+
+9
+00:00:16,028 --> 00:00:18,963
+Errands went from eleven minutes to under two
+
+10
+00:00:19,461 --> 00:00:22,849
+But in May 2025 the CEO admitted cost had
+
+11
+00:00:22,869 --> 00:00:23,792
+dominated
+
+12
+00:00:23,812 --> 00:00:25,266
+and what you end up having is lower
+
+13
+00:00:25,286 --> 00:00:26,264
+quality
+
+14
+00:00:26,773 --> 00:00:28,357
+Here's what the headlines missed
+
+15
+00:00:28,377 --> 00:00:29,972
+The AI never left
+
+16
+00:00:29,992 --> 00:00:32,692
+It still handled about two thirds of chats
+
+17
+00:00:33,194 --> 00:00:34,849
+Klarna split the work
+
+18
+00:00:34,869 --> 00:00:36,783
+AI takes the routine volume
+
+19
+00:00:36,803 --> 00:00:38,807
+Humans become the premium layer
+
+20
+00:00:38,855 --> 00:00:41,790
+what the CEO now calls the VIP treatment
+
+21
+00:00:42,261 --> 00:00:45,260
+So automate the volume not the trust
+
+22
+00:00:45,280 --> 00:00:47,453
+Measure quality not just cost
+
+23
+00:00:47,473 --> 00:00:49,772
+And always leave a door to a human

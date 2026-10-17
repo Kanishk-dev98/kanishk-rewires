@@ -1,0 +1,32 @@
+{
+  "fps": 30,
+  "defaultFormat": "9x16",
+  "formats": {
+    "9x16": { "width": 1080, "height": 1920 },
+    "4x5": { "width": 1080, "height": 1350 },
+    "1x1": { "width": 1080, "height": 1080 },
+    "16x9": { "width": 1920, "height": 1080 }
+  },
+  "durationTargetSeconds": [30, 60],
+  "voice": {
+    "provider": "edge",
+    "edge": { "voice": "en-US-AndrewMultilingualNeural", "rate": "+6%" },
+    "recorded": { "note": "Put one file per scene at projects/<slug>/audio/vo/sNN.mp3 (or .wav)." },
+    "elevenlabs": { "voiceId": "", "model": "eleven_multilingual_v2", "envKey": "ELEVENLABS_API_KEY" }
+  },
+  "timing": {
+    "leadInFrames": 4,
+    "padFrames": 10,
+    "minSceneFrames": 45
+  },
+  "music": { "bpm": 120, "volume": 0.13, "duckedVolume": 0.09 },
+  "render": { "codec": "h264", "crf": 16, "concurrency": 6, "audioBitrate": "256k", "sampleRate": 48000 },
+  "loudness": { "targetLufs": -14, "truePeak": -1.5, "toleranceLu": 1.5 },
+  "qc": {
+    "blackMinSeconds": 0.5,
+    "freezeMinSeconds": 2.5,
+    "silenceMinSeconds": 1.6,
+    "silenceNoiseDb": -45,
+    "contactSheetFps": 1.5
+  }
+}

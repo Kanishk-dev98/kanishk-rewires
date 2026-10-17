@@ -1,9 +1,9 @@
 ---
-name: wires-film-pipeline
-description: How kanishk.wires videos are built and delivered in this repo: compositions, beat grids, music generators, styleframes, full render, mastering, delivery and git. Use whenever making or revising a reel, brand film or launch film.
+name: rewires-film-pipeline
+description: How Kanishk.Rewires videos are built and delivered in this repo: compositions, beat grids, music generators, styleframes, full render, mastering, delivery and git. Use whenever making or revising a reel, brand film or launch film.
 ---
 
-# kanishk.wires film pipeline
+# Kanishk.Rewires film pipeline
 
 Everything renders from code with Remotion in `studio/` (Node 18+, Python venv in `.venv`). Load the `remotion-best-practices` skill before writing Remotion code, and `abstraxn-brand` for Abstraxn work.
 
@@ -11,6 +11,8 @@ Everything renders from code with Remotion in `studio/` (Node 18+, Python venv i
 
 | Composition | Folder | What | Builder |
 |---|---|---|---|
+| **`Rewires`** | `studio/src/rewires/` | **Default for Kanishk.Rewires.** Any format, 8 scene tools, captions, source labels, signature outro | `python -m pipeline.rewires.produce run <slug>` (see `docs/PIPELINE.md`) |
+| `RewiresOutro` / `RewiresOutroWide` | `studio/src/rewires/LogoReveal.tsx` | the 3 s brand ending on its own, 9:16 and 16:9 | render directly |
 | `Story` | `studio/src/story/` | 9:16 reels with voiceover, word captions, 9 scene types | `pipeline/build_story.py reels/<spec>.json` |
 | `StatRace` | `studio/src/StatRace.tsx` | single stat-race reel | `pipeline/build_reel.py` |
 | `Film` | `studio/src/film/` | 16:9 narrated brand film (voice per line, chapter timeline) | `pipeline/build_film.py films/<x>/script.json` |
@@ -25,7 +27,7 @@ Everything renders from code with Remotion in `studio/` (Node 18+, Python venv i
 ## Workflow (what the user expects)
 
 1. Script or storyboard first if it is new, then styleframes (12 to 14 stills at full 1920×1080), then the full render.
-2. Styleframes: `npx remotion bundle --out-dir=../out/bundle`, then `npx remotion still ../out/bundle <Comp> out.png --frame=N` in parallel; tile with ffmpeg into a board and **look at it** (see `wires-video-qa`).
+2. Styleframes: `npx remotion bundle --out-dir=../out/bundle`, then `npx remotion still ../out/bundle <Comp> out.png --frame=N` in parallel; tile with ffmpeg into a board and **look at it** (see `rewires-video-qa`).
 3. Full render: `npx remotion render ../out/bundle <Comp> ../out/x.raw.mp4 --codec=h264 --crf=16 --concurrency=6`.
 4. Master (always, keeps QuickTime happy):
    ```bash
@@ -36,7 +38,7 @@ Everything renders from code with Remotion in `studio/` (Node 18+, Python venv i
    ```
    In zsh, write these flags out in full; a `$VAR` holding flags will not word-split.
 5. Deliver: copy to `~/Downloads/<Project folder>/` with a **new file name per version** (v1, v2…), plus styleframes, board and NOTES.md, then `open` the video. Never overwrite a file the user may have open.
-6. Save: `films/<project>/` (video, styleframes, board, NOTES.md with decisions), commit, push to `origin main` (github.com/kanishk-986/video-agent). Videos over ~95 MB will not push; keep those local or use Git LFS.
+6. Save: `films/<project>/` (video, styleframes, board, NOTES.md with decisions), commit, push to `origin main` (github.com/kanishk-986/kanishk-rewires). Videos over ~95 MB will not push; keep those local or use Git LFS.
 
 ## Gotchas
 

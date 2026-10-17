@@ -1,18 +1,33 @@
-# kanishk-wires
+# Kanishk.Rewires studio
 
-For making production grade videos for Instagram, YouTube and all.
+An autonomous video production studio for **Kanishk.Rewires** (@kanishk.rewires): researched, art-directed, branded videos on AI, business, marketing and growth, rendered from code on a Mac at zero running cost.
 
-An automated factory for faceless, motion-graphics Instagram Reels about AI and marketing. The goal is 10 production-grade reels a day, at zero running cost. Everything renders from code on a Mac.
+**Status (2026-10-17):** the staged production pipeline works end to end (research ledger → brief → storyboard → narration → edit → render → 14 automated QC checks → delivery). Sample: `projects/klarna-ai-humans/`. See `docs/PIPELINE.md`.
 
-**Status (2026-10-15):** the engine works end to end and the first cinematic reel is done. Next: pick the channel name and niche, then build the daily agent.
+## Quick start
+
+```bash
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+cd studio && npm install && cd ..
+.venv/bin/python -m pytest -q tests
+.venv/bin/python -m pipeline.rewires.produce new my-topic --topic "..."
+# write research/sources.json, brief/brief.md, storyboard/storyboard.json (see docs/PIPELINE.md)
+.venv/bin/python -m pipeline.rewires.produce run my-topic --open
+```
 
 ## What's in here
 
 ```
+brand/          Kanishk.Rewires logo, brand board, logo sheet
+config/         brand.config.json + production.config.json (single source of truth)
+projects/       one folder per Rewires video (research → renders → reports)
+pipeline/rewires/  staged production pipeline (produce.py CLI)
+tests/          pytest suite
 films/          Long-form landscape films (abstraxn-intro: 5:39 brand film)
 pipeline/       Python build scripts: voiceover, timing sync, score, render, loudness
 reels/          One JSON spec per reel (script + data). The daily agent will write these.
 studio/         Remotion project (React → MP4)
+  src/rewires/  Kanishk.Rewires engine: 8 scene tools, captions, signature logo outro
   src/story/    "Story" engine: 9 cinematic scene types + effects + captions
   src/film/     "Film" engine: 16:9 brand films (Abstraxn scenes, brand kit, word-synced type)
   src/StatRace.tsx  Single-scene stat race template (v1/v2)

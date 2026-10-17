@@ -1,0 +1,857 @@
+{
+  "scenes": [
+    {
+      "id": "s01",
+      "type": "hook",
+      "dur": 149,
+      "vo": "projects/klarna-ai-humans/vo/s01.mp3",
+      "voAt": 4,
+      "data": {
+        "kicker": "Klarna / Feb 2024",
+        "lines": [
+          "The work of",
+          "*700* agents."
+        ],
+        "size": 150,
+        "step": 9
+      },
+      "transition": "cut",
+      "sfx": [],
+      "source": "Klarna press release, Feb 2024"
+    },
+    {
+      "id": "s02",
+      "type": "hook",
+      "dur": 175,
+      "vo": "projects/klarna-ai-humans/vo/s02.mp3",
+      "voAt": 4,
+      "data": {
+        "kicker": "May 2025",
+        "lines": [
+          "Then it invested",
+          "in *humans* again."
+        ],
+        "size": 116,
+        "step": 8
+      },
+      "transition": "wipe",
+      "sfx": [],
+      "source": "Bloomberg, May 2025"
+    },
+    {
+      "id": "s03",
+      "type": "stat",
+      "dur": 150,
+      "vo": "projects/klarna-ai-humans/vo/s03.mp3",
+      "voAt": 4,
+      "data": {
+        "kicker": "Chats handled by the AI",
+        "value": 2.3,
+        "decimals": 1,
+        "suffix": "M",
+        "label": "in its first month. *Two thirds* of all customer service chats.",
+        "size": 250,
+        "countFrames": 24,
+        "syncFrame": 74
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 74,
+          "volume": 0.25
+        }
+      ],
+      "source": "Klarna's own figures, Feb 2024"
+    },
+    {
+      "id": "s04",
+      "type": "compare",
+      "dur": 103,
+      "vo": "projects/klarna-ai-humans/vo/s04.mp3",
+      "voAt": 4,
+      "data": {
+        "theme": "cream",
+        "kicker": "Time to resolve an errand",
+        "title": "Nine minutes *faster.*",
+        "rows": [
+          {
+            "label": "Before the AI",
+            "value": 11,
+            "display": "11 min"
+          },
+          {
+            "label": "With the AI",
+            "value": 2,
+            "display": "< 2 min",
+            "win": true
+          }
+        ],
+        "syncFrames": [
+          31,
+          73
+        ]
+      },
+      "transition": "wipe",
+      "sfx": [],
+      "source": "Klarna's own figures, Feb 2024"
+    },
+    {
+      "id": "s05",
+      "type": "quote",
+      "dur": 219,
+      "vo": "projects/klarna-ai-humans/vo/s05.mp3",
+      "voAt": 4,
+      "data": {
+        "kicker": "On the record",
+        "quote": "What you end up having is lower quality.",
+        "who": "Sebastian Siemiatkowski",
+        "role": "CEO, Klarna / to Bloomberg, May 2025",
+        "highlight": [
+          "quality"
+        ],
+        "size": 84,
+        "revealFrames": 48,
+        "syncFrame": 141
+      },
+      "transition": "fade",
+      "sfx": [],
+      "source": "Bloomberg interview, May 2025"
+    },
+    {
+      "id": "s06",
+      "type": "headline",
+      "dur": 193,
+      "vo": "projects/klarna-ai-humans/vo/s06.mp3",
+      "voAt": 4,
+      "data": {
+        "theme": "cream",
+        "kicker": "What the headlines missed",
+        "lines": [
+          "The AI",
+          "never *left.*"
+        ],
+        "size": 150,
+        "body": "It still handled about two thirds of chats.",
+        "bodyAt": 70,
+        "syncFrame": 72
+      },
+      "transition": "wipe",
+      "sfx": [],
+      "source": "Klarna via CX Dive, May 2025"
+    },
+    {
+      "id": "s07",
+      "type": "route",
+      "dur": 272,
+      "vo": "projects/klarna-ai-humans/vo/s07.mp3",
+      "voAt": 4,
+      "data": {
+        "kicker": "The new model",
+        "input": "Every customer *question*",
+        "a": {
+          "label": "AI",
+          "sub": "Speed on routine volume"
+        },
+        "b": {
+          "label": "Humans",
+          "sub": "The VIP treatment"
+        },
+        "accent": "b",
+        "syncFrames": [
+          57,
+          115
+        ]
+      },
+      "transition": "fade",
+      "sfx": [],
+      "source": "Klarna CEO, Feb 2026"
+    },
+    {
+      "id": "s08",
+      "type": "takeaway",
+      "dur": 240,
+      "vo": "projects/klarna-ai-humans/vo/s08.mp3",
+      "voAt": 4,
+      "data": {
+        "kicker": "For your business",
+        "points": [
+          "Automate the volume,\nnot the *trust.*",
+          "Measure quality,\nnot just cost.",
+          "Always leave a door\nto a human."
+        ],
+        "syncFrames": [
+          24,
+          97,
+          166
+        ]
+      },
+      "transition": "cut",
+      "sfx": []
+    }
+  ],
+  "captions": [
+    {
+      "text": "Klarna",
+      "startMs": 228,
+      "endMs": 546
+    },
+    {
+      "text": "said",
+      "startMs": 558,
+      "endMs": 782
+    },
+    {
+      "text": "its",
+      "startMs": 782,
+      "endMs": 959
+    },
+    {
+      "text": "AI",
+      "startMs": 1100,
+      "endMs": 1725
+    },
+    {
+      "text": "was",
+      "startMs": 1938,
+      "endMs": 2138
+    },
+    {
+      "text": "doing",
+      "startMs": 2138,
+      "endMs": 2374
+    },
+    {
+      "text": "the",
+      "startMs": 2374,
+      "endMs": 2456
+    },
+    {
+      "text": "work",
+      "startMs": 2456,
+      "endMs": 2798
+    },
+    {
+      "text": "of",
+      "startMs": 2987,
+      "endMs": 3081
+    },
+    {
+      "text": "seven",
+      "startMs": 3199,
+      "endMs": 3506
+    },
+    {
+      "text": "hundred",
+      "startMs": 3506,
+      "endMs": 3718
+    },
+    {
+      "text": "agents",
+      "startMs": 3730,
+      "endMs": 4261
+    },
+    {
+      "text": "Fifteen",
+      "startMs": 5242,
+      "endMs": 5607
+    },
+    {
+      "text": "months",
+      "startMs": 5607,
+      "endMs": 5855
+    },
+    {
+      "text": "later",
+      "startMs": 5866,
+      "endMs": 6208
+    },
+    {
+      "text": "its",
+      "startMs": 6621,
+      "endMs": 6716
+    },
+    {
+      "text": "CEO",
+      "startMs": 6727,
+      "endMs": 7341
+    },
+    {
+      "text": "said",
+      "startMs": 7565,
+      "endMs": 7848
+    },
+    {
+      "text": "Klarna",
+      "startMs": 7848,
+      "endMs": 8249
+    },
+    {
+      "text": "would",
+      "startMs": 8249,
+      "endMs": 8366
+    },
+    {
+      "text": "invest",
+      "startMs": 8366,
+      "endMs": 8933
+    },
+    {
+      "text": "in",
+      "startMs": 9086,
+      "endMs": 9204
+    },
+    {
+      "text": "human",
+      "startMs": 9204,
+      "endMs": 9546
+    },
+    {
+      "text": "support",
+      "startMs": 9546,
+      "endMs": 9841
+    },
+    {
+      "text": "again",
+      "startMs": 9841,
+      "endMs": 10124
+    },
+    {
+      "text": "The",
+      "startMs": 11028,
+      "endMs": 11075
+    },
+    {
+      "text": "results",
+      "startMs": 11087,
+      "endMs": 11452
+    },
+    {
+      "text": "were",
+      "startMs": 11464,
+      "endMs": 11605
+    },
+    {
+      "text": "real",
+      "startMs": 11617,
+      "endMs": 11947
+    },
+    {
+      "text": "Two",
+      "startMs": 12337,
+      "endMs": 12455
+    },
+    {
+      "text": "point",
+      "startMs": 12455,
+      "endMs": 12749
+    },
+    {
+      "text": "three",
+      "startMs": 12867,
+      "endMs": 13256
+    },
+    {
+      "text": "million",
+      "startMs": 13256,
+      "endMs": 13634
+    },
+    {
+      "text": "chats",
+      "startMs": 13646,
+      "endMs": 14117
+    },
+    {
+      "text": "in",
+      "startMs": 14341,
+      "endMs": 14412
+    },
+    {
+      "text": "the",
+      "startMs": 14412,
+      "endMs": 14471
+    },
+    {
+      "text": "first",
+      "startMs": 14471,
+      "endMs": 14766
+    },
+    {
+      "text": "month",
+      "startMs": 14778,
+      "endMs": 15131
+    },
+    {
+      "text": "Errands",
+      "startMs": 16028,
+      "endMs": 16429
+    },
+    {
+      "text": "went",
+      "startMs": 16523,
+      "endMs": 16700
+    },
+    {
+      "text": "from",
+      "startMs": 16700,
+      "endMs": 16841
+    },
+    {
+      "text": "eleven",
+      "startMs": 16841,
+      "endMs": 17266
+    },
+    {
+      "text": "minutes",
+      "startMs": 17278,
+      "endMs": 17738
+    },
+    {
+      "text": "to",
+      "startMs": 17891,
+      "endMs": 18032
+    },
+    {
+      "text": "under",
+      "startMs": 18044,
+      "endMs": 18221
+    },
+    {
+      "text": "two",
+      "startMs": 18221,
+      "endMs": 18563
+    },
+    {
+      "text": "But",
+      "startMs": 19461,
+      "endMs": 19532
+    },
+    {
+      "text": "in",
+      "startMs": 19532,
+      "endMs": 19579
+    },
+    {
+      "text": "May 2025",
+      "startMs": 19579,
+      "endMs": 20558
+    },
+    {
+      "text": "the",
+      "startMs": 20782,
+      "endMs": 20888
+    },
+    {
+      "text": "CEO",
+      "startMs": 20900,
+      "endMs": 21643
+    },
+    {
+      "text": "admitted",
+      "startMs": 21772,
+      "endMs": 22220
+    },
+    {
+      "text": "cost",
+      "startMs": 22220,
+      "endMs": 22657
+    },
+    {
+      "text": "had",
+      "startMs": 22657,
+      "endMs": 22857
+    },
+    {
+      "text": "dominated",
+      "startMs": 22869,
+      "endMs": 23435
+    },
+    {
+      "text": "and",
+      "startMs": 23812,
+      "endMs": 23919
+    },
+    {
+      "text": "what",
+      "startMs": 23919,
+      "endMs": 24036
+    },
+    {
+      "text": "you",
+      "startMs": 24048,
+      "endMs": 24178
+    },
+    {
+      "text": "end",
+      "startMs": 24190,
+      "endMs": 24343
+    },
+    {
+      "text": "up",
+      "startMs": 24343,
+      "endMs": 24473
+    },
+    {
+      "text": "having",
+      "startMs": 24473,
+      "endMs": 24886
+    },
+    {
+      "text": "is",
+      "startMs": 24886,
+      "endMs": 24992
+    },
+    {
+      "text": "lower",
+      "startMs": 24992,
+      "endMs": 25286
+    },
+    {
+      "text": "quality",
+      "startMs": 25286,
+      "endMs": 25864
+    },
+    {
+      "text": "Here's",
+      "startMs": 26773,
+      "endMs": 26938
+    },
+    {
+      "text": "what",
+      "startMs": 26938,
+      "endMs": 27009
+    },
+    {
+      "text": "the",
+      "startMs": 27020,
+      "endMs": 27068
+    },
+    {
+      "text": "headlines",
+      "startMs": 27068,
+      "endMs": 27527
+    },
+    {
+      "text": "missed",
+      "startMs": 27527,
+      "endMs": 27987
+    },
+    {
+      "text": "The",
+      "startMs": 28377,
+      "endMs": 28483
+    },
+    {
+      "text": "AI",
+      "startMs": 28589,
+      "endMs": 28919
+    },
+    {
+      "text": "never",
+      "startMs": 28919,
+      "endMs": 29178
+    },
+    {
+      "text": "left",
+      "startMs": 29190,
+      "endMs": 29603
+    },
+    {
+      "text": "It",
+      "startMs": 29992,
+      "endMs": 30063
+    },
+    {
+      "text": "still",
+      "startMs": 30063,
+      "endMs": 30310
+    },
+    {
+      "text": "handled",
+      "startMs": 30311,
+      "endMs": 30664
+    },
+    {
+      "text": "about",
+      "startMs": 30664,
+      "endMs": 30924
+    },
+    {
+      "text": "two",
+      "startMs": 30936,
+      "endMs": 31242
+    },
+    {
+      "text": "thirds",
+      "startMs": 31254,
+      "endMs": 31608
+    },
+    {
+      "text": "of",
+      "startMs": 31608,
+      "endMs": 31667
+    },
+    {
+      "text": "chats",
+      "startMs": 31678,
+      "endMs": 32292
+    },
+    {
+      "text": "Klarna",
+      "startMs": 33194,
+      "endMs": 33583
+    },
+    {
+      "text": "split",
+      "startMs": 33595,
+      "endMs": 34032
+    },
+    {
+      "text": "the",
+      "startMs": 34043,
+      "endMs": 34114
+    },
+    {
+      "text": "work",
+      "startMs": 34114,
+      "endMs": 34492
+    },
+    {
+      "text": "AI",
+      "startMs": 34869,
+      "endMs": 35234
+    },
+    {
+      "text": "takes",
+      "startMs": 35234,
+      "endMs": 35494
+    },
+    {
+      "text": "the",
+      "startMs": 35494,
+      "endMs": 35576
+    },
+    {
+      "text": "routine",
+      "startMs": 35576,
+      "endMs": 35966
+    },
+    {
+      "text": "volume",
+      "startMs": 35966,
+      "endMs": 36390
+    },
+    {
+      "text": "Humans",
+      "startMs": 36803,
+      "endMs": 37109
+    },
+    {
+      "text": "become",
+      "startMs": 37121,
+      "endMs": 37440
+    },
+    {
+      "text": "the",
+      "startMs": 37440,
+      "endMs": 37534
+    },
+    {
+      "text": "premium",
+      "startMs": 37534,
+      "endMs": 38065,
+      "hl": true
+    },
+    {
+      "text": "layer",
+      "startMs": 38076,
+      "endMs": 38407
+    },
+    {
+      "text": "what",
+      "startMs": 38855,
+      "endMs": 38973
+    },
+    {
+      "text": "the",
+      "startMs": 38973,
+      "endMs": 39055
+    },
+    {
+      "text": "CEO",
+      "startMs": 39055,
+      "endMs": 39598
+    },
+    {
+      "text": "now",
+      "startMs": 39598,
+      "endMs": 39963
+    },
+    {
+      "text": "calls",
+      "startMs": 39963,
+      "endMs": 40246
+    },
+    {
+      "text": "the",
+      "startMs": 40258,
+      "endMs": 40341
+    },
+    {
+      "text": "VIP",
+      "startMs": 40341,
+      "endMs": 40895
+    },
+    {
+      "text": "treatment",
+      "startMs": 40907,
+      "endMs": 41390
+    },
+    {
+      "text": "So",
+      "startMs": 42261,
+      "endMs": 42568
+    },
+    {
+      "text": "automate",
+      "startMs": 42827,
+      "endMs": 43228
+    },
+    {
+      "text": "the",
+      "startMs": 43228,
+      "endMs": 43287
+    },
+    {
+      "text": "volume",
+      "startMs": 43287,
+      "endMs": 43794
+    },
+    {
+      "text": "not",
+      "startMs": 44053,
+      "endMs": 44266
+    },
+    {
+      "text": "the",
+      "startMs": 44277,
+      "endMs": 44348
+    },
+    {
+      "text": "trust",
+      "startMs": 44348,
+      "endMs": 44902
+    },
+    {
+      "text": "Measure",
+      "startMs": 45280,
+      "endMs": 45516
+    },
+    {
+      "text": "quality",
+      "startMs": 45516,
+      "endMs": 45999
+    },
+    {
+      "text": "not",
+      "startMs": 46188,
+      "endMs": 46353
+    },
+    {
+      "text": "just",
+      "startMs": 46353,
+      "endMs": 46565
+    },
+    {
+      "text": "cost",
+      "startMs": 46565,
+      "endMs": 47108
+    },
+    {
+      "text": "And",
+      "startMs": 47473,
+      "endMs": 47568
+    },
+    {
+      "text": "always",
+      "startMs": 47579,
+      "endMs": 47898
+    },
+    {
+      "text": "leave",
+      "startMs": 47898,
+      "endMs": 48063
+    },
+    {
+      "text": "a",
+      "startMs": 48063,
+      "endMs": 48145
+    },
+    {
+      "text": "door",
+      "startMs": 48145,
+      "endMs": 48594
+    },
+    {
+      "text": "to",
+      "startMs": 48711,
+      "endMs": 48865
+    },
+    {
+      "text": "a",
+      "startMs": 48865,
+      "endMs": 48924
+    },
+    {
+      "text": "human",
+      "startMs": 48924,
+      "endMs": 49372
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 4.966666666666667,
+      "energy": 2
+    },
+    {
+      "start": 4.966666666666667,
+      "end": 10.8,
+      "energy": 2
+    },
+    {
+      "start": 10.8,
+      "end": 15.8,
+      "energy": 2
+    },
+    {
+      "start": 15.8,
+      "end": 19.233333333333334,
+      "energy": 2
+    },
+    {
+      "start": 19.233333333333334,
+      "end": 26.533333333333335,
+      "energy": 1
+    },
+    {
+      "start": 26.533333333333335,
+      "end": 32.96666666666667,
+      "energy": 2
+    },
+    {
+      "start": 32.96666666666667,
+      "end": 42.03333333333333,
+      "energy": 2
+    },
+    {
+      "start": 42.03333333333333,
+      "end": 50.03333333333333,
+      "energy": 3
+    }
+  ],
+  "hits": [
+    28.933333333333334
+  ],
+  "bodyFrames": 1501
+}

@@ -5,10 +5,27 @@ import { calculateFilmMetadata, Film } from "./film/Film";
 import { Brand58, BRAND58_FRAMES } from "./film58/Film58";
 import { Apolio60, APOLIO_FRAMES } from "./apolio/Apolio60";
 import { Launch90, LAUNCH90_FRAMES } from "./launch90/Launch90";
+import { calculateRewiresMetadata, Rewires } from "./rewires/Rewires";
+import { LogoReveal } from "./rewires/LogoReveal";
+import { REWIRES_DEMO } from "./rewires/demo";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+    <Folder name="Rewires">
+      <Composition
+        id="Rewires"
+        component={Rewires}
+        durationInFrames={300}
+        fps={30}
+        width={1080}
+        height={1920}
+        calculateMetadata={calculateRewiresMetadata}
+        defaultProps={REWIRES_DEMO}
+      />
+      <Composition id="RewiresOutro" component={LogoReveal} durationInFrames={90} fps={30} width={1080} height={1920} defaultProps={{}} />
+      <Composition id="RewiresOutroWide" component={LogoReveal} durationInFrames={90} fps={30} width={1920} height={1080} defaultProps={{}} />
+    </Folder>
     <Folder name="Reels">
       <Composition
         id="StatRace"

@@ -1,8 +1,8 @@
-# Start a kanishk.wires chat
+# Start a Kanishk.Rewires chat
 
 ## 1. Open the workspace (once)
 
-In VS Code: **File → New Window → Open Folder… → `~/reels-agent`**. Then open the Claude Code panel in that window.
+In VS Code: **File → New Window → Open Folder… → `~/kanishk-rewires`**. Then open the Claude Code panel in that window.
 
 Everything loads by itself from this folder:
 
@@ -17,10 +17,10 @@ Everything loads by itself from this folder:
 
 ## 2. First message in the new chat (copy and paste)
 
-> This is my kanishk.wires workspace. Read CLAUDE.md, docs/BRAIN.md, docs/DECISIONS.md and docs/ROADMAP.md, and look at the skills in .claude/skills. Then give me a 5-line summary of where we are and what's next.
+> This is my Kanishk.Rewires workspace. Read CLAUDE.md, docs/BRAIN.md, docs/DECISIONS.md and docs/ROADMAP.md, and look at the skills in .claude/skills. Then give me a 5-line summary of where we are and what's next.
 
 ## 3. If something is missing
 
-- **On another computer:** `git clone https://github.com/kanishk-986/kanishk-wires.git ~/reels-agent`, then `git submodule update --init --depth 1 references/OpenMontage references/awesome-opus5-5-videos`, then follow the setup in README.md (npm install in `studio/`, Python venv, regenerate music).
+- **On another computer:** `git clone https://github.com/kanishk-986/kanishk-rewires.git ~/kanishk-rewires`, then `git submodule update --init --depth 1 references/OpenMontage references/awesome-opus5-5-videos`, then follow the setup in README.md (npm install in `studio/`, Python venv, regenerate music).
 - **Pushing fails:** run `gh auth login` once.
 - **Gmail tools fail:** reconnect Gmail in claude.ai connector settings.

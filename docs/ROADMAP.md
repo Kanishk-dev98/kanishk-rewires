@@ -2,10 +2,10 @@
 
 ## Waiting on the user
 
-- [ ] **Channel name + Instagram handle** (ideas in `research/instagram/findings.md`)
+- [x] **Channel name + handle:** Kanishk.Rewires, @kanishk.rewires (2026-10-17)
 - [ ] **Niche and audience**
 - [ ] **The content flow** the user said they would share
-- [ ] Brand look: logo, 2–3 colours, font (or approve a generated brand kit)
+- [x] Brand look: brand board, K·R monogram, palette, fonts (2026-10-17, `brand/`)
 - [ ] Content mix for the 10/day (suggested below)
 - [ ] Instagram Business/Creator account connected in Publora; confirm the plan allows ~300 posts/month
 - [ ] Free Pexels API key (stock footage, also unlocks OpenMontage real-footage mode)
@@ -33,7 +33,19 @@
 4. **Weekly report:** views per format, shift the mix toward winners.
 5. **Optional:** OpenMontage install for hero videos; real logos / Pexels footage in templates.
 
+## Build next (Rewires pipeline)
+
+1. Review the Klarna sample with the user; tune pacing, voice and music to taste.
+2. ElevenLabs (or other paid) voice adapter, and forced alignment for recorded voice.
+3. Pexels footage and image-treatment scene; interface and cursor demo scene; map and network scene.
+4. On-screen spelling check and automatic overlap detection in QC.
+5. Wordmark artwork file to replace the typeset wordmark.
+6. Daily agent: topic research → several projects → batch render → Publora scheduling.
+
 ## Done
+
+- [x] Kanishk.Rewires production pipeline: staged and resumable, 8 scene tools, signature outro, captions and SRT, original score and sonic logo, 14 QC checks, pytest suite (2026-10-17)
+- [x] Sample video: `projects/klarna-ai-humans/` (52.6 s, passed QC) (2026-10-17)
 
 - [x] Remotion project + official agent skills (2026-10-14)
 - [x] StatRace v1 (dark) and v2 (cream, voice, music)

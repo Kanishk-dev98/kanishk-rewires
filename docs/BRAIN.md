@@ -1,10 +1,10 @@
-# The brain: everything known about kanishk.wires
+# The brain: everything known about Kanishk.Rewires
 
 The full context from the founding sessions (2026-10-14 and 2026-10-15), so work can resume without the chat history. Read this first, then `ROADMAP.md` and `DECISIONS.md`.
 
 ## The goal
 
-**Channel / page name: kanishk.wires** (decided 2026-10-17). This repo is its studio: Abstraxn films, Apolio films, AI and marketing reels, and other brand videos.
+**Channel / page name: Kanishk.Rewires** (decided 2026-10-17). This repo is its studio: Abstraxn films, Apolio films, AI and marketing reels, and other brand videos.
 
 
 The user is **Alok Diwan** (works at Antier, which builds Abstraxn). Run an agent that publishes **at least 10 marketing and AI videos a day**, starting on Instagram Reels and later YouTube and other platforms (the GitHub repo description says "production grade videos for instagram youtube and all"). The channel is the user's **personal** account, a new marketing channel they are about to start. The user wants production quality ("Marvel-grade"), not basic slideshows.
@@ -36,7 +36,7 @@ The user is **Alok Diwan** (works at Antier, which builds Abstraxn). Run an agen
 10. **Email attempt:** Gmail tool can only create drafts and needed re-authentication; shared via private claude.ai page instead.
 11. **Research:** 84 verified Instagram reference accounts + the market gap (`research/instagram/`).
 12. **User shared** https://github.com/calesthio/OpenMontage → assessed (`references/README.md`).
-13. **User asked** for one separate git space with everything → this repo, https://github.com/kanishk-986/video-agent (private). On 2026-10-17 it moved to its own repo, https://github.com/kanishk-986/kanishk-wires (private), with full history. `video-agent` stays in use for other videos and must not be deleted.
+13. **User asked** for one separate git space with everything → this repo, https://github.com/kanishk-986/video-agent (private). On 2026-10-17 it moved to its own repo, https://github.com/kanishk-986/kanishk-rewires (private), with full history. `video-agent` stays in use for other videos and must not be deleted.
 14. **Abstraxn introduction film** (2026-10-15): 5:39 landscape institutional film for Alok Diwan's personal portfolio (interview selection), approved by Ankit. Brand pulled from abstraxn.com/brand-kit; Microsoft Andrew voice; original score; dashboard recreated as motion graphics; credit "Produced by Alok Diwan". See `films/abstraxn-intro/`.
 15. **Abstraxn film v2** (2026-10-15): user feedback "too slow, slow piano music, mid-level visuals, overlaps". Rebuilt with a 120 BPM trailer score, cinematic FX, fixed zones, plain-English labels; 4:36.
 16. **58 s brand film from the user's own motion brief** (2026-10-16, `films/abstraxn-58/`): 12 styleframes + animatic, 118 BPM beat grid, music full stop on the HELD stamp. Rev 2: dot grid became the **logo triangle**; busy moments slowed. Rev 3: extended to **61 s** for readability, playback-safe mastering (bt709 + faststart).
@@ -44,7 +44,7 @@ The user is **Alok Diwan** (works at Antier, which builds Abstraxn). Run an agen
 18. **Manus 2.0 launch film breakdown** (`research/reference-videos/manus-2-0/`).
 19. **Apolio · 60 s use-case film** (`films/apolio-60/`, v2): the user's script, Manus-light grammar plus our beat system, Apolio character, Abstraxn palette only.
 20. **Abstraxn launch film · 90 s** (`films/launch-90/`): the Manus-style storyboard, 9 chapters at 120 BPM.
-21. **Workspace setup** (2026-10-17): project skills in `.claude/skills/` (abstraxn-brand, wires-film-pipeline, wires-video-qa, remotion-*), `START_HERE.md`, CLAUDE.md for kanishk.wires.
+21. **Workspace setup** (2026-10-17): project skills in `.claude/skills/` (abstraxn-brand, rewires-film-pipeline, rewires-video-qa, remotion-*), `START_HERE.md`, CLAUDE.md for Kanishk.Rewires.
 
 
 ## Key insight: the gap
@@ -77,7 +77,7 @@ No account checked runs a **faceless, high-volume channel of animated data stori
 
 ## How the user likes to work
 
-- Feedback themes so far: pace must be energetic (not slow), visuals premium and colourful within the brand, no overlapping elements, busy moments readable, music with adrenaline. All captured in `.claude/skills/wires-video-qa`.
+- Feedback themes so far: pace must be energetic (not slow), visuals premium and colourful within the brand, no overlapping elements, busy moments readable, music with adrenaline. All captured in `.claude/skills/rewires-video-qa`.
 
 - Short, direct messages; wants Claude to act and show results, not long option lists.
 - Gives visual feedback scene by scene ("only where you show ChatGPT millions needs refinement").
@@ -86,7 +86,7 @@ No account checked runs a **faceless, high-volume channel of animated data stori
 
 ## Open questions (blocking the daily agent)
 
-1. Channel name + handle (ideas in `research/instagram/findings.md`)
+1. ~~Channel name + handle~~ Decided: Kanishk.Rewires, @kanishk.rewires
 2. Niche and audience
 3. The content "flow" the user said they would share
 4. Brand kit, posting times, approval mode, voice upgrade; full list in `ROADMAP.md`
@@ -97,3 +97,11 @@ No account checked runs a **faceless, high-volume channel of animated data stori
 2. Read `CLAUDE.md`, this file, `docs/ROADMAP.md`
 3. Setup steps in `README.md` (npm install, venv, regenerate music)
 4. Ask the user for whichever open question above is still unanswered
+
+## 2026-10-17: Kanishk.Rewires
+
+- **Final brand name: Kanishk.Rewires** (the user's words: "its the brand name, full and final"). Handle @kanishk.rewires. Tagline "Rethink how you think." The brand board, logo sheet and circular K·R monogram are in `brand/`.
+- The repo was split out of `video-agent` into its own repo, then renamed: **github.com/kanishk-986/kanishk-rewires**, folder `~/kanishk-rewires` (`~/reels-agent` is a symlink). `kanishk-986/video-agent` (clone at `~/video-agent`) stays in use for other videos and must never be deleted.
+- The user supplied a master system prompt (`docs/MASTER_PROMPT.md`, imported by CLAUDE.md) and asked to install it and build the system.
+- Built: the staged pipeline (`pipeline/rewires/`, `docs/PIPELINE.md`), the Rewires Remotion engine (`studio/src/rewires/`), central config (`config/`), tests (`tests/`), and the first sample, `projects/klarna-ai-humans/` (researched with 19 sourced claims).
+

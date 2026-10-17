@@ -1,0 +1,233 @@
+{
+  "slug": "klarna-ai-humans",
+  "topic": "Klarna's AI assistant did the work of 700 agents, then Klarna invested in human support again",
+  "created": "2026-10-17T06:03:26+00:00",
+  "options": {
+    "format": "9x16",
+    "language": "en"
+  },
+  "stages": {
+    "intake": {
+      "status": "done",
+      "at": "2026-10-17T06:03:26+00:00",
+      "note": "project folder and manifest created"
+    },
+    "research": {
+      "status": "done",
+      "at": "2026-10-17T06:03:26+00:00",
+      "note": "19 claims in the ledger",
+      "outputs": [
+        "research/sources.json",
+        "research/sources.md"
+      ]
+    },
+    "brief": {
+      "status": "done",
+      "at": "2026-10-17T06:03:26+00:00",
+      "note": "brief present",
+      "outputs": [
+        "brief/brief.md"
+      ]
+    },
+    "script": {
+      "status": "done",
+      "at": "2026-10-17T06:13:11+00:00",
+      "note": "124 narration words (~48 s at a natural pace)",
+      "outputs": [
+        "script/script.md"
+      ]
+    },
+    "storyboard": {
+      "status": "done",
+      "at": "2026-10-17T06:13:11+00:00",
+      "note": "8 scenes valid, 0 warnings",
+      "outputs": [
+        "storyboard/storyboard.json"
+      ]
+    },
+    "assets": {
+      "status": "done",
+      "at": "2026-10-17T06:13:15+00:00",
+      "note": "8 narration clips (7 reused from cache)",
+      "outputs": [
+        "audio/vo/"
+      ]
+    },
+    "edit": {
+      "status": "done",
+      "at": "2026-10-17T06:13:15+00:00",
+      "note": "8 scenes, body 50.0 s + outro 3.0 s, 123 caption words",
+      "outputs": [
+        "timeline/timeline.json",
+        "timeline/props.json",
+        "captions/klarna-ai-humans.srt",
+        "audio/music.wav",
+        "audio/signature.wav"
+      ]
+    },
+    "render": {
+      "status": "done",
+      "at": "2026-10-17T06:14:16+00:00",
+      "note": "klarna-ai-humans_v4.mp4 (8.5 MB)",
+      "outputs": [
+        "renders/klarna-ai-humans_v4.mp4"
+      ]
+    },
+    "qc": {
+      "status": "done",
+      "at": "2026-10-17T06:14:29+00:00",
+      "note": "klarna-ai-humans_v4.mp4 passed 14 checks",
+      "outputs": [
+        "reports/qc.md",
+        "reports/contact_sheet.png"
+      ]
+    },
+    "delivery": {
+      "status": "done",
+      "at": "2026-10-17T06:14:29+00:00",
+      "note": "delivered klarna-ai-humans_v4.mp4",
+      "outputs": [
+        "reports/production_report.md",
+        "/Users/kanishk.raj/Downloads/Kanishk.Rewires/klarna-ai-humans"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s01.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:13:15+00:00",
+      "cached": true,
+      "seconds": 4.49,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s03.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:13:15+00:00",
+      "cached": true,
+      "seconds": 4.54,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s04.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:13:15+00:00",
+      "cached": true,
+      "seconds": 2.98,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s05.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:13:15+00:00",
+      "cached": true,
+      "seconds": 6.84,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s06.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:13:15+00:00",
+      "cached": true,
+      "seconds": 5.98,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s07.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:13:15+00:00",
+      "cached": true,
+      "seconds": 8.62,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s08.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:13:15+00:00",
+      "cached": true,
+      "seconds": 7.54,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s02.mp3",
+      "provider": "edge",
+      "at": "2026-10-17T06:13:15+00:00",
+      "cached": false,
+      "seconds": 5.38,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "music",
+      "path": "audio/music.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-17T06:13:15+00:00",
+      "licence": "original, generated in code"
+    },
+    {
+      "kind": "music",
+      "path": "audio/signature.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-17T06:13:15+00:00",
+      "licence": "original, generated in code"
+    }
+  ],
+  "versions": [
+    {
+      "file": "renders/klarna-ai-humans_v1.mp4",
+      "at": "2026-10-17T11:36:00"
+    },
+    {
+      "file": "renders/klarna-ai-humans_v2.mp4",
+      "at": "2026-10-17T11:37:45"
+    },
+    {
+      "file": "renders/klarna-ai-humans_v3.mp4",
+      "at": "2026-10-17T11:39:06"
+    },
+    {
+      "file": "renders/klarna-ai-humans_v4.mp4",
+      "at": "2026-10-17T11:44:16"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "id": "klarna-ai-humans",
+  "title": "Klarna automated the volume, not the trust",
+  "format": "9x16",
+  "captions": true,
+  "scenes": [
+    {
+      "id": "s01",
+      "type": "hook",
+      "vo": "Klarna said its AI was doing the work of seven hundred agents.",
+      "claims": [
+        "c3"
+      ],
+      "sourceLabel": "Klarna press release, Feb 2024",
+      "energy": 2,
+      "data": {
+        "kicker": "Klarna / Feb 2024",
+        "lines": [
+          "The work of",
+          "*700* agents."
+        ],
+        "size": 150,
+        "step": 9
+      },
+      "visual": "Oversized editorial type on charcoal; the number is the only lime element.",
+      "animation": "Lines rise out of clipping masks; slow push in.",
+      "sound": "Score starts on the first frame, pulse and pluck."
+    },
+    {
+      "id": "s02",
+      "type": "hook",
+      "vo": "Fifteen months later, its CEO said Klarna would invest in human support again.",
+      "claims": [
+        "c13"
+      ],
+      "sourceLabel": "Bloomberg, May 2025",
+      "transition": "wipe",
+      "energy": 2,
+      "data": {
+        "kicker": "May 2025",
+        "lines": [
+          "Then it invested",
+          "in *humans* again."
+        ],
+        "size": 116,
+        "step": 8
+      },
+      "visual": "Same typographic system, the contradiction stated plainly.",
+      "animation": "Wipe up from the previous scene, mask reveals.",
+      "sound": "Whoosh on the wipe."
+    },
+    {
+      "id": "s03",
+      "type": "stat",
+      "vo": "The results were real. Two point three million chats in the first month.",
+      "sync": "million",
+      "claims": [
+        "c2"
+      ],
+      "sourceLabel": "Klarna's own figures, Feb 2024",
+      "energy": 2,
+      "sfx": [
+        {
+          "name": "tick",
+          "on": "sync",
+          "volume": 0.25
+        }
+      ],
+      "data": {
+        "kicker": "Chats handled by the AI",
+        "value": 2.3,
+        "decimals": 1,
+        "suffix": "M",
+        "label": "in its first month. *Two thirds* of all customer service chats.",
+        "size": 250,
+        "countFrames": 24
+      },
+      "visual": "One number, counted up so it lands on the spoken word.",
+      "animation": "Count up with a settle, lime underline sweeps under it.",
+      "sound": "Soft tick as the number lands."
+    },
+    {
+      "id": "s04",
+      "type": "compare",
+      "vo": "Errands went from eleven minutes to under two.",
+      "syncs": [
+        "eleven",
+        "two"
+      ],
+      "claims": [
+        "c4"
+      ],
+      "sourceLabel": "Klarna's own figures, Feb 2024",
+      "transition": "wipe",
+      "energy": 2,
+      "data": {
+        "theme": "cream",
+        "kicker": "Time to resolve an errand",
+        "title": "Nine minutes *faster.*",
+        "rows": [
+          {
+            "label": "Before the AI",
+            "value": 11,
+            "display": "11 min"
+          },
+          {
+            "label": "With the AI",
+            "value": 2,
+            "display": "< 2 min",
+            "win": true
+          }
+        ]
+      },
+      "visual": "Cream editorial page, two bars on one honest scale.",
+      "animation": "Bars grow on the spoken numbers.",
+      "sound": "Whoosh on the wipe."
+    },
+    {
+      "id": "s05",
+      "type": "quote",
+      "vo": "But in May 2025, the CEO admitted cost had dominated, and what you end up having is lower quality.",
+      "claims": [
+        "c11"
+      ],
+      "sourceLabel": "Bloomberg interview, May 2025",
+      "transition": "fade",
+      "energy": 1,
+      "data": {
+        "kicker": "On the record",
+        "quote": "What you end up having is lower quality.",
+        "who": "Sebastian Siemiatkowski",
+        "role": "CEO, Klarna / to Bloomberg, May 2025",
+        "highlight": [
+          "quality"
+        ],
+        "size": 84,
+        "revealFrames": 48
+      },
+      "visual": "Evidence card: the exact quote, speaker and date. No imagery.",
+      "animation": "Words brighten in reading order.",
+      "sound": "Score drops to pad and pulse.",
+      "sync": "what"
+    },
+    {
+      "id": "s06",
+      "type": "headline",
+      "vo": "Here's what the headlines missed. The AI never left. It still handled about two thirds of chats.",
+      "claims": [
+        "c15"
+      ],
+      "sourceLabel": "Klarna via CX Dive, May 2025",
+      "transition": "wipe",
+      "energy": 2,
+      "hit": true,
+      "sync": "never",
+      "data": {
+        "theme": "cream",
+        "kicker": "What the headlines missed",
+        "lines": [
+          "The AI",
+          "never *left.*"
+        ],
+        "size": 150,
+        "body": "It still handled about two thirds of chats.",
+        "bodyAt": 70
+      },
+      "visual": "The reframe, set as a magazine headline on cream.",
+      "animation": "Mask reveals, supporting line fades in when spoken.",
+      "sound": "Low impact on \"never\"."
+    },
+    {
+      "id": "s07",
+      "type": "route",
+      "vo": "Klarna split the work. AI takes the routine volume. Humans become the premium layer, what the CEO now calls the VIP treatment.",
+      "syncs": [
+        "AI",
+        "humans"
+      ],
+      "highlight": "premium",
+      "claims": [
+        "c15",
+        "c18"
+      ],
+      "sourceLabel": "Klarna CEO, Feb 2026",
+      "transition": "fade",
+      "energy": 2,
+      "data": {
+        "kicker": "The new model",
+        "input": "Every customer *question*",
+        "a": {
+          "label": "AI",
+          "sub": "Speed on routine volume"
+        },
+        "b": {
+          "label": "Humans",
+          "sub": "The VIP treatment"
+        },
+        "accent": "b"
+      },
+      "visual": "One wire splits into two paths: the brand motif made literal.",
+      "animation": "Each branch draws as it is named.",
+      "sound": "Pluck arpeggio carries the split."
+    },
+    {
+      "id": "s08",
+      "type": "takeaway",
+      "vo": "So, automate the volume, not the trust. Measure quality, not just cost. And always leave a door to a human.",
+      "syncs": [
+        "automate",
+        "measure",
+        "always"
+      ],
+      "energy": 3,
+      "data": {
+        "kicker": "For your business",
+        "points": [
+          "Automate the volume,\nnot the *trust.*",
+          "Measure quality,\nnot just cost.",
+          "Always leave a door\nto a human."
+        ]
+      },
+      "visual": "Three numbered rules, one per beat.",
+      "animation": "Each rule rises as it is spoken.",
+      "sound": "Full groove, then resolves into the brand signature."
+    }
+  ]
+}

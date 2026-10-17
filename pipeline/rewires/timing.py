@@ -1,0 +1,106 @@
+"""Turn a storyboard plus narration timings into a frame-accurate timeline and captions.
+
+The edit fits the spoken content: each scene lasts lead-in + narration + pad, and any
+`sync` word moves the scene's key visual moment onto the frame where it is spoken.
+"""
+import re
+
+from .storyboard import norm_word
+
+SFX_FILES = {"tick": "sfx/tick.wav", "click": "sfx/mouse-click.wav", "whoosh": "sfx/whoosh.wav", "impact": "sfx/impact.wav", "switch": "sfx/switch.wav", "ding": "sfx/ding.wav"}
+
+
+def find_word(words, key: str, after_ms: float = -1):
+    k = norm_word(key)
+    return next((a for w, a, _ in words if a > after_ms and norm_word(w) == k), None)
+
+
+def build(sb: dict, vo: dict, prod: dict, vo_public_prefix: str) -> dict:
+    """Return the timeline: Remotion scenes, flat captions, music sections and hit times."""
+    fps = prod["fps"]
+    t = prod["timing"]
+    scenes, captions, sections, hits = [], [], [], []
+    start = 0
+    for s in sb["scenes"]:
+        sid = s["id"]
+        path, dur_s, words, _ = vo.get(sid, (None, 0.0, [], True))
+        lead = s.get("leadIn", t["leadInFrames"])
+        frames = max(s.get("minFrames", t["minSceneFrames"]), lead + round(dur_s * fps) + s.get("pad", t["padFrames"]))
+        data = dict(s.get("data", {}))
+        if s.get("sync"):
+            ms = find_word(words, s["sync"])
+            data["syncFrame"] = lead + round(ms / 1000 * fps) if ms is not None else lead + 8
+        if s.get("syncs"):
+            out, last = [], -1
+            for key in s["syncs"]:
+                ms = find_word(words, key, last)
+                if ms is not None:
+                    last = ms
+                out.append(lead + round(ms / 1000 * fps) if ms is not None else lead + 8 + 20 * len(out))
+            data["syncFrames"] = out
+        sfx = []
+        for x in s.get("sfx", []):
+            at = data.get("syncFrame", lead) if x.get("on") == "sync" else int(x.get("on", 0))
+            sfx.append({"src": SFX_FILES.get(x["name"], x["name"]), "at": max(0, at - x.get("early", 0)), "volume": x.get("volume", 0.3)})
+        scene = {
+            "id": sid,
+            "type": s["type"],
+            "dur": frames,
+            "vo": f"{vo_public_prefix}/{path.name}" if path else None,
+            "voAt": lead,
+            "data": data,
+            "transition": s.get("transition", "cut"),
+            "sfx": sfx,
+        }
+        if s.get("sourceLabel"):
+            scene["source"] = s["sourceLabel"]
+        scenes.append(scene)
+
+        hl = norm_word(s["highlight"]) if s.get("highlight") else None
+        hl_used = False
+        offset = (start + lead) / fps * 1000
+        for w, a, b in words:
+            c = {"text": w, "startMs": round(offset + a), "endMs": round(offset + b)}
+            if hl and not hl_used and norm_word(w) == hl:
+                c["hl"] = True
+                hl_used = True
+            captions.append(c)
+        sections.append({"start": start / fps, "end": (start + frames) / fps, "energy": s.get("energy", 1)})
+        if s.get("hit"):
+            hits.append((start + data.get("syncFrame", lead)) / fps)
+        start += frames
+    return {"scenes": scenes, "captions": captions, "sections": sections, "hits": hits, "bodyFrames": start}
+
+
+def paginate(captions: list[dict], max_words: int) -> list[list[dict]]:
+    """Same paging rule as studio/src/rewires/Captions.tsx."""
+    pages, cur = [], []
+    for i, c in enumerate(captions):
+        cur.append(c)
+        nxt = captions[i + 1] if i + 1 < len(captions) else None
+        gap = nxt["startMs"] - c["endMs"] if nxt else float("inf")
+        if len(cur) >= max_words or re.search(r"[.,?!:;]$", c["text"]) or gap > 280:
+            pages.append(cur)
+            cur = []
+    if cur:
+        pages.append(cur)
+    return pages
+
+
+def _ts(ms: float) -> str:
+    ms = max(0, int(round(ms)))
+    h, ms = divmod(ms, 3_600_000)
+    m, ms = divmod(ms, 60_000)
+    s, ms = divmod(ms, 1000)
+    return f"{h:02d}:{m:02d}:{s:02d},{ms:03d}"
+
+
+def srt(captions: list[dict], words_per_line: int = 8) -> str:
+    """Sentence-ish SRT cues (longer than on-screen pages, which suits YouTube CC)."""
+    cues = paginate(captions, words_per_line)
+    out = []
+    for i, cue in enumerate(cues, 1):
+        nxt = cues[i][0]["startMs"] if i < len(cues) else cue[-1]["endMs"] + 600
+        end = min(cue[-1]["endMs"] + 400, nxt - 20)
+        out.append(f"{i}\n{_ts(cue[0]['startMs'])} --> {_ts(end)}\n{' '.join(w['text'] for w in cue)}\n")
+    return "\n".join(out)

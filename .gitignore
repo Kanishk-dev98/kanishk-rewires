@@ -18,3 +18,8 @@ studio/public/vo/
 .env
 .DS_Store
 films/*/_vo_test/
+
+# Per-project media copied into the Remotion public folder at build time
+studio/public/projects/
+projects/*/renders/*.raw.mp4
+projects/*/reports/frames/

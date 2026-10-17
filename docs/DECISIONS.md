@@ -16,6 +16,11 @@
 | 2026-10-15 | Recommend 5 reels/day for the first 2 weeks, then 10 | New accounts posting 10/day can be flagged as spam |
 | 2026-10-15 | Abstraxn film on Remotion (free licence) | Personal portfolio piece by an individual; company adoption would need a Company License or a HyperFrames port |
 | 2026-10-15 | Abstraxn film: no burned-in captions, SRT for YouTube instead | Institutional/Apple style keeps frames clean; YouTube CC covers accessibility |
+| 2026-10-17 | Brand: Kanishk.Rewires, palette and fonts from the user's brand board | User supplied the brand board, logo and master prompt |
+| 2026-10-17 | Build the Rewires engine in the existing Remotion studio, not a new project | Stack already worked (Remotion, Edge TTS, generated audio); the master prompt says not to replace a working architecture |
+| 2026-10-17 | Creative stages (research, brief, storyboard) are agent-written files; production stages are automated and verified | Research and writing need judgment and web tools; rendering, QC and delivery need reproducibility |
+| 2026-10-17 | Wordmark typeset (Space Grotesk Bold + Instrument Serif) | No wordmark artwork file exists; the monogram uses the supplied image |
+| 2026-10-17 | Freeze detection on a blurred, downscaled proxy | Film grain changes every frame and would hide real freezes |
 
 ## Paid upgrades (not adopted yet)
 
