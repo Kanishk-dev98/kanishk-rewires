@@ -1,0 +1,164 @@
+<title>LinkedIn Lead Gen Kit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column; numbered steps are a real setup sequence; code and prompts are copyable blocks. */
+:root {
+  --bg: #0A0A0A; --surface: #151515; --line: #2A2A28; --fg: #F6F4ED; --muted: #9A9A93; --accent: #A7FF3F; --accent-ink: #0A0A0A; --warn: #FFB4A8;
+  --display: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --body: "Inter", -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) { --bg: #F6F4ED; --surface: #FFFFFF; --line: #DDD9CC; --fg: #0A0A0A; --muted: #5E5D57; --accent: #A7FF3F; --accent-ink: #0A0A0A; --warn: #A3352A; color-scheme: light } }
+:root[data-theme="light"] { --bg: #F6F4ED; --surface: #FFFFFF; --line: #DDD9CC; --fg: #0A0A0A; --muted: #5E5D57; --accent: #A7FF3F; --accent-ink: #0A0A0A; --warn: #A3352A; color-scheme: light }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6; margin: 0 }
+.wrap { max-width: 760px; margin: 0 auto; padding-block: 48px 72px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 40px }
+header { display: flex; flex-direction: column; gap: 14px }
+.brand { display: flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 14px; color: var(--muted) }
+.brand img { width: 28px; height: 28px }
+.brand b { color: var(--accent); font-weight: 600 }
+.kicker { font-family: var(--mono); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted) }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(34px, 6vw, 52px); line-height: 1.04; letter-spacing: -.02em; margin: 0; text-wrap: balance }
+h1 em { font-style: normal; background: linear-gradient(var(--accent), var(--accent)) 0 88% / 100% .28em no-repeat }
+.lede { color: var(--muted); max-width: 62ch; margin: 0 }
+.rules { border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; display: grid; gap: 8px; background: var(--surface) }
+.rules h2 { font-family: var(--mono); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; margin: 0; color: var(--warn) }
+.rules p { margin: 0; font-size: 15px }
+.step { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 0 18px }
+.num { font-family: var(--mono); font-weight: 600; font-size: 15px; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: var(--accent-ink) }
+.step h2 { font-family: var(--display); font-weight: 700; font-size: 26px; line-height: 1.15; margin: 4px 0 8px; text-wrap: balance }
+.step p { margin: 0 0 12px; max-width: 62ch }
+.block { position: relative; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); margin: 6px 0 14px }
+.block .label { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); padding: 10px 14px 0 }
+pre { margin: 0; padding: 10px 14px 14px; overflow-x: auto; font-family: var(--mono); font-size: 14px; line-height: 1.65; white-space: pre-wrap; word-break: break-word }
+.copy { position: absolute; top: 8px; right: 8px; font: 600 12px var(--mono); letter-spacing: .06em; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); cursor: pointer }
+.copy:hover, .copy:focus-visible { border-color: var(--accent); outline: none }
+.copy.done { background: var(--accent); color: var(--accent-ink); border-color: var(--accent) }
+.note { font-size: 14px; color: var(--muted); margin: 0 }
+.note b { color: var(--fg) }
+code { font-family: var(--mono); font-size: .92em; padding: 1px 6px; border-radius: 6px; background: var(--surface); border: 1px solid var(--line) }
+footer { border-top: 1px solid var(--line); padding-top: 22px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: var(--muted) }
+footer a { color: var(--fg) }
+@media (prefers-reduced-motion: no-preference) { .copy { transition: background .15s, border-color .15s } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand"><img alt="" src="data:image/png;base64,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">kanishk<b>.</b>rewires</div>
+    <div class="kicker">The setup you asked for · LinkedIn</div>
+    <h1>Automate your LinkedIn lead gen with <em>Claude Code</em></h1>
+    <p class="lede">Seven steps: connect three tools, describe your ideal client once, then let Claude find, score and research leads, draft your notes, log everything in your CRM and schedule your posts. You stay the one who presses Send.</p>
+  </header>
+
+  <section class="rules" aria-label="Before you start">
+    <h2>Before you start</h2>
+    <p><b>LinkedIn bans bots and automated messaging</b> (User Agreement, section 8.2). Claude drafts; you review and send every note yourself. Posting through a scheduler that uses LinkedIn's official API is fine.</p>
+    <p>Connection notes are capped at <b>200 characters</b>, and free accounts get only a few personalized notes a month.</p>
+    <p>Apollo searches can use credits on your plan, and HubSpot actions follow your HubSpot permissions.</p>
+  </section>
+
+  <section class="step">
+    <div class="num">1</div>
+    <div>
+      <h2>Connect your tools</h2>
+      <p>Run these in your terminal. They add the official Apollo, HubSpot and Publora servers to Claude Code.</p>
+      <div class="block"><div class="label">terminal</div><button class="copy" type="button">Copy</button><pre>claude mcp add --transport http apollo https://mcp.apollo.io/mcp
+claude mcp add --transport http hubspot https://mcp.hubspot.com
+claude mcp add --transport http --scope user publora https://mcp.publora.com/mcp</pre></div>
+      <p class="note">Then open Claude Code, type <code>/mcp</code>, pick each server and choose <b>Authenticate</b> to sign in. A checkmark means it's connected.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="num">2</div>
+    <div>
+      <h2>Write your ideal client once</h2>
+      <p>Save this as <code>ICP.md</code> in your project folder and fill in your own values. Every later prompt reads it.</p>
+      <div class="block"><div class="label">ICP.md</div><button class="copy" type="button">Copy</button><pre># Ideal client
+industry: consumer goods, D2C
+role: Head of Growth, CMO, VP Marketing
+company size: 11 to 200 employees
+region: US, UK
+signal: launching a product, hiring for growth or CRM, raised recently
+
+# What I offer
+one line: I help consumer brands turn first orders into repeat buyers.
+proof: (a result you can share)
+call to action: a 20 minute call</pre></div>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="num">3</div>
+    <div>
+      <h2>Find your leads</h2>
+      <div class="block"><div class="label">prompt</div><button class="copy" type="button">Copy</button><pre>Read ICP.md. Using the Apollo tools, find 50 people who match it.
+Save name, title, company, LinkedIn URL, location and one recent company signal to leads.csv.
+Stop after 50 results, and tell me how many credits you used.</pre></div>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="num">4</div>
+    <div>
+      <h2>Score and research</h2>
+      <div class="block"><div class="label">prompt</div><button class="copy" type="button">Copy</button><pre>Score every lead in leads.csv from 0 to 100 against ICP.md:
+role 40, company size 20, region 10, signal 30.
+For each lead, add one real reason to reach out and where you found it.
+Sort by score and show me the top 10 as a table.</pre></div>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="num">5</div>
+    <div>
+      <h2>Draft the outreach</h2>
+      <div class="block"><div class="label">prompt</div><button class="copy" type="button">Copy</button><pre>For the top 10 leads, draft a LinkedIn connection note for each.
+Under 200 characters. Mention their signal, say what I do in one line, no pitch, no links.
+Write them to notes.md with the person's name and profile URL above each note.
+Do not send anything. I will review and send them myself.</pre></div>
+      <p class="note">Open each profile, paste the note, edit it so it sounds like you, and press <b>Send</b> yourself.</p>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="num">6</div>
+    <div>
+      <h2>Track in your CRM</h2>
+      <div class="block"><div class="label">prompt</div><button class="copy" type="button">Copy</button><pre>Using the HubSpot tools, create a contact for each of the top 10 leads.
+Add their score and reason to reach out as a note on the contact.
+Create a follow-up task for each one, due 3 business days from today.</pre></div>
+    </div>
+  </section>
+
+  <section class="step">
+    <div class="num">7</div>
+    <div>
+      <h2>Post on autopilot</h2>
+      <div class="block"><div class="label">prompt</div><button class="copy" type="button">Copy</button><pre>Read wins.md (my notes on results, lessons and client stories).
+Write 5 LinkedIn posts in my voice: short lines, one idea each, a clear first line, no hashtag lists.
+Show me all 5 and wait for my changes.
+After I approve, use the Publora tools to schedule them Monday to Friday at 9:00 AM my time.</pre></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Made by kanishk.rewires. Follow on Instagram for AI tools and workflows that actually work.</span>
+    <span>Tools named here: <a href="https://www.apollo.io" target="_blank" rel="noopener">Apollo</a>, <a href="https://www.hubspot.com" target="_blank" rel="noopener">HubSpot</a>, <a href="https://publora.com" target="_blank" rel="noopener">Publora</a>, <a href="https://docs.claude.com/en/docs/claude-code/overview" target="_blank" rel="noopener">Claude Code</a>. Not sponsored.</span>
+  </footer>
+</div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var pre = btn.parentElement.querySelector('pre');
+    var text = pre.innerText;
+    var done = function () { btn.textContent = 'Copied'; btn.classList.add('done'); setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600); };
+    var fallback = function () { var r = document.createRange(); r.selectNodeContents(pre); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected'; };
+    try { navigator.clipboard.writeText(text).then(done, fallback); } catch (e) { fallback(); }
+  });
+});
+</script>
