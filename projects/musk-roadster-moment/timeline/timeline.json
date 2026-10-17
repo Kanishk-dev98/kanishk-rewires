@@ -2,13 +2,101 @@
   "scenes": [
     {
       "id": "s00",
-      "type": "cineRealHook",
+      "type": "cineTrackHook",
       "dur": 154,
       "vo": "projects/musk-roadster-moment/vo/s00.mp3",
       "voAt": 4,
       "data": {
         "kicker": "YOU CAN'T BUY IT UNTIL",
-        "road": "media/cine/tesla/road.mp4",
+        "clip": "media/cine/tesla/hook_slow.mp4",
+        "srcStart": 8.4,
+        "rate": 0.5,
+        "track": [
+          [
+            6.0,
+            0.555,
+            0.65,
+            2.0
+          ],
+          [
+            7.0,
+            0.55,
+            0.49,
+            2.1
+          ],
+          [
+            8.0,
+            0.53,
+            0.33,
+            2.1
+          ],
+          [
+            8.6,
+            0.505,
+            0.28,
+            2.0
+          ],
+          [
+            9.0,
+            0.48,
+            0.21,
+            1.9
+          ],
+          [
+            9.4,
+            0.46,
+            0.13,
+            1.65
+          ],
+          [
+            9.8,
+            0.44,
+            0.11,
+            1.55
+          ],
+          [
+            10.2,
+            0.49,
+            0.3,
+            1.6
+          ],
+          [
+            10.6,
+            0.525,
+            0.53,
+            1.7
+          ],
+          [
+            11.0,
+            0.5,
+            0.69,
+            1.7
+          ],
+          [
+            11.6,
+            0.47,
+            0.88,
+            1.6
+          ],
+          [
+            12.4,
+            0.46,
+            0.83,
+            1.5
+          ],
+          [
+            13.0,
+            0.45,
+            0.8,
+            1.45
+          ],
+          [
+            14.2,
+            0.52,
+            0.78,
+            1.4
+          ]
+        ],
         "credit": "FOOTAGE: TESLA",
         "cues": {
           "buy": 95,
@@ -18,6 +106,11 @@
       "transition": "cut",
       "sfx": [
         {
+          "src": "sfx/whoosh.wav",
+          "at": 2,
+          "volume": 0.3
+        },
+        {
           "src": "sfx/boom.wav",
           "at": 122,
           "volume": 0.45
@@ -26,40 +119,146 @@
     },
     {
       "id": "s01",
-      "type": "cineRealFlip",
+      "type": "cineTrackRun",
       "dur": 257,
       "vo": "projects/musk-roadster-moment/vo/s01.mp3",
       "voAt": 4,
       "data": {
         "tag": "OCT 15, 2026 \u00b7 SPACEX TEST SITE, TEXAS",
+        "clip": "media/cine/tesla/run.mp4",
+        "srcStart": 6.0,
+        "rate": 1.0,
+        "track": [
+          [
+            6.0,
+            0.555,
+            0.65,
+            2.0
+          ],
+          [
+            7.0,
+            0.55,
+            0.49,
+            2.1
+          ],
+          [
+            8.0,
+            0.53,
+            0.33,
+            2.1
+          ],
+          [
+            8.6,
+            0.505,
+            0.28,
+            2.0
+          ],
+          [
+            9.0,
+            0.48,
+            0.21,
+            1.9
+          ],
+          [
+            9.4,
+            0.46,
+            0.13,
+            1.65
+          ],
+          [
+            9.8,
+            0.44,
+            0.11,
+            1.55
+          ],
+          [
+            10.2,
+            0.49,
+            0.3,
+            1.6
+          ],
+          [
+            10.6,
+            0.525,
+            0.53,
+            1.7
+          ],
+          [
+            11.0,
+            0.5,
+            0.69,
+            1.7
+          ],
+          [
+            11.6,
+            0.47,
+            0.88,
+            1.6
+          ],
+          [
+            12.4,
+            0.46,
+            0.83,
+            1.5
+          ],
+          [
+            13.0,
+            0.45,
+            0.8,
+            1.45
+          ],
+          [
+            14.2,
+            0.52,
+            0.78,
+            1.4
+          ]
+        ],
         "credit": "FOOTAGE: TESLA",
-        "base": "media/cine/tesla/base.mp4",
-        "wall": "media/cine/tesla/wall.mp4",
-        "flip": "media/cine/tesla/flip_slow.mp4",
-        "land": "media/cine/tesla/land.mp4",
-        "freeze": "media/cine/tesla/freeze.png"
+        "marks": [
+          {
+            "at": 6.3,
+            "until": 9.3,
+            "text": "VERTICAL RAMP"
+          },
+          {
+            "at": 9.3,
+            "until": 10.0,
+            "text": "LAUNCH"
+          },
+          {
+            "at": 10.0,
+            "until": 10.9,
+            "text": "MID-AIR FLIP"
+          },
+          {
+            "at": 10.9,
+            "until": 12.6,
+            "text": "COLD GAS THRUSTERS"
+          },
+          {
+            "at": 12.6,
+            "until": 14.3,
+            "text": "TOUCHDOWN"
+          }
+        ]
       },
       "transition": "cut",
       "sfx": [
         {
           "src": "sfx/riser.wav",
-          "at": 10,
-          "volume": 0.3
+          "at": 0,
+          "volume": 0.28
         },
         {
           "src": "sfx/whoosh.wav",
-          "at": 78,
-          "volume": 0.35
+          "at": 102,
+          "volume": 0.38
         },
         {
           "src": "sfx/impact.wav",
-          "at": 150,
-          "volume": 0.45
-        },
-        {
-          "src": "sfx/boom.wav",
-          "at": 180,
-          "volume": 0.35
+          "at": 186,
+          "volume": 0.5
         }
       ]
     },

@@ -403,7 +403,110 @@ export const CineRealFlipScene: React.FC<SceneProps> = ({ data }) => {
   );
 };
 
+// ------------------------------------------------------------------ tracked real footage (one continuous take)
+type TrackKey = [number, number, number, number]; // [source time s, x 0..1, y 0..1, zoom]
+const trackAt = (keys: TrackKey[], t: number) => {
+  const ts = keys.map((k) => k[0]);
+  const v = (i: number) => interpolate(t, ts, keys.map((k) => k[i]), { ...clamp, easing: EASE_IO });
+  return { x: v(1), y: v(2), z: v(3) };
+};
+
+/** A video that a virtual camera follows: the footage is scaled to cover the window times `z`,
+ *  and panned so the tracked point stays centred, clamped so no edge ever shows. */
+const TrackedVideo: React.FC<{ src: string; keys: TrackKey[]; srcStart: number; rate: number; W: number; H: number; aspect: number }> = ({ src, keys, srcStart, rate, W, H, aspect }) => {
+  const frame = useCurrentFrame();
+  const t = srcStart + (frame / 30) * rate;
+  const { x, y, z } = trackAt(keys, t);
+  const cover = Math.max(W / (H * aspect), 1) * H * aspect;
+  const vw = cover * z;
+  const vh = vw / aspect;
+  const left = Math.min(0, Math.max(W - vw, W / 2 - x * vw));
+  const top = Math.min(0, Math.max(H - vh, H / 2 - y * vh));
+  return (
+    <div style={{ position: "absolute", inset: 0, overflow: "hidden" }}>
+      <div style={{ position: "absolute", left, top, width: vw, height: vh }}>
+        <Video src={staticFile(src)} muted style={{ width: "100%", height: "100%" }} />
+      </div>
+    </div>
+  );
+};
+
+/** Tall cinema window with brackets, timecode and credit; blurred footage fills the frame behind. */
+const TallWindow: React.FC<{ children: React.ReactNode; bg: string; tc: string; credit: string; tag?: string; top?: number; H?: number }> = ({ children, bg, tc, credit, tag, top = 500, H = 820 }) => {
+  const frame = useCurrentFrame();
+  const W = 1080;
+  const br = (x: number, y: number, r: number) => <div style={{ position: "absolute", left: x, top: y, width: 46, height: 46, borderLeft: `4px solid ${C.lime}`, borderTop: `4px solid ${C.lime}`, rotate: `${r}deg` }} />;
+  return (
+    <AbsoluteFill style={{ background: C.charcoal }}>
+      <AbsoluteFill style={{ filter: "blur(40px) brightness(0.3) saturate(0.6)", scale: "1.4" }}>
+        <Video src={staticFile(bg)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      </AbsoluteFill>
+      <div style={{ position: "absolute", left: 0, top, width: W, height: H, overflow: "hidden", boxShadow: "0 30px 80px rgba(0,0,0,0.7)" }}>
+        <div style={{ position: "absolute", inset: 0, filter: "contrast(1.2) saturate(0.72) brightness(1.1)" }}>{children}</div>
+        <AbsoluteFill style={{ mixBlendMode: "soft-light", background: "linear-gradient(180deg, rgba(167,255,63,0.10), rgba(0,0,0,0.28))" }} />
+      </div>
+      {br(36, top - 22, 0)}
+      {br(W - 82, top - 22, 90)}
+      {br(36, top + H - 24, -90)}
+      {br(W - 82, top + H - 24, 180)}
+      <div style={{ position: "absolute", left: 80, top: top + H + 22, display: "flex", gap: 18, alignItems: "center", fontFamily: MONO, fontSize: 22, letterSpacing: 3, color: C.stone }}>
+        <span style={{ width: 12, height: 12, borderRadius: "50%", background: frame % 30 < 18 ? "#E5484D" : "transparent" }} />
+        {tc}
+      </div>
+      <div style={{ position: "absolute", right: 80, top: top + H + 22, fontFamily: MONO, fontSize: 18, letterSpacing: 3, color: C.grey }}>{credit}</div>
+      {tag ? <div style={{ position: "absolute", left: 80, top: top - 70, fontFamily: MONO, fontSize: 22, letterSpacing: 3, color: C.stone }}>{tag}</div> : null}
+      <Letterbox />
+    </AbsoluteFill>
+  );
+};
+
+const srcTC = (t: number) => `T+00:${t.toFixed(1).padStart(4, "0")}`;
+
+/** Hook: the stunt itself in tracked slow motion, then "2028". */
+export const CineTrackHookScene: React.FC<SceneProps> = ({ data }) => {
+  const frame = useCurrentFrame();
+  const c = cueOf(data);
+  const t = data.srcStart + (frame / 30) * data.rate;
+  return (
+    <AbsoluteFill>
+      <TallWindow bg={data.clip} tc={`${srcTC(t)} · ${data.rate}x`} credit={data.credit}>
+        <TrackedVideo src={data.clip} keys={data.track} srcStart={data.srcStart} rate={data.rate} W={1080} H={820} aspect={1440 / 736} />
+      </TallWindow>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 236, textAlign: "center", fontFamily: MONO, fontSize: 28, letterSpacing: 8, color: C.stone, opacity: interpolate(frame, [c("buy", 40) - 6, c("buy", 40) + 4], [0, 1], clamp) }}>{data.kicker}</div>
+      <Stamp at={c("year", 70) + 10} text="2028" size={170} style={{ top: 280 }} />
+    </AbsoluteFill>
+  );
+};
+
+/** The full stunt as one tracked real-time take, callouts on the real moments. */
+export const CineTrackRunScene: React.FC<SceneProps> = ({ data }) => {
+  const frame = useCurrentFrame();
+  const pop = usePop();
+  const t = data.srcStart + (frame / 30) * data.rate;
+  const marks = data.marks as { at: number; until: number; text: string }[];
+  return (
+    <AbsoluteFill>
+      <TallWindow bg={data.clip} tc={srcTC(t)} credit={data.credit} tag={data.tag}>
+        <TrackedVideo src={data.clip} keys={data.track} srcStart={data.srcStart} rate={data.rate} W={1080} H={820} aspect={1440 / 736} />
+      </TallWindow>
+      {marks.map((m) => {
+        const at = Math.round((m.at - data.srcStart) * 30);
+        const until = Math.round((m.until - data.srcStart) * 30);
+        if (frame < at || frame >= until) return null;
+        return (
+          <div key={m.text} style={{ position: "absolute", left: 80, top: 1236, display: "flex", alignItems: "center", gap: 14, ...pop(at, { rise: 14, scale: 0.85 }) }}>
+            <div style={{ width: 54, height: 3, background: C.lime }} />
+            <span style={{ fontFamily: MONO, fontWeight: 600, fontSize: 30, letterSpacing: 3, color: C.lime, textShadow: "0 2px 12px rgba(0,0,0,0.8)" }}>{m.text}</span>
+          </div>
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+
 export const CINE_SCENES: Record<string, React.FC<SceneProps>> = {
+  cineTrackHook: CineTrackHookScene,
+  cineTrackRun: CineTrackRunScene,
   cineRealHook: CineRealHookScene,
   cineRealFlip: CineRealFlipScene,
   cineHook: CineHookScene,

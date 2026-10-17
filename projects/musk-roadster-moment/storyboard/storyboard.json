@@ -25,7 +25,7 @@
   "scenes": [
     {
       "id": "s00",
-      "type": "cineRealHook",
+      "type": "cineTrackHook",
       "leadIn": 4,
       "pad": 8,
       "energy": 2,
@@ -42,11 +42,19 @@
       ],
       "data": {
         "kicker": "YOU CAN'T BUY IT UNTIL",
-        "road": "media/cine/tesla/road.mp4",
+        "clip": "media/cine/tesla/hook_slow.mp4",
+        "srcStart": 8.4,
+        "rate": 0.5,
+        "track": "@track",
         "credit": "FOOTAGE: TESLA"
       },
-      "visual": "Real night-road footage of the Roadster (Tesla), framed in our cinema window over its own blurred extension; 2028 slams in lime.",
+      "visual": "Opens on the real stunt: the car racing up the wall and launching into the flip, in tracked, interpolated slow motion; 2028 slams in.",
       "sfx": [
+        {
+          "name": "whoosh",
+          "on": 2,
+          "volume": 0.3
+        },
         {
           "name": "boom",
           "on": {
@@ -60,7 +68,7 @@
     },
     {
       "id": "s01",
-      "type": "cineRealFlip",
+      "type": "cineTrackRun",
       "pad": 10,
       "energy": 3,
       "minFrames": 240,
@@ -75,34 +83,55 @@
       ],
       "data": {
         "tag": "OCT 15, 2026 · SPACEX TEST SITE, TEXAS",
+        "clip": "media/cine/tesla/run.mp4",
+        "srcStart": 6.0,
+        "rate": 1.0,
+        "track": "@track",
         "credit": "FOOTAGE: TESLA",
-        "base": "media/cine/tesla/base.mp4",
-        "wall": "media/cine/tesla/wall.mp4",
-        "flip": "media/cine/tesla/flip_slow.mp4",
-        "land": "media/cine/tesla/land.mp4",
-        "freeze": "media/cine/tesla/freeze.png"
+        "marks": [
+          {
+            "at": 6.3,
+            "until": 9.3,
+            "text": "VERTICAL RAMP"
+          },
+          {
+            "at": 9.3,
+            "until": 10.0,
+            "text": "LAUNCH"
+          },
+          {
+            "at": 10.0,
+            "until": 10.9,
+            "text": "MID-AIR FLIP"
+          },
+          {
+            "at": 10.9,
+            "until": 12.6,
+            "text": "COLD GAS THRUSTERS"
+          },
+          {
+            "at": 12.6,
+            "until": 14.3,
+            "text": "TOUCHDOWN"
+          }
+        ]
       },
-      "visual": "Real stunt footage re-cut: wall, climb, interpolated slow-motion launch and flip, freeze with flash at the apex, thrusters and landing in smoke; lime callouts and timecode.",
+      "visual": "The whole stunt as one continuous tracked take in real time: climb, launch, flip, thrusters, landing in smoke. Callouts land on the real moments.",
       "sfx": [
         {
           "name": "riser",
-          "on": 10,
-          "volume": 0.3
+          "on": 0,
+          "volume": 0.28
         },
         {
           "name": "whoosh",
-          "on": 78,
-          "volume": 0.35
+          "on": 102,
+          "volume": 0.38
         },
         {
           "name": "impact",
-          "on": 150,
-          "volume": 0.45
-        },
-        {
-          "name": "boom",
-          "on": 180,
-          "volume": 0.35
+          "on": 186,
+          "volume": 0.5
         }
       ],
       "bleed": true
@@ -343,5 +372,91 @@
   "render": {
     "concurrency": 3,
     "timeoutMs": 240000
-  }
+  },
+  "track": [
+    [
+      6.0,
+      0.555,
+      0.65,
+      2.0
+    ],
+    [
+      7.0,
+      0.55,
+      0.49,
+      2.1
+    ],
+    [
+      8.0,
+      0.53,
+      0.33,
+      2.1
+    ],
+    [
+      8.6,
+      0.505,
+      0.28,
+      2.0
+    ],
+    [
+      9.0,
+      0.48,
+      0.21,
+      1.9
+    ],
+    [
+      9.4,
+      0.46,
+      0.13,
+      1.65
+    ],
+    [
+      9.8,
+      0.44,
+      0.11,
+      1.55
+    ],
+    [
+      10.2,
+      0.49,
+      0.3,
+      1.6
+    ],
+    [
+      10.6,
+      0.525,
+      0.53,
+      1.7
+    ],
+    [
+      11.0,
+      0.5,
+      0.69,
+      1.7
+    ],
+    [
+      11.6,
+      0.47,
+      0.88,
+      1.6
+    ],
+    [
+      12.4,
+      0.46,
+      0.83,
+      1.5
+    ],
+    [
+      13.0,
+      0.45,
+      0.8,
+      1.45
+    ],
+    [
+      14.2,
+      0.52,
+      0.78,
+      1.4
+    ]
+  ]
 }

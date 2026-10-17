@@ -3,25 +3,25 @@
 Format: 9x16  
 Body duration: 34.1 s plus the brand outro
 
-## 1. s00 · cineRealHook · 5.1 s
+## 1. s00 · cineTrackHook · 5.1 s
 
 **Voiceover:** Elon Musk just made the world want a car you can't buy until 2028.
 
-**On screen:** YOU CAN'T BUY IT UNTIL / media/cine/tesla/road.mp4 / FOOTAGE: TESLA
+**On screen:** YOU CAN'T BUY IT UNTIL / media/cine/tesla/hook_slow.mp4 / @track / FOOTAGE: TESLA
 
-**Visual concept:** Real night-road footage of the Roadster (Tesla), framed in our cinema window over its own blurred extension; 2028 slams in lime.
+**Visual concept:** Opens on the real stunt: the car racing up the wall and launching into the flip, in tracked, interpolated slow motion; 2028 slams in.
 
 **Transition:** cut
 
 - Source c3: Musk said production starts in 2028; no price was given; a $5,000 deposit reserves a non-flying model. (company_claim) NBC News, 2026-10-16 https://www.nbcnews.com/tech/tech-news/elon-musk-shows-flying-tesla-roadster-years-delays-rcna603905
 
-## 2. s01 · cineRealFlip · 8.6 s
+## 2. s01 · cineTrackRun · 8.6 s
 
 **Voiceover:** Musk used his genius marketing move. At a SpaceX test site, the new Roadster launched off a ramp, flipped, and landed on thrusters.
 
-**On screen:** OCT 15, 2026 · SPACEX TEST SITE, TEXAS / FOOTAGE: TESLA / media/cine/tesla/base.mp4 / media/cine/tesla/wall.mp4 / media/cine/tesla/flip_slow.mp4 / media/cine/tesla/land.mp4 / media/cine/tesla/freeze.png
+**On screen:** OCT 15, 2026 · SPACEX TEST SITE, TEXAS / media/cine/tesla/run.mp4 / @track / FOOTAGE: TESLA / VERTICAL RAMP / LAUNCH / MID-AIR FLIP / COLD GAS THRUSTERS / TOUCHDOWN
 
-**Visual concept:** Real stunt footage re-cut: wall, climb, interpolated slow-motion launch and flip, freeze with flash at the apex, thrusters and landing in smoke; lime callouts and timecode.
+**Visual concept:** The whole stunt as one continuous tracked take in real time: climb, launch, flip, thrusters, landing in smoke. Callouts land on the real moments.
 
 **Transition:** cut
 
