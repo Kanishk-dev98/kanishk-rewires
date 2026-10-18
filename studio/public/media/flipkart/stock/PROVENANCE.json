@@ -1,0 +1,75 @@
+{
+  "_note": "All clips from Pexels under the Pexels License (free for commercial use, no attribution required, can be modified). Downloaded 2026-10-19 via https://www.pexels.com/download/video/{id}/ (redirects to direct_url). crop_focus_x_pct = horizontal centre of the best 9:16 crop, % from the left.",
+  "cafe.mp4": {
+    "page_url": "https://www.pexels.com/video/barista-serving-freshly-brewed-latte-art-coffee-39568276/",
+    "direct_url": "https://videos.pexels.com/video-files/39568276/16863992_1080_1920_50fps.mp4",
+    "author": "Daily views (Pexels)", "license": "Pexels License",
+    "resolution": "1080x1920 (vertical), 50fps", "duration_s": 11.52, "size_mb": 3.7,
+    "description": "Close-up at a dark cafe counter: a barista's gloved hands (brown skin, face out of frame above) set a black cup of latte with a leaf/heart latte art down on its saucer and slide it towards camera. Warm, moody, shallow depth of field. Barista's face never shown; a small name badge and round emblem on his shirt are blurred out of focus.",
+    "crop_focus_x_pct": 50
+  },
+  "cafe_alt.mp4": {
+    "page_url": "https://www.pexels.com/video/barista-pouring-cold-coffee-into-glass-35035084/",
+    "direct_url": "https://videos.pexels.com/video-files/35035084/14840929_1080_1920_30fps.mp4",
+    "author": "Umar J. Qureshi", "license": "Pexels License",
+    "resolution": "1080x1920 (vertical), 30fps", "duration_s": 6.53, "size_mb": 4.6,
+    "description": "Low-angle shot of a bearded South Asian barista in a black shirt and brown apron pouring cold coffee from a white cup with a brown band (no visible text) over milk and ice in a bubble glass; second glass of ice beside it; busy cafe behind. Pouring, not handing over.",
+    "crop_focus_x_pct": 50
+  },
+  "gym.mp4": {
+    "page_url": "https://www.pexels.com/video/man-exercising-in-modern-gym-environment-35585787/",
+    "direct_url": "https://videos.pexels.com/video-files/35585787/15080067_1080_1920_30fps.mp4",
+    "author": "khezez | خزاز", "license": "Pexels License",
+    "resolution": "1080x1920 (vertical), 30fps", "duration_s": 9.13, "size_mb": 4.6,
+    "description": "Muscular South Asian man in a black stringer vest, lifting belt and earbuds doing cable/rope work in a dark, moody gym with yellow pillars and LED strip lights; slow handheld push-in. Cinematic, darker grade. Small machine branding visible (a 'COACH'S' sticker on a machine at left, small yellow maker badges), soft and secondary.",
+    "crop_focus_x_pct": 50
+  },
+  "gym_alt.mp4": {
+    "page_url": "https://www.pexels.com/video/man-working-out-at-the-gym-4686178/",
+    "direct_url": "https://videos.pexels.com/video-files/4686178/4686178-hd_1080_1920_30fps.mp4",
+    "author": "Atul Saini", "license": "Pexels License",
+    "resolution": "1080x1920 (vertical), 29.97fps", "duration_s": 20.31, "size_mb": 14,
+    "description": "Indian man in a sage tank top doing landmine/T-bar rows and plate lifts in a bright, clean commercial gym (Indian gym, other members in background). Energetic, well lit but flatter, phone-camera look. Nike swoosh on shoes is visible.",
+    "crop_focus_x_pct": 50
+  },
+  "phone_shopping.mp4": {
+    "page_url": "https://www.pexels.com/video/woman-shopping-online-using-smartphone-6347113/",
+    "direct_url": "https://videos.pexels.com/video-files/6347113/6347113-uhd_2160_3840_24fps.mp4",
+    "author": "Liza Summer", "license": "Pexels License",
+    "resolution": "2160x3840 (vertical 4K), 23.98fps", "duration_s": 10.01, "size_mb": 22,
+    "description": "Over-the-shoulder close-up of a woman in a fluffy orange sweater on a sofa, scrolling a clothing shopping app on a black smartphone (product photos of garments; no store logo legible). Very warm, cosy, cinematic. Her face is barely visible (side of head only); hands are light-skinned.",
+    "crop_focus_x_pct": 65
+  },
+  "family_tv.mp4": {
+    "page_url": "https://www.pexels.com/video/father-and-child-sitting-on-the-couch-9346275/",
+    "direct_url": "https://videos.pexels.com/video-files/9346275/9346275-uhd_2160_3840_24fps.mp4",
+    "author": "Anna Pou", "license": "Pexels License",
+    "resolution": "2160x3840 (vertical 4K), 23.98fps", "duration_s": 10.01, "size_mb": 21,
+    "description": "South Asian father in a peach kurta and young daughter in a cream kurta sitting close on a sofa, both smiling and looking off-camera right as if watching TV; red patterned cloth behind. Warm and festive. Only two people, no TV in frame.",
+    "crop_focus_x_pct": 45
+  },
+  "family_tv_alt.mp4": {
+    "page_url": "https://www.pexels.com/video/family-sitting-on-the-sofa-while-watching-7351820/",
+    "direct_url": "https://videos.pexels.com/video-files/7351820/7351820-hd_1920_1080_25fps.mp4",
+    "author": "Vivaan Rupani", "license": "Pexels License",
+    "resolution": "1920x1080 (LANDSCAPE), 25fps", "duration_s": 13.61, "size_mb": 8.4,
+    "description": "Indian family of four (father, son holding the TV remote, mother, daughter) on a patterned sofa against a plain wall, smiling, laughing and chatting to each other while watching TV (facing camera). Exactly the brief, but landscape 1080p with all four spread edge to edge, so a 9:16 crop is only 608px wide and fits two people at most; better used full-width (letterboxed / split layout).",
+    "crop_focus_x_pct": 60
+  },
+  "mom_kid_shopping.mp4": {
+    "page_url": "https://www.pexels.com/video/woman-shopping-for-dresses-in-a-boutique-39916218/",
+    "direct_url": "https://videos.pexels.com/video-files/39916218/17020380_1080_1920_50fps.mp4",
+    "author": "Daily views (Pexels)", "license": "Pexels License",
+    "resolution": "1080x1920 (vertical), 50fps", "duration_s": 11.04, "size_mb": 7.5,
+    "description": "Young Indian woman in a red turtleneck in a bright kids' clothing store (racks of girls' party dresses behind) picks two children's outfits on hangers, holds them up side by side towards camera comparing them, smiling. No child in frame. Small hang-tags on garments, no legible brand.",
+    "crop_focus_x_pct": 50
+  },
+  "mom_kid_shopping_alt.mp4": {
+    "page_url": "https://www.pexels.com/video/mother-and-daughter-picking-an-outfit-7938976/",
+    "direct_url": "https://videos.pexels.com/video-files/7938976/7938976-uhd_2160_3840_24fps.mp4",
+    "author": "Nicola Barts", "license": "Pexels License",
+    "resolution": "2160x3840 (vertical 4K), 23.98fps", "duration_s": 10.01, "size_mb": 25,
+    "description": "Mother and young daughter (East/Southeast Asian, not South Asian) at a home wardrobe rail; mother pulls out and holds up a pink knit top for the girl, daughter seen from behind. Bright, natural light. Home closet, not a store.",
+    "crop_focus_x_pct": 55
+  }
+}

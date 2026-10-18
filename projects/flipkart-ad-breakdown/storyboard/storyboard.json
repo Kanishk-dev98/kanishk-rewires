@@ -1,107 +1,421 @@
 {
   "id": "flipkart-ad-breakdown",
-  "title": "Why Flipkart's Ek Size Bada Le Lo ad works",
+  "title": "Flipkart turned mom's oldest habit into a TV ad",
   "format": "9x16",
   "captions": true,
   "research": "done",
-  "captionStyle": { "top": 0.755, "size": 56, "maxWords": 3, "weight": 800 },
-  "voice": { "provider": "edge", "edge": { "voice": "en-US-AndrewMultilingualNeural", "rate": "+6%" } },
-  "outro": { "seconds": 2.5, "size": 220, "wordSize": 50, "cta": "Follow for marketing that actually works" },
-  "render": { "concurrency": 4, "timeoutMs": 240000 },
+  "captionStyle": {
+    "top": 0.755,
+    "size": 58,
+    "maxWords": 3,
+    "weight": 800
+  },
+  "voice": {
+    "provider": "edge",
+    "edge": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+6%"
+    }
+  },
+  "outro": {
+    "seconds": 2.5,
+    "size": 220,
+    "wordSize": 50,
+    "cta": "Follow for marketing that actually works"
+  },
+  "render": {
+    "concurrency": 3,
+    "timeoutMs": 300000
+  },
   "scenes": [
     {
-      "id": "s00", "type": "aBubble", "leadIn": 2, "pad": 6, "energy": 3,
-      "vo": "Every Indian kid has heard this line from mum.",
-      "cues": { "echo": "heard" }, "accents": ["Every", "mum."],
-      "data": { "line": "“Ek size bada le lo.”", "kicker": "EVERY SHOPPING TRIP, EVERY HOME" },
-      "visual": "A mum says 'Ek size bada le lo'; small echoes of the same line pop up from other homes.",
-      "sfx": [{ "name": "whoosh", "on": 2, "volume": 0.2 }]
+      "id": "s00",
+      "type": "fAd",
+      "leadIn": 2,
+      "pad": 6,
+      "energy": 3,
+      "bleed": true,
+      "vo": "Flipkart just turned your mom's oldest shopping habit into its biggest TV ad.",
+      "cues": {
+        "brand": "Flipkart"
+      },
+      "accents": [
+        "Flipkart",
+        "habit"
+      ],
+      "claims": [
+        "ad-title-agency"
+      ],
+      "data": {
+        "overlay": "hook",
+        "credit": "AD: FLIPKART \u00d7 22FEET",
+        "shots": [
+          {
+            "t": 5.0,
+            "d": 2.4,
+            "x": 0.5
+          },
+          {
+            "t": 9.2,
+            "d": 3,
+            "x": 0.42
+          }
+        ]
+      },
+      "visual": "The real ad: the kid in a giant school blazer; an AD BREAKDOWN tag and a Flipkart Big Billion Days badge pop in.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": {
+            "cue": "brand"
+          },
+          "volume": 0.3
+        }
+      ]
     },
     {
-      "id": "s01", "type": "aSize", "pad": 6, "energy": 2,
-      "vo": "School shirt? One size bigger. Shoes? One size bigger. So you could grow into them.",
-      "cues": { "s0": "School", "s1": "Shoes?", "s2": "grow" }, "accents": ["bigger.", "grow"], "claims": ["ad-insight"],
-      "data": { "mode": "shirt", "kicker": "THE RULE", "note": "BUY FOR THE FUTURE YOU" },
-      "visual": "A school shirt grows as S, M, L tags light up one by one.",
-      "sfx": [{ "name": "tick", "on": { "cue": "s1" }, "volume": 0.2 }, { "name": "tick", "on": { "cue": "s2" }, "volume": 0.2 }]
+      "id": "s01",
+      "type": "fAd",
+      "pad": 6,
+      "energy": 3,
+      "bleed": true,
+      "vo": "Every Indian mom buys one size bigger. The school blazer you had to grow into. The shoes that flew off in the corridor.",
+      "accents": [
+        "bigger.",
+        "flew"
+      ],
+      "claims": [
+        "ad-insight"
+      ],
+      "data": {
+        "credit": "AD: FLIPKART \u00d7 22FEET",
+        "shots": [
+          {
+            "t": 15.6,
+            "d": 1.4,
+            "x": 0.5
+          },
+          {
+            "t": 17.6,
+            "d": 1.6,
+            "x": 0.42
+          },
+          {
+            "t": 21.6,
+            "d": 1.4,
+            "x": 0.5
+          },
+          {
+            "t": 23.9,
+            "d": 0.9,
+            "x": 0.6
+          },
+          {
+            "t": 24.7,
+            "d": 1.2,
+            "x": 0.38
+          },
+          {
+            "t": 27.0,
+            "d": 1,
+            "x": 0.45
+          }
+        ]
+      },
+      "visual": "Real ad montage: the empty blazer at the desk, the kid raising a hand lost in his sleeves, the shoe flying off and landing at the Principal's feet.",
+      "sfx": [
+        {
+          "name": "whip",
+          "on": {
+            "frac": 0.62
+          },
+          "volume": 0.3
+        }
+      ]
     },
     {
-      "id": "s02", "type": "aSize", "pad": 8, "energy": 3,
-      "vo": "Flipkart's Big Billion Days film by 22feet took that exact rule, and pointed it at a TV.",
-      "cues": { "s0": "Flipkart's", "s1": "rule,", "s2": "TV." }, "accents": ["exact", "TV."], "claims": ["ad-title-agency"], "sourceLabel": "CAMPAIGN BRIEF ASIA · MEDIANEWS4U, OCT 2026",
-      "data": { "mode": "tv", "kicker": "BIG BILLION DAYS 2026", "note": "“EK SIZE BADA LE LO” · BY 22FEET" },
-      "visual": "The shirt becomes a TV that grows 43, 55, 65 inch with a lime glow.",
-      "sfx": [{ "name": "whoosh", "on": { "cue": "s0" }, "volume": 0.3 }, { "name": "impact", "on": { "cue": "s2" }, "volume": 0.35 }]
+      "id": "s02",
+      "type": "fAd",
+      "pad": 8,
+      "energy": 3,
+      "bleed": true,
+      "vo": "Years later, the family is buying a TV. Dad isn't sure. And Mom finally says it at the perfect moment. Go one size bigger.",
+      "cues": {
+        "sheet": "buying",
+        "s50": "perfect",
+        "s55": "bigger."
+      },
+      "accents": [
+        "TV.",
+        "bigger."
+      ],
+      "claims": [
+        "ad-youtube-description"
+      ],
+      "data": {
+        "overlay": "sizes",
+        "credit": "AD: FLIPKART \u00d7 22FEET",
+        "shots": [
+          {
+            "t": 43.0,
+            "d": 2.6,
+            "x": 0.5
+          },
+          {
+            "t": 47.6,
+            "d": 2.4,
+            "x": 0.5
+          },
+          {
+            "t": 45.0,
+            "d": 1.8,
+            "x": 0.38
+          },
+          {
+            "t": 52.6,
+            "d": 2,
+            "x": 0.38
+          }
+        ]
+      },
+      "visual": "Real ad: Dad and son on the sofa, Mom on the phone; a Flipkart-style screen-size picker jumps 50 to 55 inch.",
+      "sfx": [
+        {
+          "name": "click",
+          "on": {
+            "cue": "s50"
+          },
+          "volume": 0.3
+        },
+        {
+          "name": "click",
+          "on": {
+            "cue": "s55"
+          },
+          "volume": 0.3
+        }
+      ]
     },
     {
-      "id": "s03", "type": "aBeats", "pad": 8, "energy": 2, "minFrames": 260,
-      "vo": "The story is simple. A childhood rule. A grown up, nervous to pitch a bigger TV to the family. Mum's own rule becomes the argument. And sale prices close the deal.",
-      "cues": { "b0": "childhood", "b1": "nervous", "b2": "argument.", "b3": "sale" }, "accents": ["nervous", "argument."], "claims": ["ad-youtube-description"],
-      "data": { "kicker": "THE FILM IN 4 BEATS", "note": "BEATS AS DESCRIBED BY FLIPKART · 80 S FILM",
-        "beats": [
-          { "tag": "MEMORY", "icon": "👕", "text": "Then: shirts and shoes", "cue": "b0" },
-          { "tag": "TENSION", "icon": "😬", "text": "Now: the big-screen ask", "cue": "b1" },
-          { "tag": "TWIST", "icon": "👩", "text": "Her logic, her permission", "cue": "b2" },
-          { "tag": "PAYOFF", "icon": "📺", "text": "Big Billion Days pricing", "cue": "b3" }] },
-      "visual": "A 2x2 storyboard strip; each beat card lights up on its word.",
-      "sfx": [{ "name": "tick", "on": { "cue": "b1" }, "volume": 0.2 }, { "name": "tick", "on": { "cue": "b2" }, "volume": 0.2 }, { "name": "ding", "on": { "cue": "b3" }, "volume": 0.25 }]
+      "id": "s03",
+      "type": "fAd",
+      "pad": 8,
+      "energy": 3,
+      "bleed": true,
+      "vo": "Flipkart's punchline? Only the TV gets bigger. Not the bill.",
+      "cues": {
+        "bigger": "TV",
+        "bill": "bill."
+      },
+      "accents": [
+        "bigger.",
+        "bill."
+      ],
+      "data": {
+        "overlay": "bill",
+        "credit": "AD: FLIPKART \u00d7 22FEET",
+        "shots": [
+          {
+            "t": 62.6,
+            "d": 2.2,
+            "x": 0.4
+          },
+          {
+            "t": 67.6,
+            "d": 3,
+            "x": 0.5
+          }
+        ]
+      },
+      "visual": "The Flipkart app on the phone, the new TV, the family laughing; a TV grows from 43 to 55 inch while the bill card stays \u20b91,999 a month.",
+      "sfx": [
+        {
+          "name": "ding",
+          "on": {
+            "cue": "bill"
+          },
+          "volume": 0.3
+        }
+      ]
     },
     {
-      "id": "s04", "type": "aWhy", "pad": 6, "energy": 2,
-      "vo": "Why it works. First, it starts with a truth almost every Indian home shares. Nobody needs it explained.",
-      "cues": { "hit": "truth" }, "accents": ["truth", "Nobody"], "claims": ["framework-truth-well-told"],
-      "data": { "kind": "truth", "kicker": "A SHARED TRUTH", "line": "Ek size bada!" },
-      "visual": "A grid of homes lights up one by one, each with the same mum line.",
-      "sfx": [{ "name": "riser", "on": { "cue": "hit" }, "volume": 0.18 }]
+      "id": "s04",
+      "type": "fAd",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "vo": "That's the genius. Every big purchase has one doubt that stops people. Flipkart put that doubt in Dad's mouth, and let the most trusted voice in every Indian home answer it.",
+      "cues": {
+        "doubt": "Dad's",
+        "answer": "trusted"
+      },
+      "accents": [
+        "genius.",
+        "trusted"
+      ],
+      "data": {
+        "overlay": "doubt",
+        "credit": "AD: FLIPKART \u00d7 22FEET",
+        "shots": [
+          {
+            "t": 54.2,
+            "d": 3.4,
+            "x": 0.45,
+            "rate": 0.6,
+            "push": 0.1
+          },
+          {
+            "t": 43.2,
+            "d": 3.4,
+            "x": 0.5,
+            "rate": 0.5,
+            "push": 0.1
+          },
+          {
+            "t": 47.9,
+            "d": 1.7,
+            "x": 0.5,
+            "rate": 0.5,
+            "push": 0.1
+          },
+          {
+            "t": 45.0,
+            "d": 3.5,
+            "x": 0.38,
+            "rate": 0.5,
+            "push": 0.1
+          }
+        ]
+      },
+      "visual": "Slow motion on Dad: his doubt appears as a speech bubble and gets struck out; cut to Mom as her answer lands in lime.",
+      "sfx": [
+        {
+          "name": "impact",
+          "on": {
+            "cue": "answer"
+          },
+          "volume": 0.35
+        }
+      ]
     },
     {
-      "id": "s05", "type": "aWhy", "pad": 6, "energy": 3,
-      "vo": "Second, it kills the real objection. A big TV feels like an indulgence. Mum's rule turns it into common sense.",
-      "cues": { "hit": "kills" }, "accents": ["kills", "sense."], "claims": ["ad-insight"],
-      "data": { "kind": "objection", "kicker": "THE OBJECTION, HANDLED", "items": ["Too big?", "Too costly?", "Do we even need it?"], "line": "“Ek size bada le lo.”" },
-      "visual": "Three family objections get struck through; mum's line lands as the answer.",
-      "sfx": [{ "name": "click", "on": { "cue": "hit" }, "volume": 0.25 }, { "name": "ding", "on": { "cue": "hit", "offset": 26 }, "volume": 0.25 }]
+      "id": "s05",
+      "type": "fAd",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Your customers have a line like that too. Find the words they already use, and build your ad around them.",
+      "accents": [
+        "line",
+        "words"
+      ],
+      "data": {
+        "overlay": "lines",
+        "lines": [
+          {
+            "label": "CAF\u00c9",
+            "line": "\u201cThe usual, please.\u201d",
+            "at": 0
+          },
+          {
+            "label": "GYM",
+            "line": "\u201cI'll start Monday.\u201d",
+            "at": 60
+          },
+          {
+            "label": "ONLINE STORE",
+            "line": "\u201cAdding to cart, for later.\u201d",
+            "at": 120
+          }
+        ],
+        "shots": [
+          {
+            "src": "media/flipkart/stock/cafe.mp4",
+            "t": 0.5,
+            "d": 2.0,
+            "aspect": 0.5625,
+            "x": 0.5
+          },
+          {
+            "src": "media/flipkart/stock/gym.mp4",
+            "t": 0.5,
+            "d": 2.0,
+            "aspect": 0.5625,
+            "x": 0.5
+          },
+          {
+            "src": "media/flipkart/stock/phone_shopping.mp4",
+            "t": 0.5,
+            "d": 3,
+            "aspect": 0.5625,
+            "x": 0.5
+          }
+        ]
+      },
+      "visual": "Real footage of a caf\u00e9, a gym and phone shopping; each shot gets its customer's everyday line.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.2
+        }
+      ]
     },
     {
-      "id": "s06", "type": "aWhy", "pad": 8, "energy": 2,
-      "vo": "Third, nostalgia softens price pain. Research in the Journal of Consumer Research found nostalgia weakens the desire for money.",
-      "cues": { "hit": "softens" }, "accents": ["nostalgia", "money."], "claims": ["framework-nostalgia"],
-      "data": { "kind": "nostalgia", "kicker": "NOSTALGIA VS PRICE", "source": "LASALETA, SEDIKIDES & VOHS · JOURNAL OF CONSUMER RESEARCH, 2014" },
-      "visual": "A warm sepia wash spreads; the price-pain meter shrinks.",
-      "sfx": [{ "name": "whoosh", "on": { "cue": "hit" }, "volume": 0.2 }]
-    },
-    {
-      "id": "s07", "type": "aQuote", "pad": 30, "energy": 1, "minFrames": 190,
-      "vo": "Here's how the agency put it.",
-      "accents": ["agency"], "claims": ["quote-ishan-mehta"],
-      "data": { "quote": "The creative unlock was using that mantra, typically reserved for apparels, for a category like large screen TVs.", "hl": ["mantra", "TVs"], "who": "Ishan Mehta", "role": "EXECUTIVE CREATIVE DIRECTOR, 22FEET" },
-      "visual": "The quote reveals word by word; the key words glow lime.",
-      "sfx": []
-    },
-    {
-      "id": "s08", "type": "aMethod", "pad": 8, "energy": 2, "minFrames": 260,
-      "vo": "Want your own version? Do what Clay Christensen's team did. Spend a day where your customers buy. Ask what almost stopped them. Then find the phrase they already use, and build your ad around it.",
-      "cues": { "n0": "Spend", "n1": "Ask", "n2": "stopped", "n3": "phrase", "rule": "build" }, "accents": ["day", "phrase"], "claims": ["framework-jtbd"], "sourceLabel": "HBS WORKING KNOWLEDGE, 2011",
-      "data": { "kicker": "FIND YOUR CUSTOMER TRUTH",
-        "notes": [
-          { "text": "11:40 · couple, 65\" TV, asked about EMI", "cue": "n0" },
-          { "text": "Q: what almost stopped you?", "cue": "n1" },
-          { "text": "A: “Ghar pe kya bolenge?”", "cue": "n2" },
-          { "text": "→ their words = your headline", "cue": "n3", "hl": true }] },
-      "visual": "A field notebook fills with observations; the last line highlights lime.",
-      "sfx": [{ "name": "tick", "on": { "cue": "rule" }, "volume": 0.2 }]
-    },
-    {
-      "id": "s09", "type": "aAsk", "pad": 14, "energy": 2,
-      "vo": "So, what's the one line your mum always said? Drop it in the comments.",
-      "cues": { "comments": "line" }, "accents": ["mum", "comments."],
-      "data": { "replies": [
-        { "name": "Riya", "text": "Jacket le ke jaana!" },
-        { "name": "Kabir", "text": "Pehle khana, phir phone." },
-        { "name": "Ananya", "text": "Light band karo, bill aayega." },
-        { "name": "Dev", "text": "Ek size bada le lo 😂" }] },
-      "visual": "A happy mum figure; example comment replies with classic mum lines stack up.",
-      "sfx": [{ "name": "click", "on": { "cue": "comments", "offset": 10 }, "volume": 0.2 }]
+      "id": "s06",
+      "type": "fAd",
+      "pad": 14,
+      "energy": 2,
+      "bleed": true,
+      "vo": "What's the line your mom always said? Tell me in the comments.",
+      "cues": {
+        "comments": "line"
+      },
+      "accents": [
+        "mom",
+        "comments."
+      ],
+      "data": {
+        "overlay": "comments",
+        "credit": "AD: FLIPKART \u00d7 22FEET",
+        "comments": [
+          {
+            "name": "Riya",
+            "text": "Wear a jacket, it's cold outside."
+          },
+          {
+            "name": "Kabir",
+            "text": "Eat first, then phone."
+          },
+          {
+            "name": "Ananya",
+            "text": "Switch off the lights!"
+          },
+          {
+            "name": "Dev",
+            "text": "Buy one size bigger \ud83d\ude02"
+          }
+        ],
+        "shots": [
+          {
+            "t": 68.6,
+            "d": 4,
+            "x": 0.5,
+            "rate": 0.8
+          }
+        ]
+      },
+      "visual": "The family laughing in front of the new TV; example comments with classic mom lines stack up.",
+      "sfx": [
+        {
+          "name": "click",
+          "on": {
+            "cue": "comments",
+            "offset": 10
+          },
+          "volume": 0.2
+        }
+      ]
     }
   ]
 }

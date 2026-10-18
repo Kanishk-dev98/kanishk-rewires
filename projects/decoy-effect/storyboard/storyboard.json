@@ -1,80 +1,407 @@
 {
   "id": "decoy-effect",
-  "title": "The decoy effect",
+  "title": "Why you always buy the large popcorn",
   "format": "9x16",
   "captions": true,
   "research": "done",
-  "captionStyle": { "top": 0.755, "size": 56, "maxWords": 3, "weight": 800 },
-  "voice": { "provider": "edge", "edge": { "voice": "en-US-AndrewMultilingualNeural", "rate": "+6%" } },
-  "outro": { "seconds": 2.5, "size": 220, "wordSize": 50, "cta": "Follow for business psychology that sells" },
-  "render": { "concurrency": 4, "timeoutMs": 240000 },
+  "captionStyle": {
+    "top": 0.755,
+    "size": 58,
+    "maxWords": 3,
+    "weight": 800
+  },
+  "voice": {
+    "provider": "edge",
+    "edge": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+6%"
+    }
+  },
+  "outro": {
+    "seconds": 2.5,
+    "size": 220,
+    "wordSize": 50,
+    "cta": "Follow for business psychology that sells"
+  },
+  "render": {
+    "concurrency": 3,
+    "timeoutMs": 300000
+  },
   "scenes": [
     {
-      "id": "s00", "type": "dOffers", "leadIn": 2, "pad": 6, "energy": 3,
-      "vo": "Nobody picked this option. And that's exactly why it worked.",
-      "cues": { "flow": "Nobody" }, "accents": ["Nobody", "worked."],
-      "data": { "mode": "hook", "shares": [16, 0, 84], "highlight": 1 },
-      "visual": "Three price cards; 100 dots pour in; the middle card stays at 0/100 with a red ring.",
-      "sfx": [{ "name": "whoosh", "on": 2, "volume": 0.25 }, { "name": "impact", "on": { "frac": 0.6 }, "volume": 0.35 }]
+      "id": "s00",
+      "type": "dReel",
+      "leadIn": 2,
+      "pad": 6,
+      "energy": 3,
+      "bleed": true,
+      "vo": "Why does almost everyone buy the large popcorn? Because of the medium.",
+      "cues": {
+        "tags": "large",
+        "medium": "medium."
+      },
+      "accents": [
+        "large",
+        "medium."
+      ],
+      "data": {
+        "overlay": "hook",
+        "opts": [
+          {
+            "name": "Small",
+            "price": "\u20b9200"
+          },
+          {
+            "name": "Medium",
+            "price": "\u20b9420"
+          },
+          {
+            "name": "Large",
+            "price": "\u20b9450"
+          }
+        ],
+        "shots": [
+          {
+            "src": "media/decoy/stock/popcorn_closeup.mp4",
+            "t": 1.0,
+            "d": 6,
+            "aspect": 0.527,
+            "x": 0.4
+          }
+        ]
+      },
+      "visual": "Cinema popcorn close-up; three price tags slide up, Large glows, Medium blinks.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": {
+            "cue": "tags"
+          },
+          "volume": 0.25
+        },
+        {
+          "name": "tick",
+          "on": {
+            "cue": "medium"
+          },
+          "volume": 0.3
+        }
+      ]
     },
     {
-      "id": "s01", "type": "dOffers", "pad": 6, "energy": 2,
-      "vo": "In a classroom demo from his 2008 book, Dan Ariely showed a hundred MIT students three Economist offers.",
-      "cues": { "o0": "three", "o1": "Economist", "o2": "offers." }, "accents": ["hundred", "three"], "claims": ["c1", "c3"], "sourceLabel": "ARIELY, PREDICTABLY IRRATIONAL (2008)",
-      "data": { "mode": "intro", "label": "CLASSROOM DEMO · 100 STUDENTS" },
-      "visual": "A crowd of 100 dots waits below; the three Economist offer cards pop in on the word.",
-      "sfx": [{ "name": "tick", "on": { "cue": "o0" }, "volume": 0.2 }, { "name": "tick", "on": { "cue": "o2" }, "volume": 0.2 }]
+      "id": "s01",
+      "type": "dReel",
+      "pad": 8,
+      "energy": 3,
+      "bleed": true,
+      "minFrames": 330,
+      "vo": "Picture this. Small is two hundred rupees. Large is four fifty. That's a big jump, so most people pick small. Now add a medium at four twenty. Suddenly the large is just thirty rupees more, and it feels like a steal.",
+      "cues": {
+        "split": "most",
+        "medium": "Now"
+      },
+      "accents": [
+        "jump,",
+        "steal."
+      ],
+      "claims": [
+        "c9"
+      ],
+      "data": {
+        "overlay": "flow",
+        "opts": [
+          {
+            "name": "Small",
+            "price": "\u20b9200"
+          },
+          {
+            "name": "Medium",
+            "price": "\u20b9420"
+          },
+          {
+            "name": "Large",
+            "price": "\u20b9450"
+          }
+        ],
+        "shots": [
+          {
+            "src": "media/decoy/stock/popcorn_counter.mp4",
+            "t": 0.5,
+            "d": 5.5,
+            "aspect": 1.778,
+            "h": 1920,
+            "x": 0.5
+          },
+          {
+            "src": "media/decoy/stock/cinema_people.mp4",
+            "t": 0.5,
+            "d": 7,
+            "aspect": 0.527,
+            "x": 0.5
+          }
+        ]
+      },
+      "visual": "Popcorn scooped at the counter; with only Small and Large, the crowd dots mostly go Small; the Medium tag drops in and the dots rush to Large.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": {
+            "cue": "medium",
+            "offset": 14
+          },
+          "volume": 0.3
+        },
+        {
+          "name": "ding",
+          "on": {
+            "cue": "medium",
+            "offset": 44
+          },
+          "volume": 0.25
+        }
+      ]
     },
     {
-      "id": "s02", "type": "dOffers", "pad": 8, "energy": 3,
-      "vo": "Look closely. Print alone costs the same as print plus web. Eighty four picked the bundle. Nobody picked print alone.",
-      "cues": { "flow": "Eighty" }, "accents": ["same", "Nobody"], "claims": ["c1"],
-      "data": { "mode": "vote", "shares": [16, 0, 84], "highlight": 1 },
-      "visual": "The decoy card rings red; then the dots fly into the cards: 16 web, 0 print, 84 bundle glowing lime.",
-      "sfx": [{ "name": "riser", "on": { "cue": "flow", "offset": -10 }, "volume": 0.2 }, { "name": "ding", "on": { "cue": "flow", "offset": 30 }, "volume": 0.3 }]
+      "id": "s02",
+      "type": "dReel",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "vo": "The medium isn't there to be bought. It's there to make the large look cheap. That's the decoy effect.",
+      "cues": {
+        "decoy": "medium"
+      },
+      "accents": [
+        "cheap.",
+        "decoy"
+      ],
+      "claims": [
+        "c8"
+      ],
+      "data": {
+        "overlay": "decoy",
+        "opts": [
+          {
+            "name": "Small",
+            "price": "\u20b9200"
+          },
+          {
+            "name": "Medium",
+            "price": "\u20b9420"
+          },
+          {
+            "name": "Large",
+            "price": "\u20b9450"
+          }
+        ],
+        "shots": [
+          {
+            "src": "media/decoy/stock/cinema_people.mp4",
+            "t": 7.5,
+            "d": 7,
+            "aspect": 0.527,
+            "x": 0.5
+          }
+        ]
+      },
+      "visual": "Friends laughing over popcorn buckets; the Medium tag dims and gets a red DECOY stamp; Large glows.",
+      "sfx": [
+        {
+          "name": "impact",
+          "on": {
+            "cue": "decoy",
+            "offset": 2
+          },
+          "volume": 0.35
+        }
+      ]
     },
     {
-      "id": "s03", "type": "dOffers", "pad": 8, "energy": 3,
-      "vo": "Then he removed the useless option. A new group, same two prices. Only thirty two chose the bundle.",
-      "cues": { "kill": "removed", "flow": "new" }, "accents": ["removed", "thirty"], "claims": ["c2"],
-      "data": { "mode": "remove", "fromShares": [16, 0, 84], "shares": [68, 0, 32] },
-      "visual": "The print-only card is stamped REMOVED and falls away; the dots re-flow to 68 web and 32 bundle.",
-      "sfx": [{ "name": "impact", "on": { "cue": "kill" }, "volume": 0.4 }, { "name": "whoosh", "on": { "cue": "flow" }, "volume": 0.25 }]
+      "id": "s03",
+      "type": "dReel",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "minFrames": 360,
+      "vo": "A professor tested this with magazine subscriptions. Online only, fifty nine dollars. Print only, one twenty five. Print plus online, also one twenty five. Most people picked the combo. Remove the useless print-only option, and most switched to the cheap one.",
+      "cues": {
+        "cards": "magazine",
+        "result": "Most",
+        "remove": "Remove"
+      },
+      "accents": [
+        "combo.",
+        "cheap"
+      ],
+      "claims": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "sourceLabel": "DAN ARIELY, PREDICTABLY IRRATIONAL (2008)",
+      "data": {
+        "overlay": "test",
+        "tag": "CLASSROOM DEMO",
+        "note": "OUT OF 100 STUDENTS, EACH ROUND",
+        "opts": [
+          {
+            "name": "Online",
+            "price": "$59"
+          },
+          {
+            "name": "Print",
+            "price": "$125"
+          },
+          {
+            "name": "Print + Online",
+            "price": "$125"
+          }
+        ],
+        "with": [
+          16,
+          0,
+          84
+        ],
+        "without": [
+          68,
+          0,
+          32
+        ],
+        "shots": [
+          {
+            "src": "media/decoy/stock/magazine.mp4",
+            "t": 0.3,
+            "d": 6,
+            "aspect": 0.5625,
+            "x": 0.45,
+            "push": 0.12
+          },
+          {
+            "src": "media/decoy/stock/laptop_reading.mp4",
+            "t": 0.5,
+            "d": 8,
+            "aspect": 0.5625,
+            "x": 0.6
+          }
+        ]
+      },
+      "visual": "Hands turning newspaper pages, then a reader on a tablet; three subscription cards: 84 pick the combo; the Print card falls away and 68 switch to Online.",
+      "sfx": [
+        {
+          "name": "ding",
+          "on": {
+            "cue": "result",
+            "offset": 10
+          },
+          "volume": 0.25
+        },
+        {
+          "name": "impact",
+          "on": {
+            "cue": "remove"
+          },
+          "volume": 0.35
+        }
+      ]
     },
     {
-      "id": "s04", "type": "dDominance", "pad": 8, "energy": 2,
-      "vo": "That's the decoy effect. Next to a worse deal at the same price, the bundle feels like getting web for free.",
-      "cues": { "rows": "worse", "steal": "free." }, "accents": ["decoy", "free."], "claims": ["c8"],
-      "data": {},
-      "visual": "A decoy vs target table: the decoy loses on every row; a lime 'Web free' sticker slams in.",
-      "sfx": [{ "name": "ding", "on": { "cue": "steal" }, "volume": 0.3 }]
+      "id": "s04",
+      "type": "dReel",
+      "pad": 8,
+      "energy": 3,
+      "bleed": true,
+      "minFrames": 300,
+      "vo": "Use it in your business. Say your gym sells monthly for fifteen hundred, and yearly for twelve thousand. Add a six month plan at ten thousand, and yearly suddenly looks like the obvious deal.",
+      "cues": {
+        "add": "Add",
+        "obvious": "obvious"
+      },
+      "accents": [
+        "business.",
+        "obvious"
+      ],
+      "claims": [
+        "c15",
+        "c16"
+      ],
+      "data": {
+        "overlay": "gym",
+        "opts": [
+          {
+            "name": "Monthly",
+            "price": "\u20b91,500",
+            "sub": "\u20b91,500 / month"
+          },
+          {
+            "name": "6 months",
+            "price": "\u20b910,000",
+            "sub": "\u20b91,667 / month"
+          },
+          {
+            "name": "Yearly",
+            "price": "\u20b912,000",
+            "sub": "\u20b91,000 / month"
+          }
+        ],
+        "shots": [
+          {
+            "src": "media/flipkart/stock/gym.mp4",
+            "t": 0.2,
+            "d": 9,
+            "aspect": 0.5625,
+            "x": 0.5,
+            "rate": 0.75
+          }
+        ]
+      },
+      "visual": "A cinematic gym workout; Monthly and Yearly cards, then the 6-month card drops in and Yearly glows BEST VALUE.",
+      "sfx": [
+        {
+          "name": "click",
+          "on": {
+            "cue": "add"
+          },
+          "volume": 0.3
+        },
+        {
+          "name": "ding",
+          "on": {
+            "cue": "obvious"
+          },
+          "volume": 0.3
+        }
+      ]
     },
     {
-      "id": "s05", "type": "dMenu", "pad": 6, "energy": 2,
-      "vo": "Picture a cinema menu. The medium is there to make the large look cheap.",
-      "cues": { "s": "Picture", "m": "medium", "l": "large", "pick": "cheap." }, "accents": ["medium", "cheap."], "claims": ["c9"],
-      "data": { "items": [{ "size": "SMALL", "price": "₹200", "cue": "s", "h": 190 }, { "size": "MEDIUM", "price": "₹420", "cue": "m", "h": 270 }, { "size": "LARGE", "price": "₹450", "cue": "l", "h": 340 }], "pill": "+₹30 OVER MEDIUM" },
-      "visual": "Three popcorn tubs rise; the large turns lime with a +₹30 pill. Labelled illustrative.",
-      "sfx": [{ "name": "tick", "on": { "cue": "pick" }, "volume": 0.25 }]
-    },
-    {
-      "id": "s06", "type": "dReality", "pad": 8, "energy": 2,
-      "vo": "But here's the honest part. In three point six million real wine purchases, decoys moved choices by about one percent.",
-      "cues": { "count": "three", "pct": "one" }, "accents": ["honest", "one"], "claims": ["c11"],
-      "data": {},
-      "visual": "A wall of wine-bottle tiles lights up as a counter climbs to 3,600,000; a thin lime bar fills to about 1%.",
-      "sfx": [{ "name": "riser", "on": { "cue": "count" }, "volume": 0.18 }]
-    },
-    {
-      "id": "s07", "type": "dBuild", "pad": 14, "energy": 2, "minFrames": 220,
-      "vo": "So use it carefully. Put a real, slightly worse option next to the plan you want to sell, and test it. Save this for your next pricing page.",
-      "cues": { "decoy": "real,", "side": "sell,", "test": "test" }, "accents": ["real,", "test"], "claims": ["c15", "c16"],
-      "data": { "plans": [
-        { "name": "Basic", "price": "₹999", "feats": ["5 projects", "Email support"] },
-        { "name": "Plus", "price": "₹2,299", "feats": ["15 projects", "✕ Priority support", "✕ Analytics"], "role": "decoy" },
-        { "name": "Pro", "price": "₹2,499", "feats": ["Unlimited projects", "Priority support", "Analytics"], "role": "target" }] },
-      "visual": "A pricing page: the decoy plan drops in beside Pro; Pro glows; an A/B test bar shows Pro's share rising (example numbers).",
-      "sfx": [{ "name": "click", "on": { "cue": "decoy" }, "volume": 0.25 }, { "name": "ding", "on": { "cue": "test", "offset": 20 }, "volume": 0.25 }]
+      "id": "s05",
+      "type": "dReel",
+      "pad": 14,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Save this before you price your next offer.",
+      "accents": [
+        "Save"
+      ],
+      "data": {
+        "overlay": "save",
+        "shots": [
+          {
+            "src": "media/decoy/stock/popcorn_closeup.mp4",
+            "t": 9,
+            "d": 4,
+            "aspect": 0.527,
+            "x": 0.4
+          }
+        ]
+      },
+      "visual": "The popcorn close-up again; a lime bookmark pops in.",
+      "sfx": [
+        {
+          "name": "click",
+          "on": 8,
+          "volume": 0.25
+        }
+      ]
     }
   ]
 }

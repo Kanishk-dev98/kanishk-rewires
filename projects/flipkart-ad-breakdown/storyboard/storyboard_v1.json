@@ -1,0 +1,107 @@
+{
+  "id": "flipkart-ad-breakdown",
+  "title": "Why Flipkart's Ek Size Bada Le Lo ad works",
+  "format": "9x16",
+  "captions": true,
+  "research": "done",
+  "captionStyle": { "top": 0.755, "size": 56, "maxWords": 3, "weight": 800 },
+  "voice": { "provider": "edge", "edge": { "voice": "en-US-AndrewMultilingualNeural", "rate": "+6%" } },
+  "outro": { "seconds": 2.5, "size": 220, "wordSize": 50, "cta": "Follow for marketing that actually works" },
+  "render": { "concurrency": 4, "timeoutMs": 240000 },
+  "scenes": [
+    {
+      "id": "s00", "type": "aBubble", "leadIn": 2, "pad": 6, "energy": 3,
+      "vo": "Every Indian kid has heard this line from mum.",
+      "cues": { "echo": "heard" }, "accents": ["Every", "mum."],
+      "data": { "line": "“Ek size bada le lo.”", "kicker": "EVERY SHOPPING TRIP, EVERY HOME" },
+      "visual": "A mum says 'Ek size bada le lo'; small echoes of the same line pop up from other homes.",
+      "sfx": [{ "name": "whoosh", "on": 2, "volume": 0.2 }]
+    },
+    {
+      "id": "s01", "type": "aSize", "pad": 6, "energy": 2,
+      "vo": "School shirt? One size bigger. Shoes? One size bigger. So you could grow into them.",
+      "cues": { "s0": "School", "s1": "Shoes?", "s2": "grow" }, "accents": ["bigger.", "grow"], "claims": ["ad-insight"],
+      "data": { "mode": "shirt", "kicker": "THE RULE", "note": "BUY FOR THE FUTURE YOU" },
+      "visual": "A school shirt grows as S, M, L tags light up one by one.",
+      "sfx": [{ "name": "tick", "on": { "cue": "s1" }, "volume": 0.2 }, { "name": "tick", "on": { "cue": "s2" }, "volume": 0.2 }]
+    },
+    {
+      "id": "s02", "type": "aSize", "pad": 8, "energy": 3,
+      "vo": "Flipkart's Big Billion Days film by 22feet took that exact rule, and pointed it at a TV.",
+      "cues": { "s0": "Flipkart's", "s1": "rule,", "s2": "TV." }, "accents": ["exact", "TV."], "claims": ["ad-title-agency"], "sourceLabel": "CAMPAIGN BRIEF ASIA · MEDIANEWS4U, OCT 2026",
+      "data": { "mode": "tv", "kicker": "BIG BILLION DAYS 2026", "note": "“EK SIZE BADA LE LO” · BY 22FEET" },
+      "visual": "The shirt becomes a TV that grows 43, 55, 65 inch with a lime glow.",
+      "sfx": [{ "name": "whoosh", "on": { "cue": "s0" }, "volume": 0.3 }, { "name": "impact", "on": { "cue": "s2" }, "volume": 0.35 }]
+    },
+    {
+      "id": "s03", "type": "aBeats", "pad": 8, "energy": 2, "minFrames": 260,
+      "vo": "The story is simple. A childhood rule. A grown up, nervous to pitch a bigger TV to the family. Mum's own rule becomes the argument. And sale prices close the deal.",
+      "cues": { "b0": "childhood", "b1": "nervous", "b2": "argument.", "b3": "sale" }, "accents": ["nervous", "argument."], "claims": ["ad-youtube-description"],
+      "data": { "kicker": "THE FILM IN 4 BEATS", "note": "BEATS AS DESCRIBED BY FLIPKART · 80 S FILM",
+        "beats": [
+          { "tag": "MEMORY", "icon": "👕", "text": "Then: shirts and shoes", "cue": "b0" },
+          { "tag": "TENSION", "icon": "😬", "text": "Now: the big-screen ask", "cue": "b1" },
+          { "tag": "TWIST", "icon": "👩", "text": "Her logic, her permission", "cue": "b2" },
+          { "tag": "PAYOFF", "icon": "📺", "text": "Big Billion Days pricing", "cue": "b3" }] },
+      "visual": "A 2x2 storyboard strip; each beat card lights up on its word.",
+      "sfx": [{ "name": "tick", "on": { "cue": "b1" }, "volume": 0.2 }, { "name": "tick", "on": { "cue": "b2" }, "volume": 0.2 }, { "name": "ding", "on": { "cue": "b3" }, "volume": 0.25 }]
+    },
+    {
+      "id": "s04", "type": "aWhy", "pad": 6, "energy": 2,
+      "vo": "Why it works. First, it starts with a truth almost every Indian home shares. Nobody needs it explained.",
+      "cues": { "hit": "truth" }, "accents": ["truth", "Nobody"], "claims": ["framework-truth-well-told"],
+      "data": { "kind": "truth", "kicker": "A SHARED TRUTH", "line": "Ek size bada!" },
+      "visual": "A grid of homes lights up one by one, each with the same mum line.",
+      "sfx": [{ "name": "riser", "on": { "cue": "hit" }, "volume": 0.18 }]
+    },
+    {
+      "id": "s05", "type": "aWhy", "pad": 6, "energy": 3,
+      "vo": "Second, it kills the real objection. A big TV feels like an indulgence. Mum's rule turns it into common sense.",
+      "cues": { "hit": "kills" }, "accents": ["kills", "sense."], "claims": ["ad-insight"],
+      "data": { "kind": "objection", "kicker": "THE OBJECTION, HANDLED", "items": ["Too big?", "Too costly?", "Do we even need it?"], "line": "“Ek size bada le lo.”" },
+      "visual": "Three family objections get struck through; mum's line lands as the answer.",
+      "sfx": [{ "name": "click", "on": { "cue": "hit" }, "volume": 0.25 }, { "name": "ding", "on": { "cue": "hit", "offset": 26 }, "volume": 0.25 }]
+    },
+    {
+      "id": "s06", "type": "aWhy", "pad": 8, "energy": 2,
+      "vo": "Third, nostalgia softens price pain. Research in the Journal of Consumer Research found nostalgia weakens the desire for money.",
+      "cues": { "hit": "softens" }, "accents": ["nostalgia", "money."], "claims": ["framework-nostalgia"],
+      "data": { "kind": "nostalgia", "kicker": "NOSTALGIA VS PRICE", "source": "LASALETA, SEDIKIDES & VOHS · JOURNAL OF CONSUMER RESEARCH, 2014" },
+      "visual": "A warm sepia wash spreads; the price-pain meter shrinks.",
+      "sfx": [{ "name": "whoosh", "on": { "cue": "hit" }, "volume": 0.2 }]
+    },
+    {
+      "id": "s07", "type": "aQuote", "pad": 30, "energy": 1, "minFrames": 190,
+      "vo": "Here's how the agency put it.",
+      "accents": ["agency"], "claims": ["quote-ishan-mehta"],
+      "data": { "quote": "The creative unlock was using that mantra, typically reserved for apparels, for a category like large screen TVs.", "hl": ["mantra", "TVs"], "who": "Ishan Mehta", "role": "EXECUTIVE CREATIVE DIRECTOR, 22FEET" },
+      "visual": "The quote reveals word by word; the key words glow lime.",
+      "sfx": []
+    },
+    {
+      "id": "s08", "type": "aMethod", "pad": 8, "energy": 2, "minFrames": 260,
+      "vo": "Want your own version? Do what Clay Christensen's team did. Spend a day where your customers buy. Ask what almost stopped them. Then find the phrase they already use, and build your ad around it.",
+      "cues": { "n0": "Spend", "n1": "Ask", "n2": "stopped", "n3": "phrase", "rule": "build" }, "accents": ["day", "phrase"], "claims": ["framework-jtbd"], "sourceLabel": "HBS WORKING KNOWLEDGE, 2011",
+      "data": { "kicker": "FIND YOUR CUSTOMER TRUTH",
+        "notes": [
+          { "text": "11:40 · couple, 65\" TV, asked about EMI", "cue": "n0" },
+          { "text": "Q: what almost stopped you?", "cue": "n1" },
+          { "text": "A: “Ghar pe kya bolenge?”", "cue": "n2" },
+          { "text": "→ their words = your headline", "cue": "n3", "hl": true }] },
+      "visual": "A field notebook fills with observations; the last line highlights lime.",
+      "sfx": [{ "name": "tick", "on": { "cue": "rule" }, "volume": 0.2 }]
+    },
+    {
+      "id": "s09", "type": "aAsk", "pad": 14, "energy": 2,
+      "vo": "So, what's the one line your mum always said? Drop it in the comments.",
+      "cues": { "comments": "line" }, "accents": ["mum", "comments."],
+      "data": { "replies": [
+        { "name": "Riya", "text": "Jacket le ke jaana!" },
+        { "name": "Kabir", "text": "Pehle khana, phir phone." },
+        { "name": "Ananya", "text": "Light band karo, bill aayega." },
+        { "name": "Dev", "text": "Ek size bada le lo 😂" }] },
+      "visual": "A happy mum figure; example comment replies with classic mum lines stack up.",
+      "sfx": [{ "name": "click", "on": { "cue": "comments", "offset": 10 }, "volume": 0.2 }]
+    }
+  ]
+}

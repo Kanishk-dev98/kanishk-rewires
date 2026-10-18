@@ -1,0 +1,52 @@
+{
+  "popcorn_counter.mp4": {
+    "page_url": "https://www.pexels.com/video/freshly-popped-popcorn-at-amusement-park-35876717/",
+    "direct_url": "https://videos.pexels.com/video-files/35876717/15215827_3840_2160_60fps.mp4",
+    "author": "Mariano Quintero (Pexels)",
+    "license": "Pexels License",
+    "resolution": "3840x2160 (landscape, 60fps)",
+    "duration": "10.8s",
+    "description": "Inside a lit popcorn machine at a concession stand: a hand with a green scoop digs into a warm, golden heap of fresh popcorn; red/white striped paper popcorn bags stand in the background with green and blue bokeh. Warm, shallow depth of field. No three-size tub lineup. Bags carry a partial stylised 'Popcorn' word only, no brand.",
+    "crop_focus_x_pct": 50
+  },
+  "popcorn_closeup.mp4": {
+    "page_url": "https://www.pexels.com/video/people-sharing-popcorn-in-a-cinema-7984181/",
+    "direct_url": "https://videos.pexels.com/video-files/7984181/7984181-uhd_2160_4096_25fps.mp4",
+    "author": "Tima Miroshnichenko (Pexels)",
+    "license": "Pexels License",
+    "resolution": "1440x2732 (vertical; served as the 'uhd_2160_4096' file)",
+    "duration": "20.3s",
+    "description": "Vertical close-up in a dark cinema: a full red/yellow striped popcorn box (generic 'POPCORN' print) in the lower third, hands reaching in and taking popcorn, red seats and projector glow blurred behind. Moody and cinematic; the box is full, not overflowing.",
+    "crop_focus_x_pct": 40
+  },
+  "cinema_people.mp4": {
+    "page_url": "https://www.pexels.com/video/friends-talking-while-eating-popcorn-8261606/",
+    "direct_url": "https://videos.pexels.com/video-files/8261606/8261606-uhd_2160_4096_25fps.mp4",
+    "author": "cottonbro studio (Pexels)",
+    "license": "Pexels License",
+    "resolution": "2160x4096 (vertical, 25fps)",
+    "duration": "16.6s",
+    "description": "Two young East/Southeast Asian women at a round table in a cinema lobby/lounge, laughing and eating popcorn from two large red-and-white striped buckets (generic 'POPCORN' roundel), 3D glasses on the table, warm golden fairy-light bokeh behind. Not South Asian, and not inside the auditorium.",
+    "crop_focus_x_pct": 50
+  },
+  "magazine.mp4": {
+    "page_url": "https://www.pexels.com/video/man-reading-a-newspaper-indoors-30471021/",
+    "direct_url": "https://videos.pexels.com/video-files/30471021/13057031_2160_3840_30fps.mp4",
+    "author": "Esra Afşar (Pexels)",
+    "license": "Pexels License",
+    "resolution": "2160x3840 (vertical, 30fps)",
+    "duration": "7.8s",
+    "description": "Vertical: a man in an olive fleece reading and turning the pages of a printed Danish newspaper at a table, soft daylight. Hands turn a full-page ad. Caveat: small ad text and .dk URLs are legible at full res, plus a partial jacket logo ('Co...') on his chest. Crop tight on the hands and pages, or soften the text, if that matters.",
+    "crop_focus_x_pct": 45
+  },
+  "laptop_reading.mp4": {
+    "page_url": "https://www.pexels.com/video/woman-browsing-on-her-digital-tablet-7681480/",
+    "direct_url": "https://videos.pexels.com/video-files/7681480/7681480-hd_1080_1920_25fps.mp4",
+    "author": "Mikhail Nilov (Pexels)",
+    "license": "Pexels License",
+    "resolution": "1080x1920 (vertical, 25fps)",
+    "duration": "14.6s",
+    "description": "Vertical: a young East Asian woman sits by a window ledge in a cosy cafe (warm wood shelves, plants, bulb light) and reads intently on a silver tablet, scrolling with one hand. The screen faces away. The tablet back shows only the camera, with no visible logo. A tablet, not a laptop.",
+    "crop_focus_x_pct": 60
+  }
+}
