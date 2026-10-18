@@ -1,0 +1,607 @@
+{
+  "topic": "Google Gemini 4 Argon (consumer + API launch, chat-to-tasks toggle, connected apps)",
+  "researched_at": "2026-10-18",
+  "claims": [
+    {
+      "id": "c1",
+      "type": "fact",
+      "claim": "Google calls Gemini 4 Argon \"our new frontier model\", positioned as \"our frontier model for real-world coding, enterprise knowledge work, and cyber defense.\" Announced Sep 30, 2026 by Koray Kavukcuoglu (SVP, Google DeepMind; Chief AI Architect). Name meaning ('Argon') is not explained in any Google source checked.",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "fact",
+      "claim": "Model card: Argon is the next generation of Gemini natively multimodal reasoning models, \"is not a modification or a fine-tune of a prior model\"; sparse mixture-of-experts transformer; text/image/audio/video in, text out; up to 1M-token combined context; knowledge cutoff March 2026. Distributed via Gemini app, Gemini API, Google AI Studio, Gemini for business, Google Antigravity and Google AI Mode.",
+      "sources": [
+        {
+          "url": "https://deepmind.google/models/model-cards/gemini-4-argon/",
+          "title": "Gemini 4 Argon - Model Card",
+          "publisher": "Google DeepMind",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "fact",
+      "claim": "Phased release: on Sep 30 Argon was rolling out first to \"a set of trusted cyber defenders through our Fairwind Program\" (released to them \"without cyber guardrails\"), with broader release to start \"with paid API customers and Google AI Ultra subscribers.\"",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "fact",
+      "claim": "General availability Oct 13, 2026: \"Gemini 4 Argon is now globally available today for developers and enterprises via the API in AI Studio and Gemini platform\"; Ultra subscribers get it in Google Antigravity; Ultra and Pro subscribers can try it \"in the Gemini app and AI Mode in Search.\"",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "fact",
+      "claim": "Gemini app post: \"Google AI Pro and Ultra subscribers can now access Gemini 4 Argon and give Gemini tasks to get more done.\" Release notes (2026.10.13) say it is rolling out worldwide in the Gemini app to Google AI Pro and Ultra subscribers.",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
+          "title": "Gemini 4 Argon comes to the Gemini app",
+          "publisher": "Google (The Keyword, blog.google)",
+          "published": "2026-10-13"
+        },
+        {
+          "url": "https://gemini.google/release-notes/",
+          "title": "Gemini Apps release notes - 2026.10.13 entry",
+          "publisher": "Google (Gemini)",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "fact",
+      "claim": "Free and Google AI Plus plans are not listed as getting Argon. On the plans page (Indian INR locale) only AI Pro (Rs 1,950/month) and AI Ultra (intro Rs 6,500/month, then Rs 19,500/month) list \"Gemini 4 Argon\" access; AI Plus (Rs 399/month) and Free do not.",
+      "sources": [
+        {
+          "url": "https://gemini.google/subscriptions/",
+          "title": "Google AI plans (served in Hindi / INR locale)",
+          "publisher": "Google (Gemini)",
+          "published": "accessed 2026-10-18"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
+          "title": "Gemini 4 Argon comes to the Gemini app",
+          "publisher": "Google (The Keyword, blog.google)",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "fact",
+      "claim": "India: Argon access is listed on the Google AI Pro and Ultra plans shown in INR on gemini.google/subscriptions, and the Tasks help page's exclusion list (EEA, Nigeria, Switzerland, UK) does not include India. Release notes say a select set of connected apps is available in other English-speaking regions plus Brazil and India. No Google source explicitly states 'Argon is available in India' in a sentence.",
+      "sources": [
+        {
+          "url": "https://gemini.google/subscriptions/",
+          "title": "Google AI plans (served in Hindi / INR locale)",
+          "publisher": "Google (Gemini)",
+          "published": "accessed 2026-10-18"
+        },
+        {
+          "url": "https://support.google.com/gemini/answer/17094507?hl=en&co=GENIE.Platform%3DDesktop",
+          "title": "Manage your tasks & workflows in Gemini Apps",
+          "publisher": "Google (Gemini Apps Help)",
+          "published": "accessed 2026-10-18"
+        },
+        {
+          "url": "https://gemini.google/release-notes/",
+          "title": "Gemini Apps release notes - 2026.10.13 entry",
+          "publisher": "Google (Gemini)",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "fact",
+      "claim": "Headline capabilities (Google): long, multi-step work in coding, finance, legal, cybersecurity and science; multimodal document comprehension; chart and long-video understanding; spatial/3D reasoning; autonomous vulnerability finding and patching. Gemini app post: \"Argon answers questions more directly with less hedging\", repeats itself less and gives progress updates on longer tasks.",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-09-30"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-10-13"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
+          "title": "Gemini 4 Argon comes to the Gemini app",
+          "publisher": "Google (The Keyword, blog.google)",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c9",
+      "type": "stat",
+      "claim": "Model card benchmarks (Argon vs GPT-6 Astra / Claude Fable 5.1 / Claude Opus 5.5): Vals Index 68.9 / 63.1 / 65.8 / 67.0; AutomationBench 51.3 / 41.4 / 31.4 / 42.5; Vals Finance Agent v2 65.4 / 53.5 / 58.9 / 58.6; Harvey's Legal Agent Benchmark 19.6 / 5.4 / 6.7 / 3.8; DeepSWE v1.1 77.9 / 74.1 / 67.4 / 74.2; LVBench 91.7 / 87.5 / 79.7 / 83.7; Chartography 71.6 / 71.0 / 46.2 / 66.3; GraphWalks 256k-1M 84.2 / 71.8 / 65.0 / 66.8 (all %).",
+      "sources": [
+        {
+          "url": "https://deepmind.google/models/model-cards/gemini-4-argon/",
+          "title": "Gemini 4 Argon - Model Card",
+          "publisher": "Google DeepMind",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "type": "stat",
+      "claim": "Benchmarks where Argon does NOT lead per Google's own model card: FrontierSWE v2 55.0% (GPT-6 Astra 65.5%, Opus 5.5 62.3%); Terminal-bench 4.0 57.4% (Opus 5.5 66.4%); Terminal-Bench Science 0.1 57.6% (Astra 68.1%); OSWorld-2.0 offline subset 69.2% (Astra 72.6%); PostTrainBench 45.3% (Opus 5.5 49.3%). CWE-bench v1 68.0% ties GPT-6 Astra.",
+      "sources": [
+        {
+          "url": "https://deepmind.google/models/model-cards/gemini-4-argon/",
+          "title": "Gemini 4 Argon - Model Card",
+          "publisher": "Google DeepMind",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c11",
+      "type": "stat",
+      "claim": "Sep 30 blog: DeepSWE v1.1 77.9% (\"a new state of the art\"); AutomationBench (Zapier) 51.3%, ranked #1; LVBench 91.7%; CWE-bench v1 68%, tied for first. Oct 13 blog: ERQA 87%; RareBench 57%; LabBench 52.2%; Gray Swan indirect prompt injection attack success cut to 0.7%.",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-09-30"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c12",
+      "type": "stat",
+      "claim": "Google internal results cited: in Antigravity, agentic code submissions up more than 35% and code rollbacks down nearly a third.",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c13",
+      "type": "fact",
+      "claim": "Official wording: Gemini app post describes \"a simple toggle from chat to tasks\" in the main chat window; \"When you choose tasks, Gemini can work for you even when you're not at your computer.\" Help Center names it the \"Chat and Task toggle next to the prompt text box\" (feature formerly 'Gemini Spark', renamed 'Task').",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
+          "title": "Gemini 4 Argon comes to the Gemini app",
+          "publisher": "Google (The Keyword, blog.google)",
+          "published": "2026-10-13"
+        },
+        {
+          "url": "https://support.google.com/gemini/answer/17094507?hl=en&co=GENIE.Platform%3DDesktop",
+          "title": "Manage your tasks & workflows in Gemini Apps",
+          "publisher": "Google (Gemini Apps Help)",
+          "published": "accessed 2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "c14",
+      "type": "fact",
+      "claim": "Steps (web/Mac): go to gemini.google.com or open the Gemini Mac app -> click \"Task\" below the text box -> describe what you want (optionally say when it should run, type @ to pick a skill, ask for generated files, pick a model/thinking level from the model menu; add files via Upload & tools) -> click Submit and monitor; Gemini may ask you to take over its browser for some steps.",
+      "sources": [
+        {
+          "url": "https://support.google.com/gemini/answer/17094507?hl=en&co=GENIE.Platform%3DDesktop",
+          "title": "Manage your tasks & workflows in Gemini Apps",
+          "publisher": "Google (Gemini Apps Help)",
+          "published": "accessed 2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "c15",
+      "type": "fact",
+      "claim": "Tasks requirements: 18+, personal Google Account (work/school not supported for now), Google AI Pro or Ultra, Keep Activity on, opted in to Personal Intelligence. Surfaces: Gemini mobile app, Gemini Mac app, gemini.google.com. Not available in the EEA, Nigeria, Switzerland or the UK.",
+      "sources": [
+        {
+          "url": "https://support.google.com/gemini/answer/17094507?hl=en&co=GENIE.Platform%3DDesktop",
+          "title": "Manage your tasks & workflows in Gemini Apps",
+          "publisher": "Google (Gemini Apps Help)",
+          "published": "accessed 2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "c16",
+      "type": "fact",
+      "claim": "Help Center example tasks: declutter your inbox (summarise/archive newsletters, unsubscribe); custom news digest; monitor flight and hotel prices and alert when in budget; research a topic with cited sources and package results into PDFs, docs, spreadsheets or presentations. \"Tasks can be scheduled to run at a specific date and time or in response to an event.\"",
+      "sources": [
+        {
+          "url": "https://support.google.com/gemini/answer/17094507?hl=en&co=GENIE.Platform%3DDesktop",
+          "title": "Manage your tasks & workflows in Gemini Apps",
+          "publisher": "Google (Gemini Apps Help)",
+          "published": "accessed 2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "c17",
+      "type": "caveat",
+      "claim": "Tasks limits: \"You can have up to 15 tasks running at a given time\"; usage limits are compute-based and higher on higher plans. Turn off via Settings > Task settings > 'Use task mode to hand off work' > Turn off (schedules pause, nothing deleted).",
+      "sources": [
+        {
+          "url": "https://support.google.com/gemini/answer/17094507?hl=en&co=GENIE.Platform%3DDesktop",
+          "title": "Manage your tasks & workflows in Gemini Apps",
+          "publisher": "Google (Gemini Apps Help)",
+          "published": "accessed 2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "c18",
+      "type": "fact",
+      "claim": "\"Gemini now connects you to more than 40 apps\" - named examples Instacart, OpenTable, Adobe and Shopify. Release notes: connect 40+ apps or services in one conversation (e.g. Instacart, OpenTable, Adobe); most connected apps are English/US, with a select set in other English-speaking regions plus Brazil and India.",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
+          "title": "Gemini 4 Argon comes to the Gemini app",
+          "publisher": "Google (The Keyword, blog.google)",
+          "published": "2026-10-13"
+        },
+        {
+          "url": "https://gemini.google/release-notes/",
+          "title": "Gemini Apps release notes - 2026.10.13 entry",
+          "publisher": "Google (Gemini)",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c19",
+      "type": "fact",
+      "claim": "How to connect (Help Center): gemini.google.com -> sidebar 'Customize' (under More if hidden) -> 'Connectors' at top -> find app -> 'Add' -> follow prompts. Use in a prompt by typing @ and selecting the app. Disconnect via More options > Disconnect. Custom apps can be added via an MCP server URL.",
+      "sources": [
+        {
+          "url": "https://support.google.com/gemini/answer/13695044?hl=en&co=GENIE.Platform%3DDesktop",
+          "title": "Use & manage Connected Apps in Gemini",
+          "publisher": "Google (Gemini Apps Help)",
+          "published": "accessed 2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "c20",
+      "type": "fact",
+      "claim": "Earlier connected apps (July 1-7, 2026, Spark era): Canva, Instacart, OpenTable, Dropbox, Zillow. Instacart connection requires a US account and English, personal account, Keep Activity on.",
+      "sources": [
+        {
+          "url": "https://support.google.com/gemini/answer/17171264?hl=en",
+          "title": "What's new for Gemini Spark",
+          "publisher": "Google (Gemini Apps Help)",
+          "published": "latest entry 2026-07-17"
+        },
+        {
+          "url": "https://support.google.com/gemini/answer/17090317?hl=en&co=GENIE.Platform%3DDesktop",
+          "title": "Find & add items to your cart in Instacart with Gemini Apps",
+          "publisher": "Google (Gemini Apps Help)",
+          "published": "accessed 2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "c21",
+      "type": "fact",
+      "claim": "Official demo 'Paperwork' (business): \"In Gemini App, Argon takes an unstructured folder full of project context and formats it into a clean proposal deck for a client using a custom skill. Gemini then drafts and emails the deck to a client while creating an automated workflow for all future incoming client requests with a scheduled task.\"",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-10-13"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=frgCYZ_TEwY",
+          "title": "Paperwork: Gemini 4 Argon",
+          "publisher": "Google (YouTube), embedded in blog.google Oct 13 post",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c22",
+      "type": "fact",
+      "claim": "Official demo 'Daybed': \"Argon using Antigravity in the Gemini macOS app generates design iterations for new legs for a sofa using Nano Banana then generates a 3d printable file for one\", starting from a sketch of measurements and a photo of the couch.",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-10-13"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0_47R0ep-6s",
+          "title": "Daybed: Gemini 4 Argon",
+          "publisher": "Google (YouTube), embedded in blog.google Oct 13 post",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c23",
+      "type": "fact",
+      "claim": "Official demo (Isomorphic Labs): Argon \"is able to quickly synthesize complex PDFs and patents to extract pertinent information\", used to accelerate drug-discovery research workflows (video: 'Untangling 500-page chemistry patents with Gemini 4').",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-10-13"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9jQA7IgPhBE",
+          "title": "Untangling 500-page chemistry patents with Gemini 4",
+          "publisher": "Google DeepMind (YouTube), embedded in blog.google Oct 13 post",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c24",
+      "type": "fact",
+      "claim": "Release notes list Argon in-app use cases: analysing dense financial reports, building decks from multiple sources, creating interactive 3D models.",
+      "sources": [
+        {
+          "url": "https://gemini.google/release-notes/",
+          "title": "Gemini Apps release notes - 2026.10.13 entry",
+          "publisher": "Google (Gemini)",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c25",
+      "type": "fact",
+      "claim": "API model ID: gemini-4-argon (stable). Context 1,048,576 tokens unified input+output; max output 65,536 by default, up to 1,048,576 with long decode. Input text/image/video/audio/PDF; output text only. No image/audio generation, no Live API, explicit caching unsupported (implicit only); computer use in Preview; thinking levels low/medium/high.",
+      "sources": [
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
+          "title": "Gemini 4 Argon | Gemini API",
+          "publisher": "Google AI for Developers",
+          "published": "2026-10-14 (page last updated)"
+        }
+      ]
+    },
+    {
+      "id": "c26",
+      "type": "stat",
+      "claim": "API pricing (Standard, per 1M tokens): $2.00 input / $10.00 output (incl. thinking) / $0.10 cached through Nov 30, 2026; $4.00 / $20.00 / $0.20 from Dec 1, 2026. Batch and Flex half price; Priority $3.60 / $18.00 (then $7.20 / $36.00). Not available on the free tier.",
+      "sources": [
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/pricing",
+          "title": "Gemini Developer API pricing",
+          "publisher": "Google AI for Developers",
+          "published": "accessed 2026-10-18"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c27",
+      "type": "caveat",
+      "claim": "Google's own model card lists limitations: hallucinations, \"occasional slowness or timeouts\", and knowledge that may be out of date (cutoff March 2026).",
+      "sources": [
+        {
+          "url": "https://deepmind.google/models/model-cards/gemini-4-argon/",
+          "title": "Gemini 4 Argon - Model Card",
+          "publisher": "Google DeepMind",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c28",
+      "type": "caveat",
+      "claim": "Frontier Safety: Google says the critical capability level could not be ruled out for biological risk and cyber-offense (safety cases developed) and the stealth/situational-awareness threshold could not be ruled out (passed 14 of 15 challenges).",
+      "sources": [
+        {
+          "url": "https://deepmind.google/models/model-cards/gemini-4-argon/",
+          "title": "Gemini 4 Argon - Model Card",
+          "publisher": "Google DeepMind",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c29",
+      "type": "caveat",
+      "claim": "Tasks are described as experimental (\"Gemini can make mistakes\"); Google advises not to enter sign-in or payment details in the task thread, to avoid sensitive tasks/schedules, and warns Gemini can share your info with websites while browsing and can do bulk actions on Google Tasks without confirmation.",
+      "sources": [
+        {
+          "url": "https://support.google.com/gemini/answer/17094507?hl=en&co=GENIE.Platform%3DDesktop",
+          "title": "Manage your tasks & workflows in Gemini Apps",
+          "publisher": "Google (Gemini Apps Help)",
+          "published": "accessed 2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "c30",
+      "type": "caveat",
+      "claim": "Secondary (Tech Times): subscriber default thinking level is reportedly MEDIUM, while third-party Intelligence Index scores reflect HIGH; Google's benchmark figures are self-reported and reportedly not independently replicated as of early October. Unverified against a primary Google source.",
+      "sources": [
+        {
+          "url": "https://www.techtimes.com/articles/329026/20261015/gemini-4-argon-rolls-out-benchmark-scores-reflect-high-mode-not-subscriber-default.htm",
+          "title": "Gemini 4 Argon Rolls Out: Benchmark Scores Reflect High Mode, Not Subscriber Default",
+          "publisher": "Tech Times (secondary)",
+          "published": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "id": "c31",
+      "type": "caveat",
+      "claim": "Introductory API pricing doubles on Dec 1, 2026.",
+      "sources": [
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/pricing",
+          "title": "Gemini Developer API pricing",
+          "publisher": "Google AI for Developers",
+          "published": "accessed 2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "c32",
+      "type": "caveat",
+      "claim": "CONFLICT: Tasks plan eligibility. Blog and Help Center say Google AI Pro AND Ultra get tasks; the plans page (INR locale) lists 'Tasks in Gemini' only under AI Ultra ('in select countries').",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
+          "title": "Gemini 4 Argon comes to the Gemini app",
+          "publisher": "Google (The Keyword, blog.google)",
+          "published": "2026-10-13"
+        },
+        {
+          "url": "https://support.google.com/gemini/answer/17094507?hl=en&co=GENIE.Platform%3DDesktop",
+          "title": "Manage your tasks & workflows in Gemini Apps",
+          "publisher": "Google (Gemini Apps Help)",
+          "published": "accessed 2026-10-18"
+        },
+        {
+          "url": "https://gemini.google/subscriptions/",
+          "title": "Google AI plans (served in Hindi / INR locale)",
+          "publisher": "Google (Gemini)",
+          "published": "accessed 2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "c33",
+      "type": "caveat",
+      "claim": "CONFLICT: Antigravity access. Oct 13 blog says Ultra subscribers get Argon in Antigravity; 9to5Google (Oct 15, secondary) reports it rolling out to AI Pro subscribers too with a separate weekly-only Argon quota; a user forum post says Ultra-only for Antigravity. Unresolved.",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-10-13"
+        },
+        {
+          "url": "https://9to5google.com/2026/10/15/gemini-4-argon-is-now-rolling-out-to-googles-antigravity-for-ai-pro-subscribers/",
+          "title": "Gemini 4 Argon is now rolling out to Google's Antigravity for AI Pro subscribers",
+          "publisher": "9to5Google (secondary) - Ben Schoon",
+          "published": "2026-10-15"
+        },
+        {
+          "url": "https://discuss.ai.google.dev/t/clarification-on-gemini-4-argon-claude-5-5-and-model-availability-for-jio-google-ai-pro-subscribers/188999",
+          "title": "Clarification on Gemini 4 Argon ... for Jio Google AI Pro Subscribers",
+          "publisher": "Google AI Developers Forum (user post, not authoritative)",
+          "published": "2026-10"
+        }
+      ]
+    },
+    {
+      "id": "c34",
+      "type": "caveat",
+      "claim": "CONFLICT: output length. Sep 30 blog says output limit raised to 1M tokens \"up from the previous 64K\"; API docs say default max output is 65,536 and 1M only with long decode.",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-09-30"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
+          "title": "Gemini 4 Argon | Gemini API",
+          "publisher": "Google AI for Developers",
+          "published": "2026-10-14 (page last updated)"
+        }
+      ]
+    },
+    {
+      "id": "c35",
+      "type": "caveat",
+      "claim": "CONFLICT/AMBIGUITY: 'LabBench' 52.2% in Oct 13 blog vs 'LABBench 2' 88.8% in model card - likely different benchmark variants; do not combine.",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-10-13"
+        },
+        {
+          "url": "https://deepmind.google/models/model-cards/gemini-4-argon/",
+          "title": "Gemini 4 Argon - Model Card",
+          "publisher": "Google DeepMind",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c36",
+      "type": "caveat",
+      "claim": "UNVERIFIED: AI Mode in Search availability is stated only as a one-line mention (Pro and Ultra) in the Oct 13 blog; no dedicated AI Mode post or regional detail found.",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "publisher": "Google (The Keyword, blog.google) - Koray Kavukcuoglu",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "id": "c37",
+      "type": "caveat",
+      "claim": "UNVERIFIED: Whether Jio-bundled Google AI Pro plans in India include Argon - only a user forum post addresses it.",
+      "sources": [
+        {
+          "url": "https://discuss.ai.google.dev/t/clarification-on-gemini-4-argon-claude-5-5-and-model-availability-for-jio-google-ai-pro-subscribers/188999",
+          "title": "Clarification on Gemini 4 Argon ... for Jio Google AI Pro Subscribers",
+          "publisher": "Google AI Developers Forum (user post, not authoritative)",
+          "published": "2026-10"
+        }
+      ]
+    }
+  ]
+}

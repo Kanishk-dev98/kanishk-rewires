@@ -135,7 +135,7 @@ export const Label: React.FC<{ children: React.ReactNode; color?: string; size?:
 };
 
 /** Discreet source label, fixed position above the platform UI zone. */
-export const SourceTag: React.FC<{ text: string; dark: boolean }> = ({ text, dark }) => {
+export const SourceTag: React.FC<{ text: string; dark: boolean; captionTop?: number }> = ({ text, dark, captionTop }) => {
   const frame = useCurrentFrame();
   const { height, width } = useVideoConfig();
   const u = useU();
@@ -145,7 +145,8 @@ export const SourceTag: React.FC<{ text: string; dark: boolean }> = ({ text, dar
         position: "absolute",
         left: 80 * u,
         right: 80 * u,
-        top: height * ZONE.sourceY,
+        // Sit just under the burned-in captions when they are on, so the two never overlap.
+        top: height * (captionTop != null ? captionTop + 0.062 : ZONE.sourceY),
         opacity: fadeIn(frame, 10, 14) * 0.85,
         display: "flex",
         alignItems: "center",

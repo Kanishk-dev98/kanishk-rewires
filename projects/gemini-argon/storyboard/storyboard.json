@@ -1,0 +1,88 @@
+{
+  "id": "gemini-argon",
+  "title": "Gemini 4 Argon: the Chat to Task switch",
+  "format": "9x16",
+  "captions": true,
+  "research": "done",
+  "captionStyle": { "top": 0.755, "size": 56, "maxWords": 3, "weight": 800 },
+  "voice": { "provider": "edge", "edge": { "voice": "en-US-AndrewMultilingualNeural", "rate": "+6%" } },
+  "outro": { "seconds": 2.5, "size": 220, "wordSize": 50, "cta": "Follow for AI news that actually matters" },
+  "render": { "concurrency": 4, "timeoutMs": 240000 },
+  "scenes": [
+    {
+      "id": "s00", "type": "gToggle", "leadIn": 2, "pad": 6, "energy": 3,
+      "vo": "Google just gave Gemini a new switch. And it changes how you use AI.",
+      "cues": { "flip": "switch." }, "accents": ["switch.", "changes"],
+      "data": {},
+      "visual": "The Gemini sparkle spins over a Chat | Task toggle; the cursor flips it to Task on 'switch' and Gemini's colours bloom.",
+      "sfx": [{ "name": "switch", "on": { "cue": "flip" }, "volume": 0.4 }, { "name": "boom", "on": { "cue": "flip", "offset": 2 }, "volume": 0.3 }]
+    },
+    {
+      "id": "s01", "type": "gLaunch", "pad": 6, "energy": 2,
+      "vo": "It comes with Gemini 4 Argon, Google's new frontier model. It launched on October thirteenth, for Pro and Ultra subscribers.",
+      "cues": { "date": "October", "plans": "Pro" }, "accents": ["Argon,", "frontier"], "claims": ["c1", "c4", "c5", "c6"], "sourceLabel": "GOOGLE, OCT 13 2026",
+      "data": {},
+      "visual": "Gemini 4 Argon lockup; a 13 OCT calendar tile drops with spec chips; four plan cards where only AI Pro and AI Ultra light up, prices in rupees.",
+      "sfx": [{ "name": "whoosh", "on": 0, "volume": 0.2 }, { "name": "tick", "on": { "cue": "plans" }, "volume": 0.25 }]
+    },
+    {
+      "id": "s02", "type": "gBench", "pad": 6, "energy": 3,
+      "vo": "On a test of automating real business work, Google says it beats GPT 6 and Claude.",
+      "cues": { "go": "test" }, "accents": ["beats"], "claims": ["c9"], "sourceLabel": "GEMINI 4 ARGON MODEL CARD",
+      "data": { "bench": "AUTOMATIONBENCH", "note": "GOOGLE'S OWN FIGURES",
+        "rows": [{ "name": "Gemini 4 Argon", "v": 51.3, "hero": true }, { "name": "Claude Opus 5.5", "v": 42.5 }, { "name": "GPT-6 Astra", "v": 41.4 }, { "name": "Claude Fable 5.1", "v": 31.4 }] },
+      "visual": "Four bars race; Argon's gradient bar wins at 51.3%.",
+      "sfx": [{ "name": "riser", "on": { "cue": "go" }, "volume": 0.2 }, { "name": "impact", "on": { "cue": "go", "offset": 30 }, "volume": 0.35 }]
+    },
+    {
+      "id": "s03", "type": "gTask", "pad": 10, "energy": 3, "minFrames": 220,
+      "vo": "Here's the shift. Flip the toggle to Task, and hand it a job. Then close your laptop. Gemini keeps working.",
+      "cues": { "task": "Task,", "job": "hand", "close": "close" }, "accents": ["Task,", "working."], "claims": ["c13", "c14"], "sourceLabel": "GEMINI HELP CENTER",
+      "data": { "prompt": "Every Monday at 9, sort my inbox, summarize client emails and draft replies",
+        "chips": [{ "t": "⏰ Every Mon 9:00", "cue": "job" }, { "t": "✉ Gmail", "cue": "job", "offset": 5 }],
+        "taskTitle": "Monday inbox sweep", "taskMeta": "SCHEDULED",
+        "ticks": ["31 emails sorted", "6 client summaries", "4 replies drafted"] },
+      "visual": "Inside a laptop, the Gemini box flips to Task, a scheduled prompt types and submits; the lid closes and a running task card ticks results.",
+      "sfx": [{ "name": "switch", "on": { "cue": "task" }, "volume": 0.3 }, { "name": "whoosh", "on": { "cue": "close" }, "volume": 0.3 }]
+    },
+    {
+      "id": "s04", "type": "gStack", "pad": 6, "energy": 2,
+      "vo": "You can run up to fifteen at once. Price alerts, news digests, research packs with sources.",
+      "cues": { "count": "fifteen", "c1": "Price", "c2": "news", "c3": "research" }, "accents": ["fifteen"], "claims": ["c16", "c17"], "sourceLabel": "GEMINI HELP CENTER",
+      "data": { "cards": [
+        { "icon": "✈", "title": "Flight under ₹18,000", "meta": "PRICE WATCH · ALERT SENT", "cue": "c1" },
+        { "icon": "📰", "title": "Your 7 AM AI briefing", "meta": "DAILY · 12 SOURCES", "cue": "c2" },
+        { "icon": "📊", "title": "Market sizing, cited", "meta": "PDF + SLIDES READY", "cue": "c3" }] },
+      "visual": "A gradient 15 counts up over a row of 15 live task pips; three finished task cards land.",
+      "sfx": [{ "name": "tick", "on": { "cue": "count" }, "volume": 0.25 }]
+    },
+    {
+      "id": "s05", "type": "gFolder", "pad": 8, "energy": 3, "minFrames": 200,
+      "vo": "In Google's own demo, it turns a messy project folder into a client proposal deck, emails it, and sets up a workflow for every new request.",
+      "cues": { "deck": "proposal", "mail": "emails", "flow": "workflow" }, "accents": ["messy", "workflow"], "claims": ["c21"],
+      "data": { "tag": "GOOGLE DEMO · PAPERWORK", "deckTitle": "Acme rollout proposal" },
+      "visual": "Badly named files float, then get sucked into a clean deck; an email sends; a looping scheduled workflow draws.",
+      "sfx": [{ "name": "whoosh", "on": { "cue": "deck", "offset": -8 }, "volume": 0.3 }, { "name": "ding", "on": { "cue": "mail", "offset": 18 }, "volume": 0.25 }]
+    },
+    {
+      "id": "s06", "type": "gCatch", "pad": 8, "energy": 2,
+      "vo": "The catch? It still makes things up, it trails Claude on some coding tests, and tasks are still experimental.",
+      "cues": { "mistakes": "makes", "coding": "coding", "experimental": "experimental." }, "accents": ["catch?", "experimental."], "claims": ["c10", "c27", "c29"], "sourceLabel": "GEMINI 4 ARGON MODEL CARD",
+      "data": {},
+      "visual": "A Gemini answer glitches and its wrong number is struck out; Terminal-bench bars show Argon behind; an EXPERIMENTAL stamp slams.",
+      "sfx": [{ "name": "impact", "on": { "cue": "experimental" }, "volume": 0.4 }]
+    },
+    {
+      "id": "s07", "type": "gAsk", "pad": 14, "energy": 2,
+      "vo": "So, would you hand your work to an AI? Tell me in the comments.",
+      "cues": { "comments": "hand" }, "accents": ["hand", "comments."],
+      "data": { "replies": [
+        { "name": "Priya", "text": "Already did. My inbox runs itself 🙌", "yes": true },
+        { "name": "Rahul", "text": "Not my client emails. No way.", "yes": false },
+        { "name": "Meera", "text": "Only if I review before it sends", "yes": true },
+        { "name": "Arjun", "text": "Research while I sleep? Yes please", "yes": true }] },
+      "visual": "The toggle wobbles between Chat and Task; a Delegate vs No way counter ticks as example replies land.",
+      "sfx": [{ "name": "click", "on": { "cue": "comments", "offset": 10 }, "volume": 0.2 }]
+    }
+  ]
+}
