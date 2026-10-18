@@ -1,0 +1,353 @@
+{
+  "id": "chatgpt-chrome-tabs",
+  "title": "ChatGPT now works inside your Chrome tabs",
+  "format": "9x16",
+  "captions": true,
+  "research": "done",
+  "captionStyle": {
+    "top": 0.755,
+    "size": 56,
+    "maxWords": 3,
+    "weight": 800
+  },
+  "voice": {
+    "provider": "edge",
+    "edge": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+4%"
+    }
+  },
+  "outro": {
+    "seconds": 2.5,
+    "size": 220,
+    "wordSize": 50,
+    "cta": "Follow for AI tools that actually work"
+  },
+  "render": {
+    "concurrency": 4,
+    "timeoutMs": 240000
+  },
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "tutHook",
+      "leadIn": 2,
+      "pad": 6,
+      "energy": 2,
+      "vo": "ChatGPT can now work inside your Chrome tabs. Here's how to set it up.",
+      "accents": [
+        "Chrome",
+        "tabs."
+      ],
+      "data": {
+        "kicker": "A STEP BY STEP TUTORIAL",
+        "lines": [
+          "ChatGPT now",
+          "works in your",
+          "*Chrome* tabs"
+        ],
+        "size": 124,
+        "logo": "media/chrome/chrome-color.svg",
+        "motif": "tabs"
+      },
+      "visual": "Serif title with the Chrome logo; the ChatGPT agent cursor hops along a tab strip ticking real tasks.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 2,
+          "volume": 0.14
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "type": "tutEasy",
+      "leadIn": 2,
+      "pad": 6,
+      "energy": 2,
+      "vo": "It's simpler than it sounds. Just five steps.",
+      "cues": {
+        "number": "five"
+      },
+      "accents": [
+        "simpler",
+        "five"
+      ],
+      "data": {
+        "title": "So *simple*.",
+        "from": 2,
+        "to": 5
+      },
+      "sfx": [
+        {
+          "name": "tick",
+          "on": {
+            "cue": "number"
+          },
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "tutStep",
+      "pad": 6,
+      "energy": 2,
+      "vo": "One. Install the ChatGPT extension from the Chrome Web Store. Check the publisher is OpenAI.",
+      "cues": {
+        "install": "Install",
+        "check": "Check",
+        "openai": "OpenAI."
+      },
+      "accents": [
+        "Install",
+        "OpenAI."
+      ],
+      "claims": [
+        "c4"
+      ],
+      "sourceLabel": "CHROME WEB STORE",
+      "data": {
+        "step": 1,
+        "total": 5,
+        "hero": "cws",
+        "title": "Install the *extension*"
+      },
+      "visual": "The real Chrome Web Store listing; the cursor clicks Add to Chrome, the added toast drops, a sticker says check the publisher.",
+      "sfx": [
+        {
+          "name": "click",
+          "on": {
+            "cue": "install"
+          },
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "tutStep",
+      "pad": 6,
+      "energy": 2,
+      "vo": "Two. In the ChatGPT desktop app, open Settings, then Computer Use, and connect Chrome.",
+      "cues": {
+        "computer": "Computer",
+        "connect": "connect"
+      },
+      "accents": [
+        "Computer",
+        "Use,"
+      ],
+      "claims": [
+        "c2"
+      ],
+      "sourceLabel": "OPENAI DOCS",
+      "data": {
+        "step": 2,
+        "total": 5,
+        "hero": "computerUse",
+        "title": "Connect *Chrome*"
+      },
+      "visual": "ChatGPT desktop settings: the cursor picks Computer Use, then Chrome flips from Install to Manage, Connected.",
+      "sfx": [
+        {
+          "name": "click",
+          "on": {
+            "cue": "computer"
+          },
+          "volume": 0.25
+        },
+        {
+          "name": "ding",
+          "on": {
+            "cue": "connect",
+            "offset": 6
+          },
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "tutStep",
+      "pad": 6,
+      "energy": 2,
+      "bleed": false,
+      "vo": "Three. Open the pages you want, type at Chrome, and ask it to compare them. It reads every tab, and builds the table.",
+      "cues": {
+        "ask": "type",
+        "compare": "reads",
+        "table": "table."
+      },
+      "accents": [
+        "compare",
+        "table."
+      ],
+      "claims": [
+        "c1"
+      ],
+      "data": {
+        "step": 3,
+        "total": 5,
+        "hero": "chatTabs",
+        "title": "Chat with your *tabs*"
+      },
+      "visual": "Three chair pages in Chrome; the side chat types @Chrome compare; tabs light up one by one as they're read; a comparison table lands with the best value highlighted.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": {
+            "cue": "compare"
+          },
+          "volume": 0.18
+        },
+        {
+          "name": "ding",
+          "on": {
+            "cue": "table"
+          },
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "tutStep",
+      "pad": 8,
+      "energy": 3,
+      "minFrames": 240,
+      "vo": "Four. For real tasks, start a Work chat. Tell it what to do, like register me for this event. It asks before it uses a new site, then fills the form for you.",
+      "cues": {
+        "ask": "Tell",
+        "permission": "asks"
+      },
+      "accents": [
+        "Work",
+        "fills"
+      ],
+      "claims": [
+        "c1",
+        "c3"
+      ],
+      "sourceLabel": "OPENAI DOCS",
+      "data": {
+        "step": 4,
+        "total": 5,
+        "hero": "workForm",
+        "title": "Let it *work*"
+      },
+      "visual": "A registration form; the permission dialog pops and Allow once is clicked; the lime ChatGPT cursor fills each field; Register glows for you to press.",
+      "sfx": [
+        {
+          "name": "switch",
+          "on": {
+            "cue": "permission"
+          },
+          "volume": 0.3
+        },
+        {
+          "name": "click",
+          "on": {
+            "cue": "permission",
+            "offset": 26
+          },
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "tutStep",
+      "pad": 8,
+      "energy": 2,
+      "vo": "Five. Stay safe. Close banking tabs first, choose allow once, and press the final button yourself.",
+      "cues": {
+        "close": "Close",
+        "once": "once,",
+        "submit": "final"
+      },
+      "accents": [
+        "safe.",
+        "yourself."
+      ],
+      "claims": [
+        "c3"
+      ],
+      "data": {
+        "step": 5,
+        "total": 5,
+        "hero": "safe",
+        "title": "Stay *safe*"
+      },
+      "visual": "Bank and payroll tabs outline red and close; three rule cards land with lime checks.",
+      "sfx": [
+        {
+          "name": "tick",
+          "on": {
+            "cue": "close",
+            "offset": 10
+          },
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "type": "tutSave",
+      "pad": 6,
+      "energy": 2,
+      "vo": "Save this, so you can set it up later.",
+      "accents": [
+        "Save"
+      ],
+      "data": {
+        "title": "Save.",
+        "sub": "SO YOU CAN SET IT UP LATER"
+      }
+    },
+    {
+      "id": "s08",
+      "type": "tutCta",
+      "pad": 14,
+      "energy": 2,
+      "vo": "Comment Chrome, and I'll send you my ten best prompts for it. For research, shopping, and admin work.",
+      "cues": {
+        "comment": "Comment",
+        "research": "research,",
+        "shopping": "shopping,",
+        "admin": "admin"
+      },
+      "accents": [
+        "Chrome,"
+      ],
+      "data": {
+        "word": "CHROME",
+        "items": [
+          {
+            "text": "Research prompts across tabs",
+            "cue": "research"
+          },
+          {
+            "text": "Shopping compare prompts",
+            "cue": "shopping"
+          },
+          {
+            "text": "Admin and form-filling tasks",
+            "cue": "admin"
+          }
+        ],
+        "note": "SENT STRAIGHT TO YOUR DMS"
+      },
+      "sfx": [
+        {
+          "name": "click",
+          "on": {
+            "cue": "comment",
+            "offset": 24
+          },
+          "volume": 0.22
+        }
+      ]
+    }
+  ]
+}

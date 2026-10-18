@@ -1,0 +1,13 @@
+{
+  "openai.svg": {
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/openai.svg",
+    "license": "CC0 (Simple Icons); trademark of OpenAI, used nominatively"
+  },
+  "googlechrome.svg": {
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/googlechrome.svg",
+    "license": "CC0 (Simple Icons)"
+  },
+  "chrome-color.svg": {
+    "source": "drawn in-house after the Chrome mark (nominative use)"
+  }
+}

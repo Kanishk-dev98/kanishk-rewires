@@ -4,6 +4,7 @@ import { Video } from "@remotion/media";
 import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { BODY, BRAND, C, clamp, EASE, EASE_IO, HEAD, MONO, SERIF } from "./brand";
 import type { SceneProps } from "./scenes";
+import { CHROME_HEROES, TabsFlow } from "./chromeUi";
 import { ApolloSearch, HubSpotBoard, Lead, LinkedInInvite, PostAndSchedule, ScoreCard } from "./real";
 import { Card, CodeCard, L, LogoTile, Phone, Rich, Ring, SaveIcon, StepHeader, Sticker, Terminal, TermLine, usePop, Waveform, Wire } from "./tut";
 
@@ -39,8 +40,9 @@ export const TutHookScene: React.FC<SceneProps> = ({ data }) => {
         ))}
       </div>
       {data.motif === "leads" ? <LeadFlow /> : null}
+      {data.motif === "tabs" ? <TabsFlow /> : null}
       {/* edit timeline motif */}
-      <div style={{ position: "absolute", left: 120, right: 120, top: 1200, height: 140, display: data.motif === "leads" ? "none" : undefined, ...pop(14) }}>
+      <div style={{ position: "absolute", left: 120, right: 120, top: 1200, height: 140, display: data.motif ? "none" : undefined, ...pop(14) }}>
         <div style={{ display: "flex", gap: 10, height: 64 }}>
           {[1.2, 0.9, 1.6, 1, 1.1].map((w, i) => (
             <div key={i} style={{ flex: w, borderRadius: 12, background: i === 2 ? C.lime : C.graphite, border: `2px solid ${i === 2 ? C.lime : "#2c2c2c"}` }} />
@@ -127,7 +129,17 @@ export const TutStepScene: React.FC<SceneProps> = ({ data }) => {
   let top: React.ReactNode = null;
   const leads = (data.leads ?? []) as Lead[];
   const logos = (data.logos ?? {}) as Record<string, string>;
-  if (hero === "connect") {
+  if (CHROME_HEROES[hero]) {
+    const H = CHROME_HEROES[hero];
+    // Slow camera push and drift so no stretch of the step reads as a freeze.
+    const push = interpolate(frame, [0, D], [1, 1.07], clamp);
+    const drift = Math.sin(frame / 22) * 6;
+    top = (
+      <div style={{ scale: String(push), translate: `0 ${drift}px`, transformOrigin: "50% 30%" }}>
+        <H c={c} />
+      </div>
+    );
+  } else if (hero === "connect") {
     const tiles: [string, string, number, string][] = [
       ["apollo", "Apollo", 70, "apollo"],
       ["hubspot", "HubSpot", 385, "hubspot"],
