@@ -1,0 +1,1053 @@
+{
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "fAd",
+      "dur": 146,
+      "vo": "projects/flipkart-ad-breakdown/vo/s00.mp3",
+      "voAt": 2,
+      "data": {
+        "overlay": "hook",
+        "credit": "AD: FLIPKART \u00d7 22FEET",
+        "shots": [
+          {
+            "t": 5.0,
+            "d": 2.4,
+            "x": 0.5
+          },
+          {
+            "t": 9.2,
+            "d": 3,
+            "x": 0.42
+          }
+        ],
+        "cues": {
+          "brand": 6
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 6,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "type": "fAd",
+      "dur": 217,
+      "vo": "projects/flipkart-ad-breakdown/vo/s01.mp3",
+      "voAt": 4,
+      "data": {
+        "credit": "AD: FLIPKART \u00d7 22FEET",
+        "shots": [
+          {
+            "t": 15.6,
+            "d": 1.4,
+            "x": 0.5
+          },
+          {
+            "t": 17.6,
+            "d": 1.6,
+            "x": 0.42
+          },
+          {
+            "t": 21.6,
+            "d": 1.4,
+            "x": 0.5
+          },
+          {
+            "t": 23.9,
+            "d": 0.9,
+            "x": 0.6
+          },
+          {
+            "t": 24.7,
+            "d": 1.2,
+            "x": 0.38
+          },
+          {
+            "t": 27.0,
+            "d": 1,
+            "x": 0.45
+          }
+        ]
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whip.wav",
+          "at": 135,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "fAd",
+      "dur": 264,
+      "vo": "projects/flipkart-ad-breakdown/vo/s02.mp3",
+      "voAt": 4,
+      "data": {
+        "overlay": "sizes",
+        "credit": "AD: FLIPKART \u00d7 22FEET",
+        "shots": [
+          {
+            "t": 43.0,
+            "d": 2.6,
+            "x": 0.5
+          },
+          {
+            "t": 47.6,
+            "d": 2.4,
+            "x": 0.5
+          },
+          {
+            "t": 45.0,
+            "d": 1.8,
+            "x": 0.38
+          },
+          {
+            "t": 52.6,
+            "d": 2,
+            "x": 0.38
+          }
+        ],
+        "cues": {
+          "sheet": 58,
+          "s50": 179,
+          "s55": 239
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 179,
+          "volume": 0.3
+        },
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 239,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "fAd",
+      "dur": 136,
+      "vo": "projects/flipkart-ad-breakdown/vo/s03.mp3",
+      "voAt": 4,
+      "data": {
+        "overlay": "bill",
+        "credit": "AD: FLIPKART \u00d7 22FEET",
+        "shots": [
+          {
+            "t": 62.6,
+            "d": 2.2,
+            "x": 0.4
+          },
+          {
+            "t": 67.6,
+            "d": 3,
+            "x": 0.5
+          }
+        ],
+        "cues": {
+          "bigger": 56,
+          "bill": 114
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/ding.wav",
+          "at": 114,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "fAd",
+      "dur": 347,
+      "vo": "projects/flipkart-ad-breakdown/vo/s04.mp3",
+      "voAt": 4,
+      "data": {
+        "overlay": "doubt",
+        "credit": "AD: FLIPKART \u00d7 22FEET",
+        "shots": [
+          {
+            "t": 54.2,
+            "d": 3.4,
+            "x": 0.45,
+            "rate": 0.6,
+            "push": 0.1
+          },
+          {
+            "t": 43.2,
+            "d": 3.4,
+            "x": 0.5,
+            "rate": 0.5,
+            "push": 0.1
+          },
+          {
+            "t": 47.9,
+            "d": 1.7,
+            "x": 0.5,
+            "rate": 0.5,
+            "push": 0.1
+          },
+          {
+            "t": 45.0,
+            "d": 3.5,
+            "x": 0.38,
+            "rate": 0.5,
+            "push": 0.1
+          }
+        ],
+        "cues": {
+          "doubt": 205,
+          "answer": 256
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/impact.wav",
+          "at": 256,
+          "volume": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "fAd",
+      "dur": 172,
+      "vo": "projects/flipkart-ad-breakdown/vo/s05.mp3",
+      "voAt": 4,
+      "data": {
+        "overlay": "lines",
+        "lines": [
+          {
+            "label": "CAF\u00c9",
+            "line": "\u201cThe usual, please.\u201d",
+            "at": 0
+          },
+          {
+            "label": "GYM",
+            "line": "\u201cI'll start Monday.\u201d",
+            "at": 60
+          },
+          {
+            "label": "ONLINE STORE",
+            "line": "\u201cAdding to cart, for later.\u201d",
+            "at": 120
+          }
+        ],
+        "shots": [
+          {
+            "src": "media/flipkart/stock/cafe.mp4",
+            "t": 0.5,
+            "d": 2.0,
+            "aspect": 0.5625,
+            "x": 0.5
+          },
+          {
+            "src": "media/flipkart/stock/gym.mp4",
+            "t": 0.5,
+            "d": 2.0,
+            "aspect": 0.5625,
+            "x": 0.5
+          },
+          {
+            "src": "media/flipkart/stock/phone_shopping.mp4",
+            "t": 0.5,
+            "d": 3,
+            "aspect": 0.5625,
+            "x": 0.5
+          }
+        ]
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "fAd",
+      "dur": 119,
+      "vo": "projects/flipkart-ad-breakdown/vo/s06.mp3",
+      "voAt": 4,
+      "data": {
+        "overlay": "comments",
+        "credit": "AD: FLIPKART \u00d7 22FEET",
+        "comments": [
+          {
+            "name": "Riya",
+            "text": "Wear a jacket, it's cold outside."
+          },
+          {
+            "name": "Kabir",
+            "text": "Eat first, then phone."
+          },
+          {
+            "name": "Ananya",
+            "text": "Switch off the lights!"
+          },
+          {
+            "name": "Dev",
+            "text": "Buy one size bigger \ud83d\ude02"
+          }
+        ],
+        "shots": [
+          {
+            "t": 68.6,
+            "d": 4,
+            "x": 0.5,
+            "rate": 0.8
+          }
+        ],
+        "cues": {
+          "comments": 14
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 24,
+          "volume": 0.2
+        }
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "text": "Flipkart",
+      "startMs": 196,
+      "endMs": 644,
+      "hl": true
+    },
+    {
+      "text": "just",
+      "startMs": 644,
+      "endMs": 798
+    },
+    {
+      "text": "turned",
+      "startMs": 798,
+      "endMs": 1022
+    },
+    {
+      "text": "your",
+      "startMs": 1022,
+      "endMs": 1104
+    },
+    {
+      "text": "mom's",
+      "startMs": 1104,
+      "endMs": 1588
+    },
+    {
+      "text": "oldest",
+      "startMs": 1706,
+      "endMs": 2095
+    },
+    {
+      "text": "shopping",
+      "startMs": 2095,
+      "endMs": 2531
+    },
+    {
+      "text": "habit",
+      "startMs": 2531,
+      "endMs": 2909,
+      "hl": true
+    },
+    {
+      "text": "into",
+      "startMs": 2991,
+      "endMs": 3239
+    },
+    {
+      "text": "its",
+      "startMs": 3239,
+      "endMs": 3392
+    },
+    {
+      "text": "biggest",
+      "startMs": 3475,
+      "endMs": 3852
+    },
+    {
+      "text": "TV",
+      "startMs": 3864,
+      "endMs": 4253
+    },
+    {
+      "text": "ad",
+      "startMs": 4253,
+      "endMs": 4560
+    },
+    {
+      "text": "Every",
+      "startMs": 5083,
+      "endMs": 5342
+    },
+    {
+      "text": "Indian",
+      "startMs": 5342,
+      "endMs": 5601
+    },
+    {
+      "text": "mom",
+      "startMs": 5601,
+      "endMs": 5955
+    },
+    {
+      "text": "buys",
+      "startMs": 6097,
+      "endMs": 6580
+    },
+    {
+      "text": "one",
+      "startMs": 6592,
+      "endMs": 6840
+    },
+    {
+      "text": "size",
+      "startMs": 6840,
+      "endMs": 7217
+    },
+    {
+      "text": "bigger",
+      "startMs": 7217,
+      "endMs": 7653,
+      "hl": true
+    },
+    {
+      "text": "The",
+      "startMs": 8031,
+      "endMs": 8090
+    },
+    {
+      "text": "school",
+      "startMs": 8090,
+      "endMs": 8373
+    },
+    {
+      "text": "blazer",
+      "startMs": 8384,
+      "endMs": 8774
+    },
+    {
+      "text": "you",
+      "startMs": 8785,
+      "endMs": 8856
+    },
+    {
+      "text": "had",
+      "startMs": 8856,
+      "endMs": 8962
+    },
+    {
+      "text": "to",
+      "startMs": 8962,
+      "endMs": 8998
+    },
+    {
+      "text": "grow",
+      "startMs": 8998,
+      "endMs": 9233
+    },
+    {
+      "text": "into",
+      "startMs": 9234,
+      "endMs": 9611
+    },
+    {
+      "text": "The",
+      "startMs": 9988,
+      "endMs": 10024
+    },
+    {
+      "text": "shoes",
+      "startMs": 10024,
+      "endMs": 10318
+    },
+    {
+      "text": "that",
+      "startMs": 10330,
+      "endMs": 10460
+    },
+    {
+      "text": "flew",
+      "startMs": 10460,
+      "endMs": 10849,
+      "hl": true
+    },
+    {
+      "text": "off",
+      "startMs": 10849,
+      "endMs": 11144
+    },
+    {
+      "text": "in",
+      "startMs": 11144,
+      "endMs": 11191
+    },
+    {
+      "text": "the",
+      "startMs": 11203,
+      "endMs": 11262
+    },
+    {
+      "text": "corridor",
+      "startMs": 11262,
+      "endMs": 11781
+    },
+    {
+      "text": "Years",
+      "startMs": 12328,
+      "endMs": 12646
+    },
+    {
+      "text": "later",
+      "startMs": 12658,
+      "endMs": 13035
+    },
+    {
+      "text": "the",
+      "startMs": 13424,
+      "endMs": 13495
+    },
+    {
+      "text": "family",
+      "startMs": 13495,
+      "endMs": 13920
+    },
+    {
+      "text": "is",
+      "startMs": 13920,
+      "endMs": 14014
+    },
+    {
+      "text": "buying",
+      "startMs": 14026,
+      "endMs": 14356
+    },
+    {
+      "text": "a",
+      "startMs": 14356,
+      "endMs": 14391
+    },
+    {
+      "text": "TV",
+      "startMs": 14403,
+      "endMs": 14957,
+      "hl": true
+    },
+    {
+      "text": "Dad",
+      "startMs": 15335,
+      "endMs": 15523
+    },
+    {
+      "text": "isn't",
+      "startMs": 15523,
+      "endMs": 15712
+    },
+    {
+      "text": "sure",
+      "startMs": 15712,
+      "endMs": 16089
+    },
+    {
+      "text": "And",
+      "startMs": 16467,
+      "endMs": 16549
+    },
+    {
+      "text": "Mom",
+      "startMs": 16632,
+      "endMs": 16880
+    },
+    {
+      "text": "finally",
+      "startMs": 16891,
+      "endMs": 17375
+    },
+    {
+      "text": "says",
+      "startMs": 17387,
+      "endMs": 17658
+    },
+    {
+      "text": "it",
+      "startMs": 17658,
+      "endMs": 17788
+    },
+    {
+      "text": "at",
+      "startMs": 17917,
+      "endMs": 18012
+    },
+    {
+      "text": "the",
+      "startMs": 18012,
+      "endMs": 18082
+    },
+    {
+      "text": "perfect",
+      "startMs": 18082,
+      "endMs": 18601
+    },
+    {
+      "text": "moment",
+      "startMs": 18613,
+      "endMs": 19038
+    },
+    {
+      "text": "Go",
+      "startMs": 19427,
+      "endMs": 19533
+    },
+    {
+      "text": "one",
+      "startMs": 19533,
+      "endMs": 19710
+    },
+    {
+      "text": "size",
+      "startMs": 19710,
+      "endMs": 20075
+    },
+    {
+      "text": "bigger",
+      "startMs": 20075,
+      "endMs": 20512,
+      "hl": true
+    },
+    {
+      "text": "Flipkart's",
+      "startMs": 21163,
+      "endMs": 21576
+    },
+    {
+      "text": "punchline",
+      "startMs": 21576,
+      "endMs": 22142
+    },
+    {
+      "text": "Only",
+      "startMs": 22531,
+      "endMs": 22696
+    },
+    {
+      "text": "the",
+      "startMs": 22696,
+      "endMs": 22779
+    },
+    {
+      "text": "TV",
+      "startMs": 22779,
+      "endMs": 23380
+    },
+    {
+      "text": "gets",
+      "startMs": 23463,
+      "endMs": 23651
+    },
+    {
+      "text": "bigger",
+      "startMs": 23651,
+      "endMs": 24088,
+      "hl": true
+    },
+    {
+      "text": "Not",
+      "startMs": 24453,
+      "endMs": 24606
+    },
+    {
+      "text": "the",
+      "startMs": 24606,
+      "endMs": 24689
+    },
+    {
+      "text": "bill",
+      "startMs": 24701,
+      "endMs": 25043,
+      "hl": true
+    },
+    {
+      "text": "That's",
+      "startMs": 25673,
+      "endMs": 25861
+    },
+    {
+      "text": "the",
+      "startMs": 25861,
+      "endMs": 25944
+    },
+    {
+      "text": "genius",
+      "startMs": 25944,
+      "endMs": 26616,
+      "hl": true
+    },
+    {
+      "text": "Every",
+      "startMs": 26994,
+      "endMs": 27206
+    },
+    {
+      "text": "big",
+      "startMs": 27206,
+      "endMs": 27418
+    },
+    {
+      "text": "purchase",
+      "startMs": 27418,
+      "endMs": 27925
+    },
+    {
+      "text": "has",
+      "startMs": 28031,
+      "endMs": 28255
+    },
+    {
+      "text": "one",
+      "startMs": 28267,
+      "endMs": 28633
+    },
+    {
+      "text": "doubt",
+      "startMs": 28633,
+      "endMs": 29022
+    },
+    {
+      "text": "that",
+      "startMs": 29175,
+      "endMs": 29281
+    },
+    {
+      "text": "stops",
+      "startMs": 29293,
+      "endMs": 29682
+    },
+    {
+      "text": "people",
+      "startMs": 29694,
+      "endMs": 30130
+    },
+    {
+      "text": "Flipkart",
+      "startMs": 30531,
+      "endMs": 31050
+    },
+    {
+      "text": "put",
+      "startMs": 31144,
+      "endMs": 31369
+    },
+    {
+      "text": "that",
+      "startMs": 31369,
+      "endMs": 31616
+    },
+    {
+      "text": "doubt",
+      "startMs": 31616,
+      "endMs": 31982
+    },
+    {
+      "text": "in",
+      "startMs": 32123,
+      "endMs": 32253
+    },
+    {
+      "text": "Dad's",
+      "startMs": 32253,
+      "endMs": 32607
+    },
+    {
+      "text": "mouth",
+      "startMs": 32619,
+      "endMs": 33067
+    },
+    {
+      "text": "and",
+      "startMs": 33420,
+      "endMs": 33503
+    },
+    {
+      "text": "let",
+      "startMs": 33515,
+      "endMs": 33621
+    },
+    {
+      "text": "the",
+      "startMs": 33633,
+      "endMs": 33703
+    },
+    {
+      "text": "most",
+      "startMs": 33703,
+      "endMs": 33963
+    },
+    {
+      "text": "trusted",
+      "startMs": 33963,
+      "endMs": 34423,
+      "hl": true
+    },
+    {
+      "text": "voice",
+      "startMs": 34435,
+      "endMs": 34824
+    },
+    {
+      "text": "in",
+      "startMs": 34824,
+      "endMs": 35024
+    },
+    {
+      "text": "every",
+      "startMs": 35177,
+      "endMs": 35590
+    },
+    {
+      "text": "Indian",
+      "startMs": 35590,
+      "endMs": 35885
+    },
+    {
+      "text": "home",
+      "startMs": 35897,
+      "endMs": 36121
+    },
+    {
+      "text": "answer",
+      "startMs": 36121,
+      "endMs": 36475
+    },
+    {
+      "text": "it",
+      "startMs": 36486,
+      "endMs": 36628
+    },
+    {
+      "text": "Your",
+      "startMs": 37228,
+      "endMs": 37298
+    },
+    {
+      "text": "customers",
+      "startMs": 37310,
+      "endMs": 37735
+    },
+    {
+      "text": "have",
+      "startMs": 37747,
+      "endMs": 37853
+    },
+    {
+      "text": "a",
+      "startMs": 37853,
+      "endMs": 37888
+    },
+    {
+      "text": "line",
+      "startMs": 37888,
+      "endMs": 38242,
+      "hl": true
+    },
+    {
+      "text": "like",
+      "startMs": 38242,
+      "endMs": 38430
+    },
+    {
+      "text": "that",
+      "startMs": 38430,
+      "endMs": 38619
+    },
+    {
+      "text": "too",
+      "startMs": 38631,
+      "endMs": 38985
+    },
+    {
+      "text": "Find",
+      "startMs": 39421,
+      "endMs": 39633
+    },
+    {
+      "text": "the",
+      "startMs": 39633,
+      "endMs": 39692
+    },
+    {
+      "text": "words",
+      "startMs": 39692,
+      "endMs": 39952,
+      "hl": true
+    },
+    {
+      "text": "they",
+      "startMs": 39952,
+      "endMs": 40105
+    },
+    {
+      "text": "already",
+      "startMs": 40117,
+      "endMs": 40506
+    },
+    {
+      "text": "use",
+      "startMs": 40518,
+      "endMs": 41048
+    },
+    {
+      "text": "and",
+      "startMs": 41284,
+      "endMs": 41414
+    },
+    {
+      "text": "build",
+      "startMs": 41426,
+      "endMs": 41673
+    },
+    {
+      "text": "your",
+      "startMs": 41673,
+      "endMs": 41780
+    },
+    {
+      "text": "ad",
+      "startMs": 41780,
+      "endMs": 41921
+    },
+    {
+      "text": "around",
+      "startMs": 41921,
+      "endMs": 42180
+    },
+    {
+      "text": "them",
+      "startMs": 42180,
+      "endMs": 42334
+    },
+    {
+      "text": "What's",
+      "startMs": 42961,
+      "endMs": 43079
+    },
+    {
+      "text": "the",
+      "startMs": 43079,
+      "endMs": 43173
+    },
+    {
+      "text": "line",
+      "startMs": 43185,
+      "endMs": 43397
+    },
+    {
+      "text": "your",
+      "startMs": 43397,
+      "endMs": 43468
+    },
+    {
+      "text": "mom",
+      "startMs": 43468,
+      "endMs": 43751,
+      "hl": true
+    },
+    {
+      "text": "always",
+      "startMs": 43881,
+      "endMs": 44305
+    },
+    {
+      "text": "said",
+      "startMs": 44305,
+      "endMs": 44612
+    },
+    {
+      "text": "Tell",
+      "startMs": 45001,
+      "endMs": 45154
+    },
+    {
+      "text": "me",
+      "startMs": 45166,
+      "endMs": 45331
+    },
+    {
+      "text": "in",
+      "startMs": 45343,
+      "endMs": 45402
+    },
+    {
+      "text": "the",
+      "startMs": 45402,
+      "endMs": 45461
+    },
+    {
+      "text": "comments",
+      "startMs": 45473,
+      "endMs": 46098,
+      "hl": true
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 4.866666666666666,
+      "energy": 3
+    },
+    {
+      "start": 4.866666666666666,
+      "end": 12.1,
+      "energy": 3
+    },
+    {
+      "start": 12.1,
+      "end": 20.9,
+      "energy": 3
+    },
+    {
+      "start": 20.9,
+      "end": 25.433333333333334,
+      "energy": 3
+    },
+    {
+      "start": 25.433333333333334,
+      "end": 37.0,
+      "energy": 2
+    },
+    {
+      "start": 37.0,
+      "end": 42.733333333333334,
+      "energy": 2
+    },
+    {
+      "start": 42.733333333333334,
+      "end": 46.7,
+      "energy": 2
+    }
+  ],
+  "hits": [],
+  "bodyFrames": 1401
+}

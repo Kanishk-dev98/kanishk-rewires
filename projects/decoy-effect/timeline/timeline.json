@@ -1,0 +1,1131 @@
+{
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "dReel",
+      "dur": 112,
+      "vo": "projects/decoy-effect/vo/s00.mp3",
+      "voAt": 2,
+      "data": {
+        "overlay": "hook",
+        "opts": [
+          {
+            "name": "Small",
+            "price": "\u20b9200"
+          },
+          {
+            "name": "Medium",
+            "price": "\u20b9420"
+          },
+          {
+            "name": "Large",
+            "price": "\u20b9450"
+          }
+        ],
+        "shots": [
+          {
+            "src": "media/decoy/stock/popcorn_closeup.mp4",
+            "t": 1.0,
+            "d": 6,
+            "aspect": 0.527,
+            "x": 0.4
+          }
+        ],
+        "cues": {
+          "tags": 40,
+          "medium": 88
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 40,
+          "volume": 0.25
+        },
+        {
+          "src": "sfx/tick.wav",
+          "at": 88,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "type": "dReel",
+      "dur": 444,
+      "vo": "projects/decoy-effect/vo/s01.mp3",
+      "voAt": 4,
+      "data": {
+        "overlay": "flow",
+        "opts": [
+          {
+            "name": "Small",
+            "price": "\u20b9200"
+          },
+          {
+            "name": "Medium",
+            "price": "\u20b9420"
+          },
+          {
+            "name": "Large",
+            "price": "\u20b9450"
+          }
+        ],
+        "shots": [
+          {
+            "src": "media/decoy/stock/popcorn_counter.mp4",
+            "t": 0.5,
+            "d": 5.5,
+            "aspect": 1.778,
+            "h": 1920,
+            "x": 0.5
+          },
+          {
+            "src": "media/decoy/stock/cinema_people.mp4",
+            "t": 0.5,
+            "d": 7,
+            "aspect": 0.527,
+            "x": 0.5
+          }
+        ],
+        "cues": {
+          "split": 194,
+          "medium": 237
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 251,
+          "volume": 0.3
+        },
+        {
+          "src": "sfx/ding.wav",
+          "at": 281,
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "dReel",
+      "dur": 171,
+      "vo": "projects/decoy-effect/vo/s02.mp3",
+      "voAt": 4,
+      "data": {
+        "overlay": "decoy",
+        "opts": [
+          {
+            "name": "Small",
+            "price": "\u20b9200"
+          },
+          {
+            "name": "Medium",
+            "price": "\u20b9420"
+          },
+          {
+            "name": "Large",
+            "price": "\u20b9450"
+          }
+        ],
+        "shots": [
+          {
+            "src": "media/decoy/stock/cinema_people.mp4",
+            "t": 7.5,
+            "d": 7,
+            "aspect": 0.527,
+            "x": 0.5
+          }
+        ],
+        "cues": {
+          "decoy": 9
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/impact.wav",
+          "at": 11,
+          "volume": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "dReel",
+      "dur": 486,
+      "vo": "projects/decoy-effect/vo/s03.mp3",
+      "voAt": 4,
+      "data": {
+        "overlay": "test",
+        "tag": "CLASSROOM DEMO",
+        "note": "OUT OF 100 STUDENTS, EACH ROUND",
+        "opts": [
+          {
+            "name": "Online",
+            "price": "$59"
+          },
+          {
+            "name": "Print",
+            "price": "$125"
+          },
+          {
+            "name": "Print + Online",
+            "price": "$125"
+          }
+        ],
+        "with": [
+          16,
+          0,
+          84
+        ],
+        "without": [
+          68,
+          0,
+          32
+        ],
+        "shots": [
+          {
+            "src": "media/decoy/stock/magazine.mp4",
+            "t": 0.3,
+            "d": 6,
+            "aspect": 0.5625,
+            "x": 0.45,
+            "push": 0.12
+          },
+          {
+            "src": "media/decoy/stock/laptop_reading.mp4",
+            "t": 0.5,
+            "d": 8,
+            "aspect": 0.5625,
+            "x": 0.6
+          }
+        ],
+        "cues": {
+          "cards": 44,
+          "result": 304,
+          "remove": 354
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/ding.wav",
+          "at": 314,
+          "volume": 0.25
+        },
+        {
+          "src": "sfx/impact.wav",
+          "at": 354,
+          "volume": 0.35
+        }
+      ],
+      "source": "DAN ARIELY, PREDICTABLY IRRATIONAL (2008)"
+    },
+    {
+      "id": "s04",
+      "type": "dReel",
+      "dur": 340,
+      "vo": "projects/decoy-effect/vo/s04.mp3",
+      "voAt": 4,
+      "data": {
+        "overlay": "gym",
+        "opts": [
+          {
+            "name": "Monthly",
+            "price": "\u20b91,500",
+            "sub": "\u20b91,500 / month"
+          },
+          {
+            "name": "6 months",
+            "price": "\u20b910,000",
+            "sub": "\u20b91,667 / month"
+          },
+          {
+            "name": "Yearly",
+            "price": "\u20b912,000",
+            "sub": "\u20b91,000 / month"
+          }
+        ],
+        "shots": [
+          {
+            "src": "media/flipkart/stock/gym.mp4",
+            "t": 0.2,
+            "d": 9,
+            "aspect": 0.5625,
+            "x": 0.5,
+            "rate": 0.75
+          }
+        ],
+        "cues": {
+          "add": 187,
+          "obvious": 303
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 187,
+          "volume": 0.3
+        },
+        {
+          "src": "sfx/ding.wav",
+          "at": 303,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "dReel",
+      "dur": 78,
+      "vo": "projects/decoy-effect/vo/s05.mp3",
+      "voAt": 4,
+      "data": {
+        "overlay": "save",
+        "shots": [
+          {
+            "src": "media/decoy/stock/popcorn_closeup.mp4",
+            "t": 9,
+            "d": 4,
+            "aspect": 0.527,
+            "x": 0.4
+          }
+        ]
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 8,
+          "volume": 0.25
+        }
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "text": "Why",
+      "startMs": 161,
+      "endMs": 244
+    },
+    {
+      "text": "does",
+      "startMs": 244,
+      "endMs": 338
+    },
+    {
+      "text": "almost",
+      "startMs": 338,
+      "endMs": 621
+    },
+    {
+      "text": "everyone",
+      "startMs": 739,
+      "endMs": 1140
+    },
+    {
+      "text": "buy",
+      "startMs": 1152,
+      "endMs": 1258
+    },
+    {
+      "text": "the",
+      "startMs": 1258,
+      "endMs": 1328
+    },
+    {
+      "text": "large",
+      "startMs": 1328,
+      "endMs": 1611,
+      "hl": true
+    },
+    {
+      "text": "popcorn",
+      "startMs": 1623,
+      "endMs": 2154
+    },
+    {
+      "text": "Because",
+      "startMs": 2519,
+      "endMs": 2814
+    },
+    {
+      "text": "of",
+      "startMs": 2814,
+      "endMs": 2861
+    },
+    {
+      "text": "the",
+      "startMs": 2861,
+      "endMs": 2909
+    },
+    {
+      "text": "medium",
+      "startMs": 2920,
+      "endMs": 3416,
+      "hl": true
+    },
+    {
+      "text": "Picture",
+      "startMs": 3973,
+      "endMs": 4209
+    },
+    {
+      "text": "this",
+      "startMs": 4220,
+      "endMs": 4621
+    },
+    {
+      "text": "Small",
+      "startMs": 4999,
+      "endMs": 5364
+    },
+    {
+      "text": "is",
+      "startMs": 5730,
+      "endMs": 5848
+    },
+    {
+      "text": "two",
+      "startMs": 5848,
+      "endMs": 6107
+    },
+    {
+      "text": "hundred",
+      "startMs": 6119,
+      "endMs": 6319
+    },
+    {
+      "text": "rupees",
+      "startMs": 6319,
+      "endMs": 6874
+    },
+    {
+      "text": "Large",
+      "startMs": 7251,
+      "endMs": 7558
+    },
+    {
+      "text": "is",
+      "startMs": 7569,
+      "endMs": 7687
+    },
+    {
+      "text": "four",
+      "startMs": 7699,
+      "endMs": 8088
+    },
+    {
+      "text": "fifty",
+      "startMs": 8088,
+      "endMs": 8548
+    },
+    {
+      "text": "That's",
+      "startMs": 8937,
+      "endMs": 9055
+    },
+    {
+      "text": "a",
+      "startMs": 9055,
+      "endMs": 9114
+    },
+    {
+      "text": "big",
+      "startMs": 9114,
+      "endMs": 9338
+    },
+    {
+      "text": "jump",
+      "startMs": 9338,
+      "endMs": 9704,
+      "hl": true
+    },
+    {
+      "text": "so",
+      "startMs": 10058,
+      "endMs": 10211
+    },
+    {
+      "text": "most",
+      "startMs": 10211,
+      "endMs": 10423
+    },
+    {
+      "text": "people",
+      "startMs": 10423,
+      "endMs": 10647
+    },
+    {
+      "text": "pick",
+      "startMs": 10647,
+      "endMs": 10812
+    },
+    {
+      "text": "small",
+      "startMs": 10812,
+      "endMs": 11237
+    },
+    {
+      "text": "Now",
+      "startMs": 11626,
+      "endMs": 11827
+    },
+    {
+      "text": "add",
+      "startMs": 11827,
+      "endMs": 11886
+    },
+    {
+      "text": "a",
+      "startMs": 11886,
+      "endMs": 11909
+    },
+    {
+      "text": "medium",
+      "startMs": 11909,
+      "endMs": 12428
+    },
+    {
+      "text": "at",
+      "startMs": 12794,
+      "endMs": 12864
+    },
+    {
+      "text": "four",
+      "startMs": 12864,
+      "endMs": 13206
+    },
+    {
+      "text": "twenty",
+      "startMs": 13218,
+      "endMs": 13631
+    },
+    {
+      "text": "Suddenly",
+      "startMs": 14008,
+      "endMs": 14315
+    },
+    {
+      "text": "the",
+      "startMs": 14315,
+      "endMs": 14397
+    },
+    {
+      "text": "large",
+      "startMs": 14397,
+      "endMs": 14869
+    },
+    {
+      "text": "is",
+      "startMs": 15034,
+      "endMs": 15152
+    },
+    {
+      "text": "just",
+      "startMs": 15152,
+      "endMs": 15459
+    },
+    {
+      "text": "thirty",
+      "startMs": 15470,
+      "endMs": 15871
+    },
+    {
+      "text": "rupees",
+      "startMs": 15883,
+      "endMs": 16296
+    },
+    {
+      "text": "more",
+      "startMs": 16296,
+      "endMs": 16661
+    },
+    {
+      "text": "and",
+      "startMs": 17074,
+      "endMs": 17121
+    },
+    {
+      "text": "it",
+      "startMs": 17121,
+      "endMs": 17192
+    },
+    {
+      "text": "feels",
+      "startMs": 17192,
+      "endMs": 17511
+    },
+    {
+      "text": "like",
+      "startMs": 17522,
+      "endMs": 17617
+    },
+    {
+      "text": "a",
+      "startMs": 17617,
+      "endMs": 17652
+    },
+    {
+      "text": "steal",
+      "startMs": 17652,
+      "endMs": 18147,
+      "hl": true
+    },
+    {
+      "text": "The",
+      "startMs": 18773,
+      "endMs": 18808
+    },
+    {
+      "text": "medium",
+      "startMs": 18820,
+      "endMs": 19209
+    },
+    {
+      "text": "isn't",
+      "startMs": 19351,
+      "endMs": 19575
+    },
+    {
+      "text": "there",
+      "startMs": 19575,
+      "endMs": 19728
+    },
+    {
+      "text": "to",
+      "startMs": 19728,
+      "endMs": 19787
+    },
+    {
+      "text": "be",
+      "startMs": 19799,
+      "endMs": 19905
+    },
+    {
+      "text": "bought",
+      "startMs": 19917,
+      "endMs": 20282
+    },
+    {
+      "text": "It's",
+      "startMs": 20660,
+      "endMs": 20754
+    },
+    {
+      "text": "there",
+      "startMs": 20766,
+      "endMs": 20884
+    },
+    {
+      "text": "to",
+      "startMs": 20884,
+      "endMs": 20931
+    },
+    {
+      "text": "make",
+      "startMs": 20931,
+      "endMs": 21131
+    },
+    {
+      "text": "the",
+      "startMs": 21131,
+      "endMs": 21226
+    },
+    {
+      "text": "large",
+      "startMs": 21226,
+      "endMs": 21686
+    },
+    {
+      "text": "look",
+      "startMs": 21697,
+      "endMs": 21862
+    },
+    {
+      "text": "cheap",
+      "startMs": 21862,
+      "endMs": 22252,
+      "hl": true
+    },
+    {
+      "text": "That's",
+      "startMs": 22652,
+      "endMs": 22806
+    },
+    {
+      "text": "the",
+      "startMs": 22806,
+      "endMs": 22936
+    },
+    {
+      "text": "decoy",
+      "startMs": 22947,
+      "endMs": 23372,
+      "hl": true
+    },
+    {
+      "text": "effect",
+      "startMs": 23372,
+      "endMs": 23832
+    },
+    {
+      "text": "A",
+      "startMs": 24437,
+      "endMs": 24473
+    },
+    {
+      "text": "professor",
+      "startMs": 24473,
+      "endMs": 24956
+    },
+    {
+      "text": "tested",
+      "startMs": 24968,
+      "endMs": 25369
+    },
+    {
+      "text": "this",
+      "startMs": 25369,
+      "endMs": 25593
+    },
+    {
+      "text": "with",
+      "startMs": 25593,
+      "endMs": 25711
+    },
+    {
+      "text": "magazine",
+      "startMs": 25711,
+      "endMs": 26277
+    },
+    {
+      "text": "subscriptions",
+      "startMs": 26289,
+      "endMs": 27055
+    },
+    {
+      "text": "Online",
+      "startMs": 27421,
+      "endMs": 27739
+    },
+    {
+      "text": "only",
+      "startMs": 27751,
+      "endMs": 28270
+    },
+    {
+      "text": "fifty",
+      "startMs": 28482,
+      "endMs": 28777
+    },
+    {
+      "text": "nine",
+      "startMs": 28777,
+      "endMs": 28977
+    },
+    {
+      "text": "dollars",
+      "startMs": 28977,
+      "endMs": 29532
+    },
+    {
+      "text": "Print",
+      "startMs": 29921,
+      "endMs": 30086
+    },
+    {
+      "text": "only",
+      "startMs": 30121,
+      "endMs": 30487
+    },
+    {
+      "text": "one",
+      "startMs": 30511,
+      "endMs": 30770
+    },
+    {
+      "text": "twenty",
+      "startMs": 30770,
+      "endMs": 30982
+    },
+    {
+      "text": "five",
+      "startMs": 30982,
+      "endMs": 31430
+    },
+    {
+      "text": "Print",
+      "startMs": 31819,
+      "endMs": 31937
+    },
+    {
+      "text": "plus",
+      "startMs": 31937,
+      "endMs": 32173
+    },
+    {
+      "text": "online",
+      "startMs": 32173,
+      "endMs": 32645
+    },
+    {
+      "text": "also",
+      "startMs": 32881,
+      "endMs": 33211
+    },
+    {
+      "text": "one",
+      "startMs": 33211,
+      "endMs": 33376
+    },
+    {
+      "text": "twenty",
+      "startMs": 33388,
+      "endMs": 33577
+    },
+    {
+      "text": "five",
+      "startMs": 33577,
+      "endMs": 34001
+    },
+    {
+      "text": "Most",
+      "startMs": 34367,
+      "endMs": 34532
+    },
+    {
+      "text": "people",
+      "startMs": 34544,
+      "endMs": 34768
+    },
+    {
+      "text": "picked",
+      "startMs": 34779,
+      "endMs": 35027
+    },
+    {
+      "text": "the",
+      "startMs": 35039,
+      "endMs": 35110
+    },
+    {
+      "text": "combo",
+      "startMs": 35110,
+      "endMs": 35652,
+      "hl": true
+    },
+    {
+      "text": "Remove",
+      "startMs": 36018,
+      "endMs": 36454
+    },
+    {
+      "text": "the",
+      "startMs": 36454,
+      "endMs": 36525
+    },
+    {
+      "text": "useless",
+      "startMs": 36536,
+      "endMs": 36996
+    },
+    {
+      "text": "print-only",
+      "startMs": 37008,
+      "endMs": 37539
+    },
+    {
+      "text": "option",
+      "startMs": 37551,
+      "endMs": 38022
+    },
+    {
+      "text": "and",
+      "startMs": 38435,
+      "endMs": 38529
+    },
+    {
+      "text": "most",
+      "startMs": 38541,
+      "endMs": 38871
+    },
+    {
+      "text": "switched",
+      "startMs": 38883,
+      "endMs": 39367
+    },
+    {
+      "text": "to",
+      "startMs": 39367,
+      "endMs": 39449
+    },
+    {
+      "text": "the",
+      "startMs": 39449,
+      "endMs": 39532
+    },
+    {
+      "text": "cheap",
+      "startMs": 39532,
+      "endMs": 39803,
+      "hl": true
+    },
+    {
+      "text": "one",
+      "startMs": 39803,
+      "endMs": 40051
+    },
+    {
+      "text": "Use",
+      "startMs": 40661,
+      "endMs": 40814
+    },
+    {
+      "text": "it",
+      "startMs": 40814,
+      "endMs": 40873
+    },
+    {
+      "text": "in",
+      "startMs": 40885,
+      "endMs": 40932
+    },
+    {
+      "text": "your",
+      "startMs": 40932,
+      "endMs": 41027
+    },
+    {
+      "text": "business",
+      "startMs": 41027,
+      "endMs": 41640,
+      "hl": true
+    },
+    {
+      "text": "Say",
+      "startMs": 42029,
+      "endMs": 42206
+    },
+    {
+      "text": "your",
+      "startMs": 42206,
+      "endMs": 42312
+    },
+    {
+      "text": "gym",
+      "startMs": 42312,
+      "endMs": 42560
+    },
+    {
+      "text": "sells",
+      "startMs": 42560,
+      "endMs": 42949
+    },
+    {
+      "text": "monthly",
+      "startMs": 42949,
+      "endMs": 43444
+    },
+    {
+      "text": "for",
+      "startMs": 43456,
+      "endMs": 43621
+    },
+    {
+      "text": "fifteen",
+      "startMs": 43633,
+      "endMs": 44081
+    },
+    {
+      "text": "hundred",
+      "startMs": 44081,
+      "endMs": 44458
+    },
+    {
+      "text": "and",
+      "startMs": 44824,
+      "endMs": 44965
+    },
+    {
+      "text": "yearly",
+      "startMs": 44965,
+      "endMs": 45390
+    },
+    {
+      "text": "for",
+      "startMs": 45402,
+      "endMs": 45531
+    },
+    {
+      "text": "twelve",
+      "startMs": 45543,
+      "endMs": 45850
+    },
+    {
+      "text": "thousand",
+      "startMs": 45850,
+      "endMs": 46321
+    },
+    {
+      "text": "Add",
+      "startMs": 46675,
+      "endMs": 46781
+    },
+    {
+      "text": "a",
+      "startMs": 46781,
+      "endMs": 46817
+    },
+    {
+      "text": "six",
+      "startMs": 46817,
+      "endMs": 47052
+    },
+    {
+      "text": "month",
+      "startMs": 47052,
+      "endMs": 47277
+    },
+    {
+      "text": "plan",
+      "startMs": 47277,
+      "endMs": 47619
+    },
+    {
+      "text": "at",
+      "startMs": 47619,
+      "endMs": 47713
+    },
+    {
+      "text": "ten",
+      "startMs": 47713,
+      "endMs": 47972
+    },
+    {
+      "text": "thousand",
+      "startMs": 47972,
+      "endMs": 48456
+    },
+    {
+      "text": "and",
+      "startMs": 48916,
+      "endMs": 49175
+    },
+    {
+      "text": "yearly",
+      "startMs": 49340,
+      "endMs": 49659
+    },
+    {
+      "text": "suddenly",
+      "startMs": 49659,
+      "endMs": 49965
+    },
+    {
+      "text": "looks",
+      "startMs": 49965,
+      "endMs": 50213
+    },
+    {
+      "text": "like",
+      "startMs": 50213,
+      "endMs": 50343
+    },
+    {
+      "text": "the",
+      "startMs": 50354,
+      "endMs": 50461
+    },
+    {
+      "text": "obvious",
+      "startMs": 50519,
+      "endMs": 50956,
+      "hl": true
+    },
+    {
+      "text": "deal",
+      "startMs": 50956,
+      "endMs": 51369
+    },
+    {
+      "text": "Save",
+      "startMs": 51994,
+      "endMs": 52277,
+      "hl": true
+    },
+    {
+      "text": "this",
+      "startMs": 52277,
+      "endMs": 52419
+    },
+    {
+      "text": "before",
+      "startMs": 52431,
+      "endMs": 52725
+    },
+    {
+      "text": "you",
+      "startMs": 52737,
+      "endMs": 52808
+    },
+    {
+      "text": "price",
+      "startMs": 52808,
+      "endMs": 53056
+    },
+    {
+      "text": "your",
+      "startMs": 53056,
+      "endMs": 53126
+    },
+    {
+      "text": "next",
+      "startMs": 53126,
+      "endMs": 53350
+    },
+    {
+      "text": "offer",
+      "startMs": 53350,
+      "endMs": 53775
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 3.7333333333333334,
+      "energy": 3
+    },
+    {
+      "start": 3.7333333333333334,
+      "end": 18.533333333333335,
+      "energy": 3
+    },
+    {
+      "start": 18.533333333333335,
+      "end": 24.233333333333334,
+      "energy": 2
+    },
+    {
+      "start": 24.233333333333334,
+      "end": 40.43333333333333,
+      "energy": 2
+    },
+    {
+      "start": 40.43333333333333,
+      "end": 51.766666666666666,
+      "energy": 3
+    },
+    {
+      "start": 51.766666666666666,
+      "end": 54.36666666666667,
+      "energy": 2
+    }
+  ],
+  "hits": [],
+  "bodyFrames": 1631
+}

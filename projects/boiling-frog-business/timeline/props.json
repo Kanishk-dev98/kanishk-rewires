@@ -1,0 +1,1136 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "hFootage",
+      "dur": 65,
+      "vo": "projects/boiling-frog-business/vo/s00.mp3",
+      "voAt": 4,
+      "data": {
+        "clip": "media/frog/frog_closeup_alt.mp4",
+        "startFrom": 0.5,
+        "rate": 0.8,
+        "focus": "24% 42%",
+        "saturate": 0.95,
+        "brightness": 0.85,
+        "coolTint": 0.1,
+        "kicker": "THE BOILING FROG EFFECT",
+        "textTop": 1080,
+        "lines": [
+          {
+            "text": "Your business might be *this frog.*",
+            "at": 4,
+            "size": 92
+          }
+        ],
+        "credit": "FOOTAGE: PIXABAY",
+        "cues": {
+          "frog": 43
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/boom.wav",
+          "at": 43,
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "type": "hFootage",
+      "dur": 121,
+      "vo": "projects/boiling-frog-business/vo/s01.mp3",
+      "voAt": 4,
+      "data": {
+        "clip": "media/frog/flame.mp4",
+        "startFrom": 0.2,
+        "rate": 1,
+        "focus": "50% 55%",
+        "saturate": 1,
+        "brightness": 0.9,
+        "heat": [
+          0.6,
+          0.9
+        ],
+        "kicker": "THE FABLE",
+        "kickerHot": true,
+        "accentHot": true,
+        "textTop": 1080,
+        "thermo": {
+          "from": 96,
+          "to": 100
+        },
+        "lines": [
+          {
+            "text": "Drop it in *boiling* water",
+            "cue": "boil",
+            "size": 84
+          }
+        ],
+        "credit": "FOOTAGE: PEXELS",
+        "aspect": 1.8958333333333333,
+        "cues": {
+          "boil": 89
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 2,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "hFootage",
+      "dur": 45,
+      "vo": "projects/boiling-frog-business/vo/s02.mp3",
+      "voAt": 4,
+      "data": {
+        "clip": "media/frog/frog_jump.mp4",
+        "startFrom": 3.9,
+        "rate": 1,
+        "focus": "50% 50%",
+        "saturate": 0.9,
+        "brightness": 0.85,
+        "heat": [
+          0.5,
+          0.2
+        ],
+        "textTop": 1080,
+        "lines": [
+          {
+            "text": "It *jumps* out.",
+            "cue": "jump",
+            "size": 110
+          }
+        ],
+        "credit": "FOOTAGE: PIXABAY",
+        "aspect": 0.5625,
+        "cues": {
+          "jump": 11
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whip.wav",
+          "at": 0,
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "hFootage",
+      "dur": 210,
+      "vo": "projects/boiling-frog-business/vo/s03.mp3",
+      "voAt": 4,
+      "data": {
+        "clip": "media/frog/frog_water.mp4",
+        "startFrom": 1,
+        "rate": 1,
+        "focus": "21% 58%",
+        "saturate": 0.85,
+        "brightness": 0.82,
+        "heat": [
+          0,
+          0.85
+        ],
+        "coolTint": 0.16,
+        "accentHot": true,
+        "kicker": "HEAT IT SLOWLY",
+        "textTop": 400,
+        "thermo": {
+          "from": 18,
+          "to": 97,
+          "cue": "slow",
+          "offset": 0,
+          "ease": "in"
+        },
+        "lines": [
+          {
+            "text": "It *stays.*",
+            "at": 60,
+            "size": 96
+          },
+          {
+            "text": "Until it's *too late.*",
+            "cue": "late",
+            "size": 84
+          }
+        ],
+        "credit": "FOOTAGE: PIXABAY",
+        "cues": {
+          "slow": 61,
+          "late": 184
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/riser.wav",
+          "at": 61,
+          "volume": 0.25
+        },
+        {
+          "src": "sfx/impact.wav",
+          "at": 188,
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "hFootage",
+      "dur": 182,
+      "vo": "projects/boiling-frog-business/vo/s04.mp3",
+      "voAt": 4,
+      "data": {
+        "clip": "media/frog/boil_heating.mp4",
+        "startFrom": 0,
+        "rate": 0.8,
+        "focus": "50% 50%",
+        "saturate": 0.7,
+        "brightness": 0.75,
+        "heat": [
+          0.3,
+          0.55
+        ],
+        "kicker": "IT HAS A NAME",
+        "textTop": 1000,
+        "lines": [
+          {
+            "text": "The *boiling frog* effect",
+            "at": 4,
+            "size": 96,
+            "serif": false
+          },
+          {
+            "text": "Companies *don't* jump.",
+            "cue": "co",
+            "size": 76
+          }
+        ],
+        "credit": "FOOTAGE: PEXELS",
+        "aspect": 0.5625,
+        "cues": {
+          "name": 39,
+          "co": 140
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "hDashboard",
+      "dur": 180,
+      "vo": "projects/boiling-frog-business/vo/s05.mp3",
+      "voAt": 4,
+      "data": {
+        "kicker": "YOUR DASHBOARD, SLOWLY",
+        "metrics": [
+          {
+            "label": "CUSTOMER CHURN",
+            "from": 2.1,
+            "to": 4.8,
+            "unit": "%",
+            "dec": 1,
+            "worseUp": true
+          },
+          {
+            "label": "GROSS MARGIN",
+            "from": 34,
+            "to": 22,
+            "unit": "%"
+          },
+          {
+            "label": "WIN RATE",
+            "from": 31,
+            "to": 19,
+            "unit": "%"
+          }
+        ],
+        "line": "Danger arrives as *1% a month.*",
+        "cues": {
+          "line": 133
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 6,
+          "volume": 0.2
+        },
+        {
+          "src": "sfx/ding.wav",
+          "at": 133,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "hTimeline",
+      "dur": 228,
+      "vo": "projects/boiling-frog-business/vo/s06.mp3",
+      "voAt": 4,
+      "data": {
+        "company": "KODAK",
+        "y1": "1975",
+        "e1": "Builds the world's first digital camera.",
+        "y2": "2012",
+        "e2": "Files for Chapter 11 bankruptcy.",
+        "cues": {
+          "second": 131
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/impact.wav",
+          "at": 131,
+          "volume": 0.45
+        }
+      ],
+      "source": "SOURCES: KODAK MILESTONES \u00b7 SEC 8-K, JAN 19 2012"
+    },
+    {
+      "id": "s07",
+      "type": "hTimeline",
+      "dur": 244,
+      "vo": "projects/boiling-frog-business/vo/s07.mp3",
+      "voAt": 4,
+      "data": {
+        "company": "BLOCKBUSTER",
+        "y1": "2000",
+        "e1": "Passes on buying Netflix for $50M.",
+        "y2": "2010",
+        "e2": "Files for Chapter 11 bankruptcy.",
+        "cues": {
+          "second": 140
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/impact.wav",
+          "at": 140,
+          "volume": 0.45
+        }
+      ],
+      "source": "SOURCES: FORTUNE (FOUNDERS' ACCOUNT) \u00b7 SEC 8-K, SEP 23 2010"
+    },
+    {
+      "id": "s08",
+      "type": "hHeatGrid",
+      "dur": 154,
+      "vo": "projects/boiling-frog-business/vo/s08.mp3",
+      "voAt": 4,
+      "data": {
+        "tiles": [
+          "Marketing",
+          "Support",
+          "Sales",
+          "Design",
+          "Legal",
+          "Finance"
+        ],
+        "line": "AI is *warming* the water.",
+        "cues": {
+          "line": 55
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/riser.wav",
+          "at": 0,
+          "volume": 0.22
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "type": "hThermostat",
+      "dur": 200,
+      "vo": "projects/boiling-frog-business/vo/s09.mp3",
+      "voAt": 4,
+      "data": {
+        "metric": "CHURN \u00b7 MARGIN \u00b7 WIN RATE",
+        "text": "Set your *jump line* now.",
+        "cues": {
+          "line": 23
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/switch.wav",
+          "at": 23,
+          "volume": 0.35
+        },
+        {
+          "src": "sfx/boom.wav",
+          "at": 124,
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "hFootage",
+      "dur": 60,
+      "vo": "projects/boiling-frog-business/vo/s10.mp3",
+      "voAt": 4,
+      "data": {
+        "clip": "media/frog/frog_closeup.mp4",
+        "startFrom": 0.5,
+        "rate": 0.75,
+        "focus": "57% 55%",
+        "saturate": 0.9,
+        "brightness": 0.85,
+        "heat": [
+          0.15,
+          0.45
+        ],
+        "accentHot": true,
+        "textTop": 1080,
+        "lines": [
+          {
+            "text": "Don't wait to *feel* the heat.",
+            "cue": "feel",
+            "size": 88
+          }
+        ],
+        "credit": "FOOTAGE: PEXELS",
+        "cues": {
+          "feel": 22
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "volume": 0.25
+        }
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "text": "Your",
+      "startMs": 228,
+      "endMs": 322
+    },
+    {
+      "text": "business",
+      "startMs": 334,
+      "endMs": 817
+    },
+    {
+      "text": "might",
+      "startMs": 888,
+      "endMs": 1136
+    },
+    {
+      "text": "be",
+      "startMs": 1136,
+      "endMs": 1265
+    },
+    {
+      "text": "this",
+      "startMs": 1265,
+      "endMs": 1419
+    },
+    {
+      "text": "frog",
+      "startMs": 1419,
+      "endMs": 1843,
+      "hl": true
+    },
+    {
+      "text": "The",
+      "startMs": 2394,
+      "endMs": 2453
+    },
+    {
+      "text": "old",
+      "startMs": 2453,
+      "endMs": 2630
+    },
+    {
+      "text": "fable",
+      "startMs": 2642,
+      "endMs": 2960
+    },
+    {
+      "text": "goes",
+      "startMs": 2960,
+      "endMs": 3184
+    },
+    {
+      "text": "like",
+      "startMs": 3184,
+      "endMs": 3361
+    },
+    {
+      "text": "this",
+      "startMs": 3361,
+      "endMs": 3821
+    },
+    {
+      "text": "Drop",
+      "startMs": 4210,
+      "endMs": 4399
+    },
+    {
+      "text": "a",
+      "startMs": 4399,
+      "endMs": 4470
+    },
+    {
+      "text": "frog",
+      "startMs": 4470,
+      "endMs": 4953
+    },
+    {
+      "text": "into",
+      "startMs": 4953,
+      "endMs": 5118
+    },
+    {
+      "text": "boiling",
+      "startMs": 5142,
+      "endMs": 5555,
+      "hl": true
+    },
+    {
+      "text": "water",
+      "startMs": 5566,
+      "endMs": 6015
+    },
+    {
+      "text": "and",
+      "startMs": 6428,
+      "endMs": 6487
+    },
+    {
+      "text": "it",
+      "startMs": 6487,
+      "endMs": 6569
+    },
+    {
+      "text": "jumps",
+      "startMs": 6569,
+      "endMs": 6876,
+      "hl": true
+    },
+    {
+      "text": "straight",
+      "startMs": 6888,
+      "endMs": 7147
+    },
+    {
+      "text": "out",
+      "startMs": 7159,
+      "endMs": 7430
+    },
+    {
+      "text": "But",
+      "startMs": 7939,
+      "endMs": 8010
+    },
+    {
+      "text": "put",
+      "startMs": 8010,
+      "endMs": 8140
+    },
+    {
+      "text": "it",
+      "startMs": 8140,
+      "endMs": 8175
+    },
+    {
+      "text": "in",
+      "startMs": 8175,
+      "endMs": 8305
+    },
+    {
+      "text": "cool",
+      "startMs": 8305,
+      "endMs": 8576
+    },
+    {
+      "text": "water",
+      "startMs": 8588,
+      "endMs": 9013
+    },
+    {
+      "text": "and",
+      "startMs": 9260,
+      "endMs": 9355
+    },
+    {
+      "text": "heat",
+      "startMs": 9355,
+      "endMs": 9649
+    },
+    {
+      "text": "it",
+      "startMs": 9661,
+      "endMs": 9732
+    },
+    {
+      "text": "slowly",
+      "startMs": 9732,
+      "endMs": 10322,
+      "hl": true
+    },
+    {
+      "text": "and",
+      "startMs": 10593,
+      "endMs": 10699
+    },
+    {
+      "text": "it",
+      "startMs": 10711,
+      "endMs": 10793
+    },
+    {
+      "text": "stays",
+      "startMs": 10793,
+      "endMs": 11395
+    },
+    {
+      "text": "Calm",
+      "startMs": 11784,
+      "endMs": 12126
+    },
+    {
+      "text": "Comfortable",
+      "startMs": 12503,
+      "endMs": 12951
+    },
+    {
+      "text": "Until",
+      "startMs": 13317,
+      "endMs": 13517
+    },
+    {
+      "text": "it's",
+      "startMs": 13517,
+      "endMs": 13623
+    },
+    {
+      "text": "too",
+      "startMs": 13635,
+      "endMs": 13847
+    },
+    {
+      "text": "late",
+      "startMs": 13847,
+      "endMs": 14213,
+      "hl": true
+    },
+    {
+      "text": "That's",
+      "startMs": 14939,
+      "endMs": 15093
+    },
+    {
+      "text": "the",
+      "startMs": 15093,
+      "endMs": 15187
+    },
+    {
+      "text": "boiling",
+      "startMs": 15199,
+      "endMs": 15682
+    },
+    {
+      "text": "frog",
+      "startMs": 15694,
+      "endMs": 15989
+    },
+    {
+      "text": "effect",
+      "startMs": 16001,
+      "endMs": 16449,
+      "hl": true
+    },
+    {
+      "text": "Real",
+      "startMs": 16826,
+      "endMs": 17038
+    },
+    {
+      "text": "frogs",
+      "startMs": 17039,
+      "endMs": 17534
+    },
+    {
+      "text": "biologists",
+      "startMs": 17593,
+      "endMs": 18147
+    },
+    {
+      "text": "say",
+      "startMs": 18147,
+      "endMs": 18442
+    },
+    {
+      "text": "would",
+      "startMs": 18477,
+      "endMs": 18619
+    },
+    {
+      "text": "jump",
+      "startMs": 18619,
+      "endMs": 19008
+    },
+    {
+      "text": "Companies",
+      "startMs": 19362,
+      "endMs": 19668
+    },
+    {
+      "text": "often",
+      "startMs": 19680,
+      "endMs": 20010
+    },
+    {
+      "text": "don't",
+      "startMs": 20010,
+      "endMs": 20376,
+      "hl": true
+    },
+    {
+      "text": "In",
+      "startMs": 20983,
+      "endMs": 21077
+    },
+    {
+      "text": "business",
+      "startMs": 21089,
+      "endMs": 21714
+    },
+    {
+      "text": "danger",
+      "startMs": 21973,
+      "endMs": 22409
+    },
+    {
+      "text": "rarely",
+      "startMs": 22409,
+      "endMs": 22704
+    },
+    {
+      "text": "arrives",
+      "startMs": 22716,
+      "endMs": 23176
+    },
+    {
+      "text": "as",
+      "startMs": 23176,
+      "endMs": 23258
+    },
+    {
+      "text": "a",
+      "startMs": 23258,
+      "endMs": 23294
+    },
+    {
+      "text": "crisis",
+      "startMs": 23294,
+      "endMs": 23978
+    },
+    {
+      "text": "It",
+      "startMs": 24355,
+      "endMs": 24414
+    },
+    {
+      "text": "arrives",
+      "startMs": 24414,
+      "endMs": 24909
+    },
+    {
+      "text": "as",
+      "startMs": 24921,
+      "endMs": 25204
+    },
+    {
+      "text": "one",
+      "startMs": 25204,
+      "endMs": 25475,
+      "hl": true
+    },
+    {
+      "text": "percent",
+      "startMs": 25475,
+      "endMs": 25770,
+      "hl": true
+    },
+    {
+      "text": "a",
+      "startMs": 25770,
+      "endMs": 25782
+    },
+    {
+      "text": "month",
+      "startMs": 25782,
+      "endMs": 26218
+    },
+    {
+      "text": "Kodak",
+      "startMs": 26983,
+      "endMs": 27501
+    },
+    {
+      "text": "built",
+      "startMs": 27572,
+      "endMs": 27796
+    },
+    {
+      "text": "the",
+      "startMs": 27808,
+      "endMs": 27891
+    },
+    {
+      "text": "first",
+      "startMs": 27891,
+      "endMs": 28445
+    },
+    {
+      "text": "digital",
+      "startMs": 28516,
+      "endMs": 28846
+    },
+    {
+      "text": "camera",
+      "startMs": 28846,
+      "endMs": 29282
+    },
+    {
+      "text": "in 1975",
+      "startMs": 29435,
+      "endMs": 30744,
+      "hl": true
+    },
+    {
+      "text": "In 2012",
+      "startMs": 31134,
+      "endMs": 32100
+    },
+    {
+      "text": "Kodak",
+      "startMs": 32313,
+      "endMs": 32726
+    },
+    {
+      "text": "filed",
+      "startMs": 32737,
+      "endMs": 33126
+    },
+    {
+      "text": "for",
+      "startMs": 33126,
+      "endMs": 33256
+    },
+    {
+      "text": "bankruptcy",
+      "startMs": 33256,
+      "endMs": 33975,
+      "hl": true
+    },
+    {
+      "text": "In 2000",
+      "startMs": 34571,
+      "endMs": 35349
+    },
+    {
+      "text": "Blockbuster",
+      "startMs": 35396,
+      "endMs": 36021
+    },
+    {
+      "text": "passed",
+      "startMs": 36021,
+      "endMs": 36351,
+      "hl": true
+    },
+    {
+      "text": "on",
+      "startMs": 36351,
+      "endMs": 36469
+    },
+    {
+      "text": "buying",
+      "startMs": 36469,
+      "endMs": 36800
+    },
+    {
+      "text": "Netflix",
+      "startMs": 36800,
+      "endMs": 37271
+    },
+    {
+      "text": "for",
+      "startMs": 37271,
+      "endMs": 37413
+    },
+    {
+      "text": "fifty",
+      "startMs": 37425,
+      "endMs": 37778
+    },
+    {
+      "text": "million",
+      "startMs": 37778,
+      "endMs": 38061
+    },
+    {
+      "text": "dollars",
+      "startMs": 38061,
+      "endMs": 38651
+    },
+    {
+      "text": "In 2010",
+      "startMs": 39040,
+      "endMs": 40090
+    },
+    {
+      "text": "Blockbuster",
+      "startMs": 40302,
+      "endMs": 40880
+    },
+    {
+      "text": "filed",
+      "startMs": 40880,
+      "endMs": 41245
+    },
+    {
+      "text": "for",
+      "startMs": 41245,
+      "endMs": 41363
+    },
+    {
+      "text": "bankruptcy",
+      "startMs": 41375,
+      "endMs": 42130,
+      "hl": true
+    },
+    {
+      "text": "Right",
+      "startMs": 42716,
+      "endMs": 42893
+    },
+    {
+      "text": "now",
+      "startMs": 42905,
+      "endMs": 43270
+    },
+    {
+      "text": "AI",
+      "startMs": 43683,
+      "endMs": 44131
+    },
+    {
+      "text": "is",
+      "startMs": 44143,
+      "endMs": 44331
+    },
+    {
+      "text": "warming",
+      "startMs": 44343,
+      "endMs": 44721,
+      "hl": true
+    },
+    {
+      "text": "the",
+      "startMs": 44732,
+      "endMs": 44815
+    },
+    {
+      "text": "water",
+      "startMs": 44815,
+      "endMs": 45228
+    },
+    {
+      "text": "in",
+      "startMs": 45239,
+      "endMs": 45452
+    },
+    {
+      "text": "every",
+      "startMs": 45570,
+      "endMs": 45841
+    },
+    {
+      "text": "industry",
+      "startMs": 45841,
+      "endMs": 46348
+    },
+    {
+      "text": "Quietly",
+      "startMs": 46725,
+      "endMs": 47244,
+      "hl": true
+    },
+    {
+      "text": "So",
+      "startMs": 47861,
+      "endMs": 47967
+    },
+    {
+      "text": "set",
+      "startMs": 47967,
+      "endMs": 48109
+    },
+    {
+      "text": "your",
+      "startMs": 48109,
+      "endMs": 48179
+    },
+    {
+      "text": "jump",
+      "startMs": 48179,
+      "endMs": 48392,
+      "hl": true
+    },
+    {
+      "text": "line",
+      "startMs": 48403,
+      "endMs": 48639
+    },
+    {
+      "text": "now",
+      "startMs": 48651,
+      "endMs": 48969
+    },
+    {
+      "text": "Pick",
+      "startMs": 49359,
+      "endMs": 49512
+    },
+    {
+      "text": "the",
+      "startMs": 49512,
+      "endMs": 49583
+    },
+    {
+      "text": "number",
+      "startMs": 49583,
+      "endMs": 49866
+    },
+    {
+      "text": "that",
+      "startMs": 49866,
+      "endMs": 49972
+    },
+    {
+      "text": "makes",
+      "startMs": 49972,
+      "endMs": 50219
+    },
+    {
+      "text": "you",
+      "startMs": 50219,
+      "endMs": 50290
+    },
+    {
+      "text": "move",
+      "startMs": 50290,
+      "endMs": 50809,
+      "hl": true
+    },
+    {
+      "text": "before",
+      "startMs": 50998,
+      "endMs": 51304
+    },
+    {
+      "text": "the",
+      "startMs": 51316,
+      "endMs": 51375
+    },
+    {
+      "text": "water",
+      "startMs": 51375,
+      "endMs": 51658
+    },
+    {
+      "text": "feels",
+      "startMs": 51670,
+      "endMs": 51988
+    },
+    {
+      "text": "hot",
+      "startMs": 52000,
+      "endMs": 52401
+    },
+    {
+      "text": "Don't",
+      "startMs": 54528,
+      "endMs": 54681
+    },
+    {
+      "text": "wait",
+      "startMs": 54681,
+      "endMs": 54929
+    },
+    {
+      "text": "to",
+      "startMs": 54940,
+      "endMs": 55035
+    },
+    {
+      "text": "feel",
+      "startMs": 55035,
+      "endMs": 55318,
+      "hl": true
+    },
+    {
+      "text": "the",
+      "startMs": 55330,
+      "endMs": 55377
+    },
+    {
+      "text": "heat",
+      "startMs": 55389,
+      "endMs": 55778
+    }
+  ],
+  "showCaptions": true,
+  "music": "projects/boiling-frog-business/music.wav",
+  "musicVolume": 0.13,
+  "outro": {
+    "dur": 75,
+    "sound": "projects/boiling-frog-business/signature.wav",
+    "cta": "Follow for business lessons that stick",
+    "size": 220,
+    "wordSize": 50
+  },
+  "captionStyle": {
+    "top": 0.735,
+    "size": 54,
+    "maxWords": 3,
+    "weight": 800
+  }
+}

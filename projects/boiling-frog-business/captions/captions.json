@@ -1,0 +1,685 @@
+[
+  {
+    "text": "Your",
+    "startMs": 228,
+    "endMs": 322
+  },
+  {
+    "text": "business",
+    "startMs": 334,
+    "endMs": 817
+  },
+  {
+    "text": "might",
+    "startMs": 888,
+    "endMs": 1136
+  },
+  {
+    "text": "be",
+    "startMs": 1136,
+    "endMs": 1265
+  },
+  {
+    "text": "this",
+    "startMs": 1265,
+    "endMs": 1419
+  },
+  {
+    "text": "frog",
+    "startMs": 1419,
+    "endMs": 1843,
+    "hl": true
+  },
+  {
+    "text": "The",
+    "startMs": 2394,
+    "endMs": 2453
+  },
+  {
+    "text": "old",
+    "startMs": 2453,
+    "endMs": 2630
+  },
+  {
+    "text": "fable",
+    "startMs": 2642,
+    "endMs": 2960
+  },
+  {
+    "text": "goes",
+    "startMs": 2960,
+    "endMs": 3184
+  },
+  {
+    "text": "like",
+    "startMs": 3184,
+    "endMs": 3361
+  },
+  {
+    "text": "this",
+    "startMs": 3361,
+    "endMs": 3821
+  },
+  {
+    "text": "Drop",
+    "startMs": 4210,
+    "endMs": 4399
+  },
+  {
+    "text": "a",
+    "startMs": 4399,
+    "endMs": 4470
+  },
+  {
+    "text": "frog",
+    "startMs": 4470,
+    "endMs": 4953
+  },
+  {
+    "text": "into",
+    "startMs": 4953,
+    "endMs": 5118
+  },
+  {
+    "text": "boiling",
+    "startMs": 5142,
+    "endMs": 5555,
+    "hl": true
+  },
+  {
+    "text": "water",
+    "startMs": 5566,
+    "endMs": 6015
+  },
+  {
+    "text": "and",
+    "startMs": 6428,
+    "endMs": 6487
+  },
+  {
+    "text": "it",
+    "startMs": 6487,
+    "endMs": 6569
+  },
+  {
+    "text": "jumps",
+    "startMs": 6569,
+    "endMs": 6876,
+    "hl": true
+  },
+  {
+    "text": "straight",
+    "startMs": 6888,
+    "endMs": 7147
+  },
+  {
+    "text": "out",
+    "startMs": 7159,
+    "endMs": 7430
+  },
+  {
+    "text": "But",
+    "startMs": 7939,
+    "endMs": 8010
+  },
+  {
+    "text": "put",
+    "startMs": 8010,
+    "endMs": 8140
+  },
+  {
+    "text": "it",
+    "startMs": 8140,
+    "endMs": 8175
+  },
+  {
+    "text": "in",
+    "startMs": 8175,
+    "endMs": 8305
+  },
+  {
+    "text": "cool",
+    "startMs": 8305,
+    "endMs": 8576
+  },
+  {
+    "text": "water",
+    "startMs": 8588,
+    "endMs": 9013
+  },
+  {
+    "text": "and",
+    "startMs": 9260,
+    "endMs": 9355
+  },
+  {
+    "text": "heat",
+    "startMs": 9355,
+    "endMs": 9649
+  },
+  {
+    "text": "it",
+    "startMs": 9661,
+    "endMs": 9732
+  },
+  {
+    "text": "slowly",
+    "startMs": 9732,
+    "endMs": 10322,
+    "hl": true
+  },
+  {
+    "text": "and",
+    "startMs": 10593,
+    "endMs": 10699
+  },
+  {
+    "text": "it",
+    "startMs": 10711,
+    "endMs": 10793
+  },
+  {
+    "text": "stays",
+    "startMs": 10793,
+    "endMs": 11395
+  },
+  {
+    "text": "Calm",
+    "startMs": 11784,
+    "endMs": 12126
+  },
+  {
+    "text": "Comfortable",
+    "startMs": 12503,
+    "endMs": 12951
+  },
+  {
+    "text": "Until",
+    "startMs": 13317,
+    "endMs": 13517
+  },
+  {
+    "text": "it's",
+    "startMs": 13517,
+    "endMs": 13623
+  },
+  {
+    "text": "too",
+    "startMs": 13635,
+    "endMs": 13847
+  },
+  {
+    "text": "late",
+    "startMs": 13847,
+    "endMs": 14213,
+    "hl": true
+  },
+  {
+    "text": "That's",
+    "startMs": 14939,
+    "endMs": 15093
+  },
+  {
+    "text": "the",
+    "startMs": 15093,
+    "endMs": 15187
+  },
+  {
+    "text": "boiling",
+    "startMs": 15199,
+    "endMs": 15682
+  },
+  {
+    "text": "frog",
+    "startMs": 15694,
+    "endMs": 15989
+  },
+  {
+    "text": "effect",
+    "startMs": 16001,
+    "endMs": 16449,
+    "hl": true
+  },
+  {
+    "text": "Real",
+    "startMs": 16826,
+    "endMs": 17038
+  },
+  {
+    "text": "frogs",
+    "startMs": 17039,
+    "endMs": 17534
+  },
+  {
+    "text": "biologists",
+    "startMs": 17593,
+    "endMs": 18147
+  },
+  {
+    "text": "say",
+    "startMs": 18147,
+    "endMs": 18442
+  },
+  {
+    "text": "would",
+    "startMs": 18477,
+    "endMs": 18619
+  },
+  {
+    "text": "jump",
+    "startMs": 18619,
+    "endMs": 19008
+  },
+  {
+    "text": "Companies",
+    "startMs": 19362,
+    "endMs": 19668
+  },
+  {
+    "text": "often",
+    "startMs": 19680,
+    "endMs": 20010
+  },
+  {
+    "text": "don't",
+    "startMs": 20010,
+    "endMs": 20376,
+    "hl": true
+  },
+  {
+    "text": "In",
+    "startMs": 20983,
+    "endMs": 21077
+  },
+  {
+    "text": "business",
+    "startMs": 21089,
+    "endMs": 21714
+  },
+  {
+    "text": "danger",
+    "startMs": 21973,
+    "endMs": 22409
+  },
+  {
+    "text": "rarely",
+    "startMs": 22409,
+    "endMs": 22704
+  },
+  {
+    "text": "arrives",
+    "startMs": 22716,
+    "endMs": 23176
+  },
+  {
+    "text": "as",
+    "startMs": 23176,
+    "endMs": 23258
+  },
+  {
+    "text": "a",
+    "startMs": 23258,
+    "endMs": 23294
+  },
+  {
+    "text": "crisis",
+    "startMs": 23294,
+    "endMs": 23978
+  },
+  {
+    "text": "It",
+    "startMs": 24355,
+    "endMs": 24414
+  },
+  {
+    "text": "arrives",
+    "startMs": 24414,
+    "endMs": 24909
+  },
+  {
+    "text": "as",
+    "startMs": 24921,
+    "endMs": 25204
+  },
+  {
+    "text": "one",
+    "startMs": 25204,
+    "endMs": 25475,
+    "hl": true
+  },
+  {
+    "text": "percent",
+    "startMs": 25475,
+    "endMs": 25770,
+    "hl": true
+  },
+  {
+    "text": "a",
+    "startMs": 25770,
+    "endMs": 25782
+  },
+  {
+    "text": "month",
+    "startMs": 25782,
+    "endMs": 26218
+  },
+  {
+    "text": "Kodak",
+    "startMs": 26983,
+    "endMs": 27501
+  },
+  {
+    "text": "built",
+    "startMs": 27572,
+    "endMs": 27796
+  },
+  {
+    "text": "the",
+    "startMs": 27808,
+    "endMs": 27891
+  },
+  {
+    "text": "first",
+    "startMs": 27891,
+    "endMs": 28445
+  },
+  {
+    "text": "digital",
+    "startMs": 28516,
+    "endMs": 28846
+  },
+  {
+    "text": "camera",
+    "startMs": 28846,
+    "endMs": 29282
+  },
+  {
+    "text": "in 1975",
+    "startMs": 29435,
+    "endMs": 30744,
+    "hl": true
+  },
+  {
+    "text": "In 2012",
+    "startMs": 31134,
+    "endMs": 32100
+  },
+  {
+    "text": "Kodak",
+    "startMs": 32313,
+    "endMs": 32726
+  },
+  {
+    "text": "filed",
+    "startMs": 32737,
+    "endMs": 33126
+  },
+  {
+    "text": "for",
+    "startMs": 33126,
+    "endMs": 33256
+  },
+  {
+    "text": "bankruptcy",
+    "startMs": 33256,
+    "endMs": 33975,
+    "hl": true
+  },
+  {
+    "text": "In 2000",
+    "startMs": 34571,
+    "endMs": 35349
+  },
+  {
+    "text": "Blockbuster",
+    "startMs": 35396,
+    "endMs": 36021
+  },
+  {
+    "text": "passed",
+    "startMs": 36021,
+    "endMs": 36351,
+    "hl": true
+  },
+  {
+    "text": "on",
+    "startMs": 36351,
+    "endMs": 36469
+  },
+  {
+    "text": "buying",
+    "startMs": 36469,
+    "endMs": 36800
+  },
+  {
+    "text": "Netflix",
+    "startMs": 36800,
+    "endMs": 37271
+  },
+  {
+    "text": "for",
+    "startMs": 37271,
+    "endMs": 37413
+  },
+  {
+    "text": "fifty",
+    "startMs": 37425,
+    "endMs": 37778
+  },
+  {
+    "text": "million",
+    "startMs": 37778,
+    "endMs": 38061
+  },
+  {
+    "text": "dollars",
+    "startMs": 38061,
+    "endMs": 38651
+  },
+  {
+    "text": "In 2010",
+    "startMs": 39040,
+    "endMs": 40090
+  },
+  {
+    "text": "Blockbuster",
+    "startMs": 40302,
+    "endMs": 40880
+  },
+  {
+    "text": "filed",
+    "startMs": 40880,
+    "endMs": 41245
+  },
+  {
+    "text": "for",
+    "startMs": 41245,
+    "endMs": 41363
+  },
+  {
+    "text": "bankruptcy",
+    "startMs": 41375,
+    "endMs": 42130,
+    "hl": true
+  },
+  {
+    "text": "Right",
+    "startMs": 42716,
+    "endMs": 42893
+  },
+  {
+    "text": "now",
+    "startMs": 42905,
+    "endMs": 43270
+  },
+  {
+    "text": "AI",
+    "startMs": 43683,
+    "endMs": 44131
+  },
+  {
+    "text": "is",
+    "startMs": 44143,
+    "endMs": 44331
+  },
+  {
+    "text": "warming",
+    "startMs": 44343,
+    "endMs": 44721,
+    "hl": true
+  },
+  {
+    "text": "the",
+    "startMs": 44732,
+    "endMs": 44815
+  },
+  {
+    "text": "water",
+    "startMs": 44815,
+    "endMs": 45228
+  },
+  {
+    "text": "in",
+    "startMs": 45239,
+    "endMs": 45452
+  },
+  {
+    "text": "every",
+    "startMs": 45570,
+    "endMs": 45841
+  },
+  {
+    "text": "industry",
+    "startMs": 45841,
+    "endMs": 46348
+  },
+  {
+    "text": "Quietly",
+    "startMs": 46725,
+    "endMs": 47244,
+    "hl": true
+  },
+  {
+    "text": "So",
+    "startMs": 47861,
+    "endMs": 47967
+  },
+  {
+    "text": "set",
+    "startMs": 47967,
+    "endMs": 48109
+  },
+  {
+    "text": "your",
+    "startMs": 48109,
+    "endMs": 48179
+  },
+  {
+    "text": "jump",
+    "startMs": 48179,
+    "endMs": 48392,
+    "hl": true
+  },
+  {
+    "text": "line",
+    "startMs": 48403,
+    "endMs": 48639
+  },
+  {
+    "text": "now",
+    "startMs": 48651,
+    "endMs": 48969
+  },
+  {
+    "text": "Pick",
+    "startMs": 49359,
+    "endMs": 49512
+  },
+  {
+    "text": "the",
+    "startMs": 49512,
+    "endMs": 49583
+  },
+  {
+    "text": "number",
+    "startMs": 49583,
+    "endMs": 49866
+  },
+  {
+    "text": "that",
+    "startMs": 49866,
+    "endMs": 49972
+  },
+  {
+    "text": "makes",
+    "startMs": 49972,
+    "endMs": 50219
+  },
+  {
+    "text": "you",
+    "startMs": 50219,
+    "endMs": 50290
+  },
+  {
+    "text": "move",
+    "startMs": 50290,
+    "endMs": 50809,
+    "hl": true
+  },
+  {
+    "text": "before",
+    "startMs": 50998,
+    "endMs": 51304
+  },
+  {
+    "text": "the",
+    "startMs": 51316,
+    "endMs": 51375
+  },
+  {
+    "text": "water",
+    "startMs": 51375,
+    "endMs": 51658
+  },
+  {
+    "text": "feels",
+    "startMs": 51670,
+    "endMs": 51988
+  },
+  {
+    "text": "hot",
+    "startMs": 52000,
+    "endMs": 52401
+  },
+  {
+    "text": "Don't",
+    "startMs": 54528,
+    "endMs": 54681
+  },
+  {
+    "text": "wait",
+    "startMs": 54681,
+    "endMs": 54929
+  },
+  {
+    "text": "to",
+    "startMs": 54940,
+    "endMs": 55035
+  },
+  {
+    "text": "feel",
+    "startMs": 55035,
+    "endMs": 55318,
+    "hl": true
+  },
+  {
+    "text": "the",
+    "startMs": 55330,
+    "endMs": 55377
+  },
+  {
+    "text": "heat",
+    "startMs": 55389,
+    "endMs": 55778
+  }
+]

@@ -1,0 +1,768 @@
+[
+  {
+    "text": "ChatGPT",
+    "startMs": 151,
+    "endMs": 1136
+  },
+  {
+    "text": "can",
+    "startMs": 1220,
+    "endMs": 1365
+  },
+  {
+    "text": "now",
+    "startMs": 1377,
+    "endMs": 1629
+  },
+  {
+    "text": "work",
+    "startMs": 1641,
+    "endMs": 1918
+  },
+  {
+    "text": "inside",
+    "startMs": 1930,
+    "endMs": 2350
+  },
+  {
+    "text": "your",
+    "startMs": 2350,
+    "endMs": 2434
+  },
+  {
+    "text": "Chrome",
+    "startMs": 2434,
+    "endMs": 2711,
+    "hl": true
+  },
+  {
+    "text": "tabs",
+    "startMs": 2711,
+    "endMs": 3180,
+    "hl": true
+  },
+  {
+    "text": "Here's",
+    "startMs": 3576,
+    "endMs": 3684
+  },
+  {
+    "text": "how",
+    "startMs": 3684,
+    "endMs": 3745
+  },
+  {
+    "text": "to",
+    "startMs": 3745,
+    "endMs": 3805
+  },
+  {
+    "text": "set",
+    "startMs": 3805,
+    "endMs": 3997
+  },
+  {
+    "text": "it",
+    "startMs": 3997,
+    "endMs": 4057
+  },
+  {
+    "text": "up",
+    "startMs": 4057,
+    "endMs": 4285
+  },
+  {
+    "text": "It's",
+    "startMs": 4763,
+    "endMs": 4907
+  },
+  {
+    "text": "simpler",
+    "startMs": 4919,
+    "endMs": 5256,
+    "hl": true
+  },
+  {
+    "text": "than",
+    "startMs": 5256,
+    "endMs": 5340
+  },
+  {
+    "text": "it",
+    "startMs": 5340,
+    "endMs": 5400
+  },
+  {
+    "text": "sounds",
+    "startMs": 5400,
+    "endMs": 5989
+  },
+  {
+    "text": "Just",
+    "startMs": 6373,
+    "endMs": 6482
+  },
+  {
+    "text": "five",
+    "startMs": 6482,
+    "endMs": 6734,
+    "hl": true
+  },
+  {
+    "text": "steps",
+    "startMs": 6734,
+    "endMs": 7251
+  },
+  {
+    "text": "One",
+    "startMs": 7796,
+    "endMs": 8145
+  },
+  {
+    "text": "Install",
+    "startMs": 8529,
+    "endMs": 8926,
+    "hl": true
+  },
+  {
+    "text": "the",
+    "startMs": 8926,
+    "endMs": 8998
+  },
+  {
+    "text": "ChatGPT",
+    "startMs": 9010,
+    "endMs": 9924
+  },
+  {
+    "text": "extension",
+    "startMs": 9924,
+    "endMs": 10524
+  },
+  {
+    "text": "from",
+    "startMs": 10729,
+    "endMs": 10849
+  },
+  {
+    "text": "the",
+    "startMs": 10849,
+    "endMs": 10897
+  },
+  {
+    "text": "Chrome",
+    "startMs": 10897,
+    "endMs": 11198
+  },
+  {
+    "text": "Web",
+    "startMs": 11198,
+    "endMs": 11390
+  },
+  {
+    "text": "Store",
+    "startMs": 11390,
+    "endMs": 11799
+  },
+  {
+    "text": "Check",
+    "startMs": 12183,
+    "endMs": 12327
+  },
+  {
+    "text": "the",
+    "startMs": 12327,
+    "endMs": 12412
+  },
+  {
+    "text": "publisher",
+    "startMs": 12412,
+    "endMs": 12952
+  },
+  {
+    "text": "is",
+    "startMs": 13301,
+    "endMs": 13517
+  },
+  {
+    "text": "OpenAI",
+    "startMs": 13626,
+    "endMs": 14347,
+    "hl": true
+  },
+  {
+    "text": "Two",
+    "startMs": 14896,
+    "endMs": 15173
+  },
+  {
+    "text": "In",
+    "startMs": 15545,
+    "endMs": 15605
+  },
+  {
+    "text": "the",
+    "startMs": 15605,
+    "endMs": 15665
+  },
+  {
+    "text": "ChatGPT",
+    "startMs": 15665,
+    "endMs": 16543
+  },
+  {
+    "text": "desktop",
+    "startMs": 16543,
+    "endMs": 17060
+  },
+  {
+    "text": "app",
+    "startMs": 17060,
+    "endMs": 17372
+  },
+  {
+    "text": "open",
+    "startMs": 17841,
+    "endMs": 18081
+  },
+  {
+    "text": "Settings",
+    "startMs": 18093,
+    "endMs": 18658
+  },
+  {
+    "text": "then",
+    "startMs": 18899,
+    "endMs": 19175
+  },
+  {
+    "text": "Computer",
+    "startMs": 19175,
+    "endMs": 19668,
+    "hl": true
+  },
+  {
+    "text": "Use",
+    "startMs": 19668,
+    "endMs": 20076,
+    "hl": true
+  },
+  {
+    "text": "and",
+    "startMs": 20281,
+    "endMs": 20389
+  },
+  {
+    "text": "connect",
+    "startMs": 20389,
+    "endMs": 20713
+  },
+  {
+    "text": "Chrome",
+    "startMs": 20713,
+    "endMs": 21074
+  },
+  {
+    "text": "Three",
+    "startMs": 21641,
+    "endMs": 21990
+  },
+  {
+    "text": "Open",
+    "startMs": 22375,
+    "endMs": 22555
+  },
+  {
+    "text": "the",
+    "startMs": 22555,
+    "endMs": 22627
+  },
+  {
+    "text": "pages",
+    "startMs": 22627,
+    "endMs": 22988
+  },
+  {
+    "text": "you",
+    "startMs": 23000,
+    "endMs": 23084
+  },
+  {
+    "text": "want",
+    "startMs": 23084,
+    "endMs": 23384
+  },
+  {
+    "text": "type",
+    "startMs": 23769,
+    "endMs": 23961
+  },
+  {
+    "text": "at",
+    "startMs": 23961,
+    "endMs": 24045
+  },
+  {
+    "text": "Chrome",
+    "startMs": 24045,
+    "endMs": 24490
+  },
+  {
+    "text": "and",
+    "startMs": 24935,
+    "endMs": 25043
+  },
+  {
+    "text": "ask",
+    "startMs": 25055,
+    "endMs": 25319
+  },
+  {
+    "text": "it",
+    "startMs": 25319,
+    "endMs": 25367
+  },
+  {
+    "text": "to",
+    "startMs": 25379,
+    "endMs": 25452
+  },
+  {
+    "text": "compare",
+    "startMs": 25452,
+    "endMs": 25800,
+    "hl": true
+  },
+  {
+    "text": "them",
+    "startMs": 25800,
+    "endMs": 25992
+  },
+  {
+    "text": "It",
+    "startMs": 26377,
+    "endMs": 26497
+  },
+  {
+    "text": "reads",
+    "startMs": 26497,
+    "endMs": 26894
+  },
+  {
+    "text": "every",
+    "startMs": 27014,
+    "endMs": 27291
+  },
+  {
+    "text": "tab",
+    "startMs": 27291,
+    "endMs": 27723
+  },
+  {
+    "text": "and",
+    "startMs": 28108,
+    "endMs": 28216
+  },
+  {
+    "text": "builds",
+    "startMs": 28216,
+    "endMs": 28492
+  },
+  {
+    "text": "the",
+    "startMs": 28492,
+    "endMs": 28577
+  },
+  {
+    "text": "table",
+    "startMs": 28589,
+    "endMs": 28997,
+    "hl": true
+  },
+  {
+    "text": "Four",
+    "startMs": 29635,
+    "endMs": 29959
+  },
+  {
+    "text": "For",
+    "startMs": 30440,
+    "endMs": 30681
+  },
+  {
+    "text": "real",
+    "startMs": 30693,
+    "endMs": 30945
+  },
+  {
+    "text": "tasks",
+    "startMs": 30957,
+    "endMs": 31594
+  },
+  {
+    "text": "start",
+    "startMs": 31798,
+    "endMs": 31991
+  },
+  {
+    "text": "a",
+    "startMs": 31991,
+    "endMs": 32027
+  },
+  {
+    "text": "Work",
+    "startMs": 32027,
+    "endMs": 32219,
+    "hl": true
+  },
+  {
+    "text": "chat",
+    "startMs": 32219,
+    "endMs": 32640
+  },
+  {
+    "text": "Tell",
+    "startMs": 33024,
+    "endMs": 33145
+  },
+  {
+    "text": "it",
+    "startMs": 33157,
+    "endMs": 33205
+  },
+  {
+    "text": "what",
+    "startMs": 33205,
+    "endMs": 33301
+  },
+  {
+    "text": "to",
+    "startMs": 33313,
+    "endMs": 33385
+  },
+  {
+    "text": "do",
+    "startMs": 33385,
+    "endMs": 33757
+  },
+  {
+    "text": "like",
+    "startMs": 34046,
+    "endMs": 34238
+  },
+  {
+    "text": "register",
+    "startMs": 34238,
+    "endMs": 34683
+  },
+  {
+    "text": "me",
+    "startMs": 34683,
+    "endMs": 34971
+  },
+  {
+    "text": "for",
+    "startMs": 35092,
+    "endMs": 35212
+  },
+  {
+    "text": "this",
+    "startMs": 35212,
+    "endMs": 35368
+  },
+  {
+    "text": "event",
+    "startMs": 35368,
+    "endMs": 35717
+  },
+  {
+    "text": "It",
+    "startMs": 36101,
+    "endMs": 36185
+  },
+  {
+    "text": "asks",
+    "startMs": 36185,
+    "endMs": 36498
+  },
+  {
+    "text": "before",
+    "startMs": 36498,
+    "endMs": 36846
+  },
+  {
+    "text": "it",
+    "startMs": 36846,
+    "endMs": 36919
+  },
+  {
+    "text": "uses",
+    "startMs": 36919,
+    "endMs": 37231
+  },
+  {
+    "text": "a",
+    "startMs": 37231,
+    "endMs": 37255
+  },
+  {
+    "text": "new",
+    "startMs": 37255,
+    "endMs": 37544
+  },
+  {
+    "text": "site",
+    "startMs": 37544,
+    "endMs": 37988
+  },
+  {
+    "text": "then",
+    "startMs": 38397,
+    "endMs": 38601
+  },
+  {
+    "text": "fills",
+    "startMs": 38601,
+    "endMs": 38890,
+    "hl": true
+  },
+  {
+    "text": "the",
+    "startMs": 38902,
+    "endMs": 38974
+  },
+  {
+    "text": "form",
+    "startMs": 38974,
+    "endMs": 39262
+  },
+  {
+    "text": "for",
+    "startMs": 39262,
+    "endMs": 39503
+  },
+  {
+    "text": "you",
+    "startMs": 39515,
+    "endMs": 39731
+  },
+  {
+    "text": "Five",
+    "startMs": 40435,
+    "endMs": 40795
+  },
+  {
+    "text": "Stay",
+    "startMs": 41192,
+    "endMs": 41396
+  },
+  {
+    "text": "safe",
+    "startMs": 41396,
+    "endMs": 41841,
+    "hl": true
+  },
+  {
+    "text": "Close",
+    "startMs": 42238,
+    "endMs": 42562
+  },
+  {
+    "text": "banking",
+    "startMs": 42562,
+    "endMs": 42923
+  },
+  {
+    "text": "tabs",
+    "startMs": 42923,
+    "endMs": 43271
+  },
+  {
+    "text": "first",
+    "startMs": 43283,
+    "endMs": 43836
+  },
+  {
+    "text": "choose",
+    "startMs": 44077,
+    "endMs": 44377
+  },
+  {
+    "text": "allow",
+    "startMs": 44377,
+    "endMs": 44702
+  },
+  {
+    "text": "once",
+    "startMs": 44702,
+    "endMs": 45303
+  },
+  {
+    "text": "and",
+    "startMs": 45483,
+    "endMs": 45639
+  },
+  {
+    "text": "press",
+    "startMs": 45651,
+    "endMs": 46012
+  },
+  {
+    "text": "the",
+    "startMs": 46012,
+    "endMs": 46108
+  },
+  {
+    "text": "final",
+    "startMs": 46108,
+    "endMs": 46384
+  },
+  {
+    "text": "button",
+    "startMs": 46396,
+    "endMs": 46637
+  },
+  {
+    "text": "yourself",
+    "startMs": 46649,
+    "endMs": 47262,
+    "hl": true
+  },
+  {
+    "text": "Save",
+    "startMs": 47863,
+    "endMs": 48187,
+    "hl": true
+  },
+  {
+    "text": "this",
+    "startMs": 48187,
+    "endMs": 48536
+  },
+  {
+    "text": "so",
+    "startMs": 48764,
+    "endMs": 48860
+  },
+  {
+    "text": "you",
+    "startMs": 48860,
+    "endMs": 48920
+  },
+  {
+    "text": "can",
+    "startMs": 48920,
+    "endMs": 49005
+  },
+  {
+    "text": "set",
+    "startMs": 49005,
+    "endMs": 49173
+  },
+  {
+    "text": "it",
+    "startMs": 49173,
+    "endMs": 49221
+  },
+  {
+    "text": "up",
+    "startMs": 49221,
+    "endMs": 49353
+  },
+  {
+    "text": "later",
+    "startMs": 49365,
+    "endMs": 49762
+  },
+  {
+    "text": "Comment",
+    "startMs": 50296,
+    "endMs": 50597
+  },
+  {
+    "text": "Chrome",
+    "startMs": 50609,
+    "endMs": 50969,
+    "hl": true
+  },
+  {
+    "text": "and",
+    "startMs": 51366,
+    "endMs": 51426
+  },
+  {
+    "text": "I'll",
+    "startMs": 51438,
+    "endMs": 51534
+  },
+  {
+    "text": "send",
+    "startMs": 51534,
+    "endMs": 51762
+  },
+  {
+    "text": "you",
+    "startMs": 51762,
+    "endMs": 51811
+  },
+  {
+    "text": "my",
+    "startMs": 51811,
+    "endMs": 51955
+  },
+  {
+    "text": "ten",
+    "startMs": 51967,
+    "endMs": 52315
+  },
+  {
+    "text": "best",
+    "startMs": 52315,
+    "endMs": 52604
+  },
+  {
+    "text": "prompts",
+    "startMs": 52604,
+    "endMs": 52892
+  },
+  {
+    "text": "for",
+    "startMs": 52892,
+    "endMs": 53097
+  },
+  {
+    "text": "it",
+    "startMs": 53109,
+    "endMs": 53241
+  },
+  {
+    "text": "For",
+    "startMs": 53674,
+    "endMs": 53818
+  },
+  {
+    "text": "research",
+    "startMs": 53818,
+    "endMs": 54443
+  },
+  {
+    "text": "shopping",
+    "startMs": 54683,
+    "endMs": 55212
+  },
+  {
+    "text": "and",
+    "startMs": 55476,
+    "endMs": 55681
+  },
+  {
+    "text": "admin",
+    "startMs": 55693,
+    "endMs": 55993
+  },
+  {
+    "text": "work",
+    "startMs": 55993,
+    "endMs": 56330
+  }
+]

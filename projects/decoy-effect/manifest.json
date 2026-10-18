@@ -1,0 +1,230 @@
+{
+  "slug": "decoy-effect",
+  "topic": "The decoy effect: why a useless option sells the expensive one",
+  "created": "2026-10-18T19:00:43+00:00",
+  "options": {
+    "format": "9x16",
+    "language": "en"
+  },
+  "stages": {
+    "intake": {
+      "status": "done",
+      "at": "2026-10-18T19:00:43+00:00",
+      "note": "project folder and manifest created"
+    },
+    "research": {
+      "status": "done",
+      "at": "2026-10-18T19:00:43+00:00",
+      "note": "16 claims in the ledger",
+      "outputs": [
+        "research/sources.json",
+        "research/sources.md"
+      ]
+    },
+    "brief": {
+      "status": "done",
+      "at": "2026-10-18T19:00:43+00:00",
+      "note": "brief present",
+      "outputs": [
+        "brief/brief.md"
+      ]
+    },
+    "script": {
+      "status": "done",
+      "at": "2026-10-18T19:00:43+00:00",
+      "note": "149 narration words (~57 s at a natural pace)",
+      "outputs": [
+        "script/script.md"
+      ]
+    },
+    "storyboard": {
+      "status": "done",
+      "at": "2026-10-18T20:04:54+00:00",
+      "note": "6 scenes valid, 3 warnings",
+      "outputs": [
+        "storyboard/storyboard.json"
+      ]
+    },
+    "assets": {
+      "status": "done",
+      "at": "2026-10-18T20:04:54+00:00",
+      "note": "6 narration clips (6 reused from cache)",
+      "outputs": [
+        "audio/vo/"
+      ]
+    },
+    "edit": {
+      "status": "done",
+      "at": "2026-10-18T20:05:33+00:00",
+      "note": "6 scenes, body 54.4 s + outro 2.5 s, 155 caption words",
+      "outputs": [
+        "timeline/timeline.json",
+        "timeline/props.json",
+        "captions/decoy-effect.srt",
+        "audio/music.wav",
+        "audio/signature.wav",
+        "storyboard/board.png"
+      ]
+    },
+    "render": {
+      "status": "done",
+      "at": "2026-10-18T20:14:53+00:00",
+      "note": "decoy-effect_v3.mp4 (144.5 MB)",
+      "outputs": [
+        "renders/decoy-effect_v3.mp4"
+      ]
+    },
+    "qc": {
+      "status": "done",
+      "at": "2026-10-18T20:15:29+00:00",
+      "note": "decoy-effect_v3.mp4 passed 14 checks",
+      "outputs": [
+        "reports/qc.md",
+        "reports/contact_sheet.png"
+      ]
+    },
+    "delivery": {
+      "status": "done",
+      "at": "2026-10-18T20:15:29+00:00",
+      "note": "delivered decoy-effect_v3.mp4",
+      "outputs": [
+        "reports/production_report.md",
+        "/Users/kanishk.raj/Downloads/Kanishk.Rewires/decoy-effect"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s06.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T19:00:52+00:00",
+      "cached": false,
+      "seconds": 7.01,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s07.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T19:00:52+00:00",
+      "cached": false,
+      "seconds": 7.94,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s00.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T20:04:54+00:00",
+      "cached": true,
+      "seconds": 3.7,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s01.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T20:04:54+00:00",
+      "cached": true,
+      "seconds": 14.62,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s02.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T20:04:54+00:00",
+      "cached": true,
+      "seconds": 5.52,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s03.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T20:04:54+00:00",
+      "cached": true,
+      "seconds": 16.03,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s04.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T20:04:54+00:00",
+      "cached": true,
+      "seconds": 11.16,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s05.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T20:04:54+00:00",
+      "cached": true,
+      "seconds": 2.21,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "music",
+      "path": "audio/music.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-18T20:04:57+00:00",
+      "licence": "original, generated in code"
+    },
+    {
+      "kind": "music",
+      "path": "audio/signature.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-18T20:04:57+00:00",
+      "licence": "original, generated in code"
+    }
+  ],
+  "versions": [
+    {
+      "file": "renders/decoy-effect_v1.mp4",
+      "at": "2026-10-19T00:32:26"
+    },
+    {
+      "file": "renders/decoy-effect_v2.mp4",
+      "at": "2026-10-19T00:34:18"
+    },
+    {
+      "file": "renders/decoy-effect_v3.mp4",
+      "at": "2026-10-19T01:44:53"
+    }
+  ]
+}

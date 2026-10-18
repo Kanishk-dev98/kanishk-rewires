@@ -1,0 +1,255 @@
+{
+  "slug": "flipkart-ad-breakdown",
+  "topic": "Why Flipkart's 'Ek Size Bada Le Lo' TV ad works: insight-led advertising breakdown",
+  "created": "2026-10-18T19:05:28+00:00",
+  "options": {
+    "format": "9x16",
+    "language": "en"
+  },
+  "stages": {
+    "intake": {
+      "status": "done",
+      "at": "2026-10-18T19:05:28+00:00",
+      "note": "project folder and manifest created"
+    },
+    "research": {
+      "status": "done",
+      "at": "2026-10-18T19:05:28+00:00",
+      "note": "13 claims in the ledger",
+      "outputs": [
+        "research/sources.json",
+        "research/sources.md"
+      ]
+    },
+    "brief": {
+      "status": "done",
+      "at": "2026-10-18T19:05:28+00:00",
+      "note": "brief present",
+      "outputs": [
+        "brief/brief.md"
+      ]
+    },
+    "script": {
+      "status": "done",
+      "at": "2026-10-18T19:05:28+00:00",
+      "note": "184 narration words (~71 s at a natural pace)",
+      "outputs": [
+        "script/script.md"
+      ]
+    },
+    "storyboard": {
+      "status": "done",
+      "at": "2026-10-18T19:55:26+00:00",
+      "note": "7 scenes valid, 3 warnings",
+      "outputs": [
+        "storyboard/storyboard.json"
+      ]
+    },
+    "assets": {
+      "status": "done",
+      "at": "2026-10-18T19:55:26+00:00",
+      "note": "7 narration clips (7 reused from cache)",
+      "outputs": [
+        "audio/vo/"
+      ]
+    },
+    "edit": {
+      "status": "done",
+      "at": "2026-10-18T20:01:23+00:00",
+      "note": "7 scenes, body 46.7 s + outro 2.5 s, 133 caption words",
+      "outputs": [
+        "timeline/timeline.json",
+        "timeline/props.json",
+        "captions/flipkart-ad-breakdown.srt",
+        "audio/music.wav",
+        "audio/signature.wav"
+      ]
+    },
+    "render": {
+      "status": "done",
+      "at": "2026-10-18T20:06:25+00:00",
+      "note": "flipkart-ad-breakdown_v3.mp4 (125.7 MB)",
+      "outputs": [
+        "renders/flipkart-ad-breakdown_v3.mp4"
+      ]
+    },
+    "qc": {
+      "status": "done",
+      "at": "2026-10-18T20:06:46+00:00",
+      "note": "flipkart-ad-breakdown_v3.mp4 passed 14 checks",
+      "outputs": [
+        "reports/qc.md",
+        "reports/contact_sheet.png"
+      ]
+    },
+    "delivery": {
+      "status": "done",
+      "at": "2026-10-18T20:06:46+00:00",
+      "note": "delivered flipkart-ad-breakdown_v3.mp4",
+      "outputs": [
+        "reports/production_report.md",
+        "/Users/kanishk.raj/Downloads/Kanishk.Rewires/flipkart-ad-breakdown"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s07.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T19:05:37+00:00",
+      "cached": false,
+      "seconds": 1.87,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s08.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T19:05:37+00:00",
+      "cached": false,
+      "seconds": 10.01,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s09.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T19:05:37+00:00",
+      "cached": false,
+      "seconds": 3.55,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s00.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T19:55:26+00:00",
+      "cached": true,
+      "seconds": 4.85,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s01.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T19:55:26+00:00",
+      "cached": true,
+      "seconds": 7.13,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s02.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T19:55:26+00:00",
+      "cached": true,
+      "seconds": 8.62,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s03.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T19:55:26+00:00",
+      "cached": true,
+      "seconds": 4.37,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s04.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T19:55:26+00:00",
+      "cached": true,
+      "seconds": 11.42,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s05.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T19:55:26+00:00",
+      "cached": true,
+      "seconds": 5.54,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s06.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T19:55:26+00:00",
+      "cached": true,
+      "seconds": 3.58,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "music",
+      "path": "audio/music.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-18T20:01:23+00:00",
+      "licence": "original, generated in code"
+    },
+    {
+      "kind": "music",
+      "path": "audio/signature.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-18T20:01:23+00:00",
+      "licence": "original, generated in code"
+    }
+  ],
+  "versions": [
+    {
+      "file": "renders/flipkart-ad-breakdown_v1.mp4",
+      "at": "2026-10-19T00:37:41"
+    },
+    {
+      "file": "renders/flipkart-ad-breakdown_v2.mp4",
+      "at": "2026-10-19T01:30:27"
+    },
+    {
+      "file": "renders/flipkart-ad-breakdown_v3.mp4",
+      "at": "2026-10-19T01:36:25"
+    }
+  ]
+}

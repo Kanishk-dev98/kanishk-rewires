@@ -1,0 +1,135 @@
+1
+00:00:00,151 --> 00:00:03,556
+ChatGPT can now work inside your Chrome tabs
+
+2
+00:00:03,576 --> 00:00:04,685
+Here's how to set it up
+
+3
+00:00:04,763 --> 00:00:06,353
+It's simpler than it sounds
+
+4
+00:00:06,373 --> 00:00:07,651
+Just five steps
+
+5
+00:00:07,796 --> 00:00:08,509
+One
+
+6
+00:00:08,529 --> 00:00:11,370
+Install the ChatGPT extension from the Chrome Web
+
+7
+00:00:11,390 --> 00:00:12,163
+Store
+
+8
+00:00:12,183 --> 00:00:13,281
+Check the publisher
+
+9
+00:00:13,301 --> 00:00:14,747
+is OpenAI
+
+10
+00:00:14,896 --> 00:00:15,525
+Two
+
+11
+00:00:15,545 --> 00:00:17,772
+In the ChatGPT desktop app
+
+12
+00:00:17,841 --> 00:00:21,474
+open Settings then Computer Use and connect Chrome
+
+13
+00:00:21,641 --> 00:00:22,355
+Three
+
+14
+00:00:22,375 --> 00:00:23,749
+Open the pages you want
+
+15
+00:00:23,769 --> 00:00:24,890
+type at Chrome
+
+16
+00:00:24,935 --> 00:00:26,357
+and ask it to compare them
+
+17
+00:00:26,377 --> 00:00:28,088
+It reads every tab
+
+18
+00:00:28,108 --> 00:00:29,397
+and builds the table
+
+19
+00:00:29,635 --> 00:00:30,359
+Four
+
+20
+00:00:30,440 --> 00:00:33,004
+For real tasks start a Work chat
+
+21
+00:00:33,024 --> 00:00:34,026
+Tell it what to do
+
+22
+00:00:34,046 --> 00:00:36,081
+like register me for this event
+
+23
+00:00:36,101 --> 00:00:38,377
+It asks before it uses a new site
+
+24
+00:00:38,397 --> 00:00:40,131
+then fills the form for you
+
+25
+00:00:40,435 --> 00:00:41,172
+Five
+
+26
+00:00:41,192 --> 00:00:42,218
+Stay safe
+
+27
+00:00:42,238 --> 00:00:45,631
+Close banking tabs first choose allow once and
+
+28
+00:00:45,651 --> 00:00:47,662
+press the final button yourself
+
+29
+00:00:47,863 --> 00:00:49,345
+Save this so you can set it up
+
+30
+00:00:49,365 --> 00:00:50,162
+later
+
+31
+00:00:50,296 --> 00:00:51,346
+Comment Chrome
+
+32
+00:00:51,366 --> 00:00:52,872
+and I'll send you my ten best prompts
+
+33
+00:00:52,892 --> 00:00:53,641
+for it
+
+34
+00:00:53,674 --> 00:00:56,730
+For research shopping and admin work

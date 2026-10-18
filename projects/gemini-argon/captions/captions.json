@@ -1,0 +1,736 @@
+[
+  {
+    "text": "Google",
+    "startMs": 161,
+    "endMs": 397
+  },
+  {
+    "text": "just",
+    "startMs": 397,
+    "endMs": 574
+  },
+  {
+    "text": "gave",
+    "startMs": 574,
+    "endMs": 786
+  },
+  {
+    "text": "Gemini",
+    "startMs": 798,
+    "endMs": 1317
+  },
+  {
+    "text": "a",
+    "startMs": 1470,
+    "endMs": 1505
+  },
+  {
+    "text": "new",
+    "startMs": 1505,
+    "endMs": 1824
+  },
+  {
+    "text": "switch",
+    "startMs": 1824,
+    "endMs": 2449,
+    "hl": true
+  },
+  {
+    "text": "And",
+    "startMs": 2814,
+    "endMs": 2873
+  },
+  {
+    "text": "it",
+    "startMs": 2873,
+    "endMs": 2944
+  },
+  {
+    "text": "changes",
+    "startMs": 2956,
+    "endMs": 3310,
+    "hl": true
+  },
+  {
+    "text": "how",
+    "startMs": 3310,
+    "endMs": 3404
+  },
+  {
+    "text": "you",
+    "startMs": 3404,
+    "endMs": 3557
+  },
+  {
+    "text": "use",
+    "startMs": 3557,
+    "endMs": 3982
+  },
+  {
+    "text": "AI",
+    "startMs": 3994,
+    "endMs": 4477
+  },
+  {
+    "text": "It",
+    "startMs": 5028,
+    "endMs": 5098
+  },
+  {
+    "text": "comes",
+    "startMs": 5110,
+    "endMs": 5381
+  },
+  {
+    "text": "with",
+    "startMs": 5381,
+    "endMs": 5511
+  },
+  {
+    "text": "Gemini",
+    "startMs": 5523,
+    "endMs": 6018
+  },
+  {
+    "text": "4",
+    "startMs": 6101,
+    "endMs": 6443
+  },
+  {
+    "text": "Argon",
+    "startMs": 6455,
+    "endMs": 6938,
+    "hl": true
+  },
+  {
+    "text": "Google's",
+    "startMs": 7197,
+    "endMs": 7646
+  },
+  {
+    "text": "new",
+    "startMs": 7646,
+    "endMs": 7976
+  },
+  {
+    "text": "frontier",
+    "startMs": 7988,
+    "endMs": 8459,
+    "hl": true
+  },
+  {
+    "text": "model",
+    "startMs": 8459,
+    "endMs": 8825
+  },
+  {
+    "text": "It",
+    "startMs": 9202,
+    "endMs": 9297
+  },
+  {
+    "text": "launched",
+    "startMs": 9308,
+    "endMs": 9615
+  },
+  {
+    "text": "on",
+    "startMs": 9627,
+    "endMs": 9709
+  },
+  {
+    "text": "October",
+    "startMs": 9709,
+    "endMs": 10098
+  },
+  {
+    "text": "thirteenth",
+    "startMs": 10098,
+    "endMs": 10853
+  },
+  {
+    "text": "for",
+    "startMs": 11042,
+    "endMs": 11207
+  },
+  {
+    "text": "Pro",
+    "startMs": 11207,
+    "endMs": 11690
+  },
+  {
+    "text": "and",
+    "startMs": 11844,
+    "endMs": 12009
+  },
+  {
+    "text": "Ultra",
+    "startMs": 12068,
+    "endMs": 12374
+  },
+  {
+    "text": "subscribers",
+    "startMs": 12374,
+    "endMs": 13153
+  },
+  {
+    "text": "On",
+    "startMs": 13683,
+    "endMs": 13777
+  },
+  {
+    "text": "a",
+    "startMs": 13777,
+    "endMs": 13836
+  },
+  {
+    "text": "test",
+    "startMs": 13836,
+    "endMs": 14249
+  },
+  {
+    "text": "of",
+    "startMs": 14260,
+    "endMs": 14461
+  },
+  {
+    "text": "automating",
+    "startMs": 14532,
+    "endMs": 15086
+  },
+  {
+    "text": "real",
+    "startMs": 15086,
+    "endMs": 15345
+  },
+  {
+    "text": "business",
+    "startMs": 15345,
+    "endMs": 15734
+  },
+  {
+    "text": "work",
+    "startMs": 15734,
+    "endMs": 16076
+  },
+  {
+    "text": "Google",
+    "startMs": 16324,
+    "endMs": 16654
+  },
+  {
+    "text": "says",
+    "startMs": 16666,
+    "endMs": 16902
+  },
+  {
+    "text": "it",
+    "startMs": 16902,
+    "endMs": 17020
+  },
+  {
+    "text": "beats",
+    "startMs": 17020,
+    "endMs": 17444,
+    "hl": true
+  },
+  {
+    "text": "GPT",
+    "startMs": 17527,
+    "endMs": 18140
+  },
+  {
+    "text": "6",
+    "startMs": 18152,
+    "endMs": 18612
+  },
+  {
+    "text": "and",
+    "startMs": 18812,
+    "endMs": 18907
+  },
+  {
+    "text": "Claude",
+    "startMs": 18907,
+    "endMs": 19414
+  },
+  {
+    "text": "Here's",
+    "startMs": 19985,
+    "endMs": 20161
+  },
+  {
+    "text": "the",
+    "startMs": 20161,
+    "endMs": 20232
+  },
+  {
+    "text": "shift",
+    "startMs": 20244,
+    "endMs": 20692
+  },
+  {
+    "text": "Flip",
+    "startMs": 21117,
+    "endMs": 21329
+  },
+  {
+    "text": "the",
+    "startMs": 21329,
+    "endMs": 21423
+  },
+  {
+    "text": "toggle",
+    "startMs": 21423,
+    "endMs": 21801
+  },
+  {
+    "text": "to",
+    "startMs": 21801,
+    "endMs": 21883
+  },
+  {
+    "text": "Task",
+    "startMs": 21883,
+    "endMs": 22461,
+    "hl": true
+  },
+  {
+    "text": "and",
+    "startMs": 22874,
+    "endMs": 22944
+  },
+  {
+    "text": "hand",
+    "startMs": 22956,
+    "endMs": 23157
+  },
+  {
+    "text": "it",
+    "startMs": 23157,
+    "endMs": 23204
+  },
+  {
+    "text": "a",
+    "startMs": 23204,
+    "endMs": 23227
+  },
+  {
+    "text": "job",
+    "startMs": 23227,
+    "endMs": 23605
+  },
+  {
+    "text": "Then close",
+    "startMs": 23982,
+    "endMs": 24419
+  },
+  {
+    "text": "your",
+    "startMs": 24430,
+    "endMs": 24501
+  },
+  {
+    "text": "laptop",
+    "startMs": 24501,
+    "endMs": 25008
+  },
+  {
+    "text": "Gemini",
+    "startMs": 25386,
+    "endMs": 25810
+  },
+  {
+    "text": "keeps",
+    "startMs": 25822,
+    "endMs": 26105
+  },
+  {
+    "text": "working",
+    "startMs": 26105,
+    "endMs": 26506,
+    "hl": true
+  },
+  {
+    "text": "You",
+    "startMs": 27294,
+    "endMs": 27365
+  },
+  {
+    "text": "can",
+    "startMs": 27365,
+    "endMs": 27459
+  },
+  {
+    "text": "run",
+    "startMs": 27459,
+    "endMs": 27589
+  },
+  {
+    "text": "up",
+    "startMs": 27589,
+    "endMs": 27648
+  },
+  {
+    "text": "to",
+    "startMs": 27648,
+    "endMs": 27719
+  },
+  {
+    "text": "fifteen",
+    "startMs": 27719,
+    "endMs": 28143,
+    "hl": true
+  },
+  {
+    "text": "at",
+    "startMs": 28143,
+    "endMs": 28214
+  },
+  {
+    "text": "once",
+    "startMs": 28214,
+    "endMs": 28674
+  },
+  {
+    "text": "Price",
+    "startMs": 29075,
+    "endMs": 29287
+  },
+  {
+    "text": "alerts",
+    "startMs": 29287,
+    "endMs": 29783
+  },
+  {
+    "text": "news",
+    "startMs": 29995,
+    "endMs": 30313
+  },
+  {
+    "text": "digests",
+    "startMs": 30325,
+    "endMs": 31080
+  },
+  {
+    "text": "research",
+    "startMs": 31292,
+    "endMs": 31787
+  },
+  {
+    "text": "packs",
+    "startMs": 31799,
+    "endMs": 32117
+  },
+  {
+    "text": "with",
+    "startMs": 32129,
+    "endMs": 32247
+  },
+  {
+    "text": "sources",
+    "startMs": 32247,
+    "endMs": 32849
+  },
+  {
+    "text": "In",
+    "startMs": 33371,
+    "endMs": 33465
+  },
+  {
+    "text": "Google's",
+    "startMs": 33465,
+    "endMs": 33949
+  },
+  {
+    "text": "own",
+    "startMs": 33960,
+    "endMs": 34125
+  },
+  {
+    "text": "demo",
+    "startMs": 34125,
+    "endMs": 34609
+  },
+  {
+    "text": "it",
+    "startMs": 34951,
+    "endMs": 35022
+  },
+  {
+    "text": "turns",
+    "startMs": 35022,
+    "endMs": 35258
+  },
+  {
+    "text": "a",
+    "startMs": 35258,
+    "endMs": 35293
+  },
+  {
+    "text": "messy",
+    "startMs": 35293,
+    "endMs": 35753,
+    "hl": true
+  },
+  {
+    "text": "project",
+    "startMs": 35765,
+    "endMs": 36272
+  },
+  {
+    "text": "folder",
+    "startMs": 36272,
+    "endMs": 36755
+  },
+  {
+    "text": "into",
+    "startMs": 36802,
+    "endMs": 37015
+  },
+  {
+    "text": "a",
+    "startMs": 37015,
+    "endMs": 37085
+  },
+  {
+    "text": "client",
+    "startMs": 37085,
+    "endMs": 37534
+  },
+  {
+    "text": "proposal",
+    "startMs": 37534,
+    "endMs": 38064
+  },
+  {
+    "text": "deck",
+    "startMs": 38076,
+    "endMs": 38477
+  },
+  {
+    "text": "emails",
+    "startMs": 38842,
+    "endMs": 39302
+  },
+  {
+    "text": "it",
+    "startMs": 39302,
+    "endMs": 39444
+  },
+  {
+    "text": "and",
+    "startMs": 39845,
+    "endMs": 39904
+  },
+  {
+    "text": "sets",
+    "startMs": 39904,
+    "endMs": 40116
+  },
+  {
+    "text": "up",
+    "startMs": 40116,
+    "endMs": 40187
+  },
+  {
+    "text": "a",
+    "startMs": 40187,
+    "endMs": 40246
+  },
+  {
+    "text": "workflow",
+    "startMs": 40258,
+    "endMs": 40871,
+    "hl": true
+  },
+  {
+    "text": "for",
+    "startMs": 41142,
+    "endMs": 41331
+  },
+  {
+    "text": "every",
+    "startMs": 41437,
+    "endMs": 41649
+  },
+  {
+    "text": "new",
+    "startMs": 41649,
+    "endMs": 41802
+  },
+  {
+    "text": "request",
+    "startMs": 41814,
+    "endMs": 42427
+  },
+  {
+    "text": "The",
+    "startMs": 43028,
+    "endMs": 43075
+  },
+  {
+    "text": "catch",
+    "startMs": 43087,
+    "endMs": 43523,
+    "hl": true
+  },
+  {
+    "text": "It",
+    "startMs": 43900,
+    "endMs": 43971
+  },
+  {
+    "text": "still",
+    "startMs": 43971,
+    "endMs": 44183
+  },
+  {
+    "text": "makes",
+    "startMs": 44183,
+    "endMs": 44407
+  },
+  {
+    "text": "things",
+    "startMs": 44419,
+    "endMs": 44702
+  },
+  {
+    "text": "up",
+    "startMs": 44702,
+    "endMs": 44926
+  },
+  {
+    "text": "it",
+    "startMs": 45174,
+    "endMs": 45245
+  },
+  {
+    "text": "trails",
+    "startMs": 45245,
+    "endMs": 45598
+  },
+  {
+    "text": "Claude",
+    "startMs": 45598,
+    "endMs": 45940
+  },
+  {
+    "text": "on",
+    "startMs": 45940,
+    "endMs": 46070
+  },
+  {
+    "text": "some",
+    "startMs": 46082,
+    "endMs": 46223
+  },
+  {
+    "text": "coding",
+    "startMs": 46223,
+    "endMs": 46589
+  },
+  {
+    "text": "tests",
+    "startMs": 46601,
+    "endMs": 47167
+  },
+  {
+    "text": "and",
+    "startMs": 47391,
+    "endMs": 47568
+  },
+  {
+    "text": "tasks",
+    "startMs": 47780,
+    "endMs": 48169
+  },
+  {
+    "text": "are",
+    "startMs": 48181,
+    "endMs": 48263
+  },
+  {
+    "text": "still",
+    "startMs": 48264,
+    "endMs": 48511
+  },
+  {
+    "text": "experimental",
+    "startMs": 48511,
+    "endMs": 49195,
+    "hl": true
+  },
+  {
+    "text": "So",
+    "startMs": 49794,
+    "endMs": 50018
+  },
+  {
+    "text": "would",
+    "startMs": 50466,
+    "endMs": 50584
+  },
+  {
+    "text": "you",
+    "startMs": 50596,
+    "endMs": 50655
+  },
+  {
+    "text": "hand",
+    "startMs": 50655,
+    "endMs": 50879,
+    "hl": true
+  },
+  {
+    "text": "your",
+    "startMs": 50879,
+    "endMs": 50997
+  },
+  {
+    "text": "work",
+    "startMs": 50997,
+    "endMs": 51186
+  },
+  {
+    "text": "to",
+    "startMs": 51186,
+    "endMs": 51292
+  },
+  {
+    "text": "an",
+    "startMs": 51292,
+    "endMs": 51363
+  },
+  {
+    "text": "AI",
+    "startMs": 51363,
+    "endMs": 51740
+  },
+  {
+    "text": "Tell",
+    "startMs": 52117,
+    "endMs": 52247
+  },
+  {
+    "text": "me",
+    "startMs": 52259,
+    "endMs": 52365
+  },
+  {
+    "text": "in",
+    "startMs": 52365,
+    "endMs": 52424
+  },
+  {
+    "text": "the",
+    "startMs": 52424,
+    "endMs": 52483
+  },
+  {
+    "text": "comments",
+    "startMs": 52495,
+    "endMs": 53108,
+    "hl": true
+  }
+]

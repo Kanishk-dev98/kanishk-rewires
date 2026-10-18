@@ -1,0 +1,750 @@
+[
+  {
+    "text": "Chip",
+    "startMs": 161,
+    "endMs": 314
+  },
+  {
+    "text": "stocks",
+    "startMs": 326,
+    "endMs": 680
+  },
+  {
+    "text": "just",
+    "startMs": 692,
+    "endMs": 869
+  },
+  {
+    "text": "fell",
+    "startMs": 880,
+    "endMs": 1116
+  },
+  {
+    "text": "eight",
+    "startMs": 1211,
+    "endMs": 1399,
+    "hl": true
+  },
+  {
+    "text": "days",
+    "startMs": 1399,
+    "endMs": 1659
+  },
+  {
+    "text": "in",
+    "startMs": 1659,
+    "endMs": 1694
+  },
+  {
+    "text": "a",
+    "startMs": 1706,
+    "endMs": 1741
+  },
+  {
+    "text": "row",
+    "startMs": 1741,
+    "endMs": 2083
+  },
+  {
+    "text": "The",
+    "startMs": 2461,
+    "endMs": 2508
+  },
+  {
+    "text": "last",
+    "startMs": 2508,
+    "endMs": 2732
+  },
+  {
+    "text": "time",
+    "startMs": 2732,
+    "endMs": 2885
+  },
+  {
+    "text": "that",
+    "startMs": 2885,
+    "endMs": 2979
+  },
+  {
+    "text": "happened",
+    "startMs": 2979,
+    "endMs": 3345
+  },
+  {
+    "text": "was",
+    "startMs": 3357,
+    "endMs": 3510
+  },
+  {
+    "text": "October 2008",
+    "startMs": 3522,
+    "endMs": 5043,
+    "hl": true
+  },
+  {
+    "text": "Up",
+    "startMs": 5571,
+    "endMs": 5677
+  },
+  {
+    "text": "to",
+    "startMs": 5677,
+    "endMs": 5771
+  },
+  {
+    "text": "two",
+    "startMs": 5783,
+    "endMs": 6078
+  },
+  {
+    "text": "trillion",
+    "startMs": 6078,
+    "endMs": 6514,
+    "hl": true
+  },
+  {
+    "text": "dollars",
+    "startMs": 6526,
+    "endMs": 6915
+  },
+  {
+    "text": "in",
+    "startMs": 6927,
+    "endMs": 6998
+  },
+  {
+    "text": "value",
+    "startMs": 7009,
+    "endMs": 7481
+  },
+  {
+    "text": "gone",
+    "startMs": 7764,
+    "endMs": 7976
+  },
+  {
+    "text": "in",
+    "startMs": 7976,
+    "endMs": 8059
+  },
+  {
+    "text": "under",
+    "startMs": 8059,
+    "endMs": 8248
+  },
+  {
+    "text": "two",
+    "startMs": 8248,
+    "endMs": 8436
+  },
+  {
+    "text": "weeks",
+    "startMs": 8436,
+    "endMs": 8979
+  },
+  {
+    "text": "The",
+    "startMs": 9528,
+    "endMs": 9587
+  },
+  {
+    "text": "pain",
+    "startMs": 9587,
+    "endMs": 9834
+  },
+  {
+    "text": "hit",
+    "startMs": 9834,
+    "endMs": 9999
+  },
+  {
+    "text": "the",
+    "startMs": 10011,
+    "endMs": 10082
+  },
+  {
+    "text": "whole",
+    "startMs": 10082,
+    "endMs": 10330
+  },
+  {
+    "text": "sector",
+    "startMs": 10330,
+    "endMs": 10896
+  },
+  {
+    "text": "But",
+    "startMs": 11285,
+    "endMs": 11367
+  },
+  {
+    "text": "look",
+    "startMs": 11379,
+    "endMs": 11509
+  },
+  {
+    "text": "who",
+    "startMs": 11509,
+    "endMs": 11638
+  },
+  {
+    "text": "fell",
+    "startMs": 11639,
+    "endMs": 11863
+  },
+  {
+    "text": "the",
+    "startMs": 11874,
+    "endMs": 11945
+  },
+  {
+    "text": "least",
+    "startMs": 11945,
+    "endMs": 12417,
+    "hl": true
+  },
+  {
+    "text": "So",
+    "startMs": 12961,
+    "endMs": 13102
+  },
+  {
+    "text": "what's",
+    "startMs": 13114,
+    "endMs": 13256
+  },
+  {
+    "text": "spooking",
+    "startMs": 13256,
+    "endMs": 13586
+  },
+  {
+    "text": "investors",
+    "startMs": 13586,
+    "endMs": 14235
+  },
+  {
+    "text": "Doubts",
+    "startMs": 14612,
+    "endMs": 14871
+  },
+  {
+    "text": "that",
+    "startMs": 14871,
+    "endMs": 15048
+  },
+  {
+    "text": "AI",
+    "startMs": 15166,
+    "endMs": 15579
+  },
+  {
+    "text": "spending",
+    "startMs": 15579,
+    "endMs": 15980
+  },
+  {
+    "text": "will",
+    "startMs": 15980,
+    "endMs": 16062
+  },
+  {
+    "text": "pay",
+    "startMs": 16062,
+    "endMs": 16310,
+    "hl": true
+  },
+  {
+    "text": "off",
+    "startMs": 16310,
+    "endMs": 16664
+  },
+  {
+    "text": "Data",
+    "startMs": 17053,
+    "endMs": 17265
+  },
+  {
+    "text": "centres",
+    "startMs": 17265,
+    "endMs": 17737
+  },
+  {
+    "text": "built",
+    "startMs": 17843,
+    "endMs": 18150
+  },
+  {
+    "text": "on",
+    "startMs": 18220,
+    "endMs": 18374
+  },
+  {
+    "text": "debt",
+    "startMs": 18374,
+    "endMs": 18763,
+    "hl": true
+  },
+  {
+    "text": "And",
+    "startMs": 19164,
+    "endMs": 19270
+  },
+  {
+    "text": "stubborn",
+    "startMs": 19282,
+    "endMs": 19600
+  },
+  {
+    "text": "inflation",
+    "startMs": 19612,
+    "endMs": 20225
+  },
+  {
+    "text": "pushing",
+    "startMs": 20355,
+    "endMs": 20756
+  },
+  {
+    "text": "rates",
+    "startMs": 20768,
+    "endMs": 21098
+  },
+  {
+    "text": "up",
+    "startMs": 21098,
+    "endMs": 21334
+  },
+  {
+    "text": "Broadcom's",
+    "startMs": 21961,
+    "endMs": 22492
+  },
+  {
+    "text": "CEO",
+    "startMs": 22492,
+    "endMs": 23081
+  },
+  {
+    "text": "says",
+    "startMs": 23352,
+    "endMs": 23565
+  },
+  {
+    "text": "some",
+    "startMs": 23565,
+    "endMs": 23718
+  },
+  {
+    "text": "investors",
+    "startMs": 23718,
+    "endMs": 24225
+  },
+  {
+    "text": "are",
+    "startMs": 24225,
+    "endMs": 24437
+  },
+  {
+    "text": "almost",
+    "startMs": 24508,
+    "endMs": 25098
+  },
+  {
+    "text": "in",
+    "startMs": 25110,
+    "endMs": 25169
+  },
+  {
+    "text": "a",
+    "startMs": 25169,
+    "endMs": 25216
+  },
+  {
+    "text": "casino",
+    "startMs": 25227,
+    "endMs": 25829,
+    "hl": true
+  },
+  {
+    "text": "Nvidia's",
+    "startMs": 26194,
+    "endMs": 26678
+  },
+  {
+    "text": "Jensen",
+    "startMs": 26678,
+    "endMs": 27067
+  },
+  {
+    "text": "Huang",
+    "startMs": 27079,
+    "endMs": 27610
+  },
+  {
+    "text": "says",
+    "startMs": 27845,
+    "endMs": 28058
+  },
+  {
+    "text": "it's",
+    "startMs": 28058,
+    "endMs": 28152
+  },
+  {
+    "text": "all",
+    "startMs": 28152,
+    "endMs": 28400
+  },
+  {
+    "text": "going",
+    "startMs": 28400,
+    "endMs": 28588
+  },
+  {
+    "text": "to",
+    "startMs": 28600,
+    "endMs": 28636
+  },
+  {
+    "text": "pass",
+    "startMs": 28647,
+    "endMs": 29225,
+    "hl": true
+  },
+  {
+    "text": "For",
+    "startMs": 29887,
+    "endMs": 30087
+  },
+  {
+    "text": "scale",
+    "startMs": 30087,
+    "endMs": 30488
+  },
+  {
+    "text": "after",
+    "startMs": 31078,
+    "endMs": 31231
+  },
+  {
+    "text": "the",
+    "startMs": 31231,
+    "endMs": 31313
+  },
+  {
+    "text": "dot",
+    "startMs": 31314,
+    "endMs": 31526
+  },
+  {
+    "text": "com",
+    "startMs": 31526,
+    "endMs": 31785
+  },
+  {
+    "text": "peak",
+    "startMs": 31785,
+    "endMs": 32163
+  },
+  {
+    "text": "the",
+    "startMs": 32422,
+    "endMs": 32493
+  },
+  {
+    "text": "Nasdaq",
+    "startMs": 32505,
+    "endMs": 33023
+  },
+  {
+    "text": "fell",
+    "startMs": 33023,
+    "endMs": 33224
+  },
+  {
+    "text": "seventy",
+    "startMs": 33236,
+    "endMs": 33660
+  },
+  {
+    "text": "eight",
+    "startMs": 33672,
+    "endMs": 33802
+  },
+  {
+    "text": "percent",
+    "startMs": 33802,
+    "endMs": 34297
+  },
+  {
+    "text": "and",
+    "startMs": 34698,
+    "endMs": 34780
+  },
+  {
+    "text": "took",
+    "startMs": 34780,
+    "endMs": 34969
+  },
+  {
+    "text": "fifteen",
+    "startMs": 34981,
+    "endMs": 35488,
+    "hl": true
+  },
+  {
+    "text": "years",
+    "startMs": 35488,
+    "endMs": 35842
+  },
+  {
+    "text": "to",
+    "startMs": 35842,
+    "endMs": 35936
+  },
+  {
+    "text": "recover",
+    "startMs": 35948,
+    "endMs": 36502
+  },
+  {
+    "text": "Chips",
+    "startMs": 36891,
+    "endMs": 37092
+  },
+  {
+    "text": "are",
+    "startMs": 37104,
+    "endMs": 37186
+  },
+  {
+    "text": "down",
+    "startMs": 37198,
+    "endMs": 37528
+  },
+  {
+    "text": "about",
+    "startMs": 37528,
+    "endMs": 37740
+  },
+  {
+    "text": "sixteen",
+    "startMs": 37740,
+    "endMs": 38212
+  },
+  {
+    "text": "percent",
+    "startMs": 38212,
+    "endMs": 38684
+  },
+  {
+    "text": "and",
+    "startMs": 39108,
+    "endMs": 39214
+  },
+  {
+    "text": "still",
+    "startMs": 39226,
+    "endMs": 39474
+  },
+  {
+    "text": "up",
+    "startMs": 39474,
+    "endMs": 39556
+  },
+  {
+    "text": "sixty",
+    "startMs": 39568,
+    "endMs": 39969,
+    "hl": true
+  },
+  {
+    "text": "four",
+    "startMs": 39969,
+    "endMs": 40217
+  },
+  {
+    "text": "percent",
+    "startMs": 40217,
+    "endMs": 40582
+  },
+  {
+    "text": "this",
+    "startMs": 40582,
+    "endMs": 40771
+  },
+  {
+    "text": "year",
+    "startMs": 40771,
+    "endMs": 41101
+  },
+  {
+    "text": "So",
+    "startMs": 41716,
+    "endMs": 41857
+  },
+  {
+    "text": "bubble",
+    "startMs": 41869,
+    "endMs": 42223
+  },
+  {
+    "text": "or",
+    "startMs": 42235,
+    "endMs": 42388
+  },
+  {
+    "text": "reset",
+    "startMs": 42388,
+    "endMs": 42930
+  },
+  {
+    "text": "Nobody",
+    "startMs": 43296,
+    "endMs": 43555
+  },
+  {
+    "text": "can",
+    "startMs": 43567,
+    "endMs": 43685
+  },
+  {
+    "text": "prove",
+    "startMs": 43685,
+    "endMs": 44039
+  },
+  {
+    "text": "it",
+    "startMs": 44039,
+    "endMs": 44110
+  },
+  {
+    "text": "yet",
+    "startMs": 44110,
+    "endMs": 44393
+  },
+  {
+    "text": "But",
+    "startMs": 44770,
+    "endMs": 44853
+  },
+  {
+    "text": "money",
+    "startMs": 44864,
+    "endMs": 45171
+  },
+  {
+    "text": "for",
+    "startMs": 45171,
+    "endMs": 45348
+  },
+  {
+    "text": "AI",
+    "startMs": 45454,
+    "endMs": 46008
+  },
+  {
+    "text": "is",
+    "startMs": 46103,
+    "endMs": 46244
+  },
+  {
+    "text": "getting",
+    "startMs": 46256,
+    "endMs": 46515
+  },
+  {
+    "text": "pickier",
+    "startMs": 46527,
+    "endMs": 47070,
+    "hl": true
+  },
+  {
+    "text": "If",
+    "startMs": 47459,
+    "endMs": 47541
+  },
+  {
+    "text": "you're",
+    "startMs": 47541,
+    "endMs": 47624
+  },
+  {
+    "text": "building",
+    "startMs": 47624,
+    "endMs": 47883
+  },
+  {
+    "text": "with",
+    "startMs": 47883,
+    "endMs": 48025
+  },
+  {
+    "text": "AI",
+    "startMs": 48037,
+    "endMs": 48579
+  },
+  {
+    "text": "show",
+    "startMs": 48956,
+    "endMs": 49275
+  },
+  {
+    "text": "real",
+    "startMs": 49287,
+    "endMs": 49652
+  },
+  {
+    "text": "revenue",
+    "startMs": 49652,
+    "endMs": 50124,
+    "hl": true
+  },
+  {
+    "text": "not",
+    "startMs": 50336,
+    "endMs": 50489
+  },
+  {
+    "text": "just",
+    "startMs": 50501,
+    "endMs": 50690
+  },
+  {
+    "text": "hype",
+    "startMs": 50702,
+    "endMs": 51008
+  },
+  {
+    "text": "What's",
+    "startMs": 51694,
+    "endMs": 51812
+  },
+  {
+    "text": "your",
+    "startMs": 51824,
+    "endMs": 51907
+  },
+  {
+    "text": "call",
+    "startMs": 51907,
+    "endMs": 52213,
+    "hl": true
+  },
+  {
+    "text": "Tell",
+    "startMs": 52591,
+    "endMs": 52697
+  },
+  {
+    "text": "me",
+    "startMs": 52708,
+    "endMs": 52803
+  },
+  {
+    "text": "below",
+    "startMs": 52803,
+    "endMs": 53145
+  }
+]

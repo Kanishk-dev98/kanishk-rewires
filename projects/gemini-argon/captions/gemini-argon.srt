@@ -1,0 +1,111 @@
+1
+00:00:00,161 --> 00:00:02,794
+Google just gave Gemini a new switch
+
+2
+00:00:02,814 --> 00:00:04,877
+And it changes how you use AI
+
+3
+00:00:05,028 --> 00:00:07,968
+It comes with Gemini 4 Argon Google's new
+
+4
+00:00:07,988 --> 00:00:09,182
+frontier model
+
+5
+00:00:09,202 --> 00:00:12,048
+It launched on October thirteenth for Pro and
+
+6
+00:00:12,068 --> 00:00:13,553
+Ultra subscribers
+
+7
+00:00:13,683 --> 00:00:16,304
+On a test of automating real business work
+
+8
+00:00:16,324 --> 00:00:19,814
+Google says it beats GPT 6 and Claude
+
+9
+00:00:19,985 --> 00:00:21,092
+Here's the shift
+
+10
+00:00:21,117 --> 00:00:22,854
+Flip the toggle to Task
+
+11
+00:00:22,874 --> 00:00:23,962
+and hand it a job
+
+12
+00:00:23,982 --> 00:00:25,366
+Then close your laptop
+
+13
+00:00:25,386 --> 00:00:26,906
+Gemini keeps working
+
+14
+00:00:27,294 --> 00:00:29,055
+You can run up to fifteen at once
+
+15
+00:00:29,075 --> 00:00:33,249
+Price alerts news digests research packs with sources
+
+16
+00:00:33,371 --> 00:00:34,931
+In Google's own demo
+
+17
+00:00:34,951 --> 00:00:37,065
+it turns a messy project folder into a
+
+18
+00:00:37,085 --> 00:00:38,822
+client proposal deck
+
+19
+00:00:38,842 --> 00:00:39,825
+emails it
+
+20
+00:00:39,845 --> 00:00:41,794
+and sets up a workflow for every new
+
+21
+00:00:41,814 --> 00:00:42,827
+request
+
+22
+00:00:43,028 --> 00:00:43,880
+The catch
+
+23
+00:00:43,900 --> 00:00:45,920
+It still makes things up it trails Claude
+
+24
+00:00:45,940 --> 00:00:48,491
+on some coding tests and tasks are still
+
+25
+00:00:48,511 --> 00:00:49,595
+experimental
+
+26
+00:00:49,794 --> 00:00:50,418
+So
+
+27
+00:00:50,466 --> 00:00:52,097
+would you hand your work to an AI
+
+28
+00:00:52,117 --> 00:00:53,508
+Tell me in the comments

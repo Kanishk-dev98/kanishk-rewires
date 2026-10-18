@@ -24,3 +24,8 @@ studio/public/projects/
 projects/*/renders/*.raw.mp4
 projects/*/reports/frames/
 studio/public/media/flipkart/ad_full.mp4
+
+# Masters over GitHub's 100 MB limit (kept on disk and in ~/Downloads/Kanishk.Rewires)
+projects/decoy-effect/renders/decoy-effect_v3.mp4
+projects/flipkart-ad-breakdown/renders/flipkart-ad-breakdown_v2.mp4
+projects/flipkart-ad-breakdown/renders/flipkart-ad-breakdown_v3.mp4

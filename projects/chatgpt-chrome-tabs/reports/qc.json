@@ -1,0 +1,97 @@
+{
+  "video": "/Users/kanishk.raj/kanishk-rewires/projects/chatgpt-chrome-tabs/renders/chatgpt-chrome-tabs_v2.mp4",
+  "passed": true,
+  "checks": [
+    {
+      "check": "resolution",
+      "ok": true,
+      "detail": "1080x1920",
+      "severity": "info"
+    },
+    {
+      "check": "frame rate",
+      "ok": true,
+      "detail": "30.00 fps",
+      "severity": "info"
+    },
+    {
+      "check": "video codec",
+      "ok": true,
+      "detail": "h264",
+      "severity": "info"
+    },
+    {
+      "check": "audio",
+      "ok": true,
+      "detail": "aac 48000 Hz",
+      "severity": "info"
+    },
+    {
+      "check": "duration",
+      "ok": true,
+      "detail": "59.50 s (expected 59.40 s)",
+      "severity": "info"
+    },
+    {
+      "check": "duration target",
+      "ok": true,
+      "detail": "59.5 s vs target 30 to 60 s",
+      "severity": "info"
+    },
+    {
+      "check": "decodes clean",
+      "ok": true,
+      "detail": "no decode errors",
+      "severity": "info"
+    },
+    {
+      "check": "no black frames",
+      "ok": true,
+      "detail": "none",
+      "severity": "info"
+    },
+    {
+      "check": "no freezes in the body",
+      "ok": true,
+      "detail": "none (outro hold is intentional)",
+      "severity": "info"
+    },
+    {
+      "check": "no silent gaps",
+      "ok": true,
+      "detail": "none",
+      "severity": "info"
+    },
+    {
+      "check": "loudness",
+      "ok": true,
+      "detail": "-14.1 LUFS (target -14)",
+      "severity": "info"
+    },
+    {
+      "check": "true peak",
+      "ok": true,
+      "detail": "-1.5 dBTP",
+      "severity": "info"
+    },
+    {
+      "check": "safe area",
+      "ok": true,
+      "detail": "nothing drawn within 60 px of the sides",
+      "severity": "info"
+    },
+    {
+      "check": "brand ending",
+      "ok": true,
+      "detail": "lime px 26, cream px 484",
+      "severity": "info"
+    }
+  ],
+  "contactSheet": "/Users/kanishk.raj/kanishk-rewires/projects/chatgpt-chrome-tabs/reports/contact_sheet.png",
+  "needsHumanReview": [
+    "overlapping elements",
+    "pacing and readability",
+    "visual taste and continuity",
+    "voice delivery"
+  ]
+}
