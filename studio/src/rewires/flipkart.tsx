@@ -15,14 +15,16 @@ const cueOf = (d: SceneProps["data"]) => (name: string, fb: number): number => (
 export type Shot = { src?: string; t: number; d: number; x?: number; y?: number; aspect?: number; h?: number; rate?: number; push?: number };
 
 /** One footage shot: cover-fit by hand (Video ignores objectFit), focus x, slow push-in. */
-const ShotView: React.FC<{ s: Shot; dur: number }> = ({ s, dur }) => {
+const ShotView: React.FC<{ s: Shot; dur: number; box?: { w: number; h: number } }> = ({ s, dur, box }) => {
   const frame = useCurrentFrame();
   const aspect = s.aspect ?? 16 / 9;
-  // Ad footage is scaled taller than the frame so its burned-in subtitle band sits below the bottom edge.
-  const vh = s.h ?? (aspect > 1 ? 2240 : 1920);
-  const vw = Math.max(1080, vh * aspect);
-  const left = (1080 - vw) * (s.x ?? 0.5);
-  const top = (1920 - vh) * (s.y ?? 0);
+  const W = box?.w ?? 1080;
+  const H = box?.h ?? 1920;
+  // Ad footage is scaled taller than its frame so the burned-in subtitle band sits below the bottom edge.
+  const vh = box ? H * 1.16 : s.h ?? (aspect > 1 ? 2240 : 1920);
+  const vw = Math.max(W, vh * aspect);
+  const left = (W - vw) * (s.x ?? 0.5);
+  const top = box ? 0 : (H - vh) * (s.y ?? 0);
   const push = interpolate(frame, [0, dur], [1, 1 + (s.push ?? 0.06)], clamp);
   return (
     <AbsoluteFill style={{ background: C.charcoal, overflow: "hidden" }}>
@@ -34,7 +36,7 @@ const ShotView: React.FC<{ s: Shot; dur: number }> = ({ s, dur }) => {
 };
 
 /** Sequential cuts through a list of shots, each lasting d seconds (the last one holds to the end). */
-export const Shots: React.FC<{ shots: Shot[] }> = ({ shots }) => {
+export const Shots: React.FC<{ shots: Shot[]; box?: { w: number; h: number } }> = ({ shots, box }) => {
   const { durationInFrames: D } = useVideoConfig();
   let at = 0;
   return (
@@ -45,7 +47,7 @@ export const Shots: React.FC<{ shots: Shot[] }> = ({ shots }) => {
         at += len;
         return (
           <Sequence key={i} from={from} durationInFrames={len} layout="none">
-            <ShotView s={s} dur={len} />
+            <ShotView s={s} dur={len} box={box} />
           </Sequence>
         );
       })}
@@ -61,10 +63,6 @@ const FkTile: React.FC<{ size: number }> = ({ size }) => (
   <div style={{ width: size, height: size, borderRadius: size * 0.24, background: FK_BLUE, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 12px 30px rgba(0,0,0,0.4)", flexShrink: 0 }}>
     <Img src={staticFile("media/flipkart/flipkart-yellow.svg")} style={{ width: size * 0.62, height: size * 0.62 }} />
   </div>
-);
-
-const Credit: React.FC<{ text: string }> = ({ text }) => (
-  <div style={{ position: "absolute", right: 70, top: 240, fontFamily: MONO, fontSize: 18, letterSpacing: 2, color: "rgba(246,244,237,0.75)", background: "rgba(10,10,10,0.55)", borderRadius: 8, padding: "6px 10px" }}>{text}</div>
 );
 
 const Bubble: React.FC<{ text: string; at: number; x: number; y: number; color?: string; ink?: string; struck?: number; tail?: "left" | "right" }> = ({ text, at, x, y, color = C.cream, ink = C.charcoal, struck, tail = "left" }) => {
@@ -166,63 +164,129 @@ const DoubtOverlay: React.FC<{ c: (n: string, f: number) => number }> = ({ c }) 
   const answer = c("answer", 90);
   return (
     <>
-      <Bubble text="“Do we need one that big?”" at={doubt} x={110} y={330} struck={answer - 8} />
-      <Bubble text="“Go one size bigger.”" at={answer} x={300} y={560} color={C.lime} tail="right" />
+      <Bubble text="“Do we need one that big?”" at={doubt} x={90} y={960} struck={answer - 8} />
+      <Bubble text="“Go one size bigger.”" at={answer} x={330} y={1150} color={C.lime} tail="right" />
     </>
   );
 };
 
-const LinesOverlay: React.FC<{ data: SceneProps["data"] }> = ({ data }) => {
+// ------------------------------------------------------------------ motion-graphic beats (no footage)
+/** Living charcoal canvas: two slow brand glows and drifting lime specks, so graphic scenes never sit still. */
+export const Canvas: React.FC = () => {
   const frame = useCurrentFrame();
-  const items = data.lines as { label: string; line: string; at: number }[];
-  const cur = items.filter((it) => frame >= it.at).length - 1;
-  if (cur < 0) return null;
+  return (
+    <AbsoluteFill style={{ background: C.charcoal, overflow: "hidden" }}>
+      <div style={{ position: "absolute", width: 900, height: 900, borderRadius: "50%", left: -200 + Math.sin(frame / 50) * 120, top: 200 + Math.cos(frame / 60) * 80, background: "radial-gradient(circle, rgba(167,255,63,0.16), rgba(167,255,63,0) 65%)" }} />
+      <div style={{ position: "absolute", width: 800, height: 800, borderRadius: "50%", right: -260 + Math.cos(frame / 55) * 100, top: 900 + Math.sin(frame / 45) * 90, background: "radial-gradient(circle, rgba(40,116,240,0.14), rgba(40,116,240,0) 65%)" }} />
+      {new Array(18).fill(0).map((_, i) => {
+        const x = (i * 137) % 1000 + 40;
+        const y = ((i * 263 + frame * (0.6 + (i % 5) * 0.2)) % 2000) - 40;
+        return <div key={i} style={{ position: "absolute", left: x, top: 1920 - y, width: 6, height: 6, borderRadius: 2, background: C.lime, opacity: 0.25 + (i % 3) * 0.15 }} />;
+      })}
+    </AbsoluteFill>
+  );
+};
+
+type Craft = { label: string; line: string; brand: string; icon: string; tint: string; ad: string; at: number };
+/** A customer's everyday line flies into a phone and becomes the ad headline (example ads). */
+const CraftBeat: React.FC<{ items: Craft[] }> = ({ items }) => {
+  const frame = useCurrentFrame();
+  const cur = Math.max(0, items.filter((it) => frame >= it.at).length - 1);
   const it = items[cur];
+  const t = frame - it.at;
+  const fly = interpolate(t, [10, 30], [0, 1], { ...clamp, easing: EASE_IO });
+  const typed = it.ad.slice(0, Math.max(0, Math.floor((t - 30) * 1.6)));
+  const enter = spring({ frame: t, fps: 30, config: { damping: 14, stiffness: 160 } });
+  const tilt = Math.sin(frame / 40) * 4;
   return (
     <>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 260, display: "flex", justifyContent: "center" }}>
-        <div key={it.label} style={{ fontFamily: MONO, fontWeight: 700, fontSize: 24, letterSpacing: 6, color: C.charcoal, background: C.cream, borderRadius: 999, padding: "8px 20px" }}>{it.label}</div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 250, display: "flex", justifyContent: "center", gap: 14 }}>
+        <div style={{ fontFamily: MONO, fontWeight: 700, fontSize: 22, letterSpacing: 5, color: C.charcoal, background: C.lime, borderRadius: 999, padding: "8px 18px" }}>{it.label}</div>
+        <div style={{ fontFamily: MONO, fontWeight: 700, fontSize: 22, letterSpacing: 5, color: C.stone, border: "2px solid #333", borderRadius: 999, padding: "6px 16px" }}>EXAMPLE</div>
       </div>
-      <Bubble key={it.line} text={it.line} at={it.at + 6} x={120} y={1060} />
+      <div style={{ position: "absolute", left: 300, top: 340, width: 480, height: 940, perspective: 1600 }}>
+        <div style={{ width: "100%", height: "100%", borderRadius: 64, background: "#111", border: "10px solid #2A2A2A", boxShadow: "0 50px 120px rgba(0,0,0,0.7), 0 0 80px rgba(167,255,63,0.12)", rotate: `y ${-14 + tilt}deg`, overflow: "hidden", padding: 18 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "14px 6px" }}>
+            <div style={{ width: 52, height: 52, borderRadius: "50%", background: it.tint, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 28 }}>{it.icon}</div>
+            <div>
+              <div style={{ fontFamily: BODY, fontWeight: 700, fontSize: 22, color: C.cream }}>{it.brand}</div>
+              <div style={{ fontFamily: BODY, fontSize: 16, color: C.grey }}>Sponsored</div>
+            </div>
+          </div>
+          <div style={{ height: 420, borderRadius: 24, background: `linear-gradient(160deg, ${it.tint}, #141414)`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 170, scale: String(0.9 + 0.1 * enter) }}>{it.icon}</div>
+          <div style={{ fontFamily: HEAD, fontWeight: 700, fontSize: 38, lineHeight: 1.15, color: C.cream, padding: "22px 8px 0", minHeight: 150 }}>
+            {typed}
+            {typed.length < it.ad.length && t > 30 ? <span style={{ color: C.lime }}>▍</span> : null}
+          </div>
+          <div style={{ margin: "10px 8px", display: "inline-block", fontFamily: BODY, fontWeight: 800, fontSize: 22, color: C.charcoal, background: C.lime, borderRadius: 12, padding: "10px 18px", opacity: typed.length >= it.ad.length ? 1 : 0.25 }}>Order now</div>
+        </div>
+      </div>
+      <div style={{ position: "absolute", left: interpolate(fly, [0, 1], [70, 340]), top: interpolate(fly, [0, 1], [1150, 880]), scale: String(interpolate(fly, [0, 1], [1, 0.4])), opacity: 1 - fly, transformOrigin: "0 0" }}>
+        <div style={{ background: C.cream, color: C.charcoal, borderRadius: 30, padding: "18px 26px", fontFamily: HEAD, fontWeight: 700, fontSize: 42, whiteSpace: "nowrap", boxShadow: "0 24px 60px rgba(0,0,0,0.5)", scale: String(0.7 + 0.3 * enter) }}>{it.line}</div>
+      </div>
     </>
   );
 };
 
-const CommentsOverlay: React.FC<{ data: SceneProps["data"]; c: (n: string, f: number) => number }> = ({ data, c }) => {
-  const pop = usePop();
-  const at = c("comments", 10);
-  const rows = data.comments as { name: string; text: string }[];
+/** An Instagram-style comment sheet sliding up on cream, filling with replies and hearts. */
+const CommentSheet: React.FC<{ rows: { name: string; text: string }[]; at: number }> = ({ rows, at }) => {
+  const frame = useCurrentFrame();
+  const up = spring({ frame, fps: 30, config: { damping: 16, stiffness: 120 } });
   return (
-    <div style={{ position: "absolute", left: 80, right: 80, top: 760, display: "flex", flexDirection: "column", gap: 14 }}>
-      {rows.map((r, i) => (
-        <div key={r.name} style={{ display: "flex", gap: 16, alignItems: "center", background: "rgba(10,10,10,0.82)", border: "1.5px solid rgba(246,244,237,0.15)", borderRadius: 22, padding: "16px 20px", ...pop(at + i * 9, { rise: 26, scale: 0.94 }) }}>
-          <div style={{ width: 52, height: 52, borderRadius: "50%", background: [FK_YELLOW, C.lime, "#F28C8C", "#9FC4FF"][i % 4], display: "flex", alignItems: "center", justifyContent: "center", fontFamily: HEAD, fontWeight: 700, fontSize: 24, color: C.charcoal, flexShrink: 0 }}>{r.name[0]}</div>
-          <div>
-            <div style={{ fontFamily: BODY, fontWeight: 700, fontSize: 20, color: C.grey }}>{r.name}</div>
-            <div style={{ fontFamily: BODY, fontWeight: 600, fontSize: 30, color: C.cream }}>{r.text}</div>
+    <div style={{ position: "absolute", left: 64, right: 64, top: 300, height: 1100, borderRadius: 48, background: C.cream, translate: `0 ${(1 - up) * 900}px`, boxShadow: "0 -30px 80px rgba(0,0,0,0.5)", padding: "26px 34px" }}>
+      <div style={{ width: 90, height: 8, borderRadius: 4, background: "#CFCBBE", margin: "0 auto" }} />
+      <div style={{ textAlign: "center", fontFamily: BODY, fontWeight: 800, fontSize: 30, color: C.charcoal, marginTop: 18 }}>Comments</div>
+      {rows.map((r, i) => {
+        const a = at + i * 10;
+        const p = spring({ frame: frame - a, fps: 30, config: { damping: 13, stiffness: 180 } });
+        const liked = frame > a + 18;
+        return (
+          <div key={r.name} style={{ display: "flex", alignItems: "center", gap: 18, marginTop: 30, opacity: frame >= a ? 1 : 0, translate: `0 ${(1 - p) * 30}px` }}>
+            <div style={{ width: 66, height: 66, borderRadius: "50%", background: [FK_YELLOW, C.lime, "#F28C8C", "#9FC4FF"][i % 4], display: "flex", alignItems: "center", justifyContent: "center", fontFamily: HEAD, fontWeight: 700, fontSize: 28, color: C.charcoal }}>{r.name[0]}</div>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontFamily: BODY, fontWeight: 700, fontSize: 22, color: "#55534C" }}>{r.name.toLowerCase()}</div>
+              <div style={{ fontFamily: BODY, fontWeight: 600, fontSize: 32, color: C.charcoal }}>{r.text}</div>
+            </div>
+            <div style={{ fontSize: 34, color: liked ? RED : "#9A9A93", scale: liked ? String(1 + 0.4 * Math.max(0, 1 - (frame - a - 18) / 8)) : "1" }}>{liked ? "♥" : "♡"}</div>
           </div>
-          <div style={{ marginLeft: "auto", fontSize: 30 }}>♡</div>
-        </div>
-      ))}
+        );
+      })}
+      <div style={{ position: "absolute", left: 34, right: 34, bottom: 30, height: 80, borderRadius: 40, border: "2px solid #CFCBBE", display: "flex", alignItems: "center", padding: "0 28px", fontFamily: BODY, fontSize: 26, color: "#9A9A93" }}>
+        Add a comment…<span style={{ marginLeft: 6, color: C.charcoal, opacity: Math.floor(frame / 15) % 2 ? 1 : 0 }}>|</span>
+      </div>
     </div>
   );
 };
 
 // ------------------------------------------------------------------ the scene
+const CARD = { x: 60, y: 400, w: 960, h: 540 };
+
 export const FAdScene: React.FC<SceneProps> = ({ data }) => {
+  const frame = useCurrentFrame();
   const c = cueOf(data);
   const kind = data.overlay as string | undefined;
+  if (data.mode === "graphic") {
+    return (
+      <AbsoluteFill>
+        <Canvas />
+        {kind === "craft" ? <CraftBeat items={data.items as Craft[]} /> : null}
+        {kind === "comments" ? <CommentSheet rows={data.comments} at={c("comments", 12)} /> : null}
+      </AbsoluteFill>
+    );
+  }
+  // Ad footage is shown whole, as a floating 16:9 cinema card on the brand canvas: no crop, no stretch.
+  const enter = spring({ frame, fps: 30, config: { damping: 16, stiffness: 140 } });
   return (
-    <AbsoluteFill style={{ background: C.charcoal }}>
-      <Shots shots={data.shots as Shot[]} />
-      <Shade />
-      {data.credit ? <Credit text={data.credit} /> : null}
+    <AbsoluteFill>
+      <Canvas />
+      <div style={{ position: "absolute", left: CARD.x, top: CARD.y + Math.sin(frame / 30) * 6, width: CARD.w, height: CARD.h, borderRadius: 30, overflow: "hidden", border: "2px solid rgba(246,244,237,0.14)", boxShadow: "0 50px 120px rgba(0,0,0,0.75), 0 0 60px rgba(167,255,63,0.10)", scale: String(0.94 + 0.06 * enter) }}>
+        <Shots shots={data.shots as Shot[]} box={{ w: CARD.w, h: CARD.h }} />
+      </div>
+      {data.credit ? <div style={{ position: "absolute", right: 60, top: CARD.y + CARD.h + 18, fontFamily: MONO, fontSize: 18, letterSpacing: 2, color: "rgba(246,244,237,0.6)" }}>{data.credit}</div> : null}
       {kind === "hook" ? <HookOverlay c={c} /> : null}
       {kind === "sizes" ? <SizesOverlay c={c} /> : null}
       {kind === "bill" ? <BillOverlay c={c} /> : null}
       {kind === "doubt" ? <DoubtOverlay c={c} /> : null}
-      {kind === "lines" ? <LinesOverlay data={data} /> : null}
-      {kind === "comments" ? <CommentsOverlay data={data} c={c} /> : null}
     </AbsoluteFill>
   );
 };

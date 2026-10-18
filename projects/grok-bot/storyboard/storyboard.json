@@ -1,0 +1,292 @@
+{
+  "id": "grok-bot",
+  "title": "Grok Bot: stop chatting with AI, hire it",
+  "format": "9x16",
+  "captions": true,
+  "research": "done",
+  "captionStyle": {
+    "top": 0.755,
+    "size": 58,
+    "maxWords": 3,
+    "weight": 800
+  },
+  "voice": {
+    "provider": "edge",
+    "edge": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+6%"
+    }
+  },
+  "outro": {
+    "seconds": 2.5,
+    "size": 220,
+    "wordSize": 50,
+    "cta": "Follow for AI news that actually matters"
+  },
+  "render": {
+    "concurrency": 2,
+    "timeoutMs": 400000
+  },
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "gBot",
+      "leadIn": 2,
+      "pad": 6,
+      "energy": 3,
+      "vo": "Elon Musk's AI just got its own computer, its own email address, and a job.",
+      "cues": {
+        "computer": "computer,",
+        "email": "email"
+      },
+      "accents": [
+        "computer,",
+        "job."
+      ],
+      "claims": [
+        "email-feature-oct9",
+        "email-domain"
+      ],
+      "sourceLabel": "XAI \u00b7 @BOT, OCT 9 2026",
+      "data": {
+        "beat": "boot"
+      },
+      "visual": "A laptop slams shut; a 3D holographic AI core boots with rings and particles; its email address types in a HUD panel.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 2,
+          "volume": 0.3
+        },
+        {
+          "name": "boom",
+          "on": {
+            "cue": "computer"
+          },
+          "volume": 0.45
+        },
+        {
+          "name": "tick",
+          "on": {
+            "cue": "email"
+          },
+          "volume": 0.25
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "id": "s01",
+      "type": "gBot",
+      "pad": 8,
+      "energy": 3,
+      "vo": "It's called Grok Bot. A chatbot only answers you. This one does the work. It signs into your tools, uses them like you do, and comes back with finished work.",
+      "cues": {
+        "signs": "signs",
+        "finished": "finished"
+      },
+      "accents": [
+        "work.",
+        "finished"
+      ],
+      "claims": [
+        "launch-date",
+        "vs-grok-chat"
+      ],
+      "data": {
+        "beat": "tools"
+      },
+      "visual": "The camera orbits the core; Notion, Figma, Canva and Gmail tiles orbit it; energy beams lock on; a task-complete panel slams down.",
+      "sfx": [
+        {
+          "name": "riser",
+          "on": {
+            "cue": "signs"
+          },
+          "volume": 0.22
+        },
+        {
+          "name": "impact",
+          "on": {
+            "cue": "finished"
+          },
+          "volume": 0.45
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "id": "s02",
+      "type": "gBot",
+      "pad": 8,
+      "energy": 2,
+      "vo": "And it never clocks out. It runs on a computer in the cloud, so even after you shut your laptop, it keeps working.",
+      "cues": {
+        "laptop": "laptop,"
+      },
+      "accents": [
+        "never",
+        "working."
+      ],
+      "claims": [
+        "how-it-works-computer"
+      ],
+      "sourceLabel": "XAI DOCS",
+      "data": {
+        "beat": "cloud"
+      },
+      "visual": "A letterboxed fly-through of a glowing server hall at night; the core pulses inside; the clock runs overnight while the activity log ticks.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.25
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "id": "s03",
+      "type": "gBot",
+      "pad": 8,
+      "energy": 3,
+      "minFrames": 330,
+      "vo": "xAI says its own bot found over a hundred thousand dollars in savings, and its support team handled 175 percent more tickets without hiring. You can set one to run LinkedIn campaigns, track competitors, or clean your inbox.",
+      "cues": {
+        "savings": "hundred",
+        "tickets": "175",
+        "missions": "LinkedIn"
+      },
+      "accents": [
+        "savings,",
+        "hiring."
+      ],
+      "claims": [
+        "haggle-bot",
+        "customer-support-case",
+        "official-use-cases"
+      ],
+      "sourceLabel": "XAI NEWS (XAI-REPORTED)",
+      "data": {
+        "beat": "mission"
+      },
+      "visual": "Avengers-style mission briefing: holographic cards swing in with counters to $100,000+ and +175%; three mission tiles light up.",
+      "sfx": [
+        {
+          "name": "impact",
+          "on": {
+            "cue": "savings",
+            "offset": 20
+          },
+          "volume": 0.35
+        },
+        {
+          "name": "impact",
+          "on": {
+            "cue": "tickets",
+            "offset": 20
+          },
+          "volume": 0.35
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "id": "s04",
+      "type": "gBot",
+      "pad": 8,
+      "energy": 3,
+      "vo": "But it's not magic. Amazon is already blocking it, and you still approve anything it sends or buys.",
+      "cues": {
+        "amazon": "Amazon",
+        "approve": "approve"
+      },
+      "accents": [
+        "magic.",
+        "approve"
+      ],
+      "claims": [
+        "amazon-block",
+        "safety-controls"
+      ],
+      "data": {
+        "beat": "guard"
+      },
+      "visual": "The core turns red; an Amazon ACCESS DENIED shield shakes and shatters; an approval card appears and a tap approves the email.",
+      "sfx": [
+        {
+          "name": "boom",
+          "on": {
+            "cue": "amazon"
+          },
+          "volume": 0.4
+        },
+        {
+          "name": "click",
+          "on": {
+            "cue": "approve",
+            "offset": 20
+          },
+          "volume": 0.3
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "id": "s05",
+      "type": "gBot",
+      "pad": 8,
+      "energy": 2,
+      "vo": "It comes with X Premium and above, on Mac, Windows, Linux and iPhone.",
+      "cues": {
+        "premium": "Premium",
+        "mac": "Mac,"
+      },
+      "accents": [
+        "Premium"
+      ],
+      "claims": [
+        "x-subscription",
+        "bot-page-tiers",
+        "platforms-setup"
+      ],
+      "sourceLabel": "X.AI \u00b7 OCT 12 2026",
+      "data": {
+        "beat": "plans"
+      },
+      "visual": "Five plan cards flip up; Premium, Super and Ultra light lime with '+ Grok Bot'; platform logos spin in.",
+      "sfx": [
+        {
+          "name": "ding",
+          "on": {
+            "cue": "premium"
+          },
+          "volume": 0.3
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "id": "s06",
+      "type": "gBot",
+      "pad": 14,
+      "energy": 2,
+      "vo": "Would you hire an AI teammate? Tell me in the comments.",
+      "accents": [
+        "hire"
+      ],
+      "data": {
+        "beat": "off"
+      },
+      "visual": "The core collapses into a single point of light.",
+      "sfx": [
+        {
+          "name": "riser",
+          "on": 0,
+          "volume": 0.2
+        }
+      ],
+      "bleed": true
+    }
+  ]
+}

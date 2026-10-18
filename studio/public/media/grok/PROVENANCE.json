@@ -1,0 +1,37 @@
+{
+  "notion.svg": {
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/notion.svg",
+    "license": "CC0 (Simple Icons); trademarks of their owners, nominative use"
+  },
+  "figma.svg": {
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/figma.svg",
+    "license": "CC0 (Simple Icons); trademarks of their owners, nominative use"
+  },
+  "canva.svg": {
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/canva.svg",
+    "license": "CC0 (Simple Icons); trademarks of their owners, nominative use"
+  },
+  "gmail.svg": {
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/gmail.svg",
+    "license": "CC0 (Simple Icons); trademarks of their owners, nominative use"
+  },
+  "x.svg": {
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/x.svg",
+    "license": "CC0 (Simple Icons); trademarks of their owners, nominative use"
+  },
+  "amazon.svg": {
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/amazon.svg",
+    "license": "CC0 (Simple Icons); trademarks of their owners, nominative use"
+  },
+  "apple.svg": {
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/apple.svg",
+    "license": "CC0 (Simple Icons); trademarks of their owners, nominative use"
+  },
+  "linux.svg": {
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/linux.svg",
+    "license": "CC0 (Simple Icons); trademarks of their owners, nominative use"
+  },
+  "windows-c.svg": {
+    "source": "drawn in-house (four-pane mark, nominative use)"
+  }
+}

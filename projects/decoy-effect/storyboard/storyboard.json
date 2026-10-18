@@ -90,10 +90,9 @@
     },
     {
       "id": "s01",
-      "type": "dReel",
+      "type": "dGraphic",
       "pad": 8,
       "energy": 3,
-      "bleed": true,
       "minFrames": 330,
       "vo": "Picture this. Small is two hundred rupees. Large is four fifty. That's a big jump, so most people pick small. Now add a medium at four twenty. Suddenly the large is just thirty rupees more, and it feels like a steal.",
       "cues": {
@@ -108,7 +107,8 @@
         "c9"
       ],
       "data": {
-        "overlay": "flow",
+        "overlay": "popcorn",
+        "board": "flow",
         "opts": [
           {
             "name": "Small",
@@ -121,23 +121,6 @@
           {
             "name": "Large",
             "price": "\u20b9450"
-          }
-        ],
-        "shots": [
-          {
-            "src": "media/decoy/stock/popcorn_counter.mp4",
-            "t": 0.5,
-            "d": 5.5,
-            "aspect": 1.778,
-            "h": 1920,
-            "x": 0.5
-          },
-          {
-            "src": "media/decoy/stock/cinema_people.mp4",
-            "t": 0.5,
-            "d": 7,
-            "aspect": 0.527,
-            "x": 0.5
           }
         ]
       },
@@ -163,10 +146,9 @@
     },
     {
       "id": "s02",
-      "type": "dReel",
+      "type": "dGraphic",
       "pad": 8,
       "energy": 2,
-      "bleed": true,
       "vo": "The medium isn't there to be bought. It's there to make the large look cheap. That's the decoy effect.",
       "cues": {
         "decoy": "medium"
@@ -179,7 +161,8 @@
         "c8"
       ],
       "data": {
-        "overlay": "decoy",
+        "overlay": "popcorn",
+        "board": "decoy",
         "opts": [
           {
             "name": "Small",
@@ -192,15 +175,6 @@
           {
             "name": "Large",
             "price": "\u20b9450"
-          }
-        ],
-        "shots": [
-          {
-            "src": "media/decoy/stock/cinema_people.mp4",
-            "t": 7.5,
-            "d": 7,
-            "aspect": 0.527,
-            "x": 0.5
           }
         ]
       },
@@ -218,10 +192,9 @@
     },
     {
       "id": "s03",
-      "type": "dReel",
+      "type": "dGraphic",
       "pad": 8,
       "energy": 2,
-      "bleed": true,
       "minFrames": 360,
       "vo": "A professor tested this with magazine subscriptions. Online only, fifty nine dollars. Print only, one twenty five. Print plus online, also one twenty five. Most people picked the combo. Remove the useless print-only option, and most switched to the cheap one.",
       "cues": {
@@ -240,9 +213,7 @@
       ],
       "sourceLabel": "DAN ARIELY, PREDICTABLY IRRATIONAL (2008)",
       "data": {
-        "overlay": "test",
-        "tag": "CLASSROOM DEMO",
-        "note": "OUT OF 100 STUDENTS, EACH ROUND",
+        "overlay": "subscribe",
         "opts": [
           {
             "name": "Online",
@@ -266,23 +237,6 @@
           68,
           0,
           32
-        ],
-        "shots": [
-          {
-            "src": "media/decoy/stock/magazine.mp4",
-            "t": 0.3,
-            "d": 6,
-            "aspect": 0.5625,
-            "x": 0.45,
-            "push": 0.12
-          },
-          {
-            "src": "media/decoy/stock/laptop_reading.mp4",
-            "t": 0.5,
-            "d": 8,
-            "aspect": 0.5625,
-            "x": 0.6
-          }
         ]
       },
       "visual": "Hands turning newspaper pages, then a reader on a tablet; three subscription cards: 84 pick the combo; the Print card falls away and 68 switch to Online.",
@@ -306,10 +260,9 @@
     },
     {
       "id": "s04",
-      "type": "dReel",
+      "type": "dGraphic",
       "pad": 8,
       "energy": 3,
-      "bleed": true,
       "minFrames": 300,
       "vo": "Use it in your business. Say your gym sells monthly for fifteen hundred, and yearly for twelve thousand. Add a six month plan at ten thousand, and yearly suddenly looks like the obvious deal.",
       "cues": {
@@ -325,7 +278,7 @@
         "c16"
       ],
       "data": {
-        "overlay": "gym",
+        "overlay": "gymapp",
         "opts": [
           {
             "name": "Monthly",
@@ -341,16 +294,6 @@
             "name": "Yearly",
             "price": "\u20b912,000",
             "sub": "\u20b91,000 / month"
-          }
-        ],
-        "shots": [
-          {
-            "src": "media/flipkart/stock/gym.mp4",
-            "t": 0.2,
-            "d": 9,
-            "aspect": 0.5625,
-            "x": 0.5,
-            "rate": 0.75
           }
         ]
       },
@@ -374,25 +317,15 @@
     },
     {
       "id": "s05",
-      "type": "dReel",
+      "type": "dGraphic",
       "pad": 14,
       "energy": 2,
-      "bleed": true,
       "vo": "Save this before you price your next offer.",
       "accents": [
         "Save"
       ],
       "data": {
-        "overlay": "save",
-        "shots": [
-          {
-            "src": "media/decoy/stock/popcorn_closeup.mp4",
-            "t": 9,
-            "d": 4,
-            "aspect": 0.527,
-            "x": 0.4
-          }
-        ]
+        "overlay": "save"
       },
       "visual": "The popcorn close-up again; a lime bookmark pops in.",
       "sfx": [

@@ -303,56 +303,45 @@
       "type": "fAd",
       "pad": 8,
       "energy": 2,
-      "bleed": true,
       "vo": "Your customers have a line like that too. Find the words they already use, and build your ad around them.",
       "accents": [
         "line",
         "words"
       ],
       "data": {
-        "overlay": "lines",
-        "lines": [
+        "mode": "graphic",
+        "overlay": "craft",
+        "items": [
           {
             "label": "CAF\u00c9",
             "line": "\u201cThe usual, please.\u201d",
+            "brand": "Brew House",
+            "icon": "\u2615",
+            "tint": "#6B4226",
+            "ad": "Your usual. Ready before you ask.",
             "at": 0
           },
           {
             "label": "GYM",
             "line": "\u201cI'll start Monday.\u201d",
-            "at": 60
+            "brand": "Iron Club",
+            "icon": "\ud83c\udfcb\ufe0f",
+            "tint": "#1F3A5F",
+            "ad": "Monday starts today. First week free.",
+            "at": 58
           },
           {
             "label": "ONLINE STORE",
             "line": "\u201cAdding to cart, for later.\u201d",
-            "at": 120
-          }
-        ],
-        "shots": [
-          {
-            "src": "media/flipkart/stock/cafe.mp4",
-            "t": 0.5,
-            "d": 2.0,
-            "aspect": 0.5625,
-            "x": 0.5
-          },
-          {
-            "src": "media/flipkart/stock/gym.mp4",
-            "t": 0.5,
-            "d": 2.0,
-            "aspect": 0.5625,
-            "x": 0.5
-          },
-          {
-            "src": "media/flipkart/stock/phone_shopping.mp4",
-            "t": 0.5,
-            "d": 3,
-            "aspect": 0.5625,
-            "x": 0.5
+            "brand": "Loom & Co.",
+            "icon": "\ud83d\udecd\ufe0f",
+            "tint": "#4A2A5E",
+            "ad": "Still thinking? It's 10% off till midnight.",
+            "at": 116
           }
         ]
       },
-      "visual": "Real footage of a caf\u00e9, a gym and phone shopping; each shot gets its customer's everyday line.",
+      "visual": "Motion graphics: a customer's everyday line flies into a phone and types out as the ad headline; caf\u00e9, gym, online store (example ads).",
       "sfx": [
         {
           "name": "whoosh",
@@ -366,7 +355,6 @@
       "type": "fAd",
       "pad": 14,
       "energy": 2,
-      "bleed": true,
       "vo": "What's the line your mom always said? Tell me in the comments.",
       "cues": {
         "comments": "line"
@@ -376,8 +364,8 @@
         "comments."
       ],
       "data": {
+        "mode": "graphic",
         "overlay": "comments",
-        "credit": "AD: FLIPKART \u00d7 22FEET",
         "comments": [
           {
             "name": "Riya",
@@ -395,17 +383,9 @@
             "name": "Dev",
             "text": "Buy one size bigger \ud83d\ude02"
           }
-        ],
-        "shots": [
-          {
-            "t": 68.6,
-            "d": 4,
-            "x": 0.5,
-            "rate": 0.8
-          }
         ]
       },
-      "visual": "The family laughing in front of the new TV; example comments with classic mom lines stack up.",
+      "visual": "A cream Instagram comment sheet slides up and fills with classic mom lines, hearts popping.",
       "sfx": [
         {
           "name": "click",
