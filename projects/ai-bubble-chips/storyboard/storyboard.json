@@ -1,0 +1,87 @@
+{
+  "id": "ai-bubble-chips",
+  "title": "Is the AI bubble cracking?",
+  "format": "9x16",
+  "captions": true,
+  "research": "done",
+  "captionStyle": { "top": 0.755, "size": 56, "maxWords": 3, "weight": 800 },
+  "voice": { "provider": "edge", "edge": { "voice": "en-US-AndrewMultilingualNeural", "rate": "+6%" } },
+  "outro": { "seconds": 2.5, "size": 220, "wordSize": 50, "cta": "Follow for AI news that actually matters" },
+  "render": { "concurrency": 4, "timeoutMs": 240000 },
+  "scenes": [
+    {
+      "id": "s00", "type": "mCandles", "leadIn": 2, "pad": 6, "energy": 3,
+      "vo": "Chip stocks just fell eight days in a row. The last time that happened was October 2008.",
+      "cues": { "start": "fell", "echo": "October" }, "accents": ["eight", "2008."], "claims": ["sox-streak", "sox-streak-detail"], "sourceLabel": "INVESTING.COM · TECHI · OCT 17, 2026",
+      "data": { "n": 8, "levels": [13217.8, 12970.5, 12727.8, 12489.7, 12256.0, 12026.7, 11801.7, 11580.8, 11137.3], "label": "PHLX SEMICONDUCTOR INDEX · OCT 7 TO 16",
+        "ticker": ["SOX -3.83%", "AMD -5.95%", "INTC -5.79%", "MU -5.63%", "MRVL -5.56%", "AVGO -4.52%", "NVDA -1.43%"] },
+      "visual": "Eight red candles drop one by one under a scrolling ticker; the counter ticks to -15.7%; an OCT 2008 tag lands.",
+      "sfx": [{ "name": "tick", "on": { "cue": "start" }, "volume": 0.2 }, { "name": "boom", "on": { "cue": "echo" }, "volume": 0.4 }]
+    },
+    {
+      "id": "s01", "type": "mWipe", "pad": 6, "energy": 3,
+      "vo": "Up to two trillion dollars in value, gone in under two weeks.",
+      "cues": { "go": "Up" }, "accents": ["trillion"], "claims": ["value-wiped-reuters", "value-wiped-2t-8sessions"],
+      "data": { "label": "CHIP STOCKS · MARKET VALUE", "source": "REUTERS: $1.64T IN 6 SESSIONS · ~$2T WITH OCT 15" },
+      "visual": "A wall of green value blocks turns red and blows away; the counter climbs to -$1.6T to $2T.",
+      "sfx": [{ "name": "riser", "on": { "cue": "go" }, "volume": 0.22 }, { "name": "impact", "on": { "cue": "go", "offset": 40 }, "volume": 0.35 }]
+    },
+    {
+      "id": "s02", "type": "mMovers", "pad": 6, "energy": 2,
+      "vo": "The pain hit the whole sector. But look who fell the least.",
+      "cues": { "go": "pain" }, "accents": ["least."], "claims": ["stock-moves-streak"],
+      "data": { "label": "OCT 6 TO 16 · BIGGEST NAMES", "note": "SOURCE: TECHI, OCT 17, 2026",
+        "ticker": ["ARM -24.7%", "INTC -20.1%", "MEMORY -20.6%", "NVDA -10.5%"],
+        "rows": [{ "name": "Arm", "v": -24.7 }, { "name": "Memory stocks (avg)", "v": -20.6 }, { "name": "Intel", "v": -20.1 }, { "name": "Nvidia", "v": -10.5, "hl": true }] },
+      "visual": "A leaderboard of red bars; Nvidia's shorter bar glows lime.",
+      "sfx": [{ "name": "whoosh", "on": { "cue": "go" }, "volume": 0.2 }]
+    },
+    {
+      "id": "s03", "type": "mCauses", "pad": 8, "energy": 2,
+      "vo": "So what's spooking investors? Doubts that AI spending will pay off. Data centres built on debt. And stubborn inflation pushing rates up.",
+      "cues": { "c0": "Doubts", "c1": "debt.", "c2": "inflation", "c3": "rates" }, "accents": ["pay", "debt."], "claims": ["causes", "capex-2026"],
+      "data": { "label": "WHAT'S SPOOKING THE MARKET",
+        "items": [
+          { "k": "BIG TECH AI CAPEX '26", "v": "$700-800B", "sub": "Spend vs returns", "cue": "c0" },
+          { "k": "COREWEAVE BOND YIELD", "v": ">15%", "sub": "Distress territory", "cue": "c1" },
+          { "k": "US INFLATION · SEP", "v": "3.7%", "sub": "Hotter than hoped", "cue": "c2" },
+          { "k": "10-YEAR YIELD", "v": "5.1%", "sub": "Money got pricier", "cue": "c3" }] },
+      "visual": "Four pressure cards shake in red as each cause is named.",
+      "sfx": [{ "name": "tick", "on": { "cue": "c1" }, "volume": 0.2 }, { "name": "tick", "on": { "cue": "c3" }, "volume": 0.2 }]
+    },
+    {
+      "id": "s04", "type": "mDebate", "pad": 8, "energy": 2,
+      "vo": "Broadcom's CEO says some investors are almost in a casino. Nvidia's Jensen Huang says it's all going to pass.",
+      "cues": { "bear": "Broadcom's", "bull": "Nvidia's" }, "accents": ["casino.", "pass."], "claims": ["quote-hock-tan", "quote-huang"],
+      "data": { "label": "THE DEBATE",
+        "bear": { "who": "Hock Tan", "role": "CEO, BROADCOM · FORTUNE, OCT 15" },
+        "bull": { "who": "Jensen Huang", "role": "CEO, NVIDIA · BLOOMBERG, OCT 16" } },
+      "visual": "Bear card lights red, then the bull card lights lime, with vs between.",
+      "sfx": [{ "name": "impact", "on": { "cue": "bear" }, "volume": 0.3 }, { "name": "impact", "on": { "cue": "bull" }, "volume": 0.3 }]
+    },
+    {
+      "id": "s05", "type": "mDotcom", "pad": 8, "energy": 2, "minFrames": 220,
+      "vo": "For scale: after the dot com peak, the Nasdaq fell seventy eight percent and took fifteen years to recover. Chips are down about sixteen percent, and still up sixty four percent this year.",
+      "cues": { "draw": "dot", "now": "Chips" }, "accents": ["fifteen", "sixty"], "claims": ["dotcom", "runup-ytd"], "sourceLabel": "NPR/AP 2015 · 24/7 WALL ST, OCT 17",
+      "data": { "label": "NASDAQ 2000 → 2015 · SHAPE ILLUSTRATIVE" },
+      "visual": "The dot-com crash and slow recovery line draws; then two cards compare chips' -16% with +64% YTD.",
+      "sfx": [{ "name": "whoosh", "on": { "cue": "now" }, "volume": 0.25 }]
+    },
+    {
+      "id": "s06", "type": "mMeter", "pad": 10, "energy": 2, "minFrames": 220,
+      "vo": "So, bubble or reset? Nobody can prove it yet. But money for AI is getting pickier. If you're building with AI, show real revenue, not just hype.",
+      "cues": { "settle": "Nobody", "rules": "money" }, "accents": ["pickier.", "revenue,"], "claims": ["takeaways", "quote-ubs"],
+      "data": { "rules": ["Plan runway as if the next round is harder", "Customers paying beats an AI story", "Know what your equity is tied to"] },
+      "visual": "A needle swings between RESET and BUBBLE then settles on UNPROVEN; three founder rules land.",
+      "sfx": [{ "name": "tick", "on": { "cue": "rules" }, "volume": 0.2 }]
+    },
+    {
+      "id": "s07", "type": "mPoll", "pad": 14, "energy": 2,
+      "vo": "What's your call? Tell me below.",
+      "cues": { "go": "call?" }, "accents": ["call?"],
+      "data": {},
+      "visual": "Two poll bars, Bubble and Reset, sway as votes come in.",
+      "sfx": [{ "name": "click", "on": { "cue": "go", "offset": 10 }, "volume": 0.2 }]
+    }
+  ]
+}

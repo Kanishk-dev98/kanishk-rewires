@@ -1,0 +1,80 @@
+{
+  "id": "decoy-effect",
+  "title": "The decoy effect",
+  "format": "9x16",
+  "captions": true,
+  "research": "done",
+  "captionStyle": { "top": 0.755, "size": 56, "maxWords": 3, "weight": 800 },
+  "voice": { "provider": "edge", "edge": { "voice": "en-US-AndrewMultilingualNeural", "rate": "+6%" } },
+  "outro": { "seconds": 2.5, "size": 220, "wordSize": 50, "cta": "Follow for business psychology that sells" },
+  "render": { "concurrency": 4, "timeoutMs": 240000 },
+  "scenes": [
+    {
+      "id": "s00", "type": "dOffers", "leadIn": 2, "pad": 6, "energy": 3,
+      "vo": "Nobody picked this option. And that's exactly why it worked.",
+      "cues": { "flow": "Nobody" }, "accents": ["Nobody", "worked."],
+      "data": { "mode": "hook", "shares": [16, 0, 84], "highlight": 1 },
+      "visual": "Three price cards; 100 dots pour in; the middle card stays at 0/100 with a red ring.",
+      "sfx": [{ "name": "whoosh", "on": 2, "volume": 0.25 }, { "name": "impact", "on": { "frac": 0.6 }, "volume": 0.35 }]
+    },
+    {
+      "id": "s01", "type": "dOffers", "pad": 6, "energy": 2,
+      "vo": "In a classroom demo from his 2008 book, Dan Ariely showed a hundred MIT students three Economist offers.",
+      "cues": { "o0": "three", "o1": "Economist", "o2": "offers." }, "accents": ["hundred", "three"], "claims": ["c1", "c3"], "sourceLabel": "ARIELY, PREDICTABLY IRRATIONAL (2008)",
+      "data": { "mode": "intro", "label": "CLASSROOM DEMO · 100 STUDENTS" },
+      "visual": "A crowd of 100 dots waits below; the three Economist offer cards pop in on the word.",
+      "sfx": [{ "name": "tick", "on": { "cue": "o0" }, "volume": 0.2 }, { "name": "tick", "on": { "cue": "o2" }, "volume": 0.2 }]
+    },
+    {
+      "id": "s02", "type": "dOffers", "pad": 8, "energy": 3,
+      "vo": "Look closely. Print alone costs the same as print plus web. Eighty four picked the bundle. Nobody picked print alone.",
+      "cues": { "flow": "Eighty" }, "accents": ["same", "Nobody"], "claims": ["c1"],
+      "data": { "mode": "vote", "shares": [16, 0, 84], "highlight": 1 },
+      "visual": "The decoy card rings red; then the dots fly into the cards: 16 web, 0 print, 84 bundle glowing lime.",
+      "sfx": [{ "name": "riser", "on": { "cue": "flow", "offset": -10 }, "volume": 0.2 }, { "name": "ding", "on": { "cue": "flow", "offset": 30 }, "volume": 0.3 }]
+    },
+    {
+      "id": "s03", "type": "dOffers", "pad": 8, "energy": 3,
+      "vo": "Then he removed the useless option. A new group, same two prices. Only thirty two chose the bundle.",
+      "cues": { "kill": "removed", "flow": "new" }, "accents": ["removed", "thirty"], "claims": ["c2"],
+      "data": { "mode": "remove", "fromShares": [16, 0, 84], "shares": [68, 0, 32] },
+      "visual": "The print-only card is stamped REMOVED and falls away; the dots re-flow to 68 web and 32 bundle.",
+      "sfx": [{ "name": "impact", "on": { "cue": "kill" }, "volume": 0.4 }, { "name": "whoosh", "on": { "cue": "flow" }, "volume": 0.25 }]
+    },
+    {
+      "id": "s04", "type": "dDominance", "pad": 8, "energy": 2,
+      "vo": "That's the decoy effect. Next to a worse deal at the same price, the bundle feels like getting web for free.",
+      "cues": { "rows": "worse", "steal": "free." }, "accents": ["decoy", "free."], "claims": ["c8"],
+      "data": {},
+      "visual": "A decoy vs target table: the decoy loses on every row; a lime 'Web free' sticker slams in.",
+      "sfx": [{ "name": "ding", "on": { "cue": "steal" }, "volume": 0.3 }]
+    },
+    {
+      "id": "s05", "type": "dMenu", "pad": 6, "energy": 2,
+      "vo": "Picture a cinema menu. The medium is there to make the large look cheap.",
+      "cues": { "s": "Picture", "m": "medium", "l": "large", "pick": "cheap." }, "accents": ["medium", "cheap."], "claims": ["c9"],
+      "data": { "items": [{ "size": "SMALL", "price": "₹200", "cue": "s", "h": 190 }, { "size": "MEDIUM", "price": "₹420", "cue": "m", "h": 270 }, { "size": "LARGE", "price": "₹450", "cue": "l", "h": 340 }], "pill": "+₹30 OVER MEDIUM" },
+      "visual": "Three popcorn tubs rise; the large turns lime with a +₹30 pill. Labelled illustrative.",
+      "sfx": [{ "name": "tick", "on": { "cue": "pick" }, "volume": 0.25 }]
+    },
+    {
+      "id": "s06", "type": "dReality", "pad": 8, "energy": 2,
+      "vo": "But here's the honest part. In three point six million real wine purchases, decoys moved choices by about one percent.",
+      "cues": { "count": "three", "pct": "one" }, "accents": ["honest", "one"], "claims": ["c11"],
+      "data": {},
+      "visual": "A wall of wine-bottle tiles lights up as a counter climbs to 3,600,000; a thin lime bar fills to about 1%.",
+      "sfx": [{ "name": "riser", "on": { "cue": "count" }, "volume": 0.18 }]
+    },
+    {
+      "id": "s07", "type": "dBuild", "pad": 14, "energy": 2, "minFrames": 220,
+      "vo": "So use it carefully. Put a real, slightly worse option next to the plan you want to sell, and test it. Save this for your next pricing page.",
+      "cues": { "decoy": "real,", "side": "sell,", "test": "test" }, "accents": ["real,", "test"], "claims": ["c15", "c16"],
+      "data": { "plans": [
+        { "name": "Basic", "price": "₹999", "feats": ["5 projects", "Email support"] },
+        { "name": "Plus", "price": "₹2,299", "feats": ["15 projects", "✕ Priority support", "✕ Analytics"], "role": "decoy" },
+        { "name": "Pro", "price": "₹2,499", "feats": ["Unlimited projects", "Priority support", "Analytics"], "role": "target" }] },
+      "visual": "A pricing page: the decoy plan drops in beside Pro; Pro glows; an A/B test bar shows Pro's share rising (example numbers).",
+      "sfx": [{ "name": "click", "on": { "cue": "decoy" }, "volume": 0.25 }, { "name": "ding", "on": { "cue": "test", "offset": 20 }, "volume": 0.25 }]
+    }
+  ]
+}

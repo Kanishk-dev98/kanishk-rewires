@@ -19,10 +19,13 @@ import { CINE_SCENES } from "./cineScenes";
 import { PROMO_SCENES } from "./promo";
 import { HEAT_SCENES } from "./heat";
 import { GEM_SCENES } from "./gemini";
+import { DECOY_SCENES } from "./decoy";
+import { AD_SCENES } from "./adBreak";
+import { MARKET_SCENES } from "./market";
 import { TUT_SCENES } from "./tutScenes";
 import { UI_SCENES } from "./uiScenes";
 
-const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES, ...PROMO_SCENES, ...HEAT_SCENES, ...GEM_SCENES };
+const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES, ...PROMO_SCENES, ...HEAT_SCENES, ...GEM_SCENES, ...DECOY_SCENES, ...AD_SCENES, ...MARKET_SCENES };
 
 export type Sfx = { src: string; at: number; volume?: number };
 export type RewiresScene = {
@@ -126,7 +129,7 @@ export const Rewires: React.FC<RewiresProps> = ({ scenes, captions, showCaptions
           <Sequence key={i} from={starts[i]} durationInFrames={s.dur} premountFor={fps} name={`${i} ${s.type}`}>
             <Entrance kind={s.transition}>
               {Scene ? <Scene data={s.data} /> : null}
-              {/^(p|h|g)[A-Z]/.test(s.type) ? null : <Vignette strength={isDark(s.data) ? 0.5 : 0.12} />}
+              {/^(p|h|g|d|a|m)[A-Z]/.test(s.type) ? null : <Vignette strength={isDark(s.data) ? 0.5 : 0.12} />}
               {s.source ? <SourceTag text={s.source} dark={isDark(s.data)} captionTop={showCaptions ? captionStyle?.top : undefined} /> : null}
             </Entrance>
             {s.vo ? (
