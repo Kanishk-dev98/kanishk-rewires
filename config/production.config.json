@@ -20,7 +20,8 @@
     "minSceneFrames": 45
   },
   "music": { "bpm": 120, "volume": 0.13, "duckedVolume": 0.09 },
-  "render": { "codec": "h264", "crf": 16, "concurrency": 6, "audioBitrate": "256k", "sampleRate": 48000 },
+  "render": { "codec": "h264", "crf": 10, "concurrency": 6, "audioBitrate": "320k", "sampleRate": 48000 },
+  "delivery": { "videoBitrate": "20M", "maxrate": "28M", "bufsize": "40M", "preset": "slow", "grain": 3 },
   "loudness": { "targetLufs": -14, "truePeak": -1.5, "toleranceLu": 1.5 },
   "qc": {
     "blackMinSeconds": 0.5,
