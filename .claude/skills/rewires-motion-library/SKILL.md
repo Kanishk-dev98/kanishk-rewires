@@ -5,7 +5,7 @@ description: Catalogue of premium motion-graphics techniques studied from the us
 
 # Kanishk.Rewires motion library
 
-Source breakdowns are in `research/reference-videos/ref-*/ANALYSIS.md`. These are **techniques**, not assets: never reuse the creators' footage, handles, logos or copy. Always translate the colours to ours: coral or blue accents become **lime #A7FF3F**, cream stays **#F6F4ED**, dark scenes are **#0A0A0A**, the secondary accent (cursors, labels) is **stone #D9D6CC** or **pale lime #E8FFB8**, and a serif italic accent word uses Instrument Serif italic.
+Source breakdowns are in `research/reference-videos/ref-*/ANALYSIS.md` (newest benchmark: ref-DepnbyJsLYK, @princegupta.ai, with zero stock footage, headline-as-caption and real product UIs). These are **techniques**, not assets: never reuse the creators' footage, handles, logos or copy. Always translate the colours to ours: coral or blue accents become **lime #A7FF3F**, cream stays **#F6F4ED**, dark scenes are **#0A0A0A**, the secondary accent (cursors, labels) is **stone #D9D6CC** or **pale lime #E8FFB8**, and a serif italic accent word uses Instrument Serif italic.
 
 ## Rules every technique follows
 
@@ -47,6 +47,12 @@ Status: ✅ exists in the engine · 🧩 partly exists · 🆕 build when first 
 | 23 | Tutorial grammar (ref-1000319940) | Progress bar, STEP N, a serif title with an italic accent, a persistent terminal, keyword captions, a Comment CTA | Step-by-step tutorials | `tut.tsx`, `tutScenes.tsx` | ✅ |
 | 24 | Realistic product UIs | LinkedIn, Apollo, HubSpot, Publora screens in real colours | Tool walkthroughs | `real.tsx` | ✅ |
 | 25 | Cinematic news | Letterbox, a tracked real-footage window, spec shatter, headline wall, a graded crowd, viral growth | Newsjacking and trend pieces | `cineScenes.tsx`, `cine3d.tsx` | ✅ |
+| 26 | Headline-as-caption + selection highlight (ref-DepnbyJsLYK R1, R2) | The spoken line builds word by word at the top in mixed type (grey sans, a bold key word, an italic serif accent); the emphasis word gets a Figma-style selection box with handles; no bottom subtitles | Every reel: one text system, no duplicate text | `KineticHeadline`: per-word blur-in, accent weights from `accents`, lime selection box with corner handles | 🆕 |
+| 27 | Hub-and-chips diagram (R4) | A central node with a progress ring; satellite chips pop in on their words and get green checks | Explaining systems, agents, tool stacks | Polar layout, cue-timed chips, ring dashoffset | 🆕 |
+| 28 | Real screenshot browser pan (R7) | The real README or site in a browser frame slowly pans and zooms to what's being named | Proving a product claim | `Browser` plus an image or recreated UI; translate and scale on cues | 🧩 (`real.tsx` Browser) |
+| 29 | Two-layer concept + run log (R8) | A concept card above (step highlight moves) and a terminal log below adding ✓ lines | How-it-works for AI tools | Two stacked panels synced to cues | 🆕 |
+| 30 | Dark-to-light act switch (R12) | A circular cream wipe flips the film into a light second act at the twist | "But here's the crazy part" moments | clip-path circle from the centre, charcoal to cream | 🆕 |
+| 31 | CTA UI journey (R13) | Profile card Follow → Following, the comment keyword typed, a DM reply with a link card | Comment-to-DM CTAs | Profile, comment and DM cards; cursor with a click ripple | 🧩 (comment sheet) |
 
 ## Picking techniques for a script
 
