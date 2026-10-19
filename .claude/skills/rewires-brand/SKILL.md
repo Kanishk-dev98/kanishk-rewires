@@ -44,3 +44,9 @@ Space Grotesk (headlines) · Inter (body, captions) · IBM Plex Mono (labels, da
 - No em or en dashes on screen. Exact brand spellings. Short lines, deliberate breaks (`\n` in scene text).
 - In scene text, `*word*` marks the lime accent. Use one or two per scene, never every line.
 - Captions highlight at most one word per scene, and only when the on-screen text does not already accent it.
+
+## Third-party brand logos (HARD RULE)
+- Always use the **official full-colour logo**, unaltered, e.g. Google's four-colour G, Gmail's M, Figma's five colours, the Gemini gradient. Never use a monochrome Simple Icons glyph or a logo recoloured to our palette.
+- Source: the brand's press or brand-resources page, or the official Wikimedia Commons SVG. Store it in `studio/public/media/logos/` with a PROVENANCE entry.
+- Simple Icons only for brands whose real logo is single-colour (X, Apple, Notion), in that real colour.
+- Check every logo on the storyboard board before the full render.
