@@ -11,6 +11,7 @@ import { REWIRES_DEMO } from "./rewires/demo";
 import { Cine3D } from "./rewires/cine3d";
 import { Thumb16, Thumb916 } from "./rewires/promo";
 import { ThumbFrog, ThumbHeat } from "./rewires/heat";
+import { ThumbMin } from "./rewires/covers";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -72,6 +73,7 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{ photo: "media/frog/cover_frog.jpg", kicker: "THE BOILING FROG EFFECT", line1: "Your business is", accent: "slowly boiling.", temp: 88, guides: false }}
       />
       <Composition id="ThumbHeat" component={ThumbHeat} durationInFrames={1} fps={30} width={1080} height={1920} defaultProps={{ kicker: "THE BOILING FROG EFFECT", line1: "Is your business", line2: "slowly", accent: "boiling?", guides: false }} />
+      <Composition id="ThumbMin" component={ThumbMin} durationInFrames={1} fps={30} width={1080} height={1920} defaultProps={{ light: true, line1: "AI that", accent: "upgrades itself", hero: { kind: "loop", label: "Harness", sup: "2" }, guides: false }} />
       <Composition id="RewiresOutro" component={LogoReveal} durationInFrames={90} fps={30} width={1080} height={1920} defaultProps={{}} />
       <Composition id="RewiresOutroWide" component={LogoReveal} durationInFrames={90} fps={30} width={1920} height={1080} defaultProps={{}} />
     </Folder>

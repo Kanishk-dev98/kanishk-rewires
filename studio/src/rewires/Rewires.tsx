@@ -11,7 +11,7 @@ import {
 } from "remotion";
 import { Img } from "remotion";
 import { BRAND, C, clamp, EASE, EASE_IO, MONO } from "./brand";
-import { Caption, Captions } from "./Captions";
+import { Caption, Captions, HeadlineCaptions } from "./Captions";
 import { Grain, SourceTag, Vignette } from "./fx";
 import { LogoReveal } from "./LogoReveal";
 import { isDark, SceneData, SCENES as TYPE_SCENES } from "./scenes";
@@ -26,10 +26,11 @@ import { FK_SCENES } from "./flipkart";
 import { DX_SCENES } from "./decoyReel";
 import { GROK_SCENES } from "./grok";
 import { AGENT_THREAD_SCENES } from "./agentThread";
+import { EXPLAINER_SCENES } from "./explainer";
 import { TUT_SCENES } from "./tutScenes";
 import { UI_SCENES } from "./uiScenes";
 
-const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES, ...PROMO_SCENES, ...HEAT_SCENES, ...GEM_SCENES, ...DECOY_SCENES, ...AD_SCENES, ...MARKET_SCENES, ...FK_SCENES, ...DX_SCENES, ...GROK_SCENES, ...AGENT_THREAD_SCENES };
+const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES, ...PROMO_SCENES, ...HEAT_SCENES, ...GEM_SCENES, ...DECOY_SCENES, ...AD_SCENES, ...MARKET_SCENES, ...FK_SCENES, ...DX_SCENES, ...GROK_SCENES, ...AGENT_THREAD_SCENES, ...EXPLAINER_SCENES };
 
 export type Sfx = { src: string; at: number; volume?: number };
 export type RewiresScene = {
@@ -53,7 +54,7 @@ export type RewiresProps = {
   outro: { dur: number; sound: string | null; nodes?: string[]; cta?: string; size?: number; wordSize?: number };
   /** Small persistent brand mark, and an optional step rail (scene data.layer picks the active step). */
   chrome?: { bug?: boolean; rail?: string[] };
-  captionStyle?: { top?: number; size?: number; maxWords?: number; weight?: number };
+  captionStyle?: { top?: number; size?: number; maxWords?: number; weight?: number; mode?: "bottom" | "headline" };
 };
 
 export const calculateRewiresMetadata: CalculateMetadataFunction<RewiresProps> = ({ props }) => ({
@@ -133,8 +134,8 @@ export const Rewires: React.FC<RewiresProps> = ({ scenes, captions, showCaptions
           <Sequence key={i} from={starts[i]} durationInFrames={s.dur} premountFor={fps} name={`${i} ${s.type}`}>
             <Entrance kind={s.transition}>
               {Scene ? <Scene data={s.data} /> : null}
-              {/^(p|h|g|d|a|m|f)[A-Z]/.test(s.type) ? null : <Vignette strength={isDark(s.data) ? 0.5 : 0.12} />}
-              {s.source ? <SourceTag text={s.source} dark={isDark(s.data)} captionTop={showCaptions ? captionStyle?.top : undefined} /> : null}
+              {/^(p|h|g|d|a|m|f|x)[A-Z]/.test(s.type) ? null : <Vignette strength={isDark(s.data) ? 0.5 : 0.12} />}
+              {s.source ? <SourceTag text={s.source} dark={isDark(s.data)} captionTop={showCaptions && captionStyle?.mode !== "headline" ? captionStyle?.top : undefined} /> : null}
             </Entrance>
             {s.vo ? (
               <Sequence from={s.voAt ?? 0} premountFor={fps}>
@@ -164,7 +165,8 @@ export const Rewires: React.FC<RewiresProps> = ({ scenes, captions, showCaptions
           })()
         : null}
       <Grain opacity={0.06} />
-      {showCaptions ? <Captions captions={captions} themes={themes} endFrame={bodyEnd} maxWords={captionStyle?.maxWords ?? BRAND.captions.maxWordsPerPage} top={captionStyle?.top} size={captionStyle?.size} weight={captionStyle?.weight} /> : null}
+      {showCaptions && captionStyle?.mode === "headline" ? <HeadlineCaptions captions={captions} themes={themes} endFrame={bodyEnd} maxWords={captionStyle?.maxWords ?? 6} top={captionStyle?.top} size={captionStyle?.size} /> : null}
+      {showCaptions && captionStyle?.mode !== "headline" ? <Captions captions={captions} themes={themes} endFrame={bodyEnd} maxWords={captionStyle?.maxWords ?? BRAND.captions.maxWordsPerPage} top={captionStyle?.top} size={captionStyle?.size} weight={captionStyle?.weight} /> : null}
 
       {music ? (
         <Audio

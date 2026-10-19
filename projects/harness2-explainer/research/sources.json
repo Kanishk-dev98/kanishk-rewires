@@ -1,0 +1,158 @@
+{
+  "topic": "Harness² (harness2): Recursive Agent Harnessing for an Open World (Google Cloud AI Research + Northwestern University)",
+  "researched_at": "2026-10-20",
+  "claims": [
+    {
+      "id": "what-harness",
+      "type": "definition",
+      "claim": "A harness is the system around a model that lets it act as an agent: prompts, tools, memory, skills, orchestration. 'Harnessing' is optimizing that system. README: \"A harness is the system around a model that enables it to act as an agent: prompts, tools, memory, skills, orchestration, and more.\"",
+      "sources": [
+        {"url": "https://github.com/google-research/harness2", "title": "google-research/harness2 README", "publisher": "Google Research GitHub org", "published": "2026-10-08"},
+        {"url": "https://arxiv.org/abs/2610.14224", "title": "Harness^2: Recursive Agent Harnessing for an Open World", "publisher": "arXiv", "published": "2026-10-09"}
+      ]
+    },
+    {
+      "id": "frozen-weights",
+      "type": "core-claim",
+      "claim": "Improves agents while keeping model weights fixed. README: \"It connects two levels of recursion while keeping model weights fixed\". Paper: harnessing = \"optimizing the runtime scaffolding around a frozen base model\"; \"Model weights, stage instructions, and the decision rule remain fixed, while the library evolves.\"",
+      "sources": [
+        {"url": "https://github.com/google-research/harness2", "title": "google-research/harness2 README", "publisher": "Google Research GitHub org", "published": "2026-10-08"},
+        {"url": "https://arxiv.org/html/2610.14224v1", "title": "Harness^2 (HTML v1), Sections 1 and 2.3", "publisher": "arXiv", "published": "2026-10-09"}
+      ]
+    },
+    {
+      "id": "eight-components",
+      "type": "fact",
+      "claim": "Eight editable harness components, each mounted as a file: system prompt, guardrails, memory, tool guidance, subagents, skills, scripts, and plugins (middleware plugin). Extends AHE's file-level decomposition by one component.",
+      "sources": [
+        {"url": "https://github.com/google-research/harness2", "title": "README: Harness components", "publisher": "Google Research GitHub org", "published": "2026-10-08"},
+        {"url": "https://arxiv.org/html/2610.14224v1", "title": "Harness^2 Section 2.1", "publisher": "arXiv", "published": "2026-10-09"}
+      ]
+    },
+    {
+      "id": "loop-task-level",
+      "type": "mechanism",
+      "claim": "Task-level recursion: a contrastive Propose–Probe–Compose step. Run the current harness once as a reference; PROPOSE two candidate edits (an 'invariant' candidate for general agent weaknesses like planning, tool use, context, delegation; a 'domain-specific' candidate for the task's domain knowledge/procedures); PROBE: run each candidate on the same task under matched conditions and compare behaviour with the reference (a 'behavioral contrast'); COMPOSE: merge supported changes, revise conflicts, adopt one, or keep the current harness, then run the composed harness. No ground-truth answers are used. README: \"propose edits, probe their effects on the same task, and compose a refined harness from behavioral contrasts between executions, without ground-truth feedback.\"",
+      "sources": [
+        {"url": "https://github.com/google-research/harness2", "title": "google-research/harness2 README", "publisher": "Google Research GitHub org", "published": "2026-10-08"},
+        {"url": "https://arxiv.org/html/2610.14224v1", "title": "Harness^2 Section 2.2.1", "publisher": "arXiv", "published": "2026-10-09"}
+      ]
+    },
+    {
+      "id": "loop-scaling",
+      "type": "mechanism",
+      "claim": "Budget k scales the step. Parallel: probe k invariant + k domain candidates, produce k compositions, then an agentic selector picks the best anonymized deliverable. Sequential: chain k Propose–Probe–Compose steps. At k=1 both reduce to one step. README: \"Parallel recursion explores wider; sequential recursion refines deeper.\"",
+      "sources": [
+        {"url": "https://github.com/google-research/harness2", "title": "README: Experiments", "publisher": "Google Research GitHub org", "published": "2026-10-08"},
+        {"url": "https://arxiv.org/html/2610.14224v1", "title": "Harness^2 Section 2.2.2", "publisher": "arXiv", "published": "2026-10-09"}
+      ]
+    },
+    {
+      "id": "loop-harnessing-level",
+      "type": "mechanism",
+      "claim": "Harnessing-level recursion: after each task an experience reflector reviews the whole improvement record and saves the adopted harness plus evidence-supported lessons into a 'harness improvement library' (each entry = executable harness + EXPERIENCE.md). The next task starts from the same base harness, but proposals can reuse/adapt library entries. Paper: \"Lessons are retained only when supported by execution contrasts\".",
+      "sources": [
+        {"url": "https://arxiv.org/html/2610.14224v1", "title": "Harness^2 Section 2.3", "publisher": "arXiv", "published": "2026-10-09"},
+        {"url": "https://github.com/google-research/harness2", "title": "README pipeline figure alt text", "publisher": "Google Research GitHub org", "published": "2026-10-08"}
+      ]
+    },
+    {
+      "id": "headline-results",
+      "type": "result",
+      "claim": "A single step (k=1) improves GLM-5 and Gemini 3.5 Flash over their base harnesses in all four model–harness configs (OpenCode, Codex). Max gains: +11.5 points WorkBuddy-Bench (GLM-5/OpenCode, 64.2 -> 75.7 avg), +4.5 points JobBench (Gemini 3.5 Flash/OpenCode, 31.5 -> 36.0), +11.8 percentage points LAB Partial pass rate (GLM-5/OpenCode, 59.6 -> 71.4). Means over three runs.",
+      "sources": [
+        {"url": "https://arxiv.org/html/2610.14224v1", "title": "Harness^2 Abstract, Tables 1-2, Section 3.2", "publisher": "arXiv", "published": "2026-10-09"},
+        {"url": "https://github.com/google-research/harness2", "title": "google-research/harness2 README", "publisher": "Google Research GitHub org", "published": "2026-10-08"}
+      ]
+    },
+    {
+      "id": "recursion-results",
+      "type": "result",
+      "claim": "Parallel recursion at k=5 adds a further 2.9-3.9 points on WorkBuddy-Bench, 3.0-4.2 on JobBench, 2.6-6.7 pp on LAB Partial over a single step. Gemini 3.5 Flash/OpenCode WorkBuddy avg: base 72.4 -> k=1 77.5 (+5.1) -> k=5 80.8 (+8.4 total). JobBench same config: +4.5 at k=1 to +7.5 at k=5.",
+      "sources": [
+        {"url": "https://arxiv.org/html/2610.14224v1", "title": "Harness^2 Sections 3.2 and 4", "publisher": "arXiv", "published": "2026-10-09"},
+        {"url": "https://harness2.github.io", "title": "Harness² project page", "publisher": "Harness² authors (GitHub Pages)", "published": "2026-10 (undated page)"}
+      ]
+    },
+    {
+      "id": "weaker-beats-stronger",
+      "type": "result",
+      "claim": "With one step, GLM-5 reaches 75.7 (OpenCode) and 75.3 (Codex) on WorkBuddy-Bench, above base Gemini 3.5 Flash's 72.4 and 74.5. Paper: \"A weaker model with an improved harness can thus outperform a stronger one with its original harness.\"",
+      "sources": [
+        {"url": "https://arxiv.org/html/2610.14224v1", "title": "Harness^2 Section 3.2", "publisher": "arXiv", "published": "2026-10-09"}
+      ]
+    },
+    {
+      "id": "setup-models",
+      "type": "fact",
+      "claim": "Frozen executors: Gemini 3.5 Flash and GLM-5 under OpenCode and Codex harnesses. Default harness editor: Claude Opus 4.8 under OpenCode. Library starts empty per benchmark stream. Same-model-as-editor test (k=2): all five models improve; GLM-5 +13.7 on LAB, Claude Opus 5 +3.3/+5.5/+3.0.",
+      "sources": [
+        {"url": "https://arxiv.org/html/2610.14224v1", "title": "Harness^2 Sections 3.1 and 4", "publisher": "arXiv", "published": "2026-10-09"}
+      ]
+    },
+    {
+      "id": "case-study",
+      "type": "result",
+      "claim": "JobBench case study (Gemini 3.5 Flash, OpenCode): one task's score rose from 43.1 to 77.8 after an invariant guardrail (inventory inputs, trace figures, re-open and verify output files) and a domain skill for reconciling schedule/venue/labor/budget files.",
+      "sources": [
+        {"url": "https://arxiv.org/html/2610.14224v1", "title": "Harness^2 Section 4, Figure 9", "publisher": "arXiv", "published": "2026-10-09"}
+      ]
+    },
+    {
+      "id": "license-release",
+      "type": "fact",
+      "claim": "Code licensed Apache 2.0 (third-party code, benchmarks and datasets keep upstream licenses). Paper licensed CC BY 4.0. Repo created 2026-10-06, initial public commit 2026-10-08, arXiv v1 submitted 2026-10-09, package version 0.1.0, Python >=3.12,<3.14. README: \"This is not an officially supported Google product.\"",
+      "sources": [
+        {"url": "https://github.com/google-research/harness2/blob/main/LICENSE", "title": "LICENSE", "publisher": "Google Research GitHub org", "published": "2026-10-08"},
+        {"url": "https://arxiv.org/abs/2610.14224", "title": "arXiv abstract page (license: CC BY 4.0)", "publisher": "arXiv", "published": "2026-10-09"},
+        {"url": "https://api.github.com/repos/google-research/harness2", "title": "GitHub API repo metadata", "publisher": "GitHub", "published": "2026-10-06"}
+      ]
+    },
+    {
+      "id": "authors",
+      "type": "fact",
+      "claim": "Authors: Ruiyao Xu (Northwestern University), Yanfei Chen, Zhongying CuiZhu, Bhavana Dalvi Mishra, Yifei Ming, Han Yu, Rujun Han, Chen-Yu Lee, Tomas Pfister (Google Cloud AI Research). Hosted under the google-research GitHub org; the paper's affiliation is Google Cloud AI Research, not 'Google Research' as such.",
+      "sources": [
+        {"url": "https://arxiv.org/html/2610.14224v1", "title": "Harness^2 author block", "publisher": "arXiv", "published": "2026-10-09"},
+        {"url": "https://harness2.github.io", "title": "Harness² project page", "publisher": "Harness² authors (GitHub Pages)", "published": "2026-10 (undated page)"}
+      ]
+    },
+    {
+      "id": "run-command",
+      "type": "fact",
+      "claim": "Install/run: `uv venv --python 3.12 .venv && source .venv/bin/activate && uv pip install -e '.[render]'`; credential-free demo `harness2-demo --output runs/demo --k 2`; benchmark e.g. `harness2-setup jb` then `harness2 --bench jb --k 1 --mode parallel`; also `harness2-judge` and `harness2-report`. `--substrate cx` uses Codex. Requires Linux; model runs need Node.js 20+, Google Cloud CLI, Vertex AI.",
+      "sources": [
+        {"url": "https://github.com/google-research/harness2", "title": "README: Install / Run a benchmark", "publisher": "Google Research GitHub org", "published": "2026-10-08"}
+      ]
+    },
+    {
+      "id": "caveats",
+      "type": "caveat",
+      "claim": "Authors' limitations: extra executions and editor sessions add inference cost as budget grows (parallelism cuts latency, not compute); feedback is behavioural contrast plus model judgment, sensitive to run-to-run variability and shared model biases, and does \"not guarantee correctness or establish that an adopted change will transfer to a different task.\" README: model-backed runs incur API costs; executor network is unrestricted and Codex runs with sandbox disabled; public benchmark rubrics may be online, so restrict network before evaluating. Results are benchmark evaluations (3 runs each), not production deployments. Recursion does not uniformly close gaps between harnesses; on LAB Partial, Meta-Harness leads for Gemini 3.5 Flash/Codex.",
+      "sources": [
+        {"url": "https://arxiv.org/html/2610.14224v1", "title": "Harness^2 Appendix F Limitations, Section 3.2", "publisher": "arXiv", "published": "2026-10-09"},
+        {"url": "https://github.com/google-research/harness2", "title": "README: Web access / Run a benchmark / Disclaimer", "publisher": "Google Research GitHub org", "published": "2026-10-08"}
+      ]
+    },
+    {
+      "id": "images",
+      "type": "asset",
+      "claim": "Official images (URLs only, not downloaded): repo assets harness2_pipeline.png, components.png, harness2_recursion_modes.png, Harness2-wordmark.png, logo.png, harness2-setup.gif, harness2-video.mp4 (repo is Apache 2.0); project page assets components.png, case-jobbench.png, harnessmind.png, logo.png. Paper figures are CC BY 4.0. No separate image license is stated; trademark/logo use is not addressed.",
+      "sources": [
+        {"url": "https://raw.githubusercontent.com/google-research/harness2/main/assets/harness2_pipeline.png", "title": "Pipeline diagram", "publisher": "Google Research GitHub org", "published": "2026-10-08"},
+        {"url": "https://raw.githubusercontent.com/google-research/harness2/main/assets/components.png", "title": "Eight components diagram", "publisher": "Google Research GitHub org", "published": "2026-10-08"},
+        {"url": "https://raw.githubusercontent.com/google-research/harness2/main/assets/harness2_recursion_modes.png", "title": "Parallel vs sequential recursion diagram", "publisher": "Google Research GitHub org", "published": "2026-10-08"},
+        {"url": "https://harness2.github.io/assets/case-jobbench.png", "title": "JobBench case study figure", "publisher": "Harness² authors (GitHub Pages)", "published": "2026-10 (undated page)"}
+      ]
+    },
+    {
+      "id": "secondary-coverage",
+      "type": "secondary",
+      "claim": "SECONDARY: The Menon Lab blog (Prahlad Menon, 2026-10-19) repeats 11.5 / 4.5 / 11.8 and credits Northwestern + Google Cloud AI Research. MarkTechPost (2026-10-18) covered the release (page returned 403; search snippet says v0.1.0, Python 3.12/3.13, eight components). No Google Research blog post was found.",
+      "sources": [
+        {"url": "https://themenonlab.blog/blog/harness2-recursive-agent-harnessing-google", "title": "Harness²: Google's Recursive Agent Harnessing Improves Frozen Models by Up to 11.8 Points", "publisher": "The Menon Lab (secondary)", "published": "2026-10-19"},
+        {"url": "https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/", "title": "Google Open-Sources Harness2, a Recursive Agent Harnessing Framework", "publisher": "MarkTechPost (secondary)", "published": "2026-10-18"}
+      ]
+    }
+  ]
+}
