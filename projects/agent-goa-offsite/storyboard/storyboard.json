@@ -1,0 +1,252 @@
+{
+  "id": "agent-goa-offsite",
+  "title": "I gave an AI agent one job",
+  "format": "9x16",
+  "captions": true,
+  "research": "done",
+  "captionStyle": {
+    "top": 0.755,
+    "size": 58,
+    "maxWords": 3,
+    "weight": 800
+  },
+  "voice": {
+    "provider": "edge",
+    "edge": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+6%"
+    }
+  },
+  "outro": {
+    "seconds": 2.5,
+    "size": 220,
+    "wordSize": 50,
+    "cta": "Follow for AI that actually does the work"
+  },
+  "render": {
+    "concurrency": 4,
+    "timeoutMs": 300000
+  },
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "aThread",
+      "leadIn": 2,
+      "pad": 6,
+      "energy": 3,
+      "claims": [
+        "c1"
+      ],
+      "vo": "I gave an AI agent one job: our team offsite in Goa.",
+      "cues": {
+        "lakh": "offsite"
+      },
+      "accents": [
+        "one",
+        "Goa."
+      ],
+      "data": {
+        "beat": "goal"
+      },
+      "visual": "A lime thread rises into a glowing agent input bar; the full goal types out and budget, people and place chips lock in.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.25
+        },
+        {
+          "name": "tick",
+          "on": {
+            "cue": "lakh"
+          },
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "type": "aThread",
+      "pad": 6,
+      "energy": 2,
+      "vo": "First, it checked twelve calendars, and found the one weekend everyone is free.",
+      "cues": {
+        "weekend": "weekend"
+      },
+      "accents": [
+        "twelve",
+        "free."
+      ],
+      "data": {
+        "beat": "calendar"
+      },
+      "visual": "The thread closes into a ring of 12 team dots; weekends flick past until one turns lime: 12 of 12 free.",
+      "sfx": [
+        {
+          "name": "ding",
+          "on": {
+            "cue": "weekend"
+          },
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "aThread",
+      "pad": 6,
+      "energy": 3,
+      "vo": "Then it compared flights from three cities, and picked the cheapest ones that land before noon.",
+      "cues": {
+        "cheapest": "cheapest"
+      },
+      "accents": [
+        "three",
+        "noon."
+      ],
+      "data": {
+        "beat": "flights"
+      },
+      "visual": "Three flight threads arc from Delhi, Mumbai and Bengaluru into Goa; fares tick down and turn lime.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 4,
+          "volume": 0.25
+        },
+        {
+          "name": "ding",
+          "on": {
+            "cue": "cheapest"
+          },
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "aThread",
+      "pad": 8,
+      "energy": 2,
+      "minFrames": 200,
+      "vo": "It shortlisted three villas with a pool, a meeting room, and space for twelve. Then it asked me to pick.",
+      "cues": {
+        "pick": "pick."
+      },
+      "accents": [
+        "three",
+        "pick."
+      ],
+      "data": {
+        "beat": "villas"
+      },
+      "visual": "A lime orb floods to cream; three villa cards hang on a black thread and swing; checks tick in; a tap picks Casa Laguna.",
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.3
+        },
+        {
+          "name": "click",
+          "on": {
+            "cue": "pick"
+          },
+          "volume": 0.3
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "id": "s04",
+      "type": "aThread",
+      "pad": 8,
+      "energy": 2,
+      "vo": "It built the itinerary, booked a beach dinner, and sent everyone the invite.",
+      "cues": {
+        "invite": "invite."
+      },
+      "accents": [
+        "itinerary,",
+        "invite."
+      ],
+      "data": {
+        "beat": "plan"
+      },
+      "visual": "The thread strings Day 1, 2 and 3 cards; a Gmail invite card sends and 12 acceptances tick in.",
+      "sfx": [
+        {
+          "name": "click",
+          "on": {
+            "cue": "invite"
+          },
+          "volume": 0.25
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "id": "s05",
+      "type": "aThread",
+      "pad": 10,
+      "energy": 3,
+      "minFrames": 220,
+      "vo": "Total: one lakh eighty-four thousand. Sixteen thousand under budget. And it never paid without my OK.",
+      "cues": {
+        "under": "under",
+        "OK.": "OK."
+      },
+      "accents": [
+        "under",
+        "OK."
+      ],
+      "data": {
+        "beat": "budget"
+      },
+      "visual": "Back to charcoal; the cost bar fills short of the red \u20b92 lakh line; an approval card is tapped.",
+      "sfx": [
+        {
+          "name": "riser",
+          "on": 6,
+          "volume": 0.2
+        },
+        {
+          "name": "impact",
+          "on": {
+            "cue": "under"
+          },
+          "volume": 0.35
+        },
+        {
+          "name": "click",
+          "on": {
+            "cue": "OK."
+          },
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "aThread",
+      "pad": 14,
+      "energy": 2,
+      "vo": "That's what an AI agent is. Not a chatbot. A teammate. Follow for more.",
+      "accents": [
+        "agent",
+        "teammate."
+      ],
+      "data": {
+        "beat": "orbs"
+      },
+      "visual": "Lime bokeh orbs swirl and condense into one point of light.",
+      "sfx": [
+        {
+          "name": "riser",
+          "on": 0,
+          "volume": 0.2
+        }
+      ]
+    }
+  ]
+}

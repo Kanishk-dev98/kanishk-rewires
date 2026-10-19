@@ -33,5 +33,9 @@
   },
   "windows-c.svg": {
     "source": "drawn in-house (four-pane mark, nominative use)"
+  },
+  "googlecalendar.svg": {
+    "source": "https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/googlecalendar.svg",
+    "license": "CC0 (Simple Icons); Google trademark, nominative use"
   }
 }

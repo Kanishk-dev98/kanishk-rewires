@@ -53,6 +53,10 @@ Status: ✅ exists in the engine · 🧩 partly exists · 🆕 build when first 
 | 29 | Two-layer concept + run log (R8) | A concept card above (step highlight moves) and a terminal log below adding ✓ lines | How-it-works for AI tools | Two stacked panels synced to cues | 🆕 |
 | 30 | Dark-to-light act switch (R12) | A circular cream wipe flips the film into a light second act at the twist | "But here's the crazy part" moments | clip-path circle from the centre, charcoal to cream | 🆕 |
 | 31 | CTA UI journey (R13) | Profile card Follow → Following, the comment keyword typed, a DM reply with a link card | Comment-to-DM CTAs | Profile, comment and DM cards; cursor with a click ripple | 🧩 (comment sheet) |
+| 32 | Continuous light thread (ref-Dep8EFxSXK1 T1–T3) | One glowing point and line never cuts: it draws, pierces glow discs, closes into a ring, collapses to a glyph, stretches into a UI card | Agent or process stories ("watch one thing flow through every step") | Resample all shapes to N points and interpolate the path `d`; a stroke plus a blurred twin plus a haloed head dot | 🆕 |
+| 33 | Dots → bars agent pipeline (T6) | A row of agent dots light up one by one, then rise into bars | "Agents line up the work", multi-agent steps | Staggered springs on height; colour per agent | 🆕 |
+| 34 | Beaded chips on a string (T7) | A hairline threads pill chips; the active chip flips to the accent and swings like a pendulum | Step sequences on a cream act | SVG path through chip anchors; rotate spring per chip | 🆕 |
+| 35 | Orb flood act-switch + bokeh outro (T8, T10) | A glowing orb fills the frame into cream; the outro orbs swirl and condense into the badge | Act changes, logo endings | Radial orb scale-up; blurred orbs on spiral paths | 🆕 |
 
 ## Picking techniques for a script
 

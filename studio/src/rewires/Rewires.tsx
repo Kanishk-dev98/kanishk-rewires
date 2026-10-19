@@ -25,10 +25,11 @@ import { MARKET_SCENES } from "./market";
 import { FK_SCENES } from "./flipkart";
 import { DX_SCENES } from "./decoyReel";
 import { GROK_SCENES } from "./grok";
+import { AGENT_THREAD_SCENES } from "./agentThread";
 import { TUT_SCENES } from "./tutScenes";
 import { UI_SCENES } from "./uiScenes";
 
-const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES, ...PROMO_SCENES, ...HEAT_SCENES, ...GEM_SCENES, ...DECOY_SCENES, ...AD_SCENES, ...MARKET_SCENES, ...FK_SCENES, ...DX_SCENES, ...GROK_SCENES };
+const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES, ...PROMO_SCENES, ...HEAT_SCENES, ...GEM_SCENES, ...DECOY_SCENES, ...AD_SCENES, ...MARKET_SCENES, ...FK_SCENES, ...DX_SCENES, ...GROK_SCENES, ...AGENT_THREAD_SCENES };
 
 export type Sfx = { src: string; at: number; volume?: number };
 export type RewiresScene = {
