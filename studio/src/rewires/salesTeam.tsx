@@ -196,7 +196,7 @@ const Funnel: React.FC<{ data: SceneProps["data"]; c: (n: string, f: number) => 
   const RY = 0.16; // ellipse squash: perspective of looking slightly down
   const wAt = (i: number) => 600 * Math.pow(0.74, i);
   const rows = LAYERS.map((L, i) => {
-    const at = i < from ? -40 : c(`l${i}`, 20 + (i - from) * 40);
+    const at = i < from ? -40 : i === 0 ? Math.min(6, c("l0", 6)) : c(`l${i}`, 20 + (i - from) * 40);
     return { L, i, at, y: top + i * (H + GAP), p: interpolate(f, [at, at + 22], [0, 1], { ...clamp, easing: EASE }) };
   }).filter((r) => r.i < upto);
   return (
@@ -274,7 +274,7 @@ const Funnel: React.FC<{ data: SceneProps["data"]; c: (n: string, f: number) => 
 // ------------------------------------------------------------------ 6. three channels, layered perspective
 const Channels: React.FC<{ c: (n: string, f: number) => number }> = ({ c }) => {
   const f = useCurrentFrame();
-  const adAt = c("ads", 30);
+  const adAt = Math.min(6, c("ads", 6));
   const mailAt = c("email", 110);
   const postAt = c("post", 170);
   const card = (at: number, x: number, y: number, rot: number): React.CSSProperties => {
@@ -335,7 +335,7 @@ const Signals: React.FC<{ c: (n: string, f: number) => number }> = ({ c }) => {
     <Stage>
       <StepTag n={7} />
       {sigs.map((s, i) => {
-        const at = c(s.cue, 30 + i * 30);
+        const at = i === 0 ? Math.min(6, c(s.cue, 6)) : c(s.cue, 30 + i * 30);
         return (
           <div key={s.t} style={{ position: "absolute", left: 100, right: 100, top: 400 + i * 150, ...rise(f, at, -30) }}>
             <div style={{ display: "flex", gap: 18, alignItems: "center", background: "rgba(255,255,255,0.92)", backdropFilter: "blur(10px)", borderRadius: 26, border: `1px solid ${LINE}`, padding: "20px 22px", boxShadow: "0 24px 60px rgba(10,10,10,0.10)" }}>
