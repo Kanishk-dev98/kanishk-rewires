@@ -35,7 +35,7 @@ def upload(gid, path, name, ctype, kind):
 st = json.load(open("cover_state.json"))
 cov = upload(st["holder"], D + "cover_9x16_4k.jpg", "php2shell-cover.jpg", "image/jpeg", "image")
 gid = pub.tool("create_post", {"content": CAP, "platforms": [IG]})["postGroupId"]
-v = upload(gid, D + "php2shell_v1.mp4", "php2shell.mp4", "video/mp4", "video")
+v = upload(gid, D + "php2shell_v2.mp4", "php2shell.mp4", "video/mp4", "video")
 r = pub.tool("update_post", {"postGroupId": gid, "publishNow": True, "platformSettings": {"instagram": {"coverUrl": cov["url"]}}})
 print(v["status"], v["metadata"].get("width"), v["metadata"].get("height"), r.get("success"), r.get("message"))
 json.dump({"gid": gid}, open("php_state.json", "w"))

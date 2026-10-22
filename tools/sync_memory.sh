@@ -10,7 +10,7 @@ B="$HOME/.claude/projects/-Users-kanishk-raj-claude-md/memory"
 mkdir -p "$DEST"
 cp "$A"/*.md "$DEST"/ 2>/dev/null || true
 mv "$DEST/MEMORY.md" "$DEST/INDEX-rewires-project.md" 2>/dev/null || true
-for f in video-agent-project motion-reference-harness2 voiceover-mix-standard reference-benchmark-channel-study; do
+for f in video-agent-project motion-reference-harness2 voiceover-mix-standard reference-benchmark-channel-study feedback-no-reused-transition-systems; do
   [ -f "$B/$f.md" ] && cp "$B/$f.md" "$DEST/"
 done
 # refuse to commit anything that looks like a credential
