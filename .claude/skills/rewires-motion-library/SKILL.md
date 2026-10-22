@@ -95,3 +95,25 @@ Evidence: `research/reference-videos/prince/ANALYSIS.md`. Theme translation: the
 | 53 | Pain counter | Word count ticks 7 → 197, or "time spent" timer runs to 5:47:12 | Measuring the old way's pain | Counter badge plus amber/orange accent; then strike and fling the old card | 🆕 |
 | 54 | Strike-and-fling | The old way (a paragraph card) gets a red strike, tilts in 3D and flies off before the CTA | Closing the before/after | Strike line draw, then rotateY/translate out with blur | 🆕 |
 | 55 | Tape label + glitch | An amber DEVELOPER PREVIEW tape slaps on; RGB-split glitch on "break" | Caveats, honesty, warnings (mid-body) | Rotated tape div; 3–4 frames of offset coloured copies | 🆕 |
+
+## Additions from the @madetoscale2026 11-reel study (rows 56–70)
+
+Evidence: `research/reference-videos/madetoscale/ANALYSIS.md`. Translate their orange to our lime and their peach mesh to our cream.
+
+| # | Technique | Looks like | Use it for | Build notes (Remotion) | Status |
+|---|---|---|---|---|---|
+| 56 | Chapter chrome | Mono pill top-right `STEP 2 · FIND · 03 / 6` + hairline progress under the logo | Any multi-step reel > 35 s | Fixed overlay outside the beat world; pill text cross-fades per chapter; bar = frame/total | 🆕 |
+| 57 | Step tabs / tool-chain rail / rank ruler | A row of tabs or tool logos (or a 10…1 tick ruler) docked at the top; the active one lights up | Playbooks, workflows, countdowns | One component, `items` + `active` from cues | 🆕 |
+| 58 | Strike-and-replace number | ~~₹30,000~~ strike draws, greys, ✕; ₹55,000 drops in with ✓ | Decisions, pricing, "the right answer" | Strike line scaleX, grey filter, badge spring; new number y-drop | 🆕 |
+| 59 | 0 → N proof counter hook | A giant "0" with zero-badged app icons, then it counts to 20 and the label swaps (CLIENTS → LEADS) | Pain → promise hooks | Blur-in hero number; counter with ease-out; label cross-fade | 🆕 |
+| 60 | Lock-screen time-lapse | Phone lock screen 2:00 night → notifications stack → 7:30 sunrise | "While you sleep" automations | Clock digits + bg gradient interpolation + notification stack | 🆕 |
+| 61 | Pin-drop counter on a map | Search types "dentists without website", red pins rain, a counter climbs to 312 | Local opportunity, lead finding | Stylised map SVG; pins with staggered drop; counter synced to pin count | 🆕 |
+| 62 | Persistent hero card that grows | One card stays put while rows, chips, badges and tags keep arriving every 1–2 s | Every chapter | Card container + cue-keyed child list | 🧩 |
+| 63 | Intent slider + score rings | Knob slides COLD→HOT; rings count 0→92 HOT, 0→18 SKIP | Qualification, scoring | Gradient track; ring arc dashoffset + label swap | 🆕 |
+| 64 | Loser-dim / winner-crown | Result cards stack; losers dim to 40%, winner gets accent border + "Winner" badge | Comparisons, A/B, prices | Opacity + border + badge spring on a cue | 🆕 |
+| 65 | Speedometer | Needle sweeps 47→121, overshoots to 319, settles 303; arc fills; "~2.5× faster" pops | Any "faster / more" claim | SVG arc + needle rotate with spring overshoot | 🆕 |
+| 66 | Equation card | "Hiring = Budget + Urgency": chips assemble around = and + | The one-line insight | Chips fly in to slots; = and + scale in | 🆕 |
+| 67 | Countdown card deck + hidden #1 | Cards fan into a deck, the top card blurred "???"; per-card star count + micro-demo panel | Top-N lists | Parametric card (colour, rank, name, stars, demo slot); fan rotate; blur on #1 | 🆕 |
+| 68 | Skeleton → real site build | Grey placeholder browser; data chips fly into it; it resolves into a real page with a URL | "AI built it" | Skeleton blocks cross-fade to rendered layout; chips on bezier paths | 🆕 |
+| 69 | Typed-keyword comment box → DM toast | Comment field types the KEYWORD; a DM toast with the payload ("4 prompts + template, Free") slides in | Every keyword CTA (lighter than the full profile journey) | Typing + toast slide; payload text from storyboard | 🧩 (row 31) |
+| 70 | Zoom-out recap | The camera pulls back to reveal every scene laid out as one canvas before the CTA | Recaps of multi-step reels | Our `dDuet` world camera already supports it: zoom out to fit all beat positions | 🧩 (`dDuet`) |

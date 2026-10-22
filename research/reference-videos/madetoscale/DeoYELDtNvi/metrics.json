@@ -1,0 +1,15 @@
+{
+ "id": "DeoYELDtNvi",
+ "duration": 59.95,
+ "words": 144,
+ "wpm": 144.1,
+ "first_word_at": 0.05,
+ "hook_text_first_4s": "\u092b\u094d\u0930\u0940 \u0932\u093e\u0928\u094d\u0938\u0947\u0902\u0917 \u0936\u0941\u0930\u0942 \u0915\u093f\u092f\u093e \u0914\u0930 \u090f\u0915 \u092d\u0940 \u0916\u094d\u0932\u093e\u090f\u0902\u091f \u0928\u0939\u0940\u0902 \u092f\u0947 \u091a\u093e\u0930",
+ "cuts": 0,
+ "cuts_per_10s": 0.0,
+ "avg_shot_s": 59.95,
+ "cut_times": [],
+ "lufs": -70.0,
+ "voice_db": -16.4,
+ "gaps_db": -17.4
+}

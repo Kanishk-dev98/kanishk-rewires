@@ -1,11 +1,11 @@
 ---
 name: rewires-channel-playbook
-description: Operating playbook for Kanishk.Rewires reels, distilled from deep studies of the benchmark channels (@princegupta.ai 16 reels done; @madetoscale2026 and @jackroberts___ pending links). Covers content strategy, topic selection, hook templates, script skeleton, simplification, caption system, motion grammar, theme flips, CTA journey, audio, post captions and failure modes. Load before writing any script, storyboard or caption.
+description: Operating playbook for Kanishk.Rewires reels, distilled from deep studies of the benchmark channels (@princegupta.ai 16 reels and @madetoscale2026 11 reels done; @jackroberts___ pending links). Covers content strategy, topic selection, hook templates, script skeleton, simplification, caption system, motion grammar, theme flips, CTA journey, audio, post captions and failure modes. Load before writing any script, storyboard or caption.
 ---
 
 # Kanishk.Rewires channel playbook
 
-Evidence: `research/reference-videos/prince/ANALYSIS.md` (16 reels, per-reel metrics, hooks, beats, motion and why each won or lost). The techniques live in `rewires-motion-library` rows 36 to 55.
+Evidence: `research/reference-videos/prince/ANALYSIS.md` (16 reels) and `research/reference-videos/madetoscale/ANALYSIS.md` (11 reels), with per-reel metrics, hooks, beats and motion, and why each won or lost. The techniques live in `rewires-motion-library` rows 36 to 70.
 
 **The law, from the data:** these reels share an identical production kit, yet results vary about 130×.
 - **Topic, hook and CTA mechanics decide reach and comments.** Motion is table stakes: it makes the reel watchable, it does not make it spread.
@@ -166,9 +166,55 @@ Tag brands only by verified handles.
 - [ ] Noun → event cue map written. Captions boxed at most 1 per phrase.
 - [ ] Music at least 10 dB under the voice. Varied bed. No booms.
 
+
+## 9. What Made to Scale adds (merge with sections 1 to 7)
+
+Made to Scale's light look (cream mesh gradient, white soft-shadow cards, black grotesk with one italic-serif accent word) is the closest benchmark to our brand. Their reels are long (45 to 66 s winners) and full of chapters, and they still get 400 to 770 comments, because each one promises a strong DM payload.
+
+**Strategy additions**
+- **Money and time pillars beat news.** Their top reels are client acquisition ("your first client", "clients while you sleep", "price your quote") and free tools that replace paid ones. Their news reel got 25 comments.
+- For our marketing/business pillar, frame each reel around a **money or time outcome for the viewer** (leads, clients, revenue, hours saved).
+- **Make the DM payload bigger than the reel.** Examples: "full setup + copy-paste prompts + templates as a PDF", "the top 15 (the reel shows 10) + install commands". List the payload in the post caption as ✅ ticks.
+- **Add a second action after the keyword** (pick one, never a double gate):
+  - "Send this to the friend who [relatable habit]" (drives shares)
+  - "Part 2: [named topic], follow"
+  - "Day N tomorrow"
+- Keep any follow plea to 3 s or less.
+
+**Format additions**
+- **Chapter chrome:** a tiny mono pill top-right reading `STEP 2 · FIND · 03 / 6`, plus a hairline progress bar that fills across the reel. It tells the viewer the reel is finite, so they stay. Use it on every multi-step reel over 35 s.
+- **Persistent progress devices**, chosen by format:
+  - Step tabs for a playbook.
+  - A tool-chain rail whose logos light up for a workflow.
+  - A rank ruler for a countdown.
+- **List reels:** show a table-of-contents grid first, then `NN / N` cards. Cap at 5 to 7 items, about 4 s each. Hide #1 and reveal it last.
+- **Use one named, local, concrete example** throughout: a person, a business, a rupee amount, a time ("Booked Friday 4:30 PM, at 12:04 AM while you slept").
+- **Pick the hook number by format:**
+  - "0 → N" counter for pain to promise.
+  - Strike-and-replace (~~wrong~~ → right ✓) for decisions.
+  - Countdown ring for stakes.
+  - Lock-screen time-lapse (2:00 → 7:30, with notifications) for "while you sleep".
+  - A real post with "0 replies" for an opportunity.
+- **Insight as an equation card:** "Hiring = Budget + Urgency", "Boring page = lost sales".
+- **Honest twist:** put the caveat as the climax ("not prediction, *rehearsal*", "one catch", "help first, not pitch"), not as the last line before the CTA.
+- **Result shown as a conversation:** the client's or customer's reply in a chat UI ("Is this our website? How much to go live?").
+- **Caption options** (we stay English):
+  - (a) Prince-style top headline captions, for news and repo reels.
+  - (b) Made to Scale style for chapter and tutorial reels: a top section headline with a serif accent word, plus low-centre word-by-word captions. The next word is ghosted; one keyword per line gets a filled pill (lime for the payoff, charcoal for tool or concept names).
+
+  Never both at full size at once.
+- **Recreated UI and photoreal object cut-outs** on cream, with official logos and image credits in the post caption. Label demo people, posts and numbers as an example.
+
+**Limits learned**
+- At most 4 tools per reel.
+- 150 to 170 wpm in English.
+- Give the bed about 10 dB of margin. Their best mix had it; most of their reels don't.
+- No piracy-adjacent tools.
+- Don't switch to an off-brand template for one series.
+
 ## 8. Channels still to study
 
-- **@madetoscale2026:** waiting for reel links (Instagram blocks profile listing; single links download fine).
+- **@madetoscale2026:** done (11 reels). See section 9.
 - **@jackroberts___:** waiting for links. His half-presenter, half-animation split format is a **parked format**; the user wants it later.
 
 Process for both: `tools/breakdown_reels.py <channel> <videos>`, then parallel analysts with the same 8-section rubric. Merge the new findings into this playbook as additions per channel.

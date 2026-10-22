@@ -6,6 +6,7 @@ between words relative to the voice. Writes research/reference-videos/<channel>/
 
 Usage:
     .venv/bin/python tools/breakdown_reels.py <channel> <video.mp4> [<video.mp4> ...]
+    WHISPER_MODEL=small for non-English (e.g. Hinglish) reels.
 """
 import json
 import re
@@ -79,7 +80,9 @@ def main():
     channel, vids = sys.argv[1], [Path(p) for p in sys.argv[2:]]
     from faster_whisper import WhisperModel
 
-    model = WhisperModel("small.en", device="cpu", compute_type="int8")
+    import os
+
+    model = WhisperModel(os.environ.get("WHISPER_MODEL", "small.en"), device="cpu", compute_type="int8")
     for v in vids:
         out = ROOT / "research" / "reference-videos" / channel / v.stem
         out.mkdir(parents=True, exist_ok=True)
