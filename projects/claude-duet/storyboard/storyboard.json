@@ -1,0 +1,380 @@
+{
+  "id": "claude-duet",
+  "title": "Claude Duet explained",
+  "format": "9x16",
+  "captions": true,
+  "research": "done",
+  "captionStyle": {
+    "top": 0.79,
+    "size": 54,
+    "maxWords": 3,
+    "weight": 800
+  },
+  "voice": {
+    "provider": "edge",
+    "edge": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+6%"
+    }
+  },
+  "music": {
+    "style": "ambient",
+    "hits": false
+  },
+  "outro": {
+    "seconds": 2.5,
+    "size": 220,
+    "wordSize": 50,
+    "cta": "Follow for AI that actually does the work"
+  },
+  "render": {
+    "concurrency": 2,
+    "timeoutMs": 600000
+  },
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "dDuet",
+      "pad": 6,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Anthropic just launched Claude Duet. An AI that keeps working for you, even when your laptop is off.",
+      "cues": {
+        "duet": "Duet",
+        "off": "off"
+      },
+      "accents": [
+        "Duet.",
+        "off."
+      ],
+      "data": {
+        "beat": "hook",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": {
+            "cue": "off"
+          },
+          "volume": 0.12
+        }
+      ],
+      "transition": "cut",
+      "claims": [
+        "c1"
+      ],
+      "leadIn": 2
+    },
+    {
+      "id": "s01",
+      "type": "dDuet",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "vo": "It's not a chatbot you ask questions. It's an agent. It checks your email, calendar and apps every few hours, and only comes to you when something needs you.",
+      "cues": {
+        "chatbot": "chatbot",
+        "agent": "agent",
+        "email": "email,",
+        "calendar": "calendar",
+        "apps": "apps",
+        "hours": "hours,",
+        "needs": "needs"
+      },
+      "accents": [
+        "agent.",
+        "needs"
+      ],
+      "data": {
+        "beat": "what",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.08
+        }
+      ],
+      "transition": "cut",
+      "claims": [
+        "c2"
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "dDuet",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Every morning, it sends you a short brief. What's urgent, what's waiting, and what it already prepared.",
+      "cues": {
+        "morning": "morning,",
+        "urgent": "urgent,",
+        "waiting": "waiting,",
+        "prepared": "prepared."
+      },
+      "accents": [
+        "brief.",
+        "prepared."
+      ],
+      "data": {
+        "beat": "brief",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.08
+        }
+      ],
+      "transition": "cut",
+      "claims": [
+        "c2"
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "dDuet",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Then it actually does the work. Follow-ups, meeting prep, even full decks and dashboards, as files you can edit.",
+      "cues": {
+        "follow": "Follow-ups,",
+        "prep": "prep,",
+        "decks": "decks",
+        "dash": "dashboards,",
+        "edit": "edit."
+      },
+      "accents": [
+        "work.",
+        "edit."
+      ],
+      "data": {
+        "beat": "work",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.08
+        }
+      ],
+      "transition": "cut",
+      "claims": [
+        "c2"
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "dDuet",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "vo": "But it never sends, pays, signs or deletes anything without your OK.",
+      "cues": {
+        "sends": "sends,",
+        "pays": "pays,",
+        "signs": "signs",
+        "deletes": "deletes",
+        "ok": "OK."
+      },
+      "accents": [
+        "never",
+        "OK."
+      ],
+      "data": {
+        "beat": "safety",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "click",
+          "on": {
+            "cue": "ok"
+          },
+          "volume": 0.15
+        }
+      ],
+      "transition": "cut",
+      "claims": [
+        "c3"
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "dDuet",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Now the rivals. Meta's Muse is free, but built for personal errands. Grok Bot needs an X subscription, from 30 dollars. OpenAI's Dots starts at 100 dollars a month.",
+      "cues": {
+        "muse": "Muse",
+        "grok": "Grok",
+        "dots": "Dots"
+      },
+      "accents": [
+        "rivals.",
+        "free,"
+      ],
+      "data": {
+        "beat": "rivals",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.08
+        }
+      ],
+      "transition": "cut",
+      "claims": [
+        "c4"
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "dDuet",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Duet comes inside Claude Pro, at 20 dollars. And it already knows you. Your memory, skills and connected apps carry straight over.",
+      "cues": {
+        "pro": "Pro,",
+        "price": "20",
+        "knows": "knows",
+        "memory": "memory,",
+        "skills": "skills",
+        "apps": "apps"
+      },
+      "accents": [
+        "inside",
+        "knows"
+      ],
+      "data": {
+        "beat": "best",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.08
+        }
+      ],
+      "transition": "cut",
+      "claims": [
+        "c5"
+      ]
+    },
+    {
+      "id": "s07",
+      "type": "dDuet",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "vo": "To get it: join the waitlist on claude.com with your Claude email. When your invite lands, open the Duet app or claude.ai. Start with one job, and only the apps it needs.",
+      "cues": {
+        "waitlist": "waitlist",
+        "email": "email.",
+        "invite": "invite",
+        "open": "open",
+        "job": "job,",
+        "apps": "apps"
+      },
+      "accents": [
+        "waitlist",
+        "one"
+      ],
+      "data": {
+        "beat": "setup",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "click",
+          "on": {
+            "cue": "waitlist",
+            "offset": 20
+          },
+          "volume": 0.12
+        }
+      ],
+      "transition": "cut",
+      "claims": [
+        "c5"
+      ]
+    },
+    {
+      "id": "s08",
+      "type": "dDuet",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "vo": "The catch? It's a US-only preview for Pro and Max, and background work uses your plan limits.",
+      "cues": {
+        "us": "US-only",
+        "pro": "Pro",
+        "max": "Max,",
+        "limits": "limits."
+      },
+      "accents": [
+        "catch?",
+        "limits."
+      ],
+      "data": {
+        "beat": "catch",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.08
+        }
+      ],
+      "transition": "cut",
+      "claims": [
+        "c5"
+      ]
+    },
+    {
+      "id": "s09",
+      "type": "dDuet",
+      "pad": 16,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Muse, Grok Bot, Dots or Duet. Which one would you trust with your inbox? Tell me in the comments.",
+      "cues": {
+        "muse": "Muse,",
+        "grok": "Grok",
+        "dots": "Dots",
+        "duet": "Duet.",
+        "comments": "comments."
+      },
+      "accents": [
+        "Duet.",
+        "inbox?"
+      ],
+      "data": {
+        "beat": "cta",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "tick",
+          "on": {
+            "cue": "duet"
+          },
+          "volume": 0.14
+        }
+      ],
+      "transition": "cut"
+    }
+  ]
+}

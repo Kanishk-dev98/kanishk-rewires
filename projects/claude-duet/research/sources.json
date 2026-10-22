@@ -1,0 +1,107 @@
+{
+ "topic": "Claude Duet explained",
+ "researched_at": "2026-10-22",
+ "claims": [
+  {
+   "id": "c1",
+   "type": "fact",
+   "claim": "Anthropic launched Claude Duet as a research preview on Oct 21, 2026; it runs on its own cloud computer and keeps working when your devices are off.",
+   "sources": [
+    {
+     "url": "https://9to5mac.com/2026/10/21/anthropic-takes-on-chatgpt-dots-and-meta-muse-with-claude-duet/",
+     "title": "Anthropic takes on ChatGPT Dots and Meta Muse with Claude Duet",
+     "publisher": "9to5Mac",
+     "published": "2026-10-21"
+    },
+    {
+     "url": "https://flaviocopes.com/claude-duet/",
+     "title": "A deep dive into Claude Duet",
+     "publisher": "Flavio Copes",
+     "published": "2026-10-21"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/10/21/anthropic-preview-of-claude-duet-personal-ai-agent-take-on-muse-dots.html",
+     "title": "Anthropic announces preview of Claude Duet",
+     "publisher": "CNBC",
+     "published": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "type": "fact",
+   "claim": "Duet checks connected apps every few hours, sends a morning brief, follows up, and delivers decks/dashboards as editable files.",
+   "sources": [
+    {
+     "url": "https://9to5mac.com/2026/10/21/anthropic-takes-on-chatgpt-dots-and-meta-muse-with-claude-duet/",
+     "title": "Anthropic takes on ChatGPT Dots and Meta Muse with Claude Duet",
+     "publisher": "9to5Mac",
+     "published": "2026-10-21"
+    },
+    {
+     "url": "https://flaviocopes.com/claude-duet/",
+     "title": "A deep dive into Claude Duet",
+     "publisher": "Flavio Copes",
+     "published": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "type": "fact",
+   "claim": "Duet asks before it sends a message, makes a payment, signs a document or deletes anything.",
+   "sources": [
+    {
+     "url": "https://9to5mac.com/2026/10/21/anthropic-takes-on-chatgpt-dots-and-meta-muse-with-claude-duet/",
+     "title": "Anthropic takes on ChatGPT Dots and Meta Muse with Claude Duet",
+     "publisher": "9to5Mac",
+     "published": "2026-10-21"
+    },
+    {
+     "url": "https://flaviocopes.com/claude-duet/",
+     "title": "A deep dive into Claude Duet",
+     "publisher": "Flavio Copes",
+     "published": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "type": "fact",
+   "claim": "Rivals: Meta Muse (Sep 8, free tier), Grok Bot (Aug 11, needs X subscription from $30/mo), OpenAI Dots (Sep 29, ChatGPT Pro from $100/mo).",
+   "sources": [
+    {
+     "url": "https://aimultiple.com/always-on-agents",
+     "title": "Always-On Agents: Claude Duet vs Dots vs Grok Bot",
+     "publisher": "AIMultiple",
+     "published": "accessed 2026-10-22"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "type": "fact",
+   "claim": "Duet is included in Claude Pro ($20/mo) and Max; memory, skills and connectors carry over; US waitlist preview for Pro/Max; background work counts toward plan limits.",
+   "sources": [
+    {
+     "url": "https://9to5mac.com/2026/10/21/anthropic-takes-on-chatgpt-dots-and-meta-muse-with-claude-duet/",
+     "title": "Anthropic takes on ChatGPT Dots and Meta Muse with Claude Duet",
+     "publisher": "9to5Mac",
+     "published": "2026-10-21"
+    },
+    {
+     "url": "https://flaviocopes.com/claude-duet/",
+     "title": "A deep dive into Claude Duet",
+     "publisher": "Flavio Copes",
+     "published": "2026-10-21"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/10/21/anthropic-preview-of-claude-duet-personal-ai-agent-take-on-muse-dots.html",
+     "title": "Anthropic announces preview of Claude Duet",
+     "publisher": "CNBC",
+     "published": "2026-10-21"
+    }
+   ]
+  }
+ ]
+}

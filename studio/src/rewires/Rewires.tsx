@@ -29,10 +29,11 @@ import { AGENT_THREAD_SCENES } from "./agentThread";
 import { EXPLAINER_SCENES } from "./explainer";
 import { SALES_MACHINE_SCENES } from "./salesMachine";
 import { SALES_TEAM_SCENES } from "./salesTeam";
+import { DUET_SCENES } from "./duet";
 import { TUT_SCENES } from "./tutScenes";
 import { UI_SCENES } from "./uiScenes";
 
-const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES, ...PROMO_SCENES, ...HEAT_SCENES, ...GEM_SCENES, ...DECOY_SCENES, ...AD_SCENES, ...MARKET_SCENES, ...FK_SCENES, ...DX_SCENES, ...GROK_SCENES, ...AGENT_THREAD_SCENES, ...EXPLAINER_SCENES, ...SALES_MACHINE_SCENES, ...SALES_TEAM_SCENES };
+const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES, ...PROMO_SCENES, ...HEAT_SCENES, ...GEM_SCENES, ...DECOY_SCENES, ...AD_SCENES, ...MARKET_SCENES, ...FK_SCENES, ...DX_SCENES, ...GROK_SCENES, ...AGENT_THREAD_SCENES, ...EXPLAINER_SCENES, ...SALES_MACHINE_SCENES, ...SALES_TEAM_SCENES, ...DUET_SCENES };
 
 export type Sfx = { src: string; at: number; volume?: number };
 export type RewiresScene = {
@@ -136,7 +137,7 @@ export const Rewires: React.FC<RewiresProps> = ({ scenes, captions, showCaptions
         return (
           <Sequence key={i} from={starts[i]} durationInFrames={s.dur} premountFor={fps} name={`${i} ${s.type}`}>
             <Entrance kind={s.transition}>
-              {Scene ? <Scene data={s.data} /> : null}
+              {Scene ? <Scene data={{ ...s.data, _world: { i, starts, durs: scenes.map((x) => x.dur), cues: scenes.map((x) => x.data?.cues ?? {}) } }} /> : null}
               {/^(p|h|g|d|a|m|f|x|s)[A-Z]/.test(s.type) ? null : <Vignette strength={isDark(s.data) ? 0.5 : 0.12} />}
               {s.source ? <SourceTag text={s.source} dark={isDark(s.data)} captionTop={showCaptions && captionStyle?.mode !== "headline" ? captionStyle?.top : undefined} /> : null}
             </Entrance>
