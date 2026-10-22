@@ -30,5 +30,29 @@
   "apollo.svg": {
     "source": "Apollo.io brand mark (black)",
     "note": "official colour"
+  },
+  "openai.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:OpenAI_logo_2025_(symbol).svg",
+    "note": "official colour, unaltered; nominative use"
+  },
+  "grok.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Grok_logo.svg",
+    "note": "official colour, unaltered; nominative use"
+  },
+  "xai.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:XAI_Logo.svg",
+    "note": "official colour, unaltered; nominative use"
+  },
+  "google-calendar.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Google_Calendar_icon_(2020).svg",
+    "note": "official colour, unaltered; nominative use"
+  },
+  "slack.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Slack_icon_2019.svg",
+    "note": "official colour, unaltered; nominative use"
+  },
+  "stripe.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Stripe_Logo,_revised_2016.svg",
+    "note": "official colour, unaltered; nominative use"
   }
 }
