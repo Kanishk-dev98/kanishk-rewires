@@ -7,6 +7,19 @@ description: Operating playbook for Kanishk.Rewires reels, distilled from deep s
 
 Evidence: `research/reference-videos/{prince,madetoscale,jackroberts}/ANALYSIS.md` (16 + 11 + 10 reels), with per-reel metrics, hooks, beats and motion, and why each won or lost. The techniques live in `rewires-motion-library` rows 36 to 80.
 
+
+## 0. Non-negotiable: no repeated look
+
+- Every reel picks its own transition grammar and 4–6 hero techniques from the motion library (rows 26–80). They must differ from the previous 2–3 reels. Write the pick into the storyboard brief before any code.
+- The `world.tsx` camera (lime thread + whip-zoom + specks) was the Duet reel's signature. Do not reuse it as a default.
+- **Maturity bar:**
+  - one large hero object per act that transforms
+  - faithful, information-dense UI (real code, real documents, real-looking pages)
+  - editorial type
+  - varied, purposeful entrances
+  - no drifting particles, clip-art icons or sticker labels
+- When the visual direction changes, show styleframes before the full render.
+
 **The law, from the data:** these reels share an identical production kit, yet results vary about 130×.
 - **Topic, hook and CTA mechanics decide reach and comments.** Motion is table stakes: it makes the reel watchable, it does not make it spread.
 - Never trade a stronger hook for fancier animation.
