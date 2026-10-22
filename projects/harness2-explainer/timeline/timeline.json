@@ -1,0 +1,1145 @@
+{
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "xBeat",
+      "dur": 88,
+      "vo": "projects/harness2-explainer/vo/s00.mp3",
+      "voAt": 2,
+      "data": {
+        "kind": "logo",
+        "theme": "cream",
+        "logo": "media/explainer/google-c.svg",
+        "badge": "NEW \u00b7 JUST RELEASED",
+        "license": "OPEN SOURCE \u00b7 APACHE 2.0",
+        "cues": {
+          "open": 60
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "volume": 0.25
+        },
+        {
+          "src": "sfx/ding.wav",
+          "at": 60,
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "type": "xBeat",
+      "dur": 184,
+      "vo": "projects/harness2-explainer/vo/s01.mp3",
+      "voAt": 4,
+      "data": {
+        "kind": "hub",
+        "theme": "cream",
+        "center": "AI agent",
+        "ringCue": "ring",
+        "repo": {
+          "owner": "google-research",
+          "name": "harness2",
+          "desc": "Recursive Agent Harnessing for an Open World",
+          "logo": "media/explainer/google-c.svg"
+        },
+        "chips": [
+          {
+            "t": "Prompts",
+            "cue": "p"
+          },
+          {
+            "t": "Tools",
+            "cue": "t"
+          },
+          {
+            "t": "Memory",
+            "cue": "m"
+          },
+          {
+            "t": "Skills",
+            "cue": "s"
+          }
+        ],
+        "cues": {
+          "ring": 43,
+          "p": 95,
+          "t": 117,
+          "m": 139,
+          "s": 158
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 117,
+          "volume": 0.2
+        },
+        {
+          "src": "sfx/tick.wav",
+          "at": 158,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "xBeat",
+      "dur": 62,
+      "vo": "projects/harness2-explainer/vo/s02.mp3",
+      "voAt": 4,
+      "data": {
+        "kind": "weights",
+        "theme": "cream",
+        "cues": {
+          "strike": 16
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 16,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "xBeat",
+      "dur": 46,
+      "vo": "projects/harness2-explainer/vo/s03.mp3",
+      "voAt": 4,
+      "data": {
+        "kind": "reveal",
+        "theme": "cream",
+        "name": "Harness",
+        "sup": "2",
+        "tagline": "GOOGLE-RESEARCH / HARNESS2"
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/boom.wav",
+          "at": 6,
+          "volume": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "xBeat",
+      "dur": 130,
+      "vo": "projects/harness2-explainer/vo/s04.mp3",
+      "voAt": 4,
+      "data": {
+        "kind": "editor",
+        "theme": "cream",
+        "lines": [
+          "You are a careful research agent.",
+          "Always cite your sources.",
+          "Ask before you act."
+        ],
+        "edit": "Be more concise. Use the tools first."
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 24,
+          "volume": 0.15
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "xBeat",
+      "dur": 60,
+      "vo": "projects/harness2-explainer/vo/s05.mp3",
+      "voAt": 4,
+      "data": {
+        "kind": "terminal",
+        "theme": "cream",
+        "cmd": "harness2 --bench jb --k 1 --mode parallel"
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "xBeat",
+      "dur": 191,
+      "vo": "projects/harness2-explainer/vo/s06.mp3",
+      "voAt": 4,
+      "data": {
+        "kind": "loop",
+        "theme": "cream",
+        "url": "harness2.github.io",
+        "logTitle": "harness2 \u00b7 run log",
+        "steps": [
+          {
+            "t": "Propose",
+            "sub": "Two candidate edits",
+            "cue": "pr"
+          },
+          {
+            "t": "Test",
+            "sub": "Same task, same settings",
+            "cue": "te"
+          },
+          {
+            "t": "Combine",
+            "sub": "Keep what helped",
+            "cue": "ke"
+          }
+        ],
+        "log": [
+          {
+            "t": "propose \u00b7 general + domain edit",
+            "cue": "l1"
+          },
+          {
+            "t": "probe \u00b7 same task, compared",
+            "cue": "l2"
+          },
+          {
+            "t": "compose \u00b7 supported edits kept",
+            "cue": "l3"
+          }
+        ],
+        "cues": {
+          "pr": 9,
+          "te": 61,
+          "ke": 137,
+          "l1": 26,
+          "l2": 89,
+          "l3": 169
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 61,
+          "volume": 0.2
+        },
+        {
+          "src": "sfx/ding.wav",
+          "at": 137,
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "type": "xBeat",
+      "dur": 180,
+      "vo": "projects/harness2-explainer/vo/s07.mp3",
+      "voAt": 4,
+      "data": {
+        "kind": "stat",
+        "theme": "cream",
+        "bench": "WORKBUDDY-BENCH \u00b7 GLM-5 + OPENCODE",
+        "value": 11.5,
+        "unit": "points",
+        "rows": [
+          {
+            "k": "BEFORE",
+            "v": "64.2"
+          },
+          {
+            "k": "AFTER",
+            "v": "75.7"
+          },
+          {
+            "k": "WEIGHTS",
+            "v": "same"
+          }
+        ],
+        "note": "Mean of 3 runs \u00b7 one improvement round (k=1)",
+        "cues": {
+          "stat": 79
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/riser.wav",
+          "at": 69,
+          "volume": 0.2
+        },
+        {
+          "src": "sfx/impact.wav",
+          "at": 95,
+          "volume": 0.4
+        }
+      ],
+      "source": "ARXIV 2610.14224"
+    },
+    {
+      "id": "s08",
+      "type": "xBeat",
+      "dur": 54,
+      "vo": "projects/harness2-explainer/vo/s08.mp3",
+      "voAt": 4,
+      "data": {
+        "kind": "act",
+        "to": "charcoal"
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "volume": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "type": "xBeat",
+      "dur": 133,
+      "vo": "projects/harness2-explainer/vo/s09.mp3",
+      "voAt": 4,
+      "data": {
+        "kind": "lessons",
+        "from": "TASK 41 \u00b7 DONE",
+        "fromTitle": "Lessons saved",
+        "toTitle": "Task 42",
+        "items": [
+          {
+            "t": "Plan before calling tools",
+            "cue": "i1"
+          },
+          {
+            "t": "Check sources twice",
+            "cue": "i2"
+          },
+          {
+            "t": "Keep answers short",
+            "cue": "i3"
+          }
+        ],
+        "cues": {
+          "i1": 10,
+          "i2": 30,
+          "i3": 49,
+          "carry": 85
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 85,
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "type": "xBeat",
+      "dur": 73,
+      "vo": "projects/harness2-explainer/vo/s10.mp3",
+      "voAt": 4,
+      "data": {
+        "kind": "chart",
+        "title": "SCORE ACROSS TASKS \u00b7 ILLUSTRATIVE",
+        "points": [
+          40,
+          47,
+          53,
+          59,
+          64,
+          70,
+          76,
+          82
+        ],
+        "baseline": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          45,
+          46
+        ],
+        "label": "better"
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/riser.wav",
+          "at": 4,
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "xBeat",
+      "dur": 148,
+      "vo": "projects/harness2-explainer/vo/s11.mp3",
+      "voAt": 4,
+      "data": {
+        "kind": "cta",
+        "theme": "cream",
+        "word": "harness",
+        "dm": "Here's the repo \ud83d\udc47",
+        "link": "github.com/google-research/harness2",
+        "cues": {
+          "follow": 35,
+          "comment": 55,
+          "send": 108
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 35,
+          "volume": 0.3
+        },
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 108,
+          "volume": 0.25
+        }
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "text": "Google",
+      "startMs": 149,
+      "endMs": 491
+    },
+    {
+      "text": "researchers",
+      "startMs": 491,
+      "endMs": 1104
+    },
+    {
+      "text": "just",
+      "startMs": 1104,
+      "endMs": 1328
+    },
+    {
+      "text": "open-sourced",
+      "startMs": 1423,
+      "endMs": 2012
+    },
+    {
+      "text": "something",
+      "startMs": 2012,
+      "endMs": 2236
+    },
+    {
+      "text": "wild",
+      "startMs": 2248,
+      "endMs": 2673,
+      "hl": true
+    },
+    {
+      "text": "It",
+      "startMs": 3161,
+      "endMs": 3244
+    },
+    {
+      "text": "lets",
+      "startMs": 3244,
+      "endMs": 3397
+    },
+    {
+      "text": "your",
+      "startMs": 3397,
+      "endMs": 3527
+    },
+    {
+      "text": "AI",
+      "startMs": 3538,
+      "endMs": 3939
+    },
+    {
+      "text": "agent",
+      "startMs": 4010,
+      "endMs": 4352
+    },
+    {
+      "text": "upgrade",
+      "startMs": 4364,
+      "endMs": 4800,
+      "hl": true
+    },
+    {
+      "text": "its",
+      "startMs": 4812,
+      "endMs": 4930
+    },
+    {
+      "text": "own",
+      "startMs": 4930,
+      "endMs": 5095
+    },
+    {
+      "text": "setup",
+      "startMs": 5107,
+      "endMs": 5543
+    },
+    {
+      "text": "its",
+      "startMs": 5968,
+      "endMs": 6074
+    },
+    {
+      "text": "prompts",
+      "startMs": 6086,
+      "endMs": 6722
+    },
+    {
+      "text": "tools",
+      "startMs": 6828,
+      "endMs": 7336
+    },
+    {
+      "text": "memory",
+      "startMs": 7571,
+      "endMs": 8078
+    },
+    {
+      "text": "and",
+      "startMs": 8090,
+      "endMs": 8173
+    },
+    {
+      "text": "skills",
+      "startMs": 8185,
+      "endMs": 8798
+    },
+    {
+      "text": "Without",
+      "startMs": 9306,
+      "endMs": 9589
+    },
+    {
+      "text": "retraining",
+      "startMs": 9589,
+      "endMs": 10084,
+      "hl": true
+    },
+    {
+      "text": "the",
+      "startMs": 10096,
+      "endMs": 10155
+    },
+    {
+      "text": "model",
+      "startMs": 10167,
+      "endMs": 10509
+    },
+    {
+      "text": "at",
+      "startMs": 10509,
+      "endMs": 10568
+    },
+    {
+      "text": "all",
+      "startMs": 10580,
+      "endMs": 10874
+    },
+    {
+      "text": "It's",
+      "startMs": 11361,
+      "endMs": 11432
+    },
+    {
+      "text": "called",
+      "startMs": 11432,
+      "endMs": 11644
+    },
+    {
+      "text": "Harness",
+      "startMs": 11644,
+      "endMs": 11951,
+      "hl": true
+    },
+    {
+      "text": "squared",
+      "startMs": 11962,
+      "endMs": 12411
+    },
+    {
+      "text": "Right",
+      "startMs": 12871,
+      "endMs": 13024
+    },
+    {
+      "text": "now",
+      "startMs": 13024,
+      "endMs": 13283
+    },
+    {
+      "text": "most",
+      "startMs": 13307,
+      "endMs": 13543
+    },
+    {
+      "text": "teams",
+      "startMs": 13543,
+      "endMs": 13755
+    },
+    {
+      "text": "tweak",
+      "startMs": 13755,
+      "endMs": 13991
+    },
+    {
+      "text": "that",
+      "startMs": 13991,
+      "endMs": 14097
+    },
+    {
+      "text": "setup",
+      "startMs": 14109,
+      "endMs": 14475
+    },
+    {
+      "text": "by",
+      "startMs": 14475,
+      "endMs": 14604
+    },
+    {
+      "text": "hand",
+      "startMs": 14604,
+      "endMs": 15088,
+      "hl": true
+    },
+    {
+      "text": "test",
+      "startMs": 15288,
+      "endMs": 15607
+    },
+    {
+      "text": "it",
+      "startMs": 15618,
+      "endMs": 15772
+    },
+    {
+      "text": "and",
+      "startMs": 15972,
+      "endMs": 16043
+    },
+    {
+      "text": "tweak",
+      "startMs": 16055,
+      "endMs": 16302
+    },
+    {
+      "text": "it",
+      "startMs": 16302,
+      "endMs": 16361
+    },
+    {
+      "text": "again",
+      "startMs": 16373,
+      "endMs": 16692
+    },
+    {
+      "text": "This",
+      "startMs": 17228,
+      "endMs": 17357
+    },
+    {
+      "text": "does",
+      "startMs": 17357,
+      "endMs": 17522
+    },
+    {
+      "text": "it",
+      "startMs": 17522,
+      "endMs": 17605
+    },
+    {
+      "text": "for",
+      "startMs": 17605,
+      "endMs": 17770
+    },
+    {
+      "text": "you",
+      "startMs": 17782,
+      "endMs": 17912
+    },
+    {
+      "text": "with",
+      "startMs": 17923,
+      "endMs": 18041
+    },
+    {
+      "text": "one",
+      "startMs": 18041,
+      "endMs": 18289,
+      "hl": true
+    },
+    {
+      "text": "command",
+      "startMs": 18289,
+      "endMs": 18749
+    },
+    {
+      "text": "It",
+      "startMs": 19228,
+      "endMs": 19287
+    },
+    {
+      "text": "proposes",
+      "startMs": 19287,
+      "endMs": 19864
+    },
+    {
+      "text": "two",
+      "startMs": 19876,
+      "endMs": 20124
+    },
+    {
+      "text": "fixes",
+      "startMs": 20124,
+      "endMs": 20831
+    },
+    {
+      "text": "tests",
+      "startMs": 21044,
+      "endMs": 21492
+    },
+    {
+      "text": "both",
+      "startMs": 21504,
+      "endMs": 21846
+    },
+    {
+      "text": "on",
+      "startMs": 21846,
+      "endMs": 21916
+    },
+    {
+      "text": "the",
+      "startMs": 21916,
+      "endMs": 21975
+    },
+    {
+      "text": "same",
+      "startMs": 21975,
+      "endMs": 22294,
+      "hl": true
+    },
+    {
+      "text": "task",
+      "startMs": 22305,
+      "endMs": 22883
+    },
+    {
+      "text": "and",
+      "startMs": 23272,
+      "endMs": 23438
+    },
+    {
+      "text": "keeps",
+      "startMs": 23567,
+      "endMs": 23874
+    },
+    {
+      "text": "only",
+      "startMs": 23956,
+      "endMs": 24216
+    },
+    {
+      "text": "what",
+      "startMs": 24216,
+      "endMs": 24334
+    },
+    {
+      "text": "actually",
+      "startMs": 24334,
+      "endMs": 24640
+    },
+    {
+      "text": "worked",
+      "startMs": 24640,
+      "endMs": 25053,
+      "hl": true
+    },
+    {
+      "text": "In",
+      "startMs": 25583,
+      "endMs": 25630
+    },
+    {
+      "text": "the",
+      "startMs": 25630,
+      "endMs": 25700
+    },
+    {
+      "text": "paper",
+      "startMs": 25700,
+      "endMs": 26243
+    },
+    {
+      "text": "one",
+      "startMs": 26479,
+      "endMs": 26738
+    },
+    {
+      "text": "round",
+      "startMs": 26738,
+      "endMs": 27068
+    },
+    {
+      "text": "boosted",
+      "startMs": 27080,
+      "endMs": 27422
+    },
+    {
+      "text": "a",
+      "startMs": 27422,
+      "endMs": 27458
+    },
+    {
+      "text": "model",
+      "startMs": 27458,
+      "endMs": 27858
+    },
+    {
+      "text": "by",
+      "startMs": 27870,
+      "endMs": 28000
+    },
+    {
+      "text": "eleven",
+      "startMs": 28000,
+      "endMs": 28401,
+      "hl": true
+    },
+    {
+      "text": "and",
+      "startMs": 28401,
+      "endMs": 28460
+    },
+    {
+      "text": "a",
+      "startMs": 28472,
+      "endMs": 28495
+    },
+    {
+      "text": "half",
+      "startMs": 28507,
+      "endMs": 28837
+    },
+    {
+      "text": "points",
+      "startMs": 28849,
+      "endMs": 29356
+    },
+    {
+      "text": "with",
+      "startMs": 29557,
+      "endMs": 29674
+    },
+    {
+      "text": "the",
+      "startMs": 29675,
+      "endMs": 29733
+    },
+    {
+      "text": "exact",
+      "startMs": 29745,
+      "endMs": 30146
+    },
+    {
+      "text": "same",
+      "startMs": 30158,
+      "endMs": 30417,
+      "hl": true
+    },
+    {
+      "text": "weights",
+      "startMs": 30417,
+      "endMs": 30936
+    },
+    {
+      "text": "But",
+      "startMs": 31594,
+      "endMs": 31653
+    },
+    {
+      "text": "here's",
+      "startMs": 31653,
+      "endMs": 31936
+    },
+    {
+      "text": "the",
+      "startMs": 31936,
+      "endMs": 32019
+    },
+    {
+      "text": "real",
+      "startMs": 32031,
+      "endMs": 32337
+    },
+    {
+      "text": "twist",
+      "startMs": 32337,
+      "endMs": 32903,
+      "hl": true
+    },
+    {
+      "text": "It",
+      "startMs": 33394,
+      "endMs": 33512
+    },
+    {
+      "text": "writes",
+      "startMs": 33512,
+      "endMs": 33724
+    },
+    {
+      "text": "down",
+      "startMs": 33725,
+      "endMs": 33996
+    },
+    {
+      "text": "what",
+      "startMs": 33996,
+      "endMs": 34090
+    },
+    {
+      "text": "it",
+      "startMs": 34090,
+      "endMs": 34173
+    },
+    {
+      "text": "learned",
+      "startMs": 34173,
+      "endMs": 34456,
+      "hl": true
+    },
+    {
+      "text": "from",
+      "startMs": 34467,
+      "endMs": 34656
+    },
+    {
+      "text": "every",
+      "startMs": 34798,
+      "endMs": 35057
+    },
+    {
+      "text": "task",
+      "startMs": 35057,
+      "endMs": 35600
+    },
+    {
+      "text": "so",
+      "startMs": 35812,
+      "endMs": 35918
+    },
+    {
+      "text": "the",
+      "startMs": 35918,
+      "endMs": 35989
+    },
+    {
+      "text": "next",
+      "startMs": 36000,
+      "endMs": 36295
+    },
+    {
+      "text": "one",
+      "startMs": 36295,
+      "endMs": 36531
+    },
+    {
+      "text": "starts",
+      "startMs": 36531,
+      "endMs": 36850
+    },
+    {
+      "text": "smarter",
+      "startMs": 36861,
+      "endMs": 37286,
+      "hl": true
+    },
+    {
+      "text": "Your",
+      "startMs": 37828,
+      "endMs": 37981
+    },
+    {
+      "text": "agent",
+      "startMs": 37993,
+      "endMs": 38323
+    },
+    {
+      "text": "gets",
+      "startMs": 38323,
+      "endMs": 38512
+    },
+    {
+      "text": "better",
+      "startMs": 38523,
+      "endMs": 38913,
+      "hl": true
+    },
+    {
+      "text": "at",
+      "startMs": 38972,
+      "endMs": 39066
+    },
+    {
+      "text": "getting",
+      "startMs": 39078,
+      "endMs": 39302
+    },
+    {
+      "text": "better",
+      "startMs": 39314,
+      "endMs": 39703,
+      "hl": true
+    },
+    {
+      "text": "Want",
+      "startMs": 40261,
+      "endMs": 40367
+    },
+    {
+      "text": "the",
+      "startMs": 40367,
+      "endMs": 40426
+    },
+    {
+      "text": "repo",
+      "startMs": 40426,
+      "endMs": 40803
+    },
+    {
+      "text": "Follow",
+      "startMs": 41204,
+      "endMs": 41653
+    },
+    {
+      "text": "comment",
+      "startMs": 41865,
+      "endMs": 42160
+    },
+    {
+      "text": "harness",
+      "startMs": 42160,
+      "endMs": 42690,
+      "hl": true
+    },
+    {
+      "text": "and",
+      "startMs": 43032,
+      "endMs": 43244
+    },
+    {
+      "text": "I'll",
+      "startMs": 43527,
+      "endMs": 43645
+    },
+    {
+      "text": "send",
+      "startMs": 43645,
+      "endMs": 43893
+    },
+    {
+      "text": "you",
+      "startMs": 43893,
+      "endMs": 43952
+    },
+    {
+      "text": "the",
+      "startMs": 43952,
+      "endMs": 44023
+    },
+    {
+      "text": "link",
+      "startMs": 44023,
+      "endMs": 44365
+    }
+  ],
+  "sections": [
+    {
+      "start": 0.0,
+      "end": 2.933333333333333,
+      "energy": 3
+    },
+    {
+      "start": 2.933333333333333,
+      "end": 9.066666666666666,
+      "energy": 2
+    },
+    {
+      "start": 9.066666666666666,
+      "end": 11.133333333333333,
+      "energy": 2
+    },
+    {
+      "start": 11.133333333333333,
+      "end": 12.666666666666666,
+      "energy": 3
+    },
+    {
+      "start": 12.666666666666666,
+      "end": 17.0,
+      "energy": 2
+    },
+    {
+      "start": 17.0,
+      "end": 19.0,
+      "energy": 2
+    },
+    {
+      "start": 19.0,
+      "end": 25.366666666666667,
+      "energy": 3
+    },
+    {
+      "start": 25.366666666666667,
+      "end": 31.366666666666667,
+      "energy": 3
+    },
+    {
+      "start": 31.366666666666667,
+      "end": 33.166666666666664,
+      "energy": 3
+    },
+    {
+      "start": 33.166666666666664,
+      "end": 37.6,
+      "energy": 2
+    },
+    {
+      "start": 37.6,
+      "end": 40.03333333333333,
+      "energy": 2
+    },
+    {
+      "start": 40.03333333333333,
+      "end": 44.96666666666667,
+      "energy": 2
+    }
+  ],
+  "hits": [],
+  "bodyFrames": 1349
+}

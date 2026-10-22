@@ -1,5 +1,5 @@
 {
-  "video": "/Users/kanishk.raj/kanishk-rewires/projects/flipkart-ad-breakdown/renders/flipkart-ad-breakdown_v3.mp4",
+  "video": "/Users/kanishk.raj/kanishk-rewires/projects/flipkart-ad-breakdown/renders/flipkart-ad-breakdown_v5.mp4",
   "passed": true,
   "checks": [
     {
@@ -77,13 +77,13 @@
     {
       "check": "safe area",
       "ok": true,
-      "detail": "nothing drawn within 60 px of the sides (full-bleed scenes not checked: s00, s01, s02, s03, s04, s05, s06)",
+      "detail": "nothing drawn within 60 px of the sides (full-bleed scenes not checked: s00, s01, s02, s03, s04)",
       "severity": "info"
     },
     {
       "check": "brand ending",
       "ok": true,
-      "detail": "lime px 29, cream px 476",
+      "detail": "lime px 29, cream px 475",
       "severity": "info"
     }
   ],

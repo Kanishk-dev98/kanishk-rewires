@@ -1,0 +1,18 @@
+- [user-alok-kanishk-rewires](user-alok-kanishk-rewires.md) — Alok Diwan, Kanishk.Rewires channel (final name); this repo is its studio
+- [feedback-video-quality](feedback-video-quality.md) — Energetic, premium, on-brand, no overlaps, readable; run rewires-video-qa
+- [feedback-delivery-workflow](feedback-delivery-workflow.md) — New file name per version in Downloads, open it, save in films/, push
+- [feedback-motion-not-typography](feedback-motion-not-typography.md) — Never typography-only: animated UI/diagrams that show the VO; brand mark small
+- [feedback-reference-style](feedback-reference-style.md) — Quality bar = ref-1000319940 grammar in our theme; lowercase kanishk.rewires; comment CTA
+- [publora-accounts-separate](publora-accounts-separate.md) — claude.ai Publora = Rohit's (@roheit.ai), never use for Alok; Alok's is the user-scope 'publora' MCP server
+- [feedback-cover-grid-safe](feedback-cover-grid-safe.md) — Reel covers: 9:16 with everything inside the centre 3:4 grid crop (y 240 to 1680); never 16:9
+- [feedback-vary-format-no-double-text](feedback-vary-format-no-double-text.md) — New structure each reel (no more "only N steps" tutorial); never show the same words twice (line + caption)
+- [feedback-layman-clarity-one-by-one](feedback-layman-clarity-one-by-one.md) — Hook names the subject in 0-6 s with real visuals; English only; layman story; one reel at a time, script approved first
+- [feedback-ig-quality-brand-backgrounds](feedback-ig-quality-brand-backgrounds.md) — ~20 Mbps master + light grain for IG; backgrounds only charcoal #0A0A0A or cream #F6F4ED, never grey
+- [feedback-footage-only-where-subject](feedback-footage-only-where-subject.md) — Footage only where it is the subject (the ad itself); rest = brand motion graphics; frame 16:9 properly in 9:16
+- [feedback-delete-superseded-versions](feedback-delete-superseded-versions.md) — After approval/posting, delete older vN videos and old covers (renders + Downloads); keep only final
+- [feedback-daily-quality-upgrade](feedback-daily-quality-upgrade.md) — Every reel must beat the best previous one; never trade quality for speed; daily upgrade loop
+- [reference-princegupta-benchmark](reference-princegupta-benchmark.md) — Current benchmark reel (@princegupta.ai Harness²): zero stock, headline-as-caption, real product UIs
+- [feedback-minimal-covers-light-theme](feedback-minimal-covers-light-theme.md) — Covers: minimal, one hero visual + 3-5 words; reels can use the light brand palette (cream/stone/pale lime)
+- [feedback-real-colour-logos](feedback-real-colour-logos.md) — HARD RULE: official full-colour brand logos only (Google 4-colour G etc.), never monochrome Simple Icons
+- [feedback-audio-voice-first](feedback-audio-voice-first.md) — Voice first; music dimmed ~20 dB under VO; vary music per reel; no repeated boom/impact hits
+- [feedback-mature-visuals-no-ai-tells](feedback-mature-visuals-no-ai-tells.md) — No single-object films; mature realistic metaphors only where needed; premium number/type treatment; on-screen hook headline

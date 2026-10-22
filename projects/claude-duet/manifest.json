@@ -1,0 +1,250 @@
+{
+  "slug": "claude-duet",
+  "topic": "Claude Duet explained: what it is, what's new, vs Muse, Grok Bot and Dots, why it's best, how to set up",
+  "created": "2026-10-22T11:42:41+00:00",
+  "options": {
+    "format": "9x16",
+    "language": "en"
+  },
+  "stages": {
+    "intake": {
+      "status": "done",
+      "at": "2026-10-22T11:42:41+00:00",
+      "note": "project folder and manifest created"
+    },
+    "research": {
+      "status": "done",
+      "at": "2026-10-22T11:43:16+00:00",
+      "note": "5 claims in the ledger",
+      "outputs": [
+        "research/sources.json",
+        "research/sources.md"
+      ]
+    },
+    "brief": {
+      "status": "done",
+      "at": "2026-10-22T11:43:16+00:00",
+      "note": "brief present",
+      "outputs": [
+        "brief/brief.md"
+      ]
+    },
+    "script": {
+      "status": "done",
+      "at": "2026-10-22T11:43:16+00:00",
+      "note": "214 narration words (~82 s at a natural pace)",
+      "outputs": [
+        "script/script.md"
+      ]
+    },
+    "storyboard": {
+      "status": "done",
+      "at": "2026-10-22T11:43:16+00:00",
+      "note": "10 scenes valid, 9 warnings",
+      "outputs": [
+        "storyboard/storyboard.json"
+      ]
+    },
+    "assets": {
+      "status": "done",
+      "at": "2026-10-22T11:43:34+00:00",
+      "note": "10 narration clips (0 reused from cache)",
+      "outputs": [
+        "audio/vo/"
+      ]
+    },
+    "edit": {
+      "status": "done",
+      "at": "2026-10-22T11:43:35+00:00",
+      "note": "10 scenes, body 78.8 s + outro 2.5 s, 211 caption words",
+      "outputs": [
+        "timeline/timeline.json",
+        "timeline/props.json",
+        "captions/claude-duet.srt",
+        "audio/music.wav",
+        "audio/signature.wav"
+      ]
+    },
+    "render": {
+      "status": "done",
+      "at": "2026-10-22T16:27:12+00:00",
+      "note": "claude-duet_v1.mp4 (206.9 MB)",
+      "outputs": [
+        "renders/claude-duet_v1.mp4"
+      ]
+    },
+    "qc": {
+      "status": "done",
+      "at": "2026-10-22T16:27:44+00:00",
+      "note": "claude-duet_v1.mp4 passed 14 checks",
+      "outputs": [
+        "reports/qc.md",
+        "reports/contact_sheet.png"
+      ]
+    },
+    "delivery": {
+      "status": "done",
+      "at": "2026-10-22T16:27:44+00:00",
+      "note": "delivered claude-duet_v1.mp4",
+      "outputs": [
+        "reports/production_report.md"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s00.mp3",
+      "provider": "edge",
+      "at": "2026-10-22T11:43:34+00:00",
+      "cached": false,
+      "seconds": 6.29,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s01.mp3",
+      "provider": "edge",
+      "at": "2026-10-22T11:43:34+00:00",
+      "cached": false,
+      "seconds": 9.41,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s02.mp3",
+      "provider": "edge",
+      "at": "2026-10-22T11:43:34+00:00",
+      "cached": false,
+      "seconds": 6.07,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s03.mp3",
+      "provider": "edge",
+      "at": "2026-10-22T11:43:34+00:00",
+      "cached": false,
+      "seconds": 6.62,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s04.mp3",
+      "provider": "edge",
+      "at": "2026-10-22T11:43:34+00:00",
+      "cached": false,
+      "seconds": 5.11,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s05.mp3",
+      "provider": "edge",
+      "at": "2026-10-22T11:43:34+00:00",
+      "cached": false,
+      "seconds": 11.71,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s06.mp3",
+      "provider": "edge",
+      "at": "2026-10-22T11:43:34+00:00",
+      "cached": false,
+      "seconds": 8.83,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s07.mp3",
+      "provider": "edge",
+      "at": "2026-10-22T11:43:34+00:00",
+      "cached": false,
+      "seconds": 11.28,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s08.mp3",
+      "provider": "edge",
+      "at": "2026-10-22T11:43:34+00:00",
+      "cached": false,
+      "seconds": 5.93,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s09.mp3",
+      "provider": "edge",
+      "at": "2026-10-22T11:43:34+00:00",
+      "cached": false,
+      "seconds": 5.64,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "music",
+      "path": "audio/music.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-22T11:43:35+00:00",
+      "licence": "original, generated in code"
+    },
+    {
+      "kind": "music",
+      "path": "audio/signature.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-22T11:43:35+00:00",
+      "licence": "original, generated in code"
+    }
+  ],
+  "versions": [
+    {
+      "file": "renders/claude-duet_v1.mp4",
+      "at": "2026-10-22T17:57:38"
+    },
+    {
+      "file": "renders/claude-duet_v1.mp4",
+      "at": "2026-10-22T21:57:12"
+    }
+  ]
+}

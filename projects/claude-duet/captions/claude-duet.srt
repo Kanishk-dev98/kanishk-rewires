@@ -1,0 +1,163 @@
+1
+00:00:00,161 --> 00:00:02,511
+Anthropic just launched Claude Duet
+
+2
+00:00:02,531 --> 00:00:04,575
+An AI that keeps working for you
+
+3
+00:00:04,595 --> 00:00:06,398
+even when your laptop is off
+
+4
+00:00:06,561 --> 00:00:08,640
+It's not a chatbot you ask questions
+
+5
+00:00:08,660 --> 00:00:09,595
+It's an agent
+
+6
+00:00:09,615 --> 00:00:12,567
+It checks your email calendar and apps every
+
+7
+00:00:12,587 --> 00:00:14,701
+few hours and only comes to you when
+
+8
+00:00:14,721 --> 00:00:15,923
+something needs you
+
+9
+00:00:16,128 --> 00:00:17,086
+Every morning
+
+10
+00:00:17,106 --> 00:00:18,773
+it sends you a short brief
+
+11
+00:00:18,793 --> 00:00:21,155
+What's urgent what's waiting and what it already
+
+12
+00:00:21,175 --> 00:00:22,141
+prepared
+
+13
+00:00:22,361 --> 00:00:23,768
+Then it actually does the work
+
+14
+00:00:23,788 --> 00:00:25,690
+Follow-ups meeting prep
+
+15
+00:00:25,710 --> 00:00:28,143
+even full decks and dashboards as files you
+
+16
+00:00:28,163 --> 00:00:28,952
+can edit
+
+17
+00:00:29,161 --> 00:00:31,193
+But it never sends pays
+
+18
+00:00:31,213 --> 00:00:34,231
+signs or deletes anything without your OK
+
+19
+00:00:34,461 --> 00:00:35,561
+Now the rivals
+
+20
+00:00:35,581 --> 00:00:37,302
+Meta's Muse is free
+
+21
+00:00:37,327 --> 00:00:39,205
+but built for personal errands
+
+22
+00:00:39,225 --> 00:00:41,599
+Grok Bot needs an X subscription
+
+23
+00:00:41,619 --> 00:00:42,979
+from 30 dollars
+
+24
+00:00:42,999 --> 00:00:46,146
+OpenAI's Dots starts at 100 dollars a month
+
+25
+00:00:46,361 --> 00:00:49,784
+Duet comes inside Claude Pro at 20 dollars
+
+26
+00:00:49,804 --> 00:00:51,129
+And it already knows you
+
+27
+00:00:51,149 --> 00:00:54,383
+Your memory skills and connected apps carry straight
+
+28
+00:00:54,403 --> 00:00:55,157
+over
+
+29
+00:00:55,361 --> 00:00:56,138
+To get it
+
+30
+00:00:56,234 --> 00:00:58,855
+join the waitlist on claude.com with your Claude
+
+31
+00:00:58,875 --> 00:00:59,692
+email
+
+32
+00:00:59,712 --> 00:01:02,004
+When your invite lands open the Duet app
+
+33
+00:01:02,024 --> 00:01:03,607
+or claude.ai
+
+34
+00:01:03,627 --> 00:01:05,612
+Start with one job and only the apps
+
+35
+00:01:05,632 --> 00:01:06,610
+it needs
+
+36
+00:01:06,828 --> 00:01:07,680
+The catch
+
+37
+00:01:07,700 --> 00:01:10,216
+It's a US-only preview for Pro and Max
+
+38
+00:01:10,236 --> 00:01:12,711
+and background work uses your plan limits
+
+39
+00:01:12,928 --> 00:01:15,219
+Muse Grok Bot Dots or Duet
+
+40
+00:01:15,239 --> 00:01:17,118
+Which one would you trust with your inbox
+
+41
+00:01:17,138 --> 00:01:18,528
+Tell me in the comments

@@ -39,7 +39,7 @@
     },
     "storyboard": {
       "status": "done",
-      "at": "2026-10-18T19:55:26+00:00",
+      "at": "2026-10-18T21:30:48+00:00",
       "note": "7 scenes valid, 3 warnings",
       "outputs": [
         "storyboard/storyboard.json"
@@ -47,7 +47,7 @@
     },
     "assets": {
       "status": "done",
-      "at": "2026-10-18T19:55:26+00:00",
+      "at": "2026-10-18T21:30:48+00:00",
       "note": "7 narration clips (7 reused from cache)",
       "outputs": [
         "audio/vo/"
@@ -55,28 +55,29 @@
     },
     "edit": {
       "status": "done",
-      "at": "2026-10-18T20:01:23+00:00",
+      "at": "2026-10-18T21:31:23+00:00",
       "note": "7 scenes, body 46.7 s + outro 2.5 s, 133 caption words",
       "outputs": [
         "timeline/timeline.json",
         "timeline/props.json",
         "captions/flipkart-ad-breakdown.srt",
         "audio/music.wav",
-        "audio/signature.wav"
+        "audio/signature.wav",
+        "storyboard/board.png"
       ]
     },
     "render": {
       "status": "done",
-      "at": "2026-10-18T20:06:25+00:00",
-      "note": "flipkart-ad-breakdown_v3.mp4 (125.7 MB)",
+      "at": "2026-10-18T21:40:14+00:00",
+      "note": "flipkart-ad-breakdown_v5.mp4 (125.4 MB)",
       "outputs": [
-        "renders/flipkart-ad-breakdown_v3.mp4"
+        "renders/flipkart-ad-breakdown_v5.mp4"
       ]
     },
     "qc": {
       "status": "done",
-      "at": "2026-10-18T20:06:46+00:00",
-      "note": "flipkart-ad-breakdown_v3.mp4 passed 14 checks",
+      "at": "2026-10-18T21:40:39+00:00",
+      "note": "flipkart-ad-breakdown_v5.mp4 passed 14 checks",
       "outputs": [
         "reports/qc.md",
         "reports/contact_sheet.png"
@@ -84,8 +85,8 @@
     },
     "delivery": {
       "status": "done",
-      "at": "2026-10-18T20:06:46+00:00",
-      "note": "delivered flipkart-ad-breakdown_v3.mp4",
+      "at": "2026-10-18T21:40:39+00:00",
+      "note": "delivered flipkart-ad-breakdown_v5.mp4",
       "outputs": [
         "reports/production_report.md",
         "/Users/kanishk.raj/Downloads/Kanishk.Rewires/flipkart-ad-breakdown"
@@ -136,7 +137,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s00.mp3",
       "provider": "edge",
-      "at": "2026-10-18T19:55:26+00:00",
+      "at": "2026-10-18T21:30:48+00:00",
       "cached": true,
       "seconds": 4.85,
       "settings": {
@@ -149,7 +150,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s01.mp3",
       "provider": "edge",
-      "at": "2026-10-18T19:55:26+00:00",
+      "at": "2026-10-18T21:30:48+00:00",
       "cached": true,
       "seconds": 7.13,
       "settings": {
@@ -162,7 +163,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s02.mp3",
       "provider": "edge",
-      "at": "2026-10-18T19:55:26+00:00",
+      "at": "2026-10-18T21:30:48+00:00",
       "cached": true,
       "seconds": 8.62,
       "settings": {
@@ -175,7 +176,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s03.mp3",
       "provider": "edge",
-      "at": "2026-10-18T19:55:26+00:00",
+      "at": "2026-10-18T21:30:48+00:00",
       "cached": true,
       "seconds": 4.37,
       "settings": {
@@ -188,7 +189,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s04.mp3",
       "provider": "edge",
-      "at": "2026-10-18T19:55:26+00:00",
+      "at": "2026-10-18T21:30:48+00:00",
       "cached": true,
       "seconds": 11.42,
       "settings": {
@@ -201,7 +202,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s05.mp3",
       "provider": "edge",
-      "at": "2026-10-18T19:55:26+00:00",
+      "at": "2026-10-18T21:30:48+00:00",
       "cached": true,
       "seconds": 5.54,
       "settings": {
@@ -214,7 +215,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s06.mp3",
       "provider": "edge",
-      "at": "2026-10-18T19:55:26+00:00",
+      "at": "2026-10-18T21:30:48+00:00",
       "cached": true,
       "seconds": 3.58,
       "settings": {
@@ -227,14 +228,14 @@
       "kind": "music",
       "path": "audio/music.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-10-18T20:01:23+00:00",
+      "at": "2026-10-18T21:30:49+00:00",
       "licence": "original, generated in code"
     },
     {
       "kind": "music",
       "path": "audio/signature.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-10-18T20:01:23+00:00",
+      "at": "2026-10-18T21:30:49+00:00",
       "licence": "original, generated in code"
     }
   ],
@@ -250,6 +251,14 @@
     {
       "file": "renders/flipkart-ad-breakdown_v3.mp4",
       "at": "2026-10-19T01:36:25"
+    },
+    {
+      "file": "renders/flipkart-ad-breakdown_v4.mp4",
+      "at": "2026-10-19T03:05:43"
+    },
+    {
+      "file": "renders/flipkart-ad-breakdown_v5.mp4",
+      "at": "2026-10-19T03:10:14"
     }
   ]
 }

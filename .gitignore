@@ -29,3 +29,10 @@ studio/public/media/flipkart/ad_full.mp4
 projects/decoy-effect/renders/decoy-effect_v3.mp4
 projects/flipkart-ad-breakdown/renders/flipkart-ad-breakdown_v2.mp4
 projects/flipkart-ad-breakdown/renders/flipkart-ad-breakdown_v3.mp4
+
+# Third-party reference reels (other creators' videos): local study only, never upload
+references/local/
+research/reference-videos/*/reel.mp4
+
+# Final masters exceed GitHub's 100 MB limit; they live on disk and in ~/Downloads/Kanishk.Rewires
+projects/*/renders/*.mp4

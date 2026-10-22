@@ -54,12 +54,13 @@
     },
     {
       "id": "s01",
-      "type": "dReel",
+      "type": "dGraphic",
       "dur": 444,
       "vo": "projects/decoy-effect/vo/s01.mp3",
       "voAt": 4,
       "data": {
-        "overlay": "flow",
+        "overlay": "popcorn",
+        "board": "flow",
         "opts": [
           {
             "name": "Small",
@@ -72,23 +73,6 @@
           {
             "name": "Large",
             "price": "\u20b9450"
-          }
-        ],
-        "shots": [
-          {
-            "src": "media/decoy/stock/popcorn_counter.mp4",
-            "t": 0.5,
-            "d": 5.5,
-            "aspect": 1.778,
-            "h": 1920,
-            "x": 0.5
-          },
-          {
-            "src": "media/decoy/stock/cinema_people.mp4",
-            "t": 0.5,
-            "d": 7,
-            "aspect": 0.527,
-            "x": 0.5
           }
         ],
         "cues": {
@@ -112,12 +96,13 @@
     },
     {
       "id": "s02",
-      "type": "dReel",
+      "type": "dGraphic",
       "dur": 171,
       "vo": "projects/decoy-effect/vo/s02.mp3",
       "voAt": 4,
       "data": {
-        "overlay": "decoy",
+        "overlay": "popcorn",
+        "board": "decoy",
         "opts": [
           {
             "name": "Small",
@@ -130,15 +115,6 @@
           {
             "name": "Large",
             "price": "\u20b9450"
-          }
-        ],
-        "shots": [
-          {
-            "src": "media/decoy/stock/cinema_people.mp4",
-            "t": 7.5,
-            "d": 7,
-            "aspect": 0.527,
-            "x": 0.5
           }
         ],
         "cues": {
@@ -156,14 +132,12 @@
     },
     {
       "id": "s03",
-      "type": "dReel",
+      "type": "dGraphic",
       "dur": 486,
       "vo": "projects/decoy-effect/vo/s03.mp3",
       "voAt": 4,
       "data": {
-        "overlay": "test",
-        "tag": "CLASSROOM DEMO",
-        "note": "OUT OF 100 STUDENTS, EACH ROUND",
+        "overlay": "subscribe",
         "opts": [
           {
             "name": "Online",
@@ -188,23 +162,6 @@
           0,
           32
         ],
-        "shots": [
-          {
-            "src": "media/decoy/stock/magazine.mp4",
-            "t": 0.3,
-            "d": 6,
-            "aspect": 0.5625,
-            "x": 0.45,
-            "push": 0.12
-          },
-          {
-            "src": "media/decoy/stock/laptop_reading.mp4",
-            "t": 0.5,
-            "d": 8,
-            "aspect": 0.5625,
-            "x": 0.6
-          }
-        ],
         "cues": {
           "cards": 44,
           "result": 304,
@@ -228,12 +185,12 @@
     },
     {
       "id": "s04",
-      "type": "dReel",
+      "type": "dGraphic",
       "dur": 340,
       "vo": "projects/decoy-effect/vo/s04.mp3",
       "voAt": 4,
       "data": {
-        "overlay": "gym",
+        "overlay": "gymapp",
         "opts": [
           {
             "name": "Monthly",
@@ -249,16 +206,6 @@
             "name": "Yearly",
             "price": "\u20b912,000",
             "sub": "\u20b91,000 / month"
-          }
-        ],
-        "shots": [
-          {
-            "src": "media/flipkart/stock/gym.mp4",
-            "t": 0.2,
-            "d": 9,
-            "aspect": 0.5625,
-            "x": 0.5,
-            "rate": 0.75
           }
         ],
         "cues": {
@@ -282,21 +229,12 @@
     },
     {
       "id": "s05",
-      "type": "dReel",
+      "type": "dGraphic",
       "dur": 78,
       "vo": "projects/decoy-effect/vo/s05.mp3",
       "voAt": 4,
       "data": {
-        "overlay": "save",
-        "shots": [
-          {
-            "src": "media/decoy/stock/popcorn_closeup.mp4",
-            "t": 9,
-            "d": 4,
-            "aspect": 0.527,
-            "x": 0.4
-          }
-        ]
+        "overlay": "save"
       },
       "transition": "cut",
       "sfx": [

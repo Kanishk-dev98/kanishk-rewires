@@ -39,7 +39,7 @@
     },
     "storyboard": {
       "status": "done",
-      "at": "2026-10-18T20:04:54+00:00",
+      "at": "2026-10-18T21:42:04+00:00",
       "note": "6 scenes valid, 3 warnings",
       "outputs": [
         "storyboard/storyboard.json"
@@ -47,7 +47,7 @@
     },
     "assets": {
       "status": "done",
-      "at": "2026-10-18T20:04:54+00:00",
+      "at": "2026-10-18T21:42:04+00:00",
       "note": "6 narration clips (6 reused from cache)",
       "outputs": [
         "audio/vo/"
@@ -55,7 +55,7 @@
     },
     "edit": {
       "status": "done",
-      "at": "2026-10-18T20:05:33+00:00",
+      "at": "2026-10-18T21:42:30+00:00",
       "note": "6 scenes, body 54.4 s + outro 2.5 s, 155 caption words",
       "outputs": [
         "timeline/timeline.json",
@@ -68,16 +68,16 @@
     },
     "render": {
       "status": "done",
-      "at": "2026-10-18T20:14:53+00:00",
-      "note": "decoy-effect_v3.mp4 (144.5 MB)",
+      "at": "2026-10-18T21:47:54+00:00",
+      "note": "decoy-effect_v4.mp4 (144.9 MB)",
       "outputs": [
-        "renders/decoy-effect_v3.mp4"
+        "renders/decoy-effect_v4.mp4"
       ]
     },
     "qc": {
       "status": "done",
-      "at": "2026-10-18T20:15:29+00:00",
-      "note": "decoy-effect_v3.mp4 passed 14 checks",
+      "at": "2026-10-18T21:48:52+00:00",
+      "note": "decoy-effect_v4.mp4 passed 14 checks",
       "outputs": [
         "reports/qc.md",
         "reports/contact_sheet.png"
@@ -85,8 +85,8 @@
     },
     "delivery": {
       "status": "done",
-      "at": "2026-10-18T20:15:29+00:00",
-      "note": "delivered decoy-effect_v3.mp4",
+      "at": "2026-10-18T21:48:52+00:00",
+      "note": "delivered decoy-effect_v4.mp4",
       "outputs": [
         "reports/production_report.md",
         "/Users/kanishk.raj/Downloads/Kanishk.Rewires/decoy-effect"
@@ -124,7 +124,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s00.mp3",
       "provider": "edge",
-      "at": "2026-10-18T20:04:54+00:00",
+      "at": "2026-10-18T21:42:04+00:00",
       "cached": true,
       "seconds": 3.7,
       "settings": {
@@ -137,7 +137,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s01.mp3",
       "provider": "edge",
-      "at": "2026-10-18T20:04:54+00:00",
+      "at": "2026-10-18T21:42:04+00:00",
       "cached": true,
       "seconds": 14.62,
       "settings": {
@@ -150,7 +150,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s02.mp3",
       "provider": "edge",
-      "at": "2026-10-18T20:04:54+00:00",
+      "at": "2026-10-18T21:42:04+00:00",
       "cached": true,
       "seconds": 5.52,
       "settings": {
@@ -163,7 +163,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s03.mp3",
       "provider": "edge",
-      "at": "2026-10-18T20:04:54+00:00",
+      "at": "2026-10-18T21:42:04+00:00",
       "cached": true,
       "seconds": 16.03,
       "settings": {
@@ -176,7 +176,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s04.mp3",
       "provider": "edge",
-      "at": "2026-10-18T20:04:54+00:00",
+      "at": "2026-10-18T21:42:04+00:00",
       "cached": true,
       "seconds": 11.16,
       "settings": {
@@ -189,7 +189,7 @@
       "kind": "voiceover",
       "path": "audio/vo/s05.mp3",
       "provider": "edge",
-      "at": "2026-10-18T20:04:54+00:00",
+      "at": "2026-10-18T21:42:04+00:00",
       "cached": true,
       "seconds": 2.21,
       "settings": {
@@ -202,14 +202,14 @@
       "kind": "music",
       "path": "audio/music.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-10-18T20:04:57+00:00",
+      "at": "2026-10-18T21:42:05+00:00",
       "licence": "original, generated in code"
     },
     {
       "kind": "music",
       "path": "audio/signature.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-10-18T20:04:57+00:00",
+      "at": "2026-10-18T21:42:05+00:00",
       "licence": "original, generated in code"
     }
   ],
@@ -225,6 +225,10 @@
     {
       "file": "renders/decoy-effect_v3.mp4",
       "at": "2026-10-19T01:44:53"
+    },
+    {
+      "file": "renders/decoy-effect_v4.mp4",
+      "at": "2026-10-19T03:17:54"
     }
   ]
 }

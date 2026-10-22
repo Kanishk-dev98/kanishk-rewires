@@ -1,0 +1,1324 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "sTeam",
+      "dur": 205,
+      "vo": "projects/claude-sales-team/vo/s00.mp3",
+      "voAt": 2,
+      "data": {
+        "beat": "hook",
+        "theme": "cream",
+        "cues": {
+          "claude": 131
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 131,
+          "volume": 0.15
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "type": "sTeam",
+      "dur": 272,
+      "vo": "projects/claude-sales-team/vo/s01.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "tools",
+        "theme": "cream",
+        "cues": {
+          "apollo": 82,
+          "gmail": 127,
+          "hubspot": 176
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 82,
+          "volume": 0.18
+        },
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 127,
+          "volume": 0.18
+        },
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 176,
+          "volume": 0.18
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "sTeam",
+      "dur": 240,
+      "vo": "projects/claude-sales-team/vo/s02.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "icp",
+        "theme": "cream",
+        "cues": {
+          "industry": 109,
+          "size": 142,
+          "region": 168,
+          "titles": 205
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 205,
+          "volume": 0.18
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "sTeam",
+      "dur": 171,
+      "vo": "projects/claude-sales-team/vo/s03.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "funnel",
+        "step": 3,
+        "from": 0,
+        "upto": 1,
+        "theme": "cream",
+        "cues": {
+          "l0": 60
+        }
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s04",
+      "type": "sTeam",
+      "dur": 266,
+      "vo": "projects/claude-sales-team/vo/s04.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "funnel",
+        "step": 4,
+        "from": 1,
+        "upto": 2,
+        "theme": "cream",
+        "cues": {
+          "l1": 164
+        }
+      },
+      "transition": "cut",
+      "sfx": []
+    },
+    {
+      "id": "s05",
+      "type": "sTeam",
+      "dur": 214,
+      "vo": "projects/claude-sales-team/vo/s05.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "funnel",
+        "step": 5,
+        "from": 2,
+        "upto": 4,
+        "theme": "cream",
+        "cues": {
+          "l2": 51,
+          "l3": 90
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 4,
+          "volume": 0.18
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "sTeam",
+      "dur": 343,
+      "vo": "projects/claude-sales-team/vo/s06.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "channels",
+        "theme": "cream",
+        "cues": {
+          "ads": 131,
+          "email": 244,
+          "post": 281
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 131,
+          "volume": 0.18
+        },
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 244,
+          "volume": 0.18
+        },
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 281,
+          "volume": 0.18
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "type": "sTeam",
+      "dur": 271,
+      "vo": "projects/claude-sales-team/vo/s07.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "signals",
+        "theme": "cream",
+        "cues": {
+          "replied": 80,
+          "clicked": 111,
+          "viewed": 136,
+          "follow": 205
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 80,
+          "volume": 0.18
+        },
+        {
+          "src": "sfx/tick.wav",
+          "at": 111,
+          "volume": 0.18
+        },
+        {
+          "src": "sfx/tick.wav",
+          "at": 136,
+          "volume": 0.18
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "type": "sTeam",
+      "dur": 178,
+      "vo": "projects/claude-sales-team/vo/s08.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "crm",
+        "theme": "cream",
+        "cues": {
+          "approve": 150
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 150,
+          "volume": 0.18
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "type": "sTeam",
+      "dur": 229,
+      "vo": "projects/claude-sales-team/vo/s09.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "finale",
+        "theme": "cream",
+        "cues": {
+          "comment": 91
+        }
+      },
+      "transition": "cut",
+      "sfx": []
+    }
+  ],
+  "captions": [
+    {
+      "text": "Now",
+      "startMs": 161,
+      "endMs": 302
+    },
+    {
+      "text": "you",
+      "startMs": 302,
+      "endMs": 385
+    },
+    {
+      "text": "can",
+      "startMs": 397,
+      "endMs": 527
+    },
+    {
+      "text": "build",
+      "startMs": 527,
+      "endMs": 857
+    },
+    {
+      "text": "your",
+      "startMs": 857,
+      "endMs": 951
+    },
+    {
+      "text": "whole",
+      "startMs": 951,
+      "endMs": 1234,
+      "hl": true
+    },
+    {
+      "text": "sales",
+      "startMs": 1234,
+      "endMs": 1611
+    },
+    {
+      "text": "team",
+      "startMs": 1623,
+      "endMs": 1953
+    },
+    {
+      "text": "and",
+      "startMs": 2225,
+      "endMs": 2307
+    },
+    {
+      "text": "boost",
+      "startMs": 2307,
+      "endMs": 2555
+    },
+    {
+      "text": "your",
+      "startMs": 2555,
+      "endMs": 2661
+    },
+    {
+      "text": "sales",
+      "startMs": 2661,
+      "endMs": 2991
+    },
+    {
+      "text": "by",
+      "startMs": 3003,
+      "endMs": 3121
+    },
+    {
+      "text": "10x",
+      "startMs": 3121,
+      "endMs": 3840,
+      "hl": true
+    },
+    {
+      "text": "using",
+      "startMs": 4064,
+      "endMs": 4347
+    },
+    {
+      "text": "Claude",
+      "startMs": 4359,
+      "endMs": 4701
+    },
+    {
+      "text": "Code",
+      "startMs": 4701,
+      "endMs": 5055
+    },
+    {
+      "text": "Here's",
+      "startMs": 5456,
+      "endMs": 5597
+    },
+    {
+      "text": "the",
+      "startMs": 5597,
+      "endMs": 5656
+    },
+    {
+      "text": "exact",
+      "startMs": 5668,
+      "endMs": 6081
+    },
+    {
+      "text": "setup",
+      "startMs": 6093,
+      "endMs": 6529
+    },
+    {
+      "text": "Step",
+      "startMs": 7061,
+      "endMs": 7285
+    },
+    {
+      "text": "one",
+      "startMs": 7285,
+      "endMs": 7544,
+      "hl": true
+    },
+    {
+      "text": "Give",
+      "startMs": 7922,
+      "endMs": 8016
+    },
+    {
+      "text": "Claude",
+      "startMs": 8016,
+      "endMs": 8276
+    },
+    {
+      "text": "its",
+      "startMs": 8276,
+      "endMs": 8382
+    },
+    {
+      "text": "tools",
+      "startMs": 8382,
+      "endMs": 8936,
+      "hl": true
+    },
+    {
+      "text": "Connect",
+      "startMs": 9313,
+      "endMs": 9561
+    },
+    {
+      "text": "Apollo",
+      "startMs": 9561,
+      "endMs": 10056
+    },
+    {
+      "text": "for",
+      "startMs": 10068,
+      "endMs": 10221
+    },
+    {
+      "text": "leads",
+      "startMs": 10233,
+      "endMs": 10882
+    },
+    {
+      "text": "Gmail",
+      "startMs": 11082,
+      "endMs": 11589
+    },
+    {
+      "text": "for",
+      "startMs": 11601,
+      "endMs": 11743
+    },
+    {
+      "text": "email",
+      "startMs": 11754,
+      "endMs": 12226
+    },
+    {
+      "text": "and",
+      "startMs": 12639,
+      "endMs": 12698
+    },
+    {
+      "text": "HubSpot",
+      "startMs": 12710,
+      "endMs": 13335
+    },
+    {
+      "text": "as",
+      "startMs": 13594,
+      "endMs": 13700
+    },
+    {
+      "text": "your",
+      "startMs": 13700,
+      "endMs": 13794
+    },
+    {
+      "text": "CRM",
+      "startMs": 13794,
+      "endMs": 14313
+    },
+    {
+      "text": "One",
+      "startMs": 14691,
+      "endMs": 14868,
+      "hl": true
+    },
+    {
+      "text": "command",
+      "startMs": 14868,
+      "endMs": 15245
+    },
+    {
+      "text": "each",
+      "startMs": 15245,
+      "endMs": 15587
+    },
+    {
+      "text": "Step",
+      "startMs": 16128,
+      "endMs": 16363
+    },
+    {
+      "text": "two",
+      "startMs": 16375,
+      "endMs": 16647
+    },
+    {
+      "text": "Write",
+      "startMs": 17024,
+      "endMs": 17201
+    },
+    {
+      "text": "down",
+      "startMs": 17201,
+      "endMs": 17413
+    },
+    {
+      "text": "who",
+      "startMs": 17413,
+      "endMs": 17507
+    },
+    {
+      "text": "you",
+      "startMs": 17507,
+      "endMs": 17625
+    },
+    {
+      "text": "sell",
+      "startMs": 17637,
+      "endMs": 17991
+    },
+    {
+      "text": "to",
+      "startMs": 17991,
+      "endMs": 18286
+    },
+    {
+      "text": "in",
+      "startMs": 18309,
+      "endMs": 18463
+    },
+    {
+      "text": "one",
+      "startMs": 18463,
+      "endMs": 18675,
+      "hl": true
+    },
+    {
+      "text": "file",
+      "startMs": 18687,
+      "endMs": 19158,
+      "hl": true
+    },
+    {
+      "text": "Industry",
+      "startMs": 19536,
+      "endMs": 20114
+    },
+    {
+      "text": "company",
+      "startMs": 20290,
+      "endMs": 20644
+    },
+    {
+      "text": "size",
+      "startMs": 20644,
+      "endMs": 21246
+    },
+    {
+      "text": "region",
+      "startMs": 21493,
+      "endMs": 22012
+    },
+    {
+      "text": "and",
+      "startMs": 22283,
+      "endMs": 22342
+    },
+    {
+      "text": "the",
+      "startMs": 22342,
+      "endMs": 22413
+    },
+    {
+      "text": "job",
+      "startMs": 22413,
+      "endMs": 22720
+    },
+    {
+      "text": "titles",
+      "startMs": 22731,
+      "endMs": 23038
+    },
+    {
+      "text": "that",
+      "startMs": 23038,
+      "endMs": 23215
+    },
+    {
+      "text": "buy",
+      "startMs": 23215,
+      "endMs": 23569
+    },
+    {
+      "text": "Step",
+      "startMs": 24128,
+      "endMs": 24375
+    },
+    {
+      "text": "three",
+      "startMs": 24375,
+      "endMs": 24835
+    },
+    {
+      "text": "Ask",
+      "startMs": 25213,
+      "endMs": 25448
+    },
+    {
+      "text": "Claude",
+      "startMs": 25448,
+      "endMs": 25802
+    },
+    {
+      "text": "to",
+      "startMs": 25802,
+      "endMs": 25897
+    },
+    {
+      "text": "pull",
+      "startMs": 25897,
+      "endMs": 26191
+    },
+    {
+      "text": "every",
+      "startMs": 26309,
+      "endMs": 26604,
+      "hl": true
+    },
+    {
+      "text": "company",
+      "startMs": 26616,
+      "endMs": 26958
+    },
+    {
+      "text": "that",
+      "startMs": 26958,
+      "endMs": 27123
+    },
+    {
+      "text": "matches",
+      "startMs": 27135,
+      "endMs": 27772
+    },
+    {
+      "text": "and",
+      "startMs": 27960,
+      "endMs": 28078
+    },
+    {
+      "text": "remove",
+      "startMs": 28078,
+      "endMs": 28538
+    },
+    {
+      "text": "the",
+      "startMs": 28550,
+      "endMs": 28621
+    },
+    {
+      "text": "duplicates",
+      "startMs": 28621,
+      "endMs": 29293
+    },
+    {
+      "text": "Step",
+      "startMs": 29828,
+      "endMs": 30040
+    },
+    {
+      "text": "four",
+      "startMs": 30052,
+      "endMs": 30441
+    },
+    {
+      "text": "It",
+      "startMs": 30830,
+      "endMs": 30960
+    },
+    {
+      "text": "researches",
+      "startMs": 30960,
+      "endMs": 31597
+    },
+    {
+      "text": "each",
+      "startMs": 31738,
+      "endMs": 31950
+    },
+    {
+      "text": "one",
+      "startMs": 31950,
+      "endMs": 32328
+    },
+    {
+      "text": "Website",
+      "startMs": 32729,
+      "endMs": 33247
+    },
+    {
+      "text": "hiring",
+      "startMs": 33436,
+      "endMs": 33861
+    },
+    {
+      "text": "tech",
+      "startMs": 33884,
+      "endMs": 34085
+    },
+    {
+      "text": "stack",
+      "startMs": 34097,
+      "endMs": 34521
+    },
+    {
+      "text": "Then",
+      "startMs": 34898,
+      "endMs": 34957
+    },
+    {
+      "text": "it",
+      "startMs": 34969,
+      "endMs": 35040
+    },
+    {
+      "text": "scores",
+      "startMs": 35052,
+      "endMs": 35441,
+      "hl": true
+    },
+    {
+      "text": "the",
+      "startMs": 35441,
+      "endMs": 35512
+    },
+    {
+      "text": "fit",
+      "startMs": 35523,
+      "endMs": 35901
+    },
+    {
+      "text": "Low",
+      "startMs": 36278,
+      "endMs": 36420
+    },
+    {
+      "text": "scores",
+      "startMs": 36420,
+      "endMs": 36714,
+      "hl": true
+    },
+    {
+      "text": "get",
+      "startMs": 36714,
+      "endMs": 36880
+    },
+    {
+      "text": "parked",
+      "startMs": 36880,
+      "endMs": 37280,
+      "hl": true
+    },
+    {
+      "text": "not",
+      "startMs": 37505,
+      "endMs": 37705
+    },
+    {
+      "text": "deleted",
+      "startMs": 37705,
+      "endMs": 38153
+    },
+    {
+      "text": "Step",
+      "startMs": 38683,
+      "endMs": 38883
+    },
+    {
+      "text": "five",
+      "startMs": 38883,
+      "endMs": 39296
+    },
+    {
+      "text": "It",
+      "startMs": 39661,
+      "endMs": 39744
+    },
+    {
+      "text": "finds",
+      "startMs": 39744,
+      "endMs": 40109
+    },
+    {
+      "text": "the",
+      "startMs": 40109,
+      "endMs": 40168
+    },
+    {
+      "text": "decision",
+      "startMs": 40168,
+      "endMs": 40581,
+      "hl": true
+    },
+    {
+      "text": "makers",
+      "startMs": 40581,
+      "endMs": 41159
+    },
+    {
+      "text": "and",
+      "startMs": 41359,
+      "endMs": 41477
+    },
+    {
+      "text": "verifies",
+      "startMs": 41477,
+      "endMs": 42138
+    },
+    {
+      "text": "their",
+      "startMs": 42138,
+      "endMs": 42267
+    },
+    {
+      "text": "emails",
+      "startMs": 42267,
+      "endMs": 42951
+    },
+    {
+      "text": "No",
+      "startMs": 43341,
+      "endMs": 43482
+    },
+    {
+      "text": "email",
+      "startMs": 43482,
+      "endMs": 43883
+    },
+    {
+      "text": "They",
+      "startMs": 44260,
+      "endMs": 44308
+    },
+    {
+      "text": "go",
+      "startMs": 44319,
+      "endMs": 44390
+    },
+    {
+      "text": "to",
+      "startMs": 44390,
+      "endMs": 44449
+    },
+    {
+      "text": "LinkedIn",
+      "startMs": 44449,
+      "endMs": 44862,
+      "hl": true
+    },
+    {
+      "text": "only",
+      "startMs": 44874,
+      "endMs": 45286
+    },
+    {
+      "text": "Step",
+      "startMs": 45816,
+      "endMs": 46016
+    },
+    {
+      "text": "six",
+      "startMs": 46028,
+      "endMs": 46547
+    },
+    {
+      "text": "Same",
+      "startMs": 46924,
+      "endMs": 47207
+    },
+    {
+      "text": "list",
+      "startMs": 47219,
+      "endMs": 47644
+    },
+    {
+      "text": "three",
+      "startMs": 47868,
+      "endMs": 48198,
+      "hl": true
+    },
+    {
+      "text": "channels",
+      "startMs": 48198,
+      "endMs": 48799
+    },
+    {
+      "text": "Upload",
+      "startMs": 49177,
+      "endMs": 49566
+    },
+    {
+      "text": "it",
+      "startMs": 49566,
+      "endMs": 49696
+    },
+    {
+      "text": "as",
+      "startMs": 49707,
+      "endMs": 49837
+    },
+    {
+      "text": "an",
+      "startMs": 49837,
+      "endMs": 49955
+    },
+    {
+      "text": "ad",
+      "startMs": 49967,
+      "endMs": 50167
+    },
+    {
+      "text": "audience",
+      "startMs": 50167,
+      "endMs": 50580
+    },
+    {
+      "text": "on",
+      "startMs": 50592,
+      "endMs": 50769
+    },
+    {
+      "text": "LinkedIn",
+      "startMs": 50769,
+      "endMs": 51299
+    },
+    {
+      "text": "Google",
+      "startMs": 51547,
+      "endMs": 51983
+    },
+    {
+      "text": "and",
+      "startMs": 51995,
+      "endMs": 52089
+    },
+    {
+      "text": "Meta",
+      "startMs": 52101,
+      "endMs": 52514
+    },
+    {
+      "text": "Send",
+      "startMs": 52856,
+      "endMs": 53009
+    },
+    {
+      "text": "a",
+      "startMs": 53009,
+      "endMs": 53033
+    },
+    {
+      "text": "short",
+      "startMs": 53033,
+      "endMs": 53481
+    },
+    {
+      "text": "personal",
+      "startMs": 53717,
+      "endMs": 54106
+    },
+    {
+      "text": "email",
+      "startMs": 54118,
+      "endMs": 54519
+    },
+    {
+      "text": "And",
+      "startMs": 54884,
+      "endMs": 54967
+    },
+    {
+      "text": "post",
+      "startMs": 54967,
+      "endMs": 55262
+    },
+    {
+      "text": "on",
+      "startMs": 55262,
+      "endMs": 55415
+    },
+    {
+      "text": "LinkedIn",
+      "startMs": 55415,
+      "endMs": 55887
+    },
+    {
+      "text": "every",
+      "startMs": 56064,
+      "endMs": 56264,
+      "hl": true
+    },
+    {
+      "text": "week",
+      "startMs": 56276,
+      "endMs": 56653
+    },
+    {
+      "text": "Step",
+      "startMs": 57261,
+      "endMs": 57497
+    },
+    {
+      "text": "seven",
+      "startMs": 57509,
+      "endMs": 57910
+    },
+    {
+      "text": "Watch",
+      "startMs": 58299,
+      "endMs": 58511
+    },
+    {
+      "text": "the",
+      "startMs": 58511,
+      "endMs": 58594
+    },
+    {
+      "text": "signals",
+      "startMs": 58594,
+      "endMs": 59242,
+      "hl": true
+    },
+    {
+      "text": "Who",
+      "startMs": 59643,
+      "endMs": 59714
+    },
+    {
+      "text": "replied",
+      "startMs": 59714,
+      "endMs": 60268
+    },
+    {
+      "text": "who",
+      "startMs": 60634,
+      "endMs": 60728
+    },
+    {
+      "text": "clicked",
+      "startMs": 60740,
+      "endMs": 61117
+    },
+    {
+      "text": "who",
+      "startMs": 61494,
+      "endMs": 61565
+    },
+    {
+      "text": "viewed",
+      "startMs": 61565,
+      "endMs": 61825
+    },
+    {
+      "text": "your",
+      "startMs": 61825,
+      "endMs": 61907
+    },
+    {
+      "text": "profile",
+      "startMs": 61907,
+      "endMs": 62544
+    },
+    {
+      "text": "Then",
+      "startMs": 62921,
+      "endMs": 63134
+    },
+    {
+      "text": "Claude",
+      "startMs": 63145,
+      "endMs": 63440
+    },
+    {
+      "text": "drafts",
+      "startMs": 63440,
+      "endMs": 63806
+    },
+    {
+      "text": "a",
+      "startMs": 63806,
+      "endMs": 63853
+    },
+    {
+      "text": "follow-up",
+      "startMs": 63853,
+      "endMs": 64431
+    },
+    {
+      "text": "that",
+      "startMs": 64443,
+      "endMs": 64608
+    },
+    {
+      "text": "mentions",
+      "startMs": 64608,
+      "endMs": 65056
+    },
+    {
+      "text": "what",
+      "startMs": 65056,
+      "endMs": 65162
+    },
+    {
+      "text": "they",
+      "startMs": 65162,
+      "endMs": 65280
+    },
+    {
+      "text": "saw",
+      "startMs": 65280,
+      "endMs": 65681,
+      "hl": true
+    },
+    {
+      "text": "Step",
+      "startMs": 66294,
+      "endMs": 66530
+    },
+    {
+      "text": "eight",
+      "startMs": 66530,
+      "endMs": 66766
+    },
+    {
+      "text": "Every",
+      "startMs": 67143,
+      "endMs": 67367
+    },
+    {
+      "text": "touch",
+      "startMs": 67379,
+      "endMs": 67709
+    },
+    {
+      "text": "gets",
+      "startMs": 67709,
+      "endMs": 67886
+    },
+    {
+      "text": "logged",
+      "startMs": 67886,
+      "endMs": 68110
+    },
+    {
+      "text": "in",
+      "startMs": 68110,
+      "endMs": 68169
+    },
+    {
+      "text": "HubSpot",
+      "startMs": 68169,
+      "endMs": 68794
+    },
+    {
+      "text": "And",
+      "startMs": 69184,
+      "endMs": 69301
+    },
+    {
+      "text": "nothing",
+      "startMs": 69761,
+      "endMs": 69985,
+      "hl": true
+    },
+    {
+      "text": "goes",
+      "startMs": 69985,
+      "endMs": 70221
+    },
+    {
+      "text": "out",
+      "startMs": 70221,
+      "endMs": 70516
+    },
+    {
+      "text": "until",
+      "startMs": 70646,
+      "endMs": 70941
+    },
+    {
+      "text": "you",
+      "startMs": 70952,
+      "endMs": 71070
+    },
+    {
+      "text": "approve",
+      "startMs": 71082,
+      "endMs": 71436,
+      "hl": true
+    },
+    {
+      "text": "it",
+      "startMs": 71436,
+      "endMs": 71613
+    },
+    {
+      "text": "That's",
+      "startMs": 72228,
+      "endMs": 72346
+    },
+    {
+      "text": "a",
+      "startMs": 72346,
+      "endMs": 72405
+    },
+    {
+      "text": "full",
+      "startMs": 72416,
+      "endMs": 72711,
+      "hl": true
+    },
+    {
+      "text": "sales",
+      "startMs": 72711,
+      "endMs": 73065,
+      "hl": true
+    },
+    {
+      "text": "team",
+      "startMs": 73077,
+      "endMs": 73395
+    },
+    {
+      "text": "running",
+      "startMs": 73666,
+      "endMs": 73855
+    },
+    {
+      "text": "on",
+      "startMs": 73855,
+      "endMs": 73973
+    },
+    {
+      "text": "Claude",
+      "startMs": 73973,
+      "endMs": 74315
+    },
+    {
+      "text": "Code",
+      "startMs": 74315,
+      "endMs": 74657
+    },
+    {
+      "text": "Comment",
+      "startMs": 75046,
+      "endMs": 75353
+    },
+    {
+      "text": "SALES",
+      "startMs": 75364,
+      "endMs": 75907,
+      "hl": true
+    },
+    {
+      "text": "and",
+      "startMs": 76131,
+      "endMs": 76261
+    },
+    {
+      "text": "I'll",
+      "startMs": 76272,
+      "endMs": 76379
+    },
+    {
+      "text": "send",
+      "startMs": 76390,
+      "endMs": 76650
+    },
+    {
+      "text": "you",
+      "startMs": 76650,
+      "endMs": 76697
+    },
+    {
+      "text": "the",
+      "startMs": 76697,
+      "endMs": 76768
+    },
+    {
+      "text": "setup",
+      "startMs": 76780,
+      "endMs": 77204
+    },
+    {
+      "text": "the",
+      "startMs": 77428,
+      "endMs": 77534
+    },
+    {
+      "text": "template",
+      "startMs": 77546,
+      "endMs": 78030
+    },
+    {
+      "text": "and",
+      "startMs": 78230,
+      "endMs": 78277
+    },
+    {
+      "text": "my",
+      "startMs": 78277,
+      "endMs": 78395
+    },
+    {
+      "text": "prompts",
+      "startMs": 78395,
+      "endMs": 79032
+    }
+  ],
+  "showCaptions": true,
+  "music": "projects/claude-sales-team/music.wav",
+  "musicVolume": 0.075,
+  "musicDucked": 0.035,
+  "outro": {
+    "dur": 75,
+    "sound": "projects/claude-sales-team/signature.wav",
+    "cta": "Follow for AI that actually does the work",
+    "size": 220,
+    "wordSize": 50
+  },
+  "captionStyle": {
+    "top": 0.76,
+    "size": 56,
+    "maxWords": 3,
+    "weight": 800
+  }
+}

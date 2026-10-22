@@ -1,6 +1,6 @@
 # Production report: Why you always buy the large popcorn
 
-- Video: `renders/decoy-effect_v3.mp4`
+- Video: `renders/decoy-effect_v4.mp4`
 - Captions: `captions/decoy-effect.srt`
 - Script and storyboard: `script/script.md`, `storyboard/storyboard.json`
 - Sources: `research/sources.md`
@@ -15,8 +15,8 @@
 - E. Storyboard: done · 6 scenes valid, 3 warnings
 - F. Asset production: done · 6 narration clips (6 reused from cache)
 - G. Animation and edit: done · 6 scenes, body 54.4 s + outro 2.5 s, 155 caption words
-- H. Render: done · decoy-effect_v3.mp4 (144.5 MB)
-- I. Quality control: done · decoy-effect_v3.mp4 passed 14 checks
+- H. Render: done · decoy-effect_v4.mp4 (144.9 MB)
+- I. Quality control: done · decoy-effect_v4.mp4 passed 14 checks
 - J. Delivery: pending · 
 
 ## Assets and provenance
@@ -46,7 +46,7 @@
 - no silent gaps: ok (none)
 - loudness: ok (-14.0 LUFS (target -14))
 - true peak: ok (-1.5 dBTP)
-- safe area: ok (nothing drawn within 60 px of the sides (full-bleed scenes not checked: s00, s01, s02, s03, s04, s05))
-- brand ending: ok (lime px 29, cream px 475)
+- safe area: ok (nothing drawn within 60 px of the sides (full-bleed scenes not checked: s00))
+- brand ending: ok (lime px 29, cream px 476)
 
 Scenes: 6. Still needs human review: overlapping elements, pacing and readability, visual taste and continuity, voice delivery.

@@ -1,0 +1,191 @@
+1
+00:00:00,161 --> 00:00:02,205
+Now you can build your whole sales team
+
+2
+00:00:02,225 --> 00:00:04,681
+and boost your sales by 10x using Claude
+
+3
+00:00:04,701 --> 00:00:05,436
+Code
+
+4
+00:00:05,456 --> 00:00:06,929
+Here's the exact setup
+
+5
+00:00:07,061 --> 00:00:07,902
+Step one
+
+6
+00:00:07,922 --> 00:00:09,293
+Give Claude its tools
+
+7
+00:00:09,313 --> 00:00:12,619
+Connect Apollo for leads Gmail for email
+
+8
+00:00:12,639 --> 00:00:14,671
+and HubSpot as your CRM
+
+9
+00:00:14,691 --> 00:00:15,987
+One command each
+
+10
+00:00:16,128 --> 00:00:17,004
+Step two
+
+11
+00:00:17,024 --> 00:00:18,667
+Write down who you sell to in one
+
+12
+00:00:18,687 --> 00:00:19,516
+file
+
+13
+00:00:19,536 --> 00:00:23,018
+Industry company size region and the job titles
+
+14
+00:00:23,038 --> 00:00:23,969
+that buy
+
+15
+00:00:24,128 --> 00:00:25,193
+Step three
+
+16
+00:00:25,213 --> 00:00:27,940
+Ask Claude to pull every company that matches
+
+17
+00:00:27,960 --> 00:00:29,693
+and remove the duplicates
+
+18
+00:00:29,828 --> 00:00:30,810
+Step four
+
+19
+00:00:30,830 --> 00:00:32,709
+It researches each one
+
+20
+00:00:32,729 --> 00:00:34,878
+Website hiring tech stack
+
+21
+00:00:34,898 --> 00:00:36,258
+Then it scores the fit
+
+22
+00:00:36,278 --> 00:00:38,553
+Low scores get parked not deleted
+
+23
+00:00:38,683 --> 00:00:39,641
+Step five
+
+24
+00:00:39,661 --> 00:00:42,247
+It finds the decision makers and verifies their
+
+25
+00:00:42,267 --> 00:00:43,321
+emails
+
+26
+00:00:43,341 --> 00:00:44,240
+No email
+
+27
+00:00:44,260 --> 00:00:45,686
+They go to LinkedIn only
+
+28
+00:00:45,816 --> 00:00:46,904
+Step six
+
+29
+00:00:46,924 --> 00:00:49,157
+Same list three channels
+
+30
+00:00:49,177 --> 00:00:51,527
+Upload it as an ad audience on LinkedIn
+
+31
+00:00:51,547 --> 00:00:52,836
+Google and Meta
+
+32
+00:00:52,856 --> 00:00:54,864
+Send a short personal email
+
+33
+00:00:54,884 --> 00:00:57,053
+And post on LinkedIn every week
+
+34
+00:00:57,261 --> 00:00:58,279
+Step seven
+
+35
+00:00:58,299 --> 00:00:59,623
+Watch the signals
+
+36
+00:00:59,643 --> 00:01:00,614
+Who replied
+
+37
+00:01:00,634 --> 00:01:01,474
+who clicked
+
+38
+00:01:01,494 --> 00:01:02,901
+who viewed your profile
+
+39
+00:01:02,921 --> 00:01:05,142
+Then Claude drafts a follow-up that mentions what
+
+40
+00:01:05,162 --> 00:01:06,081
+they saw
+
+41
+00:01:06,294 --> 00:01:07,123
+Step eight
+
+42
+00:01:07,143 --> 00:01:09,164
+Every touch gets logged in HubSpot
+
+43
+00:01:09,184 --> 00:01:09,701
+And
+
+44
+00:01:09,761 --> 00:01:12,013
+nothing goes out until you approve it
+
+45
+00:01:12,228 --> 00:01:14,295
+That's a full sales team running on Claude
+
+46
+00:01:14,315 --> 00:01:15,026
+Code
+
+47
+00:01:15,046 --> 00:01:17,408
+Comment SALES and I'll send you the setup
+
+48
+00:01:17,428 --> 00:01:19,432
+the template and my prompts

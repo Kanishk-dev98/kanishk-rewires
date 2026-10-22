@@ -1,0 +1,79 @@
+1
+00:00:00,149 --> 00:00:02,471
+I gave an AI agent one job
+
+2
+00:00:02,531 --> 00:00:04,405
+our team offsite in Goa
+
+3
+00:00:04,596 --> 00:00:07,206
+First it checked twelve calendars and found the
+
+4
+00:00:07,226 --> 00:00:09,466
+one weekend everyone is free
+
+5
+00:00:09,628 --> 00:00:12,072
+Then it compared flights from three cities and
+
+6
+00:00:12,092 --> 00:00:14,768
+picked the cheapest ones that land before noon
+
+7
+00:00:14,928 --> 00:00:17,478
+It shortlisted three villas with a pool
+
+8
+00:00:17,498 --> 00:00:18,622
+a meeting room
+
+9
+00:00:18,642 --> 00:00:20,073
+and space for twelve
+
+10
+00:00:20,093 --> 00:00:21,436
+Then it asked me to pick
+
+11
+00:00:21,637 --> 00:00:24,566
+It built the itinerary booked a beach dinner
+
+12
+00:00:24,586 --> 00:00:26,330
+and sent everyone the invite
+
+13
+00:00:26,528 --> 00:00:27,246
+Total
+
+14
+00:00:27,341 --> 00:00:29,420
+one lakh eighty-four thousand
+
+15
+00:00:29,440 --> 00:00:31,437
+Sixteen thousand under budget
+
+16
+00:00:31,457 --> 00:00:33,720
+And it never paid without my OK
+
+17
+00:00:34,006 --> 00:00:35,743
+That's what an AI agent is
+
+18
+00:00:35,763 --> 00:00:36,840
+Not a chatbot
+
+19
+00:00:36,860 --> 00:00:37,760
+A teammate
+
+20
+00:00:37,780 --> 00:00:38,852
+Follow for more

@@ -1,0 +1,658 @@
+[
+  {
+    "text": "Google",
+    "startMs": 149,
+    "endMs": 491
+  },
+  {
+    "text": "researchers",
+    "startMs": 491,
+    "endMs": 1104
+  },
+  {
+    "text": "just",
+    "startMs": 1104,
+    "endMs": 1328
+  },
+  {
+    "text": "open-sourced",
+    "startMs": 1423,
+    "endMs": 2012
+  },
+  {
+    "text": "something",
+    "startMs": 2012,
+    "endMs": 2236
+  },
+  {
+    "text": "wild",
+    "startMs": 2248,
+    "endMs": 2673,
+    "hl": true
+  },
+  {
+    "text": "It",
+    "startMs": 3161,
+    "endMs": 3244
+  },
+  {
+    "text": "lets",
+    "startMs": 3244,
+    "endMs": 3397
+  },
+  {
+    "text": "your",
+    "startMs": 3397,
+    "endMs": 3527
+  },
+  {
+    "text": "AI",
+    "startMs": 3538,
+    "endMs": 3939
+  },
+  {
+    "text": "agent",
+    "startMs": 4010,
+    "endMs": 4352
+  },
+  {
+    "text": "upgrade",
+    "startMs": 4364,
+    "endMs": 4800,
+    "hl": true
+  },
+  {
+    "text": "its",
+    "startMs": 4812,
+    "endMs": 4930
+  },
+  {
+    "text": "own",
+    "startMs": 4930,
+    "endMs": 5095
+  },
+  {
+    "text": "setup",
+    "startMs": 5107,
+    "endMs": 5543
+  },
+  {
+    "text": "its",
+    "startMs": 5968,
+    "endMs": 6074
+  },
+  {
+    "text": "prompts",
+    "startMs": 6086,
+    "endMs": 6722
+  },
+  {
+    "text": "tools",
+    "startMs": 6828,
+    "endMs": 7336
+  },
+  {
+    "text": "memory",
+    "startMs": 7571,
+    "endMs": 8078
+  },
+  {
+    "text": "and",
+    "startMs": 8090,
+    "endMs": 8173
+  },
+  {
+    "text": "skills",
+    "startMs": 8185,
+    "endMs": 8798
+  },
+  {
+    "text": "Without",
+    "startMs": 9306,
+    "endMs": 9589
+  },
+  {
+    "text": "retraining",
+    "startMs": 9589,
+    "endMs": 10084,
+    "hl": true
+  },
+  {
+    "text": "the",
+    "startMs": 10096,
+    "endMs": 10155
+  },
+  {
+    "text": "model",
+    "startMs": 10167,
+    "endMs": 10509
+  },
+  {
+    "text": "at",
+    "startMs": 10509,
+    "endMs": 10568
+  },
+  {
+    "text": "all",
+    "startMs": 10580,
+    "endMs": 10874
+  },
+  {
+    "text": "It's",
+    "startMs": 11361,
+    "endMs": 11432
+  },
+  {
+    "text": "called",
+    "startMs": 11432,
+    "endMs": 11644
+  },
+  {
+    "text": "Harness",
+    "startMs": 11644,
+    "endMs": 11951,
+    "hl": true
+  },
+  {
+    "text": "squared",
+    "startMs": 11962,
+    "endMs": 12411
+  },
+  {
+    "text": "Right",
+    "startMs": 12871,
+    "endMs": 13024
+  },
+  {
+    "text": "now",
+    "startMs": 13024,
+    "endMs": 13283
+  },
+  {
+    "text": "most",
+    "startMs": 13307,
+    "endMs": 13543
+  },
+  {
+    "text": "teams",
+    "startMs": 13543,
+    "endMs": 13755
+  },
+  {
+    "text": "tweak",
+    "startMs": 13755,
+    "endMs": 13991
+  },
+  {
+    "text": "that",
+    "startMs": 13991,
+    "endMs": 14097
+  },
+  {
+    "text": "setup",
+    "startMs": 14109,
+    "endMs": 14475
+  },
+  {
+    "text": "by",
+    "startMs": 14475,
+    "endMs": 14604
+  },
+  {
+    "text": "hand",
+    "startMs": 14604,
+    "endMs": 15088,
+    "hl": true
+  },
+  {
+    "text": "test",
+    "startMs": 15288,
+    "endMs": 15607
+  },
+  {
+    "text": "it",
+    "startMs": 15618,
+    "endMs": 15772
+  },
+  {
+    "text": "and",
+    "startMs": 15972,
+    "endMs": 16043
+  },
+  {
+    "text": "tweak",
+    "startMs": 16055,
+    "endMs": 16302
+  },
+  {
+    "text": "it",
+    "startMs": 16302,
+    "endMs": 16361
+  },
+  {
+    "text": "again",
+    "startMs": 16373,
+    "endMs": 16692
+  },
+  {
+    "text": "This",
+    "startMs": 17228,
+    "endMs": 17357
+  },
+  {
+    "text": "does",
+    "startMs": 17357,
+    "endMs": 17522
+  },
+  {
+    "text": "it",
+    "startMs": 17522,
+    "endMs": 17605
+  },
+  {
+    "text": "for",
+    "startMs": 17605,
+    "endMs": 17770
+  },
+  {
+    "text": "you",
+    "startMs": 17782,
+    "endMs": 17912
+  },
+  {
+    "text": "with",
+    "startMs": 17923,
+    "endMs": 18041
+  },
+  {
+    "text": "one",
+    "startMs": 18041,
+    "endMs": 18289,
+    "hl": true
+  },
+  {
+    "text": "command",
+    "startMs": 18289,
+    "endMs": 18749
+  },
+  {
+    "text": "It",
+    "startMs": 19228,
+    "endMs": 19287
+  },
+  {
+    "text": "proposes",
+    "startMs": 19287,
+    "endMs": 19864
+  },
+  {
+    "text": "two",
+    "startMs": 19876,
+    "endMs": 20124
+  },
+  {
+    "text": "fixes",
+    "startMs": 20124,
+    "endMs": 20831
+  },
+  {
+    "text": "tests",
+    "startMs": 21044,
+    "endMs": 21492
+  },
+  {
+    "text": "both",
+    "startMs": 21504,
+    "endMs": 21846
+  },
+  {
+    "text": "on",
+    "startMs": 21846,
+    "endMs": 21916
+  },
+  {
+    "text": "the",
+    "startMs": 21916,
+    "endMs": 21975
+  },
+  {
+    "text": "same",
+    "startMs": 21975,
+    "endMs": 22294,
+    "hl": true
+  },
+  {
+    "text": "task",
+    "startMs": 22305,
+    "endMs": 22883
+  },
+  {
+    "text": "and",
+    "startMs": 23272,
+    "endMs": 23438
+  },
+  {
+    "text": "keeps",
+    "startMs": 23567,
+    "endMs": 23874
+  },
+  {
+    "text": "only",
+    "startMs": 23956,
+    "endMs": 24216
+  },
+  {
+    "text": "what",
+    "startMs": 24216,
+    "endMs": 24334
+  },
+  {
+    "text": "actually",
+    "startMs": 24334,
+    "endMs": 24640
+  },
+  {
+    "text": "worked",
+    "startMs": 24640,
+    "endMs": 25053,
+    "hl": true
+  },
+  {
+    "text": "In",
+    "startMs": 25583,
+    "endMs": 25630
+  },
+  {
+    "text": "the",
+    "startMs": 25630,
+    "endMs": 25700
+  },
+  {
+    "text": "paper",
+    "startMs": 25700,
+    "endMs": 26243
+  },
+  {
+    "text": "one",
+    "startMs": 26479,
+    "endMs": 26738
+  },
+  {
+    "text": "round",
+    "startMs": 26738,
+    "endMs": 27068
+  },
+  {
+    "text": "boosted",
+    "startMs": 27080,
+    "endMs": 27422
+  },
+  {
+    "text": "a",
+    "startMs": 27422,
+    "endMs": 27458
+  },
+  {
+    "text": "model",
+    "startMs": 27458,
+    "endMs": 27858
+  },
+  {
+    "text": "by",
+    "startMs": 27870,
+    "endMs": 28000
+  },
+  {
+    "text": "eleven",
+    "startMs": 28000,
+    "endMs": 28401,
+    "hl": true
+  },
+  {
+    "text": "and",
+    "startMs": 28401,
+    "endMs": 28460
+  },
+  {
+    "text": "a",
+    "startMs": 28472,
+    "endMs": 28495
+  },
+  {
+    "text": "half",
+    "startMs": 28507,
+    "endMs": 28837
+  },
+  {
+    "text": "points",
+    "startMs": 28849,
+    "endMs": 29356
+  },
+  {
+    "text": "with",
+    "startMs": 29557,
+    "endMs": 29674
+  },
+  {
+    "text": "the",
+    "startMs": 29675,
+    "endMs": 29733
+  },
+  {
+    "text": "exact",
+    "startMs": 29745,
+    "endMs": 30146
+  },
+  {
+    "text": "same",
+    "startMs": 30158,
+    "endMs": 30417,
+    "hl": true
+  },
+  {
+    "text": "weights",
+    "startMs": 30417,
+    "endMs": 30936
+  },
+  {
+    "text": "But",
+    "startMs": 31594,
+    "endMs": 31653
+  },
+  {
+    "text": "here's",
+    "startMs": 31653,
+    "endMs": 31936
+  },
+  {
+    "text": "the",
+    "startMs": 31936,
+    "endMs": 32019
+  },
+  {
+    "text": "real",
+    "startMs": 32031,
+    "endMs": 32337
+  },
+  {
+    "text": "twist",
+    "startMs": 32337,
+    "endMs": 32903,
+    "hl": true
+  },
+  {
+    "text": "It",
+    "startMs": 33394,
+    "endMs": 33512
+  },
+  {
+    "text": "writes",
+    "startMs": 33512,
+    "endMs": 33724
+  },
+  {
+    "text": "down",
+    "startMs": 33725,
+    "endMs": 33996
+  },
+  {
+    "text": "what",
+    "startMs": 33996,
+    "endMs": 34090
+  },
+  {
+    "text": "it",
+    "startMs": 34090,
+    "endMs": 34173
+  },
+  {
+    "text": "learned",
+    "startMs": 34173,
+    "endMs": 34456,
+    "hl": true
+  },
+  {
+    "text": "from",
+    "startMs": 34467,
+    "endMs": 34656
+  },
+  {
+    "text": "every",
+    "startMs": 34798,
+    "endMs": 35057
+  },
+  {
+    "text": "task",
+    "startMs": 35057,
+    "endMs": 35600
+  },
+  {
+    "text": "so",
+    "startMs": 35812,
+    "endMs": 35918
+  },
+  {
+    "text": "the",
+    "startMs": 35918,
+    "endMs": 35989
+  },
+  {
+    "text": "next",
+    "startMs": 36000,
+    "endMs": 36295
+  },
+  {
+    "text": "one",
+    "startMs": 36295,
+    "endMs": 36531
+  },
+  {
+    "text": "starts",
+    "startMs": 36531,
+    "endMs": 36850
+  },
+  {
+    "text": "smarter",
+    "startMs": 36861,
+    "endMs": 37286,
+    "hl": true
+  },
+  {
+    "text": "Your",
+    "startMs": 37828,
+    "endMs": 37981
+  },
+  {
+    "text": "agent",
+    "startMs": 37993,
+    "endMs": 38323
+  },
+  {
+    "text": "gets",
+    "startMs": 38323,
+    "endMs": 38512
+  },
+  {
+    "text": "better",
+    "startMs": 38523,
+    "endMs": 38913,
+    "hl": true
+  },
+  {
+    "text": "at",
+    "startMs": 38972,
+    "endMs": 39066
+  },
+  {
+    "text": "getting",
+    "startMs": 39078,
+    "endMs": 39302
+  },
+  {
+    "text": "better",
+    "startMs": 39314,
+    "endMs": 39703,
+    "hl": true
+  },
+  {
+    "text": "Want",
+    "startMs": 40261,
+    "endMs": 40367
+  },
+  {
+    "text": "the",
+    "startMs": 40367,
+    "endMs": 40426
+  },
+  {
+    "text": "repo",
+    "startMs": 40426,
+    "endMs": 40803
+  },
+  {
+    "text": "Follow",
+    "startMs": 41204,
+    "endMs": 41653
+  },
+  {
+    "text": "comment",
+    "startMs": 41865,
+    "endMs": 42160
+  },
+  {
+    "text": "harness",
+    "startMs": 42160,
+    "endMs": 42690,
+    "hl": true
+  },
+  {
+    "text": "and",
+    "startMs": 43032,
+    "endMs": 43244
+  },
+  {
+    "text": "I'll",
+    "startMs": 43527,
+    "endMs": 43645
+  },
+  {
+    "text": "send",
+    "startMs": 43645,
+    "endMs": 43893
+  },
+  {
+    "text": "you",
+    "startMs": 43893,
+    "endMs": 43952
+  },
+  {
+    "text": "the",
+    "startMs": 43952,
+    "endMs": 44023
+  },
+  {
+    "text": "link",
+    "startMs": 44023,
+    "endMs": 44365
+  }
+]

@@ -232,45 +232,35 @@
       "vo": "projects/flipkart-ad-breakdown/vo/s05.mp3",
       "voAt": 4,
       "data": {
-        "overlay": "lines",
-        "lines": [
+        "mode": "graphic",
+        "overlay": "craft",
+        "items": [
           {
             "label": "CAF\u00c9",
             "line": "\u201cThe usual, please.\u201d",
+            "brand": "Brew House",
+            "icon": "\u2615",
+            "tint": "#6B4226",
+            "ad": "Your usual. Ready before you ask.",
             "at": 0
           },
           {
             "label": "GYM",
             "line": "\u201cI'll start Monday.\u201d",
-            "at": 60
+            "brand": "Iron Club",
+            "icon": "\ud83c\udfcb\ufe0f",
+            "tint": "#1F3A5F",
+            "ad": "Monday starts today. First week free.",
+            "at": 58
           },
           {
             "label": "ONLINE STORE",
             "line": "\u201cAdding to cart, for later.\u201d",
-            "at": 120
-          }
-        ],
-        "shots": [
-          {
-            "src": "media/flipkart/stock/cafe.mp4",
-            "t": 0.5,
-            "d": 2.0,
-            "aspect": 0.5625,
-            "x": 0.5
-          },
-          {
-            "src": "media/flipkart/stock/gym.mp4",
-            "t": 0.5,
-            "d": 2.0,
-            "aspect": 0.5625,
-            "x": 0.5
-          },
-          {
-            "src": "media/flipkart/stock/phone_shopping.mp4",
-            "t": 0.5,
-            "d": 3,
-            "aspect": 0.5625,
-            "x": 0.5
+            "brand": "Loom & Co.",
+            "icon": "\ud83d\udecd\ufe0f",
+            "tint": "#4A2A5E",
+            "ad": "Still thinking? It's 10% off till midnight.",
+            "at": 116
           }
         ]
       },
@@ -290,8 +280,8 @@
       "vo": "projects/flipkart-ad-breakdown/vo/s06.mp3",
       "voAt": 4,
       "data": {
+        "mode": "graphic",
         "overlay": "comments",
-        "credit": "AD: FLIPKART \u00d7 22FEET",
         "comments": [
           {
             "name": "Riya",
@@ -308,14 +298,6 @@
           {
             "name": "Dev",
             "text": "Buy one size bigger \ud83d\ude02"
-          }
-        ],
-        "shots": [
-          {
-            "t": 68.6,
-            "d": 4,
-            "x": 0.5,
-            "rate": 0.8
           }
         ],
         "cues": {

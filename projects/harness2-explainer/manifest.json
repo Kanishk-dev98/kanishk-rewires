@@ -1,0 +1,274 @@
+{
+  "slug": "harness2-explainer",
+  "topic": "Harness2: AI agents that upgrade their own setup (light-theme explainer)",
+  "created": "2026-10-19T19:55:32+00:00",
+  "options": {
+    "format": "9x16",
+    "language": "en"
+  },
+  "stages": {
+    "intake": {
+      "status": "done",
+      "at": "2026-10-19T19:55:32+00:00",
+      "note": "project folder and manifest created"
+    },
+    "research": {
+      "status": "done",
+      "at": "2026-10-19T20:00:47+00:00",
+      "note": "17 claims in the ledger",
+      "outputs": [
+        "research/sources.json",
+        "research/sources.md"
+      ]
+    },
+    "brief": {
+      "status": "done",
+      "at": "2026-10-19T20:00:47+00:00",
+      "note": "brief present",
+      "outputs": [
+        "brief/brief.md"
+      ]
+    },
+    "script": {
+      "status": "done",
+      "at": "2026-10-19T20:00:47+00:00",
+      "note": "128 narration words (~49 s at a natural pace)",
+      "outputs": [
+        "script/script.md"
+      ]
+    },
+    "storyboard": {
+      "status": "done",
+      "at": "2026-10-19T20:00:47+00:00",
+      "note": "12 scenes valid, 6 warnings",
+      "outputs": [
+        "storyboard/storyboard.json"
+      ]
+    },
+    "assets": {
+      "status": "done",
+      "at": "2026-10-19T20:00:52+00:00",
+      "note": "12 narration clips (0 reused from cache)",
+      "outputs": [
+        "audio/vo/"
+      ]
+    },
+    "edit": {
+      "status": "done",
+      "at": "2026-10-19T20:01:27+00:00",
+      "note": "12 scenes, body 45.0 s + outro 2.5 s, 128 caption words",
+      "outputs": [
+        "timeline/timeline.json",
+        "timeline/props.json",
+        "captions/harness2-explainer.srt",
+        "audio/music.wav",
+        "audio/signature.wav",
+        "storyboard/board.png"
+      ]
+    },
+    "render": {
+      "status": "done",
+      "at": "2026-10-19T20:05:20+00:00",
+      "note": "harness2-explainer_v1.mp4 (121.1 MB)",
+      "outputs": [
+        "renders/harness2-explainer_v1.mp4"
+      ]
+    },
+    "qc": {
+      "status": "done",
+      "at": "2026-10-19T20:06:07+00:00",
+      "note": "harness2-explainer_v1.mp4 passed 14 checks",
+      "outputs": [
+        "reports/qc.md",
+        "reports/contact_sheet.png"
+      ]
+    },
+    "delivery": {
+      "status": "done",
+      "at": "2026-10-19T20:06:07+00:00",
+      "note": "delivered harness2-explainer_v1.mp4",
+      "outputs": [
+        "reports/production_report.md",
+        "/Users/kanishk.raj/Downloads/Kanishk.Rewires/harness2-explainer"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s00.mp3",
+      "provider": "edge",
+      "at": "2026-10-19T20:00:52+00:00",
+      "cached": false,
+      "seconds": 2.95,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s01.mp3",
+      "provider": "edge",
+      "at": "2026-10-19T20:00:52+00:00",
+      "cached": false,
+      "seconds": 6.07,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s02.mp3",
+      "provider": "edge",
+      "at": "2026-10-19T20:00:52+00:00",
+      "cached": false,
+      "seconds": 2.02,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s03.mp3",
+      "provider": "edge",
+      "at": "2026-10-19T20:00:52+00:00",
+      "cached": false,
+      "seconds": 1.87,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s04.mp3",
+      "provider": "edge",
+      "at": "2026-10-19T20:00:52+00:00",
+      "cached": false,
+      "seconds": 4.25,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s05.mp3",
+      "provider": "edge",
+      "at": "2026-10-19T20:00:52+00:00",
+      "cached": false,
+      "seconds": 1.97,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s06.mp3",
+      "provider": "edge",
+      "at": "2026-10-19T20:00:52+00:00",
+      "cached": false,
+      "seconds": 6.24,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s07.mp3",
+      "provider": "edge",
+      "at": "2026-10-19T20:00:52+00:00",
+      "cached": false,
+      "seconds": 5.78,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s08.mp3",
+      "provider": "edge",
+      "at": "2026-10-19T20:00:52+00:00",
+      "cached": false,
+      "seconds": 1.87,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s09.mp3",
+      "provider": "edge",
+      "at": "2026-10-19T20:00:52+00:00",
+      "cached": false,
+      "seconds": 4.32,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s10.mp3",
+      "provider": "edge",
+      "at": "2026-10-19T20:00:52+00:00",
+      "cached": false,
+      "seconds": 2.33,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s11.mp3",
+      "provider": "edge",
+      "at": "2026-10-19T20:00:52+00:00",
+      "cached": false,
+      "seconds": 4.56,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "music",
+      "path": "audio/music.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-19T20:00:53+00:00",
+      "licence": "original, generated in code"
+    },
+    {
+      "kind": "music",
+      "path": "audio/signature.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-19T20:00:53+00:00",
+      "licence": "original, generated in code"
+    }
+  ],
+  "versions": [
+    {
+      "file": "renders/harness2-explainer_v1.mp4",
+      "at": "2026-10-20T01:35:20"
+    }
+  ]
+}

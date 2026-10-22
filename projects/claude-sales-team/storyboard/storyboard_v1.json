@@ -1,0 +1,391 @@
+{
+  "id": "claude-sales-team",
+  "title": "Build your entire sales team with Claude Code",
+  "format": "9x16",
+  "captions": true,
+  "research": "done",
+  "captionStyle": {
+    "top": 0.76,
+    "size": 56,
+    "maxWords": 3,
+    "weight": 800
+  },
+  "voice": {
+    "provider": "edge",
+    "edge": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+6%"
+    }
+  },
+  "outro": {
+    "seconds": 2.5,
+    "size": 220,
+    "wordSize": 50,
+    "cta": "Follow for AI that actually does the work"
+  },
+  "render": {
+    "concurrency": 2,
+    "timeoutMs": 400000
+  },
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "sMachine",
+      "leadIn": 2,
+      "pad": 6,
+      "energy": 3,
+      "bleed": true,
+      "claims": [
+        "c1"
+      ],
+      "vo": "Now you can build your entire sales team with Claude Code, and 10x your outreach. Here's the exact setup.",
+      "cues": {
+        "build": "build"
+      },
+      "accents": [
+        "entire",
+        "10x"
+      ],
+      "data": {
+        "beat": "hook",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "impact",
+          "on": 10,
+          "volume": 0.45
+        },
+        {
+          "name": "whoosh",
+          "on": {
+            "cue": "build"
+          },
+          "volume": 0.35
+        },
+        {
+          "name": "boom",
+          "on": {
+            "cue": "build",
+            "offset": 12
+          },
+          "volume": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "type": "sMachine",
+      "pad": 6,
+      "energy": 2,
+      "bleed": true,
+      "claims": [
+        "c2"
+      ],
+      "vo": "Step one. Give Claude its tools. Connect Apollo for leads, Gmail for email, and HubSpot as your CRM. One command each.",
+      "cues": {
+        "apollo": "Apollo",
+        "gmail": "Gmail",
+        "hubspot": "HubSpot"
+      },
+      "accents": [
+        "tools.",
+        "One"
+      ],
+      "data": {
+        "beat": "tools",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "click",
+          "on": {
+            "cue": "apollo"
+          },
+          "volume": 0.25
+        },
+        {
+          "name": "click",
+          "on": {
+            "cue": "gmail"
+          },
+          "volume": 0.25
+        },
+        {
+          "name": "click",
+          "on": {
+            "cue": "hubspot"
+          },
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "sMachine",
+      "pad": 6,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Step two. Write down who you sell to, in one file. Industry, company size, region, and the job titles that buy.",
+      "cues": {
+        "industry": "Industry,",
+        "size": "size,",
+        "region": "region,",
+        "titles": "titles"
+      },
+      "accents": [
+        "one",
+        "file."
+      ],
+      "data": {
+        "beat": "icp",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "tick",
+          "on": {
+            "cue": "titles"
+          },
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "sMachine",
+      "pad": 6,
+      "energy": 3,
+      "bleed": true,
+      "vo": "Step three. Ask Claude to pull every company that matches, and remove the duplicates.",
+      "cues": {
+        "pull": "pull"
+      },
+      "accents": [
+        "every"
+      ],
+      "data": {
+        "beat": "source",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "riser",
+          "on": {
+            "cue": "pull"
+          },
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "sMachine",
+      "pad": 6,
+      "energy": 2,
+      "bleed": true,
+      "minFrames": 220,
+      "vo": "Step four. It researches each one. Website, hiring, tech stack. Then it scores the fit. Low scores get parked, not deleted.",
+      "cues": {
+        "website": "Website,",
+        "hiring": "hiring,",
+        "stack": "stack.",
+        "score": "scores",
+        "parked": "parked,"
+      },
+      "accents": [
+        "scores",
+        "parked,"
+      ],
+      "data": {
+        "beat": "qualify",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "ding",
+          "on": {
+            "cue": "score"
+          },
+          "volume": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "sMachine",
+      "pad": 6,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Step five. It finds the decision makers, and verifies their emails. No email? They go to LinkedIn only.",
+      "cues": {
+        "verify": "verifies"
+      },
+      "accents": [
+        "decision",
+        "LinkedIn"
+      ],
+      "data": {
+        "beat": "people",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "tick",
+          "on": {
+            "cue": "verify"
+          },
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "sMachine",
+      "pad": 8,
+      "energy": 3,
+      "bleed": true,
+      "minFrames": 260,
+      "claims": [
+        "c3"
+      ],
+      "vo": "Step six. Same list, three channels. Upload it as an ad audience on LinkedIn, Google and Meta. Send a short, personal email. And post on LinkedIn every week.",
+      "cues": {
+        "ads": "ad",
+        "email": "personal",
+        "post": "post"
+      },
+      "accents": [
+        "three",
+        "every"
+      ],
+      "data": {
+        "beat": "channels",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": {
+            "cue": "ads"
+          },
+          "volume": 0.25
+        },
+        {
+          "name": "click",
+          "on": {
+            "cue": "email"
+          },
+          "volume": 0.2
+        },
+        {
+          "name": "click",
+          "on": {
+            "cue": "post"
+          },
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "type": "sMachine",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "minFrames": 240,
+      "vo": "Step seven. Watch the signals. Who replied, who clicked, who viewed your profile. Then Claude drafts a follow-up that mentions what they saw.",
+      "cues": {
+        "replied": "replied,",
+        "clicked": "clicked,",
+        "viewed": "viewed",
+        "follow": "follow-up"
+      },
+      "accents": [
+        "signals.",
+        "saw."
+      ],
+      "data": {
+        "beat": "signals",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "tick",
+          "on": {
+            "cue": "replied"
+          },
+          "volume": 0.2
+        },
+        {
+          "name": "tick",
+          "on": {
+            "cue": "clicked"
+          },
+          "volume": 0.2
+        },
+        {
+          "name": "tick",
+          "on": {
+            "cue": "viewed"
+          },
+          "volume": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "type": "sMachine",
+      "pad": 8,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Step eight. Every touch gets logged in HubSpot. And nothing goes out until you approve it.",
+      "cues": {
+        "approve": "approve"
+      },
+      "accents": [
+        "nothing",
+        "approve"
+      ],
+      "data": {
+        "beat": "crm",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "click",
+          "on": {
+            "cue": "approve"
+          },
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "type": "sMachine",
+      "pad": 14,
+      "energy": 3,
+      "bleed": true,
+      "vo": "That's a full sales team, running on Claude Code. Comment SALES, and I'll send you the setup, the template, and my prompts.",
+      "cues": {
+        "comment": "Comment"
+      },
+      "accents": [
+        "full",
+        "SALES,"
+      ],
+      "data": {
+        "beat": "finale",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "riser",
+          "on": 0,
+          "volume": 0.2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,951 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "gBot",
+      "dur": 149,
+      "vo": "projects/grok-bot/vo/s00.mp3",
+      "voAt": 2,
+      "data": {
+        "beat": "boot",
+        "cues": {
+          "computer": 62,
+          "email": 93
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 2,
+          "volume": 0.3
+        },
+        {
+          "src": "sfx/boom.wav",
+          "at": 62,
+          "volume": 0.45
+        },
+        {
+          "src": "sfx/tick.wav",
+          "at": 93,
+          "volume": 0.25
+        }
+      ],
+      "source": "XAI \u00b7 @BOT, OCT 9 2026"
+    },
+    {
+      "id": "s01",
+      "type": "gBot",
+      "dur": 307,
+      "vo": "projects/grok-bot/vo/s01.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "tools",
+        "cues": {
+          "signs": 141,
+          "finished": 275
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/riser.wav",
+          "at": 141,
+          "volume": 0.22
+        },
+        {
+          "src": "sfx/impact.wav",
+          "at": 275,
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "gBot",
+      "dur": 198,
+      "vo": "projects/grok-bot/vo/s02.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "cloud",
+        "cues": {
+          "laptop": 138
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "volume": 0.25
+        }
+      ],
+      "source": "XAI DOCS"
+    },
+    {
+      "id": "s03",
+      "type": "gBot",
+      "dur": 433,
+      "vo": "projects/grok-bot/vo/s03.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "mission",
+        "cues": {
+          "savings": 78,
+          "tickets": 181,
+          "missions": 314
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/impact.wav",
+          "at": 98,
+          "volume": 0.35
+        },
+        {
+          "src": "sfx/impact.wav",
+          "at": 201,
+          "volume": 0.35
+        }
+      ],
+      "source": "XAI NEWS (XAI-REPORTED)"
+    },
+    {
+      "id": "s04",
+      "type": "gBot",
+      "dur": 194,
+      "vo": "projects/grok-bot/vo/s04.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "guard",
+        "cues": {
+          "amazon": 45,
+          "approve": 107
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/boom.wav",
+          "at": 45,
+          "volume": 0.4
+        },
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 127,
+          "volume": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "gBot",
+      "dur": 155,
+      "vo": "projects/grok-bot/vo/s05.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "plans",
+        "cues": {
+          "premium": 22,
+          "mac": 72
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/ding.wav",
+          "at": 22,
+          "volume": 0.3
+        }
+      ],
+      "source": "X.AI \u00b7 OCT 12 2026"
+    },
+    {
+      "id": "s06",
+      "type": "gBot",
+      "dur": 116,
+      "vo": "projects/grok-bot/vo/s06.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "off"
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/riser.wav",
+          "at": 0,
+          "volume": 0.2
+        }
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "text": "Elon",
+      "startMs": 149,
+      "endMs": 397
+    },
+    {
+      "text": "Musk's",
+      "startMs": 397,
+      "endMs": 762
+    },
+    {
+      "text": "AI",
+      "startMs": 845,
+      "endMs": 1517
+    },
+    {
+      "text": "just",
+      "startMs": 1529,
+      "endMs": 1706
+    },
+    {
+      "text": "got",
+      "startMs": 1706,
+      "endMs": 1800
+    },
+    {
+      "text": "its",
+      "startMs": 1812,
+      "endMs": 1906
+    },
+    {
+      "text": "own",
+      "startMs": 1918,
+      "endMs": 2083
+    },
+    {
+      "text": "computer",
+      "startMs": 2083,
+      "endMs": 2602,
+      "hl": true
+    },
+    {
+      "text": "its",
+      "startMs": 2814,
+      "endMs": 2920
+    },
+    {
+      "text": "own",
+      "startMs": 2932,
+      "endMs": 3086
+    },
+    {
+      "text": "email",
+      "startMs": 3097,
+      "endMs": 3451
+    },
+    {
+      "text": "address",
+      "startMs": 3451,
+      "endMs": 3958
+    },
+    {
+      "text": "and",
+      "startMs": 4052,
+      "endMs": 4170
+    },
+    {
+      "text": "a",
+      "startMs": 4182,
+      "endMs": 4218
+    },
+    {
+      "text": "job",
+      "startMs": 4229,
+      "endMs": 4642,
+      "hl": true
+    },
+    {
+      "text": "It's",
+      "startMs": 5183,
+      "endMs": 5241
+    },
+    {
+      "text": "called",
+      "startMs": 5242,
+      "endMs": 5430
+    },
+    {
+      "text": "Grok",
+      "startMs": 5430,
+      "endMs": 5796
+    },
+    {
+      "text": "Bot.",
+      "startMs": 5796,
+      "endMs": 6114
+    },
+    {
+      "text": "A",
+      "startMs": 6480,
+      "endMs": 6527
+    },
+    {
+      "text": "chatbot",
+      "startMs": 6527,
+      "endMs": 7069
+    },
+    {
+      "text": "only",
+      "startMs": 7175,
+      "endMs": 7435
+    },
+    {
+      "text": "answers",
+      "startMs": 7447,
+      "endMs": 7800
+    },
+    {
+      "text": "you",
+      "startMs": 7812,
+      "endMs": 8001
+    },
+    {
+      "text": "This",
+      "startMs": 8390,
+      "endMs": 8484
+    },
+    {
+      "text": "one",
+      "startMs": 8484,
+      "endMs": 8567
+    },
+    {
+      "text": "does",
+      "startMs": 8567,
+      "endMs": 8732
+    },
+    {
+      "text": "the",
+      "startMs": 8732,
+      "endMs": 8803
+    },
+    {
+      "text": "work",
+      "startMs": 8803,
+      "endMs": 9204,
+      "hl": true
+    },
+    {
+      "text": "It",
+      "startMs": 9581,
+      "endMs": 9652
+    },
+    {
+      "text": "signs",
+      "startMs": 9652,
+      "endMs": 10041
+    },
+    {
+      "text": "into",
+      "startMs": 10053,
+      "endMs": 10265
+    },
+    {
+      "text": "your",
+      "startMs": 10277,
+      "endMs": 10383
+    },
+    {
+      "text": "tools",
+      "startMs": 10383,
+      "endMs": 10914
+    },
+    {
+      "text": "uses",
+      "startMs": 11326,
+      "endMs": 11645
+    },
+    {
+      "text": "them",
+      "startMs": 11645,
+      "endMs": 11822
+    },
+    {
+      "text": "like",
+      "startMs": 11822,
+      "endMs": 11987
+    },
+    {
+      "text": "you",
+      "startMs": 11987,
+      "endMs": 12081
+    },
+    {
+      "text": "do",
+      "startMs": 12081,
+      "endMs": 12470
+    },
+    {
+      "text": "and",
+      "startMs": 12907,
+      "endMs": 13284
+    },
+    {
+      "text": "comes",
+      "startMs": 13508,
+      "endMs": 13744
+    },
+    {
+      "text": "back",
+      "startMs": 13756,
+      "endMs": 14039
+    },
+    {
+      "text": "with",
+      "startMs": 14039,
+      "endMs": 14133
+    },
+    {
+      "text": "finished",
+      "startMs": 14145,
+      "endMs": 14487,
+      "hl": true
+    },
+    {
+      "text": "work",
+      "startMs": 14487,
+      "endMs": 14817,
+      "hl": true
+    },
+    {
+      "text": "And",
+      "startMs": 15428,
+      "endMs": 15487
+    },
+    {
+      "text": "it",
+      "startMs": 15498,
+      "endMs": 15557
+    },
+    {
+      "text": "never",
+      "startMs": 15557,
+      "endMs": 15770,
+      "hl": true
+    },
+    {
+      "text": "clocks",
+      "startMs": 15770,
+      "endMs": 16123
+    },
+    {
+      "text": "out",
+      "startMs": 16135,
+      "endMs": 16383
+    },
+    {
+      "text": "It",
+      "startMs": 16748,
+      "endMs": 16937
+    },
+    {
+      "text": "runs",
+      "startMs": 16937,
+      "endMs": 17208
+    },
+    {
+      "text": "on",
+      "startMs": 17220,
+      "endMs": 17303
+    },
+    {
+      "text": "a",
+      "startMs": 17303,
+      "endMs": 17338
+    },
+    {
+      "text": "computer",
+      "startMs": 17338,
+      "endMs": 17987
+    },
+    {
+      "text": "in",
+      "startMs": 17987,
+      "endMs": 18057
+    },
+    {
+      "text": "the",
+      "startMs": 18057,
+      "endMs": 18128
+    },
+    {
+      "text": "cloud",
+      "startMs": 18128,
+      "endMs": 18553
+    },
+    {
+      "text": "so",
+      "startMs": 18812,
+      "endMs": 18965
+    },
+    {
+      "text": "even",
+      "startMs": 19036,
+      "endMs": 19260
+    },
+    {
+      "text": "after",
+      "startMs": 19260,
+      "endMs": 19461
+    },
+    {
+      "text": "you",
+      "startMs": 19461,
+      "endMs": 19508
+    },
+    {
+      "text": "shut",
+      "startMs": 19508,
+      "endMs": 19697
+    },
+    {
+      "text": "your",
+      "startMs": 19697,
+      "endMs": 19779
+    },
+    {
+      "text": "laptop",
+      "startMs": 19791,
+      "endMs": 20333
+    },
+    {
+      "text": "it",
+      "startMs": 20687,
+      "endMs": 20770
+    },
+    {
+      "text": "keeps",
+      "startMs": 20781,
+      "endMs": 21029
+    },
+    {
+      "text": "working",
+      "startMs": 21029,
+      "endMs": 21406,
+      "hl": true
+    },
+    {
+      "text": "xAI",
+      "startMs": 22016,
+      "endMs": 22511
+    },
+    {
+      "text": "says",
+      "startMs": 22523,
+      "endMs": 22759
+    },
+    {
+      "text": "its",
+      "startMs": 22759,
+      "endMs": 22888
+    },
+    {
+      "text": "own",
+      "startMs": 23006,
+      "endMs": 23266
+    },
+    {
+      "text": "bot",
+      "startMs": 23278,
+      "endMs": 23596
+    },
+    {
+      "text": "found",
+      "startMs": 23596,
+      "endMs": 24080
+    },
+    {
+      "text": "over",
+      "startMs": 24091,
+      "endMs": 24339
+    },
+    {
+      "text": "a",
+      "startMs": 24339,
+      "endMs": 24386
+    },
+    {
+      "text": "hundred",
+      "startMs": 24386,
+      "endMs": 24834
+    },
+    {
+      "text": "thousand",
+      "startMs": 24846,
+      "endMs": 25282
+    },
+    {
+      "text": "dollars",
+      "startMs": 25282,
+      "endMs": 25624
+    },
+    {
+      "text": "in",
+      "startMs": 25624,
+      "endMs": 25695
+    },
+    {
+      "text": "savings",
+      "startMs": 25707,
+      "endMs": 26355,
+      "hl": true
+    },
+    {
+      "text": "and",
+      "startMs": 26615,
+      "endMs": 26709
+    },
+    {
+      "text": "its",
+      "startMs": 26709,
+      "endMs": 26815
+    },
+    {
+      "text": "support",
+      "startMs": 26815,
+      "endMs": 27146
+    },
+    {
+      "text": "team",
+      "startMs": 27146,
+      "endMs": 27381
+    },
+    {
+      "text": "handled",
+      "startMs": 27381,
+      "endMs": 27806
+    },
+    {
+      "text": "175 percent",
+      "startMs": 27818,
+      "endMs": 29233
+    },
+    {
+      "text": "more",
+      "startMs": 29233,
+      "endMs": 29480
+    },
+    {
+      "text": "tickets",
+      "startMs": 29492,
+      "endMs": 29976
+    },
+    {
+      "text": "without",
+      "startMs": 30082,
+      "endMs": 30436
+    },
+    {
+      "text": "hiring",
+      "startMs": 30447,
+      "endMs": 30860,
+      "hl": true
+    },
+    {
+      "text": "You",
+      "startMs": 31249,
+      "endMs": 31308
+    },
+    {
+      "text": "can",
+      "startMs": 31320,
+      "endMs": 31403
+    },
+    {
+      "text": "set",
+      "startMs": 31414,
+      "endMs": 31638
+    },
+    {
+      "text": "one",
+      "startMs": 31639,
+      "endMs": 31874
+    },
+    {
+      "text": "to",
+      "startMs": 31874,
+      "endMs": 31969
+    },
+    {
+      "text": "run",
+      "startMs": 31969,
+      "endMs": 32252
+    },
+    {
+      "text": "LinkedIn",
+      "startMs": 32252,
+      "endMs": 32582
+    },
+    {
+      "text": "campaigns",
+      "startMs": 32582,
+      "endMs": 33372
+    },
+    {
+      "text": "track",
+      "startMs": 33561,
+      "endMs": 33820
+    },
+    {
+      "text": "competitors",
+      "startMs": 33820,
+      "endMs": 34504
+    },
+    {
+      "text": "or",
+      "startMs": 34822,
+      "endMs": 34976
+    },
+    {
+      "text": "clean",
+      "startMs": 34988,
+      "endMs": 35188
+    },
+    {
+      "text": "your",
+      "startMs": 35188,
+      "endMs": 35271
+    },
+    {
+      "text": "inbox",
+      "startMs": 35271,
+      "endMs": 35848
+    },
+    {
+      "text": "But",
+      "startMs": 36461,
+      "endMs": 36508
+    },
+    {
+      "text": "it's",
+      "startMs": 36520,
+      "endMs": 36602
+    },
+    {
+      "text": "not",
+      "startMs": 36602,
+      "endMs": 36815
+    },
+    {
+      "text": "magic",
+      "startMs": 36815,
+      "endMs": 37357,
+      "hl": true
+    },
+    {
+      "text": "Amazon",
+      "startMs": 37735,
+      "endMs": 38194
+    },
+    {
+      "text": "is",
+      "startMs": 38206,
+      "endMs": 38301
+    },
+    {
+      "text": "already",
+      "startMs": 38312,
+      "endMs": 38595
+    },
+    {
+      "text": "blocking",
+      "startMs": 38607,
+      "endMs": 39032
+    },
+    {
+      "text": "it",
+      "startMs": 39044,
+      "endMs": 39173
+    },
+    {
+      "text": "and",
+      "startMs": 39409,
+      "endMs": 39480
+    },
+    {
+      "text": "you",
+      "startMs": 39480,
+      "endMs": 39551
+    },
+    {
+      "text": "still",
+      "startMs": 39562,
+      "endMs": 39810
+    },
+    {
+      "text": "approve",
+      "startMs": 39810,
+      "endMs": 40423,
+      "hl": true
+    },
+    {
+      "text": "anything",
+      "startMs": 40612,
+      "endMs": 40919
+    },
+    {
+      "text": "it",
+      "startMs": 40930,
+      "endMs": 41001
+    },
+    {
+      "text": "sends",
+      "startMs": 41001,
+      "endMs": 41532
+    },
+    {
+      "text": "or",
+      "startMs": 41544,
+      "endMs": 41650
+    },
+    {
+      "text": "buys",
+      "startMs": 41661,
+      "endMs": 42298
+    },
+    {
+      "text": "It",
+      "startMs": 42928,
+      "endMs": 42987
+    },
+    {
+      "text": "comes",
+      "startMs": 42998,
+      "endMs": 43187
+    },
+    {
+      "text": "with",
+      "startMs": 43187,
+      "endMs": 43305
+    },
+    {
+      "text": "X",
+      "startMs": 43317,
+      "endMs": 43435
+    },
+    {
+      "text": "Premium",
+      "startMs": 43435,
+      "endMs": 44013,
+      "hl": true
+    },
+    {
+      "text": "and",
+      "startMs": 44130,
+      "endMs": 44201
+    },
+    {
+      "text": "above",
+      "startMs": 44201,
+      "endMs": 44673
+    },
+    {
+      "text": "on",
+      "startMs": 44932,
+      "endMs": 45074
+    },
+    {
+      "text": "Mac",
+      "startMs": 45086,
+      "endMs": 45487
+    },
+    {
+      "text": "Windows",
+      "startMs": 45722,
+      "endMs": 46395
+    },
+    {
+      "text": "Linux",
+      "startMs": 46642,
+      "endMs": 46996
+    },
+    {
+      "text": "and",
+      "startMs": 47008,
+      "endMs": 47067
+    },
+    {
+      "text": "iPhone",
+      "startMs": 47067,
+      "endMs": 47491
+    },
+    {
+      "text": "Would",
+      "startMs": 48094,
+      "endMs": 48200
+    },
+    {
+      "text": "you",
+      "startMs": 48200,
+      "endMs": 48307
+    },
+    {
+      "text": "hire",
+      "startMs": 48307,
+      "endMs": 48708,
+      "hl": true
+    },
+    {
+      "text": "an",
+      "startMs": 48719,
+      "endMs": 48861
+    },
+    {
+      "text": "AI",
+      "startMs": 48979,
+      "endMs": 49274
+    },
+    {
+      "text": "teammate",
+      "startMs": 49274,
+      "endMs": 49828
+    },
+    {
+      "text": "Tell",
+      "startMs": 50193,
+      "endMs": 50300
+    },
+    {
+      "text": "me",
+      "startMs": 50300,
+      "endMs": 50394
+    },
+    {
+      "text": "in",
+      "startMs": 50394,
+      "endMs": 50453
+    },
+    {
+      "text": "the",
+      "startMs": 50465,
+      "endMs": 50512
+    },
+    {
+      "text": "comments",
+      "startMs": 50524,
+      "endMs": 51160
+    }
+  ],
+  "showCaptions": true,
+  "music": "projects/grok-bot/music.wav",
+  "musicVolume": 0.13,
+  "outro": {
+    "dur": 75,
+    "sound": "projects/grok-bot/signature.wav",
+    "cta": "Follow for AI news that actually matters",
+    "size": 220,
+    "wordSize": 50
+  },
+  "captionStyle": {
+    "top": 0.755,
+    "size": 58,
+    "maxWords": 3,
+    "weight": 800
+  }
+}

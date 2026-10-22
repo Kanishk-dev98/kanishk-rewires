@@ -1,0 +1,1357 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "dDuet",
+      "dur": 190,
+      "vo": "projects/claude-duet/vo/s00.mp3",
+      "voAt": 2,
+      "data": {
+        "beat": "hook",
+        "theme": "cream",
+        "cues": {
+          "duet": 52,
+          "off": 167
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 167,
+          "volume": 0.12
+        }
+      ]
+    },
+    {
+      "id": "s01",
+      "type": "dDuet",
+      "dur": 287,
+      "vo": "projects/claude-duet/vo/s01.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "what",
+        "theme": "cream",
+        "cues": {
+          "chatbot": 15,
+          "agent": 74,
+          "email": 111,
+          "calendar": 133,
+          "apps": 161,
+          "hours": 196,
+          "needs": 262
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "volume": 0.08
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "dDuet",
+      "dur": 187,
+      "vo": "projects/claude-duet/vo/s02.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "brief",
+        "theme": "cream",
+        "cues": {
+          "morning": 12,
+          "urgent": 95,
+          "waiting": 121,
+          "prepared": 158
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "volume": 0.08
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "dDuet",
+      "dur": 204,
+      "vo": "projects/claude-duet/vo/s03.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "work",
+        "theme": "cream",
+        "cues": {
+          "follow": 50,
+          "prep": 85,
+          "decks": 125,
+          "dash": 137,
+          "edit": 184
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "volume": 0.08
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "dDuet",
+      "dur": 159,
+      "vo": "projects/claude-duet/vo/s04.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "safety",
+        "theme": "cream",
+        "cues": {
+          "sends": 18,
+          "pays": 42,
+          "signs": 68,
+          "deletes": 89,
+          "ok": 134
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 134,
+          "volume": 0.15
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "dDuet",
+      "dur": 357,
+      "vo": "projects/claude-duet/vo/s05.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "rivals",
+        "theme": "cream",
+        "cues": {
+          "muse": 49,
+          "grok": 150,
+          "dots": 281
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "volume": 0.08
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "dDuet",
+      "dur": 270,
+      "vo": "projects/claude-duet/vo/s06.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "best",
+        "theme": "cream",
+        "cues": {
+          "pro": 49,
+          "price": 73,
+          "knows": 122,
+          "memory": 153,
+          "skills": 177,
+          "apps": 220
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "volume": 0.08
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "type": "dDuet",
+      "dur": 344,
+      "vo": "projects/claude-duet/vo/s07.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "setup",
+        "theme": "cream",
+        "cues": {
+          "waitlist": 44,
+          "email": 112,
+          "invite": 142,
+          "open": 177,
+          "job": 271,
+          "apps": 305
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/mouse-click.wav",
+          "at": 64,
+          "volume": 0.12
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "type": "dDuet",
+      "dur": 183,
+      "vo": "projects/claude-duet/vo/s08.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "catch",
+        "theme": "cream",
+        "cues": {
+          "us": 37,
+          "pro": 71,
+          "max": 85,
+          "limits": 157
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/whoosh.wav",
+          "at": 0,
+          "volume": 0.08
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "type": "dDuet",
+      "dur": 182,
+      "vo": "projects/claude-duet/vo/s09.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "cta",
+        "theme": "cream",
+        "cues": {
+          "muse": 7,
+          "grok": 18,
+          "dots": 37,
+          "duet": 52,
+          "comments": 144
+        }
+      },
+      "transition": "cut",
+      "sfx": [
+        {
+          "src": "sfx/tick.wav",
+          "at": 52,
+          "volume": 0.14
+        }
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "text": "Anthropic",
+      "startMs": 161,
+      "endMs": 739
+    },
+    {
+      "text": "just",
+      "startMs": 857,
+      "endMs": 1104
+    },
+    {
+      "text": "launched",
+      "startMs": 1104,
+      "endMs": 1411
+    },
+    {
+      "text": "Claude",
+      "startMs": 1423,
+      "endMs": 1729
+    },
+    {
+      "text": "Duet",
+      "startMs": 1729,
+      "endMs": 2166,
+      "hl": true
+    },
+    {
+      "text": "An",
+      "startMs": 2531,
+      "endMs": 2626
+    },
+    {
+      "text": "AI",
+      "startMs": 2637,
+      "endMs": 3062
+    },
+    {
+      "text": "that",
+      "startMs": 3062,
+      "endMs": 3192
+    },
+    {
+      "text": "keeps",
+      "startMs": 3192,
+      "endMs": 3439
+    },
+    {
+      "text": "working",
+      "startMs": 3451,
+      "endMs": 3758
+    },
+    {
+      "text": "for",
+      "startMs": 3769,
+      "endMs": 4005
+    },
+    {
+      "text": "you",
+      "startMs": 4017,
+      "endMs": 4206
+    },
+    {
+      "text": "even",
+      "startMs": 4595,
+      "endMs": 4784
+    },
+    {
+      "text": "when",
+      "startMs": 4784,
+      "endMs": 4878
+    },
+    {
+      "text": "your",
+      "startMs": 4878,
+      "endMs": 4972
+    },
+    {
+      "text": "laptop",
+      "startMs": 4972,
+      "endMs": 5444
+    },
+    {
+      "text": "is",
+      "startMs": 5456,
+      "endMs": 5562
+    },
+    {
+      "text": "off",
+      "startMs": 5562,
+      "endMs": 5998,
+      "hl": true
+    },
+    {
+      "text": "It's",
+      "startMs": 6561,
+      "endMs": 6655
+    },
+    {
+      "text": "not",
+      "startMs": 6667,
+      "endMs": 6797
+    },
+    {
+      "text": "a",
+      "startMs": 6797,
+      "endMs": 6832
+    },
+    {
+      "text": "chatbot",
+      "startMs": 6844,
+      "endMs": 7328
+    },
+    {
+      "text": "you",
+      "startMs": 7339,
+      "endMs": 7434
+    },
+    {
+      "text": "ask",
+      "startMs": 7434,
+      "endMs": 7658
+    },
+    {
+      "text": "questions",
+      "startMs": 7658,
+      "endMs": 8271
+    },
+    {
+      "text": "It's",
+      "startMs": 8660,
+      "endMs": 8743
+    },
+    {
+      "text": "an",
+      "startMs": 8743,
+      "endMs": 8813
+    },
+    {
+      "text": "agent",
+      "startMs": 8813,
+      "endMs": 9226,
+      "hl": true
+    },
+    {
+      "text": "It",
+      "startMs": 9615,
+      "endMs": 9674
+    },
+    {
+      "text": "checks",
+      "startMs": 9674,
+      "endMs": 9898
+    },
+    {
+      "text": "your",
+      "startMs": 9910,
+      "endMs": 10016
+    },
+    {
+      "text": "email",
+      "startMs": 10028,
+      "endMs": 10547
+    },
+    {
+      "text": "calendar",
+      "startMs": 10783,
+      "endMs": 11372
+    },
+    {
+      "text": "and",
+      "startMs": 11549,
+      "endMs": 11714
+    },
+    {
+      "text": "apps",
+      "startMs": 11714,
+      "endMs": 12186
+    },
+    {
+      "text": "every",
+      "startMs": 12327,
+      "endMs": 12587
+    },
+    {
+      "text": "few",
+      "startMs": 12587,
+      "endMs": 12858
+    },
+    {
+      "text": "hours",
+      "startMs": 12870,
+      "endMs": 13365
+    },
+    {
+      "text": "and",
+      "startMs": 13589,
+      "endMs": 13778
+    },
+    {
+      "text": "only",
+      "startMs": 13849,
+      "endMs": 14073
+    },
+    {
+      "text": "comes",
+      "startMs": 14085,
+      "endMs": 14356
+    },
+    {
+      "text": "to",
+      "startMs": 14356,
+      "endMs": 14438
+    },
+    {
+      "text": "you",
+      "startMs": 14438,
+      "endMs": 14603
+    },
+    {
+      "text": "when",
+      "startMs": 14603,
+      "endMs": 14710
+    },
+    {
+      "text": "something",
+      "startMs": 14721,
+      "endMs": 15052
+    },
+    {
+      "text": "needs",
+      "startMs": 15052,
+      "endMs": 15287,
+      "hl": true
+    },
+    {
+      "text": "you",
+      "startMs": 15287,
+      "endMs": 15523
+    },
+    {
+      "text": "Every",
+      "startMs": 16128,
+      "endMs": 16305
+    },
+    {
+      "text": "morning",
+      "startMs": 16316,
+      "endMs": 16741
+    },
+    {
+      "text": "it",
+      "startMs": 17106,
+      "endMs": 17154
+    },
+    {
+      "text": "sends",
+      "startMs": 17165,
+      "endMs": 17401
+    },
+    {
+      "text": "you",
+      "startMs": 17401,
+      "endMs": 17507
+    },
+    {
+      "text": "a",
+      "startMs": 17507,
+      "endMs": 17531
+    },
+    {
+      "text": "short",
+      "startMs": 17543,
+      "endMs": 17897
+    },
+    {
+      "text": "brief",
+      "startMs": 17897,
+      "endMs": 18392,
+      "hl": true
+    },
+    {
+      "text": "What's",
+      "startMs": 18793,
+      "endMs": 18958
+    },
+    {
+      "text": "urgent",
+      "startMs": 19064,
+      "endMs": 19489
+    },
+    {
+      "text": "what's",
+      "startMs": 19748,
+      "endMs": 19913
+    },
+    {
+      "text": "waiting",
+      "startMs": 19925,
+      "endMs": 20373
+    },
+    {
+      "text": "and",
+      "startMs": 20621,
+      "endMs": 20727
+    },
+    {
+      "text": "what",
+      "startMs": 20739,
+      "endMs": 20845
+    },
+    {
+      "text": "it",
+      "startMs": 20845,
+      "endMs": 20904
+    },
+    {
+      "text": "already",
+      "startMs": 20904,
+      "endMs": 21175
+    },
+    {
+      "text": "prepared",
+      "startMs": 21175,
+      "endMs": 21741,
+      "hl": true
+    },
+    {
+      "text": "Then",
+      "startMs": 22361,
+      "endMs": 22408
+    },
+    {
+      "text": "it",
+      "startMs": 22408,
+      "endMs": 22467
+    },
+    {
+      "text": "actually",
+      "startMs": 22479,
+      "endMs": 22727
+    },
+    {
+      "text": "does",
+      "startMs": 22738,
+      "endMs": 22903
+    },
+    {
+      "text": "the",
+      "startMs": 22903,
+      "endMs": 22974
+    },
+    {
+      "text": "work",
+      "startMs": 22974,
+      "endMs": 23375,
+      "hl": true
+    },
+    {
+      "text": "Follow-ups",
+      "startMs": 23788,
+      "endMs": 24507
+    },
+    {
+      "text": "meeting",
+      "startMs": 24649,
+      "endMs": 24955
+    },
+    {
+      "text": "prep",
+      "startMs": 24967,
+      "endMs": 25321
+    },
+    {
+      "text": "even",
+      "startMs": 25710,
+      "endMs": 25934
+    },
+    {
+      "text": "full",
+      "startMs": 25946,
+      "endMs": 26300
+    },
+    {
+      "text": "decks",
+      "startMs": 26311,
+      "endMs": 26642
+    },
+    {
+      "text": "and",
+      "startMs": 26642,
+      "endMs": 26701
+    },
+    {
+      "text": "dashboards",
+      "startMs": 26701,
+      "endMs": 27444
+    },
+    {
+      "text": "as",
+      "startMs": 27620,
+      "endMs": 27750
+    },
+    {
+      "text": "files",
+      "startMs": 27750,
+      "endMs": 28092
+    },
+    {
+      "text": "you",
+      "startMs": 28092,
+      "endMs": 28151
+    },
+    {
+      "text": "can",
+      "startMs": 28163,
+      "endMs": 28269
+    },
+    {
+      "text": "edit",
+      "startMs": 28269,
+      "endMs": 28552,
+      "hl": true
+    },
+    {
+      "text": "But",
+      "startMs": 29161,
+      "endMs": 29232
+    },
+    {
+      "text": "it",
+      "startMs": 29232,
+      "endMs": 29291
+    },
+    {
+      "text": "never",
+      "startMs": 29291,
+      "endMs": 29527,
+      "hl": true
+    },
+    {
+      "text": "sends",
+      "startMs": 29527,
+      "endMs": 30128
+    },
+    {
+      "text": "pays",
+      "startMs": 30328,
+      "endMs": 30871
+    },
+    {
+      "text": "signs",
+      "startMs": 31213,
+      "endMs": 31755
+    },
+    {
+      "text": "or",
+      "startMs": 31767,
+      "endMs": 31885
+    },
+    {
+      "text": "deletes",
+      "startMs": 31885,
+      "endMs": 32404
+    },
+    {
+      "text": "anything",
+      "startMs": 32581,
+      "endMs": 32970
+    },
+    {
+      "text": "without",
+      "startMs": 32982,
+      "endMs": 33253
+    },
+    {
+      "text": "your",
+      "startMs": 33253,
+      "endMs": 33383
+    },
+    {
+      "text": "OK",
+      "startMs": 33394,
+      "endMs": 33831,
+      "hl": true
+    },
+    {
+      "text": "Now",
+      "startMs": 34461,
+      "endMs": 34602
+    },
+    {
+      "text": "the",
+      "startMs": 34602,
+      "endMs": 34661
+    },
+    {
+      "text": "rivals",
+      "startMs": 34661,
+      "endMs": 35216,
+      "hl": true
+    },
+    {
+      "text": "Meta's",
+      "startMs": 35581,
+      "endMs": 35841
+    },
+    {
+      "text": "Muse",
+      "startMs": 35852,
+      "endMs": 36253
+    },
+    {
+      "text": "is",
+      "startMs": 36265,
+      "endMs": 36407
+    },
+    {
+      "text": "free",
+      "startMs": 36407,
+      "endMs": 36902,
+      "hl": true
+    },
+    {
+      "text": "but",
+      "startMs": 37327,
+      "endMs": 37503
+    },
+    {
+      "text": "built",
+      "startMs": 37503,
+      "endMs": 37739
+    },
+    {
+      "text": "for",
+      "startMs": 37739,
+      "endMs": 37904
+    },
+    {
+      "text": "personal",
+      "startMs": 37904,
+      "endMs": 38353
+    },
+    {
+      "text": "errands",
+      "startMs": 38364,
+      "endMs": 38848
+    },
+    {
+      "text": "Grok",
+      "startMs": 39225,
+      "endMs": 39579
+    },
+    {
+      "text": "Bot",
+      "startMs": 39685,
+      "endMs": 39944
+    },
+    {
+      "text": "needs",
+      "startMs": 39956,
+      "endMs": 40204
+    },
+    {
+      "text": "an",
+      "startMs": 40216,
+      "endMs": 40345
+    },
+    {
+      "text": "X",
+      "startMs": 40487,
+      "endMs": 40617
+    },
+    {
+      "text": "subscription",
+      "startMs": 40617,
+      "endMs": 41277
+    },
+    {
+      "text": "from",
+      "startMs": 41619,
+      "endMs": 41761
+    },
+    {
+      "text": "30 dollars",
+      "startMs": 41761,
+      "endMs": 42633
+    },
+    {
+      "text": "OpenAI's",
+      "startMs": 42999,
+      "endMs": 43588
+    },
+    {
+      "text": "Dots",
+      "startMs": 43588,
+      "endMs": 43836
+    },
+    {
+      "text": "starts",
+      "startMs": 43848,
+      "endMs": 44272
+    },
+    {
+      "text": "at",
+      "startMs": 44402,
+      "endMs": 44508
+    },
+    {
+      "text": "100 dollars",
+      "startMs": 44520,
+      "endMs": 45275
+    },
+    {
+      "text": "a",
+      "startMs": 45275,
+      "endMs": 45298
+    },
+    {
+      "text": "month",
+      "startMs": 45298,
+      "endMs": 45746
+    },
+    {
+      "text": "Duet",
+      "startMs": 46361,
+      "endMs": 46656
+    },
+    {
+      "text": "comes",
+      "startMs": 46656,
+      "endMs": 46903
+    },
+    {
+      "text": "inside",
+      "startMs": 46903,
+      "endMs": 47446,
+      "hl": true
+    },
+    {
+      "text": "Claude",
+      "startMs": 47446,
+      "endMs": 47741
+    },
+    {
+      "text": "Pro",
+      "startMs": 47752,
+      "endMs": 48189
+    },
+    {
+      "text": "at",
+      "startMs": 48460,
+      "endMs": 48578
+    },
+    {
+      "text": "20 dollars",
+      "startMs": 48578,
+      "endMs": 49415
+    },
+    {
+      "text": "And",
+      "startMs": 49804,
+      "endMs": 49863
+    },
+    {
+      "text": "it",
+      "startMs": 49863,
+      "endMs": 49934
+    },
+    {
+      "text": "already",
+      "startMs": 49934,
+      "endMs": 50194
+    },
+    {
+      "text": "knows",
+      "startMs": 50205,
+      "endMs": 50524,
+      "hl": true
+    },
+    {
+      "text": "you",
+      "startMs": 50524,
+      "endMs": 50760
+    },
+    {
+      "text": "Your",
+      "startMs": 51149,
+      "endMs": 51243
+    },
+    {
+      "text": "memory",
+      "startMs": 51243,
+      "endMs": 51833
+    },
+    {
+      "text": "skills",
+      "startMs": 52021,
+      "endMs": 52658
+    },
+    {
+      "text": "and",
+      "startMs": 52847,
+      "endMs": 52977
+    },
+    {
+      "text": "connected",
+      "startMs": 52988,
+      "endMs": 53460
+    },
+    {
+      "text": "apps",
+      "startMs": 53472,
+      "endMs": 53849
+    },
+    {
+      "text": "carry",
+      "startMs": 53861,
+      "endMs": 54120
+    },
+    {
+      "text": "straight",
+      "startMs": 54120,
+      "endMs": 54403
+    },
+    {
+      "text": "over",
+      "startMs": 54403,
+      "endMs": 54757
+    },
+    {
+      "text": "To",
+      "startMs": 55361,
+      "endMs": 55420
+    },
+    {
+      "text": "get",
+      "startMs": 55432,
+      "endMs": 55597
+    },
+    {
+      "text": "it",
+      "startMs": 55597,
+      "endMs": 55738
+    },
+    {
+      "text": "join",
+      "startMs": 56234,
+      "endMs": 56517
+    },
+    {
+      "text": "the",
+      "startMs": 56528,
+      "endMs": 56587
+    },
+    {
+      "text": "waitlist",
+      "startMs": 56587,
+      "endMs": 57059,
+      "hl": true
+    },
+    {
+      "text": "on",
+      "startMs": 57071,
+      "endMs": 57189
+    },
+    {
+      "text": "claude.com",
+      "startMs": 57189,
+      "endMs": 58168
+    },
+    {
+      "text": "with",
+      "startMs": 58392,
+      "endMs": 58486
+    },
+    {
+      "text": "your",
+      "startMs": 58486,
+      "endMs": 58569
+    },
+    {
+      "text": "Claude",
+      "startMs": 58569,
+      "endMs": 58875
+    },
+    {
+      "text": "email",
+      "startMs": 58875,
+      "endMs": 59311
+    },
+    {
+      "text": "When",
+      "startMs": 59712,
+      "endMs": 59783
+    },
+    {
+      "text": "your",
+      "startMs": 59783,
+      "endMs": 59866
+    },
+    {
+      "text": "invite",
+      "startMs": 59866,
+      "endMs": 60302
+    },
+    {
+      "text": "lands",
+      "startMs": 60302,
+      "endMs": 60786
+    },
+    {
+      "text": "open",
+      "startMs": 61033,
+      "endMs": 61222
+    },
+    {
+      "text": "the",
+      "startMs": 61222,
+      "endMs": 61293
+    },
+    {
+      "text": "Duet",
+      "startMs": 61293,
+      "endMs": 61587
+    },
+    {
+      "text": "app",
+      "startMs": 61587,
+      "endMs": 61847
+    },
+    {
+      "text": "or",
+      "startMs": 62024,
+      "endMs": 62130
+    },
+    {
+      "text": "claude.ai",
+      "startMs": 62130,
+      "endMs": 63262
+    },
+    {
+      "text": "Start",
+      "startMs": 63627,
+      "endMs": 63852
+    },
+    {
+      "text": "with",
+      "startMs": 63852,
+      "endMs": 63958
+    },
+    {
+      "text": "one",
+      "startMs": 63958,
+      "endMs": 64182,
+      "hl": true
+    },
+    {
+      "text": "job",
+      "startMs": 64182,
+      "endMs": 64583
+    },
+    {
+      "text": "and",
+      "startMs": 64842,
+      "endMs": 64960
+    },
+    {
+      "text": "only",
+      "startMs": 64972,
+      "endMs": 65184
+    },
+    {
+      "text": "the",
+      "startMs": 65184,
+      "endMs": 65302
+    },
+    {
+      "text": "apps",
+      "startMs": 65314,
+      "endMs": 65632
+    },
+    {
+      "text": "it",
+      "startMs": 65632,
+      "endMs": 65691
+    },
+    {
+      "text": "needs",
+      "startMs": 65703,
+      "endMs": 66210
+    },
+    {
+      "text": "The",
+      "startMs": 66828,
+      "endMs": 66875
+    },
+    {
+      "text": "catch",
+      "startMs": 66887,
+      "endMs": 67323,
+      "hl": true
+    },
+    {
+      "text": "It's",
+      "startMs": 67700,
+      "endMs": 67795
+    },
+    {
+      "text": "a",
+      "startMs": 67795,
+      "endMs": 67830
+    },
+    {
+      "text": "US-only",
+      "startMs": 67830,
+      "endMs": 68443
+    },
+    {
+      "text": "preview",
+      "startMs": 68443,
+      "endMs": 68868
+    },
+    {
+      "text": "for",
+      "startMs": 68868,
+      "endMs": 68974
+    },
+    {
+      "text": "Pro",
+      "startMs": 68974,
+      "endMs": 69328
+    },
+    {
+      "text": "and",
+      "startMs": 69339,
+      "endMs": 69434
+    },
+    {
+      "text": "Max",
+      "startMs": 69434,
+      "endMs": 69976
+    },
+    {
+      "text": "and",
+      "startMs": 70236,
+      "endMs": 70342
+    },
+    {
+      "text": "background",
+      "startMs": 70342,
+      "endMs": 70849
+    },
+    {
+      "text": "work",
+      "startMs": 70849,
+      "endMs": 71120
+    },
+    {
+      "text": "uses",
+      "startMs": 71120,
+      "endMs": 71450
+    },
+    {
+      "text": "your",
+      "startMs": 71450,
+      "endMs": 71545
+    },
+    {
+      "text": "plan",
+      "startMs": 71545,
+      "endMs": 71839
+    },
+    {
+      "text": "limits",
+      "startMs": 71839,
+      "endMs": 72311,
+      "hl": true
+    },
+    {
+      "text": "Muse",
+      "startMs": 72928,
+      "endMs": 73281
+    },
+    {
+      "text": "Grok",
+      "startMs": 73293,
+      "endMs": 73612
+    },
+    {
+      "text": "Bot",
+      "startMs": 73623,
+      "endMs": 73906
+    },
+    {
+      "text": "Dots",
+      "startMs": 73930,
+      "endMs": 74237
+    },
+    {
+      "text": "or",
+      "startMs": 74366,
+      "endMs": 74449
+    },
+    {
+      "text": "Duet",
+      "startMs": 74449,
+      "endMs": 74873,
+      "hl": true
+    },
+    {
+      "text": "Which",
+      "startMs": 75239,
+      "endMs": 75369
+    },
+    {
+      "text": "one",
+      "startMs": 75369,
+      "endMs": 75451
+    },
+    {
+      "text": "would",
+      "startMs": 75451,
+      "endMs": 75546
+    },
+    {
+      "text": "you",
+      "startMs": 75546,
+      "endMs": 75628
+    },
+    {
+      "text": "trust",
+      "startMs": 75628,
+      "endMs": 75970
+    },
+    {
+      "text": "with",
+      "startMs": 75970,
+      "endMs": 76064
+    },
+    {
+      "text": "your",
+      "startMs": 76076,
+      "endMs": 76171
+    },
+    {
+      "text": "inbox",
+      "startMs": 76182,
+      "endMs": 76772,
+      "hl": true
+    },
+    {
+      "text": "Tell",
+      "startMs": 77138,
+      "endMs": 77255
+    },
+    {
+      "text": "me",
+      "startMs": 77267,
+      "endMs": 77373
+    },
+    {
+      "text": "in",
+      "startMs": 77373,
+      "endMs": 77432
+    },
+    {
+      "text": "the",
+      "startMs": 77432,
+      "endMs": 77491
+    },
+    {
+      "text": "comments",
+      "startMs": 77503,
+      "endMs": 78128
+    }
+  ],
+  "showCaptions": true,
+  "music": "projects/claude-duet/music.wav",
+  "musicVolume": 0.075,
+  "musicDucked": 0.035,
+  "outro": {
+    "dur": 75,
+    "sound": "projects/claude-duet/signature.wav",
+    "cta": "Follow for AI that actually does the work",
+    "size": 220,
+    "wordSize": 50
+  },
+  "captionStyle": {
+    "top": 0.79,
+    "size": 54,
+    "maxWords": 3,
+    "weight": 800
+  }
+}

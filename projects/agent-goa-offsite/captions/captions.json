@@ -1,0 +1,536 @@
+[
+  {
+    "text": "I",
+    "startMs": 149,
+    "endMs": 220
+  },
+  {
+    "text": "gave",
+    "startMs": 232,
+    "endMs": 409
+  },
+  {
+    "text": "an",
+    "startMs": 409,
+    "endMs": 515
+  },
+  {
+    "text": "AI",
+    "startMs": 527,
+    "endMs": 986
+  },
+  {
+    "text": "agent",
+    "startMs": 1069,
+    "endMs": 1458
+  },
+  {
+    "text": "one",
+    "startMs": 1458,
+    "endMs": 1682,
+    "hl": true
+  },
+  {
+    "text": "job",
+    "startMs": 1694,
+    "endMs": 2071
+  },
+  {
+    "text": "our",
+    "startMs": 2531,
+    "endMs": 2637
+  },
+  {
+    "text": "team",
+    "startMs": 2637,
+    "endMs": 2885
+  },
+  {
+    "text": "offsite",
+    "startMs": 2897,
+    "endMs": 3439
+  },
+  {
+    "text": "in",
+    "startMs": 3439,
+    "endMs": 3545
+  },
+  {
+    "text": "Goa",
+    "startMs": 3557,
+    "endMs": 4005,
+    "hl": true
+  },
+  {
+    "text": "First",
+    "startMs": 4596,
+    "endMs": 5021
+  },
+  {
+    "text": "it",
+    "startMs": 5245,
+    "endMs": 5304
+  },
+  {
+    "text": "checked",
+    "startMs": 5304,
+    "endMs": 5575
+  },
+  {
+    "text": "twelve",
+    "startMs": 5587,
+    "endMs": 5894,
+    "hl": true
+  },
+  {
+    "text": "calendars",
+    "startMs": 5894,
+    "endMs": 6589
+  },
+  {
+    "text": "and",
+    "startMs": 6790,
+    "endMs": 6919
+  },
+  {
+    "text": "found",
+    "startMs": 6919,
+    "endMs": 7155
+  },
+  {
+    "text": "the",
+    "startMs": 7155,
+    "endMs": 7226
+  },
+  {
+    "text": "one",
+    "startMs": 7226,
+    "endMs": 7485
+  },
+  {
+    "text": "weekend",
+    "startMs": 7486,
+    "endMs": 8016
+  },
+  {
+    "text": "everyone",
+    "startMs": 8205,
+    "endMs": 8582
+  },
+  {
+    "text": "is",
+    "startMs": 8582,
+    "endMs": 8665
+  },
+  {
+    "text": "free",
+    "startMs": 8665,
+    "endMs": 9066,
+    "hl": true
+  },
+  {
+    "text": "Then",
+    "startMs": 9628,
+    "endMs": 9722
+  },
+  {
+    "text": "it",
+    "startMs": 9722,
+    "endMs": 9781
+  },
+  {
+    "text": "compared",
+    "startMs": 9781,
+    "endMs": 10158
+  },
+  {
+    "text": "flights",
+    "startMs": 10158,
+    "endMs": 10536
+  },
+  {
+    "text": "from",
+    "startMs": 10536,
+    "endMs": 10713
+  },
+  {
+    "text": "three",
+    "startMs": 10724,
+    "endMs": 11161,
+    "hl": true
+  },
+  {
+    "text": "cities",
+    "startMs": 11161,
+    "endMs": 11715
+  },
+  {
+    "text": "and",
+    "startMs": 11927,
+    "endMs": 12080
+  },
+  {
+    "text": "picked",
+    "startMs": 12092,
+    "endMs": 12375
+  },
+  {
+    "text": "the",
+    "startMs": 12375,
+    "endMs": 12481
+  },
+  {
+    "text": "cheapest",
+    "startMs": 12481,
+    "endMs": 12918
+  },
+  {
+    "text": "ones",
+    "startMs": 12918,
+    "endMs": 13201
+  },
+  {
+    "text": "that",
+    "startMs": 13201,
+    "endMs": 13366
+  },
+  {
+    "text": "land",
+    "startMs": 13366,
+    "endMs": 13755
+  },
+  {
+    "text": "before",
+    "startMs": 13755,
+    "endMs": 14062
+  },
+  {
+    "text": "noon",
+    "startMs": 14062,
+    "endMs": 14368,
+    "hl": true
+  },
+  {
+    "text": "It",
+    "startMs": 14928,
+    "endMs": 14998
+  },
+  {
+    "text": "shortlisted",
+    "startMs": 15010,
+    "endMs": 15635
+  },
+  {
+    "text": "three",
+    "startMs": 15647,
+    "endMs": 16060,
+    "hl": true
+  },
+  {
+    "text": "villas",
+    "startMs": 16060,
+    "endMs": 16449
+  },
+  {
+    "text": "with",
+    "startMs": 16449,
+    "endMs": 16590
+  },
+  {
+    "text": "a",
+    "startMs": 16590,
+    "endMs": 16649
+  },
+  {
+    "text": "pool",
+    "startMs": 16661,
+    "endMs": 17121
+  },
+  {
+    "text": "a",
+    "startMs": 17498,
+    "endMs": 17534
+  },
+  {
+    "text": "meeting",
+    "startMs": 17546,
+    "endMs": 17947
+  },
+  {
+    "text": "room",
+    "startMs": 17958,
+    "endMs": 18230
+  },
+  {
+    "text": "and",
+    "startMs": 18642,
+    "endMs": 18725
+  },
+  {
+    "text": "space",
+    "startMs": 18737,
+    "endMs": 19114
+  },
+  {
+    "text": "for",
+    "startMs": 19126,
+    "endMs": 19244
+  },
+  {
+    "text": "twelve",
+    "startMs": 19244,
+    "endMs": 19727
+  },
+  {
+    "text": "Then",
+    "startMs": 20093,
+    "endMs": 20163
+  },
+  {
+    "text": "it",
+    "startMs": 20164,
+    "endMs": 20222
+  },
+  {
+    "text": "asked",
+    "startMs": 20234,
+    "endMs": 20447
+  },
+  {
+    "text": "me",
+    "startMs": 20458,
+    "endMs": 20553
+  },
+  {
+    "text": "to",
+    "startMs": 20553,
+    "endMs": 20623
+  },
+  {
+    "text": "pick",
+    "startMs": 20623,
+    "endMs": 21036,
+    "hl": true
+  },
+  {
+    "text": "It",
+    "startMs": 21637,
+    "endMs": 21767
+  },
+  {
+    "text": "built",
+    "startMs": 21767,
+    "endMs": 22015
+  },
+  {
+    "text": "the",
+    "startMs": 22027,
+    "endMs": 22156
+  },
+  {
+    "text": "itinerary",
+    "startMs": 22156,
+    "endMs": 22970,
+    "hl": true
+  },
+  {
+    "text": "booked",
+    "startMs": 23170,
+    "endMs": 23406
+  },
+  {
+    "text": "a",
+    "startMs": 23477,
+    "endMs": 23548
+  },
+  {
+    "text": "beach",
+    "startMs": 23560,
+    "endMs": 23878
+  },
+  {
+    "text": "dinner",
+    "startMs": 23878,
+    "endMs": 24185
+  },
+  {
+    "text": "and",
+    "startMs": 24586,
+    "endMs": 24644
+  },
+  {
+    "text": "sent",
+    "startMs": 24644,
+    "endMs": 24892
+  },
+  {
+    "text": "everyone",
+    "startMs": 25022,
+    "endMs": 25364
+  },
+  {
+    "text": "the",
+    "startMs": 25364,
+    "endMs": 25411
+  },
+  {
+    "text": "invite",
+    "startMs": 25411,
+    "endMs": 25930,
+    "hl": true
+  },
+  {
+    "text": "Total",
+    "startMs": 26528,
+    "endMs": 26846
+  },
+  {
+    "text": "one",
+    "startMs": 27341,
+    "endMs": 27554
+  },
+  {
+    "text": "lakh",
+    "startMs": 27554,
+    "endMs": 27931
+  },
+  {
+    "text": "eighty-four",
+    "startMs": 28084,
+    "endMs": 28544
+  },
+  {
+    "text": "thousand",
+    "startMs": 28556,
+    "endMs": 29051
+  },
+  {
+    "text": "Sixteen",
+    "startMs": 29440,
+    "endMs": 29995
+  },
+  {
+    "text": "thousand",
+    "startMs": 29995,
+    "endMs": 30490
+  },
+  {
+    "text": "under",
+    "startMs": 30502,
+    "endMs": 30690,
+    "hl": true
+  },
+  {
+    "text": "budget",
+    "startMs": 30690,
+    "endMs": 31080
+  },
+  {
+    "text": "And",
+    "startMs": 31457,
+    "endMs": 31516
+  },
+  {
+    "text": "it",
+    "startMs": 31516,
+    "endMs": 31598
+  },
+  {
+    "text": "never",
+    "startMs": 31610,
+    "endMs": 31893
+  },
+  {
+    "text": "paid",
+    "startMs": 31893,
+    "endMs": 32223
+  },
+  {
+    "text": "without",
+    "startMs": 32235,
+    "endMs": 32648
+  },
+  {
+    "text": "my",
+    "startMs": 32648,
+    "endMs": 32813
+  },
+  {
+    "text": "OK",
+    "startMs": 32813,
+    "endMs": 33320,
+    "hl": true
+  },
+  {
+    "text": "That's",
+    "startMs": 34006,
+    "endMs": 34112
+  },
+  {
+    "text": "what",
+    "startMs": 34112,
+    "endMs": 34195
+  },
+  {
+    "text": "an",
+    "startMs": 34195,
+    "endMs": 34266
+  },
+  {
+    "text": "AI",
+    "startMs": 34266,
+    "endMs": 34678
+  },
+  {
+    "text": "agent",
+    "startMs": 34678,
+    "endMs": 35032,
+    "hl": true
+  },
+  {
+    "text": "is",
+    "startMs": 35032,
+    "endMs": 35386
+  },
+  {
+    "text": "Not",
+    "startMs": 35763,
+    "endMs": 35858
+  },
+  {
+    "text": "a",
+    "startMs": 35869,
+    "endMs": 35893
+  },
+  {
+    "text": "chatbot",
+    "startMs": 35893,
+    "endMs": 36483
+  },
+  {
+    "text": "A",
+    "startMs": 36860,
+    "endMs": 36907
+  },
+  {
+    "text": "teammate",
+    "startMs": 36907,
+    "endMs": 37379,
+    "hl": true
+  },
+  {
+    "text": "Follow",
+    "startMs": 37780,
+    "endMs": 37992
+  },
+  {
+    "text": "for",
+    "startMs": 38004,
+    "endMs": 38122
+  },
+  {
+    "text": "more",
+    "startMs": 38134,
+    "endMs": 38452
+  }
+]

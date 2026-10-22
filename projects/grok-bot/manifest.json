@@ -1,0 +1,216 @@
+{
+  "slug": "grok-bot",
+  "topic": "Grok Bot: xAI's always-on AI teammate (cinematic 60s)",
+  "created": "2026-10-18T21:46:13+00:00",
+  "options": {
+    "format": "9x16",
+    "language": "en"
+  },
+  "stages": {
+    "intake": {
+      "status": "done",
+      "at": "2026-10-18T21:46:13+00:00",
+      "note": "project folder and manifest created"
+    },
+    "research": {
+      "status": "done",
+      "at": "2026-10-18T21:46:14+00:00",
+      "note": "30 claims in the ledger",
+      "outputs": [
+        "research/sources.json",
+        "research/sources.md"
+      ]
+    },
+    "brief": {
+      "status": "done",
+      "at": "2026-10-18T21:46:14+00:00",
+      "note": "brief present",
+      "outputs": [
+        "brief/brief.md"
+      ]
+    },
+    "script": {
+      "status": "done",
+      "at": "2026-10-18T21:46:14+00:00",
+      "note": "148 narration words (~57 s at a natural pace)",
+      "outputs": [
+        "script/script.md"
+      ]
+    },
+    "storyboard": {
+      "status": "done",
+      "at": "2026-10-18T21:54:46+00:00",
+      "note": "7 scenes valid, 2 warnings",
+      "outputs": [
+        "storyboard/storyboard.json"
+      ]
+    },
+    "assets": {
+      "status": "done",
+      "at": "2026-10-18T21:54:46+00:00",
+      "note": "7 narration clips (7 reused from cache)",
+      "outputs": [
+        "audio/vo/"
+      ]
+    },
+    "edit": {
+      "status": "done",
+      "at": "2026-10-18T21:54:47+00:00",
+      "note": "7 scenes, body 51.7 s + outro 2.5 s, 147 caption words",
+      "outputs": [
+        "timeline/timeline.json",
+        "timeline/props.json",
+        "captions/grok-bot.srt",
+        "audio/music.wav",
+        "audio/signature.wav"
+      ]
+    },
+    "render": {
+      "status": "done",
+      "at": "2026-10-18T22:05:19+00:00",
+      "note": "grok-bot_v3.mp4 (137.3 MB)",
+      "outputs": [
+        "renders/grok-bot_v3.mp4"
+      ]
+    },
+    "qc": {
+      "status": "done",
+      "at": "2026-10-18T22:05:45+00:00",
+      "note": "grok-bot_v3.mp4 passed 14 checks",
+      "outputs": [
+        "reports/qc.md",
+        "reports/contact_sheet.png"
+      ]
+    },
+    "delivery": {
+      "status": "done",
+      "at": "2026-10-18T22:05:45+00:00",
+      "note": "delivered grok-bot_v3.mp4",
+      "outputs": [
+        "reports/production_report.md",
+        "/Users/kanishk.raj/Downloads/Kanishk.Rewires/grok-bot"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s00.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T21:54:46+00:00",
+      "cached": true,
+      "seconds": 4.92,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s01.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T21:54:46+00:00",
+      "cached": true,
+      "seconds": 10.08,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s02.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T21:54:46+00:00",
+      "cached": true,
+      "seconds": 6.43,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s03.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T21:54:46+00:00",
+      "cached": true,
+      "seconds": 14.26,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s04.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T21:54:46+00:00",
+      "cached": true,
+      "seconds": 6.29,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s05.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T21:54:46+00:00",
+      "cached": true,
+      "seconds": 4.99,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s06.mp3",
+      "provider": "edge",
+      "at": "2026-10-18T21:54:46+00:00",
+      "cached": true,
+      "seconds": 3.5,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "music",
+      "path": "audio/music.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-18T21:54:47+00:00",
+      "licence": "original, generated in code"
+    },
+    {
+      "kind": "music",
+      "path": "audio/signature.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-10-18T21:54:47+00:00",
+      "licence": "original, generated in code"
+    }
+  ],
+  "versions": [
+    {
+      "file": "renders/grok-bot_v1.mp4",
+      "at": "2026-10-19T03:23:42"
+    },
+    {
+      "file": "renders/grok-bot_v2.mp4",
+      "at": "2026-10-19T03:29:44"
+    },
+    {
+      "file": "renders/grok-bot_v3.mp4",
+      "at": "2026-10-19T03:35:19"
+    }
+  ]
+}

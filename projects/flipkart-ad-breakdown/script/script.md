@@ -65,9 +65,9 @@ Body duration: 46.7 s plus the brand outro
 
 **Voiceover:** Your customers have a line like that too. Find the words they already use, and build your ad around them.
 
-**On screen:** lines / CAFÉ / “The usual, please.” / GYM / “I'll start Monday.” / ONLINE STORE / “Adding to cart, for later.” / media/flipkart/stock/cafe.mp4 / media/flipkart/stock/gym.mp4 / media/flipkart/stock/phone_shopping.mp4
+**On screen:** graphic / craft / CAFÉ / “The usual, please.” / Brew House / ☕ / #6B4226 / Your usual. Ready before you ask. / GYM / “I'll start Monday.” / Iron Club / 🏋️ / #1F3A5F / Monday starts today. First week free. / ONLINE STORE / “Adding to cart, for later.” / Loom & Co. / 🛍️ / #4A2A5E / Still thinking? It's 10% off till midnight.
 
-**Visual concept:** Real footage of a café, a gym and phone shopping; each shot gets its customer's everyday line.
+**Visual concept:** Motion graphics: a customer's everyday line flies into a phone and types out as the ad headline; café, gym, online store (example ads).
 
 **Transition:** cut
 
@@ -76,9 +76,9 @@ Body duration: 46.7 s plus the brand outro
 
 **Voiceover:** What's the line your mom always said? Tell me in the comments.
 
-**On screen:** comments / AD: FLIPKART × 22FEET / Riya / Wear a jacket, it's cold outside. / Kabir / Eat first, then phone. / Ananya / Switch off the lights! / Dev / Buy one size bigger 😂
+**On screen:** graphic / comments / Riya / Wear a jacket, it's cold outside. / Kabir / Eat first, then phone. / Ananya / Switch off the lights! / Dev / Buy one size bigger 😂
 
-**Visual concept:** The family laughing in front of the new TV; example comments with classic mom lines stack up.
+**Visual concept:** A cream Instagram comment sheet slides up and fills with classic mom lines, hearts popping.
 
 **Transition:** cut
 

@@ -1,0 +1,91 @@
+1
+00:00:00,149 --> 00:00:03,073
+Google researchers just open-sourced something wild
+
+2
+00:00:03,161 --> 00:00:05,087
+It lets your AI agent upgrade its own
+
+3
+00:00:05,107 --> 00:00:05,943
+setup
+
+4
+00:00:05,968 --> 00:00:09,198
+its prompts tools memory and skills
+
+5
+00:00:09,306 --> 00:00:11,274
+Without retraining the model at all
+
+6
+00:00:11,361 --> 00:00:12,811
+It's called Harness squared
+
+7
+00:00:12,871 --> 00:00:14,584
+Right now most teams tweak that setup by
+
+8
+00:00:14,604 --> 00:00:17,092
+hand test it and tweak it again
+
+9
+00:00:17,228 --> 00:00:19,149
+This does it for you with one command
+
+10
+00:00:19,228 --> 00:00:21,955
+It proposes two fixes tests both on the
+
+11
+00:00:21,975 --> 00:00:23,252
+same task
+
+12
+00:00:23,272 --> 00:00:25,453
+and keeps only what actually worked
+
+13
+00:00:25,583 --> 00:00:27,850
+In the paper one round boosted a model
+
+14
+00:00:27,870 --> 00:00:29,725
+by eleven and a half points with the
+
+15
+00:00:29,745 --> 00:00:31,336
+exact same weights
+
+16
+00:00:31,594 --> 00:00:33,303
+But here's the real twist
+
+17
+00:00:33,394 --> 00:00:35,037
+It writes down what it learned from every
+
+18
+00:00:35,057 --> 00:00:37,686
+task so the next one starts smarter
+
+19
+00:00:37,828 --> 00:00:40,103
+Your agent gets better at getting better
+
+20
+00:00:40,261 --> 00:00:41,184
+Want the repo
+
+21
+00:00:41,204 --> 00:00:43,012
+Follow comment harness
+
+22
+00:00:43,032 --> 00:00:43,507
+and
+
+23
+00:00:43,527 --> 00:00:44,765
+I'll send you the link

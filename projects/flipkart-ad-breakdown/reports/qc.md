@@ -1,6 +1,6 @@
 # QC report
 
-Video: `flipkart-ad-breakdown_v3.mp4`  
+Video: `flipkart-ad-breakdown_v5.mp4`  
 Result: **PASS**
 
 | Check | Result | Detail |
@@ -17,7 +17,7 @@ Result: **PASS**
 | no silent gaps | ok | none |
 | loudness | ok | -14.0 LUFS (target -14) |
 | true peak | ok | -1.4 dBTP |
-| safe area | ok | nothing drawn within 60 px of the sides (full-bleed scenes not checked: s00, s01, s02, s03, s04, s05, s06) |
-| brand ending | ok | lime px 29, cream px 476 |
+| safe area | ok | nothing drawn within 60 px of the sides (full-bleed scenes not checked: s00, s01, s02, s03, s04) |
+| brand ending | ok | lime px 29, cream px 475 |
 
 Still needs human eyes: overlapping elements, pacing and readability, visual taste and continuity, voice delivery.

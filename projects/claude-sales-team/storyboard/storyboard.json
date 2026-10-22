@@ -30,7 +30,7 @@
   "scenes": [
     {
       "id": "s00",
-      "type": "sMachine",
+      "type": "sTeam",
       "leadIn": 2,
       "pad": 6,
       "energy": 3,
@@ -38,13 +38,13 @@
       "claims": [
         "c1"
       ],
-      "vo": "Now you can build your entire sales team with Claude Code, and 10x your outreach. Here's the exact setup.",
+      "vo": "Now you can build your whole sales team, and boost your sales by 10x, using Claude Code. Here's the exact setup.",
       "cues": {
-        "build": "build"
+        "claude": "Claude"
       },
       "accents": [
-        "entire",
-        "10x"
+        "whole",
+        "10x,"
       ],
       "data": {
         "beat": "hook",
@@ -52,30 +52,17 @@
       },
       "sfx": [
         {
-          "name": "impact",
-          "on": 10,
-          "volume": 0.45
-        },
-        {
           "name": "whoosh",
           "on": {
-            "cue": "build"
+            "cue": "claude"
           },
-          "volume": 0.35
-        },
-        {
-          "name": "boom",
-          "on": {
-            "cue": "build",
-            "offset": 12
-          },
-          "volume": 0.35
+          "volume": 0.15
         }
       ]
     },
     {
       "id": "s01",
-      "type": "sMachine",
+      "type": "sTeam",
       "pad": 6,
       "energy": 2,
       "bleed": true,
@@ -102,27 +89,27 @@
           "on": {
             "cue": "apollo"
           },
-          "volume": 0.25
+          "volume": 0.18
         },
         {
           "name": "click",
           "on": {
             "cue": "gmail"
           },
-          "volume": 0.25
+          "volume": 0.18
         },
         {
           "name": "click",
           "on": {
             "cue": "hubspot"
           },
-          "volume": 0.25
+          "volume": 0.18
         }
       ]
     },
     {
       "id": "s02",
-      "type": "sMachine",
+      "type": "sTeam",
       "pad": 6,
       "energy": 2,
       "bleed": true,
@@ -147,86 +134,76 @@
           "on": {
             "cue": "titles"
           },
-          "volume": 0.2
+          "volume": 0.18
         }
       ]
     },
     {
       "id": "s03",
-      "type": "sMachine",
+      "type": "sTeam",
       "pad": 6,
       "energy": 3,
       "bleed": true,
       "vo": "Step three. Ask Claude to pull every company that matches, and remove the duplicates.",
       "cues": {
-        "pull": "pull"
+        "l0": "pull"
       },
       "accents": [
         "every"
       ],
       "data": {
-        "beat": "source",
+        "beat": "funnel",
+        "step": 3,
+        "from": 0,
+        "upto": 1,
         "theme": "cream"
       },
-      "sfx": [
-        {
-          "name": "riser",
-          "on": {
-            "cue": "pull"
-          },
-          "volume": 0.2
-        }
-      ]
+      "sfx": []
     },
     {
       "id": "s04",
-      "type": "sMachine",
+      "type": "sTeam",
       "pad": 6,
       "energy": 2,
       "bleed": true,
       "minFrames": 220,
       "vo": "Step four. It researches each one. Website, hiring, tech stack. Then it scores the fit. Low scores get parked, not deleted.",
       "cues": {
-        "website": "Website,",
-        "hiring": "hiring,",
-        "stack": "stack.",
-        "score": "scores",
-        "parked": "parked,"
+        "l1": "scores"
       },
       "accents": [
         "scores",
         "parked,"
       ],
       "data": {
-        "beat": "qualify",
+        "beat": "funnel",
+        "step": 4,
+        "from": 1,
+        "upto": 2,
         "theme": "cream"
       },
-      "sfx": [
-        {
-          "name": "ding",
-          "on": {
-            "cue": "score"
-          },
-          "volume": 0.25
-        }
-      ]
+      "sfx": []
     },
     {
       "id": "s05",
-      "type": "sMachine",
+      "type": "sTeam",
       "pad": 6,
       "energy": 2,
       "bleed": true,
       "vo": "Step five. It finds the decision makers, and verifies their emails. No email? They go to LinkedIn only.",
       "cues": {
-        "verify": "verifies"
+        "l2": "decision",
+        "l3": "verifies"
       },
       "accents": [
         "decision",
         "LinkedIn"
       ],
       "data": {
-        "beat": "people",
+        "beat": "funnel",
+        "step": 5,
+        "from": 2,
+        "upto": 4,
         "theme": "cream"
       },
       "sfx": [
@@ -235,13 +212,13 @@
           "on": {
             "cue": "verify"
           },
-          "volume": 0.2
+          "volume": 0.18
         }
       ]
     },
     {
       "id": "s06",
-      "type": "sMachine",
+      "type": "sTeam",
       "pad": 8,
       "energy": 3,
       "bleed": true,
@@ -269,27 +246,27 @@
           "on": {
             "cue": "ads"
           },
-          "volume": 0.25
+          "volume": 0.18
         },
         {
           "name": "click",
           "on": {
             "cue": "email"
           },
-          "volume": 0.2
+          "volume": 0.18
         },
         {
           "name": "click",
           "on": {
             "cue": "post"
           },
-          "volume": 0.2
+          "volume": 0.18
         }
       ]
     },
     {
       "id": "s07",
-      "type": "sMachine",
+      "type": "sTeam",
       "pad": 8,
       "energy": 2,
       "bleed": true,
@@ -315,27 +292,27 @@
           "on": {
             "cue": "replied"
           },
-          "volume": 0.2
+          "volume": 0.18
         },
         {
           "name": "tick",
           "on": {
             "cue": "clicked"
           },
-          "volume": 0.2
+          "volume": 0.18
         },
         {
           "name": "tick",
           "on": {
             "cue": "viewed"
           },
-          "volume": 0.2
+          "volume": 0.18
         }
       ]
     },
     {
       "id": "s08",
-      "type": "sMachine",
+      "type": "sTeam",
       "pad": 8,
       "energy": 2,
       "bleed": true,
@@ -357,13 +334,13 @@
           "on": {
             "cue": "approve"
           },
-          "volume": 0.3
+          "volume": 0.18
         }
       ]
     },
     {
       "id": "s09",
-      "type": "sMachine",
+      "type": "sTeam",
       "pad": 14,
       "energy": 3,
       "bleed": true,
@@ -379,13 +356,11 @@
         "beat": "finale",
         "theme": "cream"
       },
-      "sfx": [
-        {
-          "name": "riser",
-          "on": 0,
-          "volume": 0.2
-        }
-      ]
+      "sfx": []
     }
-  ]
+  ],
+  "music": {
+    "style": "keys",
+    "hits": false
+  }
 }
