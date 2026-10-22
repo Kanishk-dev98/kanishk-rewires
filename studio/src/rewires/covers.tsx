@@ -4,7 +4,7 @@ import React from "react";
 import { AbsoluteFill, Img, staticFile } from "remotion";
 import { BODY, BRAND, C, HEAD, SERIF } from "./brand";
 
-type Hero = { kind: "loop"; label: string; sup?: string } | { kind: "logo"; src: string } | { kind: "text"; text: string };
+type Hero = { kind: "loop"; label: string; sup?: string } | { kind: "logo"; src: string } | { kind: "image"; src: string; w: number; h: number; top?: number } | { kind: "text"; text: string };
 
 const Selection: React.FC<{ children: React.ReactNode; light: boolean }> = ({ children, light }) => (
   <span style={{ position: "relative", display: "inline-block", padding: "0 14px", fontFamily: SERIF, fontStyle: "italic", fontWeight: 400, color: light ? C.charcoal : C.lime }}>
@@ -42,8 +42,10 @@ export const ThumbMin: React.FC<{ light?: boolean; line1: string; accent: string
               {hero.sup ? <sup style={{ fontSize: 46, color: C.lime }}>{hero.sup}</sup> : null}
             </div>
           </div>
+        ) : hero.kind === "image" ? (
+          <Img src={staticFile(hero.src)} style={{ width: hero.w, height: hero.h, objectFit: "contain", marginTop: hero.top ?? 0 }} />
         ) : hero.kind === "logo" ? (
-          <Img src={staticFile(hero.src)} style={{ width: 360, height: 360, objectFit: "contain" }} />
+          <Img src={staticFile(hero.src)} style={{ width: 640, height: 300, objectFit: "contain" }} />
         ) : (
           <div style={{ fontFamily: HEAD, fontWeight: 700, fontSize: 120 }}>{hero.text}</div>
         )}

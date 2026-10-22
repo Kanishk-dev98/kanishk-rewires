@@ -1,1 +1,34 @@
-{"google-g.svg":{"source":"https://commons.wikimedia.org/wiki/File:Google_%22G%22_logo.svg","note":"Official four-colour Google G, unaltered; trademark of Google, nominative use"}}
+{
+  "google-g.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Google_%22G%22_logo.svg",
+    "note": "Official four-colour Google G, unaltered; trademark of Google, nominative use"
+  },
+  "gmail.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Gmail_icon_(2020).svg",
+    "note": "official full colour, unaltered"
+  },
+  "google-ads.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Google_Ads_logo.svg",
+    "note": "official full colour, unaltered"
+  },
+  "meta.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Meta_Platforms_Inc._logo_(cropped).svg",
+    "note": "official gradient mark, unaltered"
+  },
+  "hubspot.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:HubSpot_Logo.svg",
+    "note": "official wordmark + sprocket, unaltered"
+  },
+  "linkedin.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:LinkedIn_icon.svg",
+    "note": "official blue in-box, unaltered"
+  },
+  "claude.svg": {
+    "source": "Anthropic brand (Claude starburst, #D97757)",
+    "note": "official colour"
+  },
+  "apollo.svg": {
+    "source": "Apollo.io brand mark (black)",
+    "note": "official colour"
+  }
+}
