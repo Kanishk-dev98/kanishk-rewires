@@ -1,0 +1,19 @@
+{
+ "id": "DeuRdcyspBX",
+ "duration": 42.41,
+ "words": 123,
+ "wpm": 174.0,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "DeepSeek just open sourced the engine behind their AI, and it hit 10",
+ "cuts": 3,
+ "cuts_per_10s": 0.71,
+ "avg_shot_s": 10.6,
+ "cut_times": [
+  15.13,
+  28.07,
+  28.1
+ ],
+ "lufs": -70.0,
+ "voice_db": -16.0,
+ "gaps_db": -20.6
+}

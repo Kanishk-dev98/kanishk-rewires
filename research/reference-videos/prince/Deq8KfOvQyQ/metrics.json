@@ -1,0 +1,20 @@
+{
+ "id": "Deq8KfOvQyQ",
+ "duration": 40.21,
+ "words": 125,
+ "wpm": 186.5,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "This Claude skill finds jobs for you and writes a tailored CV and",
+ "cuts": 4,
+ "cuts_per_10s": 0.99,
+ "avg_shot_s": 8.04,
+ "cut_times": [
+  13.37,
+  23.93,
+  23.97,
+  24.0
+ ],
+ "lufs": -70.0,
+ "voice_db": -16.3,
+ "gaps_db": -19.4
+}

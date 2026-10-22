@@ -1,0 +1,15 @@
+{
+ "id": "DejpSfhgWxh",
+ "duration": 46.89,
+ "words": 173,
+ "wpm": 221.4,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "Anthropic just dropped Claude Dashboards and Claude Motion and turns your boring data",
+ "cuts": 0,
+ "cuts_per_10s": 0.0,
+ "avg_shot_s": 46.89,
+ "cut_times": [],
+ "lufs": -70.0,
+ "voice_db": -16.8,
+ "gaps_db": -20.6
+}

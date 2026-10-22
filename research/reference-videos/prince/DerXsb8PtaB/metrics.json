@@ -1,0 +1,19 @@
+{
+ "id": "DerXsb8PtaB",
+ "duration": 29.42,
+ "words": 88,
+ "wpm": 179.5,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "ChatGPT just started answering with maps and calculators, but",
+ "cuts": 3,
+ "cuts_per_10s": 1.02,
+ "avg_shot_s": 7.36,
+ "cut_times": [
+  6.77,
+  10.53,
+  10.6
+ ],
+ "lufs": -70.0,
+ "voice_db": -16.1,
+ "gaps_db": -20.3
+}

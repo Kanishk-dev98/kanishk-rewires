@@ -68,3 +68,30 @@ For each narration line, ask what the sentence literally shows, then pick the ca
 - **Data or CRM story:** 21 + 13 + 8
 
 When a 🆕 technique is first needed, build it as a reusable component in `studio/src/rewires/`, add a scene type, register it in `pipeline/rewires/storyboard.py`, and mark it ✅ here.
+
+## Additions from the @princegupta.ai 16-reel study (rows 36–55)
+
+Evidence: `research/reference-videos/prince/ANALYSIS.md`. Theme translation: their black-first worlds become our cream-first; their blue selection becomes our lime.
+
+| # | Technique | Looks like | Use it for | Build notes (Remotion) | Status |
+|---|---|---|---|---|---|
+| 36 | Noun → event cue map | Every spoken noun fires its own chip, check, toggle or count-up on its exact onset | Every reel | Storyboard `cues` for every noun; one event per cue; headline words from the transcript JSON | 🧩 (cues exist; enforce a full map per script) |
+| 37 | Shared-element morph | Hook logo shrinks into a header card; gauge becomes star counter; sketch becomes UI | Continuity instead of cuts | Same element; interpolate rect, radius, scale and content cross-fade over 14–20 frames | 🧩 (`dDuet` chat bar → hub) |
+| 38 | Theme flip by sphere or iris | A dark sphere (or cream iris) grows from the centre to swap worlds, on a breath | Twist, name reveal, each enumerated item | clip-path circle from centre with a shaded radial gradient sphere; 12–16 frames; whoosh | 🆕 |
+| 39 | Voice-synced UI typing | The terminal or chat types the exact words being spoken | Commands, prompts | Characters revealed from transcript word times, not a fixed cps | 🆕 |
+| 40 | Counter + sparkline proof | Stars roll 0 → 10.9k while a sparkline draws with a glowing tip | Any proof number (spoken too) | Odometer digits (per-digit translateY) plus an SVG path dashoffset synced to the count | 🧩 |
+| 41 | Scan-line X-ray reveal | A bright horizontal bar sweeps down a UI and reveals its code or diagram underneath | "Under the hood", "what's really inside" | Two layers; clip the top layer by scan y; glow bar | 🆕 |
+| 42 | Persistent stepper / status panel | A docked panel under the hero keeps state (Planning ✓ → Calling tool… → Done) while cards above change | Any multi-step process | Fixed component outside the beat world; row states keyed to cues | 🆕 |
+| 43 | Accordion rule rows | Each rule row expands with its description while spoken, then collapses to a check | Rules, principles, steps | Row height spring; check draws on collapse | 🆕 |
+| 44 | Rubber stamp | Rotated stamp slams with overshoot: FREE, NO ACCOUNT NEEDED, TOO MUCH, SELF-REPORTED | Trust stack, honesty beats, "too much" | Scale 1.6→1 with spring, rotate −8°, slight shake; at most 1–2 per reel | 🆕 |
+| 45 | Bad → good gauge with glow re-tint | Ring gauge counts 6% → 100%, ring and background glow shift stone/red → lime | Transformations, "before vs after" | Arc dashoffset plus background radial gradient colour interpolation | 🆕 |
+| 46 | Timer race | Slow timer climbs past 1:00 and turns red; blur-swap to a fast run that stops at 7 s | Speed claims | Two big mono timers; colour shifts at a threshold | 🆕 |
+| 47 | Highlighter sweep on real text | Yellow/lime marker sweeps a phrase in a README, tweet or article | Proof from a source | Background-size width animation behind a text span | 🆕 |
+| 48 | Tether lines | Dashed red line ties A to B ("locked in"); turns solid lime when freed | Dependence, lock-in, integrations | SVG path; dash animation; colour and dash switch on cue | 🆕 |
+| 49 | Depth-of-field card field | Dozens of cards float at z-depths with blur; camera dollies through to one hero card | Openers for "every job / every lead / every post" | Cards with z → scale, blur, parallax; dolly on scale | 🆕 |
+| 50 | Footage → blueprint with CV boxes | Real clip gets computer-vision boxes ("upside down"), then morphs in-card into a line diagram | When footage is the subject | Video in card; SVG boxes snap on with overshoot; cross-fade to a blueprint SVG in the same rect | 🆕 |
+| 51 | Icon-flip grid | A grid of app icons flips one by one into code tiles | "Any app / any X" | rotateY 0→180 per tile with stagger; back face is the new state | 🆕 |
+| 52 | Call graph draws node by node | Nodes appear on cue and curved connectors draw between them, ending on a focus ring | How data or calls flow | SVG nodes plus cubic paths with dashoffset; focus ring pulse | 🧩 (`Wires`) |
+| 53 | Pain counter | Word count ticks 7 → 197, or "time spent" timer runs to 5:47:12 | Measuring the old way's pain | Counter badge plus amber/orange accent; then strike and fling the old card | 🆕 |
+| 54 | Strike-and-fling | The old way (a paragraph card) gets a red strike, tilts in 3D and flies off before the CTA | Closing the before/after | Strike line draw, then rotateY/translate out with blur | 🆕 |
+| 55 | Tape label + glitch | An amber DEVELOPER PREVIEW tape slaps on; RGB-split glitch on "break" | Caveats, honesty, warnings (mid-body) | Rotated tape div; 3–4 frames of offset coloured copies | 🆕 |

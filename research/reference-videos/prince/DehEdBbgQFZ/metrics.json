@@ -1,0 +1,22 @@
+{
+ "id": "DehEdBbgQFZ",
+ "duration": 63.21,
+ "words": 189,
+ "wpm": 179.4,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "Google just open sourced a tool that lets your AI coding agent use a",
+ "cuts": 6,
+ "cuts_per_10s": 0.95,
+ "avg_shot_s": 9.03,
+ "cut_times": [
+  21.8,
+  21.87,
+  30.7,
+  43.8,
+  43.87,
+  50.7
+ ],
+ "lufs": -70.0,
+ "voice_db": -16.1,
+ "gaps_db": -20.1
+}

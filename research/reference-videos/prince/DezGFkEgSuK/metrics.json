@@ -1,0 +1,19 @@
+{
+ "id": "DezGFkEgSuK",
+ "duration": 45.12,
+ "words": 138,
+ "wpm": 183.5,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "This GitHub repo turns every part of an AI agent into a plugin,",
+ "cuts": 3,
+ "cuts_per_10s": 0.66,
+ "avg_shot_s": 11.28,
+ "cut_times": [
+  6.7,
+  10.2,
+  10.27
+ ],
+ "lufs": -70.0,
+ "voice_db": -16.0,
+ "gaps_db": -20.0
+}

@@ -1,0 +1,23 @@
+{
+ "id": "DeoXYcovvum",
+ "duration": 79.61,
+ "words": 244,
+ "wpm": 183.9,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "Anthropic just moved its own code off Git because its AI agents",
+ "cuts": 7,
+ "cuts_per_10s": 0.88,
+ "avg_shot_s": 9.95,
+ "cut_times": [
+  40.9,
+  41.07,
+  41.13,
+  66.47,
+  66.63,
+  75.23,
+  75.27
+ ],
+ "lufs": -70.0,
+ "voice_db": -15.9,
+ "gaps_db": -19.7
+}

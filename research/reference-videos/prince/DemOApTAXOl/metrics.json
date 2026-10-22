@@ -1,0 +1,20 @@
+{
+ "id": "DemOApTAXOl",
+ "duration": 41.92,
+ "words": 113,
+ "wpm": 161.7,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "Most AI browser agents are painfully slow. This open source",
+ "cuts": 4,
+ "cuts_per_10s": 0.95,
+ "avg_shot_s": 8.38,
+ "cut_times": [
+  7.6,
+  14.73,
+  14.77,
+  14.8
+ ],
+ "lufs": -70.0,
+ "voice_db": -16.1,
+ "gaps_db": -20.1
+}

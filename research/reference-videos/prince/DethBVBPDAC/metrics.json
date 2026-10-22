@@ -1,0 +1,18 @@
+{
+ "id": "DethBVBPDAC",
+ "duration": 27.63,
+ "words": 86,
+ "wpm": 186.8,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "I know you can't explain your vibe -coded app, but this plugin makes sure you can",
+ "cuts": 2,
+ "cuts_per_10s": 0.72,
+ "avg_shot_s": 9.21,
+ "cut_times": [
+  6.7,
+  22.03
+ ],
+ "lufs": -70.0,
+ "voice_db": -16.0,
+ "gaps_db": -20.3
+}

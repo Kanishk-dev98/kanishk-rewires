@@ -1,0 +1,23 @@
+{
+ "id": "DewhNn1AZGQ",
+ "duration": 51.39,
+ "words": 144,
+ "wpm": 168.1,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "This GitHub repo doesn't have a single line of code, and it has over",
+ "cuts": 7,
+ "cuts_per_10s": 1.36,
+ "avg_shot_s": 6.42,
+ "cut_times": [
+  6.9,
+  6.97,
+  10.5,
+  30.3,
+  30.37,
+  40.17,
+  40.23
+ ],
+ "lufs": -70.0,
+ "voice_db": -16.2,
+ "gaps_db": -19.6
+}

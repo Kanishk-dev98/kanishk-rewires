@@ -1,0 +1,17 @@
+{
+ "id": "DeOQ900K7ne",
+ "duration": 33.27,
+ "words": 107,
+ "wpm": 193.0,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "This GitHub repo allows you to turn any project you've built into a launch video",
+ "cuts": 1,
+ "cuts_per_10s": 0.3,
+ "avg_shot_s": 16.64,
+ "cut_times": [
+  22.47
+ ],
+ "lufs": -70.0,
+ "voice_db": -16.5,
+ "gaps_db": -21.8
+}

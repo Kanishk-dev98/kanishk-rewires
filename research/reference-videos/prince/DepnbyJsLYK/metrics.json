@@ -1,0 +1,19 @@
+{
+ "id": "DepnbyJsLYK",
+ "duration": 37.52,
+ "words": 105,
+ "wpm": 167.9,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "Google just open sourced a harness that lets your AI agents upgrade",
+ "cuts": 3,
+ "cuts_per_10s": 0.8,
+ "avg_shot_s": 9.38,
+ "cut_times": [
+  25.7,
+  25.77,
+  32.1
+ ],
+ "lufs": -70.0,
+ "voice_db": -15.9,
+ "gaps_db": -19.0
+}

@@ -1,0 +1,20 @@
+{
+ "id": "DeefsFdAQYC",
+ "duration": 55.32,
+ "words": 186,
+ "wpm": 201.7,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "That little guy in my notch is watching Claude Codework, and he tells me",
+ "cuts": 4,
+ "cuts_per_10s": 0.72,
+ "avg_shot_s": 11.06,
+ "cut_times": [
+  25.73,
+  25.8,
+  35.4,
+  35.47
+ ],
+ "lufs": -70.0,
+ "voice_db": -15.7,
+ "gaps_db": -20.1
+}

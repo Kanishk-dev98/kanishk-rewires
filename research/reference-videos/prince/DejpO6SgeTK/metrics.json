@@ -1,0 +1,19 @@
+{
+ "id": "DejpO6SgeTK",
+ "duration": 55.66,
+ "words": 170,
+ "wpm": 183.3,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "What if you could just draw your app and let AI figure out the prompt? Because",
+ "cuts": 3,
+ "cuts_per_10s": 0.54,
+ "avg_shot_s": 13.91,
+ "cut_times": [
+  30.07,
+  42.5,
+  42.67
+ ],
+ "lufs": -70.0,
+ "voice_db": -15.9,
+ "gaps_db": -19.9
+}

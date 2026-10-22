@@ -1,0 +1,18 @@
+{
+ "id": "Dej2EeBMBT0",
+ "duration": 53.23,
+ "words": 165,
+ "wpm": 186.0,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "You've probably seen the Tesla Roadster stick to a ramp upside down,",
+ "cuts": 2,
+ "cuts_per_10s": 0.38,
+ "avg_shot_s": 17.74,
+ "cut_times": [
+  42.27,
+  50.13
+ ],
+ "lufs": -70.0,
+ "voice_db": -15.8,
+ "gaps_db": -20.8
+}

@@ -1,0 +1,20 @@
+{
+ "id": "DeR8oSgsnfh",
+ "duration": 39.72,
+ "words": 119,
+ "wpm": 179.8,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "This GitHub repo lets you reverse engineer any app you want, and",
+ "cuts": 4,
+ "cuts_per_10s": 1.01,
+ "avg_shot_s": 7.94,
+ "cut_times": [
+  20.3,
+  20.37,
+  28.5,
+  28.57
+ ],
+ "lufs": -70.0,
+ "voice_db": -16.3,
+ "gaps_db": -22.2
+}
