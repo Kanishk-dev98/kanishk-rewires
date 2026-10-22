@@ -180,8 +180,8 @@ const Found: React.FC<BeatProps> = ({ f, c }) => {
       </div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 430, display: "flex", justifyContent: "center", gap: 26 }}>
         {[
-          { logo: "openai.svg", cue: c("openai", 60), h: 54 },
-          { logo: "wiz.svg", cue: c("wiz", 90), h: 40 },
+          { logo: "openai.svg", cue: Math.min(c("openai", 60), 12), h: 54 },
+          { logo: "wiz.svg", cue: Math.min(c("wiz", 90), 20), h: 40 },
         ].map((x) => (
           <div key={x.logo} style={{ scale: String(pop(f, x.cue - 4)), opacity: f >= x.cue - 4 ? 1 : 0 }}>
             <div style={{ background: "white", border: `1px solid ${LINE}`, borderRadius: 24, padding: "24px 40px", boxShadow: SHADOW, display: "flex", alignItems: "center", height: 96 }}>
@@ -224,7 +224,7 @@ const Twist: React.FC<BeatProps & { dark: boolean }> = ({ f, c }) => {
     <>
       <div style={{ position: "absolute", left: 90, right: 90, top: 330, color: C.cream }}>
         <div style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: 64, color: C.lime, ...rise(f, c("scary", 9), 20) }}>The scary part?</div>
-        <div style={{ fontFamily: HEAD, fontWeight: 700, fontSize: 72, letterSpacing: -2, lineHeight: 1.05, marginTop: 16, ...rise(f, c("attackers", 79) - 6, 30) }}>
+        <div style={{ fontFamily: HEAD, fontWeight: 700, fontSize: 72, letterSpacing: -2, lineHeight: 1.05, marginTop: 16, ...rise(f, Math.min(c("attackers", 79) - 6, c("scary", 9) + 22), 30) }}>
           If AI can find it,<br />attackers can too.
         </div>
       </div>
