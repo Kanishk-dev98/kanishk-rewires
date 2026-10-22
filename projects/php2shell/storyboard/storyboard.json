@@ -1,0 +1,253 @@
+{
+  "id": "php2shell",
+  "title": "AI found a hidden bug in 70% of the internet",
+  "format": "9x16",
+  "captions": true,
+  "research": "done",
+  "captionStyle": {
+    "top": 0.79,
+    "size": 54,
+    "maxWords": 3,
+    "weight": 800
+  },
+  "voice": {
+    "provider": "edge",
+    "edge": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+8%"
+    }
+  },
+  "music": {
+    "style": "lofi",
+    "hits": false
+  },
+  "outro": {
+    "seconds": 2.5,
+    "size": 220,
+    "wordSize": 50,
+    "cta": "Follow for AI that actually does the work"
+  },
+  "render": {
+    "concurrency": 2,
+    "timeoutMs": 600000
+  },
+  "scenes": [
+    {
+      "id": "s00",
+      "type": "dPhp",
+      "pad": 6,
+      "energy": 2,
+      "bleed": true,
+      "vo": "AI just found a ten-year-old bug in the code behind 70% of the internet. And governments pulled their own websites offline.",
+      "cues": {
+        "bug": "bug",
+        "internet": "internet.",
+        "gov": "governments",
+        "offline": "offline."
+      },
+      "accents": [
+        "bug",
+        "offline."
+      ],
+      "data": {
+        "beat": "hook",
+        "theme": "cream"
+      },
+      "sfx": [],
+      "transition": "cut",
+      "claims": [
+        "c1",
+        "c2",
+        "c5"
+      ],
+      "leadIn": 2
+    },
+    {
+      "id": "s01",
+      "type": "dPhp",
+      "pad": 6,
+      "energy": 2,
+      "bleed": true,
+      "vo": "It's called PHP. It quietly runs WordPress, online shops, even government portals.",
+      "cues": {
+        "php": "PHP.",
+        "wp": "WordPress,",
+        "shops": "shops,",
+        "gov": "government"
+      },
+      "accents": [
+        "PHP."
+      ],
+      "data": {
+        "beat": "what",
+        "theme": "cream"
+      },
+      "sfx": [],
+      "transition": "cut",
+      "claims": [
+        "c2"
+      ]
+    },
+    {
+      "id": "s02",
+      "type": "dPhp",
+      "pad": 6,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Two flaws let anyone take over a site without logging in, and read its passwords.",
+      "cues": {
+        "flaws": "flaws",
+        "takeover": "take",
+        "login": "logging",
+        "pw": "passwords."
+      },
+      "accents": [
+        "anyone",
+        "passwords."
+      ],
+      "data": {
+        "beat": "danger",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.07
+        }
+      ],
+      "transition": "cut",
+      "claims": [
+        "c3"
+      ]
+    },
+    {
+      "id": "s03",
+      "type": "dPhp",
+      "pad": 6,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Researchers using AI from OpenAI and Wiz found it. One researcher did in a week what used to take a team months.",
+      "cues": {
+        "openai": "OpenAI",
+        "wiz": "Wiz",
+        "one": "One",
+        "week": "week",
+        "months": "months."
+      },
+      "accents": [
+        "AI",
+        "week"
+      ],
+      "data": {
+        "beat": "found",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.07
+        }
+      ],
+      "transition": "cut",
+      "claims": [
+        "c4"
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "dPhp",
+      "pad": 6,
+      "energy": 2,
+      "bleed": true,
+      "vo": "The scary part? If AI can find it, attackers can too. Even the Dutch cyber security agency took its own site offline.",
+      "cues": {
+        "scary": "scary",
+        "attackers": "attackers",
+        "dutch": "Dutch",
+        "offline": "offline."
+      },
+      "accents": [
+        "attackers",
+        "Dutch"
+      ],
+      "data": {
+        "beat": "twist",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.07
+        }
+      ],
+      "transition": "cut",
+      "claims": [
+        "c5"
+      ]
+    },
+    {
+      "id": "s05",
+      "type": "dPhp",
+      "pad": 6,
+      "energy": 2,
+      "bleed": true,
+      "vo": "So if you own a website, ask your host today: is our PHP patched? WordPress updates won't fix this. Only your host can.",
+      "cues": {
+        "host": "host",
+        "patched": "patched?",
+        "wp": "WordPress",
+        "only": "Only"
+      },
+      "accents": [
+        "today:",
+        "host"
+      ],
+      "data": {
+        "beat": "todo",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.07
+        }
+      ],
+      "transition": "cut",
+      "claims": [
+        "c6"
+      ]
+    },
+    {
+      "id": "s06",
+      "type": "dPhp",
+      "pad": 16,
+      "energy": 2,
+      "bleed": true,
+      "vo": "Comment PATCH, and I'll send you the two-minute check and the exact message to send your host.",
+      "cues": {
+        "patch": "PATCH,",
+        "check": "check",
+        "message": "message"
+      },
+      "accents": [
+        "PATCH,"
+      ],
+      "data": {
+        "beat": "cta",
+        "theme": "cream"
+      },
+      "sfx": [
+        {
+          "name": "whoosh",
+          "on": 0,
+          "volume": 0.07
+        }
+      ],
+      "transition": "cut"
+    }
+  ]
+}

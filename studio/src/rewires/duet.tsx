@@ -9,42 +9,42 @@ import type { SceneProps } from "./scenes";
 
 loadInstrumentItalic("italic", { weights: ["400"], subsets: ["latin"] });
 
-const INK = "#3E7A00";
-const MUTED = "#8A877E";
-const LINE = "#E4E0D5";
-const SHADOW = "0 34px 90px rgba(30,28,20,0.13), 0 3px 10px rgba(30,28,20,0.05)";
+export const INK = "#3E7A00";
+export const MUTED = "#8A877E";
+export const LINE = "#E4E0D5";
+export const SHADOW = "0 34px 90px rgba(30,28,20,0.13), 0 3px 10px rgba(30,28,20,0.05)";
 const M = 22; // camera move length (frames)
 
-type Cue = (name: string, fb: number) => number;
-type BeatProps = { f: number; D: number; c: Cue; g: number };
+export type Cue = (name: string, fb: number) => number;
+export type BeatProps = { f: number; D: number; c: Cue; g: number };
 
 // ------------------------------------------------------------------ helpers
-const ez = (f: number, a: number, b: number, from = 0, to = 1, e = EASE) => interpolate(f, [a, b], [from, to], { ...clamp, easing: e });
-const rise = (f: number, at: number, dist = 34, dur = 16): React.CSSProperties => {
+export const ez = (f: number, a: number, b: number, from = 0, to = 1, e = EASE) => interpolate(f, [a, b], [from, to], { ...clamp, easing: e });
+export const rise = (f: number, at: number, dist = 34, dur = 16): React.CSSProperties => {
   const p = ez(f, at, at + dur);
   return { opacity: p, translate: `0 ${(1 - p) * dist}px`, filter: p < 1 ? `blur(${(1 - p) * 12}px)` : undefined };
 };
-const pop = (f: number, at: number, k = { damping: 13, stiffness: 170 }) => spring({ frame: f - at, fps: 30, config: k });
-const typed = (f: number, s: string, at: number, cps = 1.6) => s.slice(0, Math.max(0, Math.floor((f - at) * cps)));
-const Logo: React.FC<{ src: string; h: number; style?: React.CSSProperties }> = ({ src, h, style }) => <Img src={staticFile(`media/logos/${src}`)} style={{ height: h, width: "auto", ...style }} />;
-const card: React.CSSProperties = { position: "absolute", background: "white", border: `1px solid ${LINE}`, borderRadius: 30, boxShadow: SHADOW };
-const Tile: React.FC<{ size: number; children: React.ReactNode; style?: React.CSSProperties }> = ({ size, children, style }) => (
+export const pop = (f: number, at: number, k = { damping: 13, stiffness: 170 }) => spring({ frame: f - at, fps: 30, config: k });
+export const typed = (f: number, s: string, at: number, cps = 1.6) => s.slice(0, Math.max(0, Math.floor((f - at) * cps)));
+export const Logo: React.FC<{ src: string; h: number; style?: React.CSSProperties }> = ({ src, h, style }) => <Img src={staticFile(`media/logos/${src}`)} style={{ height: h, width: "auto", ...style }} />;
+export const card: React.CSSProperties = { position: "absolute", background: "white", border: `1px solid ${LINE}`, borderRadius: 30, boxShadow: SHADOW };
+export const Tile: React.FC<{ size: number; children: React.ReactNode; style?: React.CSSProperties }> = ({ size, children, style }) => (
   <div style={{ width: size, height: size, borderRadius: size * 0.26, background: "white", border: `1px solid ${LINE}`, boxShadow: "0 18px 44px rgba(30,28,20,0.12)", display: "flex", alignItems: "center", justifyContent: "center", ...style }}>{children}</div>
 );
-const Check: React.FC<{ p: number; size?: number; color?: string }> = ({ p, size = 34, color = C.lime }) => (
+export const Check: React.FC<{ p: number; size?: number; color?: string }> = ({ p, size = 34, color = C.lime }) => (
   <div style={{ width: size, height: size, borderRadius: "50%", background: p > 0 ? color : "transparent", border: p > 0 ? "none" : `2px solid ${LINE}`, display: "flex", alignItems: "center", justifyContent: "center", scale: String(0.6 + 0.4 * p) }}>
     <svg width={size * 0.6} height={size * 0.6} viewBox="0 0 24 24">
       <path d="M4 12.5l5 5L20 6.5" fill="none" stroke={C.charcoal} strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - p} />
     </svg>
   </div>
 );
-const Spinner: React.FC<{ g: number; size?: number }> = ({ g, size = 30 }) => (
+export const Spinner: React.FC<{ g: number; size?: number }> = ({ g, size = 30 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" style={{ rotate: `${g * 14}deg` }}>
     <circle cx={12} cy={12} r={9} fill="none" stroke={LINE} strokeWidth={3} />
     <path d="M12 3a9 9 0 0 1 9 9" fill="none" stroke={INK} strokeWidth={3} strokeLinecap="round" />
   </svg>
 );
-const Cursor: React.FC<{ x: number; y: number; press?: number }> = ({ x, y, press = 0 }) => (
+export const Cursor: React.FC<{ x: number; y: number; press?: number }> = ({ x, y, press = 0 }) => (
   <div style={{ position: "absolute", left: x, top: y, zIndex: 20 }}>
     {press > 0 && press < 1 ? <div style={{ position: "absolute", left: -40 * press, top: -40 * press, width: 80 * press, height: 80 * press, borderRadius: "50%", border: `3px solid ${C.lime}`, opacity: 1 - press }} /> : null}
     <svg width={46} height={46} viewBox="0 0 24 24" style={{ filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.25))", scale: String(1 - 0.12 * Math.sin(Math.PI * Math.min(1, press))) }}>
@@ -53,7 +53,7 @@ const Cursor: React.FC<{ x: number; y: number; press?: number }> = ({ x, y, pres
   </div>
 );
 /** Figma-style selection box with corner handles, drawn on. */
-const Selection: React.FC<{ p: number; children: React.ReactNode; pad?: number }> = ({ p, children, pad = 14 }) => (
+export const Selection: React.FC<{ p: number; children: React.ReactNode; pad?: number }> = ({ p, children, pad = 14 }) => (
   <span style={{ position: "relative", display: "inline-block" }}>
     <span style={{ position: "absolute", left: -pad, right: -pad, top: 6, bottom: -2, background: `rgba(167,255,63,${0.55 * p})`, border: `3px solid rgba(10,10,10,${p})`, clipPath: `inset(0 ${(1 - p) * 100}% 0 0)` }} />
     {[
@@ -67,7 +67,7 @@ const Selection: React.FC<{ p: number; children: React.ReactNode; pad?: number }
     <span style={{ position: "relative" }}>{children}</span>
   </span>
 );
-const Icon: React.FC<{ kind: "send" | "pay" | "sign" | "delete" | "memory" | "skills" | "apps" | "cloud"; size: number; color?: string }> = ({ kind, size, color = C.charcoal }) => {
+export const Icon: React.FC<{ kind: "send" | "pay" | "sign" | "delete" | "memory" | "skills" | "apps" | "cloud"; size: number; color?: string }> = ({ kind, size, color = C.charcoal }) => {
   const s = { fill: "none", stroke: color, strokeWidth: 1.7, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
   return (
     <svg width={size} height={size} viewBox="0 0 24 24">
@@ -99,7 +99,7 @@ const Icon: React.FC<{ kind: "send" | "pay" | "sign" | "delete" | "memory" | "sk
     </svg>
   );
 };
-const Lock: React.FC<{ open: number; size: number }> = ({ open, size }) => (
+export const Lock: React.FC<{ open: number; size: number }> = ({ open, size }) => (
   <svg width={size} height={size} viewBox="0 0 24 24">
     <path d={`M7.5 11V7.5a4.5 4.5 0 0 1 9 0V${11 - open * 3}`} fill="none" stroke={open > 0.5 ? INK : C.charcoal} strokeWidth={2} strokeLinecap="round" transform={`translate(0 ${-open * 2})`} />
     <rect x={5} y={11} width={14} height={10} rx={2.5} fill={open > 0.5 ? C.lime : C.charcoal} />
