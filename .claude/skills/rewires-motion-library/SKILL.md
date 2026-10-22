@@ -117,3 +117,20 @@ Evidence: `research/reference-videos/madetoscale/ANALYSIS.md`. Translate their o
 | 68 | Skeleton → real site build | Grey placeholder browser; data chips fly into it; it resolves into a real page with a URL | "AI built it" | Skeleton blocks cross-fade to rendered layout; chips on bezier paths | 🆕 |
 | 69 | Typed-keyword comment box → DM toast | Comment field types the KEYWORD; a DM toast with the payload ("4 prompts + template, Free") slides in | Every keyword CTA (lighter than the full profile journey) | Typing + toast slide; payload text from storyboard | 🧩 (row 31) |
 | 70 | Zoom-out recap | The camera pulls back to reveal every scene laid out as one canvas before the CTA | Recaps of multi-step reels | Our `dDuet` world camera already supports it: zoom out to fit all beat positions | 🧩 (`dDuet`) |
+
+## Additions from the @jackroberts___ 10-reel study (rows 71–80)
+
+Evidence: `research/reference-videos/jackroberts/ANALYSIS.md`.
+
+| # | Technique | Looks like | Use it for | Build notes (Remotion) | Status |
+|---|---|---|---|---|---|
+| 71 | Mascot with role props | One character (our K·R lime mascot) pops in staggered as a crowd and changes props per role: code screen, megaphone, scales, hard hat, "?" marks when confused | Standing in for "your AI / your agents" | SVG character + prop slot; staggered spring spawns; idle bob | 🆕 |
+| 72 | Held count-up on a stretched number | Grid fills while 54→157→259→280 counts; held while the VO stretches "280" | Extreme-scale hooks | Counter + grid fill synced; hold until the word ends | 🧩 |
+| 73 | GitHub Star ticker + confetti | Star button counts 0→170→712, star fills gold, sparkles burst | First-second social proof | Button UI + odometer + particle burst | 🆕 |
+| 74 | Logo stroke draw-on + glow | Logo outline draws on black, then fills with a glow | Brand/repo reveal | SVG paths with pathLength dashoffset; fill opacity + blur glow | 🆕 |
+| 75 | Swap-orbit | Two logos orbit a loop and swap sides on "then they swap roles" | A↔B mechanisms, audits, handoffs | Polar positions with phase; swap = +180° spring | 🆕 |
+| 76 | Code-typed, preview-builds-in-sync | The editor types `Write(motion.js)` lines while the preview below builds sky → sun → hills → character | "AI writes it as code" | Each code line's reveal frame drives the matching preview element | 🆕 |
+| 77 | Live text edit | Card "Hi, Sam" → cursor selects → types "Alex" → colour swap | "Editable", personalisation | Cursor path + selection highlight + retype | 🆕 |
+| 78 | Notification state-flip | "Your monthly payment was processed" (red glow) flips to "Subscription cancelled" (green glow); pending → approved cards | Cancel, approve, before/after | Two-face card rotateX flip + glow colour interpolation | 🆕 |
+| 79 | Metaphor-per-stat set | Coins stacks shrink (cost), token list collapses (tokens), 404 player (can't), PAID-stamp calendar (subscription), melting site + rejecting crowd (slop) | Making numbers physical | Small reusable components keyed to a number prop | 🆕 |
+| 80 | Prohibition open | Red ✕ stamp with pulse ring + caution tape slaps across the tool | "Do not let X unless…" hooks | Stamp spring + ring scale/opacity + two tape strips sliding with rotation | 🆕 |

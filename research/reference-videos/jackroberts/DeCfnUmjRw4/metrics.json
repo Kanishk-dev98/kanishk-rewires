@@ -1,0 +1,33 @@
+{
+ "id": "DeCfnUmjRw4",
+ "duration": 28.18,
+ "words": 97,
+ "wpm": 206.5,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "You can now make launch videos from one screenshot completely free.",
+ "cuts": 17,
+ "cuts_per_10s": 6.03,
+ "avg_shot_s": 1.57,
+ "cut_times": [
+  1.67,
+  2.64,
+  3.94,
+  5.04,
+  7.34,
+  8.78,
+  9.88,
+  11.04,
+  13.08,
+  13.81,
+  14.48,
+  15.45,
+  17.52,
+  19.02,
+  21.05,
+  23.82,
+  25.39
+ ],
+ "lufs": -70.0,
+ "voice_db": -16.2,
+ "gaps_db": -23.3
+}

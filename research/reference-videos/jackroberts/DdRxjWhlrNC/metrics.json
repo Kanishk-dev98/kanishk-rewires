@@ -1,0 +1,30 @@
+{
+ "id": "DdRxjWhlrNC",
+ "duration": 41.17,
+ "words": 121,
+ "wpm": 176.3,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "Someone just open sourced a GitHub repo that lets you run Fable",
+ "cuts": 14,
+ "cuts_per_10s": 3.4,
+ "avg_shot_s": 2.74,
+ "cut_times": [
+  1.5,
+  3.53,
+  5.6,
+  7.4,
+  8.8,
+  10.77,
+  12.13,
+  12.17,
+  19.27,
+  23.77,
+  26.43,
+  31.4,
+  34.33,
+  38.2
+ ],
+ "lufs": -70.0,
+ "voice_db": -17.2,
+ "gaps_db": -23.4
+}

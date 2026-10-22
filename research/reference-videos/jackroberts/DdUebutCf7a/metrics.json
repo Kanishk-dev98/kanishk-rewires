@@ -1,0 +1,25 @@
+{
+ "id": "DdUebutCf7a",
+ "duration": 26.75,
+ "words": 76,
+ "wpm": 170.5,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "Claude can't watch video, it only reads the transcript, so everything",
+ "cuts": 9,
+ "cuts_per_10s": 3.36,
+ "avg_shot_s": 2.67,
+ "cut_times": [
+  1.47,
+  6.33,
+  7.4,
+  9.6,
+  11.97,
+  16.57,
+  19.6,
+  21.93,
+  24.0
+ ],
+ "lufs": -70.0,
+ "voice_db": -17.0,
+ "gaps_db": -26.3
+}

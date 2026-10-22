@@ -1,0 +1,28 @@
+{
+ "id": "DezQn_wjyu4",
+ "duration": 38.55,
+ "words": 115,
+ "wpm": 179.0,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "Stop paying a motion designer because Claude can take any sentence into an",
+ "cuts": 12,
+ "cuts_per_10s": 3.11,
+ "avg_shot_s": 2.97,
+ "cut_times": [
+  3.6,
+  3.63,
+  7.03,
+  9.83,
+  13.4,
+  16.67,
+  18.77,
+  20.63,
+  24.0,
+  32.0,
+  34.3,
+  37.43
+ ],
+ "lufs": -70.0,
+ "voice_db": -16.5,
+ "gaps_db": -19.9
+}

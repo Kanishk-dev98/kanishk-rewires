@@ -1,0 +1,32 @@
+{
+ "id": "Dc8fKPEgN92",
+ "duration": 43.88,
+ "words": 93,
+ "wpm": 127.2,
+ "first_word_at": 0.0,
+ "hook_text_first_4s": "This is what it looks like when 280 AI",
+ "cuts": 16,
+ "cuts_per_10s": 3.65,
+ "avg_shot_s": 2.58,
+ "cut_times": [
+  1.3,
+  6.7,
+  8.57,
+  9.4,
+  12.43,
+  13.33,
+  14.27,
+  15.87,
+  17.67,
+  23.33,
+  25.8,
+  27.97,
+  29.17,
+  36.5,
+  38.3,
+  41.1
+ ],
+ "lufs": -70.0,
+ "voice_db": -17.2,
+ "gaps_db": -21.0
+}

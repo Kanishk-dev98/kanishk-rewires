@@ -1,11 +1,11 @@
 ---
 name: rewires-channel-playbook
-description: Operating playbook for Kanishk.Rewires reels, distilled from deep studies of the benchmark channels (@princegupta.ai 16 reels and @madetoscale2026 11 reels done; @jackroberts___ pending links). Covers content strategy, topic selection, hook templates, script skeleton, simplification, caption system, motion grammar, theme flips, CTA journey, audio, post captions and failure modes. Load before writing any script, storyboard or caption.
+description: Operating playbook for Kanishk.Rewires reels, distilled from deep studies of the benchmark channels (@princegupta.ai 16 reels, @madetoscale2026 11 reels, @jackroberts___ 10 reels). Covers content strategy, topic selection, hook templates, script skeleton, simplification, caption system, motion grammar, theme flips, CTA journey, audio, post captions and failure modes. Load before writing any script, storyboard or caption.
 ---
 
 # Kanishk.Rewires channel playbook
 
-Evidence: `research/reference-videos/prince/ANALYSIS.md` (16 reels) and `research/reference-videos/madetoscale/ANALYSIS.md` (11 reels), with per-reel metrics, hooks, beats and motion, and why each won or lost. The techniques live in `rewires-motion-library` rows 36 to 70.
+Evidence: `research/reference-videos/{prince,madetoscale,jackroberts}/ANALYSIS.md` (16 + 11 + 10 reels), with per-reel metrics, hooks, beats and motion, and why each won or lost. The techniques live in `rewires-motion-library` rows 36 to 80.
 
 **The law, from the data:** these reels share an identical production kit, yet results vary about 130×.
 - **Topic, hook and CTA mechanics decide reach and comments.** Motion is table stakes: it makes the reel watchable, it does not make it spread.
@@ -212,9 +212,64 @@ Made to Scale's light look (cream mesh gradient, white soft-shadow cards, black 
 - No piracy-adjacent tools.
 - Don't switch to an off-brand template for one series.
 
-## 8. Channels still to study
+## 10. What Jack Roberts adds, plus the parked presenter format
+
+**Applies now (no presenter):**
+- **Hooks that won him the most reach:**
+  - extreme free scale: "This is what it looks like when 280 AI employees run your business" (10,679 comments)
+  - two famous names in a novel combination: "…run Fable 5.1 and GPT 6 Astra together"
+  - a prohibition: "Do not let Claude build your website unless…"
+  - curiosity: "What happens when you give an AI its own phone, email and wallet?"
+  - "Someone just open-sourced…"
+- **Hooks that lost:** niche tools, unbelievable claims, lists read aloud, and googleable tools (no reason to comment).
+- **Script spine to reuse:** provocative line → "It's called NAME" by about 9 s → "just drop it in" ease → mechanism in ONE everyday metaphor (employees and hats; two experts checking each other's homework) → one twist line → "So instead of [old way], just [new way]" → CTA. No recap.
+- **Comment magnet:** the asset should be hard to find alone. That means a setup, a skill or a curated list, not a googleable product name. "Setup" payloads beat "link" payloads.
+- **Mascot with role props:** one character stands in for "your AI" and changes props per job. Ours would be a lime-accented K·R character, never another brand's mascot.
+- **Literal metaphor per number:**
+  - coins shrinking for cost
+  - a list collapsing for tokens
+  - a 404 for "can't"
+  - a PAID-stamp calendar for subscriptions
+  - a notification flipping red → green for "cancelled"
+  - code typed while its preview builds in sync
+  - a live text edit to show "editable"
+- **CTA keyword card:** the keyword appears big in italic serif with curly quotes. In our brand: charcoal "Comment" plus a lime-boxed italic-serif *"KEYWORD"*.
+- **Post caption = a second script:** pain-first, one sentence per line. Add a "Like [analogy that isn't in the video]" line and a two-line contrast close.
+
+**The parked presenter format (do not use until the user says so):**
+- **Three states, joined by hard cuts:**
+  - SPLIT: graphic on top (45–50%), face on the bottom (50–55%), no divider, eyes at about 63%, mic boom from the lower right, caption pill on the seam.
+  - FULL-GRAPHIC.
+  - FULL-FACE: a 1.3–1.5× punch-in.
+- **Facts go to graphics; opinions go to the face.** Full-face only for:
+  - the claim or payoff
+  - "It's called…"
+  - list pivots
+  - opinion or contrast lines
+  - the CTA (always the last 2.5–3.5 s)
+- Face share is 15–40%. A face beat returns every 5–10 s and lasts 0.5–3 s.
+- Graphic objects persist through layout changes, so the face slides under one continuous graphic story.
+- **Our version:**
+  - Keep our cream/lime graphic panel and continuous-take canvas; don't adopt his brand-colour palette jumps.
+  - Set: a clean, softly lit set with a warm key and one lime accent practical. Bright graphics against a darker set keep his "channel change" contrast.
+  - Locked camera and a good mic, with music at least 10 dB under the voice. His bed sits 3–9 dB under; don't copy that.
+- **Build note:** a `Presenter` layer in Rewires.tsx with `layout: split|full|face` keyed per cue, footage object-fit cover, and punch-in via scale. The graphic world renders once and re-lays out between the top panel and the full frame.
+
+## 11. Three-channel synthesis (what we do from now on)
+
+1. **Topic and hook decide reach; the CTA mechanics decide comments; motion is table stakes.** All three channels prove it.
+2. **Hook:** a payoff or provocation at 0.0 s, with a number or famous name proved on screen within 1 to 7 s. Pick from the 17 templates in sections 2, 9 and 10.
+3. **Script:** 30 to 55 s (60 s for chapter tutorials), 150 to 180 wpm, one new word, one example object, one metaphor, a twist at about 50 to 65%, "So instead of X, just Y", and a single-ask CTA. Caveats go mid-body or in the caption.
+4. **Visual grammar:** one continuous canvas (our `dDuet`-style world camera), with objects caused by words and morphs instead of cuts.
+   - Chapter chrome for any multi-step reel over 35 s.
+   - Cream world 1, charcoal flip for the twist.
+5. **Captions:** pick one system per reel: top headline (news/repo), section headline + low-centre pills (tutorial/chapters), or seam pills (presenter, later). Lime box, at most one emphasis per phrase. The CTA keyword gets a big italic serif.
+6. **CTA payload:** hard to find alone (setup, prompts, a curated list, a PDF), bigger than the reel, with the keyword as the outcome word. Add one secondary action (share to a named friend, or Part 2).
+7. **Audio:** our standard holds. Voice first, music at least 10 dB under, a varied bed, no booms, effects between words. None of the three benchmarks meets it, so this is an edge for us.
+
+## 8. Channels studied
 
 - **@madetoscale2026:** done (11 reels). See section 9.
-- **@jackroberts___:** waiting for links. His half-presenter, half-animation split format is a **parked format**; the user wants it later.
+- **@jackroberts___:** done (10 reels). See section 10; his presenter format is parked until the user says so.
 
 Process for both: `tools/breakdown_reels.py <channel> <videos>`, then parallel analysts with the same 8-section rubric. Merge the new findings into this playbook as additions per channel.
