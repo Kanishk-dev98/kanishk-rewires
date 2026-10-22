@@ -68,6 +68,7 @@ def write_props(timeline: dict, sb: dict, prod: dict, public_prefix: str, out: P
         "showCaptions": sb.get("captions", True),
         "music": f"{public_prefix}/music.wav",
         "musicVolume": prod["music"]["volume"],
+        "musicDucked": prod["music"].get("duckedVolume"),
         "outro": {"dur": outro_frames, "sound": f"{public_prefix}/signature.wav", **{k: o[k] for k in ("nodes", "cta", "size", "wordSize") if k in o}},
     }
     if sb.get("chrome"):

@@ -28,10 +28,11 @@ import { GROK_SCENES } from "./grok";
 import { AGENT_THREAD_SCENES } from "./agentThread";
 import { EXPLAINER_SCENES } from "./explainer";
 import { SALES_MACHINE_SCENES } from "./salesMachine";
+import { SALES_TEAM_SCENES } from "./salesTeam";
 import { TUT_SCENES } from "./tutScenes";
 import { UI_SCENES } from "./uiScenes";
 
-const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES, ...PROMO_SCENES, ...HEAT_SCENES, ...GEM_SCENES, ...DECOY_SCENES, ...AD_SCENES, ...MARKET_SCENES, ...FK_SCENES, ...DX_SCENES, ...GROK_SCENES, ...AGENT_THREAD_SCENES, ...EXPLAINER_SCENES, ...SALES_MACHINE_SCENES };
+const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES, ...PROMO_SCENES, ...HEAT_SCENES, ...GEM_SCENES, ...DECOY_SCENES, ...AD_SCENES, ...MARKET_SCENES, ...FK_SCENES, ...DX_SCENES, ...GROK_SCENES, ...AGENT_THREAD_SCENES, ...EXPLAINER_SCENES, ...SALES_MACHINE_SCENES, ...SALES_TEAM_SCENES };
 
 export type Sfx = { src: string; at: number; volume?: number };
 export type RewiresScene = {
@@ -52,6 +53,7 @@ export type RewiresProps = {
   showCaptions: boolean;
   music: string | null;
   musicVolume: number;
+  musicDucked?: number;
   outro: { dur: number; sound: string | null; nodes?: string[]; cta?: string; size?: number; wordSize?: number };
   /** Small persistent brand mark, and an optional step rail (scene data.layer picks the active step). */
   chrome?: { bug?: boolean; rail?: string[] };
@@ -120,7 +122,7 @@ const Rail: React.FC<{ steps: string[]; active: number; until: number }> = ({ st
   );
 };
 
-export const Rewires: React.FC<RewiresProps> = ({ scenes, captions, showCaptions, music, musicVolume, outro, chrome, captionStyle }) => {
+export const Rewires: React.FC<RewiresProps> = ({ scenes, captions, showCaptions, music, musicVolume, musicDucked, outro, chrome, captionStyle }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const starts = scenes.map((_, i) => scenes.slice(0, i).reduce((a, s) => a + s.dur, 0));
@@ -172,7 +174,18 @@ export const Rewires: React.FC<RewiresProps> = ({ scenes, captions, showCaptions
       {music ? (
         <Audio
           src={staticFile(music)}
-          volume={interpolate(frame, [0, 12, bodyEnd - 10, bodyEnd + 20, durationInFrames], [0, musicVolume, musicVolume, musicVolume * 0.5, 0], clamp)}
+          volume={(f: number) => {
+            // Voice first: duck the bed under every spoken word, with ~200 ms ramps so it never pumps.
+            const ms = (f / fps) * 1000;
+            let d = Infinity;
+            for (const c of captions) {
+              if (ms >= c.startMs - 120 && ms <= c.endMs + 180) { d = 0; break; }
+              d = Math.min(d, Math.abs(ms - (c.startMs - 120)), Math.abs(ms - (c.endMs + 180)));
+            }
+            const duck = musicDucked ?? musicVolume * 0.45;
+            const level = d === 0 ? duck : interpolate(d, [0, 220], [duck, musicVolume], clamp);
+            return level * interpolate(f, [0, 12, bodyEnd - 10, bodyEnd + 20, durationInFrames], [0, 1, 1, 0.5, 0], clamp);
+          }}
         />
       ) : null}
     </AbsoluteFill>

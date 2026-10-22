@@ -112,7 +112,8 @@ class Production:
         outro_s = timing.outro_frames(sb, self.prod) / fps
         if tl.get("fitWarning"):
             print(f"  warning: {tl['fitWarning']}")
-        music.write_wav(music.score(body, tl["sections"], tl["hits"]), self.dir / "audio" / "music.wav")
+        mcfg = sb.get("music", {}) if isinstance(sb.get("music"), dict) else {}
+        music.write_wav(music.score(body, tl["sections"], tl["hits"], style=mcfg.get("style", "pulse"), use_hits=mcfg.get("hits", False)), self.dir / "audio" / "music.wav")
         music.write_wav(music.signature(outro_s), self.dir / "audio" / "signature.wav")
         for f in ("music.wav", "signature.wav"):
             shutil.copy2(self.dir / "audio" / f, self.public / f)

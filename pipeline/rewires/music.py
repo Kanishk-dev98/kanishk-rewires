@@ -104,33 +104,49 @@ def reverb(x, mix=0.22):
     return out
 
 
-def score(total: float, sections: list[dict], hits: list[float]) -> np.ndarray:
+# Per-reel music characters: every film gets its own feel (tempo, key, chords, instrumentation).
+# No impact hits unless a style explicitly asks for them. Voice is always the primary audio.
+STYLES = {
+    # name: (bpm, semitone shift, progression, layers)
+    "pulse":   (120, 0, PROG, {"pad": 0.55, "sub": 0.5, "pluck": 1.0, "kick": True, "hat": True}),
+    "ambient": (80, 2, [(45, [57, 64, 67, 71]), (41, [57, 60, 65, 72]), (48, [55, 64, 67, 72]), (40, [55, 59, 64, 67])], {"pad": 0.75, "sub": 0.0, "pluck": 0.55, "kick": False, "hat": False}),
+    "keys":    (96, -3, [(48, [60, 64, 67, 71]), (45, [57, 60, 64, 69]), (41, [57, 60, 65, 69]), (43, [55, 59, 62, 67])], {"pad": 0.4, "sub": 0.35, "pluck": 1.2, "kick": False, "hat": False}),
+    "lofi":    (84, 5, [(50, [62, 65, 69, 72]), (43, [59, 62, 67, 71]), (48, [60, 64, 67, 71]), (45, [60, 64, 69, 72])], {"pad": 0.5, "sub": 0.45, "pluck": 0.8, "kick": True, "hat": True}),
+}
+
+
+def score(total: float, sections: list[dict], hits: list[float], style: str = "pulse", use_hits: bool = False) -> np.ndarray:
+    bpm, shift, prog, L = STYLES.get(style, STYLES["pulse"])
+    beat = 60 / bpm
+    s16 = beat / 4
     buf = np.zeros(int((total + 2.0) * SR))
     energy_at = lambda s: next((x["energy"] for x in sections if x["start"] <= s < x["end"]), 0)
-    bar = 4 * BEAT
+    bar = 4 * beat
     n_bars = int(np.ceil(total / bar))
     for b in range(n_bars):
-        root, chord = PROG[b % len(PROG)]
+        root, chord = prog[b % len(prog)]
+        root, chord = root + shift, [c + shift for c in chord]
         t0 = b * bar
-        add(buf, pad(chord, bar + 0.5), t0, 0.55)
+        add(buf, pad(chord, bar + 0.5), t0, L["pad"])
         for k in range(16):
-            at = t0 + k * S16
+            at = t0 + k * s16
             if at >= total:
                 break
             e = energy_at(at)
-            if e >= 1 and k % 2 == 0:
-                add(buf, sub(root + 12), at, 0.5)
-            if e >= 1:
-                add(buf, pluck(chord[(k * 3) % len(chord)] + (12 if k % 8 == 6 else 0)), at, 0.13 if k % 4 == 0 else 0.08)
-            if e >= 2 and k in (0, 8):
-                add(buf, kick(), at, 0.55)
-            if e >= 3 and k in (4, 12):
+            if L["sub"] and e >= 1 and k % 4 == 0:
+                add(buf, sub(root + 12, beat * 0.9), at, L["sub"])
+            if e >= 1 and (k % 2 == 0 or style == "pulse"):
+                note = chord[(k * 3) % len(chord)] + (12 if k % 8 == 6 else 0)
+                add(buf, pluck(note, s16 * (6 if style in ("ambient", "keys") else 3)), at, (0.12 if k % 4 == 0 else 0.07) * L["pluck"])
+            if L["kick"] and e >= 2 and k in (0, 8):
+                add(buf, kick(), at, 0.4 if style == "lofi" else 0.55)
+            if L["kick"] and style == "pulse" and e >= 3 and k in (4, 12):
                 add(buf, kick(), at, 0.45)
-            if (e >= 2 and k % 2 == 1) or (e >= 3):
-                add(buf, hat(), at, 0.05 if k % 2 == 0 else 0.07)
-    for h in hits:
-        add(buf, impact(), h, 0.7)
-    # end of the body: let it ring out instead of cutting
+            if L["hat"] and ((e >= 2 and k % 2 == 1) or (e >= 3 and style == "pulse")):
+                add(buf, hat(), at, 0.035 if style == "lofi" else 0.06)
+    if use_hits:
+        for h in hits:
+            add(buf, impact(), h, 0.45)
     end = int(total * SR)
     fade = int(1.2 * SR)
     buf[end - fade:end] *= np.linspace(1, 0.35, fade)
