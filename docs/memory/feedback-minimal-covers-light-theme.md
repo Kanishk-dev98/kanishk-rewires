@@ -14,3 +14,9 @@ On 2026-10-20 the user said the covers look "so conservative, so much AI-stick�
 - **Reels (default for now, set 2026-10-22):** make reels in the light theme by default, as the user asked: "from now we are going to make reels in light theme… for some time at least". Use the light theme (cream canvas, charcoal type, lime as a fill or highlight with dark text, deep green #4C8C00 for lines on cream) when it suits the components. Mix light and dark acts. Still no grey canvases.
 - This supersedes the "pixel grid + tool pill" look in [[feedback-cover-grid-safe]] (grid-safety still applies).
 - Related: [[feedback-ig-quality-brand-backgrounds]], [[feedback-daily-quality-upgrade]].
+
+**Added 2026-10-23 (PHP2Shell cover failed in the grid):** I used 8 words and a fine-print code hero, so the profile tile looked cramped and the top line was cut. Before delivering any cover:
+1. Count the headline words: 3–5, no more.
+2. The hero must read at thumbnail size: a bold shape, number or logo, never small text or code.
+3. Render a 3:4 grid-crop preview (crop y 480–3360 of the 4K cover) and check nothing important is cut.
+4. When the user uploads in the Instagram app, remind them to check the "Profile grid" crop in Edit cover.
