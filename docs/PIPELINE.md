@@ -103,6 +103,21 @@ Keys go in `.env` (see `.env.example`), never in code or commits.
 - Posting (Publora) is outside the pipeline.
 - The KANISHK.REWIRES wordmark is set in type (Space Grotesk Bold plus Instrument Serif as a stand-in for the board's serif) because no wordmark artwork file exists. Drop the real artwork in `brand/logo/` and the outro can switch to it.
 
+## Claude Code cloud sessions (setup each new session)
+
+Cloud sessions start on a fresh machine behind an HTTPS proxy, so three things must be redone each time (none are committed):
+
+```bash
+python3 -m venv .venv && .venv/bin/pip install -q -r requirements.txt && (cd studio && npm install)
+# Edge TTS pins certifi: let it trust the proxy CA
+cat /root/.ccr/ca-bundle.crt >> "$(.venv/bin/python -c 'import certifi; print(certifi.where())')"
+# Remotion's Chromium reads the NSS store: import the proxy CAs so Google Fonts load
+mkdir -p /tmp/ca && awk '/BEGIN CERT/{n++} {print > sprintf("/tmp/ca/c-%04d.pem", n)}' /root/.ccr/ca-bundle.crt
+for f in /tmp/ca/c-*.pem; do openssl x509 -in "$f" -noout -subject | grep -q Anthropic && certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n "$(basename $f)" -i "$f"; done
+```
+
+Edge TTS also drops requests at random ("No audio was received"); `voice.py` retries five times with backoff.
+
 ## Troubleshooting
 
 | Symptom | Fix |

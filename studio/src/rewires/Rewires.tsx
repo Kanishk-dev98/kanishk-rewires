@@ -34,8 +34,9 @@ import { PHP2SHELL_SCENES } from "./php2shell";
 import { PHP_FILM_SCENES } from "./phpFilm";
 import { TUT_SCENES } from "./tutScenes";
 import { UI_SCENES } from "./uiScenes";
+import { REVIEW_SCENES } from "./reviewAds";
 
-const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES, ...PROMO_SCENES, ...HEAT_SCENES, ...GEM_SCENES, ...DECOY_SCENES, ...AD_SCENES, ...MARKET_SCENES, ...FK_SCENES, ...DX_SCENES, ...GROK_SCENES, ...AGENT_THREAD_SCENES, ...EXPLAINER_SCENES, ...SALES_MACHINE_SCENES, ...SALES_TEAM_SCENES, ...DUET_SCENES, ...PHP2SHELL_SCENES, ...PHP_FILM_SCENES };
+const SCENES = { ...TYPE_SCENES, ...UI_SCENES, ...TUT_SCENES, ...CINE_SCENES, ...PROMO_SCENES, ...HEAT_SCENES, ...GEM_SCENES, ...DECOY_SCENES, ...AD_SCENES, ...MARKET_SCENES, ...FK_SCENES, ...DX_SCENES, ...GROK_SCENES, ...AGENT_THREAD_SCENES, ...EXPLAINER_SCENES, ...SALES_MACHINE_SCENES, ...SALES_TEAM_SCENES, ...DUET_SCENES, ...PHP2SHELL_SCENES, ...PHP_FILM_SCENES, ...REVIEW_SCENES };
 
 export type Sfx = { src: string; at: number; volume?: number };
 export type RewiresScene = {

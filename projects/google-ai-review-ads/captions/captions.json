@@ -1,0 +1,619 @@
+[
+  {
+    "text": "Google",
+    "startMs": 149,
+    "endMs": 468
+  },
+  {
+    "text": "just",
+    "startMs": 479,
+    "endMs": 644
+  },
+  {
+    "text": "started",
+    "startMs": 644,
+    "endMs": 998
+  },
+  {
+    "text": "writing",
+    "startMs": 998,
+    "endMs": 1269,
+    "hl": true
+  },
+  {
+    "text": "part",
+    "startMs": 1269,
+    "endMs": 1423
+  },
+  {
+    "text": "of",
+    "startMs": 1423,
+    "endMs": 1458
+  },
+  {
+    "text": "your",
+    "startMs": 1458,
+    "endMs": 1564
+  },
+  {
+    "text": "ads",
+    "startMs": 1564,
+    "endMs": 2071
+  },
+  {
+    "text": "And",
+    "startMs": 2461,
+    "endMs": 2531
+  },
+  {
+    "text": "you",
+    "startMs": 2531,
+    "endMs": 2614
+  },
+  {
+    "text": "can't",
+    "startMs": 2626,
+    "endMs": 2897
+  },
+  {
+    "text": "edit",
+    "startMs": 2909,
+    "endMs": 3097,
+    "hl": true
+  },
+  {
+    "text": "it",
+    "startMs": 3097,
+    "endMs": 3286
+  },
+  {
+    "text": "It's",
+    "startMs": 3828,
+    "endMs": 3922
+  },
+  {
+    "text": "live",
+    "startMs": 3922,
+    "endMs": 4111
+  },
+  {
+    "text": "in",
+    "startMs": 4122,
+    "endMs": 4217
+  },
+  {
+    "text": "four",
+    "startMs": 4229,
+    "endMs": 4571,
+    "hl": true
+  },
+  {
+    "text": "countries",
+    "startMs": 4571,
+    "endMs": 5196
+  },
+  {
+    "text": "The",
+    "startMs": 5573,
+    "endMs": 5608
+  },
+  {
+    "text": "US",
+    "startMs": 5608,
+    "endMs": 6222
+  },
+  {
+    "text": "UK",
+    "startMs": 6434,
+    "endMs": 6976
+  },
+  {
+    "text": "Australia",
+    "startMs": 7118,
+    "endMs": 7849
+  },
+  {
+    "text": "and",
+    "startMs": 8085,
+    "endMs": 8203
+  },
+  {
+    "text": "India",
+    "startMs": 8285,
+    "endMs": 8733,
+    "hl": true
+  },
+  {
+    "text": "It's",
+    "startMs": 9216,
+    "endMs": 9287
+  },
+  {
+    "text": "called",
+    "startMs": 9287,
+    "endMs": 9475
+  },
+  {
+    "text": "a",
+    "startMs": 9475,
+    "endMs": 9499
+  },
+  {
+    "text": "review",
+    "startMs": 9499,
+    "endMs": 9829
+  },
+  {
+    "text": "summary",
+    "startMs": 9829,
+    "endMs": 10313,
+    "hl": true
+  },
+  {
+    "text": "Google's",
+    "startMs": 10678,
+    "endMs": 11114
+  },
+  {
+    "text": "AI",
+    "startMs": 11126,
+    "endMs": 11622
+  },
+  {
+    "text": "reads",
+    "startMs": 11622,
+    "endMs": 11928
+  },
+  {
+    "text": "your",
+    "startMs": 11928,
+    "endMs": 12046
+  },
+  {
+    "text": "reviews",
+    "startMs": 12058,
+    "endMs": 12376
+  },
+  {
+    "text": "across",
+    "startMs": 12376,
+    "endMs": 12765
+  },
+  {
+    "text": "the",
+    "startMs": 12765,
+    "endMs": 12836
+  },
+  {
+    "text": "web",
+    "startMs": 12836,
+    "endMs": 13131
+  },
+  {
+    "text": "and",
+    "startMs": 13567,
+    "endMs": 13697
+  },
+  {
+    "text": "writes",
+    "startMs": 13709,
+    "endMs": 13956
+  },
+  {
+    "text": "one",
+    "startMs": 13968,
+    "endMs": 14251,
+    "hl": true
+  },
+  {
+    "text": "line",
+    "startMs": 14251,
+    "endMs": 14522
+  },
+  {
+    "text": "into",
+    "startMs": 14534,
+    "endMs": 14699
+  },
+  {
+    "text": "your",
+    "startMs": 14699,
+    "endMs": 14829
+  },
+  {
+    "text": "ad",
+    "startMs": 14829,
+    "endMs": 15112
+  },
+  {
+    "text": "Picture",
+    "startMs": 15594,
+    "endMs": 15807
+  },
+  {
+    "text": "your",
+    "startMs": 15807,
+    "endMs": 15889
+  },
+  {
+    "text": "bakery's",
+    "startMs": 15889,
+    "endMs": 16302
+  },
+  {
+    "text": "ad",
+    "startMs": 16314,
+    "endMs": 16597
+  },
+  {
+    "text": "You",
+    "startMs": 16974,
+    "endMs": 17104
+  },
+  {
+    "text": "wrote",
+    "startMs": 17104,
+    "endMs": 17316
+  },
+  {
+    "text": "the",
+    "startMs": 17316,
+    "endMs": 17375
+  },
+  {
+    "text": "headline",
+    "startMs": 17387,
+    "endMs": 17858,
+    "hl": true
+  },
+  {
+    "text": "Google",
+    "startMs": 18200,
+    "endMs": 18590
+  },
+  {
+    "text": "writes",
+    "startMs": 18590,
+    "endMs": 18932
+  },
+  {
+    "text": "the",
+    "startMs": 18932,
+    "endMs": 19038
+  },
+  {
+    "text": "line",
+    "startMs": 19038,
+    "endMs": 19321
+  },
+  {
+    "text": "inside",
+    "startMs": 19321,
+    "endMs": 19745
+  },
+  {
+    "text": "it",
+    "startMs": 19745,
+    "endMs": 19910
+  },
+  {
+    "text": "You",
+    "startMs": 20300,
+    "endMs": 20382
+  },
+  {
+    "text": "can't",
+    "startMs": 20382,
+    "endMs": 20606
+  },
+  {
+    "text": "change",
+    "startMs": 20606,
+    "endMs": 20877
+  },
+  {
+    "text": "a",
+    "startMs": 20889,
+    "endMs": 20925
+  },
+  {
+    "text": "word",
+    "startMs": 20925,
+    "endMs": 21314
+  },
+  {
+    "text": "and",
+    "startMs": 21561,
+    "endMs": 21691
+  },
+  {
+    "text": "Google",
+    "startMs": 21703,
+    "endMs": 22045
+  },
+  {
+    "text": "hasn't",
+    "startMs": 22045,
+    "endMs": 22399
+  },
+  {
+    "text": "said",
+    "startMs": 22410,
+    "endMs": 22764
+  },
+  {
+    "text": "how",
+    "startMs": 22764,
+    "endMs": 22858
+  },
+  {
+    "text": "to",
+    "startMs": 22858,
+    "endMs": 22929
+  },
+  {
+    "text": "switch",
+    "startMs": 22929,
+    "endMs": 23224
+  },
+  {
+    "text": "it",
+    "startMs": 23224,
+    "endMs": 23283
+  },
+  {
+    "text": "off",
+    "startMs": 23295,
+    "endMs": 23684,
+    "hl": true
+  },
+  {
+    "text": "Here's",
+    "startMs": 24149,
+    "endMs": 24279
+  },
+  {
+    "text": "the",
+    "startMs": 24279,
+    "endMs": 24361
+  },
+  {
+    "text": "part",
+    "startMs": 24361,
+    "endMs": 24597
+  },
+  {
+    "text": "that",
+    "startMs": 24609,
+    "endMs": 24727
+  },
+  {
+    "text": "got",
+    "startMs": 24727,
+    "endMs": 24951
+  },
+  {
+    "text": "me",
+    "startMs": 24951,
+    "endMs": 25163
+  },
+  {
+    "text": "It's",
+    "startMs": 25529,
+    "endMs": 25611
+  },
+  {
+    "text": "positive",
+    "startMs": 25623,
+    "endMs": 26071,
+    "hl": true
+  },
+  {
+    "text": "only",
+    "startMs": 26071,
+    "endMs": 26413
+  },
+  {
+    "text": "And",
+    "startMs": 26802,
+    "endMs": 26885
+  },
+  {
+    "text": "it",
+    "startMs": 26885,
+    "endMs": 26956
+  },
+  {
+    "text": "shows",
+    "startMs": 26956,
+    "endMs": 27239
+  },
+  {
+    "text": "up",
+    "startMs": 27239,
+    "endMs": 27333
+  },
+  {
+    "text": "only",
+    "startMs": 27475,
+    "endMs": 27746
+  },
+  {
+    "text": "when",
+    "startMs": 27746,
+    "endMs": 27946
+  },
+  {
+    "text": "Google",
+    "startMs": 27958,
+    "endMs": 28347
+  },
+  {
+    "text": "predicts",
+    "startMs": 28347,
+    "endMs": 28725,
+    "hl": true
+  },
+  {
+    "text": "your",
+    "startMs": 28736,
+    "endMs": 28866
+  },
+  {
+    "text": "ad",
+    "startMs": 28866,
+    "endMs": 29114
+  },
+  {
+    "text": "will",
+    "startMs": 29114,
+    "endMs": 29196
+  },
+  {
+    "text": "do",
+    "startMs": 29196,
+    "endMs": 29338
+  },
+  {
+    "text": "better",
+    "startMs": 29350,
+    "endMs": 29762
+  },
+  {
+    "text": "So",
+    "startMs": 30294,
+    "endMs": 30400
+  },
+  {
+    "text": "your",
+    "startMs": 30400,
+    "endMs": 30566
+  },
+  {
+    "text": "reviews",
+    "startMs": 30566,
+    "endMs": 31002
+  },
+  {
+    "text": "are",
+    "startMs": 31014,
+    "endMs": 31084
+  },
+  {
+    "text": "now",
+    "startMs": 31096,
+    "endMs": 31356
+  },
+  {
+    "text": "your",
+    "startMs": 31356,
+    "endMs": 31497
+  },
+  {
+    "text": "ad",
+    "startMs": 31509,
+    "endMs": 31674
+  },
+  {
+    "text": "copy",
+    "startMs": 31674,
+    "endMs": 32099,
+    "hl": true
+  },
+  {
+    "text": "So",
+    "startMs": 32594,
+    "endMs": 32712
+  },
+  {
+    "text": "stop",
+    "startMs": 32712,
+    "endMs": 32983
+  },
+  {
+    "text": "polishing",
+    "startMs": 32984,
+    "endMs": 33420
+  },
+  {
+    "text": "headlines",
+    "startMs": 33420,
+    "endMs": 34127
+  },
+  {
+    "text": "Ask",
+    "startMs": 34516,
+    "endMs": 34764
+  },
+  {
+    "text": "happy",
+    "startMs": 34776,
+    "endMs": 35106
+  },
+  {
+    "text": "customers",
+    "startMs": 35118,
+    "endMs": 35660
+  },
+  {
+    "text": "to",
+    "startMs": 35719,
+    "endMs": 35802
+  },
+  {
+    "text": "say",
+    "startMs": 35802,
+    "endMs": 36085
+  },
+  {
+    "text": "exactly",
+    "startMs": 36085,
+    "endMs": 36686,
+    "hl": true
+  },
+  {
+    "text": "what",
+    "startMs": 36686,
+    "endMs": 36816
+  },
+  {
+    "text": "they",
+    "startMs": 36816,
+    "endMs": 36922
+  },
+  {
+    "text": "loved",
+    "startMs": 36922,
+    "endMs": 37417
+  },
+  {
+    "text": "because",
+    "startMs": 37594,
+    "endMs": 37807
+  },
+  {
+    "text": "that's",
+    "startMs": 37807,
+    "endMs": 37948
+  },
+  {
+    "text": "what",
+    "startMs": 37948,
+    "endMs": 38113
+  },
+  {
+    "text": "Google",
+    "startMs": 38172,
+    "endMs": 38514
+  },
+  {
+    "text": "writes",
+    "startMs": 38526,
+    "endMs": 38785
+  },
+  {
+    "text": "from",
+    "startMs": 38797,
+    "endMs": 39092
+  }
+]

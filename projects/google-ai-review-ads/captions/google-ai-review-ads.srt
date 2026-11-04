@@ -1,0 +1,79 @@
+1
+00:00:00,149 --> 00:00:02,441
+Google just started writing part of your ads
+
+2
+00:00:02,461 --> 00:00:03,686
+And you can't edit it
+
+3
+00:00:03,828 --> 00:00:05,553
+It's live in four countries
+
+4
+00:00:05,573 --> 00:00:09,133
+The US UK Australia and India
+
+5
+00:00:09,216 --> 00:00:10,658
+It's called a review summary
+
+6
+00:00:10,678 --> 00:00:13,531
+Google's AI reads your reviews across the web
+
+7
+00:00:13,567 --> 00:00:15,512
+and writes one line into your ad
+
+8
+00:00:15,594 --> 00:00:16,954
+Picture your bakery's ad
+
+9
+00:00:16,974 --> 00:00:18,180
+You wrote the headline
+
+10
+00:00:18,200 --> 00:00:20,280
+Google writes the line inside it
+
+11
+00:00:20,300 --> 00:00:22,390
+You can't change a word and Google hasn't
+
+12
+00:00:22,410 --> 00:00:24,084
+said how to switch it off
+
+13
+00:00:24,149 --> 00:00:25,509
+Here's the part that got me
+
+14
+00:00:25,529 --> 00:00:26,782
+It's positive only
+
+15
+00:00:26,802 --> 00:00:28,716
+And it shows up only when Google predicts
+
+16
+00:00:28,736 --> 00:00:30,162
+your ad will do better
+
+17
+00:00:30,294 --> 00:00:32,499
+So your reviews are now your ad copy
+
+18
+00:00:32,594 --> 00:00:34,496
+So stop polishing headlines
+
+19
+00:00:34,516 --> 00:00:36,902
+Ask happy customers to say exactly what they
+
+20
+00:00:36,922 --> 00:00:39,492
+loved because that's what Google writes from

@@ -54,5 +54,17 @@
   "stripe.svg": {
     "source": "https://commons.wikimedia.org/wiki/File:Stripe_Logo,_revised_2016.svg",
     "note": "official colour, unaltered; nominative use"
+  },
+  "flag-us.svg": {
+    "source": "https://flagcdn.com/us.svg",
+    "note": "Flag of United States, public domain, unaltered"
+  },
+  "flag-au.svg": {
+    "source": "https://flagcdn.com/au.svg",
+    "note": "Flag of Australia, public domain, unaltered"
+  },
+  "flag-in.svg": {
+    "source": "https://flagcdn.com/in.svg",
+    "note": "Flag of India, public domain, unaltered"
   }
 }

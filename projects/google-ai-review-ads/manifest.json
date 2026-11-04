@@ -13,22 +13,57 @@
       "note": "project folder and manifest created"
     },
     "research": {
-      "status": "pending"
+      "status": "done",
+      "at": "2026-11-04T12:50:31+00:00",
+      "note": "8 claims in the ledger",
+      "outputs": [
+        "research/sources.json",
+        "research/sources.md"
+      ]
     },
     "brief": {
-      "status": "pending"
+      "status": "done",
+      "at": "2026-11-04T12:50:43+00:00",
+      "note": "brief present",
+      "outputs": [
+        "brief/brief.md"
+      ]
     },
     "script": {
-      "status": "pending"
+      "status": "done",
+      "at": "2026-11-04T12:50:43+00:00",
+      "note": "121 narration words (~47 s at a natural pace)",
+      "outputs": [
+        "script/script.md"
+      ]
     },
     "storyboard": {
-      "status": "pending"
+      "status": "done",
+      "at": "2026-11-04T12:50:43+00:00",
+      "note": "7 scenes valid, 7 warnings",
+      "outputs": [
+        "storyboard/storyboard.json"
+      ]
     },
     "assets": {
-      "status": "pending"
+      "status": "done",
+      "at": "2026-11-04T12:50:58+00:00",
+      "note": "7 narration clips (0 reused from cache)",
+      "outputs": [
+        "audio/vo/"
+      ]
     },
     "edit": {
-      "status": "pending"
+      "status": "done",
+      "at": "2026-11-04T12:53:46+00:00",
+      "note": "7 scenes, body 39.5 s + outro 2.6 s, 121 caption words",
+      "outputs": [
+        "timeline/timeline.json",
+        "timeline/props.json",
+        "captions/google-ai-review-ads.srt",
+        "audio/music.wav",
+        "audio/signature.wav"
+      ]
     },
     "render": {
       "status": "pending"
@@ -40,6 +75,112 @@
       "status": "pending"
     }
   },
-  "assets": [],
+  "assets": [
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s00.mp3",
+      "provider": "edge",
+      "at": "2026-11-04T12:50:58+00:00",
+      "cached": false,
+      "seconds": 3.55,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s01.mp3",
+      "provider": "edge",
+      "at": "2026-11-04T12:50:58+00:00",
+      "cached": false,
+      "seconds": 5.35,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s02.mp3",
+      "provider": "edge",
+      "at": "2026-11-04T12:50:58+00:00",
+      "cached": false,
+      "seconds": 6.34,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s03.mp3",
+      "provider": "edge",
+      "at": "2026-11-04T12:50:58+00:00",
+      "cached": false,
+      "seconds": 8.52,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s04.mp3",
+      "provider": "edge",
+      "at": "2026-11-04T12:50:58+00:00",
+      "cached": false,
+      "seconds": 6.05,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s05.mp3",
+      "provider": "edge",
+      "at": "2026-11-04T12:50:58+00:00",
+      "cached": false,
+      "seconds": 2.26,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s06.mp3",
+      "provider": "edge",
+      "at": "2026-11-04T12:50:58+00:00",
+      "cached": false,
+      "seconds": 6.94,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "music",
+      "path": "audio/music.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-11-04T12:53:46+00:00",
+      "licence": "original, generated in code"
+    },
+    {
+      "kind": "music",
+      "path": "audio/signature.wav",
+      "provider": "pipeline/rewires/music.py",
+      "at": "2026-11-04T12:53:46+00:00",
+      "licence": "original, generated in code"
+    }
+  ],
   "versions": []
 }

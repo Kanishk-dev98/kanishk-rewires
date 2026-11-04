@@ -33,19 +33,26 @@ class EdgeTTS:
     def __init__(self, voice: str, rate: str = "+0%"):
         self.settings = {"voice": voice, "rate": rate}
 
-    async def _one(self, text: str, path: Path):
+    async def _one(self, text: str, path: Path, tries: int = 5):
         import edge_tts
 
-        comm = edge_tts.Communicate(text, self.settings["voice"], rate=self.settings["rate"], boundary="WordBoundary")
-        audio, words = bytearray(), []
-        async for chunk in comm.stream():
-            if chunk["type"] == "audio":
-                audio += chunk["data"]
-            elif chunk["type"] == "WordBoundary":
-                start = chunk["offset"] / 10_000
-                words.append((chunk["text"], start, start + chunk["duration"] / 10_000))
-        path.write_bytes(bytes(audio))
-        return words
+        # The free service drops requests at random ("No audio was received"); retry with backoff.
+        for attempt in range(tries):
+            try:
+                comm = edge_tts.Communicate(text, self.settings["voice"], rate=self.settings["rate"], boundary="WordBoundary")
+                audio, words = bytearray(), []
+                async for chunk in comm.stream():
+                    if chunk["type"] == "audio":
+                        audio += chunk["data"]
+                    elif chunk["type"] == "WordBoundary":
+                        start = chunk["offset"] / 10_000
+                        words.append((chunk["text"], start, start + chunk["duration"] / 10_000))
+                path.write_bytes(bytes(audio))
+                return words
+            except edge_tts.exceptions.NoAudioReceived:
+                if attempt == tries - 1:
+                    raise
+                await asyncio.sleep(2 * (attempt + 1))
 
     def synthesize(self, items: list[tuple[str, str]], out_dir: Path) -> dict:
         out_dir.mkdir(parents=True, exist_ok=True)
