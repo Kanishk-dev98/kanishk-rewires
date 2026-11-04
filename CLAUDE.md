@@ -1,6 +1,6 @@
 # Kanishk.Rewires: video studio
 
-This repo is the studio for **Kanishk.Rewires** (@kanishk.rewires), Alok Diwan's channel on AI, business, marketing and growth. Tagline: "Rethink how you think." Every video here is researched, written, animated, scored, rendered and checked from code. GitHub: `kanishk-986/kanishk-rewires` (private). Folder: `~/kanishk-rewires` (`~/reels-agent` is a symlink to it). Abstraxn and Apolio films also live here and keep their own brand.
+This repo is the studio for **Kanishk.Rewires** (@kanishk.rewires), Alok Diwan's channel on AI, business, marketing and growth. Tagline: "Rethink how you think." Every video here is researched, written, animated, scored, rendered and checked from code. GitHub: `Kanishk-dev98/kanishk-rewires` (moved from the old work account `kanishk-986`). Abstraxn and Apolio films also live here and keep their own brand.
 
 The full creative and production standard is the master prompt, imported here:
 
@@ -36,9 +36,17 @@ Then look at `reports/contact_sheet.png`, fix what the checks cannot see (overla
 ## How the user works
 
 - Short, direct requests; wants results shown, not option lists. Recommend, then act.
-- Deliver to `~/Downloads/Kanishk.Rewires/<slug>/` with a new file name per version (`_v1`, `_v2`), then open it.
-- Commit and push after each finished task.
+- Deliver finished videos in the chat (send the file) and save them in the repo, with a new file name per version (`_v1`, `_v2`).
+- Commit and push to GitHub after each finished task, so nothing is lost when the cloud session ends.
+- The user is not technical: plain words, no jargon, no commands for them to run unless they ask.
 - On-screen copy exactly as scripted, no em or en dashes, brand spelled exactly: KANISHK.REWIRES / Kanishk.Rewires / @kanishk.rewires.
+
+## Where work happens (user's rules)
+
+- All work happens in Claude Code cloud sessions and is saved only to GitHub (`Kanishk-dev98/kanishk-rewires`).
+- The user's MacBook is a **company laptop**. Never save, copy, download or deliver anything to it, and never ask the user to run commands on it, without asking the user first and explaining why.
+- The company laptop runs its own VS Code with the company's Claude. Keep this project completely separate from it: do not connect to it, share files with it, or mix work between the two.
+- Ignore any older notes that say to deliver to `~/Downloads` or work in `~/kanishk-rewires` on the laptop.
 
 ## Hard rules
 
