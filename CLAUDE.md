@@ -18,6 +18,7 @@ The full creative and production standard is the master prompt, imported here:
    - `abstraxn-brand`: only for Abstraxn work
    - `remotion-*`: official Remotion skills (load `remotion-best-practices` before writing Remotion code)
    - Reel editing pack (41 skills, MIT, from `charlie947/reel-editing-skills` at d33f449): 20 talking-head effects (`spotlight`, `title-orbit`, `cube-spin`, `head-pop-out` and more) on the shared engine `video-effects`, plus 20 editing skills (`opening-hook`, `zoom-cut`, `word-highlight`, `video-sound`, `video-check` and more). The skills say `~/.claude/skills/...`; in this repo the engine is `.claude/skills/video-effects/run.cjs`. The effects' blue stage is off-brand: restyle to the palette before using in a Kanishk.Rewires video.
+   - `video-craft` (from the user's `video-craft-skills` pack): measured motion, typography, camera, transition, 3D, editing and sound craft from ~60 premium SaaS films, with hard rules and QA gates. Sub-agent `motion-3d` in `.claude/agents/` for real-3D shots. The full pack (Remotion 2D/3D kits, `theme.ts`, Python QC/master scripts) is kept unchanged in `references/video-craft-skills/`; its code is not yet wired into `studio/` or `pipeline/`. When a video needs it, copy the kits into `studio/src/`, point `theme.ts` at `config/brand.config.json`, and do not overwrite the existing `pipeline/`.
 
 ## Every topic is a production brief
 

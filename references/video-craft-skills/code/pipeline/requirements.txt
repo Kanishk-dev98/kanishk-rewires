@@ -1,0 +1,7 @@
+# pipeline (Python 3.10+)
+numpy
+imageio-ffmpeg      # bundled ffmpeg binary used by every script
+edge-tts            # free TTS with WordBoundary timings (build_vo_timeline.py)
+# optional
+yt-dlp              # sync_references.py
+faster-whisper      # word timestamps for recorded (human) VO and reference transcripts
