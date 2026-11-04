@@ -202,7 +202,7 @@
     {
       "id": "s06",
       "type": "gReview",
-      "pad": 8,
+      "pad": 26,
       "energy": 2,
       "plannedSeconds": 6.5,
       "vo": "So stop polishing headlines. Ask happy customers to say exactly what they loved, because that's what Google writes from.",

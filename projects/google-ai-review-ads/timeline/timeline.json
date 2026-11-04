@@ -123,7 +123,7 @@
     {
       "id": "s06",
       "type": "gReview",
-      "dur": 213,
+      "dur": 231,
       "vo": "projects/google-ai-review-ads/vo/s06.mp3",
       "voAt": 4,
       "data": {
@@ -793,10 +793,10 @@
     },
     {
       "start": 32.36666666666667,
-      "end": 39.46666666666667,
+      "end": 40.06666666666667,
       "energy": 2
     }
   ],
   "hits": [],
-  "bodyFrames": 1184
+  "bodyFrames": 1202
 }

@@ -336,8 +336,8 @@ const Takeaway: Beat = ({ f, c }) => {
   const loved = c("loved", 90);
   const writes = c("writes", 150);
   const text = "The sourdough is still warm at 8 am.";
-  const retype = ez(f, writes - 2, writes + 38, 0, 1, (t) => t);
-  const erase = ez(f, writes - 16, writes - 4, 0, 1, (t) => t);
+  const retype = ez(f, writes - 6, writes + 18, 0, 1, (t) => t);
+  const erase = ez(f, writes - 16, writes - 7, 0, 1, (t) => t);
   const ai = retype > 0 ? AI_NEW : AI_LINE;
   const aiP = retype > 0 ? retype : 1 - erase;
   return (
@@ -382,7 +382,7 @@ export const ReviewScene: React.FC<SceneProps> = ({ data }) => {
   // lights-down: the dark beat fades the page to charcoal as it arrives; the next beat fades it back up
   const isDark = DARK.has(ORDER[i]);
   const prevDark = i > 0 && DARK.has(ORDER[i - 1]);
-  const dk = isDark ? ez(f, 4, 22, 0, 1, EASE_IO) : prevDark ? 1 - ez(f, 4, 22, 0, 1, EASE_IO) : 0;
+  const dk = isDark ? ez(f, 2, 12, 0, 1, EASE_IO) : prevDark ? 1 - ez(f, 2, 12, 0, 1, EASE_IO) : 0;
   const fid = `rv${w.i}`;
   const visible = [i - 1, i].filter((j) => j >= 0);
   return (
