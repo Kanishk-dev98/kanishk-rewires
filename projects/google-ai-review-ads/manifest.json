@@ -1,0 +1,45 @@
+{
+  "slug": "google-ai-review-ads",
+  "topic": "Google now writes AI review summaries into Search ads in India, positive-only, and advertisers cannot edit them",
+  "created": "2026-11-04T12:39:51+00:00",
+  "options": {
+    "format": "9x16",
+    "language": "en"
+  },
+  "stages": {
+    "intake": {
+      "status": "done",
+      "at": "2026-11-04T12:39:51+00:00",
+      "note": "project folder and manifest created"
+    },
+    "research": {
+      "status": "pending"
+    },
+    "brief": {
+      "status": "pending"
+    },
+    "script": {
+      "status": "pending"
+    },
+    "storyboard": {
+      "status": "pending"
+    },
+    "assets": {
+      "status": "pending"
+    },
+    "edit": {
+      "status": "pending"
+    },
+    "render": {
+      "status": "pending"
+    },
+    "qc": {
+      "status": "pending"
+    },
+    "delivery": {
+      "status": "pending"
+    }
+  },
+  "assets": [],
+  "versions": []
+}
