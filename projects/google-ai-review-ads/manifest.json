@@ -66,13 +66,30 @@
       ]
     },
     "render": {
-      "status": "pending"
+      "status": "done",
+      "at": "2026-11-04T13:07:59+00:00",
+      "note": "google-ai-review-ads_v2.mp4 (109.0 MB)",
+      "outputs": [
+        "renders/google-ai-review-ads_v2.mp4"
+      ]
     },
     "qc": {
-      "status": "pending"
+      "status": "done",
+      "at": "2026-11-04T13:08:52+00:00",
+      "note": "google-ai-review-ads_v2.mp4 passed 14 checks",
+      "outputs": [
+        "reports/qc.md",
+        "reports/contact_sheet.png"
+      ]
     },
     "delivery": {
-      "status": "pending"
+      "status": "done",
+      "at": "2026-11-04T13:08:52+00:00",
+      "note": "delivered google-ai-review-ads_v2.mp4",
+      "outputs": [
+        "reports/production_report.md",
+        "/root/Downloads/Kanishk.Rewires/google-ai-review-ads"
+      ]
     }
   },
   "assets": [
@@ -186,6 +203,10 @@
     {
       "file": "renders/google-ai-review-ads_v1.mp4",
       "at": "2026-11-04T13:00:01"
+    },
+    {
+      "file": "renders/google-ai-review-ads_v2.mp4",
+      "at": "2026-11-04T13:07:59"
     }
   ]
 }

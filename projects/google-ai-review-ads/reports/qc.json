@@ -1,5 +1,5 @@
 {
-  "video": "/home/user/kanishk-rewires/projects/google-ai-review-ads/renders/google-ai-review-ads_v1.mp4",
+  "video": "/home/user/kanishk-rewires/projects/google-ai-review-ads/renders/google-ai-review-ads_v2.mp4",
   "passed": true,
   "checks": [
     {
@@ -29,13 +29,13 @@
     {
       "check": "duration",
       "ok": true,
-      "detail": "42.10 s (expected 42.07 s)",
+      "detail": "42.70 s (expected 42.67 s)",
       "severity": "info"
     },
     {
       "check": "duration target",
       "ok": true,
-      "detail": "42.1 s vs target 30 to 60 s",
+      "detail": "42.7 s vs target 30 to 60 s",
       "severity": "info"
     },
     {

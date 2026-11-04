@@ -1,6 +1,6 @@
 # QC report
 
-Video: `google-ai-review-ads_v1.mp4`  
+Video: `google-ai-review-ads_v2.mp4`  
 Result: **PASS**
 
 | Check | Result | Detail |
@@ -9,8 +9,8 @@ Result: **PASS**
 | frame rate | ok | 30.00 fps |
 | video codec | ok | h264 |
 | audio | ok | aac 48000 Hz |
-| duration | ok | 42.10 s (expected 42.07 s) |
-| duration target | ok | 42.1 s vs target 30 to 60 s |
+| duration | ok | 42.70 s (expected 42.67 s) |
+| duration target | ok | 42.7 s vs target 30 to 60 s |
 | decodes clean | ok | no decode errors |
 | no black frames | ok | none |
 | no freezes in the body | ok | none (outro hold is intentional) |
