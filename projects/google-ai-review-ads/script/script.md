@@ -1,7 +1,7 @@
 # Google is writing part of your ads
 
 Format: 9x16  
-Body duration: 39.5 s plus the brand outro
+Body duration: 40.1 s plus the brand outro
 
 ## 1. s00 · gReview · 3.6 s
 
@@ -67,7 +67,7 @@ Body duration: 39.5 s plus the brand outro
 
 - Source c8: Practical takeaway: because Google writes the line from public reviews, the specific words happy customers use now shape the ad. Asking customers to describe exactly what they liked is the lever an advertiser still controls. (opinion) ,  
 
-## 7. s06 · gReview · 7.1 s
+## 7. s06 · gReview · 7.7 s
 
 **Voiceover:** So stop polishing headlines. Ask happy customers to say exactly what they loved, because that's what Google writes from.
 
