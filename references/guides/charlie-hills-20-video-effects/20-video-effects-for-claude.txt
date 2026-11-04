@@ -1,0 +1,421 @@
+CH    Charlie Hills · Free Resource Vault                             charliehills.substack.com
+
+
+
+AI IMAGE & VIDEO
+
+
+
+20 video effects for Claude
+I recorded one take and Claude built all 20 of these effects on top of it. Here
+they are as 20 free skills, plus the one line that installs them. Each one takes
+your own talking-head clip and gives you an MP4 back.
+
+
+
+
+     S TA R T H E R E
+
+     Install the pack with one line, set up the engine once, then run /spotlight on a
+     short clip of yourself. On my Mac mini a 5.5-second clip came back in 19 seconds.
+     That proves the whole chain works before you try the other 19.
+
+
+
+
+1. The one line that installs them
+You need Claude Code (Codex works too), plus ffmpeg , Node 18 or newer and Python 3.
+All free. Paste this into Terminal:
+
+  Terminal
+
+
+  npx skills add charlie947/reel-editing-skills -g -a claude-code -s '*' -y
+That puts all 41 skills in the pack into ~/.claude/skills/ : the 20 effects, the shared
+engine they run on, and 20 more editing skills. Keep the -g . Without it the skills only go
+into the folder you are standing in, and the effect cards point at ~/.claude/skills .
+
+
+  NO NPX? COPY THEM BY HAND
+
+   git clone https://github.com/charlie947/reel-editing-skills.git , then cp -R
+  reel-editing-skills/skills/* ~/.claude/skills/ . On Codex, leave out -a claude-
+  code -y and pick Codex from the list it shows you.
+
+
+
+
+2. Set up the engine once
+All 20 effects run on one shared engine called video-effects . It needs a headless
+Chrome (Puppeteer) to draw the frames, and a free local model (RobustVideoMatting) to
+cut you out of the shot.
+
+  Terminal, once
+
+
+  cd ~/.claude/skills/video-effects
+  npm i puppeteer
+  python3 -m pip install torch torchvision pillow numpy
+
+
+
+The cut-out model downloads once from GitHub the first time an effect needs it. It runs
+on Apple Silicon, an NVIDIA card or the CPU (slow).
+
+
+  THE CHECK
+
+  Run node ~/.claude/skills/video-effects/run.cjs list . A working install prints
+  20 numbered lines, from grid-dive 1.03s down to head-pop-out to the end .
+  Then add --check to any effect on your clip. A good result ends with check
+  passed: spotlight loads and plays from 0.60s on your clip . If you see
+   puppeteer not found instead, the npm i step ran in the wrong folder.
+This is what the list and the clip check printed on my run:
+
+
+
+
+3. The first thing to try (about three minutes)
+Film 4 to 6 seconds of yourself talking, head and shoulders in shot, with space above
+your head. Then in Claude Code type /spotlight and name the file. Or run it yourself:
+
+   Terminal
+
+
+   node ~/.claude/skills/video-effects/run.cjs spotlight my-clip.mp4 spotlight.mp4
+
+
+
+Spotlight is a good first test because it needs no cut-out frames. When that works, run
+ /head-pop-out . It is an ending, so it holds to the last frame of your clip. Keep that clip
+short, because it cuts you out on every frame from the start of the effect.
+
+
+
+4. All 20, grouped by the job they do
+Every effect plays once, then hands back to your shot. You get a 1080x1920, 30fps H.264
+file with your audio kept, the same length as your clip.
+
+
+Stop the scroll in the first second
+
+Skill         What it does to your clip                                       Length   Words
+/title-orbit     Your words circle your head like a ring, then the camera flies      1.23s     up to
+                 through a letter                                                              12
+
+
+/portal          A ring of blue light opens below your chin and the camera flies     1.02s     none
+                 through it
+
+
+/spotlight       Lights down, one theatre light finds your face, holds, then         1.18s     none
+                 opens up
+
+
+/vertigo         A dolly zoom. You hold your size while a gridded corridor           1.15s     none
+                 stretches behind you
+
+
+/clone-          Copies of you step out behind you down a corridor, then step        1.10s     none
+room             back in
+
+
+
+Move between two points
+
+Skill                What it does to your clip                                        Length    Words
+
+/grid-dive           Pulls back into a wall of tiles, each another moment of your     1.03s     none
+                     clip, then dives back in
+
+
+/infinite-zoom       A frame inside a frame appears beside you, and the camera        1.21s     none
+                     zooms through both
+
+
+/cube-spin           Your shot turns a quarter on a 3D cube and you carry on          1.22s     none
+                     talking on the side face
+
+
+/tile-tunnel         Flies backwards out of your shot down a tunnel of tiles,         1.06s     none
+                     then back into you
+
+
+/shatter             Your shot cracks like glass and the shards fly past, with you    1.09s     none
+                     whole on the last one
+
+
+/liquid-glass        A drop of glass grows into a pill, then a tall pane, and the     0.99s     none
+                     camera dives through
+
+
+/magnifying-         A glass lens glides over your chest and magnifies it, then       1.49s     none
+lens                 opens out
+
+
+
+Show the screen, the app or the prompt
+
+Skill               What it does to your clip                                        Length    Words
+/screen-in-     Pulls back to find your shot playing on a laptop, then dives     1.34s   none
+screen          back into the screen
+
+
+/phone-fan      Your shot on a phone, and four more phones fan out behind        0.98s   none
+                it like cards
+
+
+/pull-back-     Pulls right back to show your shot is the preview in a video     1.31s   up to
+reveal          editor                                                                   24
+
+
+/depth-ui       Your room falls away and app windows float at different          1.16s   up to
+                depths around you                                                        60
+
+
+/zoom-          A chat window shows your ask, the reply streams in, and          2.50s   up to
+through         the camera flies into your clip                                          60
+
+
+
+Break the frame or end the video
+
+Skill         What it does to your clip                                        Length    Words
+
+/frame-       Your shot shrinks into a printed photo while your head           2.00s     none
+break         stays out over the top edge
+
+
+/ribbon-      A blue ribbon with your words wraps round you, a gift tag        1.04s     up to
+wrap          drops and the camera dives in                                              14
+
+
+/head-pop-    Your shot shrinks into a blue panel and your head springs        to the    up to
+out           out of the top. Holds to the end                                 end       40
+
+
+Frame-break and zoom-through need a clip of at least 3 seconds. The rest need 2.
+5. The commands, ready to paste
+  Terminal. Swap my-clip.mp4 for your file
+
+
+  # the engine, once per command
+  E=~/.claude/skills/video-effects/run.cjs
+
+
+  # stop the scroll
+  node $E title-orbit my-clip.mp4 title-orbit.mp4 --words "BIG NEWS"
+  node $E portal my-clip.mp4 portal.mp4
+  node $E spotlight my-clip.mp4 spotlight.mp4
+  node $E vertigo my-clip.mp4 vertigo.mp4
+  node $E clone-room my-clip.mp4 clone-room.mp4
+
+
+  # move between two points
+  node $E grid-dive my-clip.mp4 grid-dive.mp4
+  node $E infinite-zoom my-clip.mp4 infinite-zoom.mp4
+  node $E cube-spin my-clip.mp4 cube-spin.mp4
+  node $E tile-tunnel my-clip.mp4 tile-tunnel.mp4
+  node $E shatter my-clip.mp4 shatter.mp4
+  node $E liquid-glass my-clip.mp4 liquid-glass.mp4
+  node $E magnifying-lens my-clip.mp4 magnifying-lens.mp4
+
+
+  # show the screen, the app or the prompt
+  node $E screen-in-screen my-clip.mp4 screen-in-screen.mp4
+  node $E phone-fan my-clip.mp4 phone-fan.mp4
+  node $E pull-back-reveal my-clip.mp4 pull-back-reveal.mp4 --words "Your clip"
+  node $E depth-ui my-clip.mp4 depth-ui.mp4 --words "Add a depth effect to my video"
+  node $E zoom-through my-clip.mp4 zoom-through.mp4 --words "Add a zoom-through to my
+  video"
+
+
+  # break the frame or end the video
+  node $E frame-break my-clip.mp4 frame-break.mp4
+  node $E ribbon-wrap my-clip.mp4 ribbon-wrap.mp4 --words "NEW LAUNCH"
+  node $E head-pop-out my-clip.mp4 head-pop-out.mp4 --words "New video every Monday"
+
+
+
+
+The options every effect takes
+
+Option              What it does
+
+--at 1.2            When the effect starts, in seconds. Default 0.6s, earlier on a short clip
+
+
+--len 1.5           How long it plays. Each effect has its own default (the Length column above)
+
+
+ --words            The words it shows, for the six effects with a Words limit. Longer text is cut
+"..."
+ --from 4 --to        Use only this part of your clip
+9
+
+
+--stage blue          The studio colour behind you: white (default), blue or grey
+
+--no-fit              Keep your own framing. By default your head is scaled and centred where
+                      the effects expect it
+
+
+--check               Fit and load the effect only, no render. Takes seconds
+
+
+--keep                Keep the work files in a folder beside the output
+
+
+
+
+6. Three ways I would use them
+
+  01   A hook in the first second. Put /title-orbit with your two-word topic at --
+       at 0.3 on the opening of a reel.
+
+
+  02   A turn between two points. Cut your take where the second point starts, and
+       run /cube-spin or /grid-dive on that part with --from and --to .
+
+
+  03   An ending. Run /head-pop-out on the last 3 seconds with your call to action in
+          --words .
+
+
+
+One effect per beat is plenty. Do not stack all 20 in one video.
+
+
+
+7. When something does not work
+What you see                   What it means                The fix
+
+puppeteer not found            The engine cannot find       Run npm i puppeteer inside
+                               Chrome                        ~/.claude/skills/video-effects
+
+
+No module named                The cut-out model has         python3 -m pip install torch
+'torch'                        nothing to run on            torchvision pillow numpy
+
+
+ Cannot find module            You installed without -g ,   Re-run the install line with -g
+.../run.cjs                    so the pack sits in one
+                               project folder
+ the effect needs 1.2s             Your clip is too short for   Use a longer clip or a smaller --at
+from 0.6s, but the                 that effect
+clip is 1.50s
+
+
+ warning: your clip is             iPhone HDR footage. The      Export the clip as SDR (Rec.709) first
+HDR                                colours come out washed
+                                   out
+
+
+ note: There is little             Your head sits near the      Film with space above your head
+room above your                    top or the edge of the
+head...
+                                   frame, so the effects sit
+                                   off target
+
+
+Your face doubled or               The fit or the cut-out       Pull a still from the middle of the effect
+missing mid-effect                 missed                       and check it before you post. Try --no-
+                                                                fit
+
+
+It is slow                         Cutting you out is the       Keep clips short. Use --from and --
+                                   slow part. Each effect       to
+                                   took 17 to 39 seconds on
+                                   my Mac mini
+
+
+
+   W H AT YO U G E T, H O N E S T LY
+
+   I ran all 20 on one 5.5-second clip of me, and every one finished. On your clip, each
+   effect plays once at full size and hands back to your shot. These skills get you the
+   effects. They do not cut your take, add captions or mix music. The other 20 skills in
+   the pack do those jobs.
+
+
+
+
+Next steps
+
+   01    Paste the install line, then the three setup lines. Run list and see 20 lines.
+
+
+   02    Film 5 seconds of yourself and run /spotlight . Watch it all the way through.
+
+
+   03    Pick one effect per group and put it in your next reel: a hook, a turn, an ending.
+Credit
+The pack is my own work, MIT licensed. The cut-out of you comes from
+RobustVideoMatting (Peter Lin and others), which is GPL-3.0 licensed. It is downloaded
+on first use and is not bundled in the pack.
+
+
+
+
+    Every guide I have made, in one place.
+    180+ prompts, cheat sheets, workflows and tool stacks in the Free Resource Vault. All free,
+    and I add new ones most days. Open it and take whatever you need.
+
+    Get all 180+ free guides → charliehills.substack.com/p/resource
+
+
+
+
+Charlie Hills · Free Resource Vault                                       20 video effects for Claude
+
+
+==========================================================================
+TEXT INSIDE PICTURES (typed by hand from the PDF; the text tool skips pictures)
+==========================================================================
+
+[Page 1, picture: "20 Video Effects for Claude"]
+20 Video Effects for Claude
+In the order of the reel. Type the slash command in Claude Code on your own clip.
+01 Grid Dive /grid-dive              02 Title Orbit /title-orbit
+03 Magnifying Lens /magnifying-lens  04 Portal /portal
+05 Clone Room /clone-room            06 Infinite Zoom /infinite-zoom
+07 Cube Spin /cube-spin              08 Liquid Glass /liquid-glass
+09 Screen in Screen /screen-in-screen 10 Frame Break /frame-break
+11 Tile Tunnel /tile-tunnel          12 Depth UI /depth-ui
+13 Vertigo /vertigo                  14 Phone Fan /phone-fan
+15 Shatter /shatter                  16 Spotlight /spotlight
+17 Pull-Back Reveal /pull-back-reveal 18 Ribbon Wrap /ribbon-wrap
+19 Zoom-Through /zoom-through        20 Head Pop Out /head-pop-out
+Key: HOOK · TRANSITION · SCREEN · FRAME BREAK
+
+[Page 3, picture: terminal output of the list command]
+$ node /Users/charlieshermes/renders/fx-page-run/home/.claude/skills/video-effects/run.cjs list
+ 1  grid-dive         1.03s
+ 2  title-orbit       1.23s   --words up to 12 characters
+ 3  magnifying-lens   1.49s
+ 4  portal            1.02s
+ 5  clone-room        1.1s
+ 6  infinite-zoom     1.21s
+ 7  cube-spin         1.22s
+ 8  liquid-glass      0.99s
+ 9  screen-in-screen  1.34s
+10  frame-break       2s
+11  tile-tunnel       1.06s
+12  depth-ui          1.16s   --words up to 60 characters
+13  vertigo           1.15s
+14  phone-fan         0.98s
+15  shatter           1.09s
+16  spotlight         1.18s
+17  pull-back-reveal  1.31s   --words up to 24 characters
+18  ribbon-wrap       1.04s   --words up to 14 characters
+19  zoom-through      2.5s    --words up to 60 characters
+20  head-pop-out      to the end   --words up to 40 characters
+[exit 0]
+
+[Page 3, picture: terminal output of the clip check]
+$ node /Users/charlieshermes/renders/fx-page-run/home/.claude/skills/video-effects/run.cjs spotlight my-clip.mp4 out/check.mp4 --check
+[  28s] frames: 165 (5.50s), fit: scale 1, crop at 1093,0, head found in 5 of 5 samples
+note: You fill more of the frame than the effects expect, so you show 1.00x bigger than the reference.
+[  31s] needs 0 cut-out frames and 0 stills
+check passed: spotlight loads and plays from 0.60s on your clip
+[exit 0]
