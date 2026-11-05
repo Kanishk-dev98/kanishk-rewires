@@ -55,7 +55,7 @@
     },
     "edit": {
       "status": "done",
-      "at": "2026-11-05T06:32:16+00:00",
+      "at": "2026-11-05T06:38:09+00:00",
       "note": "8 scenes, body 38.7 s + outro 2.6 s, 116 caption words",
       "outputs": [
         "timeline/timeline.json",
@@ -184,14 +184,14 @@
       "kind": "music",
       "path": "audio/music.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-11-05T06:32:16+00:00",
+      "at": "2026-11-05T06:38:09+00:00",
       "licence": "original, generated in code"
     },
     {
       "kind": "music",
       "path": "audio/signature.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-11-05T06:32:16+00:00",
+      "at": "2026-11-05T06:38:09+00:00",
       "licence": "original, generated in code"
     }
   ],
