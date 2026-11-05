@@ -39,24 +39,24 @@
     },
     "storyboard": {
       "status": "done",
-      "at": "2026-11-04T12:50:43+00:00",
-      "note": "7 scenes valid, 7 warnings",
+      "at": "2026-11-05T06:32:06+00:00",
+      "note": "8 scenes valid, 4 warnings",
       "outputs": [
         "storyboard/storyboard.json"
       ]
     },
     "assets": {
       "status": "done",
-      "at": "2026-11-04T12:50:58+00:00",
-      "note": "7 narration clips (0 reused from cache)",
+      "at": "2026-11-05T06:32:14+00:00",
+      "note": "8 narration clips (0 reused from cache)",
       "outputs": [
         "audio/vo/"
       ]
     },
     "edit": {
       "status": "done",
-      "at": "2026-11-05T05:31:47+00:00",
-      "note": "7 scenes, body 40.1 s + outro 2.6 s, 121 caption words",
+      "at": "2026-11-05T06:32:16+00:00",
+      "note": "8 scenes, body 38.7 s + outro 2.6 s, 116 caption words",
       "outputs": [
         "timeline/timeline.json",
         "timeline/props.json",
@@ -66,30 +66,13 @@
       ]
     },
     "render": {
-      "status": "done",
-      "at": "2026-11-05T05:37:07+00:00",
-      "note": "google-ai-review-ads_v6.mp4 (109.4 MB)",
-      "outputs": [
-        "renders/google-ai-review-ads_v6.mp4"
-      ]
+      "status": "pending"
     },
     "qc": {
-      "status": "done",
-      "at": "2026-11-05T05:38:00+00:00",
-      "note": "google-ai-review-ads_v6.mp4 passed 14 checks",
-      "outputs": [
-        "reports/qc.md",
-        "reports/contact_sheet.png"
-      ]
+      "status": "pending"
     },
     "delivery": {
-      "status": "done",
-      "at": "2026-11-05T05:38:00+00:00",
-      "note": "delivered google-ai-review-ads_v6.mp4",
-      "outputs": [
-        "reports/production_report.md",
-        "/root/Downloads/Kanishk.Rewires/google-ai-review-ads"
-      ]
+      "status": "pending"
     }
   },
   "assets": [
@@ -97,9 +80,9 @@
       "kind": "voiceover",
       "path": "audio/vo/s00.mp3",
       "provider": "edge",
-      "at": "2026-11-04T12:50:58+00:00",
+      "at": "2026-11-05T06:32:14+00:00",
       "cached": false,
-      "seconds": 3.55,
+      "seconds": 5.83,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
         "rate": "+6%"
@@ -110,9 +93,9 @@
       "kind": "voiceover",
       "path": "audio/vo/s01.mp3",
       "provider": "edge",
-      "at": "2026-11-04T12:50:58+00:00",
+      "at": "2026-11-05T06:32:14+00:00",
       "cached": false,
-      "seconds": 5.35,
+      "seconds": 1.87,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
         "rate": "+6%"
@@ -123,9 +106,9 @@
       "kind": "voiceover",
       "path": "audio/vo/s02.mp3",
       "provider": "edge",
-      "at": "2026-11-04T12:50:58+00:00",
+      "at": "2026-11-05T06:32:14+00:00",
       "cached": false,
-      "seconds": 6.34,
+      "seconds": 5.93,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
         "rate": "+6%"
@@ -136,9 +119,9 @@
       "kind": "voiceover",
       "path": "audio/vo/s03.mp3",
       "provider": "edge",
-      "at": "2026-11-04T12:50:58+00:00",
+      "at": "2026-11-05T06:32:14+00:00",
       "cached": false,
-      "seconds": 8.52,
+      "seconds": 7.22,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
         "rate": "+6%"
@@ -149,9 +132,9 @@
       "kind": "voiceover",
       "path": "audio/vo/s04.mp3",
       "provider": "edge",
-      "at": "2026-11-04T12:50:58+00:00",
+      "at": "2026-11-05T06:32:14+00:00",
       "cached": false,
-      "seconds": 6.05,
+      "seconds": 4.49,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
         "rate": "+6%"
@@ -162,9 +145,9 @@
       "kind": "voiceover",
       "path": "audio/vo/s05.mp3",
       "provider": "edge",
-      "at": "2026-11-04T12:50:58+00:00",
+      "at": "2026-11-05T06:32:14+00:00",
       "cached": false,
-      "seconds": 2.26,
+      "seconds": 1.97,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
         "rate": "+6%"
@@ -175,9 +158,22 @@
       "kind": "voiceover",
       "path": "audio/vo/s06.mp3",
       "provider": "edge",
-      "at": "2026-11-04T12:50:58+00:00",
+      "at": "2026-11-05T06:32:14+00:00",
       "cached": false,
-      "seconds": 6.94,
+      "seconds": 4.2,
+      "settings": {
+        "voice": "en-US-AndrewMultilingualNeural",
+        "rate": "+6%"
+      },
+      "licence": "Edge TTS output, personal use"
+    },
+    {
+      "kind": "voiceover",
+      "path": "audio/vo/s07.mp3",
+      "provider": "edge",
+      "at": "2026-11-05T06:32:14+00:00",
+      "cached": false,
+      "seconds": 6.36,
       "settings": {
         "voice": "en-US-AndrewMultilingualNeural",
         "rate": "+6%"
@@ -188,14 +184,14 @@
       "kind": "music",
       "path": "audio/music.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-11-05T05:31:47+00:00",
+      "at": "2026-11-05T06:32:16+00:00",
       "licence": "original, generated in code"
     },
     {
       "kind": "music",
       "path": "audio/signature.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-11-05T05:31:47+00:00",
+      "at": "2026-11-05T06:32:16+00:00",
       "licence": "original, generated in code"
     }
   ],

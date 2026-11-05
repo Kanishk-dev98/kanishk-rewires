@@ -1,79 +1,83 @@
 1
-00:00:00,149 --> 00:00:02,441
-Google just started writing part of your ads
+00:00:00,161 --> 00:00:02,216
+See this line on a Google ad
 
 2
-00:00:02,461 --> 00:00:03,686
-And you can't edit it
+00:00:02,236 --> 00:00:04,292
+Customers love fresh bread
 
 3
-00:00:03,828 --> 00:00:05,553
-It's live in four countries
+00:00:04,312 --> 00:00:05,950
+The bakery didn't write that
 
 4
-00:00:05,573 --> 00:00:09,133
-The US UK Australia and India
+00:00:06,028 --> 00:00:07,336
+Google's AI did
 
 5
-00:00:09,216 --> 00:00:10,658
-It's called a review summary
+00:00:07,504 --> 00:00:09,619
+Google's own help page confirms it
 
 6
-00:00:10,678 --> 00:00:13,531
-Google's AI reads your reviews across the web
+00:00:09,639 --> 00:00:12,343
+It's live in India the US the UK
 
 7
-00:00:13,567 --> 00:00:15,512
-and writes one line into your ad
+00:00:12,363 --> 00:00:13,411
+and Australia
 
 8
-00:00:15,594 --> 00:00:16,954
-Picture your bakery's ad
+00:00:13,506 --> 00:00:14,618
+Here's how it works
 
 9
-00:00:16,974 --> 00:00:18,180
-You wrote the headline
+00:00:14,638 --> 00:00:17,684
+Google's AI reads a business's reviews from across
 
 10
-00:00:18,200 --> 00:00:20,280
-Google writes the line inside it
+00:00:17,704 --> 00:00:18,517
+the web
 
 11
-00:00:20,300 --> 00:00:22,390
-You can't change a word and Google hasn't
+00:00:18,577 --> 00:00:20,675
+and writes one line into its ad
 
 12
-00:00:22,410 --> 00:00:24,084
-said how to switch it off
+00:00:20,761 --> 00:00:21,625
+The catch
 
 13
-00:00:24,149 --> 00:00:25,509
-Here's the part that got me
+00:00:21,645 --> 00:00:23,618
+It only uses the good reviews
 
 14
-00:00:25,529 --> 00:00:26,782
-It's positive only
+00:00:23,638 --> 00:00:25,206
+The bad ones never make it in
 
 15
-00:00:26,802 --> 00:00:28,716
-And it shows up only when Google predicts
+00:00:25,349 --> 00:00:27,294
+And the business can't edit that line
 
 16
-00:00:28,736 --> 00:00:30,162
-your ad will do better
+00:00:27,428 --> 00:00:29,353
+So when you search that line is part
 
 17
-00:00:30,294 --> 00:00:32,499
-So your reviews are now your ad copy
+00:00:29,373 --> 00:00:30,132
+of an ad
 
 18
-00:00:32,594 --> 00:00:34,496
-So stop polishing headlines
+00:00:30,152 --> 00:00:31,601
+It's not the full story
 
 19
-00:00:34,516 --> 00:00:36,902
-Ask happy customers to say exactly what they
+00:00:31,761 --> 00:00:33,545
+And if you run a business your happy
 
 20
-00:00:36,922 --> 00:00:39,492
-loved because that's what Google writes from
+00:00:33,565 --> 00:00:35,739
+customers are now writing your ads
+
+21
+00:00:35,759 --> 00:00:38,069
+Ask them to say exactly what they loved

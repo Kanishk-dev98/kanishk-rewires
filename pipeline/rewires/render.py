@@ -10,7 +10,7 @@ def render(props_path: Path, raw_out: Path, prod: dict, frames: str | None = Non
     r = {**prod["render"], **(override or {})}
     cmd = [
         "npx", "remotion", "render", "Rewires", str(raw_out), f"--props={props_path}",
-        f"--codec={r['codec']}", f"--crf={r['crf']}", f"--concurrency={r['concurrency']}", "--log=error", "--gl=angle", f"--timeout={r.get('timeoutMs', 120000)}",
+        f"--codec={r['codec']}", f"--crf={r['crf']}", f"--concurrency={r['concurrency']}", "--log=error", f"--gl={r.get('gl', 'angle')}", f"--timeout={r.get('timeoutMs', 120000)}",
     ]
     if frames:
         cmd.append(f"--frames={frames}")
@@ -19,7 +19,7 @@ def render(props_path: Path, raw_out: Path, prod: dict, frames: str | None = Non
 
 def still(props_path: Path, out_png: Path, frame: int):
     subprocess.run(
-        ["npx", "remotion", "still", "Rewires", str(out_png), f"--props={props_path}", f"--frame={frame}", "--log=error", "--gl=angle"],
+        ["npx", "remotion", "still", "Rewires", str(out_png), f"--props={props_path}", f"--frame={frame}", "--log=error", "--gl=swangle"],
         cwd=config.STUDIO, check=True,
     )
 

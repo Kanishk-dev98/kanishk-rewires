@@ -2,60 +2,56 @@
   "scenes": [
     {
       "id": "s00",
-      "type": "gReview",
-      "dur": 108,
+      "type": "gAds",
+      "dur": 174,
       "vo": "projects/google-ai-review-ads/vo/s00.mp3",
       "voAt": 2,
       "data": {
         "beat": "hook",
         "theme": "cream",
         "cues": {
-          "google": 4,
-          "writing": 30,
-          "ads": 47,
-          "edit": 87
+          "see": 5,
+          "line": 16,
+          "love": 79,
+          "bakery": 131,
+          "didnt": 143
         }
       },
       "transition": "cut",
-      "sfx": [],
-      "source": "SOURCE: GOOGLE ADS HELP"
+      "sfx": []
     },
     {
       "id": "s01",
-      "type": "gReview",
-      "dur": 162,
+      "type": "gAds",
+      "dur": 45,
       "vo": "projects/google-ai-review-ads/vo/s01.mp3",
       "voAt": 4,
       "data": {
-        "beat": "where",
+        "beat": "gee",
         "theme": "cream",
         "cues": {
-          "four": 19,
-          "us": 60,
-          "uk": 85,
-          "au": 106,
-          "in": 141
+          "ai": 16
         }
       },
       "transition": "cut",
-      "sfx": [],
-      "source": "SOURCE: GOOGLE ADS HELP"
+      "sfx": []
     },
     {
       "id": "s02",
-      "type": "gReview",
-      "dur": 191,
+      "type": "gAds",
+      "dur": 179,
       "vo": "projects/google-ai-review-ads/vo/s02.mp3",
       "voAt": 4,
       "data": {
-        "beat": "what",
+        "beat": "proof",
         "theme": "cream",
         "cues": {
-          "name": 25,
-          "reads": 79,
-          "web": 115,
-          "writes": 141,
-          "line": 158
+          "page": 28,
+          "confirms": 39,
+          "india": 81,
+          "us": 107,
+          "uk": 134,
+          "au": 155
         }
       },
       "transition": "cut",
@@ -64,19 +60,19 @@
     },
     {
       "id": "s03",
-      "type": "gReview",
-      "dur": 257,
+      "type": "gAds",
+      "dur": 218,
       "vo": "projects/google-ai-review-ads/vo/s03.mp3",
       "voAt": 4,
       "data": {
-        "beat": "pain",
+        "beat": "how",
         "theme": "cream",
         "cues": {
-          "bakery": 16,
-          "headline": 61,
-          "inside": 119,
-          "change": 157,
-          "off": 238
+          "how": 11,
+          "reads": 69,
+          "web": 136,
+          "writes": 164,
+          "line": 182
         }
       },
       "transition": "cut",
@@ -85,18 +81,18 @@
     },
     {
       "id": "s04",
-      "type": "gReview",
-      "dur": 184,
+      "type": "gAds",
+      "dur": 138,
       "vo": "projects/google-ai-review-ads/vo/s04.mp3",
       "voAt": 4,
       "data": {
-        "beat": "twist",
+        "beat": "catch",
         "theme": "dark",
         "cues": {
-          "got": 24,
-          "positive": 51,
-          "predicts": 132,
-          "better": 162
+          "catch": 9,
+          "good": 57,
+          "bad": 95,
+          "never": 108
         }
       },
       "transition": "cut",
@@ -105,36 +101,55 @@
     },
     {
       "id": "s05",
-      "type": "gReview",
-      "dur": 69,
+      "type": "gAds",
+      "dur": 62,
       "vo": "projects/google-ai-review-ads/vo/s05.mp3",
       "voAt": 4,
       "data": {
-        "beat": "merge",
+        "beat": "lock",
         "theme": "cream",
         "cues": {
-          "reviews": 15,
-          "copy": 48
+          "business": 11,
+          "edit": 32
+        }
+      },
+      "transition": "cut",
+      "sfx": [],
+      "source": "SOURCE: GOOGLE ADS HELP"
+    },
+    {
+      "id": "s06",
+      "type": "gAds",
+      "dur": 130,
+      "vo": "projects/google-ai-review-ads/vo/s06.mp3",
+      "voAt": 4,
+      "data": {
+        "beat": "phone",
+        "theme": "cream",
+        "cues": {
+          "search": 16,
+          "ad": 68,
+          "story": 106
         }
       },
       "transition": "cut",
       "sfx": []
     },
     {
-      "id": "s06",
-      "type": "gReview",
-      "dur": 231,
-      "vo": "projects/google-ai-review-ads/vo/s06.mp3",
+      "id": "s07",
+      "type": "gAds",
+      "dur": 214,
+      "vo": "projects/google-ai-review-ads/vo/s07.mp3",
       "voAt": 4,
       "data": {
-        "beat": "takeaway",
+        "beat": "owner",
         "theme": "cream",
         "cues": {
-          "stop": 10,
-          "ask": 64,
-          "exactly": 112,
-          "loved": 137,
-          "writes": 185
+          "run": 16,
+          "writing": 89,
+          "ask": 127,
+          "exactly": 147,
+          "loved": 171
         }
       },
       "transition": "cut",
@@ -143,660 +158,642 @@
   ],
   "captions": [
     {
+      "text": "See",
+      "startMs": 161,
+      "endMs": 338
+    },
+    {
+      "text": "this",
+      "startMs": 338,
+      "endMs": 527
+    },
+    {
+      "text": "line",
+      "startMs": 527,
+      "endMs": 986,
+      "hl": true
+    },
+    {
+      "text": "on",
+      "startMs": 1093,
+      "endMs": 1199
+    },
+    {
+      "text": "a",
+      "startMs": 1211,
+      "endMs": 1258
+    },
+    {
       "text": "Google",
-      "startMs": 149,
-      "endMs": 468
-    },
-    {
-      "text": "just",
-      "startMs": 479,
-      "endMs": 644
-    },
-    {
-      "text": "started",
-      "startMs": 644,
-      "endMs": 998
-    },
-    {
-      "text": "writing",
-      "startMs": 998,
-      "endMs": 1269,
-      "hl": true
-    },
-    {
-      "text": "part",
       "startMs": 1269,
-      "endMs": 1423
+      "endMs": 1600
     },
     {
-      "text": "of",
-      "startMs": 1423,
-      "endMs": 1458
+      "text": "ad",
+      "startMs": 1600,
+      "endMs": 1859
     },
     {
-      "text": "your",
-      "startMs": 1458,
-      "endMs": 1564
+      "text": "Customers",
+      "startMs": 2236,
+      "endMs": 2626
     },
     {
-      "text": "ads",
-      "startMs": 1564,
-      "endMs": 2071
-    },
-    {
-      "text": "And",
-      "startMs": 2461,
-      "endMs": 2531
-    },
-    {
-      "text": "you",
-      "startMs": 2531,
-      "endMs": 2614
-    },
-    {
-      "text": "can't",
+      "text": "love",
       "startMs": 2626,
-      "endMs": 2897
+      "endMs": 3027
     },
     {
-      "text": "edit",
-      "startMs": 2909,
-      "endMs": 3097,
-      "hl": true
+      "text": "fresh",
+      "startMs": 3156,
+      "endMs": 3545
     },
     {
-      "text": "it",
-      "startMs": 3097,
-      "endMs": 3286
-    },
-    {
-      "text": "It's",
-      "startMs": 3828,
-      "endMs": 3922
-    },
-    {
-      "text": "live",
-      "startMs": 3922,
-      "endMs": 4111
-    },
-    {
-      "text": "in",
-      "startMs": 4122,
-      "endMs": 4217
-    },
-    {
-      "text": "four",
-      "startMs": 4229,
-      "endMs": 4571,
-      "hl": true
-    },
-    {
-      "text": "countries",
-      "startMs": 4571,
-      "endMs": 5196
+      "text": "bread",
+      "startMs": 3557,
+      "endMs": 3911
     },
     {
       "text": "The",
-      "startMs": 5573,
-      "endMs": 5608
+      "startMs": 4312,
+      "endMs": 4371
     },
     {
-      "text": "US",
-      "startMs": 5608,
-      "endMs": 6222
+      "text": "bakery",
+      "startMs": 4371,
+      "endMs": 4760
     },
     {
-      "text": "UK",
-      "startMs": 6434,
-      "endMs": 6976
-    },
-    {
-      "text": "Australia",
-      "startMs": 7118,
-      "endMs": 7849
-    },
-    {
-      "text": "and",
-      "startMs": 8085,
-      "endMs": 8203
-    },
-    {
-      "text": "India",
-      "startMs": 8285,
-      "endMs": 8733,
+      "text": "didn't",
+      "startMs": 4772,
+      "endMs": 4996,
       "hl": true
     },
     {
-      "text": "It's",
-      "startMs": 9216,
-      "endMs": 9287
-    },
-    {
-      "text": "called",
-      "startMs": 9287,
-      "endMs": 9475
-    },
-    {
-      "text": "a",
-      "startMs": 9475,
-      "endMs": 9499
-    },
-    {
-      "text": "review",
-      "startMs": 9499,
-      "endMs": 9829
-    },
-    {
-      "text": "summary",
-      "startMs": 9829,
-      "endMs": 10313,
-      "hl": true
-    },
-    {
-      "text": "Google's",
-      "startMs": 10678,
-      "endMs": 11114
-    },
-    {
-      "text": "AI",
-      "startMs": 11126,
-      "endMs": 11622
-    },
-    {
-      "text": "reads",
-      "startMs": 11622,
-      "endMs": 11928
-    },
-    {
-      "text": "your",
-      "startMs": 11928,
-      "endMs": 12046
-    },
-    {
-      "text": "reviews",
-      "startMs": 12058,
-      "endMs": 12376
-    },
-    {
-      "text": "across",
-      "startMs": 12376,
-      "endMs": 12765
-    },
-    {
-      "text": "the",
-      "startMs": 12765,
-      "endMs": 12836
-    },
-    {
-      "text": "web",
-      "startMs": 12836,
-      "endMs": 13131
-    },
-    {
-      "text": "and",
-      "startMs": 13567,
-      "endMs": 13697
-    },
-    {
-      "text": "writes",
-      "startMs": 13709,
-      "endMs": 13956
-    },
-    {
-      "text": "one",
-      "startMs": 13968,
-      "endMs": 14251,
-      "hl": true
-    },
-    {
-      "text": "line",
-      "startMs": 14251,
-      "endMs": 14522
-    },
-    {
-      "text": "into",
-      "startMs": 14534,
-      "endMs": 14699
-    },
-    {
-      "text": "your",
-      "startMs": 14699,
-      "endMs": 14829
-    },
-    {
-      "text": "ad",
-      "startMs": 14829,
-      "endMs": 15112
-    },
-    {
-      "text": "Picture",
-      "startMs": 15594,
-      "endMs": 15807
-    },
-    {
-      "text": "your",
-      "startMs": 15807,
-      "endMs": 15889
-    },
-    {
-      "text": "bakery's",
-      "startMs": 15889,
-      "endMs": 16302
-    },
-    {
-      "text": "ad",
-      "startMs": 16314,
-      "endMs": 16597
-    },
-    {
-      "text": "You",
-      "startMs": 16974,
-      "endMs": 17104
-    },
-    {
-      "text": "wrote",
-      "startMs": 17104,
-      "endMs": 17316
-    },
-    {
-      "text": "the",
-      "startMs": 17316,
-      "endMs": 17375
-    },
-    {
-      "text": "headline",
-      "startMs": 17387,
-      "endMs": 17858,
-      "hl": true
-    },
-    {
-      "text": "Google",
-      "startMs": 18200,
-      "endMs": 18590
-    },
-    {
-      "text": "writes",
-      "startMs": 18590,
-      "endMs": 18932
-    },
-    {
-      "text": "the",
-      "startMs": 18932,
-      "endMs": 19038
-    },
-    {
-      "text": "line",
-      "startMs": 19038,
-      "endMs": 19321
-    },
-    {
-      "text": "inside",
-      "startMs": 19321,
-      "endMs": 19745
-    },
-    {
-      "text": "it",
-      "startMs": 19745,
-      "endMs": 19910
-    },
-    {
-      "text": "You",
-      "startMs": 20300,
-      "endMs": 20382
-    },
-    {
-      "text": "can't",
-      "startMs": 20382,
-      "endMs": 20606
-    },
-    {
-      "text": "change",
-      "startMs": 20606,
-      "endMs": 20877
-    },
-    {
-      "text": "a",
-      "startMs": 20889,
-      "endMs": 20925
-    },
-    {
-      "text": "word",
-      "startMs": 20925,
-      "endMs": 21314
-    },
-    {
-      "text": "and",
-      "startMs": 21561,
-      "endMs": 21691
-    },
-    {
-      "text": "Google",
-      "startMs": 21703,
-      "endMs": 22045
-    },
-    {
-      "text": "hasn't",
-      "startMs": 22045,
-      "endMs": 22399
-    },
-    {
-      "text": "said",
-      "startMs": 22410,
-      "endMs": 22764
-    },
-    {
-      "text": "how",
-      "startMs": 22764,
-      "endMs": 22858
-    },
-    {
-      "text": "to",
-      "startMs": 22858,
-      "endMs": 22929
-    },
-    {
-      "text": "switch",
-      "startMs": 22929,
-      "endMs": 23224
-    },
-    {
-      "text": "it",
-      "startMs": 23224,
-      "endMs": 23283
-    },
-    {
-      "text": "off",
-      "startMs": 23295,
-      "endMs": 23684,
-      "hl": true
-    },
-    {
-      "text": "Here's",
-      "startMs": 24149,
-      "endMs": 24279
-    },
-    {
-      "text": "the",
-      "startMs": 24279,
-      "endMs": 24361
-    },
-    {
-      "text": "part",
-      "startMs": 24361,
-      "endMs": 24597
+      "text": "write",
+      "startMs": 4996,
+      "endMs": 5196
     },
     {
       "text": "that",
-      "startMs": 24609,
-      "endMs": 24727
+      "startMs": 5196,
+      "endMs": 5550
     },
     {
-      "text": "got",
-      "startMs": 24727,
-      "endMs": 24951
+      "text": "Google's",
+      "startMs": 6028,
+      "endMs": 6334
     },
     {
-      "text": "me",
-      "startMs": 24951,
-      "endMs": 25163
-    },
-    {
-      "text": "It's",
-      "startMs": 25529,
-      "endMs": 25611
-    },
-    {
-      "text": "positive",
-      "startMs": 25623,
-      "endMs": 26071,
+      "text": "AI",
+      "startMs": 6346,
+      "endMs": 6605,
       "hl": true
     },
     {
-      "text": "only",
-      "startMs": 26071,
-      "endMs": 26413
+      "text": "did",
+      "startMs": 6605,
+      "endMs": 6936
     },
     {
-      "text": "And",
-      "startMs": 26802,
-      "endMs": 26885
+      "text": "Google's",
+      "startMs": 7504,
+      "endMs": 7822
+    },
+    {
+      "text": "own",
+      "startMs": 7834,
+      "endMs": 8011
+    },
+    {
+      "text": "help",
+      "startMs": 8011,
+      "endMs": 8235
+    },
+    {
+      "text": "page",
+      "startMs": 8235,
+      "endMs": 8589
+    },
+    {
+      "text": "confirms",
+      "startMs": 8601,
+      "endMs": 9096,
+      "hl": true
     },
     {
       "text": "it",
-      "startMs": 26885,
-      "endMs": 26956
+      "startMs": 9096,
+      "endMs": 9249
     },
     {
-      "text": "shows",
-      "startMs": 26956,
-      "endMs": 27239
+      "text": "It's",
+      "startMs": 9639,
+      "endMs": 9733
     },
     {
-      "text": "up",
-      "startMs": 27239,
-      "endMs": 27333
+      "text": "live",
+      "startMs": 9733,
+      "endMs": 9910
     },
     {
-      "text": "only",
-      "startMs": 27475,
-      "endMs": 27746
+      "text": "in",
+      "startMs": 9910,
+      "endMs": 9992
     },
     {
-      "text": "when",
-      "startMs": 27746,
-      "endMs": 27946
-    },
-    {
-      "text": "Google",
-      "startMs": 27958,
-      "endMs": 28347
-    },
-    {
-      "text": "predicts",
-      "startMs": 28347,
-      "endMs": 28725,
+      "text": "India",
+      "startMs": 10004,
+      "endMs": 10535,
       "hl": true
     },
     {
-      "text": "your",
-      "startMs": 28736,
-      "endMs": 28866
+      "text": "the",
+      "startMs": 10806,
+      "endMs": 10865
     },
     {
-      "text": "ad",
-      "startMs": 28866,
-      "endMs": 29114
+      "text": "US",
+      "startMs": 10877,
+      "endMs": 11525
     },
     {
-      "text": "will",
-      "startMs": 29114,
-      "endMs": 29196
+      "text": "the",
+      "startMs": 11714,
+      "endMs": 11773
     },
     {
-      "text": "do",
-      "startMs": 29196,
-      "endMs": 29338
+      "text": "UK",
+      "startMs": 11773,
+      "endMs": 12363
     },
     {
-      "text": "better",
-      "startMs": 29350,
-      "endMs": 29762
+      "text": "and",
+      "startMs": 12363,
+      "endMs": 12457
     },
     {
-      "text": "So",
-      "startMs": 30294,
-      "endMs": 30400
+      "text": "Australia",
+      "startMs": 12457,
+      "endMs": 13011
     },
     {
-      "text": "your",
-      "startMs": 30400,
-      "endMs": 30566
+      "text": "Here's",
+      "startMs": 13506,
+      "endMs": 13624
+    },
+    {
+      "text": "how",
+      "startMs": 13636,
+      "endMs": 13766
+    },
+    {
+      "text": "it",
+      "startMs": 13766,
+      "endMs": 13813
+    },
+    {
+      "text": "works",
+      "startMs": 13813,
+      "endMs": 14273
+    },
+    {
+      "text": "Google's",
+      "startMs": 14638,
+      "endMs": 15016
+    },
+    {
+      "text": "AI",
+      "startMs": 15016,
+      "endMs": 15570
+    },
+    {
+      "text": "reads",
+      "startMs": 15570,
+      "endMs": 15935
+    },
+    {
+      "text": "a",
+      "startMs": 16030,
+      "endMs": 16100
+    },
+    {
+      "text": "business's",
+      "startMs": 16242,
+      "endMs": 16773
     },
     {
       "text": "reviews",
-      "startMs": 30566,
-      "endMs": 31002
-    },
-    {
-      "text": "are",
-      "startMs": 31014,
-      "endMs": 31084
-    },
-    {
-      "text": "now",
-      "startMs": 31096,
-      "endMs": 31356
-    },
-    {
-      "text": "your",
-      "startMs": 31356,
-      "endMs": 31497
-    },
-    {
-      "text": "ad",
-      "startMs": 31509,
-      "endMs": 31674
-    },
-    {
-      "text": "copy",
-      "startMs": 31674,
-      "endMs": 32099,
+      "startMs": 16773,
+      "endMs": 17197,
       "hl": true
-    },
-    {
-      "text": "So",
-      "startMs": 32594,
-      "endMs": 32712
-    },
-    {
-      "text": "stop",
-      "startMs": 32712,
-      "endMs": 32983
-    },
-    {
-      "text": "polishing",
-      "startMs": 32984,
-      "endMs": 33420
-    },
-    {
-      "text": "headlines",
-      "startMs": 33420,
-      "endMs": 34127
-    },
-    {
-      "text": "Ask",
-      "startMs": 34516,
-      "endMs": 34764
-    },
-    {
-      "text": "happy",
-      "startMs": 34776,
-      "endMs": 35106
-    },
-    {
-      "text": "customers",
-      "startMs": 35118,
-      "endMs": 35660
-    },
-    {
-      "text": "to",
-      "startMs": 35719,
-      "endMs": 35802
-    },
-    {
-      "text": "say",
-      "startMs": 35802,
-      "endMs": 36085
-    },
-    {
-      "text": "exactly",
-      "startMs": 36085,
-      "endMs": 36686,
-      "hl": true
-    },
-    {
-      "text": "what",
-      "startMs": 36686,
-      "endMs": 36816
-    },
-    {
-      "text": "they",
-      "startMs": 36816,
-      "endMs": 36922
-    },
-    {
-      "text": "loved",
-      "startMs": 36922,
-      "endMs": 37417
-    },
-    {
-      "text": "because",
-      "startMs": 37594,
-      "endMs": 37807
-    },
-    {
-      "text": "that's",
-      "startMs": 37807,
-      "endMs": 37948
-    },
-    {
-      "text": "what",
-      "startMs": 37948,
-      "endMs": 38113
-    },
-    {
-      "text": "Google",
-      "startMs": 38172,
-      "endMs": 38514
-    },
-    {
-      "text": "writes",
-      "startMs": 38526,
-      "endMs": 38785
     },
     {
       "text": "from",
-      "startMs": 38797,
-      "endMs": 39092
+      "startMs": 17197,
+      "endMs": 17303
+    },
+    {
+      "text": "across",
+      "startMs": 17303,
+      "endMs": 17692
+    },
+    {
+      "text": "the",
+      "startMs": 17704,
+      "endMs": 17775
+    },
+    {
+      "text": "web",
+      "startMs": 17787,
+      "endMs": 18117
+    },
+    {
+      "text": "and",
+      "startMs": 18577,
+      "endMs": 18707
+    },
+    {
+      "text": "writes",
+      "startMs": 18718,
+      "endMs": 19001
+    },
+    {
+      "text": "one",
+      "startMs": 19013,
+      "endMs": 19320,
+      "hl": true
+    },
+    {
+      "text": "line",
+      "startMs": 19332,
+      "endMs": 19615
+    },
+    {
+      "text": "into",
+      "startMs": 19615,
+      "endMs": 19815
+    },
+    {
+      "text": "its",
+      "startMs": 19815,
+      "endMs": 19933
+    },
+    {
+      "text": "ad",
+      "startMs": 19933,
+      "endMs": 20275
+    },
+    {
+      "text": "The",
+      "startMs": 20761,
+      "endMs": 20820
+    },
+    {
+      "text": "catch",
+      "startMs": 20832,
+      "endMs": 21268
+    },
+    {
+      "text": "It",
+      "startMs": 21645,
+      "endMs": 21716
+    },
+    {
+      "text": "only",
+      "startMs": 21716,
+      "endMs": 21976
+    },
+    {
+      "text": "uses",
+      "startMs": 21976,
+      "endMs": 22329
+    },
+    {
+      "text": "the",
+      "startMs": 22329,
+      "endMs": 22424
+    },
+    {
+      "text": "good",
+      "startMs": 22436,
+      "endMs": 22612,
+      "hl": true
+    },
+    {
+      "text": "reviews",
+      "startMs": 22612,
+      "endMs": 23237
+    },
+    {
+      "text": "The",
+      "startMs": 23638,
+      "endMs": 23697
+    },
+    {
+      "text": "bad",
+      "startMs": 23709,
+      "endMs": 23969
+    },
+    {
+      "text": "ones",
+      "startMs": 23980,
+      "endMs": 24134
+    },
+    {
+      "text": "never",
+      "startMs": 24134,
+      "endMs": 24334,
+      "hl": true
+    },
+    {
+      "text": "make",
+      "startMs": 24334,
+      "endMs": 24535
+    },
+    {
+      "text": "it",
+      "startMs": 24535,
+      "endMs": 24582
+    },
+    {
+      "text": "in",
+      "startMs": 24582,
+      "endMs": 24806
+    },
+    {
+      "text": "And",
+      "startMs": 25349,
+      "endMs": 25396
+    },
+    {
+      "text": "the",
+      "startMs": 25396,
+      "endMs": 25479
+    },
+    {
+      "text": "business",
+      "startMs": 25491,
+      "endMs": 25892
+    },
+    {
+      "text": "can't",
+      "startMs": 25903,
+      "endMs": 26210,
+      "hl": true
+    },
+    {
+      "text": "edit",
+      "startMs": 26210,
+      "endMs": 26399
+    },
+    {
+      "text": "that",
+      "startMs": 26411,
+      "endMs": 26564
+    },
+    {
+      "text": "line",
+      "startMs": 26564,
+      "endMs": 26894
+    },
+    {
+      "text": "So",
+      "startMs": 27428,
+      "endMs": 27522
+    },
+    {
+      "text": "when",
+      "startMs": 27522,
+      "endMs": 27616
+    },
+    {
+      "text": "you",
+      "startMs": 27628,
+      "endMs": 27722
+    },
+    {
+      "text": "search",
+      "startMs": 27722,
+      "endMs": 28300
+    },
+    {
+      "text": "that",
+      "startMs": 28572,
+      "endMs": 28784
+    },
+    {
+      "text": "line",
+      "startMs": 28784,
+      "endMs": 29067
+    },
+    {
+      "text": "is",
+      "startMs": 29079,
+      "endMs": 29173
+    },
+    {
+      "text": "part",
+      "startMs": 29173,
+      "endMs": 29373
+    },
+    {
+      "text": "of",
+      "startMs": 29373,
+      "endMs": 29409
+    },
+    {
+      "text": "an",
+      "startMs": 29409,
+      "endMs": 29468
+    },
+    {
+      "text": "ad",
+      "startMs": 29468,
+      "endMs": 29763,
+      "hl": true
+    },
+    {
+      "text": "It's",
+      "startMs": 30152,
+      "endMs": 30246
+    },
+    {
+      "text": "not",
+      "startMs": 30246,
+      "endMs": 30423
+    },
+    {
+      "text": "the",
+      "startMs": 30423,
+      "endMs": 30494
+    },
+    {
+      "text": "full",
+      "startMs": 30494,
+      "endMs": 30718,
+      "hl": true
+    },
+    {
+      "text": "story",
+      "startMs": 30718,
+      "endMs": 31201
+    },
+    {
+      "text": "And",
+      "startMs": 31761,
+      "endMs": 31832
+    },
+    {
+      "text": "if",
+      "startMs": 31844,
+      "endMs": 31938
+    },
+    {
+      "text": "you",
+      "startMs": 31938,
+      "endMs": 32044
+    },
+    {
+      "text": "run",
+      "startMs": 32056,
+      "endMs": 32174
+    },
+    {
+      "text": "a",
+      "startMs": 32174,
+      "endMs": 32221
+    },
+    {
+      "text": "business",
+      "startMs": 32221,
+      "endMs": 32822
+    },
+    {
+      "text": "your",
+      "startMs": 33035,
+      "endMs": 33152
+    },
+    {
+      "text": "happy",
+      "startMs": 33152,
+      "endMs": 33553
+    },
+    {
+      "text": "customers",
+      "startMs": 33565,
+      "endMs": 34072
+    },
+    {
+      "text": "are",
+      "startMs": 34072,
+      "endMs": 34167
+    },
+    {
+      "text": "now",
+      "startMs": 34167,
+      "endMs": 34473
+    },
+    {
+      "text": "writing",
+      "startMs": 34485,
+      "endMs": 34733,
+      "hl": true
+    },
+    {
+      "text": "your",
+      "startMs": 34733,
+      "endMs": 34851
+    },
+    {
+      "text": "ads",
+      "startMs": 34851,
+      "endMs": 35369
+    },
+    {
+      "text": "Ask",
+      "startMs": 35759,
+      "endMs": 35983
+    },
+    {
+      "text": "them",
+      "startMs": 35983,
+      "endMs": 36089
+    },
+    {
+      "text": "to",
+      "startMs": 36101,
+      "endMs": 36148
+    },
+    {
+      "text": "say",
+      "startMs": 36148,
+      "endMs": 36443
+    },
+    {
+      "text": "exactly",
+      "startMs": 36443,
+      "endMs": 37032,
+      "hl": true
+    },
+    {
+      "text": "what",
+      "startMs": 37032,
+      "endMs": 37138
+    },
+    {
+      "text": "they",
+      "startMs": 37138,
+      "endMs": 37221
+    },
+    {
+      "text": "loved",
+      "startMs": 37233,
+      "endMs": 37669
     }
   ],
   "sections": [
     {
       "start": 0.0,
-      "end": 3.6,
+      "end": 5.8,
       "energy": 2
     },
     {
-      "start": 3.6,
-      "end": 9.0,
-      "energy": 2
-    },
-    {
-      "start": 9.0,
-      "end": 15.366666666666667,
-      "energy": 2
-    },
-    {
-      "start": 15.366666666666667,
-      "end": 23.933333333333334,
-      "energy": 2
-    },
-    {
-      "start": 23.933333333333334,
-      "end": 30.066666666666666,
+      "start": 5.8,
+      "end": 7.3,
       "energy": 3
     },
     {
-      "start": 30.066666666666666,
-      "end": 32.36666666666667,
+      "start": 7.3,
+      "end": 13.266666666666667,
       "energy": 2
     },
     {
-      "start": 32.36666666666667,
-      "end": 40.06666666666667,
+      "start": 13.266666666666667,
+      "end": 20.533333333333335,
+      "energy": 2
+    },
+    {
+      "start": 20.533333333333335,
+      "end": 25.133333333333333,
+      "energy": 3
+    },
+    {
+      "start": 25.133333333333333,
+      "end": 27.2,
+      "energy": 2
+    },
+    {
+      "start": 27.2,
+      "end": 31.533333333333335,
+      "energy": 2
+    },
+    {
+      "start": 31.533333333333335,
+      "end": 38.666666666666664,
       "energy": 2
     }
   ],
   "hits": [],
-  "bodyFrames": 1202
+  "bodyFrames": 1160
 }

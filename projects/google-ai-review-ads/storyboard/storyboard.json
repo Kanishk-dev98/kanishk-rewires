@@ -29,27 +29,28 @@
   },
   "render": {
     "concurrency": 2,
-    "timeoutMs": 600000
+    "timeoutMs": 600000,
+    "gl": "swangle"
   },
-  "brief_visual": "New grammar for this reel (differs from duet/php2shell world camera and the xBeat kit): one continuous search-results page. Every beat is the next region of the same page and the camera scrolls down it with momentum, a slight perspective tilt and a soft rack-focus (search-page scroll take). Hero object: one sponsored ad card for an illustrative bakery that persists and transforms (shared element). Techniques: typed AI line inside the card, lock snap on a cursor attempt, flag result rows stacking, review cards compressing into one line, physics drop of negative reviews in a lights-down charcoal act, a predicted-performance meter gating the line, reviews-to-ad-copy morph, phone review composer updating the ad. Headline captions at the top, no bottom subtitles. Official four-colour Google G only. No EXAMPLE stickers: the illustration disclaimer lives in the post caption.",
+  "brief_visual": "v7 (script v2): every beat its own visual system; phone only in s06. Transition systems: (1) lift-out / push-through into the element the next beat is about, (2) motivated lights-down for the catch, (3) whip with motion blur. Hero techniques: LiftOut of the ad line, real 3D extruded four-colour Google G (WebGL, swangle), tilted browser macro push + highlighter on Google's real help page, flags on glass tiles, CSS-3D fly-through of a review wall with phrase streams, elegant rejection (drain, fall back in depth), refused text selection + lock, hand-held phone scroll with circled Sponsored label, split screen review-to-ad live update. Top 380 px reserved for headline captions.",
   "scenes": [
     {
       "id": "s00",
-      "type": "gReview",
-      "pad": 6,
+      "type": "gAds",
+      "pad": 4,
       "leadIn": 2,
       "energy": 2,
-      "plannedSeconds": 4,
-      "vo": "Google just started writing part of your ads. And you can't edit it.",
+      "vo": "See this line on a Google ad? Customers love fresh bread. The bakery didn't write that.",
       "cues": {
-        "google": "Google",
-        "writing": "writing",
-        "ads": "ads.",
-        "edit": "edit"
+        "see": "See",
+        "line": "line",
+        "love": "love",
+        "bakery": "bakery",
+        "didnt": "didn't"
       },
       "accents": [
-        "writing",
-        "edit"
+        "line",
+        "didn't"
       ],
       "data": {
         "beat": "hook",
@@ -59,165 +60,179 @@
         "c1",
         "c5"
       ],
-      "transition": "cut",
-      "sourceLabel": "SOURCE: GOOGLE ADS HELP"
+      "transition": "cut"
     },
     {
       "id": "s01",
-      "type": "gReview",
-      "pad": 4,
-      "energy": 2,
-      "plannedSeconds": 4.5,
-      "vo": "It's live in four countries. The US, UK, Australia, and India.",
+      "type": "gAds",
+      "pad": 6,
+      "energy": 3,
+      "vo": "Google's AI did.",
       "cues": {
-        "four": "four",
-        "us": "US,",
-        "uk": "UK,",
-        "au": "Australia,",
-        "in": "India."
+        "ai": "AI"
       },
       "accents": [
-        "four",
-        "India."
+        "AI"
       ],
       "data": {
-        "beat": "where",
-        "theme": "cream"
-      },
-      "claims": [
-        "c3"
-      ],
-      "transition": "cut",
-      "sourceLabel": "SOURCE: GOOGLE ADS HELP"
-    },
-    {
-      "id": "s02",
-      "type": "gReview",
-      "pad": 4,
-      "energy": 2,
-      "plannedSeconds": 6.5,
-      "vo": "It's called a review summary. Google's AI reads your reviews across the web, and writes one line into your ad.",
-      "cues": {
-        "name": "summary.",
-        "reads": "reads",
-        "web": "web,",
-        "writes": "writes",
-        "line": "line"
-      },
-      "accents": [
-        "summary.",
-        "one"
-      ],
-      "data": {
-        "beat": "what",
+        "beat": "gee",
         "theme": "cream"
       },
       "claims": [
         "c1",
         "c2"
       ],
-      "transition": "cut",
-      "sourceLabel": "SOURCE: GOOGLE ADS HELP"
+      "transition": "cut"
+    },
+    {
+      "id": "s02",
+      "type": "gAds",
+      "pad": 4,
+      "energy": 2,
+      "vo": "Google's own help page confirms it. It's live in India, the US, the UK and Australia.",
+      "cues": {
+        "page": "page",
+        "confirms": "confirms",
+        "india": "India,",
+        "us": "US,",
+        "uk": "UK",
+        "au": "Australia."
+      },
+      "accents": [
+        "confirms",
+        "India,"
+      ],
+      "data": {
+        "beat": "proof",
+        "theme": "cream"
+      },
+      "claims": [
+        "c1",
+        "c3"
+      ],
+      "sourceLabel": "SOURCE: GOOGLE ADS HELP",
+      "transition": "cut"
     },
     {
       "id": "s03",
-      "type": "gReview",
+      "type": "gAds",
       "pad": 4,
       "energy": 2,
-      "plannedSeconds": 9,
-      "vo": "Picture your bakery's ad. You wrote the headline. Google writes the line inside it. You can't change a word, and Google hasn't said how to switch it off.",
+      "vo": "Here's how it works. Google's AI reads a business's reviews from across the web, and writes one line into its ad.",
       "cues": {
-        "bakery": "bakery's",
-        "headline": "headline.",
-        "inside": "inside",
-        "change": "change",
-        "off": "off."
+        "how": "how",
+        "reads": "reads",
+        "web": "web,",
+        "writes": "writes",
+        "line": "line"
       },
       "accents": [
-        "headline.",
-        "off."
+        "reviews",
+        "one"
       ],
       "data": {
-        "beat": "pain",
+        "beat": "how",
         "theme": "cream"
       },
       "claims": [
-        "c5",
-        "c7"
+        "c2"
       ],
-      "transition": "cut",
-      "sourceLabel": "SOURCE: GOOGLE ADS HELP"
+      "sourceLabel": "SOURCE: GOOGLE ADS HELP",
+      "transition": "cut"
     },
     {
       "id": "s04",
-      "type": "gReview",
+      "type": "gAds",
       "pad": 6,
       "energy": 3,
-      "plannedSeconds": 7.5,
-      "vo": "Here's the part that got me. It's positive only. And it shows up only when Google predicts your ad will do better.",
+      "vo": "The catch? It only uses the good reviews. The bad ones never make it in.",
       "cues": {
-        "got": "got",
-        "positive": "positive",
-        "predicts": "predicts",
-        "better": "better."
+        "catch": "catch?",
+        "good": "good",
+        "bad": "bad",
+        "never": "never"
       },
       "accents": [
-        "positive",
-        "predicts"
+        "good",
+        "never"
       ],
       "data": {
-        "beat": "twist",
+        "beat": "catch",
         "theme": "dark"
       },
       "claims": [
-        "c4",
-        "c6"
+        "c4"
       ],
-      "transition": "cut",
-      "sourceLabel": "SOURCE: GOOGLE ADS HELP"
+      "sourceLabel": "SOURCE: GOOGLE ADS HELP",
+      "transition": "cut"
     },
     {
       "id": "s05",
-      "type": "gReview",
-      "pad": 4,
+      "type": "gAds",
+      "pad": 6,
       "energy": 2,
-      "plannedSeconds": 3.5,
-      "vo": "So your reviews are now your ad copy.",
+      "vo": "And the business can't edit that line.",
       "cues": {
-        "reviews": "reviews",
-        "copy": "copy."
+        "business": "business",
+        "edit": "edit"
       },
       "accents": [
-        "copy."
+        "can't"
       ],
       "data": {
-        "beat": "merge",
+        "beat": "lock",
         "theme": "cream"
       },
       "claims": [
+        "c5"
+      ],
+      "sourceLabel": "SOURCE: GOOGLE ADS HELP",
+      "transition": "cut"
+    },
+    {
+      "id": "s06",
+      "type": "gAds",
+      "pad": 6,
+      "energy": 2,
+      "vo": "So when you search, that line is part of an ad. It's not the full story.",
+      "cues": {
+        "search": "search,",
+        "ad": "ad.",
+        "story": "story."
+      },
+      "accents": [
+        "ad.",
+        "full"
+      ],
+      "data": {
+        "beat": "phone",
+        "theme": "cream"
+      },
+      "claims": [
+        "c4",
         "c8"
       ],
       "transition": "cut"
     },
     {
-      "id": "s06",
-      "type": "gReview",
+      "id": "s07",
+      "type": "gAds",
       "pad": 26,
       "energy": 2,
-      "plannedSeconds": 6.5,
-      "vo": "So stop polishing headlines. Ask happy customers to say exactly what they loved, because that's what Google writes from.",
+      "vo": "And if you run a business, your happy customers are now writing your ads. Ask them to say exactly what they loved.",
       "cues": {
-        "stop": "stop",
+        "run": "run",
+        "writing": "writing",
         "ask": "Ask",
         "exactly": "exactly",
-        "loved": "loved,",
-        "writes": "writes"
+        "loved": "loved."
       },
       "accents": [
+        "writing",
         "exactly"
       ],
       "data": {
-        "beat": "takeaway",
+        "beat": "owner",
         "theme": "cream"
       },
       "claims": [
