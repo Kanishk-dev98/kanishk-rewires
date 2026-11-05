@@ -1,6 +1,6 @@
 {
-  "video": "/home/user/kanishk-rewires/projects/google-ai-review-ads/renders/google-ai-review-ads_v7.mp4",
-  "passed": false,
+  "video": "/home/user/kanishk-rewires/projects/google-ai-review-ads/renders/google-ai-review-ads_v8.mp4",
+  "passed": true,
   "checks": [
     {
       "check": "resolution",
@@ -76,14 +76,14 @@
     },
     {
       "check": "safe area",
-      "ok": false,
-      "detail": "s03 @ 13.9s (2293 px); s03 @ 16.9s (90 px)",
-      "severity": "error"
+      "ok": true,
+      "detail": "nothing drawn within 60 px of the sides",
+      "severity": "info"
     },
     {
       "check": "brand ending",
       "ok": true,
-      "detail": "lime px 27, cream px 434",
+      "detail": "lime px 27, cream px 435",
       "severity": "info"
     }
   ],

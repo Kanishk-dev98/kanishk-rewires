@@ -1,7 +1,7 @@
 # QC report
 
-Video: `google-ai-review-ads_v7.mp4`  
-Result: **FAIL**
+Video: `google-ai-review-ads_v8.mp4`  
+Result: **PASS**
 
 | Check | Result | Detail |
 |---|---|---|
@@ -17,7 +17,7 @@ Result: **FAIL**
 | no silent gaps | ok | none |
 | loudness | ok | -14.0 LUFS (target -14) |
 | true peak | ok | -1.5 dBTP |
-| safe area | ERROR | s03 @ 13.9s (2293 px); s03 @ 16.9s (90 px) |
-| brand ending | ok | lime px 27, cream px 434 |
+| safe area | ok | nothing drawn within 60 px of the sides |
+| brand ending | ok | lime px 27, cream px 435 |
 
 Still needs human eyes: overlapping elements, pacing and readability, visual taste and continuity, voice delivery.
