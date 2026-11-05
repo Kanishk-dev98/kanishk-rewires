@@ -273,15 +273,17 @@ const How: Beat = ({ f, c }) => {
   // wall: 2 columns x 4 rows of cards on a plane tilted back
   return (
     <Stage>
-      <AbsoluteFill style={{ perspective: 1500, perspectiveOrigin: "50% 30%", clipPath: "inset(400px 0 0 0)", WebkitMaskImage: "linear-gradient(180deg, transparent 400px, black 520px)", maskImage: "linear-gradient(180deg, transparent 400px, black 520px)" }}>
-        <div style={{ position: "absolute", left: 540 - 500, top: 470, width: 1000, transformOrigin: "50% 0%", transform: `rotateX(${48 - 6 * fly}deg) translateY(${-260 * fly}px) translateZ(${-120 + 80 * fly}px)`, opacity: 1 - ez(f, writes + 8, writes + 24) * 0.5 }}>
+      <AbsoluteFill style={{ WebkitMaskImage: "linear-gradient(90deg, transparent 40px, black 120px, black 960px, transparent 1040px)", maskImage: "linear-gradient(90deg, transparent 40px, black 120px, black 960px, transparent 1040px)" }}>
+      <AbsoluteFill style={{ perspective: 2400, perspectiveOrigin: "50% 30%", clipPath: "inset(400px 0 0 0)", WebkitMaskImage: "linear-gradient(180deg, transparent 400px, black 520px)", maskImage: "linear-gradient(180deg, transparent 400px, black 520px)" }}>
+        <div style={{ position: "absolute", left: 540 - 430, top: 470, width: 860, transformOrigin: "50% 0%", transform: `rotateX(${32 - 6 * fly}deg) translateY(${-220 * fly}px) translateZ(${-160 + 60 * fly}px)`, opacity: 1 - ez(f, writes + 8, writes + 24) * 0.5 }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 26 }}>
             {REVIEWS.map((r, i) => (
-              <ReviewCard key={i} r={r} w={487} hl={r.key ? hl : 0} style={{ opacity: ez(f, i * 2, i * 2 + 14) * (r.key ? 1 : 1 - hl * 0.35) }} />
+              <ReviewCard key={i} r={r} w={417} hl={r.key ? hl : 0} style={{ opacity: ez(f, i * 2, i * 2 + 14) * (r.key ? 1 : 1 - hl * 0.35) }} />
             ))}
           </div>
-          {scan > 0 && scan < 1 ? <div style={{ position: "absolute", left: -20, right: -20, top: scan * 1250, height: 6, background: "linear-gradient(90deg, #4285F4, #EA4335, #FBBC05, #34A853)", boxShadow: "0 0 40px rgba(66,133,244,0.7)" }} /> : null}
+          {scan > 0 && scan < 1 ? <div style={{ position: "absolute", left: -20, right: -20, top: scan * 1000, height: 6, background: "linear-gradient(90deg, #4285F4, #EA4335, #FBBC05, #34A853)", boxShadow: "0 0 40px rgba(66,133,244,0.7)" }} /> : null}
         </div>
+      </AbsoluteFill>
       </AbsoluteFill>
       {/* phrase streams into the ad line */}
       {["fresh bread", "friendly staff", "warm sourdough"].map((t, k) => {

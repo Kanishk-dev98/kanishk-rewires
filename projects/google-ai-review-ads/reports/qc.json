@@ -1,6 +1,6 @@
 {
-  "video": "/home/user/kanishk-rewires/projects/google-ai-review-ads/renders/google-ai-review-ads_v6.mp4",
-  "passed": true,
+  "video": "/home/user/kanishk-rewires/projects/google-ai-review-ads/renders/google-ai-review-ads_v7.mp4",
+  "passed": false,
   "checks": [
     {
       "check": "resolution",
@@ -29,13 +29,13 @@
     {
       "check": "duration",
       "ok": true,
-      "detail": "42.70 s (expected 42.67 s)",
+      "detail": "41.30 s (expected 41.27 s)",
       "severity": "info"
     },
     {
       "check": "duration target",
       "ok": true,
-      "detail": "42.7 s vs target 30 to 60 s",
+      "detail": "41.3 s vs target 30 to 60 s",
       "severity": "info"
     },
     {
@@ -76,14 +76,14 @@
     },
     {
       "check": "safe area",
-      "ok": true,
-      "detail": "nothing drawn within 60 px of the sides",
-      "severity": "info"
+      "ok": false,
+      "detail": "s03 @ 13.9s (2293 px); s03 @ 16.9s (90 px)",
+      "severity": "error"
     },
     {
       "check": "brand ending",
       "ok": true,
-      "detail": "lime px 27, cream px 438",
+      "detail": "lime px 27, cream px 434",
       "severity": "info"
     }
   ],

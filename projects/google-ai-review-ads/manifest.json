@@ -66,10 +66,17 @@
       ]
     },
     "render": {
-      "status": "pending"
+      "status": "done",
+      "at": "2026-11-05T06:46:56+00:00",
+      "note": "google-ai-review-ads_v7.mp4 (105.7 MB)",
+      "outputs": [
+        "renders/google-ai-review-ads_v7.mp4"
+      ]
     },
     "qc": {
-      "status": "pending"
+      "status": "blocked",
+      "at": "2026-11-05T06:47:53+00:00",
+      "note": "QC failed: ['safe area'] (see reports/qc.md)"
     },
     "delivery": {
       "status": "pending"
@@ -219,6 +226,10 @@
     {
       "file": "renders/google-ai-review-ads_v6.mp4",
       "at": "2026-11-05T05:37:07"
+    },
+    {
+      "file": "renders/google-ai-review-ads_v7.mp4",
+      "at": "2026-11-05T06:46:56"
     }
   ]
 }
