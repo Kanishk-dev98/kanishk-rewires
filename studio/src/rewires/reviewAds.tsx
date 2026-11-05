@@ -274,7 +274,7 @@ export const ReviewScene: React.FC<SceneProps> = ({ data }) => {
     [writes - 14, { x: 560, y: 990, s: 1.25, rx: 2, ry: -6, blur: 0, o: 1 }, 24],
     [S[3] + 2, { x: 545, y: 960, s: 1.24, rx: 0, ry: -3 }, 26], // close-up for the pain beat
     [off - 30, { x: 560, y: 640, s: 0.9, rx: 4, ry: -6 }, 24],
-    [S[4] - 4, { x: 1250, y: 1000, s: 0.8, rx: 2, ry: -20, blur: 4, o: 0 }, 18],
+    [S[4] - 6, { x: 1250, y: 1000, s: 0.8, rx: 2, ry: -20, blur: 4, o: 0 }, 12],
     [S[5], { x: 560, y: 960, s: 1.3, rx: 0, ry: -4, blur: 0 }, 22],
     [ask - 20, { x: 540, y: 960, s: 1.12, rx: 4, ry: -8 }, 24],
     [writes2 - 10, { x: 560, y: 990, s: 1.3, rx: 0, ry: -4 }, 22],
@@ -302,12 +302,12 @@ export const ReviewScene: React.FC<SceneProps> = ({ data }) => {
     [S[1] - 2, { x: 540, y: 1000, s: 1.24, rx: 4, ry: -6, o: 1 }, 26],
     [S[2], { x: 1400, y: 900, s: 0.9, ry: -24, o: 0 }, 20],
     [off - 22, { x: 540, y: 1430, s: 1.05, rx: 6, ry: -4, o: 1 }, 22],
-    [got, { x: 560, y: 2200, s: 0.9, o: 0 }, 18],
+    [S[4] - 6, { x: 560, y: 2200, s: 0.9, o: 0 }, 14],
     [predicts - 16, { x: 540, y: 1180, s: 1.22, rx: 4, ry: 4, o: 1 }, 24],
     [S[5], { x: 540, y: 2200, s: 0.9, o: 0 }, 16],
   ]);
-  const helpScroll = g < off - 30 ? interpolate(g, [S[1], four + 10], [700, 2360], { ...clamp, easing: EASE_IO }) : g < got ? 2700 : 1290;
-  const helpView = g < off - 30 ? 640 : g < got ? 300 : 380;
+  const helpScroll = g < off - 30 ? interpolate(g, [S[1], four + 10], [700, 2360], { ...clamp, easing: EASE_IO }) : g < S[4] ? 2700 : 1290;
+  const helpView = g < off - 30 ? 640 : g < S[4] ? 300 : 380;
   const elig = { x: 64, y: 2554, w: 1150, p: ez(g, four + 12, four + 30, EASE_IO) };
   const quote = [
     { x: 64, y: 1454, w: 1344, p: ez(g, better - 10, better + 8, EASE_IO) },
@@ -354,8 +354,8 @@ export const ReviewScene: React.FC<SceneProps> = ({ data }) => {
       <AbsoluteFill style={{ backgroundImage: `radial-gradient(circle, ${dark > 0.5 ? "rgba(246,244,237,0.06)" : "rgba(10,10,10,0.07)"} 1.3px, transparent 1.6px)`, backgroundSize: "44px 44px", backgroundPosition: `0 ${-g * 0.6}px`, maskImage: "radial-gradient(ellipse 80% 60% at 50% 50%, black, transparent 85%)" }} />
 
       {/* help page (behind the phone when it is aside) */}
-      <Obj t={help} w={HELP_W} h={helpView + 62} g={g} seed={2} z={g >= off - 30 && g < got ? 3 : 1}>
-        <HelpCard scroll={helpScroll} viewH={helpView} marks={g < S[2] ? [elig] : g >= predicts - 20 ? quote : []} find={g >= off - 30 && g < got ? { text: findText, result: findText.length >= 8 ? "0 of 0" : "", p: findP } : undefined} />
+      <Obj t={help} w={HELP_W} h={helpView + 62} g={g} seed={2} z={g >= off - 30 && g < S[4] ? 3 : 1}>
+        <HelpCard scroll={helpScroll} viewH={helpView} marks={g < S[2] ? [elig] : g >= predicts - 20 ? quote : []} find={g >= off - 30 && g < S[4] ? { text: findText, result: findText.length >= 8 ? "0 of 0" : "", p: findP } : undefined} />
       </Obj>
 
       {/* country chips (scene 1) */}
@@ -385,7 +385,7 @@ export const ReviewScene: React.FC<SceneProps> = ({ data }) => {
       </Obj>
 
       {/* phone */}
-      <Obj t={phone} w={PAGE_W + 36} h={1326} g={g} seed={1} z={g >= off - 30 && g < got ? 2 : 3}>
+      <Obj t={phone} w={PAGE_W + 36} h={1326} g={g} seed={1} z={g >= off - 30 && g < S[4] ? 2 : 3}>
         <Phone>
           <Serp g={g} query={queryText} caret={g < writing} adIn={adIn} love={love} loveP={loveShown} shimmer={shimmer} headMark={headMark} loveMark={loveMark} strike={strike} tap={tap} tapAt={[300, 640]} />
           {/* review composer bottom sheet */}
