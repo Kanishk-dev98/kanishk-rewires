@@ -55,7 +55,7 @@
     },
     "edit": {
       "status": "done",
-      "at": "2026-11-05T05:25:07+00:00",
+      "at": "2026-11-05T05:31:47+00:00",
       "note": "7 scenes, body 40.1 s + outro 2.6 s, 121 caption words",
       "outputs": [
         "timeline/timeline.json",
@@ -171,14 +171,14 @@
       "kind": "music",
       "path": "audio/music.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-11-05T05:25:07+00:00",
+      "at": "2026-11-05T05:31:47+00:00",
       "licence": "original, generated in code"
     },
     {
       "kind": "music",
       "path": "audio/signature.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-11-05T05:25:07+00:00",
+      "at": "2026-11-05T05:31:47+00:00",
       "licence": "original, generated in code"
     }
   ],
@@ -198,6 +198,10 @@
     {
       "file": "renders/google-ai-review-ads_v4.mp4",
       "at": "2026-11-05T05:23:43"
+    },
+    {
+      "file": "renders/google-ai-review-ads_v5.mp4",
+      "at": "2026-11-05T05:30:22"
     }
   ]
 }

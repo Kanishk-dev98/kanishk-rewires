@@ -1,6 +1,6 @@
 # QC report
 
-Video: `google-ai-review-ads_v4.mp4`  
+Video: `google-ai-review-ads_v5.mp4`  
 Result: **PASS**
 
 | Check | Result | Detail |

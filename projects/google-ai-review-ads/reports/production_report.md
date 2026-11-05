@@ -1,6 +1,6 @@
 # Production report: Google is writing part of your ads
 
-- Video: `renders/google-ai-review-ads_v4.mp4`
+- Video: `renders/google-ai-review-ads_v5.mp4`
 - Captions: `captions/google-ai-review-ads.srt`
 - Script and storyboard: `script/script.md`, `storyboard/storyboard.json`
 - Sources: `research/sources.md`
@@ -15,8 +15,8 @@
 - E. Storyboard: done · 7 scenes valid, 7 warnings
 - F. Asset production: done · 7 narration clips (0 reused from cache)
 - G. Animation and edit: done · 7 scenes, body 40.1 s + outro 2.6 s, 121 caption words
-- H. Render: done · google-ai-review-ads_v4.mp4 (109.4 MB)
-- I. Quality control: done · google-ai-review-ads_v4.mp4 passed 14 checks
+- H. Render: done · google-ai-review-ads_v5.mp4 (109.4 MB)
+- I. Quality control: done · google-ai-review-ads_v5.mp4 passed 14 checks
 - J. Delivery: pending · 
 
 ## Assets and provenance
