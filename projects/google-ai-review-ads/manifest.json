@@ -55,7 +55,7 @@
     },
     "edit": {
       "status": "done",
-      "at": "2026-11-05T06:38:09+00:00",
+      "at": "2026-11-05T06:50:04+00:00",
       "note": "8 scenes, body 38.7 s + outro 2.6 s, 116 caption words",
       "outputs": [
         "timeline/timeline.json",
@@ -66,17 +66,10 @@
       ]
     },
     "render": {
-      "status": "done",
-      "at": "2026-11-05T06:46:56+00:00",
-      "note": "google-ai-review-ads_v7.mp4 (105.7 MB)",
-      "outputs": [
-        "renders/google-ai-review-ads_v7.mp4"
-      ]
+      "status": "pending"
     },
     "qc": {
-      "status": "blocked",
-      "at": "2026-11-05T06:47:53+00:00",
-      "note": "QC failed: ['safe area'] (see reports/qc.md)"
+      "status": "pending"
     },
     "delivery": {
       "status": "pending"
@@ -191,14 +184,14 @@
       "kind": "music",
       "path": "audio/music.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-11-05T06:38:09+00:00",
+      "at": "2026-11-05T06:50:04+00:00",
       "licence": "original, generated in code"
     },
     {
       "kind": "music",
       "path": "audio/signature.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-11-05T06:38:09+00:00",
+      "at": "2026-11-05T06:50:04+00:00",
       "licence": "original, generated in code"
     }
   ],
