@@ -1,5 +1,5 @@
 {
-  "video": "/home/user/kanishk-rewires/projects/google-ai-review-ads/renders/google-ai-review-ads_v5.mp4",
+  "video": "/home/user/kanishk-rewires/projects/google-ai-review-ads/renders/google-ai-review-ads_v6.mp4",
   "passed": true,
   "checks": [
     {
@@ -83,7 +83,7 @@
     {
       "check": "brand ending",
       "ok": true,
-      "detail": "lime px 27, cream px 435",
+      "detail": "lime px 27, cream px 438",
       "severity": "info"
     }
   ],

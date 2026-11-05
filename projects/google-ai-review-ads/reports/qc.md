@@ -1,6 +1,6 @@
 # QC report
 
-Video: `google-ai-review-ads_v5.mp4`  
+Video: `google-ai-review-ads_v6.mp4`  
 Result: **PASS**
 
 | Check | Result | Detail |
@@ -18,6 +18,6 @@ Result: **PASS**
 | loudness | ok | -14.0 LUFS (target -14) |
 | true peak | ok | -1.5 dBTP |
 | safe area | ok | nothing drawn within 60 px of the sides |
-| brand ending | ok | lime px 27, cream px 435 |
+| brand ending | ok | lime px 27, cream px 438 |
 
 Still needs human eyes: overlapping elements, pacing and readability, visual taste and continuity, voice delivery.
