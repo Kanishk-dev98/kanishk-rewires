@@ -66,5 +66,9 @@
   "flag-in.svg": {
     "source": "https://flagcdn.com/in.svg",
     "note": "Flag of India, public domain, unaltered"
+  },
+  "google-wordmark.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Google_2015_logo.svg",
+    "note": "Official four-colour Google wordmark, unaltered; trademark of Google, nominative use"
   }
 }

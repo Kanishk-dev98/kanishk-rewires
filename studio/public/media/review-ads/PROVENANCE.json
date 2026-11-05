@@ -1,0 +1,8 @@
+{
+  "help-page.png": {
+    "source": "https://support.google.com/google-ads/answer/18760807?hl=en-GB",
+    "captured": "2026-11-05",
+    "how": "Playwright, 760 px wide at 2x, floating Help guide button hidden, cropped above Related link",
+    "note": "Screenshot of Google public help page, shown as the primary source in a news commentary reel"
+  }
+}

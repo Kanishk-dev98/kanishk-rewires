@@ -55,41 +55,25 @@
     },
     "edit": {
       "status": "done",
-      "at": "2026-11-04T13:01:40+00:00",
+      "at": "2026-11-05T05:07:43+00:00",
       "note": "7 scenes, body 40.1 s + outro 2.6 s, 121 caption words",
       "outputs": [
         "timeline/timeline.json",
         "timeline/props.json",
         "captions/google-ai-review-ads.srt",
         "audio/music.wav",
-        "audio/signature.wav"
+        "audio/signature.wav",
+        "storyboard/board.png"
       ]
     },
     "render": {
-      "status": "done",
-      "at": "2026-11-04T13:07:59+00:00",
-      "note": "google-ai-review-ads_v2.mp4 (109.0 MB)",
-      "outputs": [
-        "renders/google-ai-review-ads_v2.mp4"
-      ]
+      "status": "pending"
     },
     "qc": {
-      "status": "done",
-      "at": "2026-11-04T13:08:52+00:00",
-      "note": "google-ai-review-ads_v2.mp4 passed 14 checks",
-      "outputs": [
-        "reports/qc.md",
-        "reports/contact_sheet.png"
-      ]
+      "status": "pending"
     },
     "delivery": {
-      "status": "done",
-      "at": "2026-11-04T13:08:52+00:00",
-      "note": "delivered google-ai-review-ads_v2.mp4",
-      "outputs": [
-        "reports/production_report.md",
-        "/root/Downloads/Kanishk.Rewires/google-ai-review-ads"
-      ]
+      "status": "pending"
     }
   },
   "assets": [
@@ -188,14 +172,14 @@
       "kind": "music",
       "path": "audio/music.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-11-04T13:01:40+00:00",
+      "at": "2026-11-05T05:07:08+00:00",
       "licence": "original, generated in code"
     },
     {
       "kind": "music",
       "path": "audio/signature.wav",
       "provider": "pipeline/rewires/music.py",
-      "at": "2026-11-04T13:01:40+00:00",
+      "at": "2026-11-05T05:07:08+00:00",
       "licence": "original, generated in code"
     }
   ],
