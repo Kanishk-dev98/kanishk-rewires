@@ -16,3 +16,4 @@
 - [feedback-real-colour-logos](feedback-real-colour-logos.md) — HARD RULE: official full-colour brand logos only (Google 4-colour G etc.), never monochrome Simple Icons
 - [feedback-audio-voice-first](feedback-audio-voice-first.md) — Voice first; music dimmed ~20 dB under VO; vary music per reel; no repeated boom/impact hits
 - [feedback-mature-visuals-no-ai-tells](feedback-mature-visuals-no-ai-tells.md) — No single-object films; mature realistic metaphors only where needed; premium number/type treatment; on-screen hook headline
+- [feedback-real-ui-not-generic](feedback-real-ui-not-generic.md) — Real products shown as they really look (real fonts, colours, layouts, source pages); no generic AI cards; mature motion
