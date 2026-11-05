@@ -266,7 +266,7 @@ export const ReviewScene: React.FC<SceneProps> = ({ data }) => {
 
   // ---- phone track (centre x 540) and page camera (zoom into the ad block)
   const phone = track(g, [
-    [0, { x: 540, y: 1500, s: 0.78, rx: 18, ry: -8, o: 0 }],
+    [0, { x: 540, y: 1060, s: 0.92, rx: 12, ry: -14, o: 1 }],
     [0, { x: 540, y: 980, s: 1.0, rx: 6, ry: -10, rz: 0 }, 26],
     [writing + 14, { x: 560, y: 1000, s: 1.32, rx: 2, ry: -6 }, 30], // push into the ad
     [S[1] + 2, { x: -380, y: 1060, s: 0.8, rx: 4, ry: 24, blur: 10, o: 0 }, 22], // out of frame for the help page
@@ -322,7 +322,7 @@ export const ReviewScene: React.FC<SceneProps> = ({ data }) => {
     [S[2] - 2, { x: 600, y: 990, s: 1.2, rx: 4, ry: -10, o: 1 }, 26],
     [writes - 14, { x: 860, y: 1050, s: 0.8, rx: 4, ry: -18, blur: 7, o: 0.5 }, 22],
     [S[3], { x: 1500, y: 1000, s: 0.9, ry: -20, o: 0 }, 18],
-    [got + 4, { x: 540, y: 980, s: 1.18, rx: 4, ry: 6, o: 1 }, 26],
+    [S[4] + 2, { x: 540, y: 980, s: 1.18, rx: 4, ry: 6, o: 1 }, 24],
     [predicts - 16, { x: 540, y: 560, s: 0.7, rx: 8, ry: 6, blur: 8, o: 0 }, 22],
     [S[5], { x: 560, y: 1000, s: 0.3, o: 0 }, 22],
   ]);
