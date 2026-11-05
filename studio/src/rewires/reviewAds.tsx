@@ -262,7 +262,7 @@ export const ReviewScene: React.FC<SceneProps> = ({ data }) => {
   const writes2 = cue(6, "writes", 185);
 
   // lights: dark from "got" until the merge scene starts
-  const dark = ez(g, got - 6, got + 8, EASE_IO) * (1 - ez(g, S[5], S[5] + 12, EASE_IO));
+  const dark = ez(g, S[4] - 2, S[4] + 10, EASE_IO) * (1 - ez(g, S[5], S[5] + 12, EASE_IO));
 
   // ---- phone track (centre x 540) and page camera (zoom into the ad block)
   const phone = track(g, [
@@ -272,9 +272,9 @@ export const ReviewScene: React.FC<SceneProps> = ({ data }) => {
     [S[1] + 2, { x: -380, y: 1060, s: 0.8, rx: 4, ry: 24, blur: 10, o: 0 }, 22], // out of frame for the help page
     [S[2] + 4, { x: -380, y: 1060, s: 0.8, rx: 4, ry: 24, blur: 10, o: 0 }, 22],
     [writes - 14, { x: 560, y: 990, s: 1.25, rx: 2, ry: -6, blur: 0, o: 1 }, 24],
-    [S[3] + 2, { x: 560, y: 960, s: 1.42, rx: 0, ry: -4 }, 26], // close-up for the pain beat
+    [S[3] + 2, { x: 545, y: 960, s: 1.24, rx: 0, ry: -3 }, 26], // close-up for the pain beat
     [off - 30, { x: 560, y: 640, s: 0.9, rx: 4, ry: -6 }, 24],
-    [got, { x: 1250, y: 1000, s: 0.8, rx: 2, ry: -20, blur: 4, o: 0 }, 22],
+    [S[4] - 4, { x: 1250, y: 1000, s: 0.8, rx: 2, ry: -20, blur: 4, o: 0 }, 18],
     [S[5], { x: 560, y: 960, s: 1.3, rx: 0, ry: -4, blur: 0 }, 22],
     [ask - 20, { x: 540, y: 960, s: 1.12, rx: 4, ry: -8 }, 24],
     [writes2 - 10, { x: 560, y: 990, s: 1.3, rx: 0, ry: -4 }, 22],
@@ -346,8 +346,9 @@ export const ReviewScene: React.FC<SceneProps> = ({ data }) => {
   const stageBg = dark > 0.5 ? C.charcoal : C.cream;
   return (
     <AbsoluteFill style={{ background: stageBg, overflow: "hidden" }}>
-      <AbsoluteFill style={{ background: C.cream, opacity: 1 - dark }} />
-      <AbsoluteFill style={{ background: C.charcoal, opacity: dark }} />
+      {/* lights down: the cream stage closes to a spot and goes out (and opens again after the twist) */}
+      <AbsoluteFill style={{ background: C.charcoal }} />
+      {dark < 1 ? <AbsoluteFill style={{ background: C.cream, clipPath: `circle(${Math.round((1 - dark) * 1200)}px at 540px 960px)` }} /> : null}
       <AbsoluteFill style={{ background: "radial-gradient(ellipse 70% 45% at 50% 48%, rgba(255,255,255,0.9), rgba(246,244,237,0) 72%)", opacity: 1 - dark }} />
       <AbsoluteFill style={{ background: "radial-gradient(ellipse 60% 40% at 50% 46%, rgba(167,255,63,0.06), rgba(10,10,10,0) 70%)", opacity: dark }} />
       <AbsoluteFill style={{ backgroundImage: `radial-gradient(circle, ${dark > 0.5 ? "rgba(246,244,237,0.06)" : "rgba(10,10,10,0.07)"} 1.3px, transparent 1.6px)`, backgroundSize: "44px 44px", backgroundPosition: `0 ${-g * 0.6}px`, maskImage: "radial-gradient(ellipse 80% 60% at 50% 50%, black, transparent 85%)" }} />
